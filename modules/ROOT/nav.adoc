@@ -1,1 +1,2 @@
 .xref:index.adoc[API Governance]
+  * xref:index.adoc[API Governance]
