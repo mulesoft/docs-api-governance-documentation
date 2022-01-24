@@ -5,5 +5,5 @@ OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
 Security Best Practices rulesets to Exchange in advance. If you want
 to create custom rulesets in Exchange, you would create them as any other asset.
 
-include::partial$task-add-asset.adoc[leveloffset=+1,tags=description;procedure]
+include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
