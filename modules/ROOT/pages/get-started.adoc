@@ -1,0 +1,55 @@
+= Getting Started with API Governance
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+With API Governance you can:
+
+* *Share governance best practices:* Catalog governance rulesets within
+  Anypoint Exchange to share with other developers.
+* *Apply consistent rules at design time:* Enable developers to apply
+  governance rules at design time in Anypoint API Designer.
+* *Enforce governance within your DevOps organization:* Automatically
+  apply standards to your API contract and definition within your
+  CI/CD pipeline.
+
+.Govern your APIs using the following steps: 
+
+. xref:assign-api-gov-admins.adoc[Assign API Governance administrator privileges in Anypoint Access Management].
++
+Before you can access the API Governance component, you will need to have
+API Governance Administrator privileges. You can add these privileges in
+Access Management as you would add other privileges.
+
+. xref:create-profiles.adoc[Create profiles in API Governance].
++
+Once you have access to API Governance, the first step in governing your APIs is
+Creating a profile. Profiles pair rulesets with filter criteria to specify the
+scope or to specify which APIs in Exchange you want to govern.
+
+. xref:monitor-api-conformance.adoc[Monitor and improve your governance posture].
++
+The API Governance console provides a visual reference for your API Conformance
+posture so you can easily monitor and track which APIs are conformant
+or need corrections. You can also send notifications to API authors, indicating
+they need to update their API definitions to meet standards, and export
+reports containing the status and details of each profile.
+
+. xref:add-rulesets.adoc[Add Rulesets as Dependencies to API Specification Projects in Design Center].
++
+You can add rulesets as dependencies to API definitions projects in
+Design Center. Once added, you will see errors or warnings in the console
+as you are writing your API definition.
+
+. xref:governance-cli.adoc[Govern APIs Using CLI Commands].
++
+You can use the CLI to execute Governance Console commands as well
+as local rule development commands.
+
+. xref:upload-rulesets.adoc[Create Custom Rulesets in Anypoint Exchange].
++
+For the Beta, we have added MuleSoft Anypoint API Best Practices,
+OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
+Security Best Practices rulesets to Exchange in advance. If you want
+to add custom rulesets to Exchange, you would add them as any other
+asset.

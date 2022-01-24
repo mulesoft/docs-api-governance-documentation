@@ -1,0 +1,7 @@
+= Adding Rulesets as Dependencies to API Specification Projects
+
+You can add rulesets as dependencies to API definitions projects in
+Design Center. Once added, you will see errors or warnings in the console
+as you are writing your API definition.
+
+include::design-center::partial$task-add-api-dependency.adoc[leveloffset=+1,tags=description;procedure]

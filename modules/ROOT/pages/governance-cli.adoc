@@ -1,0 +1,179 @@
+= Governing APIs Using CLI Commands
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+There are different kinds of commands:
+
+* Governance Console commands
+* Local rules development
+
+== Governance Console Commands
+
+These commands are to configure Profiles for the organization. 
+Commands are:
+
+=== Profile Listing
+
+*Command:* governance console list  
+*Description:* List profiles from the organization
+*Usage:*
+ `governance console list`
+*Output:*
+┌──────────────────────────────────────────────────┬──────────────────────────────────────────────────┐
+│ Profile Name                                     │ Profile Id                                       │
+├──────────────────────────────────────────────────┼──────────────────────────────────────────────────┤
+│ Best Practices                                   │ 8ffd463f-86b2-4132-afc6-44d179209362             │
+├──────────────────────────────────────────────────┼──────────────────────────────────────────────────┤
+│ Organization Profile                             │ eb4f544c-2b97-4f99-97e4-357636228e36             │
+└──────────────────────────────────────────────────┴──────────────────────────────────────────────────┘
+
+=== Profile Information
+*Command:* governance console info <profile-id>
+*Description:* show info for specific profile
+*Usage:*
+ `governance console info 8ffd463f-86b2-4132-afc6-44d179209362`
+*Output:*
+ 
+┌────────────────────────────────┬────────────────────────────────────────────────────────────────────────────┐
+│ Id                             │ 8ffd463f-86b2-4132-afc6-44d179209362                                       │
+├────────────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+│ Name                           │ Best Practices                                                             │
+├────────────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+│ Description                    │ Our organization bes practices                                             │
+├────────────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+│ Rulesets                       │ gav://a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/best-practices/1.0.0            │
+├────────────────────────────────┼────────────────────────────────────────────────────────────────────────────┤
+│ Filter                         │ tag:governed                                                               │
+└────────────────────────────────┴────────────────────────────────────────────────────────────────────────────┘
+
+=== Profile Deletion
+
+*Command:* governance console delete <profile-id>
+*Description:* delete specific profile
+*Usage:*
+ `governance console delete 8ffd463f-86b2-4132-afc6-44d179209362``
+
+*Output:*
+`Profile with id 8ffd463f-86b2-4132-afc6-44d179209362 removed`
+
+=== Profile Creation
+
+*Command:* governance console create [options] <profile-name> <ruleset-gavs>
+*Description:* Creates a new profile.Argument "ruleset-gavs" should be a list of ruleset gavs formatted as follows:
+
+<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>
+
+*Options:*
+
+--tags <tags>                   Argument "tags" should be a comma separated list of tags formatted as follows: tag1,tag2,tag3.
+--description <description>     Profile description
+
+*Usage:*
+ `governance console create "Profile for Demos" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0 --tags DemosTag --description "This is the demo description"`
+
+*Output:*
+Profile Added
+┌──────────────────────────┬──────────────────────────────────────────────────────────────────────────────────┐
+│ Id                       │ 51f9f94c-fb0c-43d4-9895-22c9e64f1537                                             │
+├──────────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ Name                     │ Profile for Demos                                                                │
+├──────────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ Description              │ This is the demo description                                                     │
+├──────────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ Rulesets                 │ gav://a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0                            │
+├──────────────────────────┼──────────────────────────────────────────────────────────────────────────────────┤
+│ Filter                   │ tag:DemosTag                                                                     │
+└──────────────────────────┴──────────────────────────────────────────────────────────────────────────────────┘
+
+=== Profile Update
+
+*Command:*  governance console update [options] <profile-id>                  
+*Description:*  Modifies the profile.
+
+*Options:* 
+    --ruleset-gavs <ruleset-gavs>   the new asset identifiers. Argument "ruleset-gavs" should be a list of ruleset gavs formatted as follows: <group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>.
+    --profile-name <profile-name>   the new profile name. Argument "ruleset-gavs" should be a list of ruleset gavs formatted as follows: <group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>.
+    --tags <tags>                   Argument "tags" should be a comma separated list of tags formatted as follows: tag1,tag2,tag3.
+    --description <description>     Profile description
+
+
+*Usage:*
+ `governance console update 51f9f94c-fb0c-43d4-9895-22c9e64f1537 --profile-name "New Name"``
+
+*Output:*
+`Profile updated 51f9f94c-fb0c-43d4-9895-22c9e64f1537`
+
+== Local Rules development
+
+These commands aim to aid in rule development.
+
+=== Ruleset validation
+
+This command is used to both validate the ruleset, and validate an api-spec against a ruleset. The latter is intended for the ruleset development / testing cycle. Api-spec dependencies are not supported.
+
+*Command:* governance validate [options] <ruleset>
+*Description:* Validate Ruleset definition.
+
+*Options:* 
+ --spec <api-specification>      api-specification zip to validate with the ruleset	
+
+*Usage without api-spec:*
+ `governance validate ~/temp/prof-1-bad.yaml`
+
+
+*Output without api-spec for valid ruleset:*
+Ruleset conforms with Dialect
+
+*Output without api-spec for non valid ruleset:*
+Ruleset does not conform with Dialect
+ModelId: file:///Users/suntersander/temp/prof-1-bad.yaml
+Profile: Validation Profile 1.0
+Conforms: false
+Number of results: 1
+
+Level: Violation
+
+- Constraint: http://a.ml/amf/default_document#/declarations/profileNode_profile_required_validation
+  Message: Property 'profile' is mandatory
+  Severity: Violation
+  Target: file:///Users/suntersander/temp/prof-1-bad.yaml#/encodes
+  Property: http://schema.org/name
+  Range: [(3,0)-(11,19)]
+  Location: file:///Users/suntersander/temp/prof-1-bad.yaml
+
+
+*Usage with api-spec:*
+ governance validate ~/temp/prof-1.yaml --spec ~/Downloads/positive-1.0.0-raml.zip
+
+*Output with a valid api-spec:*
+Spec conforms with Ruleset
+
+Output with a non valid api-spec:
+Ruleset /path/temp/prof-1.yaml
+Spec /path/Downloads/negative-1.0.0-raml.zip
+Spec does not conform with Ruleset
+[.. full report shown here..]
+
+=== Ruleset documentation
+
+Generates a zip file that can later on be used on exchange asset upload with the `--files.docs.zip` option
+
+*Command:* governance document [options] <ruleset> <file>
+*Description:* Document Ruleset definition.
+
+*Usage:*
+governance document ~/temp/prof-1.yaml ~/temp/prof-1.doc.zip
+
+*Output:*
+validation name [ 'scalar-parameters' ]
+Saving to /Users/suntersander/temp/prof-1.doc.zip
+
+=== Ruleset Upload
+
+Ruleset upload is done using exchange commands. Only type was added.
+
+*Sample usage:*
+*Upload:*
+
+anypoint-cli exchange asset uploadv2 --name "cli ruleset asset 1" --description "cli ruleset asset 1 description" --properties.apiVersion v1 --properties.mainFile ruleset-validation.yaml --files.ruleset.yaml /Users/suntersander/temp/ruleset-validation.yaml cli-ruleset-asset/1.1.2 --files.docs.zip ~/temp/ruleset.doc.zip

@@ -1,0 +1,33 @@
+= Creating API Governance Profiles
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+You'll govern your APIs by creating profiles, where you'll
+select rulesets and apply them to selected APIs.
+
+.To create a profile: 
+
+. Log in to Anypoint Platform.
+. In the navigation bar or the main Anypoint Platform page, click *API Governanace*.
+. Click *New Profile*.
+. Enter a profile name that helps others understand what kinds of rulesets are included in it.
++
+You can also add a purpose to explain more about your profile, like the kinds of APIs it governs.
+
+. Click *Next*.
+. Select one or more rulesets you want to use to govern your APIs.
+. Click *Next*.
+. Specify which APIs your profile should be applied to by selecting an API Type and/or Tag(s)
+as filter criteria. 
++
+The list of APIs shown includes which APIs the profile will be applied to based on your filter choices.
++
+CAUTION: If you do not select filter criteria, your profile will be applied to all of your APIs.
++
+
+NOTE: The only API Type available for filtering criteria for the beta release is REST APIS. Tags are
+created and applied to APIs in Anypoint Exchange.
+
+. Click *Next*.
+. Review your profile and click *Create Profile*.

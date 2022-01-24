@@ -1,0 +1,54 @@
+= Governing API Conformance
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint API Governance is a component of the Anypoint Platform that
+allows you to apply governance rules to your APIs as part of the
+API lifecycle. Governance rules can include internal or external best
+practice guidelines and industry-specific government regulations.
+You can apply these reusable groups of rules, or rulesets,
+directly to API definitions during the API design phase. Later, you can add
+these same rulesets to profiles and apply the profiles to multiple APIs across
+your organization. Once the profiles have been applied to your APIs, you can
+then monitor your APIs' conformance on the API Governance console.
+
+API Governance is tightly integrated with the following tools:
+
+* xref:design-center::index.adoc[Anypoint Design Center (Design Center)], where governance
+  rules are designed and applied to API definitions (as dependencies)
+* xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where governance rules are catalogued and discovered
+
+== API Governance Components, Concepts, and Features
+
+=== Profiles
+
+A profile applies chosen rulesets to a select group of APIs. The APIs are validated
+against the rulesets to check conformance status. Conformance status is the percentage
+of APIs included in the profile that conform, or meet the rulesets' rules.
+
+A profile has two statuses, Normal and At Risk, which are based on the percentage of conformant APIs in the profile.
+
+* *Normal:* More than 70% of APIs are conformant
+* *At Risk:* Less than 70% of APIs are conformant
+
+=== Rulesets
+
+Rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
+REST API definition in the Anypoint Platform. Rulesets can include internal or external best
+practice guidelines and industry-specific government regulations. You can create custom rulesets using the
+AML(Anything Modeling Language), a declarative language for defining metadata documents.
+
+=== API Conformance
+
+API conformance is the whether the included API definitions that are cataloged in Exchange as REST APIs,
+meet all required rules included in the rulesets from one or multiple profiles.
+
+=== Compliance Posture
+
+The status of your API definitions' compliance to certain regulations, internal or external. 
+
+=== API Governance Console
+
+The main UI for API Governance where you can view 
+
