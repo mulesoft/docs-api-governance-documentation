@@ -10,7 +10,7 @@ In the future, we will provide links to documentation for writing your own custo
 using AML (Anything Modeling Language), a declarative language for defining metadata
 documents that can be parsed into graphs of information.
 
-For more information on AML, see https://a.ml/docs/aml/aml[What is AML?]
+For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
 
 == Create Ruleset Zip File with the CLI
 
