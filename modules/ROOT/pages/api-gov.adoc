@@ -1,4 +1,4 @@
-= Governing API Conformance
+= Governing APIs
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -9,8 +9,8 @@ API lifecycle. Governance rules can include internal or external best
 practice guidelines and industry-specific government regulations.
 You can apply these reusable groups of rules, or rulesets,
 directly to API definitions during the API design phase. Later, you can add
-these same rulesets to profiles and apply the profiles to multiple APIs across
-your organization. Once the profiles have been applied to your APIs, you can
+these same rulesets to governance profiles and apply the governance profiles to multiple APIs across
+your organization. Once the governance profiles have been applied to your APIs, you can
 then monitor your APIs' conformance on the API Governance console.
 
 API Governance is tightly integrated with the following tools:
@@ -21,13 +21,14 @@ API Governance is tightly integrated with the following tools:
 
 == API Governance Components, Concepts, and Features
 
-=== Profiles
+=== Governance Profiles
 
-A profile applies chosen rulesets to a select group of APIs. The APIs are validated
+A governance profile applies chosen rulesets to a select group of APIs. The APIs are validated
 against the rulesets to check conformance status. Conformance status is the percentage
-of APIs included in the profile that conform, or meet the rulesets' rules.
+of APIs included in the governance profile that conform, or meet the rulesets' rules.
 
-A profile has two statuses, Normal and At Risk, which are based on the percentage of conformant APIs in the profile.
+A governance profile has two statuses, Normal and At Risk, which are based on the percentage
+of conformant APIs in the governance profile.
 
 * *Normal:* More than 70% of APIs are conformant
 * *At Risk:* Less than 70% of APIs are conformant
@@ -42,7 +43,7 @@ AML(Anything Modeling Language), a declarative language for defining metadata do
 === API Conformance
 
 API conformance is the whether the included API definitions that are cataloged in Exchange as REST APIs,
-meet all required rules included in the rulesets from one or multiple profiles.
+meet all required rules included in the rulesets from one or multiple governance profiles.
 
 === Compliance Posture
 
@@ -50,5 +51,6 @@ The status of your API definitions' compliance to certain regulations, internal 
 
 === API Governance Console
 
-The main UI for API Governance where you can view 
-
+The main UI for API Governance where you can view governance profile statuses, API conformance
+across governance profiles, and nonconformance by severity across governance profiles. You can
+also add, update, and delete governance profiles from this page.
