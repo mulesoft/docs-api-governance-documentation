@@ -1,12 +1,16 @@
-= Creating Custom Rulesets in Anypoint Exchange
+= Creating Custom Rulesets
 
 For the Beta, we have added MuleSoft Anypoint API Best Practices,
 OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
 Security Best Practices rulesets to Exchange in advance. 
 
-If you want to create custom rulesets in Exchange, you would create them as any other asset.
+== Write Rulesets using AML
 
-include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
+In the future, we will provide links to documentation for writing your own custom rulesets
+using AML (Anything Modeling Language), a declarative language for defining metadata
+documents that can be parsed into graphs of information.
+
+For more information on AML, see xref:https://a.ml/docs/aml/aml[What is AML?]
 
 == Create Ruleset Zip File with the CLI
 
@@ -26,7 +30,14 @@ validation name [ 'scalar-parameters' ]
 Saving to /Users/suntersander/temp/prof-1.doc.zip
 ----
 
-=== Creating Custom Rulesets with the CLI
+== Create Custom Ruleset Assets in Anypoint Exchange
+
+If you want to create custom rulesets in Exchange, you would create them as any other asset.
+
+include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
+
+
+=== Create Custom Rulesets in Anypoint Exchange with the CLI
 
 Ruleset upload is done using Exchange commands. Only type was added.
 
