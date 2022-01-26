@@ -1,4 +1,4 @@
-= Finding and correcting conformance issues as you author API definitions
+= Finding and correcting conformance issues
 
 Rulesets can be applied to API definitions as you are authoring them, either in Design Center
 or with the CLI. You can also validate rulesets to make sure they are formatted correctly with the CLI.
