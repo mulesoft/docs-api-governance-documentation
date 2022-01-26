@@ -1,4 +1,4 @@
-= Granting Access to API Governance in Anypoint Access Management
+= Granting Access to API Governance
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -7,8 +7,10 @@ Just as with other Anypoint Platform components, API Governance requires
 specific permissions to access the API Governance console and create governance profiles.
 
 Once API Governance has been added to your Anypoint Platform instance,
-you will need to assign API Governance administrator privileges
+you will need to assign the API Governance administrator permission
 to anyone you want to be able to use it.
+
+These permissions can be assigned in Anypoint Access Management.
 
 IMPORTANT: If you do not see API Governance, it hasn't been added to your Anypoint
 Platform instance yet. You can have it added by contacting MuleSoft and providing
