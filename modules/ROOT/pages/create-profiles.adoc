@@ -44,9 +44,11 @@ NOTE: The only API Type available for filtering criteria for the beta release is
 
 == Create Governance Profiles with the CLI
 
-*Command:* `governance console create [options] {profile-name} {ruleset-gavs}`
+=== governance console create
 
-*Description:* Creates a new profile. The argument "ruleset-gavs" should be a list of ruleset gavs formatted as follows:
+`> governance console create [options] <profile-name> <ruleset-gavs>`
+
+This command creates a new profile. The argument "ruleset-gavs" should be a list of ruleset gavs formatted as follows:
 
 <group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>
 
@@ -54,13 +56,12 @@ NOTE: The only API Type available for filtering criteria for the beta release is
 
 [cols="1,1"]
 |===
-|Option
-|Description
+|Option |Description
 
-|--tags {tags}
+|--tags <tags>
 |The `tags` argument should be followed by a comma separated list of tags to be applied to the new governance profile, formatted as follows: `tag1,tag2,tag3`.
 
-|--description {description}
+|--description <description>
 |The `description` argument should be followed by a string that is the new governance profile's description.
 |===
 
@@ -114,27 +115,28 @@ your governance profile will include based on your updated filter criteria.
 
 == Update governance profiles with the CLI
 
-*Command:*  `governance console update [options] {profile-id}`
+=== governance console update
 
-*Description:*  Modifies the governance profile.
+`> governance console update [options] <profile-id>`
+
+This command updates a governance profile.
 
 *Options:* 
 
 [cols="1,1"]
 |===
-|Option
-|Description
+|Option |Description
 
-|--ruleset-gavs {ruleset-gavs}
+|--ruleset-gavs <ruleset-gavs>
 |The `ruleset-gavs` argument should be followed by a list of ruleset gavs formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>`. These will be the new asset's identifiers.
 
-|--profile-name {profile-name}
+|--profile-name <profile-name>
 |The `profile-name` argument should be followed by a string that will be the new governance profile name.
 
-|--tags {tags}
+|--tags <tags>
 |The `tags` argument should be followed by a comma separated list of tags formatted as follows: `tag1,tag2,tag3`.
 
-|--description {description}
+|--description <description>
 |The `description` argument should be followed by a string that will be the new governance profile description.
 |===
 
@@ -156,12 +158,14 @@ To delete a governance profile:
 
 == Delete a Governance Profile with the CLI
 
-*Command:* `governance console delete {profile-id}`
+=== governance console delete
 
-*Description:* Deletes a specific governance profile.
+`> governance console delete <profile-id>`
+
+This command deletes a specific governance profile.
 
 *Example command:*
- `governance console delete 8ffd463f-86b2-4132-afc6-44d179209362`
+`governance console delete 8ffd463f-86b2-4132-afc6-44d179209362`
 
 *Example output:*
 `Profile with id 8ffd463f-86b2-4132-afc6-44d179209362 removed`

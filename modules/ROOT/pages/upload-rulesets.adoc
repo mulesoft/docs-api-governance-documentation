@@ -16,9 +16,11 @@ For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=ex
 
 This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
 
-*Command:* `governance document [options] {ruleset} {file}`
+=== governance document
 
-*Description:* Create Ruleset definition zip file.
+`> governance document [options] <ruleset> <file>`
+
+This command creates a ruleset definition zip file.
 
 *Example command:*
 `governance document ~/temp/prof-1.yaml ~/temp/prof-1.doc.zip`
@@ -39,7 +41,7 @@ include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=descriptio
 
 === Create Custom Rulesets in Anypoint Exchange with the CLI
 
-Ruleset upload is done using Exchange commands. Only type was added.
+Ruleset upload is completed using Exchange commands and only type was added.
 
 *Example command:*
 

@@ -17,7 +17,7 @@ the percentage of conformant APIs in the profile.
 
 == API Conformance Across Governance Profiles
 
-APIs are API definitions that are cataloged in Exchange as REST APIs.
+APIs are API definitions that are catalogued in Exchange as REST APIs.
 
 API conformance status indicates whether the API definitions that are included in
 your governance profiles pass all required rulesets.
@@ -36,16 +36,17 @@ Nonconformance severity is categorized by the percentage of passed rulesets amon
 
 == List Governance Profile Information with the CLI
 
-*Command:* `governance console list`
+=== governance console list
 
-*Description:* List all governance profiles for an organization.
+`> governance console list`
+
+This command lists all governance profiles for an organization.
 
 *Sample output:*
 
 [cols="1,1"]
 |===
-|Profile Name
-|Profile Id
+|Profile Name  |Profile Id
 
 |Best Practices
 |8ffd463f-86b2-4132-afc6-44d179209362
@@ -57,13 +58,15 @@ Nonconformance severity is categorized by the percentage of passed rulesets amon
 
 == List Specific Governance Profile Information with the CLI
 
-*Command:* `governance console info {profile-id}`
+=== governance console info
 
-*Description:* Shows all information for a specific governance profile Id.
+`> governance console info <profile-id>`
+
+This command lists all information for a specific governance profile Id.
 
 *Example command:*
  `governance console info 8ffd463f-86b2-4132-afc6-44d179209362`
- 
+
 *Example output:*
 
 [cols="1,1"]
