@@ -7,7 +7,7 @@ After you create your first governance profile, the API Governance console will
 show various statuses to keep you apprised of your governance posture.
 You can also access this information from the command line using various commands.
 
-== Governance Profile Statuses
+== View Governance Profile Statuses
 
 A profile has two statuses, Normal and At Risk, which are based on
 the percentage of conformant APIs in the profile.
@@ -15,7 +15,7 @@ the percentage of conformant APIs in the profile.
 * *Normal:* More than 70% of APIs are conformant.
 * *At Risk:* Less than 70% of APIs are conformant.
 
-== API Conformance Across Governance Profiles
+== View API Conformance Across Governance Profiles
 
 APIs are API definitions that are catalogued in Exchange as REST APIs.
 
@@ -26,66 +26,13 @@ your governance profiles pass all required rulesets.
 * *Not Conformant:* The APIs fail at least one ruleset.
 * *Not Validated:* The APIs are not validated because they are not included in a governance profile.
 
-== Nonconformance by Severity Across Governance Profiles
+== View Nonconformance by Severity Across Governance Profiles
 
 Nonconformance severity is categorized by the percentage of passed rulesets among all required rulesets.
 
 * *High Severity:* 0 - 40% rulesets passed
 * *Medium Severity:* 41% - 80% rulesets passed
 * *Low Severity:* 81% - 99% rulesets passed
-
-== List Governance Profile Information with the CLI
-
-=== governance console list
-
-`> governance console list`
-
-This command lists all governance profiles for an organization.
-
-*Sample output:*
-
-[cols="1,1"]
-|===
-|Profile Name  |Profile Id
-
-|Best Practices
-|8ffd463f-86b2-4132-afc6-44d179209362
-
-|Organization Profile
-|eb4f544c-2b97-4f99-97e4-357636228e36
-
-|===
-
-== List Specific Governance Profile Information with the CLI
-
-=== governance console info
-
-`> governance console info <profile-id>`
-
-This command lists all information for a specific governance profile Id.
-
-*Example command:*
- `governance console info 8ffd463f-86b2-4132-afc6-44d179209362`
-
-*Example output:*
-
-[cols="1,1"]
-|===
-|Id
-|8ffd463f-86b2-4132-afc6-44d179209362
-
-|Name
-|Best Practices
-
-|Description
-|Our organization bes practices
-
-|Rulesets
-|gav://a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/best-practices/1.0.0
-
-|Filter
-|tag:governed
-|===
 
 == Send Notifications to API Authors
 

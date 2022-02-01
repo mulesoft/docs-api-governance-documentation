@@ -16,15 +16,15 @@ then monitor your APIs' conformance on the API Governance console.
 API Governance is tightly integrated with the following tools:
 
 * xref:design-center::index.adoc[Anypoint Design Center (Design Center)], where governance
-  rules are designed and applied to API definitions (as dependencies)
+  rules are applied to API definitions (as dependencies)
 * xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where governance rules are catalogued and discovered
 
 == API Governance Components, Concepts, and Features
 
 === Governance Profiles
 
-A governance profile applies chosen rulesets to a select group of APIs. The APIs are validated
-against the rulesets to check conformance status. Conformance status is the percentage
+A governance profile applies chosen rulesets to a select group of APIs. The API definitions are validated
+against the rulesets. Conformance status is the percentage
 of APIs included in the governance profile that conform, or meet the rulesets' rules.
 
 A governance profile has two statuses, Normal and At Risk, which are based on the percentage
@@ -37,13 +37,18 @@ of conformant APIs in the governance profile.
 
 Rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
 REST API definition in the Anypoint Platform. Rulesets can include internal or external best
-practice guidelines and industry-specific government regulations. You can create custom rulesets using the
+practice guidelines and industry-specific government regulations. You can create custom rulesets using
 AML(Anything Modeling Language), a declarative language for defining metadata documents.
 
 === API Conformance
 
-API conformance is the whether the included API definitions that are cataloged in Exchange as REST APIs,
-meet all required rules included in the rulesets from one or multiple governance profiles.
+API conformance is whether an API definition passes all of the required rules included in
+one ore more rulesets. An API definition is only validated by rulesets included in governance
+profiles that also include that API definition. Since API definitions can be included in one or
+multiple governance profiles, an API definition could be Not Conformant even if it passes
+rulesets from one governance profile. 
+
+NOTE: API conformance only applies to API definitions that are cataloged in Exchange as REST APIs
 
 === Compliance Posture
 

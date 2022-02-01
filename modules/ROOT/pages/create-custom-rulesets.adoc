@@ -12,7 +12,7 @@ documents that can be parsed into graphs of information.
 
 For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
 
-== Create Ruleset Zip File with the CLI
+== Create Ruleset Documentation using the API Governance CLI
 
 This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
 
@@ -32,17 +32,17 @@ validation name [ 'scalar-parameters' ]
 Saving to /Users/suntersander/temp/prof-1.doc.zip
 ----
 
-== Create Custom Ruleset Assets in Anypoint Exchange
+== Create Custom Ruleset Assets in Exchange
 
 If you want to create custom rulesets in Exchange, you would create them as any other asset.
 
 include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
 
-=== Create Custom Rulesets in Anypoint Exchange with the CLI
+=== Create Custom Rulesets in Exchange using the API Governance CLI
 
 Ruleset upload is completed using Exchange commands and only type was added.
 
 *Example command:*
 
-`anypoint-cli exchange asset uploadv2 --name "cli ruleset asset 1" --description "cli ruleset asset 1 description" --properties.apiVersion v1 --properties.mainFile ruleset-validation.yaml --files.ruleset.yaml /Users/janedoe/temp/ruleset-validation.yaml cli-ruleset-asset/1.1.2 --files.docs.zip ~/temp/ruleset.doc.zip`
+`exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.apiVersion v1 --properties.mainFile ruleset-validation.yaml --files.ruleset.zip ~/temp/ruleset-validation.yaml.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset-validation.doc.zip`
