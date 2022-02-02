@@ -53,10 +53,10 @@ Level: Violation
 - Constraint: http://a.ml/amf/default_document#/declarations/profileNode_profile_required_validation
   Message: Property 'profile' is mandatory
   Severity: Violation
-  Target: file:///Users/suntersander/temp/prof-1-bad.yaml#/encodes
+  Target: file:///Users/janedoe/temp/prof-1-bad.yaml#/encodes
   Property: http://schema.org/name
   Range: [(3,0)-(11,19)]
-  Location: file:///Users/suntersander/temp/prof-1-bad.yaml
+  Location: file:///Users/janedoe/temp/prof-1-bad.yaml
 ----
 
 *Example command with api-spec:*

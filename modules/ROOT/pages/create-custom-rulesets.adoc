@@ -29,7 +29,7 @@ This command creates a ruleset definition zip file.
 
 ----
 validation name [ 'scalar-parameters' ]
-Saving to /Users/suntersander/temp/prof-1.doc.zip
+Saving to /Users/janedoe/temp/prof-1.doc.zip
 ----
 
 == Create Custom Ruleset Assets in Exchange
