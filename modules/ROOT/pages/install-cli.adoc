@@ -1,0 +1,24 @@
+= Installing the API Governance CLI
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Since API Governance is a Beta, you will need to install a specific
+version of the Anypoint CLI to get access to the API Governance commands.
+
+If you already have the Anypoint CLI installed on your device, this version
+of the Anypoint CLI will overwrite what you have installed, adding the API
+Governance commands.
+
+== Install the API Governance CLI
+
+Use the xref:3.x@anypoint-cli:ROOT:index.adoc[Anypoint CLI installation instructions] with the following
+exceptions: 
+
+* We recommend you install NPM 7 if you don't have it already installed.
+* To get the correct version of Anypoint CLI with API Governance included
+use the following command: 
+[source,bash]
+----
+npm i anypoint-cli@3.9.4-beta.governance
+----

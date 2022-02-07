@@ -5,10 +5,10 @@ endif::[]
 
 With API Governance you can:
 
-* *Share governance best practices:* Catalog governance rulesets within
+* *Share governance best practices:* Catalog Governance Rulesets within
   Anypoint Exchange to share with other developers.
 * *Apply consistent rules at design time:* Enable developers to apply
-  governance rules at design time in Anypoint API Designer.
+  Governance Rulesets at design time in Anypoint API Designer.
 * *Enforce governance within your DevOps organization:* Automatically
   apply standards to your API contract and definition within your
   CI/CD pipeline.
@@ -35,32 +35,40 @@ informing API owners if their APIs are not conformant and could cause alarm. Add
 tags before you begin the process of using API Governance ensures you can minimize
 interruptions to a select group of API owners who can be informed in advance.
 
-. xref:create-profiles.adoc[Select which rules to apply to which APIs in API Governance and using the API Governance CLI].
+. xref:create-profiles.adoc[Select which rules to apply to which APIs in API Governance or using the API Governance CLI].
 +
-Once you have access to API Governance and you have created tags to, the first step in governing your APIs is
-creating a governance profile. Governance profiles pair rulesets with filter criteria to specify which
-APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance profiles
+Once you have access to API Governance and you have created tags, the first step in governing your APIs is
+creating a Governance Profile. Governance Profiles pair Governance Rulesets with API filter criteria to specify which
+APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance Profiles
 can be added using the API Governance CLI as well.
 
 . xref:monitor-api-conformance.adoc[Monitor your governance posture in API Governance].
 +
 The API Governance console provides a visual reference for your API Conformance
-posture so you can easily monitor and track which APIs are conformant
+status so you can easily monitor and track which APIs are conformant
 or need corrections. You can also send notifications to API authors, indicating
 they need to update their API definitions to meet standards, and export
-reports containing the status and details of each governance profile. 
+reports containing the status and details of each Governance Profile. 
 
-. xref:find-conformance-issues.adoc[Find conformance issues as you author API definitions in Design Center and using the API Governance CLI].
+. xref:find-conformance-issues.adoc[Find conformance issues as you author API definitions in Design Center or using the API Governance CLI].
 +
-You can add rulesets as dependencies to API definitions projects in
+You can add Governance Rulesets as dependencies to API definitions projects in
 Anypoint Design Center. Once added, you will see errors or warnings in the console
-as you are writing your API definition. You can also validate ruleset format
+as you are writing your API definition. You can also validate Governance Ruleset format
 and API definition conformance using the API Governance CLI.
 
-. xref:create-custom-rulesets.adoc[Create Custom Rulesets in Exchange and using the API Governance CLI].
+. xref:create-custom-rulesets.adoc[Create Custom Rulesets in Exchange or using the API Governance CLI].
 +
 For the Beta, we have added MuleSoft Anypoint API Best Practices,
 OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
 Security Best Practices rulesets to Anypoint Exchange in advance. If you want
-to add custom rulesets to Exchange, you would add them as any other
-asset. You can also add rulesets with the API Governance CLI.
+to add custom Governance Rulesets to Exchange, you would add them as any other
+asset. You can also add Governance Rulesets with the API Governance CLI.
+
+. xref:install-cli.adoc[Install the API Governance CLI]
++
+Since API Governance is a Beta, you will need to install a specific
+version of the Anypoint CLI to get access to the API Governance commands.
+If you already have the Anypoint CLI installed on your device, this version
+of the Anypoint CLI will overwrite what you have installed, adding the API
+Governance commands.

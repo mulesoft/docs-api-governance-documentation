@@ -7,3 +7,4 @@
   * xref:monitor-api-conformance.adoc[Monitor API Conformance]
   * xref:find-conformance-issues.adoc[Find and Correct Issues in APIs]
   * xref:create-custom-rulesets.adoc[Create Custom Rulesets]
+  * xref:install-cli.adoc[Install API Governance CLI]

@@ -6,46 +6,46 @@ endif::[]
 Anypoint API Governance is a component of the Anypoint Platform that
 allows you to apply governance rules to your APIs as part of the
 API lifecycle. Governance rules can include internal or external best
-practice guidelines or industry-specific government regulations.
-You can apply these reusable groups of rules, or rulesets,
+practice guidelines or industry-specific government standards.
+You can apply these reusable groups of rules, or Governance Rulesets,
 directly to API definitions during the API design phase. Later, you can add
-these same rulesets to governance profiles and apply the governance profiles to multiple APIs across
-your organization. Once the governance profiles have been applied to your APIs, you can
-then monitor your APIs' conformance to those rulesets on the API Governance console.
+these same Governance Rulesets to Governance Profiles and apply the Governance Profiles to multiple APIs across
+your organization. Once the Governance Profiles have been applied to your APIs, you can
+then monitor your APIs' conformance to those Governance Rulesets on the API Governance console.
 
 API Governance is tightly integrated with the following tools:
 
-* xref:design-center::index.adoc[Anypoint Design Center (Design Center)], where governance
-  rules are applied to API definitions (as dependencies)
-* xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where governance rules are catalogued and discovered
+* xref:design-center::index.adoc[Anypoint Design Center (Design Center)], where Governance
+  Rulesets are applied to API definitions (as dependencies)
+* xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where Governance Rulesets are catalogued and discovered
 
-== API Governance Components, Concepts, and Features
+== API Governance Concepts
 
 === Governance Profiles
 
-A governance profile applies chosen rulesets to a select group of APIs. The API definitions are validated
-against the rulesets. 
+A Governance Profile applies chosen Governance Rulesets to a select group of APIs. The API definitions are validated
+against the Governance Rulesets. 
 
-A governance profile has two statuses, Normal and At Risk, which are based on the percentage
-of conformant APIs in the governance profile.
+A Governance Profile has two statuses, Normal and At Risk, which are based on the percentage
+of conformant APIs in the Governance Profile.
 
 * *Normal:* More than 70% of APIs are conformant
 * *At Risk:* Less than 70% of APIs are conformant
 
-=== Rulesets
+=== Governance Rulesets
 
-Rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
-REST API definition in the Anypoint Platform. Rulesets can include internal or external best
-practice guidelines and industry-specific government regulations. You can create custom rulesets using
+Governance Rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
+REST API definition in the Anypoint Platform. Governance Rulesets can include internal or external best
+practice guidelines and industry-specific government standards. You can create custom Governance Rulesets using
 AML(Anything Modeling Language), a declarative language for defining metadata documents.
 
 === API Conformance
 
 API conformance is whether an API definition passes all of the required rules included in
-one ore more rulesets. An API definition is only validated by rulesets included in governance
-profiles that also include that API definition. Since API definitions can be included in one or
-multiple governance profiles, an API definition could be Not Conformant even if it passes
-rulesets from one governance profile. 
+one ore more Governance Rulesets. An API definition is only validated by Governance Rulesets included in Governance
+Profiles that also include that API definition. Since API definitions can be included in one or
+multiple Governance Profiles, an API definition could be Not Conformant even if it passes
+Governance Rulesets from one Governance Profile. 
 
 NOTE: API conformance only applies to API definitions that are cataloged in Exchange as REST APIs
 
@@ -55,6 +55,6 @@ The status of your API definitions' conformance to selected rules, as configured
 
 === API Governance Console
 
-The main UI for API Governance where you can view governance profile statuses, API conformance
-across governance profiles, and nonconformance by severity across governance profiles. You can
-also add, update, and delete governance profiles from this page.
+The main UI for API Governance where you can view Governance Profile statuses, API conformance
+across Governance Profiles, and nonconformance by severity across Governance Profiles. You can
+also add, update, and delete Governance Profiles from this page.

@@ -4,10 +4,10 @@ include::_attributes.adoc[]
 endif::[]
 
 Just as with other Anypoint Platform components, API Governance requires
-specific permissions to access the API Governance console and create governance profiles.
+specific permissions to access the API Governance console and create Governance Profiles.
 
 Once API Governance has been added to your Anypoint Platform instance,
-you will need to assign the API Governance administrator permission
+you will need to assign the *API Governance administrator* permission
 to anyone you want to be able to use it.
 
 These permissions can be assigned in Anypoint Access Management.

@@ -3,13 +3,13 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-After you create your first governance profile, the API Governance console will
+After you create your first Governance Profile, the API Governance console will
 show various statuses to keep you apprised of your governance posture.
 You can also access this information from the command line using various commands.
 
 == View Governance Profile Statuses
 
-A profile has two statuses, Normal and At Risk, which are based on
+A Governance Profile has two statuses, Normal and At Risk, which are based on
 the percentage of conformant APIs in the profile.
 
 * *Normal:* More than 70% of APIs are conformant.
@@ -20,19 +20,19 @@ the percentage of conformant APIs in the profile.
 APIs are API definitions that are catalogued in Exchange as REST APIs.
 
 API conformance status indicates whether the API definitions that are included in
-your governance profiles pass all required rulesets.
+your Governance Profiles pass all applied Governance Rulesets.
 
-* *Conformant:* The APIs pass all required rulesets.
-* *Not Conformant:* The APIs fail at least one ruleset.
-* *Not Validated:* The APIs are not validated because they are not included in a governance profile.
+* *Conformant:* The APIs pass all applied Governance Rulesets.
+* *Not Conformant:* The APIs fail at least one Governance Ruleset.
+* *Not Validated:* The APIs are not validated because they are not included in a Governance Profile.
 
 == View Nonconformance by Severity Across Governance Profiles
 
-Nonconformance severity is categorized by the percentage of passed rulesets among all required rulesets.
+Nonconformance severity is categorized by the percentage of passed Governance Rulesets among all applied Governance Rulesets.
 
-* *High Severity:* 0 - 40% rulesets passed
-* *Medium Severity:* 41% - 80% rulesets passed
-* *Low Severity:* 81% - 99% rulesets passed
+* *High Severity:* 0 - 40% Governance Rulesets passed
+* *Medium Severity:* 41% - 80% Governance Rulesets passed
+* *Low Severity:* 81% - 99% Governance Rulesets passed
 
 == Send Notifications to API Authors
 
@@ -40,8 +40,8 @@ IMPORTANT: Notification emails can only be sent if the API owner has added a con
 to the API in Exchange. 
 
 When you notice an API is not conformant, you can take action by sending the API owner an email.
-The notification email includes the name of the API(s) that are not conformant, which ruleset(s)
-were failed, and the number and types of rules that were failed (violation, warning, info). 
+The notification email includes the name of the API(s) that are not conformant, which Governance Ruleset(s)
+failed, and the number and types of rules that were failed (violation, warning, info). 
 
 NOTE: Emails can be sent to API owners even when there are no conformance issues with the API. 
 
@@ -49,7 +49,7 @@ To send a notification email to the API owner:
 
 . Log in to Anypoint Platform using an account that has the API Governance Administrator permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governance*.
-. Select a Profile Name that is At Risk. 
+. Select a Governance Profile Name that is At Risk. 
 . Click the Notify Owner icon.
 . Review the email text and click *Notify Owner*.
 
@@ -57,10 +57,10 @@ To send a notification email to the API owner:
 
 You can export multiple different reports depending on the page where you click the Export Report button.
 
-On the main API Governance console page, on the Profiles tab, you can export a report that shows all of the governance profiles
-and their corresponding organization ids as well as the following information about the governance profiles: 
+On the main API Governance console page, on the Profiles tab, you can export a report that shows all of the Governance Profiles
+and their corresponding organization ids as well as the following information about the Governance Profiles: 
 
-* governance profile Ids
+* Governance Profile Ids
 * status
 * total APIs governed
 * number of conformant APIs
@@ -78,7 +78,7 @@ currently being governed and their corresponding organization ids as well as the
 * number of nonconformant APIs
 * time stamps
 
-On specific governance profile pages, you can export a report that shows the following information about the specific governance profile: 
+On specific Governance Profile pages, you can export a report that shows the following information about the specific Governance Profile: 
 
 * the organization Id
 * API Ids
