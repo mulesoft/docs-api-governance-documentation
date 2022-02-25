@@ -12,12 +12,10 @@ Governance commands.
 
 == Install the API Governance CLI
 
-Use the xref:3.x@anypoint-cli::index.adoc[Anypoint CLI installation instructions] with the following
-exceptions: 
+Install as follows: 
 
-* We recommend you install NPM 7 if you don't have it already installed.
-* To get the correct version of Anypoint CLI with API Governance included
-use the following command: 
+* We recommend you install NPM 7 if you don't have it already installed. See the https://nodejs.org/en/download/[NodeJS download page].
+* Install Anypoint CLI with API Governance included using the following command: 
 [source,bash]
 ----
 npm i anypoint-cli@3.9.4-beta.governance
