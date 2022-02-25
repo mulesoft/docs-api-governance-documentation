@@ -12,7 +12,7 @@ Governance commands.
 
 == Install the API Governance CLI
 
-Use the xref:3.x@anypoint-cli:ROOT:index.adoc[Anypoint CLI installation instructions] with the following
+Use the xref:3.x@anypoint-cli::index.adoc[Anypoint CLI installation instructions] with the following
 exceptions: 
 
 * We recommend you install NPM 7 if you don't have it already installed.
