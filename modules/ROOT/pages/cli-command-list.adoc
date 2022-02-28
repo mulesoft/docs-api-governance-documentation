@@ -7,9 +7,9 @@ You can use the following API Governance CLI commands to automate your governanc
 |Command |Description
 | xref:create-profiles.adoc#governance-console-create[governance console create] | Creates a governance profile
 | xref:create-profiles.adoc#governance-console-delete[governance console delete] | Deletes a governance profile
-| xref:create-profiles.adoc#governance-console-info[governance console info] | Lists governance profile information
+| xref:create-profiles.adoc#governance-console-info[governance console info] | Lists all information for a specific governance profile ID
 | xref:create-profiles.adoc#governance-console-list[governance console list] | Lists all governance profiles for an organization
 | xref:create-profiles.adoc#governance-console-update[governance console update] | Updates a governance profile
-| xref:create-custom-rulesets.adoc#governance-document[governance document] | Creates a governance ruleset definition `zip` file to upload and publish to Exchange.
+| xref:create-custom-rulesets.adoc#governance-document[governance document] | Creates a governance ruleset definition `zip` file to upload and publish to Exchange
 | xref:find-conformance-issues.adoc#governance-validate[governance validate] | Validates the governance ruleset definition's format
 |===
