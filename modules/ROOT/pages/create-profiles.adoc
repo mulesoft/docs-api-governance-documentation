@@ -177,6 +177,7 @@ your Governance Profile will include based on your updated filter criteria.
 
 == Update Governance Profiles Using the API Governance CLI
 
+[[governance-console-update]]
 === governance console update
 
 `> governance console update [options] <profile-id>`
