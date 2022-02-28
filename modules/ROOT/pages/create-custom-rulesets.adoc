@@ -16,21 +16,7 @@ For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=ex
 
 This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
 
-=== governance document
-
-`> governance document [options] <ruleset> <file>`
-
-This command creates a Governance Ruleset definition zip file.
-
-*Example command:*
-`governance document ~/temp/prof-1.yaml ~/temp/prof-1.doc.zip`
-
-*Example output:*
-
-----
-validation name [ 'scalar-parameters' ]
-Saving to /Users/janedoe/temp/prof-1.doc.zip
-----
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
 == Create Custom Governance Ruleset Assets in Exchange
 
