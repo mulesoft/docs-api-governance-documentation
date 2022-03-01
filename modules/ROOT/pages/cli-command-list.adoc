@@ -13,3 +13,7 @@ You can use the following API Governance CLI commands to automate your governanc
 | xref:create-custom-rulesets.adoc#governance-document[governance document] | Creates a governance ruleset definition `zip` file to upload and publish to Exchange
 | xref:find-conformance-issues.adoc#governance-validate[governance validate] | Validates the governance ruleset definition's format
 |===
+
+== See Also
+
+* xref:create-custom-rulesets.adoc#create-custom-governance-rulesets-in-exchange-using-the-api-governance-cli[Create Custom Governance Ruleset Assets in Exchange]
