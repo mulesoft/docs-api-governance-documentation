@@ -4,13 +4,12 @@ For the Beta, we have added MuleSoft Anypoint API Best Practices,
 OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
 Security Best Practices Governance Rulesets to Exchange in advance. 
 
-== Write Governance Rulesets using AML
+== Customize Governance Rulesets Using AML
 
-In the future, we will provide links to documentation for writing your own custom Governance Rulesets
-using AML (Anything Modeling Language), a declarative language for defining metadata
-documents that can be parsed into graphs of information.
+In the future, we will provide ways to customize Governance Rulesets.
 
-For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
+Governance Rulesets are written using AML (Anything Modeling Language), a declarative language for defining metadata
+documents that can be parsed into graphs of information. For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
 
 == Generate Governance Ruleset Documentation Using the API Governance CLI
 
