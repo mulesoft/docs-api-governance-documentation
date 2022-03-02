@@ -12,7 +12,7 @@ documents that can be parsed into graphs of information.
 
 For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
 
-== Create Governance Ruleset Documentation using the API Governance CLI
+== Generate Governance Ruleset Documentation Using the API Governance CLI
 
 This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
 
@@ -32,14 +32,14 @@ validation name [ 'scalar-parameters' ]
 Saving to /Users/janedoe/temp/prof-1.doc.zip
 ----
 
-== Create Custom Governance Ruleset Assets in Exchange
+== Publish Custom Governance Ruleset Assets in Exchange
 
 If you want to create custom Governance Rulesets in Exchange, you would create them as any other asset.
 
 include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
 
-=== Create Custom Governance Rulesets in Exchange using the API Governance CLI
+=== Publish Custom Governance Rulesets in Exchange using the API Governance CLI
 
 Governance Ruleset upload is completed using Exchange commands and only type was added.
 
