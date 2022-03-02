@@ -6,10 +6,7 @@ Security Best Practices Governance Rulesets to Exchange in advance.
 
 == Customize Governance Rulesets Using AML
 
-In the future, we will provide ways to customize Governance Rulesets.
-
-Governance Rulesets are written using AML (Anything Modeling Language), a declarative language for defining metadata
-documents that can be parsed into graphs of information. For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
+In the future, we will provide ways to customize Governance Rulesets. Governance Rulesets are written using AML (Anything Modeling Language), a declarative language for defining metadata documents that can be parsed into graphs of information. For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
 
 == Generate Governance Ruleset Documentation Using the API Governance CLI
 
