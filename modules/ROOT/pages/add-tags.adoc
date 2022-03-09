@@ -1,11 +1,11 @@
-= Specifying which APIs You Want to Govern
+= Specifying Which APIs You Want to Govern
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-Governance Rulesets validate rules to API definitions to ensure conformance with
+Governance rulesets validate rules to API definitions to ensure conformance with
 specific government or organization standards. Adding asset tags to APIs in Anypoint Exchange allows you
-to group APIs so you can apply the correct Governance Rulesets to the appropriate APIs. 
+to group APIs so you can apply the correct governance rulesets to the appropriate APIs. 
 
 include::exchange::partial$task-add-asset-tags.adoc[leveloffset=+1,tags=description;steps]
 

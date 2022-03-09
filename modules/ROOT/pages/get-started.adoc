@@ -5,26 +5,19 @@ endif::[]
 
 With API Governance you can:
 
-* *Share governance best practices:* Catalog Governance Rulesets within
-  Anypoint Exchange to share with other developers.
-* *Apply consistent rules at design time:* Enable developers to apply
-  Governance Rulesets at design time in Anypoint API Designer.
-* *Enforce governance within your DevOps organization:* Automatically
-  apply standards to your API contract and definition within your
-  CI/CD pipeline.
+* *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
+* *Apply consistent rules at design time:* Enable developers to apply governance rulesets at design time in Anypoint API Designer.
+* *Enforce governance within your DevOps organization:* Automatically apply standards to your API contract and definition within your CI/CD pipeline.
 
-IMPORTANT: If you do not see API Governance, it hasn't been added to your Anypoint
-Platform instance yet. You can have it added by contacting MuleSoft and providing
-your Organization Id. See xref:access-management::organization.adoc#manage-root-organization-settings[Manage Root Organization Settings]
-for more information on how to find your Organization Id.
+== Prerequisites
+
+To access the API Governance console:
+
+* MuleSoft must activate API Governance for your Anypoint Platform organization.
+
+* You must have the *API Governance administrator* permission set by your Anypoint Platform administrator. 
 
 .Govern your APIs using the following steps: 
-
-. xref:assign-api-gov-admins.adoc[Grant access to API Governance in Access Management].
-+
-Before you can access the API Governance component, you will need to have
-API Governance Administrator privileges. You can add these privileges in
-Anypoint Access Management as you would add other privileges.
 
 . xref:add-tags.adoc[Specify the APIs you want to govern in Exchange].
 +
@@ -72,3 +65,9 @@ version of the Anypoint CLI to get access to the API Governance commands.
 If you already have the Anypoint CLI installed on your device, this version
 of the Anypoint CLI will overwrite what you have installed, adding the API
 Governance commands.
+
+== See Also
+
+* xref:access-management::managing-permissions.adoc[Managing Permissions in Access Management]
+* xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
+* xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Adding and Removing Asset Tags in Exchange]

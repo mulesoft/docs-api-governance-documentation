@@ -4,7 +4,7 @@ For the Beta, we have added MuleSoft Anypoint API Best Practices,
 OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
 Security Best Practices Governance Rulesets to Exchange in advance. 
 
-== Write Governance Rulesets using AML
+== Write Governance Rulesets Using AML
 
 In the future, we will provide links to documentation for writing your own custom Governance Rulesets
 using AML (Anything Modeling Language), a declarative language for defining metadata
@@ -12,7 +12,7 @@ documents that can be parsed into graphs of information.
 
 For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=external,window=_blank].
 
-== Create Governance Ruleset Documentation using the API Governance CLI
+== Create Governance Ruleset Documentation Using the API Governance CLI
 
 This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
 
