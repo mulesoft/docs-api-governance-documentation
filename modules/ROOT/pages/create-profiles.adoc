@@ -15,33 +15,33 @@ of standards would need to be followed.
 
 Additionally, considering you may have
 hundreds of APIs, applying governance rulesets to each individual API is inefficient
-and tedious. Instead, using Governance Profiles, you can apply governance rulesets to
+and tedious. Instead, using governance profiles, you can apply governance rulesets to
 specific types of APIs broadly by combining governance rulesets and API filter criteria.
 
-== Create Governance Profiles
+== Create governance profiles
 
 Once you have access to API Governance and you have created tags to specify the APIs
-you want to govern, the next step in governing your APIs is creating a Governance Profile.
-Governance Profiles pair governance rulesets with API filter criteria to allow you to govern APIs at scale.
+you want to govern, the next step in governing your APIs is creating a governance profile.
+governance profiles pair governance rulesets with API filter criteria to allow you to govern APIs at scale.
 
-.To create a Governance Profile: 
+.To create a governance profile: 
 
 . Log in to Anypoint Platform using an account that has the API Governance permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governance*.
 . Click *New Profile*.
-. Enter a Governance Profile name that helps others understand what kinds of governance rulesets are included in it.
+. Enter a governance profile name that helps others understand what kinds of governance rulesets are included in it.
 +
-You can also add a purpose to explain more about your Governance Profile, like the kinds of APIs it governs.
+You can also add a purpose to explain more about your governance profile, like the kinds of APIs it governs.
 
 . Click *Next*.
 . Select one or more governance rulesets you want to use to govern your APIs.
 . Click *Next*.
-. Specify which APIs your Governance Profile should be applied to by selecting an API Type and/or Tag(s)
+. Specify which APIs your governance profile should be applied to by selecting an API Type and/or Tag(s)
 as filter criteria. 
 +
-The list of APIs shown includes which APIs the Governance Profile will be applied to based on your filter choices.
+The list of APIs shown includes which APIs the governance profile will be applied to based on your filter choices.
 +
-CAUTION: If you do not select filter criteria, your Governance Profile will be applied to *ALL* of your APIs in Exchange.
+CAUTION: If you do not select filter criteria, your governance profile will be applied to *ALL* of your APIs in Exchange.
 Also, the filter criteria will be applied to any APIs that are added to Exchange in the future.
 +
 
@@ -50,29 +50,29 @@ NOTE: The only API Type available for filtering criteria for the beta release is
 . Click *Next*.
 . Review your profile and click *Create Profile*.
 
-== Create Governance Profiles Using the API Governance CLI
+== Create governance profiles Using the API Governance CLI
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-create,leveloffset=+1]
 
-== List Governance Profile Information Using the API Governance CLI
+== List governance profile Information Using the API Governance CLI
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-list,leveloffset=+1]
 
-== List Specific Governance Profile Information Using the API Governance CLI
+== List Specific governance profile Information Using the API Governance CLI
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-info,leveloffset=+1]
 
-== Update Governance Profiles
+== Update governance profiles
 
-You can update Governance Profile information after creating them. 
+You can update governance profile information after creating them. 
 
-To update Governance Profile information: 
+To update governance profile information: 
 
 . Log in to Anypoint Platform using an account that has the API Governance permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governanace*.
 . On the Profiles tab of the API Governance console page, click the kebab icon for the
-  Governance Profile you want to update, and select *Edit*.
-. You can edit the following items in the Governance Profile: 
+  governance profile you want to update, and select *Edit*.
+. You can edit the following items in the governance profile: 
 +
 * General Information
   * Profile Name
@@ -83,22 +83,22 @@ To update Governance Profile information:
   * Tags
 +
 NOTE: After you have made your edits, the Total APIs will be updated to indicate how many APIs
-your Governance Profile will include based on your updated filter criteria.
+your governance profile will include based on your updated filter criteria.
 
 . Click *Update Profile*.
 
-== Update Governance Profiles Using the API Governance CLI
+== Update a Governance Profile Using the API Governance CLI
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-update,leveloffset=+1]
 
 == Delete a Governance Profile
 
-To delete a Governance Profile: 
+To delete a governance profile: 
 
 . Log in to Anypoint Platform using an account that has the API Governance permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governanace*.
 . On the Profiles tab of the API Governance console page, click the kebab icon for the
-  Governance Profile you want to update, and select *Delete*.
+  governance profile you want to update, and select *Delete*.
 . Click *Yes, Delete*.
 
 == Delete a Governance Profile Using the API Governance CLI

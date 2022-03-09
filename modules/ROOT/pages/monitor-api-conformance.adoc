@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-After you create your first Governance Profile, the API Governance console will
+After you create your first governance profile, the API Governance console will
 show various statuses to keep you apprised of your governance posture.
 You can also access this information from the command line using various commands.
 
@@ -24,7 +24,7 @@ your Governance Profiles pass all applied governance rulesets.
 
 * *Conformant:* The APIs pass all applied governance rulesets.
 * *Not Conformant:* The APIs fail at least one governance ruleset.
-* *Not Validated:* The APIs are not validated because they are not included in a Governance Profile.
+* *Not Validated:* The APIs are not validated because they are not included in a governance profile.
 
 == View Nonconformance by Severity Across Governance Profiles
 
@@ -49,18 +49,18 @@ To send a notification email to the API owner:
 
 . Log in to Anypoint Platform using an account that has the API Governance Administrator permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governance*.
-. Select a Governance Profile Name that is At Risk. 
-. Click the Notify Owner icon.
+. Select a governance profile that is at risk. 
+. Click the `Notify Owner` icon.
 . Review the email text and click *Notify Owner*.
 
 == Export Reports
 
 You can export multiple different reports depending on the page where you click the Export Report button.
 
-On the main API Governance console page, on the Profiles tab, you can export a report that shows all of the Governance Profiles
-and their corresponding organization ids as well as the following information about the Governance Profiles: 
+On the main API Governance console page, on the Profiles tab, you can export a report that shows all of the governance profiles
+and their corresponding organization ids as well as the following information about the governance profiles: 
 
-* Governance Profile Ids
+* governance profile Ids
 * status
 * total APIs governed
 * number of conformant APIs
@@ -78,7 +78,7 @@ currently being governed and their corresponding organization ids as well as the
 * number of nonconformant APIs
 * time stamps
 
-On specific Governance Profile pages, you can export a report that shows the following information about the specific Governance Profile: 
+On specific governance profile pages, you can export a report that shows the following information about the specific governance profile: 
 
 * the organization Id
 * API Ids

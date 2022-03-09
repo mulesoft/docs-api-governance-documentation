@@ -31,8 +31,8 @@ interruptions to a select group of API owners who can be informed in advance.
 . xref:create-profiles.adoc[Select which rules to apply to which APIs in API Governance or using the API Governance CLI].
 +
 Once you have access to API Governance and you have created tags, the first step in governing your APIs is
-creating a Governance Profile. Governance Profiles pair governance rulesets with API filter criteria to specify which
-APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance Profiles
+creating a governance profile. Governance profiles pair governance rulesets with API filter criteria to specify which
+APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance profiles
 can be added using the API Governance CLI as well.
 
 . xref:monitor-api-conformance.adoc[Monitor your governance posture in API Governance].
