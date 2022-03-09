@@ -22,7 +22,7 @@ specific types of APIs broadly by combining governance rulesets and API filter c
 
 Once you have access to API Governance and you have created tags to specify the APIs
 you want to govern, the next step in governing your APIs is creating a governance profile.
-governance profiles pair governance rulesets with API filter criteria to allow you to govern APIs at scale.
+governance profiles pair governance rulesets with API filter criteria to enable you to govern APIs at scale.
 
 .To create a governance profile: 
 

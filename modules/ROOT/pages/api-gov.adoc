@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 Anypoint API Governance is a component of the Anypoint Platform that
-allows you to apply governance rules to your APIs as part of the
+enables you to apply governance rules to your APIs as part of the
 API lifecycle. Governance rules can include internal or external best
 practice guidelines or industry-specific government standards.
 You can apply these reusable groups of rules, or governance rulesets,

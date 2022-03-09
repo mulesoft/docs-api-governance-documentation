@@ -14,7 +14,7 @@ include::design-center::partial$task-add-api-dependency.adoc[leveloffset=+1,tags
 
 == Validate governance rulesets and API Definitions Using the API Governance CLI
 
-This command allows you to test your governance rulesets as you are developing them to be sure your format is correct.
+This command enables you to test your governance rulesets as you are developing them to be sure your format is correct.
 It can also be used to validate an API definition against a governance ruleset.
 
 NOTE: API definition dependencies are not supported at this time.
