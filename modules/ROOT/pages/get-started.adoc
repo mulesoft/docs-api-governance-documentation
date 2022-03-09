@@ -31,7 +31,7 @@ interruptions to a select group of API owners who can be informed in advance.
 . xref:create-profiles.adoc[Select which rules to apply to which APIs in API Governance or using the API Governance CLI].
 +
 Once you have access to API Governance and you have created tags, the first step in governing your APIs is
-creating a Governance Profile. Governance Profiles pair Governance Rulesets with API filter criteria to specify which
+creating a Governance Profile. Governance Profiles pair governance rulesets with API filter criteria to specify which
 APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance Profiles
 can be added using the API Governance CLI as well.
 
@@ -45,9 +45,9 @@ reports containing the status and details of each Governance Profile.
 
 . xref:find-conformance-issues.adoc[Find conformance issues as you author API definitions in Design Center or using the API Governance CLI].
 +
-You can add Governance Rulesets as dependencies to API definitions projects in
+You can add governance rulesets as dependencies to API definitions projects in
 Anypoint Design Center. Once added, you will see errors or warnings in the console
-as you are writing your API definition. You can also validate Governance Ruleset format
+as you are writing your API definition. You can also validate governance ruleset format
 and API definition conformance using the API Governance CLI.
 
 . xref:create-custom-rulesets.adoc[Create Custom Rulesets in Exchange or using the API Governance CLI].
@@ -55,8 +55,8 @@ and API definition conformance using the API Governance CLI.
 For the Beta, we have added MuleSoft Anypoint API Best Practices,
 OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
 Security Best Practices rulesets to Anypoint Exchange in advance. If you want
-to add custom Governance Rulesets to Exchange, you would add them as any other
-asset. You can also add Governance Rulesets with the API Governance CLI.
+to add custom governance rulesets to Exchange, you would add them as any other
+asset. You can also add governance rulesets with the API Governance CLI.
 
 . xref:install-cli.adoc[Install the API Governance CLI]
 +

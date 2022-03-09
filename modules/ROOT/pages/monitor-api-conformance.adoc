@@ -20,19 +20,19 @@ the percentage of conformant APIs in the profile.
 APIs are API definitions that are catalogued in Exchange as REST APIs.
 
 API conformance status indicates whether the API definitions that are included in
-your Governance Profiles pass all applied Governance Rulesets.
+your Governance Profiles pass all applied governance rulesets.
 
-* *Conformant:* The APIs pass all applied Governance Rulesets.
-* *Not Conformant:* The APIs fail at least one Governance Ruleset.
+* *Conformant:* The APIs pass all applied governance rulesets.
+* *Not Conformant:* The APIs fail at least one governance ruleset.
 * *Not Validated:* The APIs are not validated because they are not included in a Governance Profile.
 
 == View Nonconformance by Severity Across Governance Profiles
 
-Nonconformance severity is categorized by the percentage of passed Governance Rulesets among all applied Governance Rulesets.
+Nonconformance severity is categorized by the percentage of passed governance rulesets among all applied governance rulesets.
 
-* *High Severity:* 0 - 40% Governance Rulesets passed
-* *Medium Severity:* 41% - 80% Governance Rulesets passed
-* *Low Severity:* 81% - 99% Governance Rulesets passed
+* *High Severity:* 0 - 40% Governance rulesets passed
+* *Medium Severity:* 41% - 80% Governance rulesets passed
+* *Low Severity:* 81% - 99% Governance rulesets passed
 
 == Send Notifications to API Authors
 
@@ -40,7 +40,7 @@ IMPORTANT: Notification emails can only be sent if the API owner has added a con
 to the API in Exchange. 
 
 When you notice an API is not conformant, you can take action by sending the API owner an email.
-The notification email includes the name of the API(s) that are not conformant, which Governance Ruleset(s)
+The notification email includes the name of the API(s) that are not conformant, which governance ruleset(s)
 failed, and the number and types of rules that were failed (violation, warning, info). 
 
 NOTE: Emails can be sent to API owners even when there are no conformance issues with the API. 

@@ -2,11 +2,11 @@
 
 For the Beta, we have added MuleSoft Anypoint API Best Practices,
 OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
-Security Best Practices Governance Rulesets to Exchange in advance. 
+Security Best Practices governance rulesets to Exchange in advance. 
 
 == Write Governance Rulesets Using AML
 
-In the future, we will provide links to documentation for writing your own custom Governance Rulesets
+In the future, we will provide links to documentation for writing your own custom governance rulesets
 using AML (Anything Modeling Language), a declarative language for defining metadata
 documents that can be parsed into graphs of information.
 
@@ -20,14 +20,14 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,level
 
 == Create Custom Governance Ruleset Assets in Exchange
 
-If you want to create custom Governance Rulesets in Exchange, you would create them as any other asset.
+If you want to create custom governance rulesets in Exchange, you would create them as any other asset.
 
 include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
 
 === Create Custom Governance Rulesets in Exchange using the API Governance CLI
 
-Governance Ruleset upload is completed using Exchange commands and only type was added.
+Governance ruleset upload is completed using Exchange commands and only type was added.
 
 *Example command:*
 

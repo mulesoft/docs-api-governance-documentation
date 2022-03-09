@@ -1,6 +1,0 @@
-= Granting Access to API Governance
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
-
-To access the API Governance console you must have the *API Governance administrator* permission. You should request this from your Anypoint Platform administrator. 

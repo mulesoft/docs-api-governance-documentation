@@ -32,7 +32,7 @@ of conformant APIs in the Governance Profile.
 * *Normal:* More than 70% of APIs are conformant
 * *At Risk:* Less than 70% of APIs are conformant
 
-=== governance rulesets
+=== Governance Rulesets
 
 Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
 REST API definition in the Anypoint Platform. Governance rulesets can include internal or external best

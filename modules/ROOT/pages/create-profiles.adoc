@@ -3,38 +3,38 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You don't want to apply all of your Governance Rulesets to all of
-your APIs. Governance Rulesets should be applied based on the types of API
+You don't want to apply all of your governance rulesets to all of
+your APIs. Governance rulesets should be applied based on the types of API
 you are governing. 
 
 For instance, for APIs that handle healthcare
-information you would want to apply Governance Rulesets that make sure
+information you would want to apply governance rulesets that make sure
 all healthcare information standards are followed. Similarly,
 for APIs that handle financial information, a different set
 of standards would need to be followed. 
 
 Additionally, considering you may have
-hundreds of APIs, applying Governance Rulesets to each individual API is inefficient
-and tedious. Instead, using Governance Profiles, you can apply Governance Rulesets to
-specific types of APIs broadly by combining Governance Rulesets and API filter criteria.
+hundreds of APIs, applying governance rulesets to each individual API is inefficient
+and tedious. Instead, using Governance Profiles, you can apply governance rulesets to
+specific types of APIs broadly by combining governance rulesets and API filter criteria.
 
 == Create Governance Profiles
 
 Once you have access to API Governance and you have created tags to specify the APIs
 you want to govern, the next step in governing your APIs is creating a Governance Profile.
-Governance Profiles pair Governance Rulesets with API filter criteria to allow you to govern APIs at scale.
+Governance Profiles pair governance rulesets with API filter criteria to allow you to govern APIs at scale.
 
 .To create a Governance Profile: 
 
 . Log in to Anypoint Platform using an account that has the API Governance permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governance*.
 . Click *New Profile*.
-. Enter a Governance Profile name that helps others understand what kinds of Governance Rulesets are included in it.
+. Enter a Governance Profile name that helps others understand what kinds of governance rulesets are included in it.
 +
 You can also add a purpose to explain more about your Governance Profile, like the kinds of APIs it governs.
 
 . Click *Next*.
-. Select one or more Governance Rulesets you want to use to govern your APIs.
+. Select one or more governance rulesets you want to use to govern your APIs.
 . Click *Next*.
 . Specify which APIs your Governance Profile should be applied to by selecting an API Type and/or Tag(s)
 as filter criteria. 
