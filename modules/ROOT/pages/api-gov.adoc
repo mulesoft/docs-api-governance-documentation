@@ -37,7 +37,7 @@ of conformant APIs in the governance profile.
 Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
 REST API definition in the Anypoint Platform. Governance rulesets can include internal or external best
 practice guidelines and industry-specific government standards. You can create custom governance rulesets using
-AML(Anything Modeling Language), a declarative language for defining metadata documents.
+AML (Anything Modeling Language), a declarative language for defining metadata documents.
 
 === API Conformance
 
