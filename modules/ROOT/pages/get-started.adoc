@@ -35,7 +35,7 @@ creating a governance profile. Governance profiles pair governance rulesets with
 APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance profiles
 can be added using the Anypoint API Governance CLI as well.
 
-. xref:monitor-api-conformance.adoc[Monitor your governance posture in Anypoint API Governance].
+. xref:monitor-api-conformance.adoc[Monitor your governance conformance status in Anypoint API Governance].
 +
 The Anypoint API Governance console provides a visual reference for your API Conformance
 status so you can easily monitor and track which APIs are conformant

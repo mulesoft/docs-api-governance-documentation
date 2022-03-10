@@ -1,4 +1,4 @@
-= Governing APIs
+= Using Anypoint API Governance to Govern APIs
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -41,13 +41,13 @@ AML(Anything Modeling Language), a declarative language for defining metadata do
 
 === API Conformance
 
-API conformance is whether an API definition passes all of the required rules included in
-one ore more governance rulesets. An API definition is only validated by governance rulesets included in Governance
-Profiles that also include that API definition. Since API definitions can be included in one or
-multiple governance profiles, an API definition could be Not Conformant even if it passes
+API conformance indicates whether an API definition passes all of the required rules included in
+one ore more governance rulesets. An API definition is only validated by governance rulesets included in governance
+profiles that also include that API definition. Since API definitions can be included in one or
+multiple governance profiles, an API definition could be `Not Conformant` even if it passes
 governance rulesets from one governance profile. 
 
-NOTE: API conformance only applies to API definitions that are cataloged in Exchange as REST APIs
+NOTE: API conformance applies only to API definitions that are published in Exchange as REST APIs.
 
 === Conformance Posture
 

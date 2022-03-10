@@ -4,7 +4,7 @@ include::_attributes.adoc[]
 endif::[]
 
 After you create your first governance profile, the API Governance console will
-show various statuses to keep you apprised of your governance posture.
+show various statuses to keep you apprised of your governance conformance.
 You can also access this information from the command line using various commands.
 
 == View Governance Profile Statuses
