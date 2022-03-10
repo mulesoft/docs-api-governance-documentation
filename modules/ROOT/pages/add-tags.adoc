@@ -1,4 +1,4 @@
-= Specifying Which APIs You Want to Govern
+= Tagging the APIs You Want to Govern
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

@@ -9,7 +9,7 @@ You can also access this information from the command line using various command
 
 == View Governance Profile Statuses
 
-A Governance Profile has two statuses, Normal and At Risk, which are based on
+A governance profile has two statuses, Normal and At Risk, which are based on
 the percentage of conformant APIs in the profile.
 
 * *Normal:* More than 70% of APIs are conformant.
@@ -17,10 +17,10 @@ the percentage of conformant APIs in the profile.
 
 == View API Conformance Across Governance Profiles
 
-APIs are API definitions that are catalogued in Exchange as REST APIs.
+APIs are API definitions that are published in Exchange as REST APIs.
 
 API conformance status indicates whether the API definitions that are included in
-your Governance Profiles pass all applied governance rulesets.
+your governance profiles pass all applied governance rulesets.
 
 * *Conformant:* The APIs pass all applied governance rulesets.
 * *Not Conformant:* The APIs fail at least one governance ruleset.

@@ -20,7 +20,7 @@ specific types of APIs broadly by combining governance rulesets and API filter c
 
 == Create governance profiles
 
-Once you have access to API Governance and you have created tags to specify the APIs
+Once you have created tags to specify the APIs
 you want to govern, the next step in governing your APIs is creating a governance profile.
 governance profiles pair governance rulesets with API filter criteria to enable you to govern APIs at scale.
 
@@ -97,7 +97,7 @@ To delete a governance profile:
 
 . Log in to Anypoint Platform using an account that has the API Governance permission.
 . In the navigation bar or the main Anypoint Platform page, click *API Governanace*.
-. On the Profiles tab of the API Governance console page, click the kebab icon for the
+. On the Profiles tab of the Anypoint API Governance console page, click the kebab icon for the
   governance profile you want to update, and select *Delete*.
 . Click *Yes, Delete*.
 

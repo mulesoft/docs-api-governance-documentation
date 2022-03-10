@@ -7,17 +7,17 @@ Anypoint API Governance is a component of the Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
 API lifecycle. Governance rules can include internal or external best
 practice guidelines or industry-specific government standards.
-You can apply these reusable groups of rules, or governance rulesets,
+You can apply these reusable groups of rules, called _governance rulesets_,
 directly to API definitions during the API design phase. Later, you can add
-these same governance rulesets to governance profiles and apply the governance profiles to multiple APIs across
-your organization. Once the governance profiles have been applied to your APIs, you can
-then monitor your APIs' conformance to those governance rulesets on the API Governance console.
+these same governance rulesets to _governance profiles_ and apply the governance profiles to multiple APIs across
+your organization. After the governance profiles have been applied to your APIs, you can
+then monitor your APIs' conformance to those governance rulesets on the Anypoint API Governance console.
 
-API Governance is tightly integrated with the following tools:
+Anypoint API Governance is tightly integrated with the following tools:
 
 * xref:design-center::index.adoc[Anypoint Design Center (Design Center)], where Governance
   Rulesets are applied to API definitions (as dependencies)
-* xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where governance rulesets are catalogued and discovered
+* xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where governance rulesets are published and discovered
 
 == API Governance Concepts
 
@@ -53,8 +53,8 @@ NOTE: API conformance only applies to API definitions that are cataloged in Exch
 
 The status of your API definitions' conformance to selected rules, as configured in your governance profiles.
 
-=== API Governance Console
+=== Anypoint API Governance Console
 
-The main UI for API Governance where you can view governance profile statuses, API conformance
+The main UI for Anypoint API Governance where you can view governance profile statuses, API conformance
 across governance profiles, and nonconformance by severity across governance profiles. You can
 also add, update, and delete governance profiles from this page.

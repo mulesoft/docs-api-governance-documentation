@@ -1,6 +1,6 @@
 = List of API Governance CLI Commands
 
-You can use the following API Governance CLI commands to automate your governance processes.  
+You can use the following CLI commands to automate your API governance processes.  
 
 include::anypoint-cli::partial$api-governance.adoc[tag=summary]
  
