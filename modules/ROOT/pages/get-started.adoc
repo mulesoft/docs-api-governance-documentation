@@ -9,7 +9,7 @@ With Anypoint Anypoint Anypoint API Governance you can:
 * *Apply consistent rules at design time:* Enable developers to apply governance rulesets at design time in Anypoint API Designer.
 * *Enforce governance within your DevOps organization:* Automatically apply standards to your API contract and definition within your CI/CD pipeline.
 
-== Prerequisites
+== Before You Begin
 
 To access the Anypoint API Governance console:
 
@@ -17,57 +17,34 @@ To access the Anypoint API Governance console:
 
 * You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator. 
 
+* If you plan to use the API Governance CLI, you must install it on the systems where you run local commands or where your automated tools, such as CI/CD pipelines or scripts, are executed.
+
 .Govern your APIs using the following steps: 
 
-. xref:add-tags.adoc[Specify the APIs you want to govern in Exchange].
+. xref:add-tags.adoc[Limit governance] to just the APIs that you want to govern.
 +
-For the Beta, we recommend that you create special tags and add them to
-a select group of APIs that you would like to use to experiment with Anypoint Anypoint API Governance.
-Keep in mind when governance is applied to APIs, automated emails are sent
-informing API owners if their APIs are not conformant and could cause alarm. Adding
-tags before you begin the process of using Anypoint  Anypoint API Governance ensures you can minimize
-interruptions to a select group of API owners who can be informed in advance.
+To limit governance to sets of APIs you are ready to govern, add tags to APIs in Exchange. This ensures that notifications are sent only to the API owners who have been informed and are ready to begin making their APIs conformant to your conformance profiles.
 
-. xref:create-profiles.adoc[Select which rulesets to apply to which APIs using Anypoint Anypoint API Governance].
+. xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
 +
-After you have created tags, the next step in governing your APIs is
-creating a governance profile. Governance profiles pair governance rulesets with API filter criteria to specify which
-APIs in Anypoint Exchange you want to govern and how you want to govern them. Governance profiles
-can be added using the Anypoint API Governance CLI as well.
+Add profiles in the API Governance console or using the governance CLI to group and apply rulesets to sets of APIs. 
 
-. xref:monitor-api-conformance.adoc[Monitor your governance conformance status in Anypoint API Governance].
+. xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 +
-The Anypoint API Governance console provides a visual reference for your API Conformance
-status so you can easily monitor and track which APIs are conformant
-or need corrections. You can also send notifications to API authors, indicating
-they need to update their API definitions to meet standards, and export
-reports containing the status and details of each governance profile. 
+The API Governance console enables you to monitor and report on your organization's conformance success and failure. You can send notifications from the console to API authors to inform them that they need to update their API definitions to meet standards. 
 
-. xref:find-conformance-issues.adoc[Find conformance issues as you author API definitions in Design Center or using the Anypoint API Governance CLI].
+. xref:find-conformance-issues.adoc[Find conformance issues] as you author in Design Center or by using the Anypoint API Governance CLI.
 +
-You can add governance rulesets as dependencies to API definitions projects in
-Anypoint Design Center. After rulesets are added, you will see errors or warnings in the console
-as you are writing your API definition. You can also validate governance ruleset format
-and API definition conformance using the Anypoint API Governance CLI.
+You can add governance rulesets as dependencies to API definitions projects in Design Center API Designer. After rulesets are added, messages are shown in the *Project Errors* section of API Designer
+as you are writing your API definition. You can also validate governance ruleset format and API definition conformance using the Anypoint API Governance CLI.
 
-. xref:create-custom-rulesets.adoc[Create Custom Rulesets in Exchange or using the Anypoint API Governance CLI].
+. xref:create-custom-rulesets.adoc[Create custom rulesets] and upload them to Exchange.
 +
-For the Beta, we have added MuleSoft Anypoint API Best Practices,
-OpenAPI Best Practices, OWASP API Security Top 10, and Authentication
-Security Best Practices rulesets to Anypoint Exchange in advance. If you want
-to add custom governance rulesets to Exchange, you would add them as any other
-asset. You can also add governance rulesets with the Anypoint API Governance CLI.
-
-. xref:install-cli.adoc[Install the Anypoint API Governance CLI]
-+
-Since Anypoint API Governance is a Beta, you will need to install a specific
-version of the Anypoint CLI to get access to the Anypoint API Governance commands.
-If you already have the Anypoint CLI installed on your device, this version
-of the Anypoint CLI will overwrite what you have installed, adding the API
-Governance commands.
+MuleSoft provides several commonly-used rulesets. If you want
+to add custom governance rulesets to Exchange, you can download and modify the provided rulesets and upload the custom rulesets to Exchange in the same way you download and upload other assets. 
 
 == See Also
 
 * xref:access-management::managing-permissions.adoc[Managing Permissions in Access Management]
-* xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
+// * xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
 * xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Adding and Removing Asset Tags in Exchange]

@@ -1,4 +1,4 @@
-= Using Anypoint API Governance to Govern APIs
+= Anypoint API Governance Overview
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -20,6 +20,8 @@ Anypoint API Governance is tightly integrated with the following tools:
 * xref:exchange::index.adoc[Anypoint Exchange (Exchange)], where governance rulesets are published and discovered
 
 == API Governance Concepts
+
+Following are the concepts you need to know to use API Governance.
 
 === Governance Profiles
 
@@ -48,10 +50,6 @@ multiple governance profiles, an API definition could be `Not Conformant` even i
 governance rulesets from one governance profile. 
 
 NOTE: API conformance applies only to API definitions that are published in Exchange as REST APIs.
-
-=== Conformance Posture
-
-The status of your API definitions' conformance to selected rules, as configured in your governance profiles.
 
 === Anypoint API Governance Console
 
