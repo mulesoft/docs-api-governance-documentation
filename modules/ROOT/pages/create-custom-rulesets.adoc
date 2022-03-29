@@ -14,11 +14,11 @@ For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=ex
 
 == Create Governance Ruleset Documentation Using the API Governance CLI
 
-This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
+Use the following command to generate a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
-== governance document
+=== governance document
 
 `> governance document [options] <ruleset> <file>`
 
@@ -52,3 +52,66 @@ If you want to upload the custom rulesets using the CLI, use the `exchange asset
 *Example command:*
 
 `exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.apiVersion v1 --properties.mainFile ruleset-validation.yaml --files.ruleset.zip ~/temp/ruleset-validation.yaml.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset-validation.doc.zip`
+
+== Validate Governance Ruleset Format Using the API Governance CLI
+
+To test the format of your governance ruleset as you develop it, use the following command:
+
+// include::anypoint-cli::partial$api-governance.adoc[tag=governance-validate,leveloffset=+1]
+
+[[governance-validate]]
+== governance validate
+
+`> governance validate [options] <ruleset>`
+
+This command validates the Governance Ruleset definition's format.
+
+*Options:* 
+
+`--spec <api-specification>`     
+ 
+The `spec` command should be followed by a file location for an api-specification zip to validate with the governance ruleset.	
+
+*Example command without api-spec:*
+
+`governance validate ~/temp/prof-1-bad.yaml`
+
+*Example output without api-spec for valid ruleset:*
+
+`Ruleset conforms with Dialect`
+
+*Example output without api-spec for non valid ruleset:*
+
+----
+Ruleset does not conform with Dialect
+ModelId: file:///Users/janedoe/temp/prof-1-bad.yaml
+Profile: Validation Profile 1.0
+Conforms: false
+Number of results: 1`
+
+Level: Violation
+
+- Constraint: http://a.ml/amf/default_document#/declarations/profileNode_profile_required_validation
+  Message: Property 'profile' is mandatory
+  Severity: Violation
+  Target: file:///Users/janedoe/temp/prof-1-bad.yaml#/encodes
+  Property: http://schema.org/name
+  Range: [(3,0)-(11,19)]
+  Location: file:///Users/janedoe/temp/prof-1-bad.yaml
+----
+
+*Example command with api-spec:*
+
+`governance validate ~/temp/prof-1.yaml --spec ~/Downloads/positive-1.0.0-raml.zip`
+
+*Example output with a valid api-spec:*
+
+----
+Spec conforms with Ruleset
+
+Output with a non valid api-spec:
+Ruleset /path/temp/prof-1.yaml
+Spec /path/Downloads/negative-1.0.0-raml.zip
+Spec does not conform with Ruleset
+[.. full report shown here..]
+----
