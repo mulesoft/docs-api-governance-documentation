@@ -3,26 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-You don't want to apply all of your governance rulesets to all of
-your APIs. Governance rulesets should be applied based on the types of API
-you are governing. 
-
-For instance, for APIs that handle healthcare
-information you would want to apply governance rulesets that make sure
-all healthcare information standards are followed. Similarly,
-for APIs that handle financial information, a different set
-of standards would need to be followed. 
-
-Additionally, considering you may have
-hundreds of APIs, applying governance rulesets to each individual API is inefficient
-and tedious. Instead, using governance profiles, you can apply governance rulesets to
-specific types of APIs broadly by combining governance rulesets and API filter criteria.
-
-== Create governance profiles
-
-Once you have created tags to specify the APIs
-you want to govern, the next step in governing your APIs is creating a governance profile.
-governance profiles pair governance rulesets with API filter criteria to enable you to govern APIs at scale.
+After you have identified the APIs in Exchange that 
+you want to govern, the next step in governing your APIs is creating governance profiles. Governance profiles enable you to select just the sets of APIs you want to govern for each set of rulesets.
 
 .To create a governance profile: 
 

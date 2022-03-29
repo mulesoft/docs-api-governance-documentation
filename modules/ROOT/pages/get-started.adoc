@@ -35,7 +35,7 @@ Add profiles in the API Governance console or using the governance CLI to group 
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 +
-The API Governance console enables you to monitor and report on your organization's conformance success and failure. Inform API authors through notifications that they need to update their API definitions to meet standards. 
+The API Governance console enables you to monitor and report on your organization's conformance success and failure. Use notifications to inform API authors that they need to update their API definitions to meet standards. 
 
 . xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
 +
