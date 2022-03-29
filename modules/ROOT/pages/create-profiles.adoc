@@ -43,9 +43,9 @@ If you prefer to use a command to create an API Governance profile, use the foll
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
 [[governance-profile-create]]
-== governance console create
+== governance profile create
 
-`> governance console create [options] <profile-name> <ruleset-gavs>`
+`> governance profile create [options] <profile-name> <ruleset-gavs>`
 
 This command creates a governance profile. The argument "ruleset-gavs" should be a list of governance ruleset gavs formatted as follows:
 
@@ -65,7 +65,7 @@ This command creates a governance profile. The argument "ruleset-gavs" should be
 |===
 
 *Example command:*
- `governance console create "Profile for Demos" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0 --tags DemosTag --description "This is the demo description"`
+ `governance profile create "Profile for Demos" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0 --tags DemosTag --description "This is the demo description"`
 
 *Example output:*
 Profile Added
@@ -91,9 +91,10 @@ Profile Added
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
-=== governance console list
+[[governance-profile-list]]
+=== governance profile list
 
-`> governance console list`
+`> governance profile list`
 
 This command lists all Governance Profiles for an organization. You need this information when updating a Governance Profile.
 
@@ -117,14 +118,15 @@ If you prefer to use a command to list API Governance profile information, use t
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
-=== governance console info
+[[governance-profile-info]]
+=== governance profile info
 
-`> governance console info <profile-id>`
+`> governance profile info <profile-id>`
 
 This command lists all information for an API Governance Profile Id.
 
 *Example command:*
- `governance console info 8ffd463f-86b2-4132-afc6-44d179209362`
+ `governance profile info 8ffd463f-86b2-4132-afc6-44d179209362`
 
 *Example output:*
 
@@ -177,16 +179,17 @@ If you prefer to use a command to update an API Governance profile, use the foll
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
-=== governance console update
+[[governance-profile-update]]
+=== governance profile update
 
-`> governance console update [options] <profile-id>`
+`> governance profile update [options] <profile-id>`
 
 This command updates an existing Governance Profile. You can update the Governance Profile's
 Governance Rulesets, name, tags, and description.
 
 NOTE: You must know the Governance Profile Id to edit a Governance Profile. You can get the
 Governance Profile Ids for all of the Governance Profiles for an organization using the
-`governance console list` API Governance CLI command. 
+`governance profile list` API Governance CLI command. 
 
 *Options:* 
 
@@ -208,7 +211,7 @@ Governance Profile Ids for all of the Governance Profiles for an organization us
 |===
 
 *Example command:*
- `governance console update 51f9f94c-fb0c-43d4-9895-22c9e64f1537 --profile-name "New Name"``
+ `governance profile update 51f9f94c-fb0c-43d4-9895-22c9e64f1537 --profile-name "New Name"``
 
 *Example output:*
 `Profile updated 51f9f94c-fb0c-43d4-9895-22c9e64f1537`
@@ -230,14 +233,15 @@ If you prefer to use a command to delete an API Governance profile, use the foll
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
 
-=== governance console delete
+[[governance-profile-delete]]
+=== governance profile delete
 
-`> governance console delete <profile-id>`
+`> governance profile delete <profile-id>`
 
 This command deletes a specific Governance Profile.
 
 *Example command:*
-`governance console delete 8ffd463f-86b2-4132-afc6-44d179209362`
+`governance profile delete 8ffd463f-86b2-4132-afc6-44d179209362`
 
 *Example output:*
 `Profile with id 8ffd463f-86b2-4132-afc6-44d179209362 removed`
