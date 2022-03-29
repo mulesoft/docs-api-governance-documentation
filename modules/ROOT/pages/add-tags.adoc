@@ -6,4 +6,3 @@ endif::[]
 Add asset tags to APIs in Exchange to group APIs so you can apply specific governance rulesets to specific APIs. 
 
 See xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Adding and Removing Asset Tags in Exchange]
-

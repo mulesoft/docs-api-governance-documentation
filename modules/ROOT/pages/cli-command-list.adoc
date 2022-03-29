@@ -2,7 +2,19 @@
 
 You can use the following CLI commands to automate your API governance processes.  
 
-include::anypoint-cli::partial$api-governance.adoc[tag=summary]
+// include::anypoint-cli::partial$api-governance.adoc[tag=summary]
+
+[%header,cols="35a,65a"]
+|===
+|Command |Description
+| xref:api-governance.adoc#governance-console-create[governance profile create] | Creates a governance profile
+| xref:api-governance.adoc#governance-console-delete[governance profile delete] | Deletes a governance profile
+| xref:api-governance.adoc#governance-console-info[governance profile info] | Lists information for a specific governance profile ID
+| xref:api-governance.adoc#governance-console-list[governance profile list] | Lists all governance profiles for an organization
+| xref:api-governance.adoc#governance-console-update[governance profile update] | Updates a governance profile
+| xref:api-governance.adoc#governance-document[governance document] | Creates a governance ruleset definition `zip` file to upload and publish to Exchange
+| xref:api-governance.adoc#governance-validate[governance validate] | Validates the governance ruleset definition's format
+|===
  
 == See Also
 

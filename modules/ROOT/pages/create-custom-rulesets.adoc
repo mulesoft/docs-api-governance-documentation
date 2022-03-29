@@ -16,18 +16,38 @@ For more information on AML, see https://a.ml/docs/aml/aml[What is AML?,,role=ex
 
 This command generates a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
+//include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
+
+== governance document
+
+`> governance document [options] <ruleset> <file>`
+
+This command creates an API Governance ruleset definition `zip` file to upload and publish to Exchange.
+
+*Example command:*
+`governance document ~/temp/prof-1.yaml ~/temp/prof-1.doc.zip`
+
+*Example output:*
+
+----
+validation name [ 'scalar-parameters' ]
+Saving to `/Users/janedoe/temp/prof-1.doc.zip`
+----
+
+This command accepts the following options:
+
+Default options: `--help`, `-f`/`--fields` and `-o`/`--output`.
+Other options: `--files.docs.zip`
 
 == Create Custom Governance Ruleset Assets in Exchange
 
-If you want to create custom governance rulesets in Exchange, you would create them as any other asset.
+If you want to create custom governance rulesets based on rulesets that are already in Exchange, you can download and modify the rulesets and then upload them as new assets. 
 
-include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
+//include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
+To upload custom assets using the Exchange UI, see xref:exchange::to-create-an-asset#create-an-api-asset[Create an API Asset].
 
-=== Create Custom Governance Rulesets in Exchange using the API Governance CLI
-
-Governance ruleset upload is completed using Exchange commands and only type was added.
+If you want to upload the custom rulesets using the CLI, use the `exchange asset uploadv2` command.
 
 *Example command:*
 
