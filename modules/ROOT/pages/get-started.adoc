@@ -17,13 +17,17 @@ To access the Anypoint API Governance console:
 
 * You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator. 
 
-* If you plan to use the API Governance CLI, you must install it on the systems where you run local commands or where your automated tools, such as CI/CD pipelines or scripts, are executed.
+== Govern Your APIs
 
 .Govern your APIs using the following steps: 
 
+. xref:install-cli.adoc[(Optional) Install the API Governance CLI] to run commands locally or in automation tools.
++
+If you plan to use the API Governance CLI commands, install the API Governance CLI on the systems where you run local commands or where your automatation tools, such as CI/CD pipelines or scripts, are executed. 
+
 . xref:add-tags.adoc[Limit governance] to just the APIs that you want to govern.
 +
-To limit governance to sets of APIs you are ready to govern, add tags to APIs in Exchange. This ensures that notifications are sent only to the API owners who have been informed and are ready to begin making their APIs conformant to your conformance profiles.
+To limit governance to sets of APIs you are ready to govern, identify the API assets in Exchange. This enables you to apply rulesets to specific sets of APIs when you create governance profiles. It also ensures that governance conformance notifications are sent only to the API owners who have been informed and are ready to begin making their APIs conformant to your conformance profiles.
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
 +
@@ -31,17 +35,20 @@ Add profiles in the API Governance console or using the governance CLI to group 
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 +
-The API Governance console enables you to monitor and report on your organization's conformance success and failure. You can send notifications from the console to API authors to inform them that they need to update their API definitions to meet standards. 
+The API Governance console enables you to monitor and report on your organization's conformance success and failure. Inform API authors through notifications that they need to update their API definitions to meet standards. 
 
-. xref:find-conformance-issues.adoc[Find conformance issues] as you author in Design Center or by using the Anypoint API Governance CLI.
+. xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
 +
-You can add governance rulesets as dependencies to API definitions projects in Design Center API Designer. After rulesets are added, messages are shown in the *Project Errors* section of API Designer
-as you are writing your API definition. You can also validate governance ruleset format and API definition conformance using the Anypoint API Governance CLI.
+To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in Design Center API Designer. After rulesets are added, expand the *Project Errors* section to view conformance messages. You can also validate governance ruleset format and API conformance using the API Governance CLI.
+
+. xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange. 
++
+When you view a governed API asset in Exchange, select the *Conformance Status* page to view conformance information for that API.
 
 . xref:create-custom-rulesets.adoc[Create custom rulesets] and upload them to Exchange.
 +
 MuleSoft provides several commonly-used rulesets. If you want
-to add custom governance rulesets to Exchange, you can download and modify the provided rulesets and upload the custom rulesets to Exchange in the same way you download and upload other assets. 
+to add custom governance rulesets to Exchange, download and modify the provided rulesets and then upload these custom rulesets to Exchange in the same way you download and upload other assets. 
 
 == See Also
 

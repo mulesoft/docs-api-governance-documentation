@@ -1,0 +1,8 @@
+= View Conformance Status in Exchange 
+
+When you view a governed API asset in Exchange, select the *Conformance Status* page to view conformance information for that API. 
+
+To view conformance status information in Exchange:
+
+. Select an API asset in Exchange to view the asset details page.
+. Select the *Conformance Status* page in the left navigation.

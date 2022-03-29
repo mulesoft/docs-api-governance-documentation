@@ -51,6 +51,10 @@ governance rulesets from one governance profile.
 
 NOTE: API conformance applies only to API definitions that are published in Exchange as REST APIs.
 
+=== Conformance Status
+
+The status of your API definitions' conformance to selected rules, as configured in your governance profiles.
+
 === Anypoint API Governance Console
 
 The main UI for Anypoint API Governance where you can view governance profile statuses, API conformance
