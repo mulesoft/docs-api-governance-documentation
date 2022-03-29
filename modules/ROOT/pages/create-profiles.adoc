@@ -40,9 +40,9 @@ NOTE: The only API Type available for filtering criteria for the beta release is
 
 If you prefer to use a command to create an API Governance profile, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-create,leveloffset=+1]
+//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
-[[governance-console-create]]
+[[governance-profile-create]]
 == governance console create
 
 `> governance console create [options] <profile-name> <ruleset-gavs>`
@@ -89,9 +89,9 @@ Profile Added
 
 == List Governance Profile Information Using the API Governance CLI
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-list,leveloffset=+1]
+//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
-== governance console list
+=== governance console list
 
 `> governance console list`
 
@@ -115,7 +115,7 @@ This command lists all Governance Profiles for an organization. You need this in
 
 If you prefer to use a command to list API Governance profile information, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-info,leveloffset=+1]
+//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
 === governance console info
 
@@ -175,7 +175,7 @@ your governance profile will include based on your updated filter criteria.
 
 If you prefer to use a command to update an API Governance profile, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-update,leveloffset=+1]
+//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
 === governance console update
 
@@ -228,7 +228,7 @@ To delete a governance profile:
 
 If you prefer to use a command to delete an API Governance profile, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-console-delete,leveloffset=+1]
+//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
 
 === governance console delete
 

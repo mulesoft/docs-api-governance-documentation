@@ -20,7 +20,7 @@ This command does not validate the dependencies of the API definition, such as f
 // include::anypoint-cli::partial$api-governance.adoc[tag=governance-validate,leveloffset=+1]
 
 [[governance-validate]]
-== governance validate
+=== governance validate
 
 `> governance validate [options] <ruleset>`
 
