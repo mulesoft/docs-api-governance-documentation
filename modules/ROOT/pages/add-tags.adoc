@@ -1,4 +1,4 @@
-= Identify APIs to Govern
+= Identifying APIs to Govern
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]

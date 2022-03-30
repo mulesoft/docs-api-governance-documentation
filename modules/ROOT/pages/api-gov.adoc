@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+API Governance helps you improve your organization's API quality by enabling you to identify conformance issues and take steps to resolve them. You can govern APIs at scale by creating profiles using rulesets provided by MuleSoft or by creating your own. The console provides you with an overview of conformance for all governed APIs and enables you to notify developers to help improve API conformance.
+
 Anypoint API Governance is a component of the Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
 API lifecycle. Governance rules can include internal or external best

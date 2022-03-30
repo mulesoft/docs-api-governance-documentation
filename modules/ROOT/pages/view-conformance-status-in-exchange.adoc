@@ -1,4 +1,4 @@
-= View Conformance Status in Exchange 
+= Viewing Conformance Status in Exchange 
 
 When you view a governed API asset in Exchange, select the *Conformance Status* page to view conformance information for that API. 
 
