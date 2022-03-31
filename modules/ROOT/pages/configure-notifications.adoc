@@ -1,0 +1,19 @@
+= Enabling Conformance Notifications
+
+If you want to automatically send notifications when governance conformance issues are detected by API Governance, enable them in the API Governance console. 
+
+//You configure the notifications based on conditions, and when conformance validation issues are triggered, the notifications are automatically sent. 
+
+There are several triggers for validation, which might cause the status of conformance to change and result in notifications to API owners: 
+
+. Updating a governance profile, including adding or removing rulesets 
+. Publishing a new version of an API 
+. Changing tags on an API 
+. Updating governance rulesets 
+
+NOTE: If an API that is already in failed conformance status and the same version of the API is validated against the same set of rulesets that it has already failed, API Governance does not send a new notification. 
+
+To configure conformance notifications:
+
+. Navigate to the *Notifications* page of the API Governance profile for which you want to enable notifications.
+. Beside the condition for which you want to send notifications, set the slider to *Enabled*.

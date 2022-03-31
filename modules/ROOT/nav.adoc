@@ -4,6 +4,7 @@
   * xref:install-cli.adoc[Install the API Governance CLI]
   * xref:add-tags.adoc[Identify APIs to Govern]
   * xref:create-profiles.adoc[Apply Governance Rulesets to Specified APIs]
+  * xref:configure-notifications.adoc[Configure Conformance Notifications]
   * xref:monitor-api-conformance.adoc[Monitor API Conformance]
   * xref:find-conformance-issues.adoc[Find API Conformance Issues in API Definitions]
   * xref:view-conformance-status-in-exchange.adoc[View Conformance Status in Exchange]
