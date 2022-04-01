@@ -73,7 +73,7 @@ To validate the format of your governance ruleset as you develop it, use the fol
 
 // include::anypoint-cli::partial$api-governance.adoc[tag=governance-validate,leveloffset=+1]
 
-[[governance-validate]]
+[[governance-ruleset-validate]]
 == governance validate
 
 `> governance validate [options] <ruleset>`

@@ -1,9 +1,9 @@
-= Getting Started with Anypoint Anypoint API Governance
+= Getting Started with API Governance
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-With Anypoint Anypoint Anypoint API Governance you can:
+With Anypoint API Governance you can:
 
 * *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
 * *Apply consistent rules at design time:* Enable developers to apply governance rulesets at design time in Anypoint API Designer.

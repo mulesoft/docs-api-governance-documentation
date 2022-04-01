@@ -1,4 +1,8 @@
-= Enabling Conformance Notifications
+= Sending Conformance Notifications
+
+You can send notifications automatically by configuring them in the API Governance console. Alternatively, you can send the notifications manually from a governance profile.
+
+== Enable Conformance Notifications
 
 If you want to automatically send notifications when governance conformance issues are detected by API Governance, enable them in the API Governance console. 
 
@@ -17,3 +21,22 @@ To configure conformance notifications:
 
 . Navigate to the *Notifications* page of the API Governance profile for which you want to enable notifications.
 . Beside the condition for which you want to send notifications, set the slider to *Enabled*.
+
+== Send Notifications to API Authors
+
+IMPORTANT: Notification emails can only be sent if the API owner has added a contact email address
+to the API in Exchange. 
+
+When you notice an API is not conformant, you can take action by sending the API owner an email.
+The notification email includes the name of the APIs that are not conformant, which governance rulesets
+failed, and the number and types of rules that failed (violation, warning, and information). 
+
+NOTE: Emails can be sent to API owners even when there are no conformance issues with the API. 
+
+To send a notification email to the API owner: 
+
+. Log in to Anypoint Platform using an account that has the API Governance Administrator permission.
+. In the navigation bar or the main Anypoint Platform page, click *API Governance*.
+. Select a governance profile that is at risk. 
+. Click the `Notify Owner` icon.
+. Review the email text and click *Notify Owner*.

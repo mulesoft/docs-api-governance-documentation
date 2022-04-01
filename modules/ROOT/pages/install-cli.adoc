@@ -13,7 +13,7 @@ Install as follows:
 * Install Anypoint CLI with API Governance included using the following command: 
 [source,bash]
 ----
-npm i anypoint-cli@latest.governance
+npm i anypoint-cli@3.9.4-governance.rc1
 ----
 
 == See Also
