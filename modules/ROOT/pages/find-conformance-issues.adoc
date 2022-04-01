@@ -19,59 +19,23 @@ This command does not validate the dependencies of the API definition, such as f
 
 // include::anypoint-cli::partial$api-governance.adoc[tag=governance-validate,leveloffset=+1]
 
-[[governance-ruleset-validate]]
-=== governance ruleset validate
+[[governance-api-validate]]
+== governance api validate
 
-`> governance validate [options] <ruleset>`
+`> governance api validate <api-specification>`
 
-This command validates the Governance Ruleset definition's format.
+This command validates the API against the rulesets it has as dependencies.
 
-*Options:* 
+*Example command:*
 
-`--spec <api-specification>`     
- 
-The `spec` command should be followed by a file location for an api-specification zip to validate with the governance ruleset.	
+`governance api validate ~/temp/prof-1-bad.yaml`
 
-*Example command without api-spec:*
+//*Example output for a conformant API:*
 
-`governance validate ~/temp/prof-1-bad.yaml`
+//`xxx`
 
-*Example output without api-spec for valid ruleset:*
+//*Example output for a nonconformant API:*
 
-`Ruleset conforms with Dialect`
-
-*Example output without api-spec for non valid ruleset:*
-
-----
-Ruleset does not conform with Dialect
-ModelId: file:///Users/janedoe/temp/prof-1-bad.yaml
-Profile: Validation Profile 1.0
-Conforms: false
-Number of results: 1`
-
-Level: Violation
-
-- Constraint: http://a.ml/amf/default_document#/declarations/profileNode_profile_required_validation
-  Message: Property 'profile' is mandatory
-  Severity: Violation
-  Target: file:///Users/janedoe/temp/prof-1-bad.yaml#/encodes
-  Property: http://schema.org/name
-  Range: [(3,0)-(11,19)]
-  Location: file:///Users/janedoe/temp/prof-1-bad.yaml
-----
-
-*Example command with api-spec:*
-
-`governance validate ~/temp/prof-1.yaml --spec ~/Downloads/positive-1.0.0-raml.zip`
-
-*Example output with a valid api-spec:*
-
-----
-Spec conforms with Ruleset
-
-Output with a non valid api-spec:
-Ruleset /path/temp/prof-1.yaml
-Spec /path/Downloads/negative-1.0.0-raml.zip
-Spec does not conform with Ruleset
-[.. full report shown here..]
-----
+//----
+//xxx
+//----

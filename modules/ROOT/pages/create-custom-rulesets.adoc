@@ -74,27 +74,27 @@ To validate the format of your governance ruleset as you develop it, use the fol
 // include::anypoint-cli::partial$api-governance.adoc[tag=governance-validate,leveloffset=+1]
 
 [[governance-ruleset-validate]]
-== governance validate
+=== governance ruleset validate
 
-`> governance validate [options] <ruleset>`
+`> governance ruleset validate 
 
-This command validates the Governance Ruleset definition's format.
+This command validates the governance ruleset definition's format.
 
 *Options:* 
 
-`--spec <api-specification>`     
+`<api-specification>`     
  
-The `spec` command should be followed by a file location for an api-specification zip to validate with the governance ruleset.	
+Specify the file location for an api-specification zip to validate with the governance ruleset.	
 
-*Example command without api-spec:*
+*Example command:*
 
-`governance validate ~/temp/prof-1-bad.yaml`
+`governance ruleset validate ~/temp/prof-1-bad.yaml`
 
-*Example output without api-spec for valid ruleset:*
+*Example output for a valid ruleset:*
 
 `Ruleset conforms with Dialect`
 
-*Example output without api-spec for non valid ruleset:*
+*Example output for a nonvalid ruleset:*
 
 ----
 Ruleset does not conform with Dialect
