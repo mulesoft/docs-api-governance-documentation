@@ -76,13 +76,13 @@ To validate the format of your governance ruleset as you develop it, use the fol
 [[governance-ruleset-validate]]
 === governance ruleset validate
 
-`> governance ruleset validate 
+`> governance ruleset validate <governance-ruleset>
 
 This command validates the governance ruleset definition's format.
 
-*Options:* 
+//*Options:* 
 
-`<api-specification>`     
+//`<ruleset>`     
  
 Specify the file location for an api-specification zip to validate with the governance ruleset.	
 

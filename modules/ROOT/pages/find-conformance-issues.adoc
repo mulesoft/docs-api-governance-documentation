@@ -22,13 +22,13 @@ This command does not validate the dependencies of the API definition, such as f
 [[governance-api-validate]]
 == governance api validate
 
-`> governance api validate <api-specification>`
+`> governance api validate <governance-ruleset> <api-definition-zip-file>`
 
 This command validates the API against the rulesets it has as dependencies.
 
 *Example command:*
 
-`governance api validate ~/temp/prof-1-bad.yaml`
+`governance api validate ~/temp/prof-1.yaml ~/Downloads/positive-1.0.0-raml.zip`
 
 //*Example output for a conformant API:*
 
