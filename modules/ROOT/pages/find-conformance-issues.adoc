@@ -30,12 +30,14 @@ This command validates the API against the rulesets it has as dependencies.
 
 `governance api validate ~/temp/prof-1.yaml ~/Downloads/positive-1.0.0-raml.zip`
 
-//*Example output for a conformant API:*
+*Example output:*
 
-//`xxx`
+----
+Spec conforms with Ruleset
 
-//*Example output for a nonconformant API:*
-
-//----
-//xxx
-//----
+Output with a non valid api-spec:
+Ruleset /path/temp/prof-1.yaml
+Spec /path/Downloads/negative-1.0.0-raml.zip
+Spec does not conform with Ruleset
+[.. full report shown here..]
+----

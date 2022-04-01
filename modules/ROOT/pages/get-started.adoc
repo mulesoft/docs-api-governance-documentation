@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-With Anypoint API Governance you can:
+With API Governance you can:
 
 * *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
 * *Apply consistent rules at design time:* Enable developers to apply governance rulesets at design time in Anypoint API Designer.
@@ -11,9 +11,9 @@ With Anypoint API Governance you can:
 
 == Before You Begin
 
-To access the Anypoint API Governance console:
+To access the API Governance console:
 
-* MuleSoft must activate Anypoint API Governance for your Anypoint Platform organization.
+* MuleSoft must activate API Governance for your Anypoint Platform organization.
 
 * You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator. 
 

@@ -1,4 +1,4 @@
-= Anypoint API Governance Overview
+= API Governance Overview
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -44,9 +44,9 @@ NOTE: API conformance applies only to API definitions that are published in Exch
 
 The status of your API definitions' conformance to selected rules, as configured in your governance profiles.
 
-=== Anypoint API Governance Console
+=== API Governance Console
 
-The main UI for Anypoint API Governance where you can view governance profile statuses, API conformance across governance profiles, and nonconformance by severity across governance profiles. You can also add, update, and delete governance profiles from this page.
+The main UI for API Governance where you can view governance profile statuses, API conformance across governance profiles, and nonconformance by severity across governance profiles. You can also add, update, and delete governance profiles from this page.
 
 == See Also
 

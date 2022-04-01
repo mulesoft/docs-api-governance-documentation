@@ -115,19 +115,3 @@ Level: Violation
   Range: [(3,0)-(11,19)]
   Location: file:///Users/janedoe/temp/prof-1-bad.yaml
 ----
-
-*Example command with api-spec:*
-
-`governance validate ~/temp/prof-1.yaml --spec ~/Downloads/positive-1.0.0-raml.zip`
-
-*Example output with a valid api-spec:*
-
-----
-Spec conforms with Ruleset
-
-Output with a non valid api-spec:
-Ruleset /path/temp/prof-1.yaml
-Spec /path/Downloads/negative-1.0.0-raml.zip
-Spec does not conform with Ruleset
-[.. full report shown here..]
-----
