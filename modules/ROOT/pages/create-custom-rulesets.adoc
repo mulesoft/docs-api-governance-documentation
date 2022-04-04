@@ -23,9 +23,9 @@ If you want to create a ruleset that cannot be created by modifying one of the p
 . First search the ideas for new rulesets that have already been submitted in the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal].
 . If you do not find your idea there, submit your idea in the MuleSoft Ideas Portal.
 
-If you are interested in learning more how rulesets are written, see the  documentation and tutorial in the https://a.ml/docs/amf/using-amf/amf_validation[AML project,,role=external,window=_blank]. 
+If you are interested in learning more about how rulesets are written, see the AMF documentation and validation tutorial in the https://a.ml/docs/amf/using-amf/amf_validation[AML Open Source project^]. 
 
-NOTE: Custom rulesets are not supported by MuleSoft Support. For assistance with an issues with your custom rulesets, you can post an issue on the Github repository for the https://github.com/aml-org/aml-spec[AML Open Source project]. 
+NOTE: Custom rulesets are not supported by MuleSoft Support. For assistance with an issues with your custom rulesets, you can post an issue on the Github repository for the https://github.com/aml-org/aml-spec[AML Open Source project^]. 
 
 [[generate-ruleset-doc]]
 == Generate Documentation for a Ruleset File to Upload to Exchange
