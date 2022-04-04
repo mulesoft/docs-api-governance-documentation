@@ -22,20 +22,14 @@ To access the API Governance console:
 .Govern your APIs using the following steps: 
 
 . xref:install-cli.adoc[(Optional) Install the API Governance CLI] to run commands locally or in automation tools.
-+
-If you plan to use the API Governance CLI commands, install the API Governance CLI on the systems where you run local commands or where your automatation tools, such as CI/CD pipelines or scripts, are executed. 
 
-. xref:add-tags.adoc[Limit governance] to just the APIs that you want to govern.
-+
-To limit governance to sets of APIs you are ready to govern, identify the API assets in Exchange. This enables you to apply rulesets to specific sets of APIs when you create governance profiles. It also ensures that governance conformance notifications are sent only to the API owners who have been informed and are ready to begin making their APIs conformant to your conformance profiles.
+. xref:add-tags.adoc[Identify] the APIs that you want to govern.
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
 +
 Add profiles in the API Governance console or using the governance CLI to group and apply rulesets to sets of APIs. 
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
-+
-The API Governance console enables you to monitor and report on your organization's conformance success and failure. Use notifications to inform API authors that they need to update their API definitions to meet standards. 
 
 . xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
 +

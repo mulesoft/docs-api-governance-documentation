@@ -13,23 +13,24 @@ To create a custom ruleset based on one already in Exchange:
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
 . Validate the changes using the `governance validate` command. See <<validate-ruleset>>.
-. Generate the ruleset file as an asset document. See <<generate-ruleset>>.
+. Generate the ruleset file as an asset document. See <<generate-ruleset-doc>>.
 . Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset uploadv2` command. See <<publish-to-exchange>>.
 
-== Write Governance Rulesets Using AML
+== Create Completely New Custom Rulesets
 
-If you need to create a ruleset that is very different from any of the provided rulesets, you can write your own 
-using AML (Anything Modeling Language), a declarative language for defining metadata
-documents that can be parsed into graphs of information.
+If you want to create a ruleset that cannot be created by modifying one of the provided rulesets:
 
-For more information on AML, see https://a.ml/docs/[What is AML?,,role=external,window=_blank].
+. First search the ideas for new rulesets that have already been submitted in the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal].
+. If you do not find your idea there, submit your idea in the MuleSoft Ideas Portal.
+
+If you are interested in learning more how rulesets are written, see the  documentation and tutorial in the https://a.ml/docs/amf/using-amf/amf_validation[AML project,,role=external,window=_blank]. 
 
 NOTE: Custom rulesets are not supported by MuleSoft Support. For assistance with an issues with your custom rulesets, you can post an issue on the Github repository for the https://github.com/aml-org/aml-spec[AML Open Source project]. 
 
-[[generate-ruleset]]
-== Generate a Ruleset File to Upload to Exchange
+[[generate-ruleset-doc]]
+== Generate Documentation for a Ruleset File to Upload to Exchange
 
-Use the following command to generate a zip file that can be used in Exchange asset upload with the `--files.docs.zip` option:
+Use the following command to generate a documentation zip file for a ruleset YAML file. The resulting documentation `zip` file can then be used in an Exchange asset upload using the `--files.docs.zip` option:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
@@ -38,10 +39,10 @@ Use the following command to generate a zip file that can be used in Exchange as
 
 `> governance document [options] <ruleset> <file>`
 
-This command creates an API Governance ruleset definition `zip` file to upload and publish to Exchange.
+This command creates the documentation for an API Governance ruleset definition `zip` file that you want to upload and publish to Exchange. 
 
 *Example command:*
-`governance document ~/temp/prof-1.yaml ~/temp/prof-1.doc.zip`
+`governance document ~/temp/ruleset.yaml ~/temp/ruleset.doc.zip`
 
 *Example output:*
 
@@ -62,11 +63,11 @@ Other options: `--files.docs.zip`
 
 To upload custom assets using the Exchange UI, see xref:exchange::to-create-an-asset#create-an-api-asset[Create an API Asset].
 
-To upload the custom rulesets using the CLI, use the `exchange asset uploadv2` command.
+To upload the custom rulesets using the CLI, use the `exchange asset uploadv2` command. In the following example, the zipped YAML ruleset file is specified in `--files.ruleset.zip ~/temp/ruleset.yaml.zip`
 
 *Example command:*
 
-`anypoint-cli exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.apiVersion v1 --properties.mainFile ruleset-validation.yaml --files.ruleset.zip ~/temp/ruleset-validation.yaml.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset-validation.doc.zip`
+`anypoint-cli exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.yaml cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
 
 [[validate-ruleset]]
 == Validate Governance Ruleset Format Using the API Governance CLI

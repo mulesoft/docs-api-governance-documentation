@@ -3,68 +3,69 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-After you create your first governance profile, the API Governance console will
-show various statuses to keep you apprised of your governance conformance.
-You can also access this information from the command line using various commands.
+After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's REST API definitions' conformance success and failure.  
 
-== View Governance Profile Statuses
+== Status Information on the Console
 
-A governance profile has two statuses, Normal and At Risk, which are based on
-the percentage of conformant APIs in the profile.
+You can view the latest status information on the console.
+
+Governance Profile Statuses::
+
+You can view profile statuses in the console. Governance profile statuses are based on the percentage of conformant APIs in the profile:
 
 * *Normal:* More than 70% of APIs are conformant.
 * *At Risk:* Less than 70% of APIs are conformant.
 
-== View API Conformance Across Governance Profiles
+API Conformance Across Governance Profiles::
 
-APIs are API definitions that are published in Exchange as REST APIs.
-
-API conformance status indicates whether the API definitions that are included in
-your governance profiles pass all applied governance rulesets.
+API conformance status indicates whether the API definitions that are included in your governance profiles pass all applied governance rulesets:
 
 * *Conformant:* The APIs pass all applied governance rulesets.
 * *Not Conformant:* The APIs fail at least one governance ruleset.
 * *Not Validated:* The APIs are not validated because they are not included in a governance profile.
 
-== View Nonconformance by Severity Across Governance Profiles
+Nonconformance by Severity Across Governance Profiles::
 
-Nonconformance severity is categorized by the percentage of passed governance rulesets among all applied governance rulesets.
+Nonconformance severity is categorized by the percentage of passed governance rulesets among all applied governance rulesets:
 
 * *High Severity:* 0 - 40% Governance rulesets passed
 * *Medium Severity:* 41% - 80% Governance rulesets passed
 * *Low Severity:* 81% - 99% Governance rulesets passed
 
-== Export Reports
+== Reports
 
-You can export multiple different reports depending on the page where you click the Export Report button.
+You can export reports from the console by clicking the `Export Report` button beside the type of information you want to export.
 
-On the main API Governance console page, on the Profiles tab, you can export a report that shows all of the governance profiles
-and their corresponding organization ids as well as the following information about the governance profiles: 
+Governance Profile Report::
+On the main API Governance console page, on the `Profiles` tab, you can export a report of governance profile information, such as: 
 
-* governance profile Ids
-* status
-* total APIs governed
-* number of conformant APIs
-* number of nonconformant APIs
-* time stamps
-* associated tags
+* Organization ID 
+* Governance profile IDs
+* Status
+* Total APIs governed
+* Number of conformant APIs
+* Number of nonconformant APIs
+* Time stamps
+* Associated tags
 
-On the main API Governance console page, on the APIs tab, you can export a report that shows all of the APIs
-currently being governed and their corresponding organization ids as well as the following information about the APIs: 
+Governed API Report::
+On the main API Governance console page, on the *APIs* tab, you can export a report that shows your governed APIs' information, such as:  
 
-* API Id
-* versions
-* total number of APIs
-* number of conformant APIs
-* number of nonconformant APIs
-* time stamps
+* Organization ID 
+* API ID
+* Versions
+* Total number of APIs
+* Number of conformant APIs
+* Number of nonconformant APIs
+* Time stamps
 
-On specific governance profile pages, you can export a report that shows the following information about the specific governance profile: 
+Specific Profile Report::
+On a selected governance profile page, you can export a report that shows the the selected governance profile's information, such as: 
 
-* the organization Id
+* Organization ID
 * API Ids
-* versions
-* total number of APIs
-* number of conformant APIs
-* number of nonconformant APIs
-* time stamps
+* Versions
+* Total number of APIs
+* Number of conformant APIs
+* Number of nonconformant APIs
+* Time stamps
