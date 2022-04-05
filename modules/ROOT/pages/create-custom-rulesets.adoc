@@ -18,9 +18,9 @@ To create a custom ruleset based on one already in Exchange:
 
 == Create Completely New Custom Rulesets
 
-If you want to create a ruleset that cannot be created by modifying one of the provided rulesets:
+If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
 
-. First search the ideas for new rulesets that have already been submitted in the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal].
+. First search the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal] for ideas for new rulesets that have already been submitted.
 . If you do not find your idea there, submit your idea in the MuleSoft Ideas Portal.
 
 If you are interested in learning more about how rulesets are written, see the AMF documentation and validation tutorial in the https://a.ml/docs/amf/using-amf/amf_validation[AML Open Source project^]. 
