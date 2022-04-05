@@ -32,17 +32,10 @@ Add profiles in the API Governance console or using the governance CLI to group 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 
 . xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
-+
-To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in Design Center API Designer. After rulesets are added, expand the *Project Errors* section to view conformance messages. You can also validate governance ruleset format and API conformance using the API Governance CLI.
 
 . xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange. 
 +
 When you view a governed API asset in Exchange, select the *Conformance Status* page to view conformance information for that API.
-
-. xref:create-custom-rulesets.adoc[Create custom rulesets] and upload them to Exchange.
-+
-MuleSoft provides several commonly-used rulesets. If you want
-to add custom governance rulesets to Exchange, download and modify the provided rulesets and then upload these custom rulesets to Exchange in the same way you download and upload other assets. 
 
 == See Also
 
