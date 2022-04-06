@@ -32,9 +32,9 @@ If you are interested in learning more about how rulesets are written, see the h
 
 //include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
-You can publish a ruleset to Exchange as you do any other asset. 
+You can publish a ruleset to Exchange as you do any other asset: 
 
-* To upload your custom ruleset using the Exchange UI, see xref:exchange::to-create-an-asset#create-an-api-asset[Create an API Asset].
+* To upload your custom ruleset using the Exchange UI, see xref:exchange::to-create-an-asset#create-an-api-asset[Create an Asset].
 
 * To upload your custom ruleset using the CLI, use the `exchange asset uploadv2` command. In the following example, the zipped YAML ruleset file is specified in `--files.ruleset.zip ~/temp/ruleset.yaml.zip`.
 
