@@ -12,33 +12,24 @@ The API Governance console guides you through configuring profiles and shows con
 
 .To create a governance profile using the API Governance console: 
 
-. Log in to Anypoint Platform using an account that has the API Governance permission.
-. In the navigation bar or the main Anypoint Platform page, click *API Governance*.
-. Click *New Profile*.
-. Enter a governance profile name that helps others understand what kinds of governance rulesets are included in it.
+. In *API Governance*, click *New Profile*.
+. Follow the user interface prompts to enter the following:
 +
-You can also add a purpose to explain more about your governance profile, like the kinds of APIs it governs.
-
-. Click *Next*.
-. Select one or more governance rulesets you want to use to govern your APIs.
-. Click *Next*.
-. Specify which APIs your governance profile should be applied to by selecting an API Type and/or Tag(s)
-as filter criteria. 
+* *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are governed in this profile.
+* *Rulesets*: Select one or more rulesets you want to use to govern your APIs.
+* *Filter Criteria*: Specify which APIs your governance profile should be applied to by selecting an API type, tags, and categories. Selections appear in the *Tag* and *Category* fields only if APIs are found that have those tags or categories. See xref:add-tags.adoc[Identifying APIs to Govern].
 +
-The list of APIs shown includes which APIs the governance profile will be applied to based on your filter choices.
+After you select the filters, the APIs are shown that meet the filter criteria that you have selected.
 +
-CAUTION: If you do not select filter criteria, your governance profile will be applied to *ALL* of your APIs in Exchange.
+CAUTION: If you do not select filter criteria, your governance profile will be applied to _all_ of your APIs in Exchange.
 Also, the filter criteria will be applied to any APIs that are added to Exchange in the future.
 +
-
-NOTE: The only API Type available for filtering criteria for the beta release is REST APIS.
-
-. Click *Next*.
-. Review your profile and click *Create Profile*.
+* *Notifications:* Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications]. 
+* *Review:* Review your profile and click *Create*.
 
 == Create Governance Profiles Using the API Governance CLI
 
-If you prefer to use a command to create an API Governance profile, use the following command:
+If you want to use a command to create an API Governance profile, use the following command:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
@@ -148,7 +139,7 @@ This command lists all information for an API Governance Profile Id.
 |tag:governed
 |===
 
-== Update Governance Profiles Using the API Governance Console
+== Update a Governance Profile Using the API Governance Console
 
 You can update governance profile information after creating them. The API Governance console guides you through updating profiles. 
 
@@ -229,7 +220,7 @@ To delete a governance profile:
 
 == Delete a Governance Profile Using the API Governance CLI
 
-If you prefer to use a command to delete an API Governance profile, use the following command:
+To use the CLI to delete an API Governance profile, using the following command:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
 

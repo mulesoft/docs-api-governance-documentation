@@ -2,6 +2,7 @@
 
 You can send notifications automatically by configuring them in the API Governance console. Alternatively, you can send the notifications manually from a governance profile.
 
+[[send-auto-notifs]]
 == Send Automated Conformance Notifications
 
 If you want to automatically send notifications when governance conformance issues are detected by API Governance, enable them in the API Governance console. 
@@ -24,6 +25,7 @@ To configure conformance notifications:
 . Navigate to the *Notifications* page of the API Governance profile for which you want to enable notifications.
 . Beside the condition for which you want to send notifications, set the slider to *Enabled*.
 
+[[send-manual-notifs]]
 == Send Notifications to API Owners
 
 When you notice an API is not conformant, you can take action by sending the API owner an email.
