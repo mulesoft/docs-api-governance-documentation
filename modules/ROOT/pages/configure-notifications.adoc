@@ -10,7 +10,7 @@ If you want to automatically send notifications when governance conformance issu
 
 Automated notifications are sent to the contact email address for the contact specified in the API. These  notifications are sent only if there is a valid contact email address for the API in Exchange.
 
-Automated notifications are sent when the conformance status changes during validation. Following are the status changes that might cause the status of conformance to change and result in notifications: 
+Automated notifications are sent for each ruleset that has a new conformance failure when the conformance status changes during validation. Following are the status changes that might cause the status of conformance to change and result in notifications: 
 
 . Updating a governance profile, including adding or removing rulesets 
 . Publishing a new version of an API 
