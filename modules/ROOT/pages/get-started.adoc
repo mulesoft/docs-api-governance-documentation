@@ -41,4 +41,3 @@ When you view a governed API asset in Exchange, select the *Conformance Status* 
 
 * xref:access-management::managing-permissions.adoc[Managing Permissions in Access Management]
 // * xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
-* xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Adding and Removing Asset Tags in Exchange]
