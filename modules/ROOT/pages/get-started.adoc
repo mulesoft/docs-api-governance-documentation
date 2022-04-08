@@ -27,7 +27,7 @@ To access the API Governance console:
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
 +
-Add profiles in the API Governance console or using the governance CLI to group and apply rulesets to sets of APIs. 
+Add profiles in the API Governance console or use the governance CLI to group and apply rulesets to sets of APIs. 
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 
