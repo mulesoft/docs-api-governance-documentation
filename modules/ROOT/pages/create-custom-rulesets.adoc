@@ -6,7 +6,7 @@ Submit your ideas for rulesets you would like MuleSoft to provide in future rele
 
 == Create Custom Rulesets by Modifying Provided Rulesets
 
-If you want to create custom governance rulesets based on rulesets that are already in Exchange, you can download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you just need to make a few changes.
+If you want to create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you just need to make a few changes.
 
 To create a custom ruleset based on one already in Exchange:
 
@@ -21,9 +21,9 @@ To create a custom ruleset based on one already in Exchange:
 If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
 
 . First search the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal] for ideas for new rulesets that have already been submitted.
-. If you do not find your idea there, submit your idea in the MuleSoft Ideas Portal.
+. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 
-NOTE: Similarly to custom code and configurations, rulesets that you create are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, you can post an issue in the Github repository for the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator^].
+NOTE: Similarly to custom code and configurations, rulesets that you create are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the Github repository for the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator^].
 
 If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
 
