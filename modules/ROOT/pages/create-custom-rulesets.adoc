@@ -1,4 +1,4 @@
-= Creating Custom Governance Rulesets
+= Creating Custom governance rulesets
 
 MuleSoft provides several rulesets in Exchange, such as Anypoint API Best Practices, OpenAPI Best Practices, OWASP API Security Top 10, and Authentication Security Best Practices governance rulesets. 
 
@@ -28,7 +28,7 @@ NOTE: Similarly to custom code and configurations, rulesets that you create are 
 If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
 
 [[publish-to-exchange]]
-== Publish a Custom Governance Ruleset Asset in Exchange
+== Publish a Custom governance ruleset Asset in Exchange
 
 //include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
@@ -76,7 +76,7 @@ Default options: `--help`, `-f`/`--fields` and `-o`/`--output`.
 Other options: `--files.docs.zip`
 
 [[validate-ruleset]]
-== Validate Governance Ruleset Format Using the API Governance CLI
+== Validate governance ruleset Format Using the API Governance CLI
 
 To validate the format of your governance ruleset as you develop it, use the following command:
 

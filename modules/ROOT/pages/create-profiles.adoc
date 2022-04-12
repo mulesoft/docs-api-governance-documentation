@@ -191,7 +191,7 @@ governance profile Ids for all of the Governance Profiles for an organization us
 |Option |Description
 
 |--ruleset-gavs <ruleset-gavs>
-|The `ruleset-gavs` argument should be followed by a list of Governance Ruleset gavs formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>`. These are the new asset's identifiers.
+|The `ruleset-gavs` argument should be followed by a list of governance ruleset gavs formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>`. These are the new asset's identifiers.
 
 |--profile-name <profile-name>
 |The `profile-name` argument should be followed by a string that is the new Governance Profile name.
