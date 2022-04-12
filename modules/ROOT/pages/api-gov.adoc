@@ -12,7 +12,7 @@ You can monitor your APIs' conformance and notify developers to help improve the
 
 image::api-gov-console.png[Screenshot of the API Governance console]
 
-API developers or architects can apply the governance rulesets, which are published as assets in Anypoint Exchange, directly to API definitions as dependencies in API Designer during the API design phase. Noncorformance messages are shown in the *Project Errors* section of API Designer. 
+API developers or architects can apply the governance rulesets, which are published as assets in Anypoint Exchange, directly to API definitions as dependencies in API Designer during the API design phase. Nonconformance messages are shown in the *Project Errors* section of API Designer. 
 
 image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as dependencies in API Designer]
 
