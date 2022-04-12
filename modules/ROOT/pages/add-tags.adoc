@@ -7,4 +7,4 @@ To limit governance to sets of APIs you are ready to govern, identify the API as
 
 To identify the APIs you want to govern by adding asset tags to the API assets in Exchange, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Adding and Removing Asset Tags in Exchange].
 
-To identify the APIs you want to govern by adding categories to the API assets in Exchange, see xref:exchange::to-manage-categories.adoc[Managing Categories].
+To identify the APIs you want to govern by adding categories to the API assets in Exchange, see xref:exchange::to-manage-categories.adoc[Managing Categories in Exchange].

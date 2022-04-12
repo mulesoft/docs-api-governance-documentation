@@ -9,7 +9,7 @@ To view a conformance badge in Exchange:
 
 * Select an API asset in Exchange. 
 +
-A conformance badge is displayed next to the lifecycle state badge.
+A conformance badge is displayed beside the lifecycle state badge.
 
 To view conformance status information in Exchange:
 

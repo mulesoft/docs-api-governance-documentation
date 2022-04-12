@@ -41,3 +41,7 @@ Spec /path/Downloads/negative-1.0.0-raml.zip
 Spec does not conform with Ruleset
 [.. full report shown here..]
 ----
+
+== See Also
+
+* xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project in Design Center]
