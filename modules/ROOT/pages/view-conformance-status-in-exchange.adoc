@@ -5,16 +5,13 @@ You can view conformance status in Exchange for APIs that are governed by API Go
 * A conformance badge is displayed for a selected API version.
 * A *Conformance* column shows conformance for each governed version of the API in the *Manage Versions* page. 
 
-To view a conformance badge in Exchange:
-
-* Select an API asset in Exchange. 
-+
-A conformance badge is displayed beside the lifecycle state badge.
-
-To view conformance status information in Exchange:
+To view a conformance status in Exchange:
 
 . Select an API asset in Exchange. 
-. Click *Manage Versions*.
++
+A conformance badge is displayed beside the lifecycle state badge.
++
+. To see conformance by version, click *Manage Versions*.
 //. Select the *Conformance Status* page in the left navigation.
 +
 The *Conformance* column shows the governance conformance status for each governed version.
