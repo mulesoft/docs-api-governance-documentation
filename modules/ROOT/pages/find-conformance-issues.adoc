@@ -11,7 +11,7 @@ See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an
 
 == Validate API Definitions Against Governance Rulesets Using the API Governance CLI
 
-If you prefer to use a command to validate your API definition against API Governance rulesets, use the `governance api validate` command.
+If you want to use a command to validate your API definition against API Governance rulesets, use the `governance api validate` command.
 
 === Limitations
 
