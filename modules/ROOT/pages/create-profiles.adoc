@@ -178,7 +178,7 @@ If you want to use a command to update an API governance profile, use the follow
 `> governance profile update [options] <profile-id>`
 
 This command updates an existing governance profile. You can update the governance profile's
-Governance Rulesets, name, tags, and description.
+Governance rulesets, name, tags, and description.
 
 NOTE: You must know the governance profile Id to edit a Governance Profile. You can get the
 governance profile Ids for all of the Governance Profiles for an organization using the
