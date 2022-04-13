@@ -49,7 +49,7 @@ APIs are governed if they are identified by the selection criteria of at least o
 
 === API Conformance
 
-API conformance indicates whether a governed API definition passes all of the required rules in one ore more governance rulesets. If an API definition is included in multiple governance profiles, it must pass all of the rulesets in all of those profiles to be conformant. 
+API conformance indicates whether a governed API definition passes all of the required rules in one or more governance rulesets. If an API definition is included in multiple governance profiles, it must pass all of the rulesets in all of those profiles to be conformant. 
 
 NOTE: API conformance applies only to API definitions that are published in Exchange as REST APIs.
 
