@@ -211,7 +211,7 @@ governance profile IDs for all of the governance profiles for an organization us
 
 == Delete a Governance Profile Using the API Governance CLI
 
-To use the CLI to delete an API Governance profile, using the following command:
+To use the CLI to delete an API governance profile, use the following command:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
 
