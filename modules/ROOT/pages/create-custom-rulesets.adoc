@@ -28,7 +28,7 @@ NOTE: Similarly to custom code and configurations, rulesets that you create are 
 If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
 
 [[publish-to-exchange]]
-== Publish a Custom governance ruleset Asset in Exchange
+== Publish a Custom Governance Ruleset Asset in Exchange
 
 //include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
 
