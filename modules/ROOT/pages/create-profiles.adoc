@@ -120,7 +120,7 @@ This command lists all governance profiles for an organization. You need this in
 
 [cols="1,1"]
 |===
-|Profile Name  |Profile Id
+|Profile Name  |Profile ID
 
 |Best Practices
 |8ffd463f-86b2-4132-afc6-44d179209362
