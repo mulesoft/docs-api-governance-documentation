@@ -58,7 +58,7 @@ Use the following command to generate a documentation .zip file for a ruleset YA
 
 `> governance document [options] <ruleset> <file>`
 
-This command creates the documentation for an API Governance ruleset definition `zip` file that you want to upload and publish to Exchange. 
+This command creates the documentation for an API Governance ruleset definition .zip file that you want to upload and publish to Exchange. 
 
 *Example command:*
 `governance document ~/temp/ruleset.yaml ~/temp/ruleset.doc.zip`
