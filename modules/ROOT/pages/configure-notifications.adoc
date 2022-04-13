@@ -28,7 +28,7 @@ To configure conformance notifications:
 [[send-manual-notifs]]
 == Send Notifications to API Owners
 
-When you notice an API is not conformant, you might want to send the API owner an email.
+When you notice an API is not conformant, you might want to send the API owner an email notification that includes:
 The notification email includes:
 
 * The name of the APIs that are not conformant
