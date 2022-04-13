@@ -22,7 +22,7 @@ NOTE: If an API that is already in failed conformance status and the same versio
 
 To configure conformance notifications:
 
-. Navigate to the *Notifications* page of the API Governance profile for which you want to enable notifications.
+. Navigate to the *Notifications* page of the API governance profile for which you want to enable notifications.
 . Beside the condition for which you want to send notifications, set the slider to *Enabled*.
 
 [[send-manual-notifs]]
