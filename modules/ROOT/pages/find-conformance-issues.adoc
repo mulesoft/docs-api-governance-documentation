@@ -5,7 +5,7 @@ or by using the API Governance CLI. You can also validate governance rulesets to
 
 == Validate API Definitions in Design Center
 
-To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in Design Center API Designer. After rulesets are added, expand the *Project Errors* section to view conformance messages. 
+To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in Design Center API Designer. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
 See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
