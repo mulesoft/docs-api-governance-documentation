@@ -93,7 +93,7 @@ This command validates the governance ruleset definition's format.
 
 //`<ruleset>`     
  
-Specify the file location for an api-specification zip to validate with the governance ruleset.	
+Specify the file location for an `api-specification` .zip file to validate with the governance ruleset.	
 
 *Example command:*
 
