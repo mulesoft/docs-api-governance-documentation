@@ -200,7 +200,7 @@ governance profile IDs for all of the governance profiles for an organization us
 |The `tags` argument should be followed by a comma separated list of tags formatted as follows: `tag1,tag2,tag3`.
 
 |--description <description>
-|The `description` argument should be followed by a string that is the new Governance Profile description.
+|The `description` argument should be followed by a string that is the new Governance profile description.
 |===
 
 *Example command:*
