@@ -60,7 +60,7 @@ On the main API Governance console page, on the *APIs* tab, you can export a rep
 * Time stamps
 
 Specific Profile Report::
-On a selected governance profile page, you can export a report that shows the the selected governance profile's information, such as: 
+On a selected governance profile page, you can export a report that shows the selected governance profile's information, such as: 
 
 * Organization ID
 * API Ids
