@@ -132,7 +132,7 @@ This command lists all governance profiles for an organization. You need this in
 
 == List Specific Governance Profile Information Using the API Governance CLI
 
-If you want to use a command to list API Governance profile information, use the following command:
+If you want to use a command to list API governance profile information, use the following command:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
