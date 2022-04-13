@@ -168,7 +168,7 @@ This command lists all information for an API governance profile Id.
 
 == Update a Governance Profile Using the API Governance CLI
 
-If you want to use a command to update an API Governance profile, use the following command:
+If you want to use a command to update an API governance profile, use the following command:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
