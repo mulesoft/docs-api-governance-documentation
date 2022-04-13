@@ -33,7 +33,7 @@ When you notice an API is not conformant, you might want to send the API owner a
 * The name of the APIs that are not conformant
 * Which governance rulesets the APIs failed
 * The number and types of rules that failed (violation, warning, and information)
-* Links to act on the issues, such as API details in Exchange and code in Design Center 
+* Links from which to act on the issues, such as API details in Exchange and code in Design Center 
 
 NOTE: You can send emails to API owners from profiles even when there are no conformance issues. 
 
