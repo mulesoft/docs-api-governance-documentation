@@ -56,7 +56,7 @@ To delete a governance profile:
 
 == Create Governance Profiles Using the API Governance CLI
 
-If you want to use a command to create an API Governance profile, use the following command:
+If you want to use a command to create an API governance profile, use the following command:
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
