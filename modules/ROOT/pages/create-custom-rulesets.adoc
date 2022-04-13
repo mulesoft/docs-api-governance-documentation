@@ -72,7 +72,7 @@ Saving to `/Users/janedoe/temp/prof-1.doc.zip`
 
 This command accepts the following options:
 
-Default options: `--help`, `-f`/`--fields` and `-o`/`--output`.
+Default options: `--help`, `-f`/`--fields` and `-o`/`--output`
 Other options: `--files.docs.zip`
 
 [[validate-ruleset]]
