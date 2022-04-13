@@ -45,7 +45,7 @@ On the main API Governance console page, on the `Profiles` tab, you can export a
 * Total APIs governed
 * Number of conformant APIs
 * Number of nonconformant APIs
-* Time stamps
+* Timestamps
 * Associated tags
 
 Governed API Report::
