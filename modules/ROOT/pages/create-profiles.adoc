@@ -42,7 +42,7 @@ To update governance profile information using the API Governance console:
 +
 . Click *Update Profile*.
 
-NOTE: After you have applied your edits, the total APIs are updated to indicate how many APIs
+NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
 
 == Delete a Governance Profile Using the API Governance Console
