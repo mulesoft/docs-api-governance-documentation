@@ -1,7 +1,7 @@
 = Finding API Conformance Issues in API Definitions
 
-Governance rulesets can be applied to API definitions as you are authoring them, either in Design Center using API Designer 
-or by using the API Governance CLI. You can also validate governance rulesets to make sure they are formatted correctly using the API Governance CLI.
+Apply governance rulesets to API definitions as you author them, either in Design Center using API Designer 
+or by using the governance CLI. You can also validate governance rulesets to make sure they are formatted correctly using the governance CLI.
 
 == Validate API Definitions in Design Center
 
@@ -11,7 +11,7 @@ See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an
 
 == Validate API Definitions Against Governance Rulesets Using the API Governance CLI
 
-If you want to use a command to validate your API definition against API Governance rulesets, use the `governance api validate` command.
+If you want to use a command to validate your API definition against governance rulesets, use the `governance api validate` command.
 
 === Limitations
 

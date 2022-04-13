@@ -68,4 +68,4 @@ On a selected governance profile page, you can export a report that shows the se
 * Total number of APIs
 * Number of conformant APIs
 * Number of nonconformant APIs
-* Time stamps
+* Timestamps

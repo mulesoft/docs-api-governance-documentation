@@ -55,4 +55,4 @@ NOTE: API conformance applies only to API definitions that are published in Exch
 
 === Conformance Status
 
-The status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
+Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.

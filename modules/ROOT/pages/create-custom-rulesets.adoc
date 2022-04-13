@@ -76,7 +76,7 @@ Default options: `--help`, `-f`/`--fields` and `-o`/`--output`
 Other options: `--files.docs.zip`
 
 [[validate-ruleset]]
-== Validate governance ruleset Format Using the API Governance CLI
+== Validate Governance Ruleset Format Using the API Governance CLI
 
 To validate the format of your governance ruleset as you develop it, use the following command:
 

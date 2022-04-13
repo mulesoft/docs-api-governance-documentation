@@ -18,11 +18,11 @@ Automated notifications are sent for each ruleset that has a new conformance fai
 . Changing tags on an API 
 . Updating governance rulesets 
 
-NOTE: If an API that is already in failed conformance status and the same version of the API is validated against the same set of rulesets that it has already failed, API Governance does not send a new notification. 
+NOTE: A notification is sent only the first time a specific version of an API fails conformance to a specific ruleset. 
 
 To configure conformance notifications:
 
-. Navigate to the *Notifications* page of the API governance profile for which you want to enable notifications.
+. In the API Governance console, navigate to the *Notifications* page of the profile for which you want to enable notifications.
 . Beside the condition for which you want to send notifications, set the slider to *Enabled*.
 
 [[send-manual-notifs]]
@@ -35,13 +35,11 @@ When you notice an API is not conformant, you might want to send the API owner a
 * The number and types of rules that failed (violation, warning, and information)
 * Links from which to act on the issues, such as API details in Exchange and code in Design Center 
 
-NOTE: You can send emails to API owners from profiles even when there are no conformance issues. 
+You can send emails to API owners from profiles even when there are no conformance issues. 
 
 To send a notification email to the API owner: 
 
-. Log in to Anypoint Platform using an account that has the API Governance Administrator permission.
-. In the navigation bar or the main Anypoint Platform page, click *API Governance*.
-. Select a governance profile. 
+. In the API Governance console, select a governance profile. 
 . Click the `Notify Owner` icon.
 . Select a recipient:
 +
