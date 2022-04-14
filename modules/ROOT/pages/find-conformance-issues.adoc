@@ -44,4 +44,4 @@ Spec does not conform with Ruleset
 
 == See Also
 
-* xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project in Design Center]
+* xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project]

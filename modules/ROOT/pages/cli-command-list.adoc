@@ -7,14 +7,14 @@ You can use the following CLI commands to automate your API governance processes
 [%header,cols="35a,65a"]
 |===
 |Command |Description
-| xref:find-conformance-issues.adoc#governance-api-validate[governance api validate] | Validates the API definition against rulesets
+| xref:find-conformance-issues.adoc#governance-api-validate[governance api validate] | Validates an API definition against rulesets
 | xref:create-custom-rulesets.adoc#governance-document[governance document] | Creates the documentation file for an API Governance ruleset definition
 | xref:create-profiles.adoc#governance-profile-create[governance profile create] | Creates a governance profile
 | xref:create-profiles.adoc#governance-profile-delete[governance profile delete] | Deletes a governance profile
 | xref:create-profiles.adoc#governance-profile-info[governance profile info] | Lists information for a specific governance profile ID
 | xref:create-profiles.adoc#governance-profile-list[governance profile list] | Lists all governance profiles for an organization
 | xref:create-profiles.adoc#governance-profile-update[governance profile update] | Updates a governance profile
-| xref:create-custom-rulesets.adoc#governance-ruleset-validate[governance ruleset validate] | Validates the governance ruleset definition's format
+| xref:create-custom-rulesets.adoc#governance-ruleset-validate[governance ruleset validate] | Validates a governance ruleset definition's format
 |===
  
 == See Also

@@ -34,38 +34,39 @@ Nonconformance severity is categorized by the percentage of passed governance ru
 
 == Reports
 
-You can export reports from the console by clicking the `Export Report` button beside the type of information you want to export.
+You can export reports of your governance information, which downloads the data to a `.csv` file. 
 
 Governance Profile Report::
-On the main API Governance console page, on the `Profiles` tab, you can export a report of governance profile information, such as: 
+On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export a report of governance profile information, such as: 
 
 * Organization ID 
-* Governance profile IDs
+* Profile IDs
+* Profile name
 * Status
 * Total APIs governed
-* Number of conformant APIs
-* Number of nonconformant APIs
+* Number of conformant APIs (pass)
+* Number of nonconformant APIs (fail)
 * Timestamps
-* Associated tags
+* Associated ruleset tags
 
 Governed API Report::
-On the main API Governance console page, on the *APIs* tab, you can export a report that shows your governed APIs' information, such as:  
+On the main API Governance console page, select the *APIs* tab and then click the *Export Report* button to export a report that shows your governed APIs' information, such as:  
 
 * Organization ID 
-* API ID
+* API IDs
 * Versions
 * Total number of APIs
-* Number of conformant APIs
-* Number of nonconformant APIs
+* Number of conformant APIs (pass)
+* Number of nonconformant APIs (fail)
 * Timestamps
 
 Specific Profile Report::
-On a selected governance profile page, you can export a report that shows the selected governance profile's information, such as: 
+On a selected governance profile page, select *Export Reports* in the three dots menu to export a report that shows the selected governance profile's information, such as: 
 
 * Organization ID
 * API IDs
 * Versions
 * Total number of APIs
-* Number of conformant APIs
-* Number of nonconformant APIs
+* Number of conformant APIs (pass)
+* Number of nonconformant APIs (fail)
 * Timestamps

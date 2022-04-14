@@ -15,3 +15,7 @@ A conformance badge is displayed beside the lifecycle state badge.
 //. Select the *Conformance Status* page in the left navigation.
 +
 The *Conformance* column shows the governance conformance status for each governed version.
+
+== See Also
+
+* xref:exchange::asset-details.adoc[Asset Details]

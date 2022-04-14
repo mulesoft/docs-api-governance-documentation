@@ -32,8 +32,6 @@ image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as depende
 
 <2> View conformance issues and filter by issue type.
 
-<3> Ensure your conformance issues are resolved before you publish.
-
 == API Governance Concepts
 
 Following are the concepts you need to know to use API Governance.
