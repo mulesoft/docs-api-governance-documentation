@@ -17,7 +17,7 @@ The API Governance console UI guides you through creating profiles.
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are governed in this profile.
 * *Rulesets*: Select one or more rulesets you want to use to govern your APIs.
-* *Filter Criteria*: Specify which APIs to which to apply your governance profiles by selecting an API type, tags, and categories. Selections appear in the *Tag* and *Category* fields only if APIs are found that have those tags or categories. See xref:add-tags.adoc[Identifying APIs to Govern].
+* *Filter Criteria*: Specify the APIs to which to apply your governance profiles by selecting an API type, tags, and categories. Selections appear in the *Tag* and *Category* fields only if APIs are found that have those tags or categories. See xref:add-tags.adoc[Identifying APIs to Govern].
 +
 After you select the filters, the APIs that meet the filter criteria that you have selected are shown.
 +
