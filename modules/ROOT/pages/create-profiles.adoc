@@ -89,7 +89,7 @@ These are the asset's identifiers.
 |===
 
 *Example command:*
- `governance profile create "Profile for Demos" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0 --tags DemosTag --description "This is the demo description"`
+ `anypoint-cli governance profile create "Profile for Demos" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0 --tags DemosTag --description "This is the demo description"`
 
 *Example output:*
 Profile Added
@@ -150,7 +150,7 @@ If you want to use a command to list governance profile information, use the fol
 This command lists all information for a governance profile ID.
 
 *Example command:*
- `governance profile info 8ffd463f-86b2-4132-afc6-44d179209362`
+ `anypoint-cli governance profile info 8ffd463f-86b2-4132-afc6-44d179209362`
 
 *Example output:*
 
@@ -212,7 +212,7 @@ These are the asset's identifiers.
 |===
 
 *Example command:*
- `governance profile update 51f9f94c-fb0c-43d4-9895-22c9e64f1537 --profile-name "New Name"``
+ `anypoint-cli governance profile update 51f9f94c-fb0c-43d4-9895-22c9e64f1537 --profile-name "New Name"``
 
 *Example output:*
 `Profile updated 51f9f94c-fb0c-43d4-9895-22c9e64f1537`
@@ -231,7 +231,7 @@ To use the CLI to delete a governance profile, use the following command:
 This command deletes a specific governance profile.
 
 *Example command:*
-`governance profile delete 8ffd463f-86b2-4132-afc6-44d179209362`
+`anypoint-cli governance profile delete 8ffd463f-86b2-4132-afc6-44d179209362`
 
 *Example output:*
 `Profile with id 8ffd463f-86b2-4132-afc6-44d179209362 removed`

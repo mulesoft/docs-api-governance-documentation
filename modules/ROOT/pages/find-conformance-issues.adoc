@@ -24,11 +24,11 @@ This command does not validate the dependencies of the API definition, such as f
 
 `> governance api validate <governance-ruleset> <api-definition-zip-file>`
 
-This command validates the API against the rulesets it has as dependencies.
+This command validates an API definition against a specified ruleset.
 
 *Example command:*
 
-`governance api validate ~/temp/prof-1.yaml ~/Downloads/positive-1.0.0-raml.zip`
+`anypoint-cli governance api validate ~/Downloads/ruleset.yaml ~/Downloads/order-api-1.0.0-raml.zip`
 
 *Example output:*
 

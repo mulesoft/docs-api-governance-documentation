@@ -61,7 +61,7 @@ Use the following command to generate a documentation .zip file for a ruleset YA
 This command creates the documentation for an API Governance ruleset definition .zip file that you want to upload and publish to Exchange. 
 
 *Example command:*
-`governance document ~/temp/ruleset.yaml ~/temp/ruleset.doc.zip`
+`anypoint-cli governance document ~/temp/ruleset.yaml ~/temp/ruleset.doc.zip`
 
 *Example output:*
 
@@ -97,7 +97,7 @@ Specify the file location for an `api-specification` .zip file to validate with 
 
 *Example command:*
 
-`governance ruleset validate ~/temp/prof-1-bad.yaml`
+`anypoint-cli governance ruleset validate ~/temp/prof-1-bad.yaml`
 
 *Example output for a valid ruleset:*
 
