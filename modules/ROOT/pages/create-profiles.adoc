@@ -34,13 +34,8 @@ The API Governance console guides you through updating profiles.
 To update governance profile information using the API Governance console: 
 
 . In *API Governance*, in the console *Profiles* tab, click the menu icon at the end of the profile you want to update and select *Edit*.
-. You can edit the following items in the governance profile: 
-+
-* General Information
-* Rulesets
-* API Criteria
-+
-. Click *Update Profile*.
+. Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. 
+. Review your changes and click *Update Profile*.
 
 NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
