@@ -23,7 +23,7 @@ NOTE: A notification is sent only the first time a specific version of an API fa
 To configure conformance notifications:
 
 . In the API Governance console, while creating or updating a profile, using the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
-. Beside the condition for which you want to send notifications, set the slider to *Enabled*.
+. Set the slider to *Enabled*.
 
 [[send-manual-notifs]]
 == Send Notifications to API Owners
@@ -40,7 +40,7 @@ You can send emails to API owners from profiles even when there are no conforman
 To send a notification email to the API owner: 
 
 . In the API Governance console, select a governance profile. 
-. Click the `Notify Owner` icon.
+. Click the *Notify Owner* icon.
 . Select a recipient:
 +
 * Direct Contact: Email the contact specified in the API
