@@ -35,7 +35,7 @@ Add profiles in the API Governance console or use the governance CLI to group an
 
 . xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange. 
 +
-When you view a governed API asset in Exchange, select the *Conformance Status* page to view conformance information for that API.
+When you view a validated API asset in Exchange, select the *Conformance Status* page to view conformance information for that API.
 
 == See Also
 

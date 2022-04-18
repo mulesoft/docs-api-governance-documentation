@@ -43,14 +43,14 @@ On the main API Governance console page, select the *Profiles* tab and then clic
 * Profile IDs
 * Profile name
 * Status
-* Total APIs governed
+* Total APIs validated
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamps
 * Associated ruleset tags
 
-Governed API Report::
-On the main API Governance console page, select the *APIs* tab and then click the *Export Report* button to export a report that shows your governed APIs' information, such as:  
+Validated API Report::
+On the main API Governance console page, select the *APIs* tab and then click the *Export Report* button to export a report that shows your validated APIs' information, such as:  
 
 * Organization ID 
 * API IDs
@@ -61,7 +61,7 @@ On the main API Governance console page, select the *APIs* tab and then click th
 * Timestamps
 
 Specific Profile Report::
-On a selected governance profile page, select *Export Reports* in the three dots menu to export a report that shows the selected governance profile's information, such as: 
+On a selected governance profile page, click the overflow menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the overflow menu icon"]) and then select *Export Reports* to export a report that shows the selected governance profile's information, such as: 
 
 * Organization ID
 * API IDs
