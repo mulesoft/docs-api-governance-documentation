@@ -14,7 +14,7 @@ image::api-gov-console.png[Screenshot of the API Governance console]
 
 <1> View a numeric summary of your governance profiles, API conformance, and nonconformance by severity.
 
-<2> View a summary list of your governance profiles or validated APIs.
+<2> View, filter, and search a summary list of your governance profiles or validated APIs.
 
 <3> Add a new profile. 
 
