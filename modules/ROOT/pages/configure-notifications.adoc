@@ -22,7 +22,7 @@ NOTE: A notification is sent only the first time a specific version of an API fa
 
 To configure conformance notifications:
 
-. In the API Governance console, navigate to the *Notifications* page of the profile for which you want to enable notifications.
+. In the API Governance console, while creating or updating a profile, using the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
 . Beside the condition for which you want to send notifications, set the slider to *Enabled*.
 
 [[send-manual-notifs]]
