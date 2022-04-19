@@ -58,7 +58,20 @@ If you want to use a command to create an API governance profile, use the follow
 [[governance-profile-create]]
 === governance profile create
 
-`> governance profile create [options] <profile-name> <ruleset-gavs>`
+`> governance profile create [options] <profile-name> <ruleset-asset-identifier>`
+
+<profile-name>
+
+A string value for the new governance profile name.
+
+<ruleset-asset-identifier>
+
+A list with the group ID, asset ID, and version (gav), which is the unique asset identifier for each ruleset. Use a comma separated list formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>` 
+
+To get the ruleset asset identifier:
+
+* To get it from using the CLI, run the `anypoint-cli exchange asset list` command. 
+* To get it from the web UI, select the ruleset asset in Exchange and then copy the group ID and asset ID from the URL. 
 
 This command creates a governance profile. 
 
@@ -68,43 +81,25 @@ This command creates a governance profile.
 |===
 |Option |Description
 
-|--profile-name <profile-name>
-|The `profile-name` argument is followed by a string that is the new governance profile name.
-
-|--ruleset-gavs <ruleset-gavs>
-|The `ruleset-gavs` argument is a list with the group ID, asset ID, and version for each ruleset, formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>` 
-
-These are the asset's identifiers.
-
 |--tags <tags>
-|The `tags` argument is followed by a comma separated list of tags to be applied to the new governance profile, formatted as follows: `tag1,tag2,tag3`.
+|The `tags` option is followed by a comma separated list of tags to be applied to the new governance profile, formatted as follows: `tag1,tag2,tag3`
 
 |--description <description>
-|The `description` argument is followed by a string that is the new governance profile's description.
+|The `description` option is followed by a string that is the new governance profile's description.
 |===
 
 *Example command:*
- `anypoint-cli governance profile create "Profile for Demos" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0 --tags DemosTag --description "This is the demo description"`
+ `anypoint-cli governance profile create "OAS Best Practices" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/open-api-best-practices/1.0.0 --tags best --description "Profile for OAS Best Practices"`
 
 *Example output:*
+----
 Profile Added
-[cols="1,1"]
-|===
-|Id
-|51f9f94c-fb0c-43d4-9895-22c9e64f1537
-
-|Name
-|Profile for Demos
-
-|Description
-|This is the demo description
-
-|Rulesets
-|gav://a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/demo/1.0.0
-
-|Filter
-|tag:DemosTag
-|===
+Id         	4f98e59d-8efb-420f-ac95-9cd0af15bd45                                    
+Name       	Profile from CLI                                                        
+Description	I created this profile from the CLI                                     
+Rulesets   	gav://68ef9520-24e9-4cf2-b2f5-620025690913/open-api-best-practices/1.0.1
+Filter     	tag:best    
+----
 
 == List Governance Profile Information Using the API Governance CLI
 
