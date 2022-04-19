@@ -22,16 +22,12 @@ To access the API Governance console:
 . xref:add-tags.adoc[Identify] the APIs that you want to govern.
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
-+
-Add profiles in the API Governance console or use the governance CLI to group and apply rulesets to sets of APIs. 
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 
 . xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
 
 . xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange. 
-+
-When you view a validated API asset in Exchange, select the *Conformance Status* page to view conformance information for that API.
 
 == See Also
 
