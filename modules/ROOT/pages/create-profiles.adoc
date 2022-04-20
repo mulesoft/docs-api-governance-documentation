@@ -89,14 +89,15 @@ Besides the default `--help`, `-f`/`--fields` and `-o`/`--output` options, this 
 |===
 
 *Example command:*
- `anypoint-cli governance profile create "OAS Best Practices" a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/open-api-best-practices/1.0.0 --tags best --description "Profile for OAS Best Practices"`
+
+`anypoint-cli governance profile create "OAS Best Practices" 68ef9520-24e9-4cf2-b2f5-620025690913/open-api-best-practices/1.0.1 --tags best --description "Profile for OAS Best Practices"`
 
 *Example output:*
 ----
 Profile Added
 Id         	4f98e59d-8efb-420f-ac95-9cd0af15bd45                                    
-Name       	Profile from CLI                                                        
-Description	I created this profile from the CLI                                     
+Name       	OAS Best Practices                                                        
+Description	Profile for OAS Best Practices                                
 Rulesets   	gav://68ef9520-24e9-4cf2-b2f5-620025690913/open-api-best-practices/1.0.1
 Filter     	tag:best    
 ----
@@ -112,19 +113,14 @@ Filter     	tag:best
 
 This command lists information for all governance profiles for an organization. You need this information when updating a governance profile.
 
-*Sample output:*
+*Example output:*
 
-[cols="1,1"]
-|===
-|Profile Name  |Profile ID
+----
+Profile Name  	    Profile Id                          
+	
+OAS Best Practices	4f98e59d-8efb-420f-ac95-9cd0af15bd45
 
-|Best Practices
-|8ffd463f-86b2-4132-afc6-44d179209362
-
-|Organization Profile
-|eb4f544c-2b97-4f99-97e4-357636228e36
-
-|===
+----
 
 == List Specific Governance Profile Information Using the API Governance CLI
 
@@ -140,27 +136,18 @@ If you want to use a command to list governance profile information, use the fol
 This command lists all information for a governance profile ID.
 
 *Example command:*
- `anypoint-cli governance profile info 8ffd463f-86b2-4132-afc6-44d179209362`
+
+`anypoint-cli governance profile info 8ffd463f-86b2-4132-afc6-44d179209362`
 
 *Example output:*
 
-[cols="1,1"]
-|===
-|Id
-|8ffd463f-86b2-4132-afc6-44d179209362
-
-|Name
-|Best Practices
-
-|Description
-|Our organization best practices
-
-|Rulesets
-|gav://a787009c-c5e5-43a8-8d6a-a4da6d6df0ac/best-practices/1.0.0
-
-|Filter
-|tag:validated
-|===
+-----
+Id         	19fb211b-8775-43cc-865a-46228921d6ed                                                                                                    
+Name       	Best Practices                                                                                                                          
+Description	Best Practices Profile                                                                                                                  
+Rulesets   	gav://3280b56c-e887-40f9-a9aa-db1118f719d5/best-practices/1.0.0 gav://68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.0
+Filter     	tag:best 
+----
 
 == Update a Governance Profile Using the API Governance CLI
 
