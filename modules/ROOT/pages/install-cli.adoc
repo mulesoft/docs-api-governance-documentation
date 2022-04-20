@@ -14,7 +14,7 @@ Install as follows:
 
 [source,bash]
 ----
-npm i -g anypoint-cli@3.9.4-governance.rc1
+npm i -g anypoint-cli@latest
 ----
 
 == See Also
