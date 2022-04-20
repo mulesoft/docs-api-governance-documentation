@@ -20,3 +20,4 @@ npm i -g anypoint-cli@3.9.4-governance.rc1
 == See Also
 
 * xref:cli-command-list.adoc[List of API Governance CLI Commands]
+* xref:anypoint-cli::

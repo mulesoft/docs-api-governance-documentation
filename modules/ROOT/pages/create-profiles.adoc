@@ -58,24 +58,24 @@ If you want to use a command to create an API governance profile, use the follow
 [[governance-profile-create]]
 === governance profile create
 
-`> governance profile create [options] <profile-name> <ruleset-asset-identifier>`
+`> governance profile create [options] <profile-name> <ruleset-asset-identifiers>`
+
+This command creates a governance profile. 
 
 <profile-name>
 
 A string value for the new governance profile name.
 
-<ruleset-asset-identifier>
+<ruleset-asset-identifiers>
 
-A list with the group ID, asset ID, and version (gav), which is the unique asset identifier for each ruleset. Use a comma separated list formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>` 
+A list with the group ID, asset ID, and version (gav), which is the unique asset identifiers for each ruleset. Use a comma separated list formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>` 
 
-To get the ruleset asset identifier:
+To get the ruleset asset identifiers:
 
 * If you are using the CLI, run the `anypoint-cli exchange asset list` command. 
 * If you are using the web UI, select the ruleset asset in Exchange and then copy the group ID and asset ID from the URL. 
 
-This command creates a governance profile. 
-
-*Options:*
+Besides the default `--help`, `-f`/`--fields` and `-o`/`--output` options, this command also takes:
 
 [cols="1,1"]
 |===

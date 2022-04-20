@@ -32,12 +32,17 @@ This command validates an API definition against a specified ruleset.
 
 *Example output:*
 
+For a specification that is conformant to the ruleset:
+
 ----
 Spec conforms with Ruleset
+----
 
-Output with a non valid api-spec:
-Ruleset /path/temp/prof-1.yaml
-Spec /path/Downloads/negative-1.0.0-raml.zip
+For a specification that is nonconformant to the ruleset:
+
+----
+Ruleset /path/Downloads/ruleset.yaml
+Spec /path/Downloads/order-api-1.0.0-raml.zip
 Spec does not conform with Ruleset
 [.. full report shown here..]
 ----
