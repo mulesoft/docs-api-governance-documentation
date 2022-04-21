@@ -43,15 +43,15 @@ To send a notification email to the API owner:
 . Click the *Notify Owner* icon.
 . Select a recipient:
 +
-* Direct Contact: Email the contact specified in the API
-* Creator: Email the API creator by using the email address specified in the listed Anypoint Platform account
+* Contact: Email the contact specified in the API
+* Publisher: Email the API publisher by using the email address specified in the listed Anypoint Platform account
 * Others: Email to a comma-separated list of email addresses
 . Review the email text and click *Notify*.
 
 NOTE: 
 
-* The *Direct Contact* selection is disabled if there is not a valid email address for the API contact in Exchange. 
-* The *Creator* selection is disabled if there is not a valid contact email address for the API creator in their Anypoint Platform profile. 
+* The *Contact* selection is disabled if there is not a valid email address for the API contact in Exchange. 
+* The *Publisher* selection is disabled if there is not a valid contact email address for the API publisher in their Anypoint Platform profile. 
 
 == See Also
 
