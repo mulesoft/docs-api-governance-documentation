@@ -141,12 +141,12 @@ This command lists all information for a governance profile ID.
 
 *Example output:*
 
------
-Id         	19fb211b-8775-43cc-865a-46228921d6ed                                                                                                    
-Name       	Best Practices                                                                                                                          
-Description	Best Practices Profile                                                                                                                  
-Rulesets   	gav://3280b56c-e887-40f9-a9aa-db1118f719d5/best-practices/1.0.0 gav://68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.0
-Filter     	tag:best 
+----
+ Id         	19fb211b-8775-43cc-865a-46228921d6ed                                                                                                    
+ Name       	Best Practices                                                                                                                          
+ Description	Best Practices Profile                                                                                                                  
+ Rulesets   	gav://3280b56c-e887-40f9-a9aa-db1118f719d5/best-practices/1.0.0 gav://68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.0
+ Filter     	tag:best 
 ----
 
 == Update a Governance Profile Using the API Governance CLI
