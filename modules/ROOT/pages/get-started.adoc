@@ -31,6 +31,6 @@ To access the API Governance console:
 
 == See Also
 
-* xref:index.adoc[API Governance Overview]
+* xref:api-gov.adoc[API Governance Overview]
 * xref:access-management::managing-permissions.adoc[Managing Permissions in Access Management]
 // * xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
