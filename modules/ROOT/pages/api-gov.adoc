@@ -42,7 +42,7 @@ image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as depende
 
 <2> View conformance issues and filter by level of severity.
 
-<3> Nonconformance messages are shown in the <<project-errors,*Project Errors*>> section of API Designer. 
+<3> Nonconformance messages are shown in the <<project-errors,*Project Errors*>> section of the text editor. 
 
 == API Governance Concepts
 
