@@ -1,18 +1,18 @@
-= Applying Governance Rulesets to Specified APIs
+= Applying governance Rulesets to Specified APIs
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
 After you identify the APIs in Exchange that 
-you want to govern, you are ready to create governance profiles. Governance profiles enable you to select just the sets of APIs that you want to govern for each set of rulesets.
+you want to govern, you are ready to create governance profiles. governance profiles enable you to select just the sets of APIs that you want to govern for each set of rulesets.
 
-== Create a Governance Profile Using the API Governance Console
+== Create a governance Profile Using the API governance Console
 
-The API Governance console UI guides you through creating profiles.
+The API governance console UI guides you through creating profiles.
 
-.To create a governance profile using the API Governance console: 
+.To create a governance profile using the API governance console: 
 
-. In *API Governance*, click *New Profile*.
+. In *API governance*, click *New Profile*.
 . Follow the UI prompts to enter the following:
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
@@ -27,29 +27,29 @@ Also, the filter criteria is applied to any APIs that are added to Exchange in t
 * *Notifications:* Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications]. 
 * *Review:* Review your profile and click *Create*.
 
-== Update a Governance Profile Using the API Governance Console
+== Update a governance Profile Using the API governance Console
 
-The API Governance console guides you through updating profiles. 
+The API governance console guides you through updating profiles. 
 
-To update governance profile information using the API Governance console: 
+To update governance profile information using the API governance console: 
 
-. In *API Governance*, in the console *Profiles* tab, click the overflow menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the overflow menu icon"]) at the end of the profile you want to update and select *Edit*.
+. In *API governance*, in the console *Profiles* tab, click the overflow menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the overflow menu icon"]) at the end of the profile you want to update and select *Edit*.
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. 
 . Review your changes and click *Update Profile*.
 
 NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
 
-== Delete a Governance Profile Using the API Governance Console
+== Delete a governance Profile Using the API governance Console
 
-The API Governance console guides you through deleting profiles.
+The API governance console guides you through deleting profiles.
 
 To delete a governance profile: 
 
-. In *API Governance*, in the console *Profiles* tab, click the overflow menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the overflow menu icon"]) at the end of the profile you want to update and select *Delete*.
+. In *API governance*, in the console *Profiles* tab, click the overflow menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the overflow menu icon"]) at the end of the profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
-== Create Governance Profiles Using the API Governance CLI
+== Create governance Profiles Using the API governance CLI
 
 If you want to use a command to create an API governance profile, use the following command:
 
@@ -102,7 +102,7 @@ Rulesets   	gav://68ef9520-24e9-4cf2-b2f5-620025690913/open-api-best-practices/1
 Filter     	tag:best    
 ----
 
-== List Governance Profile Information Using the API Governance CLI
+== List governance Profile Information Using the API governance CLI
 
 //include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
@@ -122,7 +122,7 @@ OAS Best Practices	4f98e59d-8efb-420f-ac95-9cd0af15bd45
 
 ----
 
-== List Specific Governance Profile Information Using the API Governance CLI
+== List Specific governance Profile Information Using the API governance CLI
 
 If you want to use a command to list governance profile information, use the following command:
 
@@ -149,7 +149,7 @@ This command lists all information for a governance profile ID.
  Filter     	tag:best 
 ----
 
-== Update a Governance Profile Using the API Governance CLI
+== Update a governance Profile Using the API governance CLI
 
 If you want to use a command to update a governance profile, use the following command:
 
@@ -161,7 +161,7 @@ If you want to use a command to update a governance profile, use the following c
 `> governance profile update [options] <profile-id>`
 
 This command updates an existing governance profile. You can update the governance profile's
-Governance rulesets, name, tags, and description.
+governance rulesets, name, tags, and description.
 
 NOTE: You must know the governance profile ID to edit a governance profile. You can get the
 governance profile IDs for all of the governance profiles for an organization using the
@@ -185,7 +185,7 @@ These are the asset's identifiers.
 |The `tags` argument is followed by a comma separated list of tags formatted as follows: `tag1,tag2,tag3`.
 
 |--description <description>
-|The `description` argument is followed by a string that is the new Governance profile description.
+|The `description` argument is followed by a string that is the new governance profile description.
 |===
 
 *Example command:*
@@ -194,7 +194,7 @@ These are the asset's identifiers.
 *Example output:*
 `Profile updated 51f9f94c-fb0c-43d4-9895-22c9e64f1537`
 
-== Delete a Governance Profile Using the API Governance CLI
+== Delete a governance Profile Using the API governance CLI
 
 To use the CLI to delete a governance profile, use the following command:
 
