@@ -26,11 +26,13 @@ image::api-gov-console.png[Screenshot of the API Governance console]
 
 <4> Select the overflow menu for options to export reports and view, edit, and delete profiles.
 
+<5> Export conformance reports in CSV format.
+
 API Governance is integrated with these other components of Anypoint Platform:
 
-* Anypoint Design Center (Design Center), where governance rulesets are applied to API definitions (as dependencies)
+* Anypoint Design Center, where governance rulesets are applied to API definitions (as dependencies)
 
-* Anypoint Exchange (Exchange), where governance rulesets are cataloged and discovered
+* Anypoint Exchange, where governance rulesets are cataloged and discovered
 
 API developers or architects can apply the governance rulesets, which are published as assets in Anypoint Exchange, directly to API definitions as dependencies in API Designer during the API design phase. Nonconformance messages are shown in the *Project Errors* section of API Designer. 
 
