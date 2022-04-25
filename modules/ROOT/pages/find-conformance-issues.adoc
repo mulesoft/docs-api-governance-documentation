@@ -17,35 +17,7 @@ If you want to use a command to validate your API definition against governance 
 
 This command does not validate the dependencies of the API definition, such as fragments.
 
-// include::anypoint-cli::partial$api-governance.adoc[tag=governance-validate,leveloffset=+1]
-
-[[governance-api-validate]]
-== governance api validate
-
-`> governance api validate <governance-ruleset> <api-definition-zip-file>`
-
-This command validates an API definition against a specified ruleset.
-
-*Example command:*
-
-`anypoint-cli governance api validate ~/Downloads/ruleset.yaml ~/Downloads/order-api-1.0.0-raml.zip`
-
-*Example output:*
-
-For a specification that is conformant to the ruleset:
-
-----
-Spec conforms with Ruleset
-----
-
-For a specification that is nonconformant to the ruleset:
-
-----
-Ruleset /path/Downloads/ruleset.yaml
-Spec /path/Downloads/order-api-1.0.0-raml.zip
-Spec does not conform with Ruleset
-[.. full report shown here..]
-----
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
 
 == See Also
 

@@ -53,162 +53,28 @@ To delete a governance profile:
 
 If you want to use a command to create an API governance profile, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
-
-[[governance-profile-create]]
-=== governance profile create
-
-`> governance profile create [options] <profile-name> <ruleset-asset-identifiers>`
-
-This command creates a governance profile. 
-
-<profile-name>
-
-A string value for the new governance profile name.
-
-<ruleset-asset-identifiers>
-
-A list with the group ID, asset ID, and version (gav), which is the unique asset identifiers for each ruleset. Use a comma separated list formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>` 
-
-To get the ruleset asset identifiers:
-
-* If you are using the CLI, run the `anypoint-cli exchange asset list` command. 
-* If you are using the web UI, select the ruleset asset in Exchange and then copy the group ID and asset ID from the URL. 
-
-Besides the default `--help`, `-f`/`--fields` and `-o`/`--output` options, this command also takes:
-
-[cols="1,1"]
-|===
-|Option |Description
-
-|--tags <tags>
-|The `tags` option is followed by a comma separated list of tags to be applied to the new governance profile, formatted as follows: `tag1,tag2,tag3`
-
-|--description <description>
-|The `description` option is followed by a string that is the new governance profile's description.
-|===
-
-*Example command:*
-
-`anypoint-cli governance profile create "OAS Best Practices" 68ef9520-24e9-4cf2-b2f5-620025690913/open-api-best-practices/1.0.1 --tags best --description "Profile for OAS Best Practices"`
-
-*Example output:*
-----
-Profile Added
-Id         	4f98e59d-8efb-420f-ac95-9cd0af15bd45                                    
-Name       	OAS Best Practices                                                        
-Description	Profile for OAS Best Practices                                
-Rulesets   	gav://68ef9520-24e9-4cf2-b2f5-620025690913/open-api-best-practices/1.0.1
-Filter     	tag:best    
-----
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
 == List governance Profile Information Using the API governance CLI
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
+If you want to use a command to list governance profile information for all governance profiles, use the following command:
 
-[[governance-profile-list]]
-=== governance profile list
-
-`> governance profile list`
-
-This command lists information for all governance profiles for an organization. You need this information when updating a governance profile.
-
-*Example output:*
-
-----
-Profile Name  	    Profile Id                          
-	
-OAS Best Practices	4f98e59d-8efb-420f-ac95-9cd0af15bd45
-
-----
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
 == List Specific governance Profile Information Using the API governance CLI
 
-If you want to use a command to list governance profile information, use the following command:
+If you want to use a command to list governance profile information for a specific governance profile ID, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
-
-[[governance-profile-info]]
-=== governance profile info
-
-`> governance profile info <profile-id>`
-
-This command lists all information for a governance profile ID.
-
-*Example command:*
-
-`anypoint-cli governance profile info 8ffd463f-86b2-4132-afc6-44d179209362`
-
-*Example output:*
-
-----
- Id         	19fb211b-8775-43cc-865a-46228921d6ed                                                                                                    
- Name       	Best Practices                                                                                                                          
- Description	Best Practices Profile                                                                                                                  
- Rulesets   	gav://3280b56c-e887-40f9-a9aa-db1118f719d5/best-practices/1.0.0 gav://68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.0
- Filter     	tag:best 
-----
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
 == Update a governance Profile Using the API governance CLI
 
 If you want to use a command to update a governance profile, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
-
-[[governance-profile-update]]
-=== governance profile update
-
-`> governance profile update [options] <profile-id>`
-
-This command updates an existing governance profile. You can update the governance profile's
-governance rulesets, name, tags, and description.
-
-NOTE: You must know the governance profile ID to edit a governance profile. You can get the
-governance profile IDs for all of the governance profiles for an organization using the
-`governance profile list` command. 
-
-*Options:* 
-
-[cols="1,1"]
-|===
-|Option |Description
-
-|--profile-name <profile-name>
-|The `profile-name` argument is followed by a string that is the new governance profile name.
-
-|--ruleset-gavs <ruleset-gavs>
-|The `ruleset-gavs` argument is a list with the group ID, asset ID, and version for each ruleset, formatted as follows: `<group_id>/<asset_id>/<version>,<group_id>/<asset_id>/<version>` 
-
-These are the asset's identifiers.
-
-|--tags <tags>
-|The `tags` argument is followed by a comma separated list of tags formatted as follows: `tag1,tag2,tag3`.
-
-|--description <description>
-|The `description` argument is followed by a string that is the new governance profile description.
-|===
-
-*Example command:*
- `anypoint-cli governance profile update 51f9f94c-fb0c-43d4-9895-22c9e64f1537 --profile-name "New Name"``
-
-*Example output:*
-`Profile updated 51f9f94c-fb0c-43d4-9895-22c9e64f1537`
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
 == Delete a governance Profile Using the API governance CLI
 
 To use the CLI to delete a governance profile, use the following command:
 
-//include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
-
-[[governance-profile-delete]]
-=== governance profile delete
-
-`> governance profile delete <profile-id>`
-
-This command deletes a specific governance profile.
-
-*Example command:*
-`anypoint-cli governance profile delete 8ffd463f-86b2-4132-afc6-44d179209362`
-
-*Example output:*
-`Profile with id 8ffd463f-86b2-4132-afc6-44d179209362 removed`
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
