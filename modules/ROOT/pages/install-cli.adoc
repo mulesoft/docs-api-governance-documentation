@@ -20,4 +20,4 @@ npm i -g anypoint-cli@latest
 == See Also
 
 * xref:cli-command-list.adoc[List of API Governance CLI Commands]
-* xref:anypoint-cli::api-gov.adoc[Anypoint CLI Documentation]
+* xref:anypoint-cli::index.adoc[Anypoint CLI Documentation]
