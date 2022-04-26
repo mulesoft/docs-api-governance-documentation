@@ -23,7 +23,7 @@ If you want a custom ruleset that cannot be created by modifying one of the prov
 . First search the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal] for ideas for new rulesets that have already been submitted.
 . If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 
-NOTE: Similarly to custom code and configurations, rulesets that you create are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the Github repository for the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator^].
+NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the Github repository for the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator^].
 
 If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
 
