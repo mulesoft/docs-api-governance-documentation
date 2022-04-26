@@ -1,4 +1,4 @@
-= Applying governance Rulesets to Specified APIs
+= Applying Governance Rulesets to Specified APIs
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
@@ -6,7 +6,7 @@ endif::[]
 After you identify the APIs in Exchange that 
 you want to govern, you are ready to create governance profiles. governance profiles enable you to select just the sets of APIs that you want to govern for each set of rulesets.
 
-== Create a governance Profile Using the API Governance Console
+== Create a Governance Profile Using the API Governance Console
 
 The API Governance console UI guides you through creating profiles.
 
@@ -27,7 +27,7 @@ Also, the filter criteria is applied to any APIs that are added to Exchange in t
 * *Notifications:* Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications]. 
 * *Review:* Review your profile and click *Create*.
 
-== Update a governance Profile Using the API Governance Console
+== Update a Governance Profile Using the API Governance Console
 
 The API Governance console guides you through updating profiles. 
 
@@ -40,7 +40,7 @@ To update governance profile information using the API Governance console:
 NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
 
-== Delete a governance Profile Using the API Governance Console
+== Delete a Governance Profile Using the API Governance Console
 
 The API Governance console guides you through deleting profiles.
 
@@ -49,19 +49,19 @@ To delete a governance profile:
 . In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the more options menu icon"]) at the end of the profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
-== Create governance Profiles Using the API Governance CLI
+== Create Governance Profiles Using the API Governance CLI
 
 If you want to use a command to create an API Governance profile, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
-== List governance Profile Information Using the API Governance CLI
+== List Governance Profile Information Using the API Governance CLI
 
 If you want to use a command to list governance profile information for all governance profiles, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
-== List Specific governance Profile Information Using the API Governance CLI
+== List Specific Governance Profile Information Using the API Governance CLI
 
 If you want to use a command to list governance profile information for a specific governance profile ID, use the following command:
 

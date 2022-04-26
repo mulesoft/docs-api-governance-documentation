@@ -38,11 +38,11 @@ API developers or architects can apply the governance rulesets directly to API d
 
 image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as dependencies in API Designer]
 
-<1> Add rulesets to your API project.
+<1> Add rulesets to your API project as dependencies.
 
 <2> View conformance issues and filter by level of severity.
 
-<3> Nonconformance messages are shown in the <<project-errors,*Project Errors*>> section of the text editor. 
+<3> Expand the <<project-errors,*Project Errors*>> section of the text editor to view nonconformance messages. 
 
 == API Governance Concepts
 

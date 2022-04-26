@@ -16,7 +16,3 @@ You can use the following CLI commands to automate your API Governance processes
 | xref:create-profiles.adoc#governance-profile-update[governance profile update] | Updates a governance profile
 | xref:create-custom-rulesets.adoc#governance-ruleset-validate[governance ruleset validate] | Validates a governance ruleset definition's format
 |===
- 
-== See Also
-
-* xref:create-custom-rulesets.adoc#create-custom-governance-rulesets-in-exchange-using-the-api-governance-cli[Create Custom Governance Ruleset Assets in Exchange]
