@@ -13,7 +13,7 @@ API Governance enables you to:
 * *Apply consistent rules at design time:* Enable developers to apply governance rulesets at design time in Anypoint API Designer.
 * *Enforce governance within your DevOps organization:* Automatically apply standards to your API contract and definition within your CI/CD pipeline.
 
-In the API Governance console, you add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API governance console then provides you with an overview of conformance for all validated APIs.
+In the API Governance console, you add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 You can monitor your APIs' conformance and notify developers to help improve the conformance.
 
 image::api-gov-console.png[Screenshot of the API Governance console]
