@@ -49,7 +49,7 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 [[generate-ruleset-doc]]
 == Generate Documentation for a Ruleset File to Upload to Exchange
 
-Use the following command to generate a documentation .zip file for a ruleset YAML file. The resulting documentation `zip` file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
+Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
