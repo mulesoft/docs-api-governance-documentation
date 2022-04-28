@@ -1,5 +1,5 @@
 .xref:index.adoc[API Governance]
-  * xref:api-gov.adoc[API Governance Overview]
+  * xref:index.adoc[API Governance Overview]
   * xref:get-started.adoc[Get Started with API Governance]
   * xref:install-cli.adoc[Install the API Governance CLI]
   * xref:add-tags.adoc[Identify APIs to Govern]

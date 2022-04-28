@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-After you become familiar with the API Governance UI and concepts covered in the xref:api-gov.adoc[API Governance Overview], you are ready to get started governing your APIs. 
+After you become familiar with the API Governance UI and concepts covered in the xref:index.adoc[API Governance Overview], you are ready to get started governing your APIs.
 
 == Before You Begin
 
@@ -11,11 +11,11 @@ To access the API Governance console:
 
 * MuleSoft must activate API Governance for your Anypoint Platform organization.
 
-* You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator. 
+* You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator.
 
 == Govern Your APIs
 
-.Govern your APIs using the following steps: 
+.Govern your APIs using the following steps:
 
 . xref:install-cli.adoc[(Optional) Install the API Governance CLI] to run commands locally or in automation tools.
 
@@ -27,10 +27,10 @@ To access the API Governance console:
 
 . xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
 
-. xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange. 
+. xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange.
 
 == See Also
 
-* xref:api-gov.adoc[API Governance Overview]
+* xref:index.adoc[API Governance Overview]
 * xref:access-management::managing-permissions.adoc[Managing Permissions in Access Management]
 // * xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
