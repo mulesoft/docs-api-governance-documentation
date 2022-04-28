@@ -1,0 +1,56 @@
+= Sending Conformance Notifications
+
+You can send notifications automatically by configuring them in the API Governance console. Alternatively, you can send the notifications manually from a governance profile.
+
+[[send-auto-notifs]]
+== Send Automated Conformance Notifications
+
+If you want to automatically send notifications when governance conformance issues are detected by API Governance, enable them in the API Governance console. 
+
+Automated notifications are sent to the contact email address for the contact specified in the API. These notifications are sent only if there is a valid contact email address on the asset page in Exchange.
+
+Automated notifications are sent for each ruleset that has a new conformance failure when the conformance status changes during validation. Following are the changes that might result in notifications: 
+
+. Updating a governance profile, including adding or removing rulesets 
+. Publishing a new version of an API 
+. Changing tags on an API 
+. Updating governance rulesets 
+
+NOTE: A notification is sent only the first time a specific version of an API fails conformance to a specific ruleset. 
+
+To configure conformance notifications:
+
+. In the API Governance console, while creating or updating a profile, using the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
+. Set the slider to *Enabled*.
+
+[[send-manual-notifs]]
+== Send Notifications to API Owners
+
+When you notice an API is not conformant, you might want to send the API owner an email notification that includes:
+
+* The name of the APIs that are not conformant
+* Which governance rulesets the APIs failed
+* The number and types of rules that failed (violation, warning, and information)
+* Links from which to act on the issues, such as API details in Exchange and code in Design Center 
+
+You can send emails to API owners from profiles even when there are no conformance issues. 
+
+To send a notification email to the API owner: 
+
+. In the API Governance console, select a governance profile. 
+. Click the *Notify Owner* icon.
+. Select a recipient:
++
+* Contact: Email the contact specified in the API
+* Publisher: Email the API publisher by using the email address specified in the listed Anypoint Platform account
+* Others: Email to a comma-separated list of email addresses
+. Review the email text and click *Notify*.
+
+NOTE: 
+
+* The *Contact* selection is disabled if there is not a valid email address for the API contact in Exchange. 
+* The *Publisher* selection is disabled if there is not a valid contact email address for the API publisher in their Anypoint Platform profile. 
+
+== See Also
+
+* xref:exchange::to-describe-an-asset.adoc[Describe an Asset]

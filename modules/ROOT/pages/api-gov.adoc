@@ -1,0 +1,103 @@
+= API Governance Overview
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+Anypoint API Governance is a component of the Anypoint Platform that
+enables you to apply governance rules to your APIs as part of the
+API lifecycle. API Governance helps you improve your organization's API quality by enabling you to identify conformance issues and take steps to resolve them. 
+
+API Governance enables you to:
+
+* *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
+* *Apply consistent rules at design time:* Enable developers to apply governance rulesets at design time in Anypoint API Designer.
+* *Enforce governance within your DevOps organization:* Automatically apply standards to your API contract and definition within your CI/CD pipeline.
+
+In the API Governance console, you add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
+You can monitor your APIs' conformance and notify developers to help improve the conformance.
+
+image::api-gov-console.png[Screenshot of the API Governance console]
+
+<1> View a numeric summary of your <<gov-profiles,governance profiles>>, <<api-conformance,API conformance>>, and <<nonconformance-severity,nonconformance by severity>>.
+
+<2> View, filter, and search a summary list of your governance profiles or <<validated-apis,validated APIs>>.
+
+<3> Export conformance reports in CSV format.
+
+<4> Add a new profile. 
+
+<5> Select from the more options menu to export reports and view, edit, and delete profiles.
+
+API Governance is integrated with these other components of Anypoint Platform:
+
+* Anypoint Design Center, where governance rulesets are applied to API definitions (as dependencies)
+
+* Anypoint Exchange, where governance rulesets are cataloged and discovered
+
+API developers or architects can apply the governance rulesets directly to API definitions as dependencies in API Designer during the API design phase. 
+
+image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as dependencies in API Designer]
+
+<1> Add rulesets to your API project as dependencies.
+
+<2> View conformance issues and filter by level of severity.
+
+<3> Expand the <<project-errors,*Project Errors*>> section of the text editor to view nonconformance messages. 
+
+== API Governance Concepts
+
+Following are the concepts you need to know to use API Governance.
+
+[[gov-profiles]]
+== Governance Profiles
+
+A governance profile applies chosen governance rulesets to a select group of APIs. The API definitions are validated
+against the governance rulesets. 
+
+A governance profile has two statuses, Normal and At Risk, which are based on the percentage
+of conformant APIs in the governance profile.
+
+* *Normal:* More than 70% of APIs are conformant
+* *At Risk:* Less than 70% of APIs are conformant
+
+[[gov-rulesets]]
+== Governance Rulesets
+
+Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
+REST API definition in the Anypoint Platform. Some examples of governance rulesets are internal and external best
+practice guidelines, such as naming conventions, and industry-specific government standards, such as making sure your APIs carrying sensitive data are encrypted (HTTPS). 
+
+[[validated-apis]]
+== Validated APIs
+
+APIs are validated if they are identified by the selection criteria of at least one of the governance profiles. 
+
+[[api-conformance]]
+== API Conformance
+
+API conformance indicates whether a validated API definition passes all of the required rules in one or more governance rulesets. If an API definition is included in multiple governance profiles, it must pass all of the rulesets in all of those profiles to be conformant. 
+
+NOTE: API conformance applies only to API definitions that are published in Exchange as REST APIs.
+
+[[conformance-status]]
+== Conformance Status
+
+Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
+
+[[nonconformance-severity]]
+== Nonconformance Severity
+
+Nonconformance severity is categorized by percentage of passed rulesets among all required rulesets.
+
+High Severity:: 0 - 40% rulesets passed
+
+Medium Severity:: 41% - 80% rulesets passed
+
+Low Severity:: 81% - 99% rulesets passed
+
+Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
+
+[[project-errors]]
+== Project Errors
+
+Project errors are shown in the Design Center API Designer text editor page. The *Project Errors* section of the page shows functional issues and nonconformance messages in the API definition open in the text editor. 
