@@ -7,9 +7,7 @@ You can send notifications automatically by configuring them in the API Governan
 
 If you want to automatically send notifications when governance conformance issues are detected by API Governance, enable them in the API Governance console. 
 
-//You configure the notifications based on conditions, and when conformance validation issues are triggered, the notifications are automatically sent. 
-
-Automated notifications are sent to the contact email address for the contact specified in the API. These  notifications are sent only if there is a valid contact email address on the asset page in Exchange.
+Automated notifications are sent to the contact email address for the contact specified in the API. These notifications are sent only if there is a valid contact email address on the asset page in Exchange.
 
 Automated notifications are sent for each ruleset that has a new conformance failure when the conformance status changes during validation. Following are the changes that might result in notifications: 
 
@@ -55,4 +53,4 @@ NOTE:
 
 == See Also
 
-* xref:access-management:managing-your-account.adoc#update-user-information[Updating Profile Information in Access Management]
+* xref:exchange::to-describe-an-asset.adoc[Describe an Asset]
