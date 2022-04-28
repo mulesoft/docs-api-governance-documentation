@@ -1,0 +1,23 @@
+= Installing the API Governance CLI
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+If you plan to use the API Governance CLI commands, you must install the API Governance CLI on the systems where you run local commands or where your automatation tools, such as CI/CD pipelines or scripts, are executed.
+
+== Install the API Governance CLI
+
+Install as follows: 
+
+* Install NPM 7 if you do not have it already installed. See the https://nodejs.org/en/download/[NodeJS download page].
+* Install Anypoint CLI with API Governance included using the following command: 
+
+[source,bash]
+----
+npm i -g anypoint-cli@latest
+----
+
+== See Also
+
+* xref:cli-command-list.adoc[List of API Governance CLI Commands]
+* xref:anypoint-cli::index.adoc[Anypoint CLI Documentation]

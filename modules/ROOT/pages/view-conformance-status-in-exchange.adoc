@@ -1,0 +1,21 @@
+= Viewing Conformance Status in Exchange 
+
+You can view conformance status in Exchange for APIs that are validated by API Governance. If an API is validated:
+
+* A conformance badge is displayed for a selected API version.
+* A *Conformance* column shows conformance for each validated version of the API in the *Manage Versions* page. 
+
+To view a conformance status in Exchange:
+
+. Select an API asset in Exchange. 
++
+A conformance badge is displayed beside the lifecycle state badge.
++
+. To see conformance by version, click *Manage Versions*.
+//. Select the *Conformance Status* page in the left navigation.
++
+The *Conformance* column shows the governance conformance status for each validated version.
+
+== See Also
+
+* xref:exchange::asset-details.adoc[Asset Details]
