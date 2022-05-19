@@ -2,7 +2,7 @@
 
 MuleSoft provides several rulesets in Exchange, such as Anypoint API Best Practices, OpenAPI Best Practices, OWASP API Security Top 10, and Authentication Security Best Practices governance rulesets. 
 
-Submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal].
+Submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal].
 
 == Create Custom Rulesets by Modifying Provided Rulesets
 
@@ -20,7 +20,7 @@ To create a custom ruleset based on one already in Exchange:
 
 If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
 
-. First search the https://help.mulesoft.com/s/ideas[MulesSoft Ideas Portal] for ideas for new rulesets that have already been submitted.
+. First search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal] for ideas for new rulesets that have already been submitted.
 . If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 
 NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the Github repository for the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator^].
