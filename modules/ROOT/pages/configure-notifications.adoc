@@ -20,7 +20,12 @@ NOTE: A notification is sent only the first time a specific version of an API fa
 
 To configure conformance notifications:
 
-. In the API Governance console, while creating or updating a profile, using the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
+. In the API Governance console, while creating or updating a profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
+. Select a recipient:
++
+* *API Contact*: Email the contact specified in the asset in Exchange
+* *API Publisher*: Email the API publisher by using the email address specified in the listed Anypoint Platform account
+* *Others*: Email to a comma-separated list of email addresses
 . Set the slider to *Enabled*.
 
 [[send-manual-notifs]]
@@ -41,15 +46,15 @@ To send a notification email to the API owner:
 . Click the *Notify Owner* icon.
 . Select a recipient:
 +
-* Contact: Email the contact specified in the API
-* Publisher: Email the API publisher by using the email address specified in the listed Anypoint Platform account
-* Others: Email to a comma-separated list of email addresses
-. Review the email text and click *Notify*.
+* *API Contact*: Email the contact specified in the asset in Exchange
+* *API Publisher*: Email the API publisher by using the email address specified in the listed Anypoint Platform account
+* *Others*: Email to a comma-separated list of email addresses
+. Review the email text and click *Notify Owner*.
 
 NOTE: 
 
-* The *Contact* selection is disabled if there is not a valid email address for the API contact in Exchange. 
-* The *Publisher* selection is disabled if there is not a valid contact email address for the API publisher in their Anypoint Platform profile. 
+* The *API Contact* selection is disabled if there is not a valid email address for the API contact in Exchange. 
+* The *API Publisher* selection is disabled if there is not a valid contact email address for the API publisher in their Anypoint Platform profile. 
 
 == See Also
 

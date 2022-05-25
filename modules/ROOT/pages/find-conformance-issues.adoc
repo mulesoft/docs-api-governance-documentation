@@ -7,13 +7,9 @@ or by using the governance CLI. You can also validate governance rulesets to mak
 
 To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in Design Center API Designer. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
-image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as dependencies in API Designer]
+// Screenshot of conformance validation in APID with callouts
 
-<1> Add rulesets to your API project.
-
-<2> View conformance issues and filter by level of severity.
-
-<3> Expand the <<project-errors,*Project Errors*>> section of the text editor to view nonconformance messages. 
+include::partial$api-gov-apid-scap-callouts.adoc[]
 
 See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
