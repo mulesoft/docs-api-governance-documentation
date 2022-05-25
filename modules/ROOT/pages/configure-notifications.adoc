@@ -18,7 +18,7 @@ Automated notifications are sent for each ruleset that has a new conformance fai
 
 NOTE: A notification is sent only the first time a specific version of an API fails conformance to a specific ruleset. 
 
-To configure conformance notifications:
+To configure and enable conformance notifications:
 
 . In the API Governance console, while creating or updating a profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
 . Select a recipient:
