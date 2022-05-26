@@ -22,17 +22,9 @@ include::_partials/api-gov-gs-video.html[]
 In the API Governance console, you add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 You can monitor your APIs' conformance and notify developers to help improve the conformance.
 
-image::api-gov-console.png[Screenshot of the API Governance console]
+// Screenshot of the console with callouts
 
-<1> View a numeric summary of your <<gov-profiles,governance profiles>>, <<api-conformance,API conformance>>, and <<nonconformance-severity,nonconformance by severity>>.
-
-<2> View, filter, and search a summary list of your governance profiles or <<validated-apis,validated APIs>>.
-
-<3> Export conformance reports in CSV format.
-
-<4> Add a new profile.
-
-<5> Select from the more options menu to export reports and view, edit, and delete profiles.
+include::_partials/api-gov-console-scap-callouts.adoc[]
 
 API Governance is integrated with these other components of Anypoint Platform:
 

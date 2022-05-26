@@ -11,7 +11,15 @@ To validate APIs against governance rulesets, add the rulesets as dependencies t
 
 include::partial$api-gov-apid-scap-callouts.adoc[]
 
-See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
+[[add-rulesets]]
+=== Add Rulesets to Your Project
+
+For information on adding governance rulesets as Exchange dependencies in API Designer, see xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
+
+[[project-errors]]
+=== Resolve Conformance Project Errors
+
+For information on using the API Designer text editor to resolve conformance project errors, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 
 == Validate API Definitions Against Governance Rulesets Using the API Governance CLI
 
