@@ -2,7 +2,7 @@
 
 You can send notifications automatically by configuring them in the API Governance console. Alternatively, you can send the notifications manually from a governance profile.
 
-Email notification include:
+Email notifications include:
 
 * The name of the APIs that are not conformant
 * Which governance rulesets the APIs failed
