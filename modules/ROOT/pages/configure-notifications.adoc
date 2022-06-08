@@ -7,7 +7,7 @@ Each email notifications includes:
 * The name of the API that is not conformant
 * Which governance rulesets the API failed
 * The number and types of rules that failed (violation, warning, and information)
-* Links from which to act on the issues, such as API details in Exchange and code in Design Center   
+* Links to API details in Exchange and code in Design Center   
 
 [[send-auto-notifs]]
 == Send Automated Conformance Notifications
