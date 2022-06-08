@@ -53,11 +53,6 @@ To send a notification email to the API owner:
 * *Others*: Email to a comma-separated list of email addresses
 . Review the email text and click *Notify Owner*.
 
-NOTE: 
-
-* The *API Publisher* selection is disabled if there is not a valid contact email address for the API publisher in their Anypoint Platform profile. 
-* The *API Contact* selection is disabled if there is not a valid email address for the API contact in Exchange. 
-
 == See Also
 
 * xref:exchange::to-describe-an-asset.adoc[Describe an Asset]
