@@ -9,14 +9,20 @@ After you configure governance profiles for your APIs and the resulting governan
 
 You can view the latest status information on the console.
 
-Governance Profile Statuses::
+// Screenshot of the console with callouts
+
+include::_partials/api-gov-console-scap-callouts.adoc[]
+
+[[gov-profiles]]
+=== Governance Profile Statuses
 
 You can view profile statuses in the console. Governance profile statuses are based on the percentage of conformant APIs in the profile:
 
 * *Normal:* More than 70% of APIs are conformant.
 * *At Risk:* Less than 70% of APIs are conformant.
 
-API Conformance Across Governance Profiles::
+[[api-conformance]]
+=== API Conformance Across Governance Profiles
 
 API conformance status indicates whether the API definitions that are included in your governance profiles pass all applied governance rulesets:
 
@@ -24,7 +30,8 @@ API conformance status indicates whether the API definitions that are included i
 * *Not Conformant:* The APIs fail at least one governance ruleset.
 * *Not Validated:* The APIs are not validated because they are not included in a governance profile.
 
-Nonconformance by Severity Across Governance Profiles::
+[[nonconformance-severity]]
+=== Nonconformance by Severity Across Governance Profiles
 
 Nonconformance severity is categorized by the percentage of passed governance rulesets among all applied governance rulesets:
 
@@ -36,7 +43,7 @@ Nonconformance severity is categorized by the percentage of passed governance ru
 
 You can export reports of your governance information, which downloads the data to a `.csv` file. 
 
-Governance Profile Report::
+=== Governance Profile Report
 On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export a report of governance profile information, such as: 
 
 * Organization ID 
@@ -49,7 +56,7 @@ On the main API Governance console page, select the *Profiles* tab and then clic
 * Timestamps
 * Associated ruleset tags
 
-Validated API Report::
+=== Validated API Report
 On the main API Governance console page, select the *APIs* tab and then click the *Export Report* button to export a report that shows your validated APIs' information, such as:  
 
 * Organization ID 
@@ -60,7 +67,7 @@ On the main API Governance console page, select the *APIs* tab and then click th
 * Number of nonconformant APIs (fail)
 * Timestamps
 
-Specific Profile Report::
+=== Specific Profile Report
 On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=0.75%,height=0.75%,title="Screenshot of the more options menu icon"]) and then select *Export Reports* to export a report that shows the selected governance profile's information, such as: 
 
 * Organization ID
