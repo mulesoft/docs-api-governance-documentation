@@ -13,13 +13,10 @@ To view conformance status in Exchange:
 ** Review the conformance badge beside the lifecycle state badge.
 +
 ** To see conformance by version, click *Manage Versions*.
-//. Select the *Conformance Status* page in the left navigation.
 +
 Review the *Conformance* column, which shows the governance conformance status for each validated version.
 +
 ** To view conformance details, select the *Conformance Status* page in the left navigation.
-+
-Review the conformance details, such as xxx.
 
 == See Also
 
