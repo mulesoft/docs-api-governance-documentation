@@ -61,10 +61,10 @@ Governance rulesets are collections of rules, or guidelines, that can be applied
 REST API definition in the Anypoint Platform. Some examples of governance rulesets are internal and external best
 practice guidelines, such as naming conventions, and industry-specific government standards, such as making sure your APIs carrying sensitive data are encrypted (HTTPS).
 
-[[validated-apis]]
-== Validated APIs
+[[governed-apis]]
+== Governed APIs
 
-APIs are validated if they are identified by the selection criteria of at least one of the governance profiles.
+APIs are governed if they are identified by the selection criteria of at least one of the governance profiles.
 
 [[api-conformance]]
 == API Conformance
