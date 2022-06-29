@@ -17,7 +17,7 @@ The API Governance console UI guides you through creating profiles.
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 * *Rulesets*: Select one or more rulesets you want to use to govern your APIs.
-* *Filter Criteria*: To identify the APIs to which to apply the selected rulesets, select filter criteria such as API type, tags, and categories. The filter criteria applies to your organization's APIs that are in Exchange currently and applies to your new APIs as they are added to Exchange.
+* *Filter Criteria*: To identify the APIs to which to apply the selected rulesets, select filter criteria such as API type, tags, and categories. The filter criteria applies to your organization's APIs that are in Exchange currently and to your new APIs as they are added to Exchange.
 +
 Selections appear in the *Tag* and *Category* fields only if your APIs in Exchange have tags and categories. If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
 +
