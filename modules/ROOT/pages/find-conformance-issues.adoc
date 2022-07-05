@@ -25,6 +25,10 @@ For information on using the API Designer text editor to resolve conformance pro
 
 If you want to use a command to validate your API definition against governance rulesets, use the `governance api validate` command.
 
+=== Limitations
+
+This command does not validate the dependencies of the API definition, such as fragments.
+
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
 
 == See Also
