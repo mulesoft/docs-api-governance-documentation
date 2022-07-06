@@ -15,9 +15,9 @@ API Governance enables you to:
 
 // View the following video for a brief overview of API Governance.  
 
-// ++++
-// include::_partials/api-gov-gs-video.html[]
-// ++++
+++++
+include::_partials/api-gov-gs-video.html[]
+++++
 
 In the API Governance console, you add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 You can monitor your APIs' conformance and notify developers to help improve the conformance.
@@ -61,10 +61,10 @@ Governance rulesets are collections of rules, or guidelines, that can be applied
 REST API definition in the Anypoint Platform. Some examples of governance rulesets are internal and external best
 practice guidelines, such as naming conventions, and industry-specific government standards, such as making sure your APIs carrying sensitive data are encrypted (HTTPS).
 
-[[validated-apis]]
-== Validated APIs
+[[governed-apis]]
+== Governed APIs
 
-APIs are validated if they are identified by the selection criteria of at least one of the governance profiles.
+APIs are governed if they are identified by the selection criteria of at least one of the governance profiles.
 
 [[api-conformance]]
 == API Conformance

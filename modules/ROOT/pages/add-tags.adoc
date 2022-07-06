@@ -3,6 +3,8 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
+APIs that meet the filter criteria in API Governance profiles become _governed APIs_.
+
 To limit governance to sets of APIs you are ready to govern, identify the API assets in Exchange using tags and categories. This enables you to apply rulesets to specific sets of APIs when you create governance profiles. It also ensures that governance conformance notifications are sent only to the API owners who have been informed and are ready to begin making their APIs conformant to your governance profiles.
 
 To identify the APIs you want to govern by adding asset tags to the API assets in Exchange, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Add and Remove Asset Tags in Exchange].
@@ -12,3 +14,4 @@ To identify the APIs you want to govern by adding categories to the API assets i
 == See Also
 
 * xref:create-profiles.adoc[Applying Governance Rulesets to Specified APIs]
+* xref:index.adoc[API Governance Overview]
