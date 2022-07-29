@@ -4,20 +4,25 @@ You can view conformance status in Exchange for APIs that are validated by API G
 
 * A conformance badge is displayed for a selected API version.
 * A *Conformance* column shows conformance for each validated version of the API in the *Manage Versions* page. 
-* A *Conformance Status* page gives conformance details.
+* A *Conformance Status* page gives conformance details. If an API that has been validated against a centralized governance ruleset is nonconformant, a conformance status page appears in Exchange for that API. 
 
 To view conformance status in Exchange:
 
-* Select an API asset in Exchange. 
+. Select an API asset in Exchange. 
+
+. Review the conformance badge beside the lifecycle state badge.
 +
-** Review the conformance badge beside the lifecycle state badge.
-+
-** To see conformance by version, click *Manage Versions*.
+. To see conformance by version, click *Manage Versions*.
 +
 Review the *Conformance* column, which shows the governance conformance status for each validated version.
 +
-** To view conformance details, select the *Conformance Status* page in the left navigation.
+. To view conformance details, select the *Conformance Status* page in the left navigation.
+From the conformance status page, you can:
++
+* View the lists of centralized governance rulesets and additional rulesets against which the API has been validated and to which it is not conformant.
+* Click external link icons to view the API definition in Design Center and review the conformance issues in context with the code.
 
 == See Also
 
 * xref:exchange::asset-details.adoc[Asset Details]
+* xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
