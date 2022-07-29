@@ -17,12 +17,13 @@ The API Governance console UI guides you through creating profiles.
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 * *Rulesets*: Select one or more rulesets you want to use to govern your APIs.
-* *Filter Criteria*: To identify the APIs to which to apply the selected rulesets, select filter criteria such as API type, tags, and categories. Selections appear in the *Tag* and *Category* fields only if APIs are found in Exchange that have those tags or categories. See xref:add-tags.adoc[Identifying APIs to Govern].
+* *Filter Criteria*: To apply selected rulesets to specific APIs, select filter criteria such as API type, tags, and categories. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
 +
-After you select the filters, the APIs that meet the filter criteria that you have selected are shown.
+Selections appear in the *Tag* and *Category* fields only if your APIs in Exchange have tags and categories. If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
++
+You can review the APIs that match the criteria below the filter criteria fields. If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details. 
 +
 CAUTION: If you do not select filter criteria, your governance profile is applied to _all_ of your APIs in Exchange.
-Also, the filter criteria is applied to any APIs that are added to Exchange in the future.
 +
 * *Notifications:* Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications]. 
 * *Review:* Review your profile and click *Create*.
