@@ -21,12 +21,17 @@ From the conformance status page, you can:
 +
 * Select the version of the API that you want to view.
 * View the lists of centralized governance rulesets and additional rulesets against which the API has been validated.
-* For nonconformant APIs, select from one of the following to update the API and republish it to make it conformant:
-** *Fix Using the CLI*
+* For nonconformant APIs, click *Fix the API Definition* and then select from one of the following:
 ** *Fix Using Design Center*
++ 
+After your API definition is opened in Design Center, view the conformance messages in the *Project Errors* section to fix and republish your API definition to make it conformant with the listed rulesets.
+** *Fix Using Anypoint CLI*
++
+Follow the prompts on the page to copy, update, and run the Anypoint CLI commands to fix and republish your API definition to make it conformant with the listed rulesets.
 * Click external link icons beside listed rulesets to view the ruleset asset's page in Exchange.
 
 == See Also
 
 * xref:exchange::asset-details.adoc[Asset Details]
-* xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
+* xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor]
+* xref:cli-command-list.adoc[List of API Governance CLI Commands]
