@@ -19,8 +19,12 @@ Review the *Conformance* column, which shows the governance conformance status f
 . To view conformance details, select the *Conformance Status* page in the left navigation.
 From the conformance status page, you can:
 +
-* View the lists of centralized governance rulesets and additional rulesets against which the API has been validated and to which it is not conformant.
-* Click external link icons to view the API definition in Design Center and review the conformance issues in context with the code.
+* Select the version of the API that you want to view.
+* View the lists of centralized governance rulesets and additional rulesets against which the API has been validated.
+* For nonconformant APIs, select from one of the following to update the API and republish it to make it conformant:
+** *Fix Using the CLI*
+** *Fix Using Design Center*
+* Click external link icons beside listed rulesets to view the ruleset asset's page in Exchange.
 
 == See Also
 
