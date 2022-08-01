@@ -21,6 +21,8 @@ From the conformance status page, you can:
 +
 * Select the version of the API that you want to view.
 * View the lists of centralized governance rulesets and additional rulesets against which the API has been validated.
+** Click the *Show All* link to show the full list of rulesets if there are more than are shown on the initial page.
+** Click the external link icon beside a ruleset to view that ruleset asset's page in Exchange. 
 * For nonconformant APIs, click *Fix the API Definition* and then select from one of the following:
 ** *Fix Using Design Center*
 + 
@@ -28,7 +30,6 @@ After your API definition is opened in Design Center, view the conformance messa
 ** *Fix Using Anypoint CLI*
 +
 Follow the prompts on the page to copy, update, and run the Anypoint CLI commands to fix and republish your API definition to make it conformant with the listed rulesets.
-* Click external link icons beside listed rulesets to view the ruleset asset's page in Exchange.
 
 == See Also
 
