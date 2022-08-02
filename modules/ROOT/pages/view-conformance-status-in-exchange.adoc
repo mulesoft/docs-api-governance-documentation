@@ -34,5 +34,5 @@ Follow the prompts on the page to copy, update, and run the Anypoint CLI command
 == See Also
 
 * xref:exchange::asset-details.adoc[Asset Details]
-* xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor]
+* xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Definition with the Text Editor]
 * xref:cli-command-list.adoc[List of API Governance CLI Commands]
