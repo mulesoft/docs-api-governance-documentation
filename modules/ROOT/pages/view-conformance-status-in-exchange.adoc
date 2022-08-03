@@ -26,7 +26,7 @@ From the conformance status page, you can:
 * For nonconformant APIs, click *Fix the API Definition* and then select from one of the following:
 ** *Fix Using Design Center*
 + 
-After your API definition opens in Design Center, view the conformance messages in the *Project Errors* section. Add the listed rulesets as dependencies and fix and republish your API definition.
+After your API definition opens in Design Center, add the listed rulesets as dependencies and view the conformance messages in the *Project Errors* section to fix and republish your API definition.
 ** *Fix Using Anypoint CLI*
 +
 Follow the prompts on the page to copy, update, and run the Anypoint CLI commands to add the listed rulesets as dependencies and fix and republish your API definition.
