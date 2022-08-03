@@ -9,8 +9,6 @@ After you become familiar with the API Governance UI and concepts covered in the
 
 To access the API Governance console:
 
-* MuleSoft must activate API Governance for your Anypoint Platform organization.
-
 * You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator.
 
 == Govern Your APIs
