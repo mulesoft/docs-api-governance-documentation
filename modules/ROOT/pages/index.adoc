@@ -96,7 +96,7 @@ Conformance status indicates the status of your API definitions' conformance to 
 
 Project errors are shown in the Design Center API Designer text editor page. The *Project Errors* section of the page shows functional issues and nonconformance messages found in the API definition that is open in the text editor.
 
-=== API Governance Usage Report
+=== API Governance Usage Reports
 
 You can view usage reports to gain insight into your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
 
