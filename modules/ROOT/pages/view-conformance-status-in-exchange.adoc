@@ -1,9 +1,15 @@
 = Viewing Conformance Status in Exchange 
 
-You can view conformance status in Exchange for APIs that are validated by API Governance. If an API is validated:
+You can view governance conformance status in Exchange for versions of API definitions. The status is one of the following:
 
-* A conformance badge is displayed for a selected API version.
-* A *Conformance* column shows conformance for each validated version of the API in the *Manage Versions* page. 
+* *Conformant*: The API definition is conformant to governance rulesets against which it has been validated.
+* *Not Conformant*: The API definition is not conformant to governance rulesets against which it has been validated.
+* *Not Validated*: The API definition is not validated against governance rulesets.
+
+Conformance status can be viewed in Exchange as follows:
+
+* A conformance badge is displayed for a selected version of an API.
+* In the *Manage Versions* page, a *Conformance* column shows conformance status for each version of the API. 
 * A *Conformance Status* page appears for all REST APIs and AsyncAPIs. If a selected version of an API has been validated against governance rulesets, the conformance status page gives conformance information and gives options to fix nonconformant versions.
 
 To view conformance status in Exchange:
