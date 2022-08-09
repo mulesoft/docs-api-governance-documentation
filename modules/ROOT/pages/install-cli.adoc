@@ -12,7 +12,7 @@ Install as follows:
 * Install NPM 7 if you do not have it already installed. See the https://nodejs.org/en/download/[NodeJS download page].
 * Install Anypoint CLI with API Governance included using the following command: 
 
-[source,bash]
+[source,copy]
 ----
 npm i -g anypoint-cli@latest
 ----
