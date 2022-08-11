@@ -33,9 +33,9 @@ From the conformance status page, you can:
 ** *Fix Using Design Center*
 + 
 After your API definition opens in Design Center, add the listed rulesets as dependencies and view the conformance messages in the *Project Errors* section to fix and republish your API definition.
-** *Fix Using Anypoint CLI*
+** *Instructions for Anypoint CLI*
 +
-Follow the prompts on the page to copy, update, and run the Anypoint CLI commands to add the listed rulesets as dependencies and fix and republish your API definition.
+Follow the instructions on the page to copy, update, and run the Anypoint CLI commands to add the listed rulesets as dependencies and fix and republish your API definition.
 
 == See Also
 
