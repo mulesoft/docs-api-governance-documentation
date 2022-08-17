@@ -14,12 +14,12 @@ include::partial$api-gov-apid-scap-callouts.adoc[]
 [[add-rulesets]]
 === Add Rulesets to Your Project
 
-For information on adding governance rulesets as Exchange dependencies in API Designer, see xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
+In API Designer, you can add governance rulesets to your API projects as Exchange dependencies. See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
 [[project-errors]]
 === Resolve Conformance Project Errors
 
-For information on using the API Designer text editor to resolve conformance project errors, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Definition with the Text Editor].
+You can use the API Designer text editor to resolve conformance project errors. See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Definition with the Text Editor].
 
 == Validate API Definitions Against Governance Rulesets Using the API Governance CLI
 
