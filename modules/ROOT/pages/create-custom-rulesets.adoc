@@ -4,11 +4,25 @@ MuleSoft provides several rulesets in Exchange, such as Anypoint API Best Practi
 
 Submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^].
 
-== Create Custom Rulesets by Modifying Provided Rulesets
+If you want to create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
 
-If you want to create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes.
+To create a custom ruleset based on one already in Exchange, use one of the following approaches:
 
-To create a custom ruleset based on one already in Exchange:
+* <<use-clone-cli>>
+
+* <<manual-edit>>
+
+[[use-clone-cli]]
+== Change Rule Severity or Enable or Disable Rules Using the CLI
+
+To create a custom ruleset using the CLI, use the `governance ruleset clone` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
+
+[[manual-edit]]
+== Manually Modify Rulesets
+
+To create a custom ruleset manually:
 
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
