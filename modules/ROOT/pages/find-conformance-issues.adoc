@@ -27,6 +27,8 @@ If you want to use a command to validate your API definition against governance 
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
 
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+
 == See Also
 
 * xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project]
