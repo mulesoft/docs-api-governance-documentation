@@ -1,9 +1,13 @@
 = Creating Custom Governance Rulesets
 
-MuleSoft provides several rulesets in Exchange, such as Anypoint API Best Practices, OpenAPI Best Practices, OWASP API Security Top 10, and Authentication Security Best Practices governance rulesets. 
+include::partial$api-gov-ruleset-examples-discovery.adoc[]
 
-Submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^].
+If you need a ruleset other than what is provided, you can submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. If you want to create a custom ruleset, use one of the following approaches:
 
+* <<custom-ruleset-modify>>
+* <<custom-ruleset-new>>
+
+[[custom-ruleset-modify]]
 == Create Custom Rulesets by Modifying Provided Rulesets
 
 If you want to create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes.
@@ -16,6 +20,7 @@ To create a custom ruleset based on one already in Exchange:
 . Generate the ruleset file as an asset document. See <<generate-ruleset-doc>>.
 . Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset uploadv2` command. See <<publish-to-exchange>>.
 
+[[custom-ruleset-new]]
 == Create Completely New Custom Rulesets
 
 If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
