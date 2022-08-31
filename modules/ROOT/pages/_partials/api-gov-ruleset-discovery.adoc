@@ -1,1 +1,3 @@
+//Partial reused in index.adoc and create-custom-rulesets.adoc
+
 MuleSoft provides several rulesets in Exchange, such as Anypoint API Best Practices, OpenAPI Best Practices, OWASP API Security Top 10, and Authentication Security Best Practices governance rulesets. You can discover the rulesets published in Exchange by filtering the search in Exchange by the *Rulesets* type. See xref:exchange::to-find-info.adoc[Search for Assets].
