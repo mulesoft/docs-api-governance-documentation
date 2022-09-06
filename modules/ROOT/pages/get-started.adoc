@@ -23,7 +23,7 @@ To access the API Governance console:
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 
-. xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author in Design Center API Designer.
+. xref:find-conformance-issues.adoc[Find and fix conformance issues] as you author your APIs. 
 
 . xref:view-conformance-status-in-exchange.adoc[View conformance status] for a selected API in Exchange.
 
