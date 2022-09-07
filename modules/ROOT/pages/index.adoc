@@ -57,9 +57,10 @@ of conformant APIs in the governance profile.
 [[gov-rulesets]]
 === Governance Rulesets
 
-Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from any
-REST API definition in the Anypoint Platform. Some examples of governance rulesets are internal and external best
-practice guidelines, such as naming conventions, and industry-specific government standards, such as making sure your APIs carrying sensitive data are encrypted (HTTPS).
+Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from API definitions in the Anypoint Platform. Some examples of governance rulesets are internal and external best
+practice guidelines, such as naming conventions, and industry-specific government standards, such as making sure your APIs that have sensitive data are encrypted (HTTPS).
+
+include::partial$api-gov-ruleset-discovery.adoc[]
 
 [[governed-apis]]
 === Governed APIs
@@ -71,7 +72,7 @@ APIs are governed if they are identified by the selection criteria of at least o
 
 API conformance indicates whether a validated API definition passes all of the required rules in one or more governance rulesets. If an API definition is included in multiple governance profiles, it must pass all of the rulesets in all of those profiles to be conformant.
 
-NOTE: API conformance applies only to API definitions that are published in Exchange as REST APIs.
+NOTE: API conformance applies only to API types supported by API Governance, such as REST API and AsyncAPI. 
 
 [[conformance-status]]
 === Conformance Status
