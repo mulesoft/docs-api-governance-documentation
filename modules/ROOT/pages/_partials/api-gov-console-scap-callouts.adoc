@@ -2,12 +2,9 @@
 
 image::api-gov-console.png[Screenshot of the API Governance console]
 
-<1> View a numeric summary of your <<gov-profiles,governance profiles>>, <<api-conformance,API conformance>>, and <<nonconformance-severity,nonconformance by severity>>.
-
-<2> View, filter, and search a summary list of your governance profiles or validated APIs.
-
-<3> Export conformance reports in CSV format.
-
-<4> Add a new profile.
-
-<5> Select from the more options menu to export reports and view, edit, and delete profiles.
+[calloutlist]
+. View a numeric summary of your <<gov-profiles,governance profiles>>, <<api-conformance,API conformance>>, and <<nonconformance-severity,nonconformance by severity>>.
+. View, filter, and search a summary list of your governance profiles or validated APIs.
+. Export conformance reports in CSV format.
+. Add a new profile.
+. Select from the more options menu to export reports and view, edit, and delete profiles.

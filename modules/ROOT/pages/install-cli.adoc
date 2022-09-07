@@ -3,7 +3,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-If you plan to use the API Governance CLI commands, you must install the API Governance CLI on the systems where you run local commands or where your automatation tools, such as CI/CD pipelines or scripts, are executed.
+If you plan to use the API Governance CLI commands, you must install the API Governance CLI on the systems where you run local commands or where your automation tools, such as CI/CD pipelines or scripts, are executed.
 
 == Install the API Governance CLI
 
