@@ -1,11 +1,11 @@
 = Finding API Conformance Issues in API Definitions
 
-Apply governance rulesets to API definitions as you author them, either in Design Center using API Designer 
-or by using the governance CLI. You can also validate governance rulesets to make sure they are formatted correctly using the governance CLI.
+You can validate your API definitions against governance rulesets in Design Center
+or by using the governance CLI. 
 
 == Validate API Definitions in Design Center
 
-To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in Design Center API Designer. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
+To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
 // Screenshot of conformance validation in APID with callouts
 
@@ -14,7 +14,13 @@ include::partial$api-gov-apid-scap-callouts.adoc[]
 [[add-rulesets]]
 === Add Rulesets to Your Project
 
-In API Designer, you can add governance rulesets to your API projects as Exchange dependencies. See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
+In API Designer, you can add governance rulesets to your API projects as Exchange dependencies. 
+
+// Reuse partial from the Design Center doc that explains the interactive guidance to add dependencies
+
+include::design-center::partial$design-add-ruleset-dependencies.adoc[]
+
+See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
 [[project-errors]]
 === Resolve Conformance Project Errors
