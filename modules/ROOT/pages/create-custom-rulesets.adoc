@@ -19,6 +19,10 @@ To create a custom ruleset using the CLI, use the `governance ruleset clone` com
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
+To list the rules in a ruleset, use the `governance ruleset info` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+
 [[manual-edit]]
 == Manually Modify Rulesets
 
