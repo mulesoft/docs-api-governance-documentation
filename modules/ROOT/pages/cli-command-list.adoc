@@ -14,7 +14,7 @@ You can use the following CLI commands to automate your API Governance processes
 | xref:create-profiles.adoc#governance-profile-info[governance profile info] | Lists information for a specific governance profile ID
 | xref:create-profiles.adoc#governance-profile-list[governance profile list] | Lists all governance profiles for an organization
 | xref:create-profiles.adoc#governance-profile-update[governance profile update] | Updates a governance profile
-| xref:create-custom-rulesetsadoc#governance-ruleset-clone[governance ruleset clone] | Clones a governance ruleset and applies specified updates to rules
+| xref:create-custom-rulesets.adoc#governance-ruleset-clone[governance ruleset clone] | Clones a governance ruleset and applies specified updates to rules
 | xref:create-custom-rulesets.adoc#governance-ruleset-info[governance ruleset info] | Lists ruleset rules
 | xref:create-custom-rulesets.adoc#governance-ruleset-validate[governance ruleset validate] | Validates a governance ruleset definition's format
 |===
