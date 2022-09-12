@@ -74,6 +74,8 @@ If you want to use a command to update a governance profile, use the following c
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+
 == Delete a Governance Profile Using the API Governance CLI
 
 To use the CLI to delete a governance profile, use the following command:
