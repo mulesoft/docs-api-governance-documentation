@@ -8,6 +8,7 @@ You can use the following CLI commands to automate your API Governance processes
 |===
 |Command |Description
 | xref:create-custom-rulesets.adoc#governance-api-inspect[governance api inspect] | Inspects an API definition and lists its schemas
+| xref:monitor-api-conformance.adoc#governance-api-evaluate[governance api evaluate] | Evaluates filter criteria to determine which rulesets apply to APIs that meet that criteria
 | xref:find-conformance-issues.adoc#governance-api-validate[governance api validate] | Validates an API definition against a specified governance ruleset
 | xref:create-custom-rulesets.adoc#governance-document[governance document] | Creates the documentation file for a governance ruleset definition
 | xref:create-profiles.adoc#governance-profile-create[governance profile create] | Creates a governance profile
