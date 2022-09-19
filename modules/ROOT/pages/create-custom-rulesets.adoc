@@ -89,8 +89,8 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-valida
 
 To scaffold rulesets from data schemas, use the following command sequence:
 
-* <<inspect-for-api-type>>
-* <<initialize-ruleset-from-dataschema>>
+. <<inspect-for-api-type>>
+. <<initialize-ruleset-from-dataschema>>
 
 [[inspect-for-api-type]]
 === Inspect API Definitions for API Type
