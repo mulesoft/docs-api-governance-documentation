@@ -7,4 +7,4 @@ image::api-gov-console.png[Screenshot of the API Governance console]
 . View, filter, and search a summary list of your governance profiles or validated APIs.
 . Export conformance reports in CSV format.
 . Add a new profile.
-. Select from the more options menu to export reports and view, edit, and delete profiles.
+. Select from the more options menu (image:overflow-menu-icon.png[width=0.90%,height=0.90%,title="Three vertical dots"]) to export reports and view, edit, and delete profiles.
