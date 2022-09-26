@@ -21,6 +21,11 @@ You can view profile statuses in the console. Governance profile statuses are ba
 * *Normal:* More than 70% of APIs are conformant.
 * *At Risk:* Less than 70% of APIs are conformant.
 
+[[governed-apis]]
+=== Governance Status
+
+You can view a summary of governed APIs. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information on usage and alerts when you are nearing or exceeding your subscription capacity. 
+
 [[api-conformance]]
 === API Conformance Across Governance Profiles
 
