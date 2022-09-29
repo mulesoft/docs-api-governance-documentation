@@ -18,7 +18,7 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 * <<manual-edit>>
 
 [[use-clone-cli]]
-== Change Rule Severity or Enable or Disable Rules Using the CLI
+=== Change Rule Severity or Enable or Disable Rules Using the CLI
 
 To create a custom ruleset using the CLI, use the `governance ruleset clone` command.
 
@@ -29,7 +29,7 @@ To list the rules in a ruleset, use the `governance ruleset info` command.
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 [[manual-edit]]
-== Manually Modify Rulesets
+=== Manually Modify Rulesets
 
 To create a custom ruleset manually:
 
@@ -47,9 +47,9 @@ If you want a custom ruleset that cannot be created by modifying one of the prov
 . First search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted.
 . If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 
-NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the Github repository for the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator^].
+If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[*AMF Rulesets* tutorial] to learn how to author and test new rules.
 
-If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
+NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
 [[publish-to-exchange]]
 == Publish a Custom Governance Ruleset Asset in Exchange
