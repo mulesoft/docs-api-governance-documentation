@@ -93,4 +93,4 @@ Additionally, those who do have access to API Governance, such as governance off
 
 [[governance-api-evaluate]]
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-evaluate,leveloffset=+1]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-api-evaluate,leveloffset=+1]
