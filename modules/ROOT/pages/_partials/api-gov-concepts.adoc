@@ -2,6 +2,7 @@
 
 // tag::governance-profile[]
 
+[[gov-profiles]]
 = Governance Profiles
 
 A governance profile applies chosen governance rulesets to a select group of APIs. The API definitions are validated
@@ -11,6 +12,7 @@ against the governance rulesets.
 
 // tag::governance-profile-status[]
 
+[[gov-profile-status]]
 = Governance Profile Status
 
 You can view profile statuses in the console. Governance profile statuses are based on the percentage of conformant APIs in the profile:
@@ -32,16 +34,9 @@ API conformance status indicates whether the API definitions that are included i
 
 // end::api-conformance-across-profiles[]
 
-// tag::governed-apis[]
-
-= Governed APIs
-
-APIs are governed if they are identified by the selection criteria of at least one of the governance profiles. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information on usage and alerts when you are nearing or exceeding your subscription capacity. 
-
-// end::governed-apis[]
-
 // tag::governance-rulesets[]
 
+[[gov-rulesets]]
 = Governance Rulesets
 
 Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from API definitions in the Anypoint Platform. Some examples of governance rulesets are internal and external best
@@ -51,6 +46,7 @@ practice guidelines, such as naming conventions, and industry-specific governmen
 
 // tag::governed-apis[]
 
+[[governed-apis]]
 = Governed APIs
 
 APIs are governed if they are identified by the selection criteria of at least one of the governance profiles. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information on usage and alerts when you are nearing or exceeding your subscription capacity. 
@@ -59,6 +55,7 @@ APIs are governed if they are identified by the selection criteria of at least o
 
 // tag::api-conformance[]
 
+[[api-conformance]]
 = API Conformance
 
 API conformance indicates whether a validated API definition passes all of the required rules in one or more governance rulesets. If an API definition is included in multiple governance profiles, it must pass all of the rulesets in all of those profiles to be conformant.
@@ -71,6 +68,7 @@ NOTE: API conformance applies only to API types supported by API Governance, suc
 
 // tag::conformance-status[]
 
+[[conformance-status]]
 = Conformance Status
 
 Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
@@ -79,6 +77,7 @@ Conformance status indicates the status of your API definitions' conformance to 
 
 // tag::nonconformance-severity[]
 
+[[nonconformance-severity]]
 = Nonconformance Severity
 
 Nonconformance severity is categorized by percentage of passed rulesets among all required rulesets.
@@ -95,6 +94,7 @@ Conformance status indicates the status of your API definitions' conformance to 
 
 // tag::project-errors[]
 
+[[project-errors]]
 = Project Errors
 
 Project errors are shown in the Design Center API Designer text editor page. The *Project Errors* section of the page shows functional issues and nonconformance messages found in the API definition that is open in the text editor.
@@ -103,6 +103,7 @@ Project errors are shown in the Design Center API Designer text editor page. The
 
 // tag::api-governance-usage-reports[]
 
+[[api-governance-usage-reports]]
 = API Governance Usage Reports
 
 You can view usage reports to gain insight into your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].

@@ -41,19 +41,13 @@ include::partial$api-gov-apid-scap-callouts.adoc[]
 
 Following are the concepts you need to know to use API Governance.
 
-[[gov-profiles]]
-
 // Definition of Governance Profiles
 
 include::_partials/api-gov-concepts.adoc[tag=governance-profile,leveloffset=+2]
 
-[[gov-profile-status]]
-
 // Definition of Governance Profile Status
 
 include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
-
-[[gov-rulesets]]
 
 // Definition of Governance Rulesets
 
@@ -63,37 +57,25 @@ include::_partials/api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
 
 include::partial$api-gov-ruleset-discovery.adoc[]
 
-[[governed-apis]]
-
 // Definition of Governed APIs
 
 include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
-
-[[api-conformance]]
 
 // Definition of API Conformance
 
 include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
-[[conformance-status]]
-
 // Definition of Conformance Status
 
 include::_partials/api-gov-concepts.adoc[tag=conformance-status,leveloffset=+2]
-
-[[nonconformance-severity]]
 
 // Definition of Nonconformance Severity
 
 include::_partials/api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
 
-[[project-errors]]
-
 // Definition of Project Errors
 
 include::_partials/api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
-
-[[api-governance-usage-reports]]
 
 // Definition of API Governance Usage Reports
 
