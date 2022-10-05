@@ -67,7 +67,13 @@ API conformance indicates whether a validated API definition passes all of the r
 [[conformance-status]]
 = Conformance Status
 
-Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles. Versions of an API might have different conformance statuses. Total version conformance status counts are shown in the API Governance console and conformance status indicators are shown for API versions in API Governance and in Exchange. 
+API conformance status indicates whether the API definitions that are included in your governance profiles pass all applied governance rulesets: 
+
+* *Conformant:* The APIs pass all applied governance rulesets.
+* *Not Conformant:* The APIs fail at least one governance ruleset.
+* *Not Validated:* The APIs are not validated because they are not included in a governance profile.
+
+Versions of an API might have different conformance statuses. Total version conformance status counts are shown in the API Governance console and conformance status indicators are shown for API versions in API Governance and in Exchange. 
 
 NOTE: API conformance applies only to API types supported by API Governance, such as REST API and AsyncAPI. 
 
