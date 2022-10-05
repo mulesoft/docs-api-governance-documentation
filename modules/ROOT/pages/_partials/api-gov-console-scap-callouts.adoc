@@ -1,4 +1,4 @@
-// Used in index.adoc and monitor-api-conformance.adoc 
+// Partial reused in index.adoc and monitor-api-conformance.adoc 
 
 image::api-gov-console.png[Screenshot of the API Governance console]
 

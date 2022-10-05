@@ -1,7 +1,4 @@
 = Monitoring API Conformance
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API definitions' conformance success and failure.  
 
@@ -14,7 +11,7 @@ You can view the latest status information on the console.
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
 [[gov-profiles]]
-=== Governance Profile Statuses
+=== Governance Profile Status
 
 You can view profile statuses in the console. Governance profile statuses are based on the percentage of conformant APIs in the profile:
 

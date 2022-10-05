@@ -1,7 +1,4 @@
 = API Governance Overview
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 Anypoint API Governance is a component of the Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
@@ -18,6 +15,8 @@ API Governance enables you to:
 ++++
 include::_partials/api-gov-gs-video.html[]
 ++++
+
+== Governance Console
 
 In the API Governance console, you add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 You can monitor your APIs' conformance and notify developers to help improve the conformance.
@@ -43,65 +42,62 @@ include::partial$api-gov-apid-scap-callouts.adoc[]
 Following are the concepts you need to know to use API Governance.
 
 [[gov-profiles]]
-=== Governance Profiles
 
-A governance profile applies chosen governance rulesets to a select group of APIs. The API definitions are validated
-against the governance rulesets.
+// Definition of Governance Profiles
 
-A governance profile has two statuses, Normal and At Risk, which are based on the percentage
-of conformant APIs in the governance profile.
+include::_partials/api-gov-concepts.adoc[tag=governance-profile,leveloffset=+2]
 
-* *Normal:* More than 70% of APIs are conformant
-* *At Risk:* Less than 70% of APIs are conformant
+[[gov-profile-status]]
+
+// Definition of Governance Profile Status
+
+include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
 
 [[gov-rulesets]]
-=== Governance Rulesets
 
-Governance rulesets are collections of rules, or guidelines, that can be applied over the metadata extracted from API definitions in the Anypoint Platform. Some examples of governance rulesets are internal and external best
-practice guidelines, such as naming conventions, and industry-specific government standards, such as making sure your APIs that have sensitive data are encrypted (HTTPS).
+// Definition of Governance Rulesets
+
+include::_partials/api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
+
+// How to discover rulesets in Exchange
 
 include::partial$api-gov-ruleset-discovery.adoc[]
 
 [[governed-apis]]
-=== Governed APIs
 
-APIs are governed if they are identified by the selection criteria of at least one of the governance profiles. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information on usage and alerts when you are nearing or exceeding your subscription capacity. 
+// Definition of Governed APIs
+
+include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 [[api-conformance]]
-=== API Conformance
 
-API conformance indicates whether a validated API definition passes all of the required rules in one or more governance rulesets. If an API definition is included in multiple governance profiles, it must pass all of the rulesets in all of those profiles to be conformant.
+// Definition of API Conformance
 
-Versions of an API might have different conformance statuses. Total version conformance status counts are shown in the API Governance console and conformance status indicators are shown for API versions in API Governance and in Exchange. 
-
-NOTE: API conformance applies only to API types supported by API Governance, such as REST API and AsyncAPI. 
+include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
 [[conformance-status]]
-=== Conformance Status
 
-Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
+// Definition of Conformance Status
+
+include::_partials/api-gov-concepts.adoc[tag=conformance-status,leveloffset=+2]
 
 [[nonconformance-severity]]
-=== Nonconformance Severity
 
-Nonconformance severity is categorized by percentage of passed rulesets among all required rulesets.
+// Definition of Nonconformance Severity
 
-High Severity:: 0 - 40% rulesets passed
-
-Medium Severity:: 41% - 80% rulesets passed
-
-Low Severity:: 81% - 99% rulesets passed
-
-Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
+include::_partials/api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
 
 [[project-errors]]
-=== Project Errors
 
-Project errors are shown in the Design Center API Designer text editor page. The *Project Errors* section of the page shows functional issues and nonconformance messages found in the API definition that is open in the text editor.
+// Definition of Project Errors
 
-=== API Governance Usage Reports
+include::_partials/api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
 
-You can view usage reports to gain insight into your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
+[[api-governance-usage-reports]]
+
+// Definition of API Governance Usage Reports
+
+include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+2]
 
 == See Also
 
