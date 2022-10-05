@@ -1,6 +1,6 @@
 // Partial reused in index.adoc and monitor-api-conformance.adoc
 
-// tag::governance-profile[]
+// tag::governance-profiles[]
 
 [[gov-profiles]]
 = Governance Profiles
@@ -8,7 +8,7 @@
 A governance profile applies chosen governance rulesets to a select group of APIs. The API definitions are validated
 against the governance rulesets.
 
-// end::governance-profile[]
+// end::governance-profiles[]
 
 // tag::governance-profile-status[]
 

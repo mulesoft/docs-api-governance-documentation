@@ -12,7 +12,7 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 // Definition of Governance Profiles
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profile,leveloffset=+2]
+include::_partials/api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
 // Definition of Governance Profile Status
 
