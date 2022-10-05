@@ -1,4 +1,4 @@
-// Used in index.adoc and find-conformance-issues.adoc 
+// Partial reused in index.adoc and find-conformance-issues.adoc 
 
 image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as dependencies in API Designer]
 

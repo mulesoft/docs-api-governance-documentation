@@ -1,7 +1,4 @@
 = Getting Started with API Governance
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 After you become familiar with the API Governance UI and concepts covered in the xref:index.adoc[API Governance Overview], you are ready to get started governing your APIs.
 
