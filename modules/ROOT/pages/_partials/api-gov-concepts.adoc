@@ -62,10 +62,10 @@ API conformance indicates whether a validated API definition passes all of the r
 
 // end::api-conformance[]
 
-// tag::conformance-status[]
+// tag::api-conformance-status[]
 
 [[conformance-status]]
-= Conformance Status
+= API Conformance Status
 
 API conformance status indicates whether the API definitions that are included in your governance profiles pass all applied governance rulesets: 
 
@@ -77,7 +77,7 @@ Versions of an API might have different conformance statuses. Total version conf
 
 NOTE: API conformance applies only to API types supported by API Governance, such as REST API and AsyncAPI. 
 
-// end::conformance-status[]
+// end::api-conformance-status[]
 
 // tag::nonconformance-severity[]
 
@@ -91,8 +91,6 @@ High Severity:: 0 - 40% rulesets passed
 Medium Severity:: 41% - 80% rulesets passed
 
 Low Severity:: 81% - 99% rulesets passed
-
-Conformance status indicates the status of your API definitions' conformance to selected rulesets, as configured in your governance profiles.
 
 // end::nonconformance-severity[]
 

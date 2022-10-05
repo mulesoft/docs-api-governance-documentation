@@ -65,9 +65,9 @@ include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
-// Definition of Conformance Status
+// Definition of API Conformance Status
 
-include::_partials/api-gov-concepts.adoc[tag=conformance-status,leveloffset=+2]
+include::_partials/api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
 
 // Definition of Nonconformance Severity
 
