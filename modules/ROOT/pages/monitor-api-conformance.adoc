@@ -10,6 +10,10 @@ You can view the latest status information on the console.
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
+// Definition of Governance Profiles
+
+include::_partials/api-gov-concepts.adoc[tag=governance-profile,leveloffset=+2]
+
 // Definition of Governance Profile Status
 
 include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
