@@ -61,6 +61,10 @@ include::partial$api-gov-ruleset-discovery.adoc[]
 
 include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
+// Definition of Governance Status
+
+include::_partials/api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+
 // Definition of API Conformance
 
 include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
