@@ -1,7 +1,4 @@
 = Monitoring API Conformance
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API definitions' conformance success and failure.  
 
@@ -13,40 +10,37 @@ You can view the latest status information on the console.
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-[[gov-profiles]]
-=== Governance Profile Statuses
+// Definition of Governance Profiles
 
-You can view profile statuses in the console. Governance profile statuses are based on the percentage of conformant APIs in the profile:
+include::_partials/api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
-* *Normal:* More than 70% of APIs are conformant.
-* *At Risk:* Less than 70% of APIs are conformant.
+// Definition of Governance Profile Status
 
-[[governed-apis]]
-=== Governance Status
+include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
 
-You can view a summary of governed APIs. APIs are governed if they are identified by the selection criteria of at least one of the governance profiles. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information on usage and alerts when you are nearing or exceeding your subscription capacity. 
+// Definition of Governed APIs
 
-[[api-conformance]]
-=== API Conformance Across Governance Profiles
+include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
-API conformance status indicates whether the API definitions that are included in your governance profiles pass all applied governance rulesets:
+// Definition of Governance Status
 
-* *Conformant:* The APIs pass all applied governance rulesets.
-* *Not Conformant:* The APIs fail at least one governance ruleset.
-* *Not Validated:* The APIs are not validated because they are not included in a governance profile.
+include::_partials/api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
 
-[[nonconformance-severity]]
-=== Nonconformance by Severity Across Governance Profiles
+// Definition of API Conformance
 
-Nonconformance severity is categorized by the percentage of passed governance rulesets among all applied governance rulesets:
+include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
-* *High Severity:* 0 - 40% Governance rulesets passed
-* *Medium Severity:* 41% - 80% Governance rulesets passed
-* *Low Severity:* 81% - 99% Governance rulesets passed
+// Definition of API Conformance Status
 
-== Reports
+include::_partials/api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
 
-You can export reports of your governance information, which downloads the data to a `.csv` file. 
+// Definition of Nonconformance Severity
+
+include::_partials/api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
+
+// Definition of API Governance Usage Reports
+
+include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
 
 === Governance Profile Report
 On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export a report of governance profile information, such as: 

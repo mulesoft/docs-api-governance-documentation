@@ -1,7 +1,4 @@
 = Applying Governance Rulesets to Specified APIs
-ifndef::env-site,env-github[]
-include::_attributes.adoc[]
-endif::[]
 
 After you identify the APIs in Exchange that 
 you want to govern, you are ready to create governance profiles. Governance profiles enable you to select just the sets of APIs that you want to govern for each set of rulesets.
