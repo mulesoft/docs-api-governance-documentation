@@ -9,6 +9,8 @@ Each email notifications includes:
 * The number and types of rules that failed (violation, warning, and information)
 * Links to API details in Exchange and code in Design Center   
 
+NOTE: Email notifications are automatically sent to Anypoint Platform administrators when your organization exceeds API Governance subscription capacity. You cannot configure subscription limit notifications in the console.
+
 [[send-auto-notifs]]
 == Send Automated Conformance Notifications
 
