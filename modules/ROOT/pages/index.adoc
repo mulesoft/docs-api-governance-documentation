@@ -26,7 +26,7 @@ You can monitor your APIs' conformance and notify developers to help improve the
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-== Governance in Design Center and Exchange
+== Governance in Exchange and Design Center
 
 API Governance is integrated with Exchange and Design Center. 
 
