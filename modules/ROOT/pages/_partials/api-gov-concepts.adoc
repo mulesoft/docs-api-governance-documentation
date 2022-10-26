@@ -5,7 +5,7 @@
 [[gov-profiles]]
 = Governance Profiles
 
-A governance profile applies chosen governance rulesets to a select group of APIs. The API definitions are validated
+A governance profile applies chosen governance rulesets to a selected group of APIs. The API definitions are validated
 against the governance rulesets.
 
 // end::governance-profiles[]

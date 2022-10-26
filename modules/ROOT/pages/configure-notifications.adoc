@@ -6,15 +6,14 @@ Each email notifications includes:
 
 * The name of the API that is not conformant
 * Which governance rulesets the API failed
-* The number and types of rules that failed (violation, warning, and information)
-* Links to API details in Exchange and code in Design Center   
+* Links to open the API in Exchange and to view the code in Design Center   
 
 NOTE: Email notifications are automatically sent to Anypoint Platform administrators when your organization exceeds API Governance subscription capacity. You cannot configure subscription limit notifications in the console.
 
 [[send-auto-notifs]]
 == Send Automated Conformance Notifications
 
-If you want to automatically send notifications when the latest version of an API becomes non-conformant, enable the *Nonconformance notification* in the API Governance console and select the recipients. 
+If you want to automatically send notifications when the latest version of an API becomes non-conformant, enable and configure the notifications. 
 
 NOTE: Notifications are sent only if there is a valid contact email address configured for the selected recipient.
 
@@ -27,22 +26,20 @@ Following are the changes that might result in notifications:
 . Changing tags on an API 
 . Updating governance rulesets 
 
-To configure and enable conformance notifications:
+To enable and configure conformance notifications:
 
 . In the API Governance console, while creating or updating a profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
+. If it is not already selected, select *Enabled* for *Nonconformance notification*.
 . Select a recipient:
 +
 * *API Publisher*: Email the API publisher by using the email address specified in the listed Anypoint Platform account
 * *API Contact*: Email the contact specified in the asset in Exchange
 * *Others*: Email to a comma-separated list of email addresses
-. Set the slider to *Enabled*.
 
 [[send-manual-notifs]]
 == Send Notifications to API Owners
 
-When you notice an API is not conformant, you might want to send the API owner an email notification. 
-
-NOTE: You can send emails to API owners from profiles even when there are no conformance issues. 
+If you want to notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly from the profile. 
 
 To send a notification email to the API owner: 
 
@@ -57,4 +54,4 @@ To send a notification email to the API owner:
 
 == See Also
 
-* xref:exchange::to-describe-an-asset.adoc[Describe an Asset]
+* xref:create-profiles.adoc[Applying Governance Rulesets to Specified APIs]
