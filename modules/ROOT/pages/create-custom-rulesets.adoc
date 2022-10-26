@@ -22,11 +22,11 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 
 To create a custom ruleset using the CLI, use the `governance ruleset clone` command.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
 To list the rules in a ruleset, use the `governance ruleset info` command.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 [[manual-edit]]
 === Manually Modify Rulesets
@@ -47,7 +47,7 @@ If you want a custom ruleset that cannot be created by modifying one of the prov
 . First search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted.
 . If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 
-If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[*AMF Rulesets* tutorial] to learn how to author and test new rules.
+If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to learn how to author and test new rules.
 
 NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
@@ -75,14 +75,14 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
 Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
 [[validate-ruleset]]
 == Validate Governance Ruleset Format Using the API Governance CLI
 
 To validate the format of your governance ruleset as you develop it, use the following command:
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
 
 [[scaffold-rulesets]]
 == Scaffold Rulesets from Data Schemas
@@ -97,11 +97,11 @@ To scaffold rulesets from data schemas, use the following command sequence:
 
 Use the following command to inspect API Definitions for API type. This helps you determine which data schema to use.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
 
 [[initialize-ruleset-from-dataschema]]
 === Initialize Rulesets from Data Schemas
 
 Use the following command to initialize rulesets from data schemas.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
