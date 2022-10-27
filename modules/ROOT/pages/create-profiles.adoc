@@ -14,11 +14,7 @@ The API Governance console UI guides you through creating profiles.
 . Follow the UI prompts to enter the following:
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
-* *Rulesets*: Select one or more rulesets you want to use to govern your APIs. Select the version for each ruleset as follows:
-
-** If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile. 
-
-** If you select a specific version, the profile continues to use that version even if new versions of the rulesets are published after the profile is saved. This ensures that APIs selected in this profile that are conformant to a specific ruleset version are not inadvertently made nonconformant by a newly published version of the ruleset. You can update the profile and select a new version when you are ready to use the new ruleset version.
+* *Rulesets*: Select one or more rulesets you want to use to govern your APIs. You can select a specific version if you do not want to use the default, which is the latest version. 
 
 * *Filter Criteria*: To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange. You can filter by the following:
 +
