@@ -3,6 +3,7 @@
 After you identify the APIs in Exchange that 
 you want to govern, you are ready to create governance profiles. Governance profiles enable you to select the specific sets of APIs that you want to govern for each set of rulesets.
 
+[[create-profile-in-console]]
 == Create a Governance Profile Using the API Governance Console
 
 The API Governance console UI guides you through creating profiles.
@@ -13,7 +14,8 @@ The API Governance console UI guides you through creating profiles.
 . Follow the UI prompts to enter the following:
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
-* *Rulesets*: Select one or more rulesets you want to use to govern your APIs.
+* *Rulesets*: Select one or more rulesets you want to use to govern your APIs. You can select a specific version if you do not want to use the default, which is the latest version. 
+
 * *Filter Criteria*: To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange. You can filter by the following:
 +
  ** API type
@@ -39,7 +41,7 @@ The API Governance console guides you through updating profiles.
 To update governance profile information using the API Governance console: 
 
 . In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=0.90%,height=0.90%,title="Three vertical dots"]) at the end of the profile you want to update and select *Edit*.
-. Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. 
+. Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
 
 NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
