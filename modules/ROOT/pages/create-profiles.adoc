@@ -60,30 +60,30 @@ To delete a governance profile:
 
 If you want to use a command to create an API Governance profile, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
 == List Governance Profile Information Using the API Governance CLI
 
 If you want to use a command to list governance profile information for all governance profiles, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
 == List Specific Governance Profile Information Using the API Governance CLI
 
 If you want to use a command to list governance profile information for a specific governance profile ID, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
 == Update a Governance Profile Using the API Governance CLI
 
 If you want to use a command to update a governance profile, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
 
 == Delete a Governance Profile Using the API Governance CLI
 
 To use the CLI to delete a governance profile, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]

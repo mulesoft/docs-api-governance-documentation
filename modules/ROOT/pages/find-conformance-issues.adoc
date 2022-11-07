@@ -31,9 +31,9 @@ You can use the API Designer text editor to resolve conformance project errors. 
 
 If you want to use a command to validate your API definition against governance rulesets, use the `governance api validate` command.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
 
 == See Also
 

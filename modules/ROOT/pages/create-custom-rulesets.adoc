@@ -22,11 +22,11 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 
 To create a custom ruleset using the CLI, use the `governance ruleset clone` command.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
 To list the rules in a ruleset, use the `governance ruleset info` command.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 [[manual-edit]]
 === Manually Modify Rulesets
@@ -75,14 +75,14 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
 Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
 [[validate-ruleset]]
 == Validate Governance Ruleset Format Using the API Governance CLI
 
 To validate the format of your governance ruleset as you develop it, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
 
 [[scaffold-rulesets]]
 == Scaffold Rulesets from Data Schemas
@@ -97,11 +97,11 @@ To scaffold rulesets from data schemas, use the following command sequence:
 
 Use the following command to inspect API Definitions for API type. This helps you determine which data schema to use.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
 
 [[initialize-ruleset-from-dataschema]]
 === Initialize Rulesets from Data Schemas
 
 Use the following command to initialize rulesets from data schemas.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
