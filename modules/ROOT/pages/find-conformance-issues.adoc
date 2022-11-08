@@ -29,7 +29,7 @@ You can use the API Designer text editor to resolve conformance project errors. 
 
 == Validate API Definitions Against Governance Rulesets Using the API Governance CLI
 
-If you want to use a command to validate your API definition against governance rulesets, use the `governance api validate` command.
+If you want to use a command to validate your API definition against governance rulesets, use the `governance:api:validate` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
 

@@ -7,12 +7,15 @@ If you plan to use the API Governance CLI commands, you must install the API Gov
 Install as follows: 
 
 * Install NPM 7 if you do not have it already installed. See the https://nodejs.org/en/download/[NodeJS download page].
-* Install Anypoint CLI with API Governance included using the following command: 
-
+* Install Anypoint CLI and the API Governance plugin using the following commands: 
++
 [source,copy]
 ----
-npm i -g anypoint-cli@latest
+npm i -g anypoint-cli-v4
+anypoint-cli-v4 plugins:install anypoint-cli-governance-plugin
 ----
+
+NOTE: If you are using an earlier version of Anypoint CLI, see xref:anypoint-cli::diff-earlier-version.adoc[How Version 4.x Differs from Previous Versions].
 
 == See Also
 

@@ -20,11 +20,11 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 [[use-clone-cli]]
 === Change Rule Severity or Enable or Disable Rules Using the CLI
 
-To create a custom ruleset using the CLI, use the `governance ruleset clone` command.
+To create a custom ruleset using the CLI, use the `governance:ruleset:clone` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
-To list the rules in a ruleset, use the `governance ruleset info` command.
+To list the rules in a ruleset, use the `governance:ruleset:info` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
@@ -35,7 +35,7 @@ To create a custom ruleset manually:
 
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
-. Validate the changes using the `governance ruleset validate` command. See <<validate-ruleset>>.
+. Validate the changes using the `governance:ruleset:validate` command. See <<validate-ruleset>>.
 . Generate the ruleset file as an asset document. See <<generate-ruleset-doc>>.
 . Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset uploadv2` command. See <<publish-to-exchange>>.
 

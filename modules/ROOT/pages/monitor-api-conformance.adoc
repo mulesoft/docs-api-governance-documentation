@@ -79,7 +79,7 @@ On a selected governance profile page, click the more options menu icon (image:o
 
 == Evaluate API Conformance Using the CLI
 
-If you want to use a command to evaluate the potential rulesets for your API project, use the `governance api evaluate` command.
+If you want to use a command to evaluate the potential rulesets for your API project, use the `governance:api:evaluate` command.
 
 Those who do not have access to API Governance, such as developers, can use the CLI to evaluate which rulesets their APIs might be subject to validation against based on given filters. This enables developers to be proactive in understanding the potential conformance of APIs to rulesets before their APIs become governed. 
 
