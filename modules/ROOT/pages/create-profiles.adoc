@@ -15,7 +15,9 @@ The API Governance console UI guides you through creating profiles.
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 * *Rulesets*: Select one or more rulesets you want to use to govern your APIs. You can select a specific version if you do not want to use the default, which is the latest version. 
-
++
+Use the search box and filters to find the rulesets you want to use. See <<ruleset-search-filter>>.
++
 * *Filter Criteria*: To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange. You can filter by the following:
 +
  ** API type
@@ -46,6 +48,20 @@ To update governance profile information using the API Governance console:
 
 NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
+
+[[ruleset-search-filter]]
+== Search and Filter Rulesets
+
+To search and filter to find the rulesets you want to apply to your APIs, use one or more of the following:
+
+* Enter a search string in the *Search* field. 
++
+* Select one of the following filters:
+** Organization
+** Tag
+** Catalog
++
+The default for each is any. When you select the filter, a drop-down menu appears in which you can select from options.
 
 == Delete a Governance Profile Using the API Governance Console
 
