@@ -38,7 +38,7 @@ To enable and configure conformance notifications in the console:
 
 === Enable and Configure Notifications Using the CLI
 
-To enable and configure conformance notifications in the CLI, when creating or updating a profile using the `governance create profile` or `governance update profile` commands, use the following options:
+To enable and configure conformance notifications using the CLI, when creating or updating a profile using the `governance create profile` or `governance update profile` commands, use the following options:
 
 ----
 --notify-publisher  
