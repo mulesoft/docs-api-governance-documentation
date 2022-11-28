@@ -53,7 +53,7 @@ See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Usi
 [[send-manual-notifs]]
 == Send Notifications to API Owners Manually
 
-If you want to notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly from the profile. 
+If you want to manually notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly from the profile. 
 
 To send a notification email to the API owner: 
 
