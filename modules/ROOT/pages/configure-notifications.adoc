@@ -38,15 +38,15 @@ To enable and configure conformance notifications in the console:
 
 === Enable and Configure Notifications Using the CLI
 
-To enable and configure conformance notifications in the CLI:
+To enable and configure conformance notifications in the CLI, when creating or updating a profile using the `governance create profile` or `governance update profile` commands, use the following options:
 
-* When creating or updating a profile using the `governance create profile` or `governance update profile` commands, use the following options to enable notifications:
-+
 ----
 --notify-publisher  
 --notify-contact 
 --notify-others a@a.a,b@b.com
 ----
+
+You can disable notifications using the `governance update profile` command with the `--notify-off` option.
 
 See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Using the API Governance CLI] or  xref:update-profiles.adoc#update-profile-cli[Update a Governance Profile Using the API Governance CLI].
 
