@@ -14,7 +14,7 @@ The API Governance console UI guides you through creating profiles.
 . Follow the UI prompts to enter the following:
 +
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
-* *Rulesets*: Select one or more rulesets you want to use to govern your APIs. You can select a specific version if you do not want to use the default, which is the latest version. 
+* *Rulesets*: Select one or more rulesets you want to use to govern your APIs.
 +
 Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
 +
