@@ -16,7 +16,7 @@ The API Governance console UI guides you through creating profiles.
 * *General Information:* Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 * *Rulesets*: Select one or more rulesets you want to use to govern your APIs. 
 +
-You can select the version of each ruleset you want to use. The default is *Latest*. 
+You can select the version of each ruleset you want to use or select the *Latest* option. The default is *Latest*. 
 +
 ** If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile. 
 
