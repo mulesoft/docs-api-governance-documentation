@@ -62,6 +62,7 @@ To delete a governance profile:
 . In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=0.90%,height=0.90%,title="Three vertical dots"]) at the end of the profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
+[[create-profile-cli]]
 == Create Governance Profiles Using the API Governance CLI
 
 If you want to use a command to create an API Governance profile, use the following command:
@@ -80,6 +81,8 @@ If you want to use a command to list governance profile information for a specif
 
 include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
+
+[[update-profile-cli]]
 == Update a Governance Profile Using the API Governance CLI
 
 If you want to use a command to update a governance profile, use the following command:
