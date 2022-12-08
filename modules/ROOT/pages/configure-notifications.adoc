@@ -48,7 +48,7 @@ To enable and configure conformance notifications using the CLI, when creating o
 
 You can disable notifications using the `governance update profile` command with the `--notify-off` option.
 
-See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Using the API Governance CLI] or  xref:update-profiles.adoc#update-profile-cli[Update a Governance Profile Using the API Governance CLI].
+See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Using the API Governance CLI] or  xref:create-profiles.adoc#update-profile-cli[Update a Governance Profile Using the API Governance CLI].
 
 [[send-manual-notifs]]
 == Send Notifications to API Owners Manually
