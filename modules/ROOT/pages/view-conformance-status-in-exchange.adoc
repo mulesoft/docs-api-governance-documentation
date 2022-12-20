@@ -1,8 +1,21 @@
 = Viewing Conformance Status in Exchange 
 
+In Exchange, you can:
+
+* View conformance status for APIs
+* View the list of centrally-governed APIs to which a ruleset applies
+
+== View Conformance Status for an API
+
 // Include the conformance status page partial from the Exchange doc
 
 include::exchange::partial$task-view-conformance-status.adoc[]
+
+// Include the governed apis for rulesets partial from the Exchange doc
+
+== View Governed APIs for a Ruleset
+
+include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 
 == See Also
 
