@@ -7,11 +7,11 @@ In Exchange, you can:
 
 == View Conformance Status for an API
 
-// Include the conformance status page partial from the Exchange doc
+// Conformance status page from the Exchange doc
 
 include::exchange::partial$task-view-conformance-status.adoc[]
 
-// Include the governed apis for rulesets partial from the Exchange doc
+// Governed apis for rulesets from the Exchange doc
 
 == View Governed APIs for a Ruleset
 
