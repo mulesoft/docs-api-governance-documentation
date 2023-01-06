@@ -29,16 +29,23 @@ The API Governance console UI guides you through creating profiles.
 
 * *Filter Criteria*: To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange. You can filter by the following:
 +
- ** API type
- ** Tags
- ** Categories
- ** Lifecycle State
+ ** General
+ *** API Types
+ *** Tags
+ *** Categories
+ *** Lifecycle State
+ ** API Instance
+ *** Include only APIs with instances
+ *** Environment Type
+ *** Environment Name
 +
 Selections appear in the *Tag* and *Category* fields only if your APIs in Exchange have tags and categories. If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
 +
 Based on your filter criteria, the latest version of the APIs are automatically selected and show in the page. For example, if you select lifecycle state *Development*, the latest versions of the APIs in *Development* are selected rather than the latest stable versions. 
 + 
 If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details. 
++
+*API Instance* filters cannot be applied to APIs that are in the *Development* lifecycle state because instances cannot be created for APIs in that state.
 +
 CAUTION: If you do not select filter criteria, your governance profile is applied to _all_ of your APIs in Exchange.
 +
