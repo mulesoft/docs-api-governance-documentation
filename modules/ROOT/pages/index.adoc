@@ -1,4 +1,5 @@
 = API Governance Overview
+:page-aliases: api-gov.adoc
 
 Anypoint API Governance is a component of the Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
