@@ -23,11 +23,11 @@ Rulesets
 |
 Select one or more rulesets you want to use to govern your APIs.
 
-Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
+Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following. Tag and category filters appear only if there are rulesets that have those applied in Exchange.
 
 * Organization
 * Tag
-* Catalog
+* Category
 
 You can select the version of each ruleset you want to use or select the *Latest* option. The default is *Latest*.
 
