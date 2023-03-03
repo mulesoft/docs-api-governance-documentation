@@ -10,7 +10,7 @@ To access the API Governance console:
 
 == Govern Your APIs
 
-.Govern your APIs using the following steps:
+Govern your APIs using the following steps:
 
 . xref:install-cli.adoc[(Optional) Install the API Governance CLI] to run commands locally or in automation tools.
 

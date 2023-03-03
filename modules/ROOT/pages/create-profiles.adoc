@@ -80,7 +80,7 @@ The API Governance console guides you through updating profiles.
 
 To update governance profile information using the API Governance console: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=0.90%,height=0.90%,title="Three vertical dots"]) at the end of the profile you want to update and select *Edit*.
+. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line,title="Three vertical dots"]) at the end of the profile you want to update and select *Edit*.
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
 
@@ -93,7 +93,7 @@ The API Governance console guides you through deleting profiles.
 
 To delete a governance profile: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=0.90%,height=0.90%,title="Three vertical dots"]) at the end of the profile you want to update and select *Delete*.
+. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line,title="Three vertical dots"]) at the end of the profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
 [[create-profile-cli]]
