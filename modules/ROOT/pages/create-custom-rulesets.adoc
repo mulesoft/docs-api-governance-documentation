@@ -68,7 +68,7 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
 *Example command:*
 
-`anypoint-cli exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.yaml cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
+`anypoint-cli exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
 
 [[generate-ruleset-doc]]
 == Generate Documentation for a Ruleset File to Upload to Exchange
