@@ -54,7 +54,7 @@ You can filter by the following:
 
 Considerations:
 
-* The most-frequently used tags in Exchange and any tags you have added to the profile are listed in the *Tags* section. See xref:add-tags.adoc#select-and-add-tags[]. 
+* The most-frequently used tags in Exchange and any tags you have added to the profile are listed in the *Tags* section. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
 
 * Selections appear in the *Categories* section only if your APIs in Exchange have categories.  
 
