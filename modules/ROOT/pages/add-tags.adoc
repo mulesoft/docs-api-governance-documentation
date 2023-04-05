@@ -13,15 +13,15 @@ To identify sets of APIs you want to govern, apply tags and categories to the AP
 [[select-and-add-tags]]
 == Select and Add Tags in Governance Profiles
 
-You can add tag names in governance profiles even if the tags do not yet exist in Exchange. 
+When you create or update a profile, you can filter the list of tags and add tag names in governance profiles even if the tags do not yet exist in Exchange. 
 
 To select and add tags in profiles:
 
 . When creating or updating a profile, navigate to the *Filter Criteria* page.
 +
-. Expand the *General > Tags* section. 
+. Expand the *General > Tags* section.  
 +
-The most frequently used tags are shown by default. 
+The most frequently used tags are shown by default.
 +
 . Start typing a tag name in the search field to filter the list of tags.
 +
