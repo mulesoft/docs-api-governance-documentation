@@ -23,7 +23,7 @@ Rulesets
 |
 Select one or more rulesets you want to use to govern your APIs.
 
-Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following. Tag and category filters appear only if there are rulesets that have those applied in Exchange.
+Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
 
 * Organization
 * Tag
@@ -54,7 +54,11 @@ You can filter by the following:
 
 Considerations:
 
-* Selections appear in the *Tag* and *Category* fields only if your APIs in Exchange have tags and categories. If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
+* The most-frequently used tags in Exchange and any tags you have added to the profile are listed in the *Tags* section. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
+
+* Selections appear in the *Categories* section only if your APIs in Exchange have categories.  
+
+* If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
 
 * If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
 
