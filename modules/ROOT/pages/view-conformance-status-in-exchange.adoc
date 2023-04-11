@@ -1,8 +1,21 @@
 = Viewing Conformance Status in Exchange 
 
-// Include the conformance status page partial from the Exchange doc
+In Exchange, you can:
+
+* View conformance status for APIs
+* See which governed APIs pass a ruleset
+
+== View Conformance Status for an API
+
+// Conformance status page from the Exchange doc
 
 include::exchange::partial$task-view-conformance-status.adoc[]
+
+// Governed apis for rulesets from the Exchange doc
+
+== View Governed APIs for a Ruleset
+
+include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 
 == See Also
 
@@ -10,3 +23,4 @@ include::exchange::partial$task-view-conformance-status.adoc[]
 * xref:find-conformance-issues.adoc[Finding API Conformance Issues in API Definitions]
 * xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Definition with the Text Editor]
 * xref:cli-command-list.adoc[List of API Governance CLI Commands]
+* xref:access-management::permissions-by-product.adoc#exchange[Permissions Available in Anypoint Platform, Exchange].

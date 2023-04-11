@@ -1,6 +1,6 @@
 = Sending Conformance Notifications
 
-You can send notifications automatically by configuring them in the API Governance console. Alternatively, you can send the notifications manually from a governance profile.
+You can send notifications automatically by configuring them in the API Governance console or by using Anypoint CLI. You can also send emails manually from the API Governance console.
 
 Each email notifications includes:
 
@@ -24,7 +24,9 @@ Following are the changes that might result in notifications:
 . Changing tags on an API 
 . Updating governance rulesets 
 
-To enable and configure conformance notifications:
+=== Enable and Configure Notifications in the Console
+
+To enable and configure conformance notifications in the console:
 
 . In the API Governance console, while creating or updating a profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
 . If it is not already selected, select *Enabled* for *Nonconformance notification*.
@@ -34,10 +36,24 @@ To enable and configure conformance notifications:
 * *API Contact*: Email the contact specified in the asset in Exchange
 * *Others*: Email to a comma-separated list of email addresses
 
-[[send-manual-notifs]]
-== Send Notifications to API Owners
+=== Enable and Configure Notifications Using the CLI
 
-If you want to notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly from the profile. 
+To enable and configure conformance notifications using the CLI, when creating or updating a profile using the `governance create profile` or `governance update profile` commands, use the following options:
+
+----
+--notify-publisher  
+--notify-contact 
+--notify-others a@a.a,b@b.com
+----
+
+You can disable notifications using the `governance update profile` command with the `--notify-off` option.
+
+See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Using the API Governance CLI] or xref:create-profiles.adoc#update-profile-cli[Update a Governance Profile Using the API Governance CLI].
+
+[[send-manual-notifs]]
+== Send Notifications to API Owners Manually
+
+If you want to manually notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly from the profile. 
 
 To send a notification email to the API owner: 
 
