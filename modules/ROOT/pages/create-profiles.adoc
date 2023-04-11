@@ -16,7 +16,7 @@ The API Governance console UI guides you through creating profiles.
 [cols="1a,9a"]
 |===
 
-General Information 
+|General Information 
 |Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 | 
 Rulesets
