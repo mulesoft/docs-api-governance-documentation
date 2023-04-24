@@ -28,6 +28,8 @@ To list the rules in a ruleset, use the `governance ruleset info` command.
 
 include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+
 [[manual-edit]]
 === Manually Modify Rulesets
 
