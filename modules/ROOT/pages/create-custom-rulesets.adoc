@@ -50,7 +50,7 @@ To create a custom ruleset manually:
 
 If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
 
-. First search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
+. Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 + 
 . To scaffold a ruleset from a data schema using CLI commands, see <<scaffold-rulesets>>.
 +
