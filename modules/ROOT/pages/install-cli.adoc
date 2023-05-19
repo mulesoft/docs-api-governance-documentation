@@ -17,7 +17,7 @@ npm i -g anypoint-cli-v4
 anypoint-cli-v4 plugins:install anypoint-cli-governance-plugin
 ----
 
-NOTE: If you are moving to Anypoint CLI 4.x from an earlier version of Anypoint CLI, see xref:anypoint-cli::diff-earlier-version.adoc[How Version 4.x Differs from Previous Versions].
+NOTE: If you are moving to Anypoint CLI 4.x from an earlier version of Anypoint CLI, see xref:anypoint-cli::diff-earlier-ver.adoc[How Version 4.x Differs from Previous Versions].
 
 == See Also
 
