@@ -2,14 +2,18 @@
 
 include::partial$api-gov-ruleset-discovery.adoc[]
 
-If you need a ruleset other than what is provided, you can submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. If you want to create a custom ruleset, use one of the following approaches:
+If you need a ruleset other than what is provided, you can submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
+
+Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate and render arbitrary metadata models, with built-in features for API models. AMF is used by Anypoint Platform to parse RAML, OAS, AsyncAPI and GraphQL API specifications.
+
+To create a custom ruleset, use one of the following approaches:
 
 * <<custom-ruleset-modify>>
 * <<custom-ruleset-new>>
 
 [[custom-ruleset-modify]]
 == Create Custom Rulesets by Modifying Provided Rulesets
-If you want to create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
+To create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
 
 To create a custom ruleset based on one already in Exchange, use one of the following approaches:
 
@@ -28,6 +32,8 @@ To list the rules in a ruleset, use the `governance:ruleset:info` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+
 [[manual-edit]]
 === Manually Modify Rulesets
 
@@ -44,10 +50,13 @@ To create a custom ruleset manually:
 
 If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
 
-. First search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted.
-. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
-
-If you are interested in learning more about how rulesets are written, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to learn how to author and test new rules.
+. Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
++ 
+. To scaffold a ruleset from a data schema using CLI commands, see <<scaffold-rulesets>>.
++
+. To learn more about how rulesets are written and write your own:
+** See the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
+** See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to learn how to author and test new rules.
 
 NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For assistance with issues with these custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
