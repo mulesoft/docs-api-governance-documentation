@@ -24,13 +24,13 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 [[use-clone-cli]]
 === Change Rule Severity or Enable or Disable Rules Using the CLI
 
-To create a custom ruleset using the CLI, use the `governance ruleset clone` command.
+To create a custom ruleset using the CLI, use the `governance:ruleset:clone` command.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
-To list the rules in a ruleset, use the `governance ruleset info` command.
+To list the rules in a ruleset, use the `governance:ruleset:info` command.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
 
@@ -41,9 +41,9 @@ To create a custom ruleset manually:
 
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
-. Validate the changes using the `governance ruleset validate` command. See <<validate-ruleset>>.
+. Validate the changes using the `governance:ruleset:validate` command. See <<validate-ruleset>>.
 . Generate the ruleset file as an asset document. See <<generate-ruleset-doc>>.
-. Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset uploadv2` command. See <<publish-to-exchange>>.
+. Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. See <<publish-to-exchange>>.
 
 [[custom-ruleset-new]]
 == Create Completely New Custom Rulesets
@@ -69,7 +69,7 @@ You can publish a ruleset to Exchange as you do any other asset:
 
 * To upload your custom ruleset using the Exchange UI, see xref:exchange::to-create-an-asset#create-a-ruleset-asset[Create a Ruleset Asset].
 
-* To upload your custom ruleset using the CLI, use the `exchange asset uploadv2` command. In the following example, the zipped YAML ruleset file is specified in `--files.ruleset.zip ~/temp/ruleset.yaml.zip`.
+* To upload your custom ruleset using the CLI, use the `exchange asset upload` command. In the following example, the zipped YAML ruleset file is specified in `--files.ruleset.zip ~/temp/ruleset.yaml.zip`.
 
 If you want to generate and include the documentation for the ruleset as part of the published asset, see <<generate-ruleset-doc>> before you run the upload command. In the following example, the zipped ruleset documentation file is specified in the second file option, `--files.docs.zip ~/temp/ruleset.doc.zip`.
 
@@ -77,21 +77,21 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
 *Example command:*
 
-`anypoint-cli exchange asset uploadv2 --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
+`anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
 
 [[generate-ruleset-doc]]
 == Generate Documentation for a Ruleset File to Upload to Exchange
 
 Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
 [[validate-ruleset]]
 == Validate Governance Ruleset Format Using the API Governance CLI
 
 To validate the format of your governance ruleset as you develop it, use the following command:
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
 
 [[scaffold-rulesets]]
 == Scaffold Rulesets from Data Schemas
@@ -106,11 +106,11 @@ To scaffold rulesets from data schemas, use the following command sequence:
 
 Use the following command to inspect API Definitions for API type. This helps you determine which data schema to use.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
 
 [[initialize-ruleset-from-dataschema]]
 === Initialize Rulesets from Data Schemas
 
 Use the following command to initialize rulesets from data schemas.
 
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
