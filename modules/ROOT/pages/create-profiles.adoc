@@ -13,7 +13,7 @@ CAUTION: If you do not select filter criteria, your governance profile is applie
 [TIP]
 ====
 * Select fewer rulesets and add more filters to narrow the scope of a single profile. 
-* Configure each profile to govern a related set of APIs per profile for easier maintenance.
+* Configure each profile to govern a related set of APIs for easier maintenance.
 * Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
 ====
 
