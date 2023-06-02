@@ -22,7 +22,7 @@ CAUTION: If you do not select filter criteria, your governance profile is applie
 . In *API Governance*, click *New Profile*.
 . Follow the UI prompts to enter the following:
 
-[cols="1a,9a",frame=none,grid=none]
+[cols="1a,9a",frame=none]
 |===
 
 |General Information 
@@ -30,14 +30,14 @@ CAUTION: If you do not select filter criteria, your governance profile is applie
 | 
 Rulesets
 |Select one or more rulesets you want to use to govern your APIs.
-|
-|Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
+
+Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
 
 * Organization
 * Tag
 * Category
-|
-|You can select the version of each ruleset you want to use or select the *Latest* option. The default is *Latest*.
+
+You can select the version of each ruleset you want to use or select the *Latest* option. The default is *Latest*.
 
 * If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile.
 
@@ -48,10 +48,8 @@ Rulesets
 
 A preview of filtered APIs appears in the *Filter Criteria* page as you apply filters. This is limited to a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
 
-|
-|*General* filters:
-|
-|
+*General* filters:
+
 * API Types
 +
 * Tags
@@ -69,8 +67,8 @@ If you filter by categories, you can see the number of categories for each API, 
 * Lifecycle State
 +
 Based on your filter criteria, the latest versions of the APIs are automatically selected and shown in the page. For example, if you select lifecycle state *Development*, the latest versions of the APIs in *Development* are selected rather than the latest stable versions.
-|
-|*API Instance* filters:
+
+*API Instance* filters:
 
 * Include only APIs with instances
 ** Environment Type
