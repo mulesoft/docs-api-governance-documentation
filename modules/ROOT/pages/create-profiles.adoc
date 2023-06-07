@@ -8,20 +8,28 @@ you want to govern, you are ready to create governance profiles. Governance prof
 
 The API Governance console UI guides you through creating profiles.
 
+CAUTION: If you do not select filter criteria, your governance profile is applied to _all_ of your APIs in Exchange.
+
+[TIP]
+====
+* Select fewer rulesets and add more filters to narrow the scope of a single profile. 
+* Configure each profile to govern a related set of APIs for easier maintenance.
+* Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
+====
+
 .To create a governance profile using the API Governance console: 
 
 . In *API Governance*, click *New Profile*.
 . Follow the UI prompts to enter the following:
 
-[cols="1a,9a"]
+[cols="1a,9a",frame=none]
 |===
 
 |General Information 
 |Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 | 
 Rulesets
-|
-Select one or more rulesets you want to use to govern your APIs.
+|Select one or more rulesets you want to use to govern your APIs.
 
 Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
 
@@ -34,48 +42,47 @@ You can select the version of each ruleset you want to use or select the *Latest
 * If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile.
 
 * If you select a specific version, the profile continues to use that version even if new versions of the rulesets are published after the profile is saved. This ensures that APIs selected in this profile that are conformant to a specific ruleset version are not inadvertently made nonconformant by a newly published version of the ruleset. You can update the profile and select a new version when you are ready to use the new ruleset version.
-
 |Filter Criteria
 
 |To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
 
-You can filter by the following:
+A preview of filtered APIs appears in the *Filter Criteria* page as you apply filters. This is limited to a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
 
-* General
-** API Types
-** Tags
-** Categories
-** Lifecycle State
+*General* filters:
 
-* API Instance
-** Include only APIs with instances
-*** Environment Type
-*** Environment Name
+* API Types
++
+* Tags
++
+The most-frequently used tags in Exchange and any tags you have added to the profile are listed in the *Tags* section. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
++
+* Categories
++
+Selections appear in the *Categories* section only if your APIs in Exchange have categories. 
++
+If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
++
+If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
++
+* Lifecycle State
++
+Based on your filter criteria, the latest versions of the APIs are automatically selected and shown in the page. For example, if you select lifecycle state *Development*, the latest versions of the APIs in *Development* are selected rather than the latest stable versions.
 
-Considerations:
+*API Instance* filters:
 
-* The most-frequently used tags in Exchange and any tags you have added to the profile are listed in the *Tags* section. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
+* Include only APIs with instances
+** Environment Type
+** Environment Name
 
-* Selections appear in the *Categories* section only if your APIs in Exchange have categories.  
+If you select the *API Instance* filter *Include only APIs with instances*, only specifications that have an instance in API Manager are included. You can then optionally filter by environment type and environment name.
 
-* If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
-
-* If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
-
-* Based on your filter criteria, the latest versions of the APIs are automatically selected and shown in the page. For example, if you select lifecycle state *Development*, the latest versions of the APIs in *Development* are selected rather than the latest stable versions.
-
-* If you select the *API Instance* filter *Include only APIs with instances*, only specifications that have an instance in API Manager are included. You can then optionally filter by environment type and environment name.
-
-* *API Instance* filters cannot be applied to APIs that are in the *Development* lifecycle state because instances cannot be created for APIs in that state.
-
-CAUTION: If you do not select filter criteria, your governance profile is applied to _all_ of your APIs in Exchange.
-
+*API Instance* filters cannot be applied to APIs that are in the *Development* lifecycle state because instances cannot be created for APIs in that state.
 |
 Notifications
-|Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications]. 
+|Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
 |Review
 |Review your profile and click *Create*.
-
+|
 |===
 
 == Update a Governance Profile Using the API Governance Console
