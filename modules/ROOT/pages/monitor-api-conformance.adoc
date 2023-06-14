@@ -1,6 +1,6 @@
 = Monitoring API Conformance
 
-After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API definitions' conformance success and failure.  
+After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API specifications' conformance success and failure.  
 
 == Status Information on the Console
 
