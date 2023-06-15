@@ -1,6 +1,6 @@
 = Finding API Conformance Issues in API Definitions
 
-You can validate your API definitions against governance rulesets in Design Center
+You can validate your API specifications against governance rulesets in Design Center
 or by using the governance CLI. 
 
 == Validate API Definitions in Design Center
@@ -25,11 +25,11 @@ See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an
 [[project-errors]]
 === Resolve Conformance Project Errors
 
-You can use the API Designer text editor to resolve conformance project errors. See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Definition with the Text Editor].
+You can use the API Designer text editor to resolve conformance project errors. See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 
 == Validate API Definitions Against Governance Rulesets Using the API Governance CLI
 
-If you want to use a command to validate your API definition against governance rulesets, use the `governance:api:validate` command.
+If you want to use a command to validate your API specification against governance rulesets, use the `governance:api:validate` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
 
