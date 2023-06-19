@@ -1,7 +1,7 @@
 = Applying Governance Rulesets to Specified APIs
 
 After you identify the APIs in Exchange that 
-you want to govern, you are ready to create governance profiles. Governance profiles enable you to select the specific sets of APIs that you want to govern for each set of rulesets.
+you want to govern, you are ready to create governance profiles. Governance profiles enable you to select the specific sets of APIs to govern for each set of rulesets.
 
 [[create-profile-in-console]]
 == Create a Governance Profile Using the API Governance Console
@@ -29,15 +29,15 @@ CAUTION: If you do not select filter criteria, your governance profile is applie
 |Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
 | 
 Rulesets
-|Select one or more rulesets you want to use to govern your APIs.
+|Select one or more rulesets to use to govern your APIs.
 
-Use the search box and filters to find the rulesets you want to use. You can filter rulesets by the following:
+Use the search box and filters to find the rulesets to use. You can filter rulesets by the following:
 
 * Organization
 * Tag
 * Category
 
-You can select the version of each ruleset you want to use or select the *Latest* option. The default is *Latest*.
+You can select the version of each ruleset to use or select the *Latest* option. The default is *Latest*.
 
 * If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile.
 
@@ -110,19 +110,19 @@ To delete a governance profile:
 [[create-profile-cli]]
 == Create Governance Profiles Using the API Governance CLI
 
-If you want to use a command to create an API Governance profile, use the following command:
+To use a command to create an API Governance profile, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
 == List Governance Profile Information Using the API Governance CLI
 
-If you want to use a command to list governance profile information for all governance profiles, use the following command:
+To use a command to list governance profile information for all governance profiles, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
 == List Specific Governance Profile Information Using the API Governance CLI
 
-If you want to use a command to list governance profile information for a specific governance profile ID, use the following command:
+To use a command to list governance profile information for a specific governance profile ID, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
@@ -130,7 +130,7 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,l
 [[update-profile-cli]]
 == Update a Governance Profile Using the API Governance CLI
 
-If you want to use a command to update a governance profile, use the following command:
+To use a command to update a governance profile, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 
