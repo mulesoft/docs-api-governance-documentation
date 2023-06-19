@@ -102,9 +102,9 @@ To scaffold rulesets from data schemas, use the following command sequence:
 . <<initialize-ruleset-from-dataschema>>
 
 [[inspect-for-api-type]]
-=== Inspect API Definitions for API Type
+=== Inspect API Specifications for API Type
 
-Use the following command to inspect API Definitions for API type. This helps you determine which data schema to use.
+Use the following command to inspect API specifications for API type. This helps you determine which data schema to use.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
 
