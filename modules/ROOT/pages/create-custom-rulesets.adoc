@@ -58,7 +58,7 @@ If you want a custom ruleset that cannot be created by modifying one of the prov
 ** See the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
 ** See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to learn how to author and test new rules.
 
-NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with  custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
+NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
 [[publish-to-exchange]]
 == Publish a Custom Governance Ruleset Asset in Exchange
