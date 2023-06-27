@@ -2,13 +2,14 @@
 
 To view an API validation report:
 
-In the API Governance console, select the *Governed APIs* tab.
-Click View Report for an API.
+. In the API Governance console, select the *Governed APIs* tab.
+. Click *View Report* for an API.
++
 The API report shows:
-
-xxx
-xxx
-xxx
++
+* xxx
+* xxx
+* xxx
 
 == See Also
 
