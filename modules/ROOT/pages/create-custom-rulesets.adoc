@@ -4,7 +4,7 @@ include::partial$api-gov-ruleset-discovery.adoc[]
 
 If you need a ruleset other than what is provided, you can submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
 
-Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate, and render arbitrary metadata models, with built-in features for API models. AMF is used by Anypoint Platform to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
+Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate, and render arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
 
 To create a custom ruleset, use one of the following approaches:
 
@@ -58,7 +58,7 @@ If you want a custom ruleset that cannot be created by modifying one of the prov
 ** See the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
 ** See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to learn how to author and test new rules.
 
-NOTE: Similarly to custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
+NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
 [[publish-to-exchange]]
 == Publish a Custom Governance Ruleset Asset in Exchange
