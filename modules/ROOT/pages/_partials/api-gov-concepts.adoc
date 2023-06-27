@@ -37,7 +37,7 @@ practice guidelines, such as naming conventions, and industry-specific governmen
 [[governed-apis]]
 = Governed APIs
 
-APIs are governed if they are identified by the selection criteria of at least one of the governance profiles. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information on usage and alerts when you are nearing or exceeding your subscription capacity. 
+APIs are governed if they are identified by the selection criteria of at least one of the governance profiles. If an API is governed, all versions of that API are considered one governed API. Subscription limits are set based on your organization's purchased capacity and the UI gives information about usage and alerts when you are nearing or exceeding your subscription capacity. 
 
 // end::governed-apis[]
 
