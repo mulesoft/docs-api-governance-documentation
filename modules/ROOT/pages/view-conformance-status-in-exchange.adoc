@@ -23,4 +23,4 @@ include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 * xref:find-conformance-issues.adoc[Finding API Conformance Issues in API Specifications]
 * xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor]
 * xref:cli-command-list.adoc[List of API Governance CLI Commands]
-* xref:access-management::permissions-by-product.adoc#exchange[Permissions Available in Anypoint Platform, Exchange].
+* xref:access-management::permissions-by-product.adoc#exchange[Permissions Available in Anypoint Platform, Exchange]

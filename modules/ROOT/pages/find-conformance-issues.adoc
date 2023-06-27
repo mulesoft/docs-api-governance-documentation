@@ -1,4 +1,4 @@
-= Finding API Conformance Issues in API Specifications
+= Finding Conformance Issues in API Specifications
 
 You can validate your API specifications against governance rulesets in Design Center
 or by using the governance CLI. 

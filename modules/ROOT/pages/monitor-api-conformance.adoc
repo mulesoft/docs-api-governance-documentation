@@ -88,3 +88,7 @@ Additionally, those who do have access to API Governance, such as governance off
 [[governance-api-evaluate]]
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-evaluate,leveloffset=+1]
+
+== See Also
+
+* xref:view-validation-report.adoc[]
