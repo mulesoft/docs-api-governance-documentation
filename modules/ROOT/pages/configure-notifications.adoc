@@ -11,7 +11,7 @@ Each email notifications includes:
 [[send-auto-notifs]]
 == Send Automated Conformance Notifications
 
-To automatically send notifications when the latest version of an API becomes non-conformant, enable, and configure the notifications. 
+To automatically send notifications when the latest version of an API becomes non-conformant, enable and configure the notifications. 
 
 NOTE: Notifications are sent only if there is a valid contact email address configured for the selected recipient.
 
