@@ -109,6 +109,15 @@ You can view usage reports to gain insight into your monthly usage of API Govern
 
 // end::api-governance-usage-reports[]
 
+// tag::api-entire[]
+
+[[api-entire]]
+= API
+
+The entire API, including all its aspects. In Anypoint Platform, aspects of an API might also be called just API in context with the product that is managing them. For example, in Exchange, API might refer to the API specification, documentation, and catalog. In API Designer, API might refer to the API specification. In API Catalog, API might refer to the API instance, policies, and contracts. 
+
+// end::api-entire[]
+
 // tag::api-aspects[]
 
 [[api-aspects]]
