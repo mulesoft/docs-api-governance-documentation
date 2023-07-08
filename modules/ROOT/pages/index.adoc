@@ -7,10 +7,10 @@ API lifecycle.
 
 With API Governance you can:
 
-* *Improve your organization's API quality:* Identify conformance issues in published API specifications and take steps to resolve them.
+* *Improve your organization's API quality:* Identify conformance issues in published API specifications and instances and take steps to resolve them.
 * *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
 * *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
-* *Enforce governance within your DevOps organization:* Automate the application of standards to your API contract and specification within your CI/CD pipeline.
+* *Enforce governance within your DevOps organization:* Automate API conformance validation within your CI/CD pipeline using the Anypoint CLI `governance` commands.
 
 // View the following video for a brief overview of API Governance.  
 
@@ -29,13 +29,17 @@ You can monitor your APIs' conformance and notify developers to help improve the
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-== Governance in Exchange and Design Center
+== Governance in Exchange, Design Center, and API Manager
 
-API Governance is integrated with Exchange and Design Center. 
+API Governance is integrated with Exchange, Design Center, and API Manager. 
 
-* In Exchange, developers can view published APIs' conformance status details, discover provided rulesets, and publish custom rulesets.
+* In Exchange:
+** Developers can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
+** Implementors can view the ruleset that the instance failed for details on how to fix API instance conformance issues.
 
-* In Design Center API Designer, developers or architects can check API conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+* In Design Center API Designer, developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. Use the *Project Errors* section for information on where the issue is in the specification and how to fix it.
+
+* In API Manager, implementors can check API instance conformance by viewing comprehensive validation reports. 
 
 // Screenshot of conformance validation in APID with callouts
 
