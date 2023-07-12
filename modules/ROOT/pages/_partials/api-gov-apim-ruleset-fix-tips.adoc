@@ -3,6 +3,5 @@
 image::api-gov-apim-ruleset-fix-tips.png[Screenshot of tips in a ruleset about how to fix instance conformance]
 
 [calloutlist]
-. View the rulesets against which the instance was validated.
-. View the messages for conformance issues.
-. Link to API Manager to fix the issues.
+. View the description of the rule that was violated.
+. Follow the tips to fix the instance's conformance issues in API Manager.
