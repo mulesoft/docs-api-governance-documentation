@@ -14,11 +14,11 @@ With API Governance you can:
 
 // View the following video for a brief overview of API Governance.  
 
-Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
+// Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
 
-++++
-include::_partials/api-gov-gs-video.html[]
-++++
+// ++++
+// include::_partials/api-gov-gs-video.html[]
+// ++++
 
 == Governance Console
 
