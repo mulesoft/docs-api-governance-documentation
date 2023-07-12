@@ -93,6 +93,34 @@ include::_partials/api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
 
 include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+2]
 
+// Definition of API
+
+include::_partials/api-gov-concepts.adoc[tag=api-entire,leveloffset=+2]
+
+// Definition of API Aspects
+
+include::_partials/api-gov-concepts.adoc[tag=api-aspects,leveloffset=+2]
+
+// Definition of API Specifications
+
+include::_partials/api-gov-concepts.adoc[tag=api-specifications,leveloffset=+3]
+
+// Definition of API Implementation
+
+include::_partials/api-gov-concepts.adoc[tag=api-implementation,leveloffset=+3]
+
+// Definition of API Instances
+
+include::_partials/api-gov-concepts.adoc[tag=api-instances,leveloffset=+3]
+
+// Definition of API Documentation
+
+include::_partials/api-gov-concepts.adoc[tag=api-documentation,leveloffset=+3]
+
+// Definition of API Catalog Information
+
+include::_partials/api-gov-concepts.adoc[tag=api-catalog-info,leveloffset=+3]
+
 == See Also
 
 * xref:get-started.adoc[Getting Started with API Governance]
