@@ -12,6 +12,8 @@ With API Governance you can:
 * *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
 * *Enforce governance within your DevOps organization:* Automate API conformance validation within your CI/CD pipeline using the Anypoint CLI `governance` commands.
 
+////
+
 // View the following video for a brief overview of API Governance.  
 
 // Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
@@ -19,6 +21,8 @@ With API Governance you can:
 // ++++
 // include::_partials/api-gov-gs-video.html[]
 // ++++
+
+////
 
 == Governance Console
 
