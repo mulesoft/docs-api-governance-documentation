@@ -6,12 +6,16 @@ To fix conformance issues in instances:
 
 . Select the *Conformance Report* page for the API that is marked as nonconformant.
 +
-xxx screenshot with callouts xxx
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
 +
 . View the messages to see what you need to do and click the link to API Manager to fix the issue.
 . If the nonconformance messages don't have enough detail to help you fix the issue, open the ruleset for the offending rule and view the documentation for that ruleset to get the information you need.
 +
-xxx screenshot with callouts xxx
+// Screenshot of a section of the ruleset with a description of the properties 
+
+include::_partials/api-gov-apim-ruleset-fix-tips.adoc[]
 
 == See Also
 

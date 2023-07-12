@@ -1,0 +1,10 @@
+// Partial reused in index.adoc and fix-instance-conformance-issues.adoc 
+
+image::api-gov-apim-governance-report.png[Screenshot of a Governance Report page in API Manager]
+
+[calloutlist]
+. View a numeric and visual summary of your <<gov-profiles,governance profiles>>, <<governed-apis,governance status>>, <<api-conformance,conformance status>>, and <<nonconformance-severity,nonconformance by severity>>.
+. View, filter, and search a summary list of your governance profiles or validated APIs.
+. Export conformance reports in CSV format.
+. Add a new profile.
+. Select from the more options menu to export reports and view, edit, and delete profiles.
