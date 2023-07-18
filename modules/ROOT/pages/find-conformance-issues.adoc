@@ -38,5 +38,5 @@ include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier
 
 == See Also
 
-* xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project]
+* xref:design-center::design-add-api-dependency.adoc[]
 * xref:monitor-api-conformance.adoc[]

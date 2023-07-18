@@ -1,8 +1,17 @@
 = Fixing Conformance Issues in API Instances
 
-After API Governance identifies conformance issues in your API instances, you can fix them in API Manager. Use the API governance report to find the conformance issues. 
+After API Governance identifies conformance issues in your API instances, you can fix them in API Manager. 
 
-To fix conformance issues in instances:
+== Find Nonconformant Instances in API Governance
+
+To find nonconformant instances in API Governance:
+
+. In the API Governance console, select the *Governed APIs* tab.
+. If the Instances column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+
+== Fix Conformance Issues in API Manager
+
+To fix instance conformance issues in API Manager:
 
 . Select the *Conformance Report* page for the API that is marked as nonconformant.
 +
@@ -19,5 +28,6 @@ include::_partials/api-gov-apim-ruleset-fix-tips.adoc[]
 
 == See Also
 
+// * xref:api-manager::xxx.adoc[xxx]
 * xref:find-conformance-issues.adoc[]
 * xref:monitor-api-conformance.adoc[]
