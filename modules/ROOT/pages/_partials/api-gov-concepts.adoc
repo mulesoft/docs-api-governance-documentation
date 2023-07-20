@@ -123,7 +123,7 @@ The entire API, including all its aspects. In Anypoint Platform, aspects of an A
 [[api-aspects]]
 = API Aspects
 
-A part of an API. API Governance governs the entire API, including all its aspects. Related contents of APIs are displayed by aspect on detail pages and validation reports.
+Parts of an API. API Governance governs the entire API, including all of its aspects. Aspects of APIs include specifications, implementations, instances, and documentation.
 
 // end::api-aspects[]
 
