@@ -2,115 +2,13 @@
 
 include::partial$api-gov-ruleset-discovery.adoc[]
 
-If you need a ruleset other than what is provided, you can submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
-
 Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate, and render arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
+
+If you need a ruleset other than what is provided, you can create your own custom ruleset. You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
 
 To create a custom ruleset, use one of the following approaches:
 
-* <<custom-ruleset-modify>>
-* <<custom-ruleset-new>>
+* xref:custom-rulesets-modify.adoc[]
+* xref:custom-rulesets-new.adoc[]
 
-[[custom-ruleset-modify]]
-== Create Custom Rulesets by Modifying Provided Rulesets
-To create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
-
-To create a custom ruleset based on one already in Exchange, use one of the following approaches:
-
-* <<use-clone-cli>>
-
-* <<manual-edit>>
-
-[[use-clone-cli]]
-=== Change Rule Severity or Enable or Disable Rules Using the CLI
-
-To create a custom ruleset using the CLI, use the `governance:ruleset:clone` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
-
-To list the rules in a ruleset, use the `governance:ruleset:info` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
-
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
-
-[[manual-edit]]
-=== Manually Modify Rulesets
-
-To create a custom ruleset manually:
-
-. Download the ruleset from Exchange.
-. Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
-. Validate the changes using the `governance:ruleset:validate` command. See <<validate-ruleset>>.
-. Generate the ruleset file as an asset document. See <<generate-ruleset-doc>>.
-. Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. See <<publish-to-exchange>>.
-
-[[custom-ruleset-new]]
-== Create Completely New Custom Rulesets
-
-If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
-
-. Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
-+ 
-. To scaffold a ruleset from a data schema using CLI commands, see <<scaffold-rulesets>>.
-+
-. To learn more about how rulesets are written and write your own:
-** See the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project. 
-** See the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to learn how to author and test new rules.
-
-NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
-
-[[publish-to-exchange]]
-== Publish a Custom Governance Ruleset Asset in Exchange
-
-//include::exchange::partial$task-create-asset.adoc[leveloffset=+1,tags=description;procedure]
-
-You can publish a ruleset to Exchange as you do any other asset: 
-
-* To upload your custom ruleset using the Exchange UI, see xref:exchange::to-create-an-asset#create-a-ruleset-asset[Create a Ruleset Asset].
-
-* To upload your custom ruleset using the CLI, use the `exchange asset upload` command. In the following example, the zipped YAML ruleset file is specified in `--files.ruleset.zip ~/temp/ruleset.yaml.zip`.
-
-To generate and include the documentation for the ruleset as part of the published asset, see <<generate-ruleset-doc>> before you run the upload command. In the following example, the zipped ruleset documentation file is specified in the second file option, `--files.docs.zip ~/temp/ruleset.doc.zip`.
-
-To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
-
-*Example command:*
-
-`anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
-
-[[generate-ruleset-doc]]
-== Generate Documentation for a Ruleset File to Upload to Exchange
-
-Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
-
-[[validate-ruleset]]
-== Validate Governance Ruleset Format Using the API Governance CLI
-
-To validate the format of your governance ruleset as you develop it, use the following command:
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
-
-[[scaffold-rulesets]]
-== Scaffold Rulesets from Data Schemas
-
-To scaffold rulesets from data schemas, use the following command sequence:
-
-. <<inspect-for-api-type>>
-. <<initialize-ruleset-from-dataschema>>
-
-[[inspect-for-api-type]]
-=== Inspect API Specifications for API Type
-
-Use the following command to inspect API specifications for API type. This helps you determine which data schema to use.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
-
-[[initialize-ruleset-from-dataschema]]
-=== Initialize Rulesets from Data Schemas
-
-Use the following command to initialize rulesets from data schemas.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
+After you modify or create a custom ruleset, you must generate its documentation, validate it to ensure the syntax is correct, and then upload it to Exchange to publish it. See xref:custom-rulesets-validate-and-publish.adoc[].

@@ -1,0 +1,42 @@
+= Creating Completely New Custom Rulesets
+
+If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
+
+. Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
+. To scaffold a ruleset from a data schema using CLI commands, see <<scaffold-rulesets>>.
+. To write a ruleset completely using the custom ruleset CLI commands, see <<create-rulesets-using-cli>>.
+. To write a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
+
+NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
+
+[[scaffold-rulesets]]
+== Generating Rulesets from a Specification
+
+You can generate a starter ruleset from specifications' data schemas using the following command sequence:
+
+. <<inspect-for-api-type>>
+. <<initialize-ruleset-from-dataschema>>
+
+[[inspect-for-api-type]]
+=== Inspect API Specifications for API Type
+
+Use the following command to inspect API specifications for API type. This helps you determine which data schema to use.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
+
+[[initialize-ruleset-from-dataschema]]
+=== Initialize Rulesets from Data Schemas
+
+Use the following command to initialize rulesets from data schemas.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
+
+[[create-rulesets-using-cli]]
+== Create Rulesets Using the Custom Ruleset CLI
+
+To create rulesets using the custom ruleset CLI commands, see the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial].
+
+[[create-rulesets-using-code]]
+== Create Rulesets Using the Modeling Language
+
+To create rulesets using the modeling language, see the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project.
