@@ -8,9 +8,9 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 * <<manual-edit>>
 
 [[use-clone-cli]]
-== Change Rule Severity or Enable or Disable Rules Using the CLI
+== Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
 
-To create a custom ruleset using the CLI, use the `governance:ruleset:clone` command.
+To create a custom ruleset using Anypoint CLI, use the `governance:ruleset:clone` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
