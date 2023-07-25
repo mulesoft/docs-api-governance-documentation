@@ -4,11 +4,13 @@ include::partial$api-gov-ruleset-discovery.adoc[]
 
 Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate, and render arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
 
-If you need a ruleset other than what is provided, you can create your own custom ruleset. You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
+If you need a ruleset other than those provided, you can create your own custom ruleset. The documentation provided assumes that you are familiar with modeling languages and are comfortable installing and running CLI commands.
+
+NOTE: You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
 
 To create a custom ruleset, use one of the following approaches:
 
 * xref:custom-rulesets-modify.adoc[]
 * xref:custom-rulesets-new.adoc[]
 
-After you modify or create a custom ruleset, you must generate its documentation, validate it to ensure the syntax is correct, and then upload it to Exchange to publish it. See xref:custom-rulesets-validate-and-publish.adoc[].
+After you modify or create a custom ruleset, you must validate it to ensure it is coded correctly, generate its documentation, and then publish it to Exchange. See xref:custom-rulesets-validate-and-publish.adoc[].
