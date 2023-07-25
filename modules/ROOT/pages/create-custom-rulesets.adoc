@@ -4,9 +4,22 @@ include::partial$api-gov-ruleset-discovery.adoc[]
 
 Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate, and render arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
 
-If you need a ruleset other than those provided, you can create your own custom ruleset. The documentation provided assumes that you are familiar with modeling languages and are comfortable installing and running CLI commands.
+If you need a ruleset other than those provided, you can create your own custom ruleset. 
 
-NOTE: You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
+== Before You Begin 
+
+Creating custom rulesets requires installing and running CLI commands and depending on the approach you take, developing low-code software. If you don't have these skills, consider enlisting a software developer to help you create your custom rulesets. 
+
+You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
+
+When you're ready to get started:
+
+. Read https://a.ml/docs/[Getting Started with AMF^] to understand for a brief summary of AMF and the AMF Contract Model. 
+. Read https://a.ml/docs/amf/using-amf/amf_custom_validation/[Custom Validation^] for a brief summary of how rulesets validate APIs.
+. If you plan to create completely new custom rulesets that aren't based on existing ones, follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial^] to install Ruleset Development CLI.
+. Install Anypoint CLI. You'll need this to validate, generate documentation, and publish your custom rulesets.
+
+== Create a Custom Ruleset
 
 To create a custom ruleset, use one of the following approaches:
 
@@ -14,3 +27,7 @@ To create a custom ruleset, use one of the following approaches:
 * xref:custom-rulesets-new.adoc[]
 
 After you modify or create a custom ruleset, you must validate it to ensure it is coded correctly, generate its documentation, and then publish it to Exchange. See xref:custom-rulesets-validate-and-publish.adoc[].
+
+== See Also
+
+* xref:index.adoc[]
