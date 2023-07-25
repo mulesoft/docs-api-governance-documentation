@@ -1,28 +1,23 @@
 = Validating and Publishing a Custom Ruleset
 
-Before you publish your custom ruleset:
+After you create a custom ruleset:
+
+. <<validate-ruleset,Validate>> the changes using the `governance:ruleset:validate` command.
+. <<generate-ruleset-doc,Generate>> the ruleset documentation. 
+. <<publish-ruleset,Publish>> your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. 
++
+See xref:custom-rulesets-validate-and-publish.adoc[].
+
+For an example of the sequence of commands from validation to publishing, see <<example-publish-sequence>>.
+
+NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
 [[validate-ruleset]]
 == Validate Governance Ruleset Format Using the API Governance CLI
 
-To validate the format of your governance ruleset as you develop it, use the following command:
+To validate the format of your governance ruleset as you create it and before you publish it, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
-
-[[scaffold-rulesets]]
-== Scaffold Rulesets from Data Schemas
-
-To scaffold rulesets from data schemas, use the following command sequence:
-
-. <<inspect-for-api-type>>
-. <<initialize-ruleset-from-dataschema>>
-
-[[inspect-for-api-type]]
-=== Inspect API Specifications for API Type
-
-Use the following command to inspect API specifications for API type. This helps you determine which data schema to use.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
 
 [[generate-ruleset-doc]]
 == Generate Documentation for a Ruleset File to Upload to Exchange
@@ -40,12 +35,24 @@ You can publish a ruleset to Exchange as you do any other asset:
 
 * To upload your custom ruleset using the Exchange UI, see xref:exchange::to-create-an-asset#create-a-ruleset-asset[Create a Ruleset Asset].
 
-* To upload your custom ruleset using the CLI, use the `exchange asset upload` command. In the following example, the zipped YAML ruleset file is specified in `--files.ruleset.zip ~/temp/ruleset.yaml.zip`.
-
-To generate and include the documentation for the ruleset as part of the published asset, see <<generate-ruleset-doc>> before you run the upload command. In the following example, the zipped ruleset documentation file is specified in the second file option, `--files.docs.zip ~/temp/ruleset.doc.zip`.
-
 To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
-*Example command:*
+=== Example Publish (Upload) Command
 
 `anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
+
+[[example-publish-sequence]]
+== Example Command Sequence to Validate and Publish
+
+[source,console]
+----
+anypoint-cli-v4 governance:ruleset:validate ~/myRulesetFolder/myruleset.yaml (1)
+
+anypoint-cli-v4 governance:document ~/myRulesetFolder/ruleset.yaml ~/myRulesetFolder/ruleset.doc.zip (2)
+
+`anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip` (3)
+----
+[calloutlist]
+.. Validates the ruleset locally.
+.. Generates the documentation for the ruleset. 
+.. Uploads the ruleset and its documentation. 

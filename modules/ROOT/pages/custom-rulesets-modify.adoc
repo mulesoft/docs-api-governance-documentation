@@ -23,12 +23,7 @@ include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identi
 [[manual-edit]]
 == Manually Modify Rulesets
 
-To create a custom ruleset manually:
+To modify a ruleset manually to create a custom ruleset:
 
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
-. Validate the changes using the `governance:ruleset:validate` command.
-. Generate the ruleset documentation. 
-. Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. 
-
-See xref:custom-rulesets-validate-and-publish.adoc[].

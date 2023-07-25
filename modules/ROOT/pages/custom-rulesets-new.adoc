@@ -1,11 +1,19 @@
 = Creating Completely New Custom Rulesets
 
-If you want a custom ruleset that cannot be created by modifying one of the provided rulesets:
+If you want a custom ruleset that cannot be created by modifying one of the provided rulesets, use one of the following approaches:
 
-. Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
-. To scaffold a ruleset from a data schema using CLI commands, see <<scaffold-rulesets>>.
-. To write a ruleset completely using the custom ruleset CLI commands, see <<create-rulesets-using-cli>>.
-. To write a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
+* Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
+* Generate a ruleset using CLI commands by scaffolding it from a specification's data schema. See <<scaffold-rulesets>>.
+* Create a ruleset using the custom ruleset CLI commands, see <<create-rulesets-using-cli>>.
+* Create a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
+
+After you create the ruleset:
+
+. Validate the changes using the `governance:ruleset:validate` command.
+. Generate the ruleset documentation. 
+. Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. 
++
+See xref:custom-rulesets-validate-and-publish.adoc[].
 
 NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
