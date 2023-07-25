@@ -1,4 +1,4 @@
-= Validating and Publishing a Custom Ruleset
+= Validating and Publishing Custom Rulesets
 
 After you create a custom ruleset:
 

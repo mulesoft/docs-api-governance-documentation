@@ -7,6 +7,10 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 * <<use-clone-cli>>
 * <<manual-edit>>
 
+For an example of the sequence of commands to modify a ruleset, see <<example-publish-sequence>>.
+
+For an example of the before and after of a manually modified ruleset, see <<example-manual-modify>>.
+
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
 
@@ -27,3 +31,24 @@ To modify a ruleset manually to create a custom ruleset:
 
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
+
+[[example-modify-sequence]]
+== Example Command Sequence to Modify a Ruleset
+
+[source,console]
+----
+xxx (1)
+
+xxx (2)
+
+xxx (3)
+----
+[calloutlist]
+.. xxx
+.. xxx
+.. xxx
+
+[[example-manual-modify]]
+== Example of a Manually Modified Ruleset
+
+xxx show a side by side comparison of before and after xxx
