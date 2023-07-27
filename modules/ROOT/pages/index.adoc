@@ -20,6 +20,18 @@ Watch the API Governance Product Spotlight video to see a quick overview of API 
 include::_partials/api-gov-gs-video.html[]
 ++++
 
+////
+
+// View the following video for a brief overview of API Governance.  
+
+// Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
+
+// ++++
+// include::_partials/api-gov-gs-video.html[]
+// ++++
+
+////
+
 == Governance Console
 
 In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
@@ -29,13 +41,17 @@ You can monitor your APIs' conformance and notify developers to help improve the
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-== Governance in Exchange and Design Center
+== Governance in Exchange, Design Center, and API Manager
 
-API Governance is integrated with Exchange and Design Center. 
+API Governance is integrated with API Manager, Exchange, and Design Center. 
 
-* In Exchange, developers can view published APIs' conformance status details, discover provided rulesets, and publish custom rulesets.
+* In API Manager, implementors can check API instance conformance by viewing comprehensive validation reports. 
 
-* In Design Center API Designer, developers or architects can check API conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+* In Exchange:
+** Developers can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
+** Implementors can view the ruleset that the instance failed for details on how to fix API instance conformance issues.
+
+* In Design Center API Designer, developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. Use the *Project Errors* section for information on where the issue is in the specification and how to fix it.
 
 // Screenshot of conformance validation in APID with callouts
 
