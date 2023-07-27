@@ -1,8 +1,12 @@
 // Partial reused in index.adoc and fix-instance-conformance-issues.adoc 
 
-image::api-gov-apim-governance-report.png[Screenshot of a Governance Report page in API Manager]
+image::api-gov-apim-governance-report.png[Screenshot of a Governance Report page in API Governance]
 
 [calloutlist]
-. View the rulesets against which the instance was validated.
-. View the messages for conformance issues.
-. Link to API Manager to fix the issues.
+. View an overview of the rulesets against which the API was validated.
+. Select a tab to view the conformance information for a specific API aspect.
+. Export the report to a CSV file.
+. Notify the owner of an API about the conformance.
+. View the API in Exchange.
+. View the conformance details identified for a specific ruleset.
+. View the API specification in Design Center or view the ruleset in Exchange.
