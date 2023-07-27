@@ -9,16 +9,15 @@ To find nonconformant instances in API Governance:
 . In the API Governance console, select the *Governed APIs* tab.
 . If the Instances column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
 
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
+
 == Fix Conformance Issues in API Manager
 
 To fix instance conformance issues in API Manager:
 
 . Select the *Conformance Report* page for the API that is marked as nonconformant.
-+
-// Screenshot of a Conformance Report page with callouts 
-
-include::_partials/api-gov-apim-governance-report.adoc[]
-+
 . View the messages to see what you need to do and click the link to API Manager to fix the issue.
 . If the nonconformance messages don't have enough detail to help you fix the issue, open the ruleset for the offending rule and view the documentation for that ruleset to get the information you need.
 +

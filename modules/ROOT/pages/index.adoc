@@ -12,6 +12,8 @@ With API Governance you can:
 * *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
 * *Enforce governance within your DevOps organization:* Automate the application of standards to your API contract and specification within your CI/CD pipeline.
 
+////
+
 // View the following video for a brief overview of API Governance.  
 
 Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
@@ -19,16 +21,6 @@ Watch the API Governance Product Spotlight video to see a quick overview of API 
 ++++
 include::_partials/api-gov-gs-video.html[]
 ++++
-
-////
-
-// View the following video for a brief overview of API Governance.  
-
-// Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
-
-// ++++
-// include::_partials/api-gov-gs-video.html[]
-// ++++
 
 ////
 
@@ -46,6 +38,10 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 API Governance is integrated with API Manager, Exchange, and Design Center. 
 
 * In API Manager, implementors can check API instance conformance by viewing comprehensive validation reports. 
+
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
 
 * In Exchange:
 ** Developers can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
