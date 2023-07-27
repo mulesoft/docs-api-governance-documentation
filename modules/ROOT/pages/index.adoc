@@ -35,23 +35,38 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 == Governance in Exchange, Design Center, and API Manager
 
-API Governance is integrated with API Manager, Exchange, and Design Center. 
+API Governance is integrated with <<Exchange>>, <<Design Center>>, and <<API Manager>>.
 
-* In API Manager, implementors can check API instance conformance by viewing comprehensive validation reports. 
+[[exchange-overview]]
+=== Exchange
 
-// Screenshot of a Conformance Report page with callouts 
+In Exchange:
 
-include::_partials/api-gov-apim-governance-report.adoc[]
+* Developers can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
+* Implementors can view the ruleset that the instance failed for details on how to fix API instance conformance issues.
 
-* In Exchange:
-** Developers can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
-** Implementors can view the ruleset that the instance failed for details on how to fix API instance conformance issues.
+[[design-center-overview]]
+=== Design Center
 
-* In Design Center API Designer, developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. Use the *Project Errors* section for information on where the issue is in the specification and how to fix it.
+In Design Center API Designer:
+
+* Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+* Use the *Project Errors* section for information about where the issue is in the specification and how to fix it.
 
 // Screenshot of conformance validation in APID with callouts
 
 include::_partials/api-gov-apid-scap-callouts.adoc[]
+
+[[api-manager-overview]]
+=== API Manager
+
+In API Manager:
+
+* Implementors can check API instance conformance by viewing the comprehensive API Governance validation report. 
+
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
 
 == API Governance Concepts
 
