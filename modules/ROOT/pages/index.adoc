@@ -14,7 +14,7 @@ With API Governance you can:
 
 ////
 
-// View the following video for a brief overview of API Governance.  
+View the following video for a brief overview of API Governance.  
 
 Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
 
