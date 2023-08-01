@@ -2,7 +2,7 @@
 
 You can send notifications automatically by configuring them in the API Governance console or by using Anypoint CLI. You can also send emails manually from the API Governance console and from a governance report page.
 
-Each email notifications includes:
+Each email notification includes:
 
 * The name of the API that is not conformant
 * Which governance rulesets the API failed
