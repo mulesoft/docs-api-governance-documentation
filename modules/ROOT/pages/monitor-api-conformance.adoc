@@ -12,35 +12,35 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 // Definition of Governance Profiles
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
 // Definition of Governance Profile Status
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
 
 // Definition of Governed APIs
 
-include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 // Definition of Governance Status
 
-include::_partials/api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
 
 // Definition of API Conformance
 
-include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
 // Definition of API Conformance Status
 
-include::_partials/api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
 
 // Definition of Nonconformance Severity
 
-include::_partials/api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
 
 // Definition of API Governance Usage Reports
 
-include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
+include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
 
 === Governance Profile Report
 On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export a report of governance profile information, such as: 

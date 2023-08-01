@@ -55,15 +55,15 @@ Following are the concepts you need to know to use API Governance.
 
 // Definition of Governance Profiles
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
 // Definition of Governance Profile Status
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
 
 // Definition of Governance Rulesets
 
-include::_partials/api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
 
 // How to discover rulesets in Exchange
 
@@ -71,59 +71,59 @@ include::partial$api-gov-ruleset-discovery.adoc[]
 
 // Definition of Governed APIs
 
-include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 // Definition of Governance Status
 
-include::_partials/api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
 
 // Definition of API Conformance
 
-include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
 // Definition of API Conformance Status
 
-include::_partials/api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
 
 // Definition of Nonconformance Severity
 
-include::_partials/api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
 
 // Definition of Project Errors
 
-include::_partials/api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
 
 // Definition of API Governance Usage Reports
 
-include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+2]
 
 // Definition of API
 
-include::_partials/api-gov-concepts.adoc[tag=api-entire,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-entire,leveloffset=+2]
 
 // Definition of API Aspects
 
-include::_partials/api-gov-concepts.adoc[tag=api-aspects,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-aspects,leveloffset=+2]
 
 // Definition of API Specifications
 
-include::_partials/api-gov-concepts.adoc[tag=api-specifications,leveloffset=+3]
+include::general::partial$api-gov-concepts.adoc[tag=api-specifications,leveloffset=+3]
 
 // Definition of API Implementation
 
-include::_partials/api-gov-concepts.adoc[tag=api-implementation,leveloffset=+3]
+include::general::partial$api-gov-concepts.adoc[tag=api-implementation,leveloffset=+3]
 
 // Definition of API Instances
 
-include::_partials/api-gov-concepts.adoc[tag=api-instances,leveloffset=+3]
+include::general::partial$api-gov-concepts.adoc[tag=api-instances,leveloffset=+3]
 
 // Definition of API Documentation
 
-include::_partials/api-gov-concepts.adoc[tag=api-documentation,leveloffset=+3]
+include::general::partial$api-gov-concepts.adoc[tag=api-documentation,leveloffset=+3]
 
 // Definition of API Catalog Information
 
-include::_partials/api-gov-concepts.adoc[tag=api-catalog-info,leveloffset=+3]
+include::general::partial$api-gov-concepts.adoc[tag=api-catalog-info,leveloffset=+3]
 
 == See Also
 
