@@ -65,10 +65,6 @@ include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,le
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
 
-// How to discover rulesets in Exchange
-
-include::partial$api-gov-ruleset-discovery.adoc[]
-
 // Definition of Governed APIs
 
 include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]

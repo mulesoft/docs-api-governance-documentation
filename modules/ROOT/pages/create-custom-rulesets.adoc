@@ -1,6 +1,6 @@
 = Creating Custom Governance Rulesets
 
-include::partial$api-gov-ruleset-discovery.adoc[]
+include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets-subset]
 
 If you need a ruleset other than what is provided, you can submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
 
