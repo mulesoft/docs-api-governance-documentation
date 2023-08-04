@@ -1,6 +1,6 @@
 = Sending Conformance Notifications
 
-You can send notifications automatically by configuring them in the API Governance console or by using Anypoint CLI. You can also send emails manually from the API Governance console and from a governance report page.
+You can send notifications automatically by configuring them in the API Governance console or by using Anypoint CLI. You can also send emails manually from the API Governance console.
 
 Each email notification includes:
 
@@ -53,11 +53,13 @@ See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Usi
 [[send-manual-notifs]]
 == Send Notifications to API Owners Manually
 
-To manually notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly from the profile. 
+To manually notify API owners for any reason, such as when an API is not conformant or you made changes to the profile, you can send them an email notification directly.
 
-To send a notification email to the API owner: 
+To manually send a notification email to an API owner: 
 
-. In the API Governance console, select a governance profile. 
+. In the API Governance console:
+* To send a notification email to the API owner from a profile, select a governance profile. 
+* To send a notification email about a specific API's conformance, select the *APIs* tab and view the actions on that API's summary line.
 . Click the *Notify Owner* icon.
 . Select a recipient:
 +
