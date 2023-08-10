@@ -53,19 +53,3 @@ To create rulesets using the Ruleset Development CLI:
 == Create Rulesets Using the Modeling Language
 
 To create rulesets using the modeling language, read the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project to become familiar with how to write a ruleset using the modeling language.
-
-[[example-create-sequence]]
-== Example Command Sequence to Create a Ruleset
-
-[source,console]
-----
-xxx (1)
-
-xxx (2)
-
-xxx (3)
-----
-[calloutlist]
-.. xxx
-.. xxx
-.. xxx

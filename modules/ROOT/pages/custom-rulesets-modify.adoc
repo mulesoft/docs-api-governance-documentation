@@ -4,12 +4,19 @@ To create custom governance rulesets based on rulesets that are already in Excha
 
 To create a custom ruleset based on one already in Exchange, use one of the following approaches:
 
+* <<list-rules>>
 * <<use-clone-cli>>
 * <<manual-edit>>
 
 For an example of the sequence of commands to modify a ruleset, see <<example-publish-sequence>>.
 
 For an example of the before and after of a manually modified ruleset, see <<example-manual-modify>>.
+
+[[list-rules]]
+== List Ruleset Rules Using Anypoint CLI
+To list the rules in a ruleset, use the `governance:ruleset:info` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
@@ -18,27 +25,23 @@ To create a custom ruleset using Anypoint CLI, use the `governance:ruleset:clone
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
-To list the rules in a ruleset, use the `governance:ruleset:info` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
-
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
-
 [[example-modify-sequence]]
 == Example Command Sequence to Modify a Ruleset
 
 [source,console]
 ----
-anypoint-cli-v4 xxx (1)
+anypoint-cli-v4 governance:ruleset:info 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 --remote (1)
 
-anypoint-cli-v4 xxx (2)
+anypoint-cli-v4 governance:ruleset:clone ~/MyRulesetFolder/myruleset.yaml 'New Ruleset from Clone' 'Cloned from ruleset.yaml' --warning=operation-default-response,operation-operationId > mynewruleset.yaml (2)
 
-xxx (3)
+anypoint-cli-v4 governance:ruleset:info MyRulesetFolder/myruleset.yaml (3)
 ----
 [calloutlist]
-.. Clones a ruleset that you want to modify to create a custom version.
-.. Lists the rules in the ruleset. 
-.. xxx
+.. Lists the rules in the published version of a ruleset that you want to modify to create a custom version.
+.. Clones the ruleset `ruleset.yaml` and puts the `operation-default-response,operation-operationId` rules in the warning section.
+.. Lists the rules in the modified version of the ruleset to verify that the rules are the way you want them.
+
+After you modify the ruleset, validate it, generate its documentation, and publish it as documented in   xref:custom-rulesets-validate-and-publish.adoc[].
 
 [[manual-edit]]
 == Manually Modify Rulesets
@@ -48,208 +51,6 @@ To modify a ruleset manually to create a custom ruleset:
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
 
-[[example-before-and-after]]
-== Before and After Versions of a Modified Ruleset
+After you modify the ruleset, validate it, generate its documentation, and publish it as documented in   xref:custom-rulesets-validate-and-publish.adoc[].
 
-Consider the following example ruleset.
-
-=== Downloaded Ruleset Before Changes
-
-[source,console]
-----
-#%Validation Profile 1.0 (1)
-
-profile: MyCompany Authentication Security Best Practices (2)
-
-description: |
-  This ruleset contains security best practices for API authentication. (3)
-
-tags: (4)
- - security
- - best-practices
-
-violation: (5)
-  - security-fields-operation-empty
-  - access-tokens-oauth2-cleartext
-  - insecure-oauth2-grants
-  - api-keys-in-cookie
-  - valid-oauth2-redirection-urls
-
-validations: (6)
-
-  security-fields-operation-empty: (7)
-    message: | (8)
-      This field should not be empty. If you leave the security field of the operation empty, anyone
-      can use the API operation. All they need to know is the URL for the API operation and how to invoke it. 
-    targetClass: apiContract.Operation 
-    propertyConstraints: (9)
-      security.security: 
-        minCount: 1 
-
-  access-tokens-oauth2-cleartext:
-    message: |
-      Access tokens from authorization code grant flow are transported in the clear over an unencrypted channel.
-      Attackers can easily intercept API calls and retrieve the unencrypted tokens. They can then use the tokens to make
-      other API calls.
-    targetClass: apiContract.Operation
-    if: 
-      propertyConstraints:
-        security.security / security.schemes / security.scheme / security.type :
-          pattern: "OAuth 2.0"
-    then:
-      propertyConstraints:
-        apiContract.server / core.urlTemplate:
-          pattern: "^https:.*$"
-
-  insecure-oauth2-grants:
-    message: Avoid OAuth2 implicit and resource owner password grants.
-    targetClass: security.OAuth2Settings
-    and: 
-      - not: 
-          propertyConstraints:
-            security.flows / security.flow:
-              in:
-                - implicit
-                - password
-      - not:
-          propertyConstraints:
-            security.authorizationGrant:
-              in:
-                - implicit
-                - password
-
-  api-keys-in-cookie:
-    message: |
-      Your API accepts API keys that are transported in a header over the network. Because the credentials are sent over
-      the network on each API call, they are repeatedly exposed to unauthorized attempts to retrieve them.
-    targetClass: security.SecurityScheme
-    not:
-      propertyConstraints:
-        security.settings / security.in:
-          pattern: cookie
-
-  valid-oauth2-redirection-urls:
-    message: |
-      Your API accepts basic credentials transported over the network. All URLs in the API contract must be proper URLs
-      in a valid format.
-    targetClass: security.OAuth2Flow
-    and:
-      - propertyConstraints:
-          security.accessTokenUri:
-            pattern: '^(https?:\/\/)?[-A-Za-z0-9+&@#\/%?=~_|!:,.;]+[-A-Za-z0-9+&@#\/%=~_|]$'
-      - propertyConstraints:
-          security.authorizationUri:
-            pattern: '^(https?:\/\/)?[-A-Za-z0-9+&@#\/%?=~_|!:,.;]+[-A-Za-z0-9+&@#\/%=~_|]$'
-----
-[calloutlist]
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-
-=== Downloaded Ruleset After Changes
-
-Following is the ruleset after the changes described in the preceding example.
-[source,console]
-----
-[source,console]
-----
-#%Validation Profile 1.0 (1)
-
-profile: MyCompany Authentication Security Best Practices (2)
-
-description: |
-  This ruleset contains security best practices for API authentication. (3)
-
-tags: (4)
- - security
- - best-practices
-
-violation: (5)
-  - security-fields-operation-empty
-  - access-tokens-oauth2-cleartext
-  - insecure-oauth2-grants
-  - api-keys-in-cookie
-  - valid-oauth2-redirection-urls
-
-validations: (6)
-
-  security-fields-operation-empty: (7)
-    message: | (8)
-      This field should not be empty. If you leave the security field of the operation empty, anyone
-      can use the API operation. All they need to know is the URL for the API operation and how to invoke it. 
-    targetClass: apiContract.Operation 
-    propertyConstraints: (9)
-      security.security: 
-        minCount: 1 
-
-  access-tokens-oauth2-cleartext:
-    message: |
-      Access tokens from authorization code grant flow are transported in the clear over an unencrypted channel.
-      Attackers can easily intercept API calls and retrieve the unencrypted tokens. They can then use the tokens to make
-      other API calls.
-    targetClass: apiContract.Operation
-    if: 
-      propertyConstraints:
-        security.security / security.schemes / security.scheme / security.type :
-          pattern: "OAuth 2.0"
-    then:
-      propertyConstraints:
-        apiContract.server / core.urlTemplate:
-          pattern: "^https:.*$"
-
-  insecure-oauth2-grants:
-    message: Avoid OAuth2 implicit and resource owner password grants.
-    targetClass: security.OAuth2Settings
-    and: 
-      - not: 
-          propertyConstraints:
-            security.flows / security.flow:
-              in:
-                - implicit
-                - password
-      - not:
-          propertyConstraints:
-            security.authorizationGrant:
-              in:
-                - implicit
-                - password
-
-  api-keys-in-cookie:
-    message: |
-      Your API accepts API keys that are transported in a header over the network. Because the credentials are sent over
-      the network on each API call, they are repeatedly exposed to unauthorized attempts to retrieve them.
-    targetClass: security.SecurityScheme
-    not:
-      propertyConstraints:
-        security.settings / security.in:
-          pattern: cookie
-
-  valid-oauth2-redirection-urls:
-    message: |
-      Your API accepts basic credentials transported over the network. All URLs in the API contract must be proper URLs
-      in a valid format.
-    targetClass: security.OAuth2Flow
-    and:
-      - propertyConstraints:
-          security.accessTokenUri:
-            pattern: '^(https?:\/\/)?[-A-Za-z0-9+&@#\/%?=~_|!:,.;]+[-A-Za-z0-9+&@#\/%=~_|]$'
-      - propertyConstraints:
-          security.authorizationUri:
-            pattern: '^(https?:\/\/)?[-A-Za-z0-9+&@#\/%?=~_|!:,.;]+[-A-Za-z0-9+&@#\/%=~_|]$'
-----
-[calloutlist]
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
-.. xxx
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
