@@ -8,7 +8,7 @@ If you need a ruleset other than those provided, you can create your own custom 
 
 == Before You Begin 
 
-Creating custom rulesets requires installing and running CLI commands and depending on the approach you take, writing modeling language code. If you aren’t familiar with CLI and modeling languages, consider enlisting a developer to help you create your custom rulesets. 
+Creating custom rulesets requires installing and running CLI commands and depending on the approach you take, writing modeling language code. If you aren't familiar with CLI and modeling languages, consider enlisting help creating your custom rulesets. 
 
 You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
 
