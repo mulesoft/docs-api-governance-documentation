@@ -39,7 +39,7 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
 === Example Publish (Upload) Command
 
-`anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/temp/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/temp/ruleset.doc.zip`
+`anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip`
 
 [[example-publish-sequence]]
 == Example Command Sequence to Validate and Publish

@@ -4,7 +4,6 @@ To create custom governance rulesets based on rulesets that are already in Excha
 
 To create a custom ruleset based on one already in Exchange, use one of the following approaches:
 
-* <<list-rules>>
 * <<use-clone-cli>>
 * <<manual-edit>>
 
@@ -12,14 +11,19 @@ For an example of the sequence of commands to modify a ruleset, see <<example-pu
 
 For an example of the before and after of a manually modified ruleset, see <<example-manual-modify>>.
 
+[[use-clone-cli]]
+== Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
+
+Before and after your modify your ruleset, you can use CLI to <<list-rules>>list the rules. 
+
 [[list-rules]]
-== List Ruleset Rules Using Anypoint CLI
+=== List Ruleset Rules Using Anypoint CLI
 To list the rules in a ruleset, use the `governance:ruleset:info` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
-[[use-clone-cli]]
-== Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
+[[clone-and-modify]]
+=== Clone and Modify the Ruleset
 
 To create a custom ruleset using Anypoint CLI, use the `governance:ruleset:clone` command.
 
