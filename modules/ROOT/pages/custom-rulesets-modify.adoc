@@ -1,6 +1,6 @@
 = Creating Custom Rulesets by Modifying Provided Rulesets
 
-To create custom governance rulesets based on rulesets that are already in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
+To create custom governance rulesets based on rulesets that are published in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
 
 To create a custom ruleset based on one already in Exchange, use one of the following approaches:
 
@@ -14,7 +14,7 @@ For an example of the before and after of a manually modified ruleset, see <<exa
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
 
-Before and after your modify your ruleset, you can use CLI to <<list-rules>>list the rules. 
+Before and after your modify your ruleset, you can use Anypoint CLI to <<list-rules,list the rules>>. 
 
 [[list-rules]]
 === List Ruleset Rules Using Anypoint CLI
