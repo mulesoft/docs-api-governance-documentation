@@ -7,10 +7,10 @@ API lifecycle.
 
 With API Governance you can:
 
-* *Improve your organization's API quality:* Identify conformance issues in published API specifications and take steps to resolve them.
-* *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
+* *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
+* *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
 * *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
-* *Enforce governance within your DevOps organization:* Automate the application of standards to your API contract and specification within your CI/CD pipeline.
+* *Enforce governance within your DevOps organization:* Automate API governance using the Anypoint CLI `governance` commands in your CI/CD pipeline.
 
 ////
 
