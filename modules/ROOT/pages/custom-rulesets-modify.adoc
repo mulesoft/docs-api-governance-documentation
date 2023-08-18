@@ -42,7 +42,7 @@ anypoint-cli-v4 governance:ruleset:info MyRulesetFolder/myruleset.yaml (3)
 ----
 [calloutlist]
 .. Lists the rules in the published version of a ruleset that you want to modify to create a custom version.
-.. Clones the ruleset `ruleset.yaml` and puts the `operation-default-response,operation-operationId` rules in the warning section.
+.. Clones the ruleset `ruleset.yaml` and puts the `operation-default-response` and `operation-operationId` rules in the warning section.
 .. Lists the rules in the modified version of the ruleset to verify that the rules are the way you want them.
 
 After you modify the ruleset, validate it, generate its documentation, and publish it as documented in   xref:custom-rulesets-validate-and-publish.adoc[].
