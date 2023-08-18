@@ -48,6 +48,8 @@ anypoint-cli-v4 governance ruleset info MyRulesetFolder/mynewruleset.yaml (3)
 .. Clones the downloaded ruleset, `myruleset.yaml`, to create a new custom ruleset, `mynewruleset.` Puts the `operation-default-response` and `operation-operationId` rules in the warning section in `mynewruleset`.
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml` to verify that the rules are the way you want them.
 
+include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+
 [[manual-edit]]
 == Manually Modify Rulesets
 
@@ -55,8 +57,6 @@ To modify a ruleset manually to create a custom ruleset:
 
 . Download the ruleset from Exchange.
 . Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
-
-include::3.x@anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
 
 == Next Steps 
 
