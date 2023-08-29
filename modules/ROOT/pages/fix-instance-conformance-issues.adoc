@@ -1,25 +1,36 @@
-= Fixing Conformance Issues in API Instances
+= Finding and Fixing Conformance Issues in API Instances
 
-After API Governance identifies conformance issues in your API instances, you can fix them in API Manager. 
-
-== Find Nonconformant Instances in API Governance
-
-To find nonconformant instances in API Governance:
-
-. In the API Governance console, select the *Governed APIs* tab.
-. If the Instances column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+After API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. 
 
 // Screenshot of a Conformance Report page with callouts 
 
 include::_partials/api-gov-apim-governance-report.adoc[]
 
-== Fix Conformance Issues in API Manager
+== View Conformance Issue Details in the Governance Report
 
-To fix instance conformance issues in API Manager:
+To view instance conformance issues in the governance validation report:
 
-. Select the *Conformance Report* page for the API that is marked as nonconformant.
-. View the nonconformance messages to see what you need to do and click the link to API Manager to fix the issue.
-. If the nonconformance messages don't have enough detail to help you fix the issue, open the ruleset for the offending rule and view the documentation for that ruleset to get the information you need.
+. Navigate to the report.
+* In API Governance:
++
+.. In the API Governance console, select the *Governed APIs* tab.
+.. If the Instances column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+* In API Manager:
+.. Select the *Conformance Report* page for the API that is marked as nonconformant.
+. View nonconformance details for each ruleset:
++
+* Click the icon for the nonconformance severity to see details for issues for that severity level. 
+* Click *View Details* to see the full breakdown of conformance issues.
+
+== View Rule Details in the Rulesets
+
+If the nonconformance messages in the governance validation report don't have enough detail to help you fix the issues, you can get more detailed information from the rulesets.
+
+To view rules details in rulesets:
+
+. In Exchange, open the ruleset. 
+. View the documentation for the ruleset.
+. View descriptions and messages for the rules to which your API doesn't conform.
 +
 // Screenshot of a section of the ruleset with a description of the properties 
 

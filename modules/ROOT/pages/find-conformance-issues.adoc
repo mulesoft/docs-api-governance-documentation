@@ -1,4 +1,4 @@
-= Fixing Specification Conformance Issues
+= Finding and Fixing Conformance Issues in Specifications
 
 You can validate individual API specifications against governance rulesets in Design Center
 or by using the governance CLI, even if you don't have access to the API Governance console. You can fix your specification conformance issues directly in API Designer.
