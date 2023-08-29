@@ -91,5 +91,4 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-evaluate,l
 
 == See Also
 
-* xref:find-conformance-issues.adoc[]
-* xref:fix-instance-conformance-issues.adoc[]
+* xref:find-and-fix-conformance-issues.adoc[]
