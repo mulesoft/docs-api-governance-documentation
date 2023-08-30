@@ -46,11 +46,11 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
 [source,console]
 ----
-anypoint-cli-v4 governance:ruleset:validate ~/myRulesetFolder/myruleset.yaml (1)
+anypoint-cli-v4 governance:ruleset:validate ~/myRulesetFolder/myruleset.yaml <1>
 
-anypoint-cli-v4 governance:document ~/myRulesetFolder/ruleset.yaml ~/myRulesetFolder/ruleset.doc.zip (2)
+anypoint-cli-v4 governance:document ~/myRulesetFolder/ruleset.yaml ~/myRulesetFolder/ruleset.doc.zip <2>
 
-anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip (3)
+anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip <3>
 ----
 [calloutlist]
 .. Validates the ruleset locally.
