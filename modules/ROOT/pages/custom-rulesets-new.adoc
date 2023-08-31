@@ -7,13 +7,7 @@ If you want a custom ruleset that cannot be created by modifying one of the prov
 * Create a ruleset using the custom ruleset CLI commands, see <<create-rulesets-using-cli>>.
 * Create a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
 
-After you create the ruleset:
-
-. Validate the changes using the `governance:ruleset:validate` command.
-. Generate the ruleset documentation. 
-. Publish your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. 
-+
-See xref:custom-rulesets-validate-and-publish.adoc[].
+After you create the ruleset, see xref:custom-rulesets-validate-and-publish.adoc[].
 
 NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
