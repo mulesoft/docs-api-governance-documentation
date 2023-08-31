@@ -2,11 +2,9 @@
 
 After you create a custom ruleset:
 
-. <<validate-ruleset,Validate>> the changes using the `governance:ruleset:validate` command.
-. <<generate-ruleset-doc,Generate>> the ruleset documentation. 
-. <<publish-ruleset,Publish>> your custom ruleset as a new asset using the Exchange UI or the `anypoint-cli exchange asset upload` command. 
-+
-See xref:custom-rulesets-validate-and-publish.adoc[].
+. <<validate-ruleset,Validate the changes>>.
+. <<generate-ruleset-doc,Generate the ruleset documentation>>. 
+. <<publish-ruleset,Publish your custom ruleset as a new asset>>. 
 
 For an example sequence of commands to validate and publish your rulesets, see <<example-publish-sequence>>.
 
