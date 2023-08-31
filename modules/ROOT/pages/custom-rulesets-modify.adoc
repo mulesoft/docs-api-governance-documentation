@@ -32,6 +32,8 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,
 [[example-modify-sequence]]
 == Example Command Sequence to Modify a Ruleset
 
+Use the following example sequence to get started modifying a ruleset. Replace the details, such as the folder name, ruleset file name, and ruleset documentation ZIP file name, with your own.
+
 [source,console]
 ----
 anypoint-cli-v4 governance ruleset info 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 --remote <1>
@@ -44,7 +46,7 @@ anypoint-cli-v4 governance ruleset info MyRulesetFolder/mynewruleset.yaml <4>
 ----
 [calloutlist]
 .. Lists the rules in the published version of a published ruleset that you want to modify to create a custom version.
-.. Downloads the ruleset to the `MyRulesetFolder` directory.
+.. Downloads the ruleset to the `~/MyRulesetFolder` folder.
 .. Clones the downloaded ruleset, `myruleset.yaml`, to create a new custom ruleset, `mynewruleset.` Puts the `operation-default-response` and `operation-operationId` rules in the warning section in `mynewruleset`.
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml`, to verify that the rules are the way you want them.
 
@@ -60,4 +62,4 @@ To modify a ruleset manually to create a custom ruleset:
 
 == Next Steps 
 
-After you modify the ruleset, see    xref:custom-rulesets-validate-and-publish.adoc[].
+After you modify the ruleset, see xref:custom-rulesets-validate-and-publish.adoc[].

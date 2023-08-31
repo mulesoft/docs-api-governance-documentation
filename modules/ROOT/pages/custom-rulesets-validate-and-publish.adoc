@@ -37,12 +37,10 @@ You can publish a ruleset to Exchange as you do any other asset:
 
 To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 
-=== Example Publish (Upload) Command
-
-`anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/ruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip`
-
 [[example-publish-sequence]]
 == Example Command Sequence to Validate and Publish
+
+Use the following example sequence to get started validating you ruleset, generating documentation, and uploading your ruleset to Exchange. Replace the details, such as the folder name, ruleset file name, and ruleset documentation ZIP file name, with your own.
 
 [source,console]
 ----
@@ -53,6 +51,10 @@ anypoint-cli-v4 governance:document ~/myRulesetFolder/myruleset.yaml ~/myRuleset
 anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/myruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip <3>
 ----
 [calloutlist]
-.. Validates the ruleset locally.
-.. Generates the documentation for the ruleset. 
-.. Uploads the ruleset and its documentation. 
+.. Validates the ruleset locally. The ruleset file name is `myruleset.yaml` and it's in the `~/myRulesetFolder/` folder.
+.. Generates the documentation ZIP file, `ruleset.doc.zip`, for the ruleset `myruleset.yaml`. Both files are in the `~/myRulesetFolder/` folder.
+.. Uploads the ruleset, `myruleset.yaml`, and its documentation, `~/myRulesetFolder/ruleset.doc.zip`. Both files are in the `~/myRulesetFolder/` folder. 
+
+== See Also
+
+* xref:anypoint-cli::exchange-assets.adoc#exchange-asset-upload[CLI for Exchange Assets, exchange:asset:upload]
