@@ -10,7 +10,7 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
 
-Before and after your modify your ruleset, you can use Anypoint CLI to <<list-rules,list the rules>>. 
+You can use Anypoint CLI to <<list-rules,list the rules>> before you modify your ruleset so that you can see what you want to change and after you change it to validate your changes. 
 
 [[list-rules]]
 === List Ruleset Rules Using Anypoint CLI
