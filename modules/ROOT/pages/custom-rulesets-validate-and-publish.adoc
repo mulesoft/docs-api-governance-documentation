@@ -57,4 +57,4 @@ anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli
 
 == See Also
 
-* xref:anypoint-cli::exchange-assets.adoc#exchange-asset-upload[CLI for Exchange Assets, exchange:asset:upload]
+* xref:anypoint-cli::exchange-assets.adoc[]

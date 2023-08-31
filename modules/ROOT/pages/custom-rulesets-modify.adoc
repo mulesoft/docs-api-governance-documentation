@@ -59,3 +59,8 @@ To modify a ruleset manually to create a custom ruleset:
 == Next Steps 
 
 After you modify the ruleset, see xref:custom-rulesets-validate-and-publish.adoc[].
+
+== See Also
+
+* xref:exchange::to-download-an-asset.adoc[]
+* xref:anypoint-cli::exchange-assets.adoc[]
