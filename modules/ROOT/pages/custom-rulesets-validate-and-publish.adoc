@@ -8,7 +8,7 @@ After you create a custom ruleset:
 +
 See xref:custom-rulesets-validate-and-publish.adoc[].
 
-For an example of the sequence of commands from validation to publishing, see <<example-publish-sequence>>.
+For an example sequence of commands to validate and publish your rulesets, see <<example-publish-sequence>>.
 
 NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
 
@@ -40,7 +40,7 @@ To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
 [[example-publish-sequence]]
 == Example Command Sequence to Validate and Publish
 
-Use the following example sequence to get started validating you ruleset, generating documentation, and uploading your ruleset to Exchange. Replace the details, such as the folder name, ruleset file name, and ruleset documentation ZIP file name, with your own.
+Use the following example sequence to get started validating your ruleset, generating its documentation, and uploading both to Exchange. Replace the details, such as the folder name, ruleset file name, and ruleset documentation ZIP file name, with your own.
 
 [source,console]
 ----
