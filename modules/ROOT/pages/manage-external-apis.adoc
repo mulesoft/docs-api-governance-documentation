@@ -1,0 +1,22 @@
+= Managing Discovered APIs
+
+== Permission
+
+To manage discovered APIs, you must have permission to view them in API Governance. You need to following permissions:
+
+* API Governance Administrator
+* API Catalog Viewer
+
+== Viewing Discovered APIs
+
+You can view discovered APIs in the API Discovery console.
+
+== Modifying Discovered APIs
+
+You can modify discovered APIs if modified versions or duplicates are discovered during a scan.
+
+
+== See Also
+
+* xref:access-management::permissions-by-product[]
+* xref:index.adoc[]

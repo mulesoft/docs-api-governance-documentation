@@ -1,0 +1,10 @@
+= Adding External API Sources
+
+. In API Governance, select *API Discovery*.
+. Click *Add API Source*.
+. Follow the UI prompts to enter the information in the following screens:
+** Select System
+** Authenticate
+** Configure System
+** Set Default Values
+** Other Settings

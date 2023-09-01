@@ -17,9 +17,9 @@ CAUTION: If you do not select filter criteria, your governance profile is applie
 * Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
 ====
 
-.To create a governance profile using the API Governance console: 
+To create a governance profile using the API Governance console: 
 
-. In *API Governance*, click *New Profile*.
+. In *API Governance*, select *Governance* and then click *New Profile*.
 . Follow the UI prompts to enter the following:
 
 [cols="1a,9a",frame=none]

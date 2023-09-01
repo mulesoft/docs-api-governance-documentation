@@ -1,0 +1,10 @@
+= Identifying APIs to Govern from External Sources 
+
+You can govern APIs from external sources along with the APIs you already govern in Anypoint Platform. 
+
+To identify APIs to govern from external sources:
+
+* xref:add-api-sources.adoc[]
+* xref:discover-apis-from-external-sources.adoc[]
+* xref:publish-discovered-apis.adoc[]
+* xref:manage-external-apis.adoc[]
