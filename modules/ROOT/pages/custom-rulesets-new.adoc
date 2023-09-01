@@ -36,9 +36,9 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,l
 [[create-rulesets-using-cli]]
 == Create Rulesets Using the Ruleset Development CLI
 
-An open-source version of the Ruleset Development CLI is available on npm. It is provided separately from the Anypoint CLI `governance` commands, and is documented separately. 
+An open-source version of the ruleset development CLI is available on npm. It is provided separately from the Anypoint CLI `governance` commands, and is documented separately. 
 
-To create rulesets using the Ruleset Development CLI:
+To create rulesets using the ruleset development CLI:
 
 . Install `ruleset-development-cli` from https://www.npmjs.com/package/@aml-org/ruleset-development-cli[npmjs.com^].
 . Follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to create a ruleset. 

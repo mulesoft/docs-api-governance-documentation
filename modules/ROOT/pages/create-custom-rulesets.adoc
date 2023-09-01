@@ -15,7 +15,7 @@ You can also submit your ideas for rulesets you would like MuleSoft to provide i
 When you're ready to get started:
 
 . Read https://a.ml/docs/amf/using-amf/amf_custom_validation/[Custom Validation^] for a brief summary of how rulesets validate APIs.
-. If you plan to create completely new custom rulesets that aren't based on existing ones, follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial^] to install Ruleset Development CLI.
+. If you plan to create completely new custom rulesets that aren't based on existing ones, follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial^] to install the ruleset development CLI.
 . Install Anypoint CLI. You'll need this to validate your custom rulesets, generate their documentation, and publish them to Exchange.
 
 == Create a Custom Ruleset
