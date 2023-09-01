@@ -36,7 +36,7 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,l
 [[create-rulesets-using-cli]]
 == Create Rulesets Using the Ruleset Development CLI
 
-An open-source version of the ruleset development CLI is available on npm. It is provided separately from the Anypoint CLI `governance` commands, and is documented separately. 
+An open-source version of ruleset development CLI is available on npm. It is provided and documented separately from the Anypoint CLI `governance` commands. 
 
 To create rulesets using the ruleset development CLI:
 
