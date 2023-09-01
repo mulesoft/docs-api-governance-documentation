@@ -41,7 +41,7 @@ An open-source version of ruleset development CLI is available on npm. It is pro
 To create rulesets using the ruleset development CLI:
 
 . Install `ruleset-development-cli` from https://www.npmjs.com/package/@aml-org/ruleset-development-cli[npmjs.com^].
-. Follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial] to create a ruleset. 
+. Follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial^] to create a ruleset. 
 
 [[create-rulesets-using-code]]
 == Create Rulesets Using the Modeling Language
