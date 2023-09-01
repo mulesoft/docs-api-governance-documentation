@@ -46,4 +46,4 @@ To create rulesets using the ruleset development CLI:
 [[create-rulesets-using-code]]
 == Create Rulesets Using the Modeling Language
 
-To create rulesets using the modeling language, read the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project to become familiar with how to write a ruleset using the modeling language.
+To create rulesets using the modeling language, read the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project to learn how to write a ruleset using the modeling language.
