@@ -4,4 +4,4 @@ You can publish discovered APIs' specifications to Exchange.
 
 == See Also
 
-* xref:exchange:about-sharing-assets.adoc[]
+* xref:exchange::about-sharing-assets.adoc[]

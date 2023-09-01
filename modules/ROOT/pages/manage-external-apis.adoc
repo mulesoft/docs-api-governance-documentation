@@ -18,5 +18,5 @@ You can modify discovered APIs if modified versions or duplicates are discovered
 
 == See Also
 
-* xref:access-management::permissions-by-product[]
+* xref:access-management::permissions-by-product.adoc[]
 * xref:index.adoc[]
