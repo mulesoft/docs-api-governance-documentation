@@ -10,4 +10,7 @@
   * xref:find-conformance-issues.adoc[Finding API Conformance Issues in API Specifications]
   * xref:view-conformance-status-in-exchange.adoc[Viewing Conformance Status in Exchange]
   * xref:create-custom-rulesets.adoc[Creating Custom Governance Rulesets]
+  ** xref:custom-rulesets-modify.adoc[Creating Custom Rulesets by Modifying Provided Rulesets]
+  ** xref:custom-rulesets-new.adoc[Creating Completely New Custom Rulesets]
+  ** xref:custom-rulesets-validate-and-publish.adoc[Validating and Publishing Custom Rulesets]
   * xref:cli-command-list.adoc[List of API Governance CLI Commands]
