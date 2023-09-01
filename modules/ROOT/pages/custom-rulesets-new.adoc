@@ -3,8 +3,8 @@
 If you want a custom ruleset that cannot be created by modifying one of the provided rulesets, use one of the following approaches:
 
 * Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
-* Generate a ruleset using CLI commands by scaffolding it from a specification's data schema. See <<scaffold-rulesets>>.
-* Create a ruleset using the custom ruleset CLI commands, see <<create-rulesets-using-cli>>.
+* Generate a ruleset using Anypoint CLI commands by scaffolding it from a specification's data schema. See <<scaffold-rulesets>>.
+* Create a ruleset using the ruleset development CLI commands, see <<create-rulesets-using-cli>>.
 * Create a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
 
 After you create the ruleset, see xref:custom-rulesets-validate-and-publish.adoc[].
