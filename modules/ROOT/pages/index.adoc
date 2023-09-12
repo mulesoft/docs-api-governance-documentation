@@ -35,7 +35,7 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 == Governance in Exchange, Design Center, and API Manager
 
-API Governance is integrated with <<Exchange>>, <<Design Center>>, and <<API Manager>>.
+API Governance is integrated with <<exchange-overview>>, <<design-center-overview>>, and <<api-manager-overview>>.
 
 [[exchange-overview]]
 === Exchange
