@@ -38,16 +38,16 @@ Use the following example sequence to get started validating your ruleset, gener
 
 [source,console]
 ----
-anypoint-cli-v4 governance:ruleset:validate ~/myRulesetFolder/myruleset.yaml <1>
+anypoint-cli-v4 governance:ruleset:validate /myRulesetFolder/mynewruleset.yaml <1>
 
-anypoint-cli-v4 governance:document ~/myRulesetFolder/myruleset.yaml ~/myRulesetFolder/ruleset.doc.zip <2>
+anypoint-cli-v4 governance:document /myRulesetFolder/mynewruleset.yaml /myRulesetFolder/ruleset.doc.zip <2>
 
-anypoint-cli exchange:asset:upload --name "cli ruleset asset" --description "cli ruleset asset description" --properties.mainFile ruleset.yaml --files.ruleset.zip ~/myRulesetFolder/myruleset.zip cli-ruleset-asset/1.0.0 --files.docs.zip ~/myRulesetFolder/ruleset.doc.zip <3>
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my  best practices for APIs."  --properties='{"mainFile":"/myRulesetFolder/mynewruleset.raml","apiVersion":"v1"}' --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml"}' --files='{"custom.zip": "ruleset.doc.zip"}' <3>
 ----
 [calloutlist]
-.. Validates the ruleset locally. The ruleset file is `myruleset.yaml` in the `~/myRulesetFolder/` folder.
-.. Generates the documentation ZIP file, `ruleset.doc.zip`, for the ruleset `myruleset.yaml`. Both files are in the `~/myRulesetFolder/` folder.
-.. Uploads the ruleset, `myruleset.yaml`, and its documentation, `ruleset.doc.zip`. Both files are in the `~/myRulesetFolder/` folder. 
+.. Validates the ruleset locally. The ruleset file is `myruleset.yaml` in the `/myRulesetFolder/` folder.
+.. Generates the documentation ZIP file, `ruleset.doc.zip`, for the ruleset `myruleset.yaml`. Both files are in the `/myRulesetFolder/` folder.
+.. Uploads the ruleset, `myruleset.yaml`, and its documentation, `ruleset.doc.zip`. Both files are in the `/myRulesetFolder/` folder. 
 
 == See Also
 
