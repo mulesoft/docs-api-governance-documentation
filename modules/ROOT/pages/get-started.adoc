@@ -12,8 +12,6 @@ After you become familiar with the API Governance UI and concepts covered in the
 +
 * If you don't see the option to opt in, you already have access to the new features.
 +
-* If you see the option to opt in and want to wait, you have until the date stated in the UI to opt in. 
-+
 * This documentation is written for the full-featured governance after opt-in.
 
 == Govern Your APIs
