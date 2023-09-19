@@ -42,7 +42,7 @@ In the API Dicovery console, add APIs from external systems and publish and gove
 
 // Screenshot of the API Discovery console with callouts
 
-include::_partials/api-discovery-console-scap-callouts.adoc[]
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-console]
 
 == Governance in Exchange, Design Center, and API Manager
 

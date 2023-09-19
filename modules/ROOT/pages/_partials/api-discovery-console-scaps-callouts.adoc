@@ -1,0 +1,28 @@
+// Partial reused in index.adoc and discover-external-apis.adoc 
+
+// tag::api-discovery-console[]
+
+image::api-discovery-console-scap.png[The API Discovery console]
+
+[calloutlist]
+. Discover, publish, and govern APIs from external sources.
+
+// end::api-discovery-console[]
+
+// tag::api-discovery-discovered-apis-tab[]
+
+image::api-discovery-discovered-apis-tab-scap.png[The API Discovery console with the Discovered APIs tab selected]
+
+[calloutlist]
+. View and scan for discovered APIs.
+
+// end::api-discovery-discovered-apis-tab[]
+
+// tag::api-discovery-add-sources-tab[]
+
+image::api-discovery-api-sources-tab-scap.png[The API Discovery console with the Add Sources tab selected]
+
+[calloutlist]
+. Add sources from which to discover APIs.
+
+// end::api-discovery-add-sources-tab[]

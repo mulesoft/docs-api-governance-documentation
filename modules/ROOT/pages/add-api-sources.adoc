@@ -1,5 +1,10 @@
 = Adding External API Sources
 
+// Screenshot of the API Discovery console with callouts
+
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-sources-tab]
+
+
 . In API Governance, select *API Discovery*.
 . Click *Add API Source*.
 . Follow the UI prompts to enter the information in the following screens:
