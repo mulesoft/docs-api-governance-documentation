@@ -4,4 +4,4 @@ After you have added an API source, you can scan to discover APIs from that sour
 
 // Screenshot of the API Discovery console with callouts
 
-include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-console]
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-discovered-apis-tab]

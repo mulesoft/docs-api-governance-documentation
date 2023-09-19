@@ -1,13 +1,13 @@
 // Partial reused in index.adoc and discover-external-apis.adoc 
 
-// tag::api-discovery-console[]
+// tag::api-discovery-add-source-page[]
 
-image::api-discovery-console-scap.png[The API Discovery console]
+image::api-discovery-add-source-scap.png[The API Discovery Add Source page]
 
 [calloutlist]
 . Discover, publish, and govern APIs from external sources.
 
-// end::api-discovery-console[]
+// end::api-discovery-add-source-page[]
 
 // tag::api-discovery-discovered-apis-tab[]
 

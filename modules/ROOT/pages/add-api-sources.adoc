@@ -4,6 +4,7 @@
 
 include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-sources-tab]
 
+To add external API sources:
 
 . In API Governance, select *API Discovery*.
 . Click *Add API Source*.
