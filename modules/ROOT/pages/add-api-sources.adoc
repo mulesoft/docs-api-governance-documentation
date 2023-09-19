@@ -2,7 +2,7 @@
 
 // Screenshot of the API Discovery console with callouts
 
-include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-sources-tab]
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-source-page]
 
 To add external API sources:
 
