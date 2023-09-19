@@ -1,0 +1,7 @@
+// Partial reused in index.adoc and discover-external-apis.adoc 
+
+image::api-discovery-console.png[Screenshot of the API Discovery console]
+
+[calloutlist]
+. Add sources from which to discover APIs.
+. View and scan for discovered APIs.

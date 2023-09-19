@@ -11,6 +11,9 @@ With API Governance you can:
 * *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
 * *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
 * *Enforce governance within your DevOps organization:* Automate API conformance validation within your CI/CD pipeline using the Anypoint CLI `governance` commands.
+* *Ensure consistent governance of APIs beyond Anypoint Platform:* Govern APIs from systems other than Anypoint Platform using API Discovery.
+* *Increase API reuse and reduce duplication:* Enable true centralized API consumption by publishing external APIs in Anypoint Platform.
+
 
 ////
 
@@ -29,9 +32,17 @@ include::_partials/api-gov-gs-video.html[]
 In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 You can monitor your APIs' conformance and notify developers to help improve the conformance.
 
-// Screenshot of the console with callouts
+// Screenshot of the API Governance console with callouts
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
+
+== API Discovery Console
+
+In the API Dicovery console, add APIs from external systems and publish and govern them in Anypoint Platform.
+
+// Screenshot of the API Discovery console with callouts
+
+include::_partials/api-discovery-console-scap-callouts.adoc[]
 
 == Governance in Exchange, Design Center, and API Manager
 

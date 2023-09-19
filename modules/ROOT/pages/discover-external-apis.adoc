@@ -1,3 +1,7 @@
 = Discovering APIs from External Sources
 
 After you have added an API source, you can scan to discover APIs from that source.
+
+// Screenshot of the API Discovery console with callouts
+
+include::_partials/api-discovery-console-scap-callouts.adoc[]
