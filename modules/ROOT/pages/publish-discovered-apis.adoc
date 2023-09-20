@@ -33,12 +33,12 @@ The AWS environment cannot be mapped directly to an equivalent in API Discovery,
 
 The following example shows how the AWS environment information is represented in the API declaration for a discovered API.
 
-====
+----
 apiVersion: gateway.mulesoft.com/v1alpha1
 kind: Environment <1>
 metadata:
   name: v1-rcizkl
-====
+----
 [calloutlist]
 .. Kind of environment is saved as AWS metadata in API Discovery because there isn't an equivalent in Anypoint Platform.
 
@@ -71,7 +71,7 @@ APIs might have multiple instances. Each instance is represented by its own sect
 
 The following example shows how AWS instance information is represented in the API declaration for a discovered API.
 
-====
+----
 apiVersion: gateway.mulesoft.com/v1alpha1 <1>
 kind: ApiInstance <2>
 metadata: <3>
@@ -86,7 +86,7 @@ metadata: <3>
     aws.amazon.com/endpointConfiguration: REGIONAL
 spec: <4>
   address: https://uqzxgsgcg6.execute-api.us-east-2.amazonaws.com/v1
-====
+----
 [calloutlist]
 .. API version from the AWS API.
 .. Kind of API from the AWS API.
