@@ -106,7 +106,6 @@ Solution: Ensure that your network and internet are connected and stable.
 * Invalid credentials entered in the API Discovery *API Sources* > <API Source> > *Authenticate* page.
 +
 Solution: Verify your credentials in AWS and then edit the API source and reenter them in the *Authenticate* page.
-* 
 
 == See Also
 

@@ -12,7 +12,7 @@ To view discovered APIs:
 
 . In API Governance, select *API Discovery*.
 . Select the *Discovered APIs* tab. 
-. Select an API to view its details. xxx
+. Select an API to view its details.
 
 == Modify a Discovered API
 
