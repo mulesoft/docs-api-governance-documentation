@@ -1,20 +1,27 @@
 = Managing Discovered APIs
 
-== Permission
+After you discover APIs, you can manage them in the *API Discovery* console. 
 
-To manage discovered APIs, you must have permission to view them in API Governance. You need to following permissions:
+// something about governance here 
 
-* API Governance Administrator
-* API Catalog Viewer
-
-== Viewing Discovered APIs
+== View Discovered APIs
 
 You can view discovered APIs in the API Discovery console.
 
-== Modifying Discovered APIs
+To view discovered APIs:
 
-You can modify discovered APIs if modified versions or duplicates are discovered during a scan.
+. In API Governance, select *API Discovery*.
+. Select the *Discovered APIs* tab. 
+. Select an API to view its details. xxx
 
+== Modify a Discovered API
+
+You can modify a discovered APIs if a modified versions or duplicates are detected during a scan.
+
+// To modify a discovered API:
+
+// . xxx
+// . xxx
 
 == See Also
 

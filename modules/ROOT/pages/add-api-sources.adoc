@@ -4,13 +4,77 @@
 
 include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-source-page]
 
-To add external API sources:
+== Before You Begin to Add AWS Sources
+
+When you add an AWS source, API Discovery authenticates to AWS using specific authentication information. Ensure that you have these available before proceeding. See <<tips-for-aws-auth>>.
+
+After the initial authentication, API Discovery stores the encrypted information but cannot retrieve it for display. The authentication remains as configured until you type in the authentication credentials fields again. 
+
+== Add an AWS API Source
+
+To add an AWS API source:
 
 . In API Governance, select *API Discovery*.
-. Click *Add API Source*.
+. Click *Add API Source*. 
 . Follow the UI prompts to enter the information in the following screens:
-** Select System
-** Authenticate
-** Configure System
-** Set Default Values
-** Other Settings
+** <<select-a-system>>
+** <<authenticate>>
+** <<set-default-values>>
+** <<general-information>>
+
+[[select-a-system]]
+=== Select a System
+
+Only AWS is available for the pilot.
+
+[[authenticate]]
+=== Authenticate to AWS
+
+Authenticate to AWS using your
+access key ID, secret access key, and region. You must configure these in AWS before adding them in API Disovery. See <<tips-for-aws-auth>>.
+
+[[set-default-values]]
+=== Set Default Values
+
+Set default values for all of the APIs from each source so that you can filter and manage them more easily. This information is defined in Exchange as part of the APIs' catalog information. 
+
+Values include:
+
+* Contact Name
++
+Enter a default contact name to use for all APIs from this source.
+* Contact Email
++
+Enter a default contact name to use for all APIs from this source.
+* Tags
++ 
+Click in the field to select existing tags or start typing to add new tags.
+* Categories
++ 
+Select from the listed catagories.
+
+[[general-information]]
+=== Specify General Information
+
+Specify additional general information, such as whether to scan immediately to discover external APIs for this external source. 
+
+// Need to get and add whatever they can add or change here
+
+[[tips-for-aws-auth]]
+== Tips for Getting Your AWS Authentication Information
+
+API Discovery uses your IAM access keys to authenticate to AWS. You must enter a valid access key ID, secret access key, and region to authenticate to AWS from API Discovery.
+
+Verify your access key information by using it to log in to AWS before you enter it in API Discovery.
+
+For detailed documentation on configuring IAM access keys, refer to https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html[Managing access keys for IAM users^] in the AWS documentation.
+
+// Get other tips to add
+
+// == Troublehoot Add Sources
+
+// xxx
+
+// == See Also
+
+// xxx xref to AWS auth doc page xxx

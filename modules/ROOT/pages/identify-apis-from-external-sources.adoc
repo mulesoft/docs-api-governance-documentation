@@ -1,6 +1,24 @@
 = Identifying APIs to Govern from External Sources 
 
-You can govern APIs from external sources along with the APIs you already govern in Anypoint Platform. 
+You can govern APIs from external sources along with the APIs you already govern in Anypoint Platform. This gives you  centralized governance across APIs you already manage in Anypoint Platform and those you discover from AWS and subsequently publish in Exchange.
+
+// Add other benefits
+
+== Permissions
+
+To manage discovered APIs, you must have permission to view them in API Governance. You need to following permissions:
+
+* API Governance Administrator
+* API Catalog Viewer
+
+// Do they need Exchange permssions or API Manager permissions, or ar these inherited as entitlements from API Catalog Viewer?
+// Any other permissions needed?
+
+NOTE: Your Anypoint Platform administrator typically sets your permissions for you. 
+
+// In some cases, such as for pilot programs, MuleSoft might set them for you. 
+
+== Identify, Publish, and Govern APIs from External Sources
 
 To identify APIs to govern from external sources:
 
