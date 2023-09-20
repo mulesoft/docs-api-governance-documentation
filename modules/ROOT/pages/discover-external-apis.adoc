@@ -35,4 +35,4 @@ If the scan fails, the information available in API Discovery might be limited. 
 * A drop in the network during the scan, such as a loss of internet connection. Ensure the connection is established and try the scan again.
 * The authentication information for the AWS source is invalid or expired. Edit the AWS source and navigate to the *Authenticate* page to update the authentication information.
 * Anypoint Platform cannot add discovered APIs that are not successfully deployed in AWS. Ensure that all of the APIs are deployed in the source you are scanning.
-* Work with your AWS administrator to ensure that the APIs in the AWS source are in a valid state to import. 
+* Work with your AWS administrator to ensure that the APIs in the AWS source are in a valid state to discover. 

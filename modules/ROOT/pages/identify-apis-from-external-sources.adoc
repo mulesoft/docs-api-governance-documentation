@@ -20,7 +20,7 @@ NOTE: Your Anypoint Platform administrator typically sets your permissions for y
 
 == Identify, Publish, and Govern APIs from External Sources
 
-To identify APIs to govern from external sources:
+To identify APIs to govern from external sources and publish and manage them in Anypoint Platform, see the following:
 
 * xref:add-api-sources.adoc[]
 * xref:discover-external-apis.adoc[]
