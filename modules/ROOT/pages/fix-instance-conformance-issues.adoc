@@ -47,13 +47,13 @@ The following table shows some of the rules and the actions that you can take to
 |Scope
 |Recommended Fix
 |$BEFORE policies should be configured before $AFTER policies
-|A specific instance ID
+|An instance ID
 |In API Manager, rearrange the policies for the instance. 
 |The API instance has no $policy-name policy applied
-|A specific instance ID
+|An instance ID
 |In API Manager, add a $policy-name policy to the instance.
 |All API Instances server URLs are described in the API specification
-|A specification, but relates to instances.
+|A specification
 |Edit the specification and add descriptions for all its API instance URLs.
 |===
 
