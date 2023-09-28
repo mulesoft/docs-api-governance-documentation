@@ -60,10 +60,6 @@ Selections appear in the *Categories* section only if your APIs in Exchange have
 If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
 +
 If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
-+
-* Lifecycle State
-+
-Based on your filter criteria, the latest versions of the APIs are automatically selected and shown in the page. For example, if you select lifecycle state *Development*, the latest versions of the APIs in *Development* are selected rather than the latest stable versions.
 
 *API Instance* filters:
 
