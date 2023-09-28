@@ -36,6 +36,27 @@ To view rules details in rulesets:
 
 include::_partials/api-gov-apim-ruleset-fix-tips.adoc[]
 
+== Example Rules and Recommended Fixes
+
+The following table shows some of the rules and the actions that you can take to fix conformance to those rules.
+
+[cols="3a,3a,3a",frame=none]
+|===
+
+|Rule
+|Scope
+|Recommended Fix
+|$BEFORE policies should be configured before $AFTER policies
+|A specific instance ID
+|In API Manager, rearrange the policies for the instance. 
+|The API instance has no $policy-name policy applied
+|A specific instance ID
+|In API Manager, add a $policy-name policy to the instance.
+|All API Instances server URLs are described in the API specification
+|A specification, but relates to instances.
+|Edit the specification and add descriptions for all its API instance URLs.
+|===
+
 == See Also
 
 // * xref:api-manager::xxx.adoc[xxx]
