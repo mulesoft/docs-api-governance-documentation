@@ -16,12 +16,21 @@ To view discovered APIs:
 
 == Modify a Discovered API
 
-You can modify a discovered API before you publish it or if a modified version or duplicate is detected during a subsequent scan.
+You can modify a discovered API before you publish it or if a modified version or duplicate is detected during a subsequent scan. 
 
-// To modify a discovered API:
+To modify a discovered API:
 
-// . xxx
-// . xxx
+. In API Governance, select *API Discovery*.
+. Select the *Discovered APIs* tab. 
+. Select an API to view its details.
+. Update the information you want to change.
+. Click *Save Changes* to save without publishing or click *Save and Publish to Exchange* to save and publish.
++
+* If this is the first time you are publishing the API, the API is published with the information currently in the page, including any changes you've made.
+* If this is a change to an API that is already published in Exchange:
+** If you modify the name, a new API is published.
+** If you modify the version, a new API version is published.
+
 
 == See Also
 
