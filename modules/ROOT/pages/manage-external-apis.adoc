@@ -31,6 +31,7 @@ To modify a discovered API:
 ** If you modify the name, a new API is published.
 ** If you modify the version, a new API version is published.
 
+CAUTION: You can modify an API specification in API Designer after it is published, but those changes won't be made in AWS. If you scan again to discover changes to the same API in AWS, the updates from AWS overwrite any changes you made in API Designer in a new asset version of the API. 
 
 == See Also
 
