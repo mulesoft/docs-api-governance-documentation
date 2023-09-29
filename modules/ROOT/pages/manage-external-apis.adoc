@@ -16,7 +16,7 @@ To view discovered APIs:
 
 == Modify a Discovered API
 
-You can modify a discovered APIs if a modified versions or duplicates are detected during a scan.
+You can modify a discovered API before you publish it or if a modified version or duplicate is detected during a subsequent scan.
 
 // To modify a discovered API:
 
