@@ -6,7 +6,7 @@ To publish a discovered API to Exchange:
 
 . In API Governance, select *API Discovery*.
 . Select the *Discovered APIs* tab. 
-. Beside the API you want to publish, select *Review and Publish*.
+. For the API you want to publish, select *Review and Publish*.
 . Select corresponding tabs to view the API's catalog information, specification, and instance information.
 .. You can review and add or change catalog information in the *Catalog info* page.
 .. You can review the specification in the *Specification* page.
@@ -34,34 +34,95 @@ The AWS environment cannot be mapped directly to an equivalent in API Discovery,
 The following example shows how the AWS environment information is represented in the API declaration for a discovered API.
 
 ----
-apiVersion: gateway.mulesoft.com/v1alpha1
-kind: Environment <1>
-metadata:
+apiVersion: gateway.mulesoft.com/v1alpha1 <1>
+kind: Environment <2>
+metadata: <3>
   name: v1-rcizkl
 ----
 [calloutlist]
+.. API version from the AWS API.
 .. Kind of environment is saved as AWS metadata in API Discovery because there isn't an equivalent in Anypoint Platform.
+.. Metadata from the AWS API.
 
 [[api-environment-binding-declaration]]
 === AWS Environment Binding Information
 
 The AWS environment cannot be mapped directly to an equivalent in API Discovery.
 
-// Add environment Binding info
+The following example shows how AWS environment binding information is represented in the API declaration for a discovered API.
+
+----
+apiVersion: gateway.mulesoft.com/v1alpha1 <1>
+kind: EnvironmentBinding <2>
+spec:
+  targetEnvironmentRef: <2>
+    name: v1-rcizkl
+  targetRef: <3>
+    name: uqzxgsgcg6-v1-rcizkl
+----
+[calloutlist]
+.. API version from the AWS API.
+.. Kind of API binding from the AWS API.
+.. Target environment reference from AWS.
+.. Target spec reference from AWS.
 
 [[api-policy-binding-declaration]]
 === AWS Policy Bindings Information
 
 The AWS policy bindings information is shown in the declaration.
 
-// Add Policy Bindings -- not sure if thees are mapped to anything
+The following example shows how AWS services information is represented in the API declaration for a discovered API. If there are multiple services, there is a section for each one. This example just shows one.
+
+----
+apiVersion: gateway.mulesoft.com/v1alpha1 <1>
+kind: Service <2>
+metadata:
+  name: uqzxgsgcg6-/history-get-service <3>
+  labels: <4>
+    aws.amazon.com/arn: arn:AWS:apigateway:US_EAST_2::/restapis/uqzxgsgcg6/resources/cx8i3f/methods/get/integration
+    aws.amazon.com/region: us-east-2
+    aws.amazon.com/resourceId: cx8i3f
+    aws.amazon.com/method: get
+    aws.amazon.com/partition: AWS
+    aws.amazon.com/resource: apigateway-integration
+spec:
+  address: MOCKED
+----
+[calloutlist]
+.. API version from the AWS API.
+.. Kind of service from the AWS API.
+.. Service name in AWS.
+.. Labels.
 
 [[api-services-declaration]]
 === AWS Services Information
 
 The AWS services information is shown in the declaration.
 
-// Add Services -- not sure what mapped to
+The following example shows how AWS policy binding information is represented in the API declaration for a discovered API. If there are multiple policy bindings, there is a section for each one. This example just shows one.
+
+----
+apiVersion: gateway.mulesoft.com/v1alpha1 <1>
+kind: PolicyBinding <2>
+metadata:
+  name: uqzxgsgcg6-v1-rcizkl-account-level-rate-limiting <3>
+spec:
+  policyRef:
+    name: aws-rate-limiting <4>
+  config:
+    burstLimit: 5000 <5>
+    rateLimit: 10000.0 <6>
+  order: 1
+  targetRef:
+    name: uqzxgsgcg6-v1-rcizkl
+----
+[calloutlist]
+.. API version from the AWS API.
+.. Kind of policy binding from the AWS API.
+.. Policy metadata name in AWS.
+.. Policy reference name in AWS.
+.. Burst limit.
+.. Rate limit.
 
 
 [[api-instance-declaration]]
