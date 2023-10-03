@@ -1,0 +1,8 @@
+// Reused in identify-apis-from-external-sources.adoc and publish-discovered-apis.adoc
+
+After you discover APIs from external sources, you can publish them to Exchange. After publishing, you can take action on them in several ways in Anypoint Platform. For example, you can:
+
+* View them in Exchange
+* Govern them with API Governance
+* Add them to a developer portal in API Experience Hub
+* Build integrations in Anypoint Code Builder or Studio based on REST API specifications
