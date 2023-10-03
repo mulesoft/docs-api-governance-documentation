@@ -1,9 +1,8 @@
-= Managing Discovered APIs
+= Viewing and Modifying Discovered APIs
 
-After you discover APIs, you can manage them in the *API Discovery* console. 
+After you discover APIs, you can manage them in the *API Discovery* console. You can view and modify discovered APIs in API Discovery only before you publish them to Exchange or when modified versions or duplicates are detected during a subsequent scan. 
 
-// something about governance here 
-
+[[view-discovered-apis]]
 == View Discovered APIs
 
 You can view discovered APIs in the API Discovery console.
@@ -14,9 +13,8 @@ To view discovered APIs:
 . Select the *Discovered APIs* tab. 
 . Select an API to view its details.
 
+[[modify-discovered-apis]]
 == Modify a Discovered API
-
-You can modify a discovered API before you publish it or if a modified version or duplicate is detected during a subsequent scan. 
 
 To modify a discovered API:
 
@@ -35,5 +33,4 @@ CAUTION: You can modify an API specification in API Designer after it is publish
 
 == See Also
 
-* xref:access-management::permissions-by-product.adoc[]
-* xref:index.adoc[]
+* xref:publish-discovered-apis.adoc[]
