@@ -1,3 +1,5 @@
+// Partial reused in api-discovery-declaration-ref.adoc 
+
 [[api-instance-decl-ref]]
 = API Instance Declaration Reference
 
