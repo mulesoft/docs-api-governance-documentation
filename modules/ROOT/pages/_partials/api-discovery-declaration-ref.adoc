@@ -1,0 +1,158 @@
+[[api-instance-decl-ref]]
+== API Instance Declaration Reference
+
+[cols="1,9"]
+|===
+|Parameter | Description
+
+|`metadata.name`
+|The API instance identifier that is used as a target reference for other resources, such as policy bindings.
+
+|`metadata.namespace`
+|
+
+|`spec.address`
+|The proxy address URL, including protocol, host, port and optional path. If the base path is specified, it must be absent in any `rules.path` attribute. Supported format:
+`protocol://host:port/path`, where `path` is optional, and `protocol` is either `http` or `https`.
+
+|`spec.services`
+|A map of named services and their routes.
+
+|`spec.services[name].address`
+|The service address (and port). Supported format: `protocol://host:port`, where `protocol` is either `http` or `https`.
+
+|`spec.services[name].routes`
+|An array of routes configured for this API instance towards the service. If left empty, a default route will be established to the service that will route all traffic.
+
+|`spec.services[name].routes[#].config`
+|The configuration for this route. If left empty, a default configuration will be applied with an empty `destinationPath`.
+
+|`spec.services[name].routes[#].config.destinationPath`
+|The path to prepend to forwarded requests to the upstream service. For example, if "destinationPath: /api/v1", requests to this API instance with a path like "/orders" will be routed upstream to "/api/v1/orders".
+
+|`spec.services[name].routes[#].rules`
+|An array of rules for this route. Refer to <<policy-binding,spec.rules>> in Policy Binding.
+
+|`spec.policies`
+|An array of policies to apply to this API Instance.
+
+|`spec.policies[#].policyRef.name`
+|The policy name.
+
+|`spec.policies[#].policyRef.namespace`
+|The namespace where the policy is defined. For provided policies, the value of this field should be `default`.
+
+|`spec.policies[#].config`
+|The policy's configuration. Refer to <<policy-binding,spec.config>> in Policy Binding.
+
+|`spec.policies[#].rules`
+|An array of rules for applying this policy to the API Instance. <<policy-binding,spec.rules>> in Policy Binding.
+
+|===
+
+[[policy-binding-decl-ref]]
+== Policy Binding Declaration Reference
+
+[cols="1,9"]
+|===
+|Parameter |Description
+
+|`metadata.name`
+|The identifier of the policy binding.
+
+|`metadata.namespace`
+|
+
+|`spec.targetRef.name`
+|The API instance identifier to which the policy is bound to.
+
+|`spec.targetRef.namespace`
+|The namespace where the target is defined.
+
+|`spec.policyRef.name`
+|The policy name. See the list of available policies.
+
+|`spec.policyRef.namespace`
+|The namespace where the policy is defined. For provided policies, the value of this field should be `default`.
+
+|`spec.config`
+|The policy configuration. The content of this field depends on the specified policy. See the list of available policies.
+
+|`spec.rules`
+|An array of rules that will determine if the policy applies to a given request. These rules are checked in an OR fashion. The first one to hold will enable applying the policy to the request. The attributes in each rule object apply in an AND fashion. If path and host are defined, both must match for that rule to hold true.
+
+|`spec.rules[#].path`
+|A regular expression to match the request path. 
+ 
+Capture groups in this regular expression will be used to define path rewriting when routing the request upstream. 
+
+If "path: /api(/.*)", requests with the path /api/orders will be routed upstream as /orders.
+
+Multiple capture groups can be specified, and the replacement will be the concatenation of all captured substrings.
+
+|`spec.rules[#].host`
+|A regular expression to match the request host.
+
+|`spec.rules[#].methods`
+|A regular expression to match the request method.
+
+|`spec.rules[#].headers`
+|A map of header names and value regular expressions that must be present in the request.
+
+Each entry's key is the expected header name and the value is a regular expression to match the header value.
+
+|===
+
+[[service-decl-ref]]
+== Service Declaration Reference
+
+[cols="1,9"]
+|===
+|Parameter |Description
+
+|`metadata.name`
+|The service identifier.
+
+|`metadata.namespace`
+|
+
+|`spec.address`
+|The service address URL, including protocol, host and port. Supported format: `protocol://host:port`, where `protocol` is either `http` or `https`.
+
+|===
+
+[[environment-decl-ref]]
+== Environment Declaration Reference
+
+[cols="1,9"]
+|===
+|Parameter |Description
+
+|`metadata.name`
+|xxx
+
+|`metadata.namespace`
+|xxx
+
+|`spec`
+|xxx
+
+|===
+
+[[environment-binding-decl-ref]]
+== Environment Binding Declaration Reference
+
+[cols="1,9"]
+|===
+|Parameter |Description
+
+|`metadata.name`
+|xxx
+
+|`metadata.namespace`
+|xxx
+
+|`spec`
+|xxx
+
+|===

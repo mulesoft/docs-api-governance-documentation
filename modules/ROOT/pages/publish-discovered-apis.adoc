@@ -13,6 +13,8 @@ To publish a discovered API to Exchange:
 .. You can review the instance mapping in the *Instances* page. See <<view-api-declaration>>.
 . When you are ready to publish, click *Save and Publish*.
 
+APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
+
 // Are the spec and instance published anywhere they can see?
 
 [[view-api-declaration]]
