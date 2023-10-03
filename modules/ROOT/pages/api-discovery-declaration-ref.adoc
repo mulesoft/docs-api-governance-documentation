@@ -1,0 +1,5 @@
+= API Declaration Reference
+
+API Discovery stores API information in a declarative language format so that other Anypoint Catalog component can interpret the information. The declarative language parameters that API Discovery uses are shown in the following sections.
+
+include::partial$api-discovery-declaration-reference.adoc[leveloffset=+1]

@@ -1,5 +1,5 @@
 [[api-instance-decl-ref]]
-== API Instance Declaration Reference
+= API Instance Declaration Reference
 
 [cols="1,9"]
 |===
@@ -51,7 +51,7 @@
 |===
 
 [[policy-binding-decl-ref]]
-== Policy Binding Declaration Reference
+= Policy Binding Declaration Reference
 
 [cols="1,9"]
 |===
@@ -104,7 +104,7 @@ Each entry's key is the expected header name and the value is a regular expressi
 |===
 
 [[service-decl-ref]]
-== Service Declaration Reference
+= Service Declaration Reference
 
 [cols="1,9"]
 |===
@@ -122,7 +122,7 @@ Each entry's key is the expected header name and the value is a regular expressi
 |===
 
 [[environment-decl-ref]]
-== Environment Declaration Reference
+= Environment Declaration Reference
 
 [cols="1,9"]
 |===
@@ -140,7 +140,7 @@ Each entry's key is the expected header name and the value is a regular expressi
 |===
 
 [[environment-binding-decl-ref]]
-== Environment Binding Declaration Reference
+= Environment Binding Declaration Reference
 
 [cols="1,9"]
 |===
