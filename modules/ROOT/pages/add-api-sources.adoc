@@ -32,7 +32,7 @@ Only AWS is available for the pilot.
 === Authenticate to AWS
 
 Authenticate to AWS using your
-access key ID, secret access key, and region. You must configure these in AWS before adding them in API Disovery. See <<tips-for-aws-auth>>.
+access key ID, secret access key, and region. You must configure these in AWS before adding them in API Discovery. See <<tips-for-aws-auth>>.
 
 After the initial authentication, API Discovery stores the encrypted information but cannot retrieve it for display. The authentication remains as configured until you type in the authentication credentials fields again. 
 
