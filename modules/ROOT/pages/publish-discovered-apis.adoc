@@ -14,7 +14,7 @@ To publish a discovered API to Exchange:
 . Select corresponding tabs to view the API's catalog information, specification, and instance information.
 .. You can review and add or change catalog information in the *Catalog info* page.
 .. You can review the specification in the *Specification* page.
-.. You can review the instance mapping in the *Instances* page. See <<view-api-declaration>>.
+.. You can review the instance mapping in the *Instances* page. See xref:api-discovery-declaration-ref.adoc[].
 . When you are ready to publish, click *Save and Publish*.
 
 APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
