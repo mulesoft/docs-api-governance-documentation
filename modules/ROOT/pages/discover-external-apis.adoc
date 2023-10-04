@@ -1,6 +1,6 @@
 = Discovering APIs from External Sources
 
-After you have added an API source, you can scan to discover APIs from that source.
+After you have added an API source, you can scan to discover APIs from that source. API Discovery authenticates to AWS before each scan using the authentication information you saved for the source. 
 
 == Before You Begin to Discover APIs From AWS Sources
 
@@ -9,24 +9,22 @@ Because AWS can be configured and used in many different ways, the mapping from 
 * Review how the AWS API properties map to Anypoint Platform API properties and if feasible, update the AWS API properties to ensure that the mapping is more accurate upon discovery.
 * If you cannot update the properties, after you run the scan to discover the APIs, take time to resolve the available API settings before publishing the APIs in Exchange.
 
-== Autodiscover APIs from AWS
-
-When you add an AWS source, Anypoint Platform authenticates to AWS using the authentication information you saved for the AWS sources. It scans for APIs using the settings you configured. If successful, the discovered APIs appear in the *Discovered APIs* page.
-
 == Scan for APIs from an AWS Source
 
-After the initial scan, you can scan again to discover new APIs and updates to those you've already discovered.
+You can scan immediately after saving your API source or scan later. After the scan completes, you can view the discovered APIs in the *Discovered APIs* page.
 
-// Screenshot of the API Discovery console with callouts
-
-include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-discovered-apis-tab]
+You can scan a source at any time to discover new APIs and updates to those you've already discovered.
 
 To scan for new or updated APIs from an AWS source:
 
 . In API Governance, select *API Discovery*.
 . Select the *API Sources* tab.
-. Beside the source for which you want to discover APIs, click *Scan*. 
+. For the source for which you want to discover APIs, click *Scan*. 
 . Select the *Discovered APIs* tab to view the discovered APIs. 
+
+// Screenshot of the API Discovery console with callouts
+
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-discovered-apis-tab]
 
 == Troublehoot the Scan
 
