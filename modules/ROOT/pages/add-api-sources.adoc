@@ -59,7 +59,7 @@ Select from the listed catagories.
 [[general-information]]
 === Specify General Information
 
-Specify additional general information, such as whether to scan immediately to discover external APIs for this external source. 
+Specify additional general information, such as a unique name and whether to scan immediately to discover external APIs for this external source. 
 
 // Need to get and add whatever they can add or change here
 
