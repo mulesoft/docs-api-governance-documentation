@@ -26,7 +26,7 @@ include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-a
 [[select-a-system]]
 === Select a System
 
-Only AWS is available for the pilot.
+AWS is the only system available for the pilot.
 
 [[authenticate]]
 === Authenticate to AWS
