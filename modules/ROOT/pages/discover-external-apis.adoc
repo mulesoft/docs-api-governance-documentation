@@ -2,10 +2,6 @@
 
 After you have added an API source, you can scan to discover APIs from that source.
 
-// Screenshot of the API Discovery console with callouts
-
-include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-discovered-apis-tab]
-
 == Before You Begin to Discover APIs From AWS Sources
 
 Because AWS can be configured and used in many different ways, the mapping from AWS API properties to Anypoint Platform API properties might not match what you expect to see. Some ways that you can ensure a better mapping are:
@@ -20,6 +16,10 @@ When you add an AWS source, Anypoint Platform authenticates to AWS using the aut
 == Scan for APIs from an AWS Source
 
 After the initial scan, you can scan again to discover new APIs and updates to those you've already discovered.
+
+// Screenshot of the API Discovery console with callouts
+
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-discovered-apis-tab]
 
 To scan for new or updated APIs from an AWS source:
 

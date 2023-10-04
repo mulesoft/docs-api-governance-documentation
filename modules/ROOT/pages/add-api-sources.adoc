@@ -1,26 +1,27 @@
 = Adding External API Sources
 
-// Screenshot of the API Discovery console with callouts
+Before you can begin discovering APIs, you must add the external API sources from which you want to discover the APIs. 
 
-include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-source-page]
-
-== Before You Begin to Add AWS Sources
+== Before You Begin Adding an API Source
 
 When you add an AWS source, API Discovery authenticates to AWS using specific authentication information. Ensure that you have these available before proceeding. See <<tips-for-aws-auth>>.
 
-After the initial authentication, API Discovery stores the encrypted information but cannot retrieve it for display. The authentication remains as configured until you type in the authentication credentials fields again. 
-
-== Add an AWS API Source
+== Add an AWS API Source 
 
 To add an AWS API source:
 
 . In API Governance, select *API Discovery*.
+. Select the *API Sources* tab.
 . Click *Add API Source*. 
 . Follow the UI prompts to enter the information in the following screens:
 ** <<select-a-system>>
 ** <<authenticate>>
 ** <<set-default-values>>
 ** <<general-information>>
+
+// Screenshot of the Add API Source page (with callouts)
+
+include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-source-page]
 
 [[select-a-system]]
 === Select a System
@@ -32,6 +33,8 @@ Only AWS is available for the pilot.
 
 Authenticate to AWS using your
 access key ID, secret access key, and region. You must configure these in AWS before adding them in API Disovery. See <<tips-for-aws-auth>>.
+
+After the initial authentication, API Discovery stores the encrypted information but cannot retrieve it for display. The authentication remains as configured until you type in the authentication credentials fields again. 
 
 [[set-default-values]]
 === Set Default Values
@@ -71,7 +74,7 @@ For detailed documentation on configuring IAM access keys, refer to https://docs
 
 // Get other tips to add
 
-// == Troublehoot Add Sources
+// == Troubleshoot Add Sources
 
 // xxx
 
