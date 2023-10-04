@@ -29,9 +29,9 @@ Solution: Ensure that your permissions are set as detailed in xref:identify-apis
 * A network or internet drop when you start the publish. This runs in the background in the cloud, so is not highly likely. 
 + 
 Solution: Ensure that your network and internet are connected and stable. 
-* Invalid credentials entered in the API Discovery *API Sources* > <API Source> > *Authenticate* page.
+* Invalid credentials entered for the API source.
 +
-Solution: Verify your credentials in AWS and then edit the API source and reenter them in the *Authenticate* page.
+Solution: Verify your credentials in AWS and then edit the API source and reenter them in the *Authenticate* page. See xref:add-api-source.adoc[].
 
 == See Also
 
