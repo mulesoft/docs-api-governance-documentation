@@ -2,13 +2,6 @@
 
 After you have added an API source, you can scan to discover APIs from that source. API Discovery authenticates to AWS before each scan using the authentication information you saved for the source. 
 
-== Before You Begin to Discover APIs From AWS Sources
-
-Because AWS can be configured and used in many different ways, the mapping from AWS API properties to Anypoint Platform API properties might not match what you expect to see. Some ways that you can ensure a better mapping are:
-
-* Review how the AWS API properties map to Anypoint Platform API properties and if feasible, update the AWS API properties to ensure that the mapping is more accurate upon discovery.
-* If you cannot update the properties, after you run the scan to discover the APIs, take time to resolve the available API settings before publishing the APIs in Exchange.
-
 == Scan for APIs from an AWS Source
 
 You can scan immediately after saving your API source or scan later. After the scan completes, you can view the discovered APIs in the *Discovered APIs* page.
@@ -25,6 +18,13 @@ To scan for new or updated APIs from an AWS source:
 // Screenshot of the API Discovery console with callouts
 
 include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-discovered-apis-tab]
+
+== Improve the API Discovery Results
+
+Because AWS can be configured and used in many different ways, the mapping from AWS API properties to Anypoint Platform API properties might not match what you expect to see. Some ways that you can ensure a better mapping are:
+
+* Review how the AWS API properties map to Anypoint Platform API properties and if feasible, update the API properties in AWS to ensure that the mapping is more accurate upon discovery.
+* If you cannot update the properties, after you run the scan to discover the APIs, take time to update  the API properties in API Discovery before publishing the APIs to Exchange.
 
 == Troublehoot the Scan
 
