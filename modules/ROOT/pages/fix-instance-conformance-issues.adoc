@@ -30,7 +30,8 @@ To view rules details in rulesets:
 
 . In Exchange, open the ruleset. 
 . View the documentation for the ruleset.
-. View descriptions and messages for the rules to which your API doesn't conform.
+. To identify the conformance issue, view descriptions and messages for the rules to which your API doesn't conform.
+. Go to the instance in API Manager and fix the issue.
 +
 // Screenshot of a section of the ruleset with a description of the properties 
 
