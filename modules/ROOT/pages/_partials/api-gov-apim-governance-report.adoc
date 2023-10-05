@@ -3,7 +3,7 @@
 image::api-gov-apim-governance-report.png[Screenshot of a Governance Report page in API Governance]
 
 [calloutlist]
-. View an overview of the rulesets against which the API was validated.
+. View an overview of the rulesets against which the API is validated.
 . Select a tab to view the conformance information for a specific API aspect.
 . View the ruleset in Exchange.
 . Export the report in CSV format.
