@@ -1,6 +1,6 @@
 = Finding and Fixing Conformance Issues in API Instances
 
-After API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the Anypoint instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
+After API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
 
 // Screenshot of a Conformance Report page with callouts 
 
