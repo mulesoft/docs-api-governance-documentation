@@ -4,15 +4,13 @@ After you become familiar with the API Governance UI and concepts covered in the
 
 == Before You Begin
 
-. To access the API Governance console:
+* To access the API Governance console, you must have the *API Governance* > *Governance Administrator* permission.
 
-* You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator.
-
-. Opt in to the new features using the prompts in the API Governance UI. This enables full instance governance for API versions and a detailed governance report in API Governance and API Manager. See the xref:release-notes::api-governance.adoc[the API Governance Release Notes] for details.
+* Opt in to the new features using the prompts in the API Governance UI. This enables full instance governance for API versions and a detailed governance report in API Governance and API Manager. See the xref:release-notes::api-governance.adoc[the API Governance Release Notes] for details.
 +
-* If you don't see the option to opt in, you already have access to the new features.
+If you don't see the option to opt in, you already have access to the new features.
 +
-* This documentation is written for the full-featured governance after opt-in.
+This documentation is written for the full-featured governance after opt-in.
 
 == Govern Your APIs
 
