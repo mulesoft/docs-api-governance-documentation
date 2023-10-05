@@ -60,6 +60,5 @@ The following table shows some example rules and the actions that you can take t
 
 == See Also
 
-// * xref:api-manager::xxx.adoc[xxx]
-* xref:find-conformance-issues.adoc[]
+* xref:api-manager::api-instance-landing-page.adoc[]
 * xref:monitor-api-conformance.adoc[]
