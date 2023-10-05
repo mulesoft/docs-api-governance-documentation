@@ -4,7 +4,7 @@ After you configure governance profiles for your APIs and the resulting governan
 
 == Status Information on the Console
 
-You can view the latest status information on the console.
+You can view the latest status information in the console.
 
 // Screenshot of the console with callouts
 

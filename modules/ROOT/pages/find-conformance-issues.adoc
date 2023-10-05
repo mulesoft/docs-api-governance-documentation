@@ -10,7 +10,7 @@ To validate APIs against governance rulesets, add the rulesets as dependencies t
 
 // Screenshot of conformance validation in APID with callouts
 
-include::partial$api-gov-apid-scap-callouts.adoc[]
+include::_partials/api-gov-apid-scap-callouts.adoc[]
 
 [[add-rulesets]]
 === Add Rulesets to Your Project
