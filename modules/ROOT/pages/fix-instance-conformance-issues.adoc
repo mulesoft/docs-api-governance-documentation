@@ -24,7 +24,7 @@ To view instance conformance issues in the governance validation report:
 
 == View Rule Details in the Rulesets
 
-If the nonconformance messages in the governance validation report don't have enough detail to help you fix the issues, you can get more detailed information from the rulesets.
+If the nonconformance messages in the governance validation report don't have enough detail to help you fix the issues, you can view more detailed information in the rulesets.
 
 To view rules details in rulesets:
 
