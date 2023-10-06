@@ -72,7 +72,7 @@ If you select the *API Instance* filter *Include only APIs with instances*, only
 Set Notifications
 |Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
 |Specify General Information 
-|Enter a profile name and description that helps others understand the kinds of governance rulesets that are included and the kinds of APIs that are validated in this profile.
+|Enter a profile name and description that helps others understand the kinds of governance rulesets included and the kinds of APIs validated in this profile.
 |Review
 |Review your profile and click *Create*.
 |
