@@ -26,7 +26,7 @@ See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an
 [[project-errors]]
 === Fix Conformance Project Errors
 
-You can use the API Designer text editor to fix conformance project errors. See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
+To use the API Designer text editor to fix conformance project errors, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 
 == Validate API Specifications Against Governance Rulesets Using the API Governance CLI
 
