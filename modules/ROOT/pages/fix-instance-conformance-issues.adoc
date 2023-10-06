@@ -38,7 +38,7 @@ include::_partials/api-gov-apim-ruleset-fix-tips.adoc[]
 
 == Example Rules and Recommended Fixes
 
-The following table shows some example rules and the actions that you can take to fix conformance to those rules.
+The following table shows some example rules and the actions that you can take to fix conformance to those rules:
 
 [cols="3a,3a,3a",frame=none]
 |===

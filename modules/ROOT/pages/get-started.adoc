@@ -6,7 +6,7 @@ After you become familiar with the API Governance UI and concepts covered in the
 
 * To access the API Governance console, you must have the *API Governance* > *Governance Administrator* permission.
 
-* Opt in to the new features using the prompts in the API Governance UI. This enables full instance governance for API versions and a detailed governance report in API Governance and API Manager. See the xref:release-notes::api-governance.adoc[API Governance Release Notes] for details.
+* Opt in to govern by API version rather than by asset version. By opting in, you get the additional functionality to govern all instances for all versions of an API and view a detailed governance report in both API Governance and API Manager. The opt-in applies to all of your business groups (organizations). See the xref:release-notes::api-governance.adoc[API Governance Release Notes] for details.
 +
 If you don't see the option to opt in, you already have access to the new features.
 +
