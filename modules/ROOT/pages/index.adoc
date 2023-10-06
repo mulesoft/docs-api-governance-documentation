@@ -43,7 +43,7 @@ API Governance is integrated with <<exchange-overview>>, <<design-center-overvie
 In Exchange:
 
 * Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
-* Implementors can view the ruleset that the instance failed to determine how to fix API instance conformance issues.
+* Implementors can view rulesets to determine how to fix API instance conformance issues.
 
 [[design-center-overview]]
 === Design Center
