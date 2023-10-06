@@ -71,7 +71,7 @@ On the main API Governance console page, select the *Profiles* tab and then clic
 
 [[gov-api-export]]
 === Governed API Export
-On the main API Governance console page, select the *Governed APIs* tab and then click the *Export to CSV* button to export your governed APIs' information, such as:  
+On the main API Governance console page, select the *Governed APIs* tab and then click *Export to CSV* to export the governed API information, such as:  
 
 * Organization ID 
 * API IDs
