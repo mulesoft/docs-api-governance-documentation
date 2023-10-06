@@ -1,6 +1,6 @@
 = Finding and Fixing Conformance Issues in API Instances
 
-After API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
+After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
 
 // Screenshot of a Conformance Report page with callouts 
 
@@ -11,7 +11,7 @@ include::_partials/api-gov-apim-governance-report.adoc[]
 To view instance conformance issues in the governance validation report:
 
 . Navigate to the report.
-* In API Governance:
+* In Anypoint API Governance:
 +
 .. In the API Governance console, select the *Governed APIs* tab.
 .. If the *Instances* column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
@@ -30,7 +30,7 @@ To view rules details in rulesets:
 
 . In Exchange, open the ruleset. 
 . View the documentation for the ruleset.
-. To identify the conformance issue, view descriptions and messages for the rules to which your API doesn't conform.
+. To identify the conformance issue, view descriptions and messages for the rules your API doesn't conform to.
 
 // Screenshot of a section of the ruleset with a description of the properties 
 
