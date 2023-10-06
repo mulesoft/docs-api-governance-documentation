@@ -2,7 +2,7 @@
 
 To find conformance issues, use API Governance profiles or CLI commands to validate the APIs against the set of rulesets to which you want your APIs to conform. After you validate the APIs, you can see conformance badges in API Governance, Exchange, and API Manager and can view a detailed governance report in API Governance and API Manager.
 
-You can click links in the API Governance console or conformance reports to go to the best place to start fixing the conformance issues. For example, to fix specifications, you can follow links to Design Center and to fix instances you can follow links to API Manager.
+You can click links in the API Governance console or conformance reports to find the best place to fix the conformance issues. For example, to fix specifications, follow links to Design Center, and to fix instances, follow links to API Manager.
 
 For details on fixing conformance, refer to:
 
