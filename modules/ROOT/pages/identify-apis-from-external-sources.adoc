@@ -1,6 +1,6 @@
 = Identifying APIs to Govern from External Sources 
 
-You can govern APIs from external sources along with the APIs you already govern in Anypoint Platform. This gives you  centralized governance across APIs you already manage in Anypoint Platform and those you discover from AWS and subsequently publish in Exchange.
+You can govern APIs from external sources along with the APIs you already govern in Anypoint Platform. This gives you  centralized governance across APIs you already manage in Anypoint Platform and those you discover from AWS and subsequently publish to Exchange.
 
 // Include overview of why you should publish
 
