@@ -8,15 +8,10 @@ include::_partials/api-discovery-options-overview.adoc[]
 
 == Permissions
 
-To manage discovered APIs, you must have permission to view them in API Governance. You need to following permissions:
+To manage and publish discovered APIs, you must have permission for:
 
-* API Governance Administrator
-* API Catalog Viewer
-
-// Do they need Exchange permssions or API Manager permissions, or ar these inherited as entitlements from API Catalog Viewer?
-// Any other permissions needed?
-
-NOTE: Your Anypoint Platform administrator typically sets your permissions for you. 
+* Use Anypoint API Governance
+* Publish APIs to Exchange 
 
 // In some cases, such as for pilot programs, MuleSoft might set them for you. 
 
@@ -31,6 +26,7 @@ To identify APIs to govern from external sources and publish and manage them in 
 
 == See Also
 
+* xref:index.adoc[]
 * xref:exchange::index.adoc[]
 * xref:api-experience-hub::index.adoc[]
 * xref:anypoint-code-builder::index.adoc[] 
