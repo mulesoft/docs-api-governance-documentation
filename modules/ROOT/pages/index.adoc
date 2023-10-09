@@ -23,7 +23,7 @@ include::_partials/api-gov-gs-video.html[]
 == Governance Console
 
 In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
-You can monitor your APIs' conformance and notify developers to help improve the conformance.
+Monitor your APIs' conformance and notify developers to help improve the conformance.
 
 // Screenshot of the console with callouts
 
@@ -33,9 +33,9 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 Anypoint API Governance is integrated with Exchange and Design Center. 
 
-* In Exchange, developers can view published APIs' conformance status details, discover provided rulesets, and publish custom rulesets.
+* In Exchange, developers view published APIs' conformance status details, discover provided rulesets, and publish custom rulesets.
 
-* In Design Center API Designer, developers or architects can check API conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+* In Design Center API Designer, developers or architects check API conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
 
 // Screenshot of conformance validation in APID with callouts
 
