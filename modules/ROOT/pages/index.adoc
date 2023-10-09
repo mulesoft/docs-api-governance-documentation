@@ -59,7 +59,7 @@ include::_partials/api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
 
 // How to discover rulesets in Exchange
 
-include::partial$api-gov-ruleset-discovery.adoc[]
+include::_partials/api-gov-ruleset-discovery.adoc[]
 
 // Definition of Governed APIs
 
