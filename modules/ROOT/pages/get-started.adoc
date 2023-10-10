@@ -8,7 +8,7 @@ After you become familiar with the UI and concepts covered in the xref:index.ado
 
 * If you have an opt-in banner in the API Governance console, opt in to get additional functionality. See the xref:release-notes::api-governance.adoc[Anypoint API Governance Release Notes] for details.
 +
-If you don't see the opt in banner, you already have access to the new functionality.
+If you don't see the opt-in banner, you already have access to the new functionality.
 +
 This documentation is written for the full product functionality that is available after the opt-in.
 
