@@ -6,7 +6,9 @@ After you have added an API source, you can scan to discover APIs from that sour
 
 You can scan immediately after saving your API source or scan later. After the scan completes, you can view the discovered APIs in the *Discovered APIs* page.
 
-You can scan a source at any time to discover new APIs and updates to those you've already discovered.
+After the initial scan and discovery, you can scan a source again to discover new APIs and updates.
+
+NOTE: API Discovery cannot discover APIs that have no stages or an undeployed stage.
 
 To scan for new or updated APIs from an AWS source:
 
