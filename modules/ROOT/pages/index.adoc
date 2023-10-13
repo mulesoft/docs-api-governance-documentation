@@ -62,7 +62,7 @@ include::_partials/api-gov-apid-scap-callouts.adoc[]
 
 In API Manager:
 
-* Implementors can check API instance conformance by viewing the comprehensive API Governance validation report. 
+* Implementors can check API instance conformance by viewing the comprehensive governance report. 
 
 // Screenshot of a Conformance Report page with callouts 
 
