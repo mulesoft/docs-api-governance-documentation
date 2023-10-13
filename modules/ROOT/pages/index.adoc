@@ -9,7 +9,7 @@ With Anypoint API Governance you can:
 
 * *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
 * *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
-* *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
+* *Apply consistent rules from design time to deployment:* Apply governance rulesets to your specifications at design time and to your deployed instances.
 * *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
 
 ////
@@ -43,7 +43,7 @@ API Governance is integrated with API Manager, Exchange, and Design Center.
 ** You can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
 ** You can view the ruleset that an instance failed for details on how to fix API instance conformance issues.
 
-* In Design Center API Designer, you can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. Use the *Project Errors* section for information on where the issue is in the specification and how to fix it.
+* In Design Center API Designer, you can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. Use the *Project Errors* section for information about where the issue is in the specification and how to fix it.
 
 // Screenshot of conformance validation in APID with callouts
 
