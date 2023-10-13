@@ -67,7 +67,7 @@ On the main API Governance console page, select the *APIs* tab and then click th
 * Timestamps
 
 === Specific Profile Report
-On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line,title="Three vertical dots"]) and then select *Export Reports* to export a report that shows the selected governance profile's information, such as: 
+On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Export Reports* to export a report that shows the selected governance profile's information, such as: 
 
 * Organization ID
 * API IDs
