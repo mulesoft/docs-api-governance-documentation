@@ -17,7 +17,7 @@ When you create or update a profile, you can filter the list of tags to find and
 
 To select and add tags in profiles:
 
-. When creating or updating a profile, navigate to the *Filter Criteria* page.
+. When creating or updating a profile, navigate to the *Define Filter Criteria* page.
 +
 . Expand the *General > Tags* section.  
 +

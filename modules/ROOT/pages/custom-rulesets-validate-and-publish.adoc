@@ -1,0 +1,54 @@
+= Validating and Publishing Custom Rulesets
+
+After you create a custom ruleset:
+
+. <<validate-ruleset,Validate>> the ruleset.
+. <<generate-ruleset-doc,Generate the documentation>> for the ruleset. 
+. <<publish-ruleset,Publish your custom ruleset>> as a new asset. 
+
+For an example sequence of commands to validate and publish your rulesets, see <<example-publish-sequence>>.
+
+NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
+
+[[validate-ruleset]]
+== Validate the Ruleset
+
+To validate your governance ruleset as you create it and before you publish it, use the following command:
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-validate,leveloffset=+1]
+
+[[generate-ruleset-doc]]
+== Generate the Ruleset Documentation
+
+Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
+
+[[publish-ruleset]]
+== Publish the Custom Ruleset
+
+You can publish a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset assets.
+
+To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
+
+[[example-publish-sequence]]
+== Example Command Sequence to Validate and Publish
+
+Use the following example sequence to get started validating your ruleset, generating its documentation, and uploading both to Exchange. Replace the details, such as the folder name, ruleset file name, and ruleset documentation ZIP file name, with your own.
+
+[source,console]
+----
+anypoint-cli-v4 governance:ruleset:validate /myRulesetFolder/mynewruleset.yaml <1>
+
+anypoint-cli-v4 governance:document /myRulesetFolder/mynewruleset.yaml /myRulesetFolder/ruleset.doc.zip <2>
+
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my  best practices for APIs."  --properties='{"mainFile":"/myRulesetFolder/mynewruleset.raml","apiVersion":"v1"}' --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml"}' --files='{"custom.zip": "/myRulesetFolder/ruleset.doc.zip"}' <3>
+----
+[calloutlist]
+.. Validates the ruleset locally. The ruleset file is `mynewruleset.yaml` in the `/myRulesetFolder/` folder.
+.. Generates the documentation ZIP file, `ruleset.doc.zip`, for the ruleset `myruleset.yaml`. Both files are in the `/myRulesetFolder/` folder.
+.. Uploads the ruleset, `mynewruleset.yaml`, and its documentation, `ruleset.doc.zip`. Both files are in the `/myRulesetFolder/` folder. 
+
+== See Also
+
+* xref:anypoint-cli::exchange-assets.adoc[]

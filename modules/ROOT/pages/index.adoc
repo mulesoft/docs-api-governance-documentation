@@ -27,7 +27,7 @@ include::_partials/api-gov-gs-video.html[]
 == Governance Console
 
 In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
-You can monitor your APIs' conformance and notify developers to help improve the conformance.
+Monitor your APIs' conformance and notify developers to help improve the conformance.
 
 // Screenshot of the console with callouts
 
@@ -68,9 +68,9 @@ In API Manager:
 
 include::_partials/api-gov-apim-governance-report.adoc[]
 
-== API Governance Concepts
+== Anypoint API Governance Concepts
 
-Following are the concepts you need to know to use API Governance.
+Following are the concepts you need to know to use Anypoint API Governance.
 
 // Definition of Governance Profiles
 
@@ -118,4 +118,4 @@ include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,levelo
 
 == See Also
 
-* xref:get-started.adoc[Getting Started with API Governance]
+* xref:get-started.adoc[]

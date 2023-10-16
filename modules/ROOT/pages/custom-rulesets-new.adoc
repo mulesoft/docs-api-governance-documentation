@@ -1,0 +1,49 @@
+= Creating Completely New Custom Rulesets
+
+If you want a custom ruleset that cannot be created by modifying one of the provided rulesets, use one of the following approaches:
+
+* Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you do not find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
+* Generate a ruleset using Anypoint CLI commands by scaffolding it from a specification's data schema. See <<scaffold-rulesets>>.
+* Create a ruleset using the ruleset development CLI commands, see <<create-rulesets-using-cli>>.
+* Create a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
+
+After you create the ruleset, see xref:custom-rulesets-validate-and-publish.adoc[].
+
+NOTE: As with custom code and configurations, rulesets are not considered supported MuleSoft products. For help with issues with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator Github repository^].
+
+[[scaffold-rulesets]]
+== Generating Rulesets from a Specification
+
+You can generate a starter ruleset from specifications' data schemas using the following command sequence:
+
+. <<inspect-for-api-type>>
+. <<initialize-ruleset-from-dataschema>>
+
+[[inspect-for-api-type]]
+=== Inspect API Specifications for API Type
+
+Use the following command to inspect API specifications for API type. This helps you determine which data schema to use.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-inspect,leveloffset=+1]
+
+[[initialize-ruleset-from-dataschema]]
+=== Initialize Rulesets from Data Schemas
+
+Use the following command to initialize rulesets from data schemas.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-init,leveloffset=+1]
+
+[[create-rulesets-using-cli]]
+== Create Rulesets Using the Ruleset Development CLI
+
+An open-source version of ruleset development CLI is available on npm. It is provided and documented separately from the Anypoint CLI `governance` commands. 
+
+To create rulesets using the ruleset development CLI:
+
+. Install `ruleset-development-cli` from https://www.npmjs.com/package/@aml-org/ruleset-development-cli[npmjs.com^].
+. Follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial^] to create a ruleset. 
+
+[[create-rulesets-using-code]]
+== Create Rulesets Using the Modeling Language
+
+To create rulesets using the modeling language, read the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project to learn how to write a ruleset using the modeling language.
