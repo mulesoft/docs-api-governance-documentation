@@ -25,8 +25,8 @@ include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-d
 
 Because AWS can be configured and used in many different ways, the mapping from AWS API properties to Anypoint Platform API properties might not match what you expect to see. Some ways that you can ensure a better mapping are:
 
-* Review how the AWS API properties map to Anypoint Platform API properties and if feasible, update the API properties in AWS to ensure that the mapping is more accurate upon discovery.
-* If you cannot update the properties, after you run the scan to discover the APIs, take time to update  the API properties in API Discovery before publishing the APIs to Exchange.
+* Review how the AWS API properties map to Anypoint Platform API parameters and if feasible, update the API parameters in AWS to help ensure the information maps more closely to what you want.
+* Some parameters map to a default in API Discovery, such as the API version, which defaults to the datetime stamp. After you run the scan to discover the APIs and as you prepare to publish, you can update some of the API information. See xref:publish-discovered-apis.adoc[].
 
 == Troubleshoot the Scan
 
