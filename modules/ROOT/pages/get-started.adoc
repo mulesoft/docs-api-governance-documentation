@@ -6,7 +6,7 @@ After you become familiar with the UI and concepts covered in the xref:index.ado
 
 * To access the API Governance console, you must have the *API Governance* > *Governance Administrator* permission.
 
-* If you have an opt-in banner in the API Governance console, opt in to get additional functionality. See the xref:release-notes::api-governance/api-governance.adoc[Anypoint API Governance Release Notes] for details.
+* If you have an opt-in banner in the API Governance console, opt in to get additional functionality. See the xref:release-notes::api-governance/api-governance-release-notes[Anypoint API Governance Release Notes] for details.
 +
 If you don't see the opt-in banner, you already have access to the new functionality.
 +
