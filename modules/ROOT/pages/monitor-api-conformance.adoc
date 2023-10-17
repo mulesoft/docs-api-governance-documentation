@@ -4,7 +4,7 @@ After you configure governance profiles for your APIs and the resulting governan
 
 == Status Information on the Console
 
-You can view the latest status information on the console.
+You can view the latest status information in the console.
 
 // Screenshot of the console with callouts
 
@@ -42,8 +42,22 @@ include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leve
 
 include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
 
-=== Governance Profile Report
-On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export a report of governance profile information, such as: 
+[[gov-conf-report]]
+== Governance Conformance Report
+
+You can view conformance details for governed APIs in their governance validation reports in API Governance console and API Manager. See xref:find-and-fix-conformance-issues.adoc[].
+
+== Export Conformance Information
+
+You can export conformance information in CSV format from several places in the API Governance console. 
+
+* <<gov-profile-export>>
+* <<gov-api-export>>
+* <<gov-spec-profile-export>>
+
+[[gov-profile-export]]
+=== Governance Profile Export
+On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export governance profile information, such as: 
 
 * Organization ID 
 * Profile IDs
@@ -55,8 +69,9 @@ On the main API Governance console page, select the *Profiles* tab and then clic
 * Timestamps
 * Associated ruleset tags
 
-=== Validated API Report
-On the main API Governance console page, select the *APIs* tab and then click the *Export Report* button to export a report that shows your validated APIs' information, such as:  
+[[gov-api-export]]
+=== Governed API Export
+On the main API Governance console page, select the *Governed APIs* tab and then click *Export Report* to export the governed API information, such as:  
 
 * Organization ID 
 * API IDs
@@ -77,6 +92,7 @@ On a selected governance profile page, click the more options menu icon (image:o
 * Number of nonconformant APIs (fail)
 * Timestamps
 
+[[eval-api-conf-cli]]
 == Evaluate API Conformance Using the CLI
 
 To use a command to evaluate the potential rulesets for your API project, use the `governance:api:evaluate` command.
@@ -88,3 +104,7 @@ Additionally, those who do have access to API Governance, such as governance off
 [[governance-api-evaluate]]
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-evaluate,leveloffset=+1]
+
+== See Also
+
+* xref:find-and-fix-conformance-issues.adoc[]
