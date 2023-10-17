@@ -40,7 +40,7 @@ The following table shows some example rules and the actions to take to fix conf
 |Rule
 |Aspect
 |Recommended Fix
-|<policy-name-a> policies should be configured before <policy-name-b>  policies
+|<policy-name-a> policies should be configured before <policy-name-b> policies
 |An instance ID
 |In API Manager, rearrange the policies for the instance as suggested in the rule. 
 |The API instance has no <policy-name> policy applied
