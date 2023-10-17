@@ -1,6 +1,6 @@
 = Creating Custom Governance Rulesets
 
-include::_partials/api-gov-ruleset-discovery.adoc[]
+include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets-subset]
 
 Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF is used to parse, transform, validate, and render arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
 

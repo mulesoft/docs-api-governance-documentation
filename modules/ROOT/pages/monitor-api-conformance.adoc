@@ -12,35 +12,35 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 // Definition of Governance Profiles
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
 // Definition of Governance Profile Status
 
-include::_partials/api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
 
 // Definition of Governed APIs
 
-include::_partials/api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 // Definition of Governance Status
 
-include::_partials/api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
 
 // Definition of API Conformance
 
-include::_partials/api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
 // Definition of API Conformance Status
 
-include::_partials/api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
 
 // Definition of Nonconformance Severity
 
-include::_partials/api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
 
 // Definition of API Governance Usage Reports
 
-include::_partials/api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
+include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
 
 [[gov-conf-report]]
 == Governance Conformance Report
@@ -81,9 +81,8 @@ On the main API Governance console page, select the *Governed APIs* tab and then
 * Number of nonconformant APIs (fail)
 * Timestamps
 
-[[gov-spec-profile-export]]
-=== Specific Profile Export
-On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line,title="Three vertical dots"]) and then click *Export Report* to export the selected governance profile information, such as: 
+=== Specific Profile Report
+On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Export Reports* to export a report that shows the selected governance profile's information, such as: 
 
 * Organization ID
 * API IDs
