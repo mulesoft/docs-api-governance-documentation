@@ -19,7 +19,7 @@ To publish a discovered API to Exchange:
 
 APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
 
-== Troublehoot Publish Issues
+== Troubleshoot Publish Issues
 
 Some reasons for publish process to fail or complete with issues or warnings might be:
 
