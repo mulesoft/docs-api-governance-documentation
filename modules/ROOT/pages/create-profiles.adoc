@@ -25,10 +25,7 @@ To create a governance profile using the API Governance console:
 [cols="1a,9a",frame=none]
 |===
 
-|General Information 
-|Enter a profile name and description that helps others understand what kinds of governance rulesets are included and the kinds of APIs that are validated in this profile.
-| 
-Rulesets
+|Select Rulesets
 |Select one or more rulesets to use to govern your APIs.
 
 Use the search box and filters to find the rulesets to use. You can filter rulesets by the following:
@@ -42,11 +39,11 @@ You can select the version of each ruleset to use or select the *Latest* option.
 * If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile.
 
 * If you select a specific version, the profile continues to use that version even if new versions of the rulesets are published after the profile is saved. This ensures that APIs selected in this profile that are conformant to a specific ruleset version are not inadvertently made nonconformant by a newly published version of the ruleset. You can update the profile and select a new version when you are ready to use the new ruleset version.
-|Filter Criteria
+|Define Filter Criteria
 
 |To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
 
-A preview of filtered APIs appears in the *Filter Criteria* page as you apply filters. This is limited to a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
+A preview of filtered APIs appears in the *Define Filter Criteria* page as you apply filters. This is limited to a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
 
 *General* filters:
 
@@ -71,11 +68,11 @@ If you filter by categories, you can see the number of categories for each API, 
 ** Environment Name
 
 If you select the *API Instance* filter *Include only APIs with instances*, only specifications that have an instance in API Manager are included. You can then optionally filter by environment type and environment name.
-
-*API Instance* filters cannot be applied to APIs that are in the *Development* lifecycle state because instances cannot be created for APIs in that state.
 |
-Notifications
+Set Notifications
 |Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
+|Specify General Information 
+|Enter a profile name and description that helps others understand the kinds of governance rulesets included and the kinds of APIs validated in this profile.
 |Review
 |Review your profile and click *Create*.
 |
@@ -87,7 +84,8 @@ The API Governance console guides you through updating profiles.
 
 To update governance profile information using the API Governance console: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line,title="Three vertical dots"]) at the end of the profile you want to update and select *Edit*.
+. In *API Governance*, select the console *Profiles* tab.
+. For the profile you want to update, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Edit*.
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
 
@@ -100,7 +98,7 @@ The API Governance console guides you through deleting profiles.
 
 To delete a governance profile: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line,title="Three vertical dots"]) at the end of the profile you want to update and select *Delete*.
+. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) at the end of the profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
 [[create-profile-cli]]
@@ -137,3 +135,9 @@ include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier
 To use the CLI to delete a governance profile, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-delete,leveloffset=+1]
+
+== See Also
+
+* xref:add-tags.adoc[]
+* xref:create-custom-rulesets.adoc[]
+* xref:cli-command-list.adoc[]

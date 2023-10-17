@@ -1,18 +1,22 @@
-= Getting Started with API Governance
+= Getting Started with Anypoint API Governance
 
-After you become familiar with the API Governance UI and concepts covered in the xref:index.adoc[API Governance Overview], you are ready to get started governing your APIs.
+After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you are ready to get started governing your APIs.
 
 == Before You Begin
 
-To access the API Governance console:
+* To access the API Governance console, you must have the *API Governance* > *Governance Administrator* permission.
 
-* You must have the *Anypoint API Governance administrator* permission set by your Anypoint Platform administrator.
+* If you have an opt-in banner in the API Governance console, opt in to get additional functionality. See the xref:release-notes::api-governance.adoc[Anypoint API Governance Release Notes] for details.
++
+If you don't see the opt-in banner, you already have access to the new functionality.
++
+This documentation is written for the full product functionality that is available after the opt-in.
 
 == Govern Your APIs
 
 Govern your APIs using the following steps:
 
-. xref:install-cli.adoc[(Optional) Install the API Governance CLI] to run commands locally or in automation tools.
+. xref:install-cli.adoc[(Optional) Install Anypoint CLI] to run `governance` commands locally or in automation tools.
 
 . xref:add-tags.adoc[Identify] the APIs that you want to govern.
 
@@ -26,7 +30,7 @@ Govern your APIs using the following steps:
 
 == See Also
 
-* xref:index.adoc[]
 * xref:access-management::managing-permissions.adoc[]
 * xref:create-custom-rulesets.adoc[]
-// * xref:anypoint-cli::install.adoc[Installing Anypoint CLI]
+* xref:cli-command-list.adoc[]
+* xref:index.adoc[]

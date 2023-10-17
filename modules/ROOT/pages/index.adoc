@@ -1,19 +1,16 @@
-= API Governance Overview
+= Anypoint API Governance Overview
 :page-aliases: api-gov.adoc
 
-Anypoint API Governance is a component of the Anypoint Platform that
+Anypoint API Governance is a component of Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
 API lifecycle. 
 
-With API Governance you can:
+With Anypoint API Governance you can:
 
-* *Improve your organization's API quality:* Identify conformance issues in published API specifications and instances and take steps to resolve them.
-* *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
-* *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
-* *Enforce governance within your DevOps organization:* Automate API conformance validation within your CI/CD pipeline using the Anypoint CLI `governance` commands.
-* *Ensure consistent governance of APIs beyond Anypoint Platform:* Govern APIs from systems other than Anypoint Platform using API Discovery.
-* *Increase API reuse and reduce duplication:* Enable true centralized API consumption by publishing external APIs in Anypoint Platform.
-
+* *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
+* *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
+* *Apply consistent rules from design time to deployment:* Apply governance rulesets from design time to deployment using centralized governance.
+* *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
 
 ////
 
@@ -30,7 +27,7 @@ include::_partials/api-gov-gs-video.html[]
 == Governance Console
 
 In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
-You can monitor your APIs' conformance and notify developers to help improve the conformance.
+Monitor your APIs' conformance and notify developers to help improve the conformance.
 
 // Screenshot of the API Governance console with callouts
 
@@ -46,23 +43,42 @@ include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-d
 
 == Governance in Exchange, Design Center, and API Manager
 
-API Governance is integrated with API Manager, Exchange, and Design Center. 
+API Governance is integrated with <<exchange-overview>>, <<design-center-overview>>, and <<api-manager-overview>>.
 
-* In API Manager, you can check API instance conformance by viewing comprehensive validation reports. 
+[[exchange-overview]]
+=== Exchange
 
-* In Exchange:
-** You can view published API specifications' conformance status details, discover provided rulesets, and publish custom rulesets. 
-** You can view the ruleset that an instance failed for details on how to fix API instance conformance issues.
+In Exchange:
 
-* In Design Center API Designer, you can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. Use the *Project Errors* section for information on where the issue is in the specification and how to fix it.
+* Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
+* Implementors can view rulesets to determine how to fix API instance conformance issues.
+
+[[design-center-overview]]
+=== Design Center
+
+In Design Center API Designer:
+
+* Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+* Use the *Project Errors* section for information about where the issue is in the specification and how to fix it.
 
 // Screenshot of conformance validation in APID with callouts
 
 include::_partials/api-gov-apid-scap-callouts.adoc[]
 
-== API Governance Concepts
+[[api-manager-overview]]
+=== API Manager
 
-Following are the concepts you need to know to use API Governance.
+In API Manager:
+
+* Implementors can check API instance conformance by viewing the comprehensive governance report. 
+
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
+
+== Anypoint API Governance Concepts
+
+Following are the concepts you need to know to use Anypoint API Governance.
 
 // Definition of Governance Profiles
 
@@ -134,4 +150,4 @@ include::general::partial$api-gov-concepts.adoc[tag=api-catalog-info,leveloffset
 
 == See Also
 
-* xref:get-started.adoc[Getting Started with API Governance]
+* xref:get-started.adoc[]

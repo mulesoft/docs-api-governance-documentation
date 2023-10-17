@@ -1,15 +1,16 @@
-= Finding API Conformance Issues in API Specifications
+= Finding and Fixing Conformance Issues in Specifications
 
-You can validate your API specifications against governance rulesets in Design Center
-or by using the governance CLI. 
+You can validate individual API specifications against governance rulesets in Design Center
+or by using the governance CLI, even if you don't have access to the API Governance console. You can fix your specification conformance issues directly in API Designer.
 
+[[validate-in-design-center]]
 == Validate API Specifications in Design Center
 
 To validate APIs against governance rulesets, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
 // Screenshot of conformance validation in APID with callouts
 
-include::partial$api-gov-apid-scap-callouts.adoc[]
+include::_partials/api-gov-apid-scap-callouts.adoc[]
 
 [[add-rulesets]]
 === Add Rulesets to Your Project
@@ -23,9 +24,9 @@ include::design-center::partial$design-add-ruleset-dependencies.adoc[]
 See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
 [[project-errors]]
-=== Resolve Conformance Project Errors
+=== Fix Conformance Project Errors
 
-You can use the API Designer text editor to resolve conformance project errors. See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
+To use the API Designer text editor to fix conformance project errors, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 
 == Validate API Specifications Against Governance Rulesets Using the API Governance CLI
 
@@ -37,4 +38,5 @@ include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier
 
 == See Also
 
-* xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project]
+* xref:design-center::design-add-api-dependency.adoc[]
+* xref:monitor-api-conformance.adoc[]
