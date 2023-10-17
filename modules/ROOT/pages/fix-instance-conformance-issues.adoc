@@ -1,0 +1,57 @@
+= Finding and Fixing Conformance Issues in API Instances
+
+After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
+
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
+
+== View Conformance Issue Details in the Governance Report
+
+To view instance conformance issues in the governance validation report:
+
+. Navigate to the report.
+* In Anypoint API Governance:
++
+.. In the API Governance console, select the *Governed APIs* tab.
+.. If the *Instances* column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+* In API Manager:
+.. Select the *Conformance Report* page for an instance that is marked as nonconformant.
+. View nonconformance details for each ruleset:
++
+* Click the icon for the nonconformance severity to see details for issues for that severity level. 
+* Click *View Details* to see the full breakdown of conformance issues.
+
+== View Rule Details in the Rulesets
+
+If the governance validation report and conformance issue details don't help you fix the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 
+
+// Screenshot of a section of the ruleset with a description of the properties 
+
+// include::_partials/api-gov-apim-ruleset-fix-tips.adoc[]
+
+=== Example Rules and Recommended Fixes
+
+The following table shows some example rules and the actions that you can take to fix conformance to those rules:
+
+[cols="3a,3a,3a",frame=none]
+|===
+
+|Rule
+|Scope
+|Recommended Fix
+|$BEFORE policies should be configured before $AFTER policies
+|An instance ID
+|In API Manager, rearrange the policies for the instance. 
+|The API instance has no $policy-name policy applied
+|An instance ID
+|In API Manager, add a $policy-name policy to the instance.
+|All API Instances server URLs are described in the API specification
+|A specification
+|Edit the specification and add descriptions for all its API instance URLs.
+|===
+
+== See Also
+
+* xref:api-manager::api-instance-landing-page.adoc[]
+* xref:monitor-api-conformance.adoc[]

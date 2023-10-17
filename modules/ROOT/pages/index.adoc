@@ -1,24 +1,28 @@
-= API Governance Overview
+= Anypoint API Governance Overview
 :page-aliases: api-gov.adoc
 
-Anypoint API Governance is a component of the Anypoint Platform that
+Anypoint API Governance is a component of Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
 API lifecycle. 
 
 With Anypoint API Governance you can:
 
-* *Improve your organization's API quality:* Identify conformance issues in published API specifications and take steps to resolve them.
-* *Share governance best practices:* Publish governance rulesets in Anypoint Exchange to share with other developers.
-* *Apply consistent rules at design time:* Apply governance rulesets at design time in Anypoint API Designer.
-* *Enforce governance within your DevOps organization:* Automate the application of standards to your API contract and specification within your CI/CD pipeline.
+* *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
+* *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
+* *Apply consistent rules from design time to deployment:* Apply governance rulesets from design time to deployment using centralized governance.
+* *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
 
-// View the following video for a brief overview of API Governance.  
+////
+
+View the following video for a brief overview of API Governance.  
 
 Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
 
 ++++
 include::_partials/api-gov-gs-video.html[]
 ++++
+
+////
 
 == Governance Console
 
@@ -29,17 +33,40 @@ Monitor your APIs' conformance and notify developers to help improve the conform
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-== Governance in Exchange and Design Center
+== Governance in Exchange, Design Center, and API Manager
 
-Anypoint API Governance is integrated with Exchange and Design Center. 
+API Governance is integrated with <<exchange-overview>>, <<design-center-overview>>, and <<api-manager-overview>>.
 
-* In Exchange, developers view published APIs' conformance status details, discover provided rulesets, and publish custom rulesets.
+[[exchange-overview]]
+=== Exchange
 
-* In Design Center API Designer, developers or architects check API conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+In Exchange:
+
+* Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
+* Implementors can view rulesets to determine how to fix API instance conformance issues.
+
+[[design-center-overview]]
+=== Design Center
+
+In Design Center API Designer:
+
+* Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+* Use the *Project Errors* section for information about where the issue is in the specification and how to fix it.
 
 // Screenshot of conformance validation in APID with callouts
 
 include::_partials/api-gov-apid-scap-callouts.adoc[]
+
+[[api-manager-overview]]
+=== API Manager
+
+In API Manager:
+
+* Implementors can check API instance conformance by viewing the comprehensive governance report. 
+
+// Screenshot of a Conformance Report page with callouts 
+
+include::_partials/api-gov-apim-governance-report.adoc[]
 
 == Anypoint API Governance Concepts
 
