@@ -32,21 +32,21 @@ If the governance validation report and conformance issue details don't help you
 
 === Example Rules and Recommended Fixes
 
-The following table shows some example rules and the actions that you can take to fix conformance to those rules:
+The following table shows some example rules and the actions to take to fix conformance to those rules:
 
-[cols="3a,3a,3a",frame=none]
+[%header,cols="3a,3a,3a",frame=none]
 |===
 
 |Rule
-|Scope
+|Aspect
 |Recommended Fix
-|$BEFORE policies should be configured before $AFTER policies
+|<policy-name-a> policies should be configured before <policy-name-b>  policies
 |An instance ID
-|In API Manager, rearrange the policies for the instance. 
-|The API instance has no $policy-name policy applied
+|In API Manager, rearrange the policies for the instance as suggested in the rule. 
+|The API instance has no <policy-name> policy applied
 |An instance ID
-|In API Manager, add a $policy-name policy to the instance.
-|All API Instances server URLs are described in the API specification
+|In API Manager, add the specified policy to the instance.
+|All API Instances server URLs should be described in the API specification
 |A specification
 |Edit the specification and add descriptions for all its API instance URLs.
 |===
