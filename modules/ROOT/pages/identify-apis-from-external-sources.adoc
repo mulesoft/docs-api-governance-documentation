@@ -17,7 +17,7 @@ To manage and publish discovered APIs, you must have permission for:
 
 == Identify, Publish, and Govern APIs from External Sources
 
-To identify APIs to govern from external sources and publish and manage them in Anypoint Platform, see the following:
+To identify APIs to govern from external sources and view, update, and publish them in Anypoint Platform, see the following:
 
 * xref:add-api-sources.adoc[]
 * xref:discover-external-apis.adoc[]

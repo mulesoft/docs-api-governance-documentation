@@ -4,6 +4,12 @@
   * xref:get-started.adoc[]
   * xref:install-cli.adoc[]
   * xref:add-tags.adoc[]
+  * xref:identify-apis-from-external-sources.adoc
+  ** xref:add-api-sources.adoc[]
+  ** xref:discover-external-apis.adoc[]
+  ** xref:manage-external-apis.adoc[]
+  ** xref:publish-discovered-apis.adoc[]
+  ** xref:api-discovery-declaration-ref.adoc[]
   * xref:create-profiles.adoc[]
   * xref:configure-notifications.adoc[]
   * xref:monitor-api-conformance.adoc[]
