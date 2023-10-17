@@ -28,7 +28,7 @@ Because AWS can be configured and used in many different ways, the mapping from 
 * Review how the AWS API properties map to Anypoint Platform API properties and if feasible, update the API properties in AWS to ensure that the mapping is more accurate upon discovery.
 * If you cannot update the properties, after you run the scan to discover the APIs, take time to update  the API properties in API Discovery before publishing the APIs to Exchange.
 
-== Troublehoot the Scan
+== Troubleshoot the Scan
 
 If the scan fails, the information available in API Discovery might be limited. Some common reasons for failure are:
 
