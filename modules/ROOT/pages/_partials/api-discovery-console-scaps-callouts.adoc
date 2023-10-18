@@ -5,10 +5,10 @@
 image::api-discovery-add-source-scap.png[The API Discovery Add Source page]
 
 [calloutlist]
-. Select a source system, such as AWS.
-. Authenticate to your source.
+. Select an API source system, such as AWS.
+. Authenticate to your API source.
 . Set default values, such as contact name and email.
-. Specify general information, such as an identifying name for your source.
+. Specify general information, such as an identifying name for your API source.
 . Select *Scan immediately after saving* to initiate the scan now or deselect it to scan later.
 
 // end::api-discovery-add-source-page[]
@@ -31,8 +31,8 @@ image::api-discovery-api-sources-tab-scap.png[The API Discovery console with the
 [calloutlist]
 . View a numeric and visual summary of your discovered APIs and API sources.
 . View, filter, and search a summary list of your discovered APIs or API sources.
-. Add a new source.
-. Scan a source for new or updated APIs.
+. Add a new API source.
+. Scan an API source for new or updated APIs.
 . Select from the more options menu to take relevant actions.
 
 // end::api-discovery-add-sources-tab[]
