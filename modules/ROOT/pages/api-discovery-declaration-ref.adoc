@@ -137,9 +137,9 @@ spec: <4>
 .. Metadata from the AWS API.
 .. Specification URL address in AWS based on the AWS API information and region used to authenticate to API Discovery.
 
-API Discovery stores API information in a declarative language format so that other Anypoint Catalog component can interpret the information. The declarative language parameters that API Discovery uses are shown in the following sections.
+// API Discovery stores API information in a declarative language format so that other Anypoint Catalog component can interpret the information. The declarative language parameters that API Discovery uses are shown in the following sections.
 
-include::_partials/api-discovery-declaration-ref.adoc[leveloffset=+1]
+// include::_partials/api-discovery-declaration-ref.adoc[leveloffset=+1]
 
 == See Also
 
