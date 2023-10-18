@@ -4,7 +4,7 @@
   * xref:get-started.adoc[]
   * xref:install-cli.adoc[]
   * xref:add-tags.adoc[]
-  * xref:identify-apis-from-external-sources.adoc
+  * xref:identify-apis-from-external-sources.adoc[]
   ** xref:add-api-sources.adoc[]
   ** xref:discover-external-apis.adoc[]
   ** xref:manage-external-apis.adoc[]
