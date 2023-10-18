@@ -18,15 +18,21 @@ image::api-discovery-add-source-scap.png[The API Discovery Add Source page]
 image::api-discovery-discovered-apis-tab-scap.png[The API Discovery console with the Discovered APIs tab selected]
 
 [calloutlist]
-. View and scan for discovered APIs.
+. View a numeric and visual summary of your APIs discovered from external sources.
+. Select the *Discovered APIs* tab to view, filter, and search a summary list of your discovered APIs.
+. Review and publish discovered APIs.
 
 // end::api-discovery-discovered-apis-tab[]
 
 // tag::api-discovery-add-sources-tab[]
 
-image::api-discovery-api-sources-tab-scap.png[The API Discovery console with the Add Sources tab selected]
+image::api-discovery-api-sources-tab-scap.png[The API Discovery console with the API Sources tab selected]
 
 [calloutlist]
-. Discover, publish, and govern APIs from external sources.
+. View a numeric and visual summary of your API sources.
+. Select the *API Sources* tab to view, filter, and search a summary list of your API sources.
+. Add a new source.
+. Scan a source for new or updated APIs.
+. Select from the more options menu to edit or delete an API source.
 
 // end::api-discovery-add-sources-tab[]
