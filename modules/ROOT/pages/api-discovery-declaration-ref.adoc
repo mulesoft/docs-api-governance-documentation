@@ -2,6 +2,10 @@
 
 API Discovery maps your discovered API properties to Anypoint Platform API properties by making opinionated assumptions about what the AWS properties represent. API information is represented in Anypoint Platform by a proprietary Anypoint Platform API declarative language. Because not all of the discovered API properties have an equivalent in Anypoint Platform, a subset of the properties is mapped.
 
+The following diagram shows the mapping between AWS and the declarative language, which is stored in GCL files. 
+
+image::api-discovery-aws-mapping-diag.png[Mapping between AWS and the declarative language]
+
 [[view-api-declaration]]
 == View the Mapping of API Information from AWS to Anypoint Platform
 
