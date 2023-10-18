@@ -13,11 +13,18 @@ To publish a discovered API to Exchange:
 . For the API you want to publish, select *Review and Publish*.
 . Select corresponding tabs to view the API's catalog information, specification, and instance information.
 .. You can review and add or change catalog information in the *Catalog info* page.
++
+Update catalog information as needed to override the default mapping, such as API version and API name.
 .. You can review the specification in the *Specification* page.
-.. You can review the instance mapping in the *Instances* page. See xref:api-discovery-declaration-ref.adoc[].
++ The OAS specification from AWS is used.
+.. You can review the instance mapping in the *Instances* page. 
++
+In the sidebar, select the instance you want to review and publish. The stage name from AWS is shown in the name. For example, instance_dev, instance_prod, and instance_qax. 
 . When you are ready to publish, click *Save and Publish*.
 
 APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
+
+For details on the AWS to Anypoint Platform API mapping, see xref:api-discovery-declaration-ref.adoc[].
 
 == Troubleshoot Publish Issues
 
@@ -36,3 +43,4 @@ Solution: Verify your credentials in AWS and then edit the API source and reente
 == See Also
 
 * xref:exchange::about-sharing-assets.adoc[]
+* xref:api-discovery-declaration-ref.adoc[]
