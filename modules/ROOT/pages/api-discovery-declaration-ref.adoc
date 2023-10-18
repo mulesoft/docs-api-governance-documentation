@@ -37,10 +37,10 @@ spec: <4>
   address: https://uqzxgsgcg6.execute-api.us-east-2.amazonaws.com/v1
 ----
 [calloutlist]
-.. API version from the AWS API.
-.. Kind of API from the AWS API.
-.. Metadata from the AWS API.
-.. Specification URL address in AWS based on the AWS API information and region used to authenticate to API Discovery.
+.. The apiVersion URL
+.. The kind ApiInstance indicates this is the mapping of an AWS API deployment to an Anypoint Platform API instance
+.. The metadata from AWS related to the API instance
+.. Specification URL address in AWS based on the AWS API information and region used to authenticate to API Discovery
 
 [[api-services-declaration]]
 == AWS Services Information
@@ -48,42 +48,6 @@ spec: <4>
 The AWS services information is shown in the declaration.
 
 The following example shows how AWS services information is represented in the API declaration for a discovered API. If there are multiple services, there is a section for each one. This example just shows one.
-
-----
-apiVersion: gateway.mulesoft.com/v1alpha1 <1>
-kind: PolicyBinding <2>
-metadata:
-  name: uqzxgsgcg6-v1-rcizkl-account-level-rate-limiting <3>
-spec:
-  policyRef:
-    name: aws-rate-limiting <4>
-  config:
-    burstLimit: 5000 <5>
-    rateLimit: 10000.0 <6>
-  order: 1
-  targetRef:
-    name: uqzxgsgcg6-v1-rcizkl
-----
-[calloutlist]
-.. API version from the AWS API.
-.. Kind of policy binding from the AWS API.
-.. Policy metadata name in AWS.
-.. Policy reference name in AWS.
-.. Burst limit.
-.. Rate limit.
-
-== Diagram of Instance and Services Mappings
-
-The following diagram shows more detail about the AWS API instance and services mappings. 
-
-image::api-discovery-awsinstance-mapping-diag.png[Mapping details for AWS API instances and services]
-
-[[api-policy-binding-declaration]]
-== AWS Policy Binding Information
-
-The AWS policy binding information is shown in the declaration.
-
-The following example shows how AWS policy binding information is represented in the API declaration for a discovered API. If there are multiple policy bindings, there is a section for each one. This example just shows one.
 
 ----
 apiVersion: gateway.mulesoft.com/v1alpha1 <1>
@@ -101,10 +65,44 @@ spec:
   address: MOCKED
 ----
 [calloutlist]
-.. API version from the AWS API.
-.. Kind of service from the AWS API.
-.. Service name in AWS.
-.. Labels.
+.. The apiVersion URL
+.. The kind Service indicates this is the mapping of AWS API routing information to an Anypoint Platform API instance service
+.. Service name in AWS
+.. Labels
+
+== Diagram of Instance and Services Mappings
+
+The following diagram shows more detail about the AWS API instance and services mappings. 
+
+image::api-discovery-awsinstance-mapping-diag.png[Mapping details for AWS API instances and services]
+
+[[api-policy-binding-declaration]]
+== AWS Policy Binding Information
+
+The AWS policy binding information is shown in the declaration.
+
+The following example shows how AWS policy binding information is represented in the API declaration for a discovered API. If there are multiple policy bindings, there is a section for each one. This example just shows one.
+
+----
+apiVersion: gateway.mulesoft.com/v1alpha1 <1>
+kind: PolicyBinding <2>
+metadata:
+  name: uqzxgsgcg6-v1-rcizkl-account-level-rate-limiting <3>
+spec:
+  policyRef:
+    name: aws-rate-limiting <4>
+  config:
+    burstLimit: 5000
+    rateLimit: 10000.0
+  order: 1
+  targetRef:
+    name: uqzxgsgcg6-v1-rcizkl
+----
+[calloutlist]
+.. The apiVersion URL
+.. The kind policyBinding indicates this is the mapping of AWS API CORS, throttling, or route information to an Anypoint Platform API instance policy binding
+.. Generated name that indicates the information from AWS that is mapped to this policy binding
+.. Policy reference name in AWS
 
 == Diagrams of Policy Binding Mappings
 
@@ -132,9 +130,8 @@ metadata: <3>
   name: v1-rcizkl
 ----
 [calloutlist]
-.. API version from the AWS API.
-.. Kind of environment is saved as AWS metadata in API Discovery because there isn't an equivalent in Anypoint Platform.
-.. Metadata from the AWS API.
+.. The kind Environment indicates this is the AWS API environment information 
+.. Metadata from the AWS API
 
 [[api-environment-binding-declaration]]
 == AWS Environment Binding Information
@@ -144,8 +141,8 @@ The AWS environment cannot be mapped directly to an equivalent in API Discovery.
 The following example shows how AWS environment binding information is represented in the API declaration for a discovered API.
 
 ----
-apiVersion: gateway.mulesoft.com/v1alpha1 <1>
-kind: EnvironmentBinding <2>
+apiVersion: gateway.mulesoft.com/v1alpha1 
+kind: EnvironmentBinding <1>
 spec:
   targetEnvironmentRef: <2>
     name: v1-rcizkl
@@ -153,10 +150,9 @@ spec:
     name: uqzxgsgcg6-v1-rcizkl
 ----
 [calloutlist]
-.. API version from the AWS API.
-.. Kind of API binding from the AWS API.
-.. Target environment reference from AWS.
-.. Target spec reference from AWS.
+.. The kind EnvironmentBinding indicates this is the AWS API environment binding information 
+.. Target environment reference from AWS
+.. Target spec reference from AWS
 
 // API Discovery stores API information in a declarative language format so that other Anypoint Catalog component can interpret the information. The declarative language parameters that API Discovery uses are shown in the following sections.
 
