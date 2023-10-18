@@ -30,9 +30,9 @@ image::api-discovery-api-sources-tab-scap.png[The API Discovery console with the
 
 [calloutlist]
 . View a numeric and visual summary of your API sources.
-. Select the *API Sources* tab to view, filter, and search a summary list of your API sources.
+. View, filter, and search a summary list of your Discovered APIs or API sources.
 . Add a new source.
 . Scan a source for new or updated APIs.
-. Select from the more options menu to edit or delete an API source.
+. Select from the more options menu to take relevant actions.
 
 // end::api-discovery-add-sources-tab[]

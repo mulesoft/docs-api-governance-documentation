@@ -2,13 +2,13 @@
 
 You can govern APIs from external sources along with the APIs you already govern in Anypoint Platform. This gives you  centralized governance across APIs you already manage in Anypoint Platform and those you discover from AWS and subsequently publish to Exchange.
 
-// Include overview of why you should publish
-
-include::_partials/api-discovery-options-overview.adoc[]
-
 // Screenshot of the Add API Source tab (with callouts)
 
 include::_partials/api-discovery-console-scaps-callouts.adoc[tag=api-discovery-add-sources-tab]
+
+// Include overview of why you should publish
+
+include::_partials/api-discovery-options-overview.adoc[]
 
 == Permissions
 
