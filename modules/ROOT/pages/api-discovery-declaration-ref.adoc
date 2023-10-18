@@ -14,7 +14,7 @@ When you select a discovered API, the details show the API properties in the raw
 The following examples show how the sections of the generated API declaration map to the equivalent in AWS.
 
 [[api-instance-declaration]]
-=== API Instance Information
+== API Instance Information
 
 APIs might have multiple instances. Each instance is represented by its own section in the API declaration.
 
@@ -42,52 +42,8 @@ spec: <4>
 .. Metadata from the AWS API.
 .. Specification URL address in AWS based on the AWS API information and region used to authenticate to API Discovery.
 
-The following diagram shows more detail about the AWS API instance mapping. 
-
-image::api-discovery-awsinstance-mapping-diag.png[Mapping details for AWS API instances]
-
-[[api-policy-binding-declaration]]
-=== AWS Policy Binding Information
-
-The AWS policy binding information is shown in the declaration.
-
-The following example shows how AWS policy binding information is represented in the API declaration for a discovered API. If there are multiple policy bindings, there is a section for each one. This example just shows one.
-
-----
-apiVersion: gateway.mulesoft.com/v1alpha1 <1>
-kind: Service <2>
-metadata:
-  name: uqzxgsgcg6-/history-get-service <3>
-  labels: <4>
-    aws.amazon.com/arn: arn:AWS:apigateway:US_EAST_2::/restapis/uqzxgsgcg6/resources/cx8i3f/methods/get/integration
-    aws.amazon.com/region: us-east-2
-    aws.amazon.com/resourceId: cx8i3f
-    aws.amazon.com/method: get
-    aws.amazon.com/partition: AWS
-    aws.amazon.com/resource: apigateway-integration
-spec:
-  address: MOCKED
-----
-[calloutlist]
-.. API version from the AWS API.
-.. Kind of service from the AWS API.
-.. Service name in AWS.
-.. Labels.
-
-The following diagrams show more detail about the AWS API policy binding mapping. 
-
-=== Mapping for Policy Bindings
-
-This diagram shows how policy bindings are associated with rate limiting, CORS, and routes.
-
-image::api-discovery-awspolicy-mapping-diag.png[Mapping details for AWS API policy bindings]
-
-This diagram shows the specific URLs and names generated in the declaration mapping file.
-
-image::api-discovery-awspolicydetail-mapping-diag.png[More mapping details for AWS API policy bindings]
-
 [[api-services-declaration]]
-=== AWS Services Information
+== AWS Services Information
 
 The AWS services information is shown in the declaration.
 
@@ -116,8 +72,54 @@ spec:
 .. Burst limit.
 .. Rate limit.
 
+== Diagram of Instance and Services Mappings
+
+The following diagram shows more detail about the AWS API instance and services mappings. 
+
+image::api-discovery-awsinstance-mapping-diag.png[Mapping details for AWS API instances and services]
+
+[[api-policy-binding-declaration]]
+== AWS Policy Binding Information
+
+The AWS policy binding information is shown in the declaration.
+
+The following example shows how AWS policy binding information is represented in the API declaration for a discovered API. If there are multiple policy bindings, there is a section for each one. This example just shows one.
+
+----
+apiVersion: gateway.mulesoft.com/v1alpha1 <1>
+kind: Service <2>
+metadata:
+  name: uqzxgsgcg6-/history-get-service <3>
+  labels: <4>
+    aws.amazon.com/arn: arn:AWS:apigateway:US_EAST_2::/restapis/uqzxgsgcg6/resources/cx8i3f/methods/get/integration
+    aws.amazon.com/region: us-east-2
+    aws.amazon.com/resourceId: cx8i3f
+    aws.amazon.com/method: get
+    aws.amazon.com/partition: AWS
+    aws.amazon.com/resource: apigateway-integration
+spec:
+  address: MOCKED
+----
+[calloutlist]
+.. API version from the AWS API.
+.. Kind of service from the AWS API.
+.. Service name in AWS.
+.. Labels.
+
+== Diagrams of Policy Binding Mappings
+
+The following diagrams show more detail about the AWS API policy binding mapping. 
+
+This diagram shows how policy bindings are associated with rate limiting, CORS, and routes.
+
+image::api-discovery-awspolicy-mapping-diag.png[Mapping details for AWS API policy bindings]
+
+This diagram shows the specific URLs and names generated in the declaration mapping file.
+
+image::api-discovery-awspolicydetail-mapping-diag.png[More mapping details for AWS API policy bindings]
+
 [[api-environment-declaration]]
-=== AWS Environment Information
+== AWS Environment Information
 
 The AWS environment cannot be mapped directly to an equivalent in API Discovery, because an AWS environment has a different meaning and purpose than an Anypoint Platform environment. Therefore, API Discovery maps the AWS environment to a tag in the discovered API.
 
@@ -135,7 +137,7 @@ metadata: <3>
 .. Metadata from the AWS API.
 
 [[api-environment-binding-declaration]]
-=== AWS Environment Binding Information
+== AWS Environment Binding Information
 
 The AWS environment cannot be mapped directly to an equivalent in API Discovery.
 
