@@ -20,8 +20,8 @@ Update catalog information as needed to override the default mapping, such as AP
 The OAS specification from AWS is used.
 .. You can review the instance mapping in the *Instances* page. 
 +
-In the sidebar, select the instance you want to review and publish. The stage name from AWS is shown in the name. For example, instance_dev, instance_prod, and instance_qax. 
-. When you are ready to publish, click *Save and Publish*.
+In the sidebar, select the instance stage you want to review. The stage name from AWS is shown in the name. For example, instance_dev, instance_prod, and instance_qax. 
+. When you are ready to publish the API, click *Save and Publish*.
 
 APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
 
