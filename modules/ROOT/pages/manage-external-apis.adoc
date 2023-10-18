@@ -5,9 +5,7 @@ After you discover APIs, you can manage them in the *API Discovery* console. You
 [[view-discovered-apis]]
 == View Discovered APIs
 
-You can view discovered APIs in the API Discovery console.
-
-To view discovered APIs:
+To view discovered APIs in the API Discovery console:
 
 . In API Governance, select *API Discovery*.
 . Select the *Discovered APIs* tab. 
@@ -21,13 +19,15 @@ To modify a discovered API:
 . In API Governance, select *API Discovery*.
 . Select the *Discovered APIs* tab. 
 . Select an API to view its details.
-. Update the information you want to change.
+. Update the catalog information you want to change.
 . Click *Save Changes* to save without publishing or click *Save and Publish to Exchange* to save and publish.
 +
 * If this is the first time you are publishing the API, the API is published with the information currently in the page, including any changes you've made.
 * If this is a change to an API that is already published in Exchange:
 ** If you modify the name, a new API is published.
 ** If you modify the version, a new API version is published.
++
+APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
 
 CAUTION: You can modify an API specification in API Designer after it is published, but those changes won't be made in AWS. If you scan again to discover changes to the same API in AWS, the updates from AWS overwrite any changes you made in API Designer in a new asset version of the API. 
 

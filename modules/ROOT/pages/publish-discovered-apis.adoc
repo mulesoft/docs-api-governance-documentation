@@ -23,6 +23,11 @@ The OAS specification from AWS is used.
 In the sidebar, select the instance stage you want to review. The stage name from AWS is shown in the name. For example, instance_dev, instance_prod, and instance_qax. 
 . When you are ready to publish the API, click *Save and Publish*.
 +
+* If this is the first time you are publishing the API, the API is published with the information currently in the page, including any changes you've made.
+* If this is a change to an API that is already published in Exchange:
+** If you modify the name, a new API is published.
+** If you modify the version, a new API version is published.
++
 APIs you publish to Exchange are no longer shown in the *Discovered APIs* page. 
 
 For details on the AWS to Anypoint Platform API mapping, see xref:api-discovery-declaration-ref.adoc[].
