@@ -8,7 +8,7 @@ include::_partials/api-discovery-options-overview.adoc[]
 
 == Permissions
 
-To manage and publish discovered APIs, you must have permission for:
+To manage and publish discovered APIs, you must have permission to:
 
 * Use Anypoint API Governance
 * Publish APIs to Exchange 
@@ -28,7 +28,7 @@ To identify APIs to govern from external sources and view, update, and publish t
 
 * xref:index.adoc[]
 * xref:exchange::index.adoc[]
-* xref:api-experience-hub::index.adoc[]
-* xref:anypoint-code-builder::index.adoc[] 
-* xref:studio::index.adoc[] 
+// * xref:api-experience-hub::index.adoc[]
+// * xref:anypoint-code-builder::index.adoc[] 
+// * xref:studio::index.adoc[] 
 * xref:api-discovery-declaration-ref.adoc[] 
