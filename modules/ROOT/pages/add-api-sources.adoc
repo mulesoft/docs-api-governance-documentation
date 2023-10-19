@@ -74,7 +74,7 @@ Control access using an IAM policy in AWS that allows read only access to the AW
 
 [%header,cols="35a,65a"]
 |===
-|Parameter |Value
+|Key |Value
 | "Effect" | "Allow"
 | "Action" | "apigateway:GET"
 | "Resource" | "arn:aws:apigateway:*::/*"
