@@ -56,11 +56,9 @@ In API Manager:
 
 include::_partials/api-gov-apim-governance-report.adoc[]
 
-== Anypoint API Governance Overview Video
+== Anypoint API Governance Overview Video 
 
-View the following video for a brief overview of API Governance.  
-
-Watch the API Governance Product Spotlight video to see a quick overview of API Governance.
+Watch the Anypoint API Governance Product Spotlight video to see a quick overview of Anypoint API Governance.
 
 ++++
 include::_partials/api-gov-gs-video.html[]
