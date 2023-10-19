@@ -70,7 +70,17 @@ API Discovery uses your IAM access keys to authenticate to AWS. You must enter a
 
 Verify your access key information by using it to log in to AWS before you enter it in API Discovery.
 
-For detailed documentation on configuring IAM access keys, refer to https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html[Managing access keys for IAM users^] in the AWS documentation.
+Control access using an IAM policy in AWS that allows read only access to the AWS API Gateway. Example settings are:
+
+[%header,cols="35a,65a"]
+|===
+|Parameter |Value
+| "Effect" | "Allow"
+| "Action" | "apigateway:GET"
+| "Resource" | "arn:aws:apigateway:*::/*"
+|===
+
+For detailed documentation on configuring IAM access keys and policies, refer to https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html[Managing access keys for IAM users^] and https://docs.aws.amazon.com/IAM/latest/UserGuide/access_controlling.html[Controlling access to AWS resources using policies^] in the AWS documentation.
 
 // Get other tips to add
 
