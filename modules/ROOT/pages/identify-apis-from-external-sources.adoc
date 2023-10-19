@@ -19,7 +19,7 @@ To manage and publish discovered APIs, you must have permission to:
 
 // In some cases, such as for pilot programs, MuleSoft might set them for you. 
 
-== Identify, Publish, and Govern APIs from External Sources
+== Identify, Discover, and Publish APIs from External Sources
 
 To identify APIs to govern from external sources and view, update, and publish them in Anypoint Platform, see the following:
 
