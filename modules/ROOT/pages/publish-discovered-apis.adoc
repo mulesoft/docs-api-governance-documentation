@@ -48,5 +48,6 @@ Solution: Verify your credentials in AWS and then edit the API source and reente
 
 == See Also
 
+* xref:get-started.adoc[]
 * xref:exchange::about-sharing-assets.adoc[]
 * xref:api-discovery-declaration-ref.adoc[]
