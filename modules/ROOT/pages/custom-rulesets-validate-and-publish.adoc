@@ -42,7 +42,7 @@ anypoint-cli-v4 governance:ruleset:validate /myRulesetFolder/mynewruleset.yaml <
 
 anypoint-cli-v4 governance:document /myRulesetFolder/mynewruleset.yaml /myRulesetFolder/ruleset.doc.zip <2>
 
-anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my  best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml"}' --files='{"custom.zip": "/myRulesetFolder/ruleset.doc.zip"}' <3>
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my  best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml", "docs.zip": "/myRulesetFolder/ruleset.doc.zip"}' <3>
 ----
 [calloutlist]
 .. Validates the ruleset locally. The ruleset file is `mynewruleset.yaml` in the `/myRulesetFolder/` folder.
