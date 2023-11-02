@@ -15,7 +15,9 @@ With Anypoint API Governance you can:
 == Governance Console
 
 In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
-Monitor your APIs' conformance and notify developers to help improve the conformance.
+Monitor your API conformance and notify developers to help improve the conformance.
+
+Developers with the *Governance Viewer* permission can view the API governance report on the console in view-only mode.
 
 // Screenshot of the console with callouts
 
