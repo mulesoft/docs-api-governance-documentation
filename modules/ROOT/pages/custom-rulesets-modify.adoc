@@ -1,29 +1,46 @@
-= Creating Custom Rulesets by Modifying Provided Rulesets
+= Creating Custom Rulesets by Modifying Published Rulesets
 
-To create custom governance rulesets based on rulesets that are published in Exchange, download and modify the rulesets and then upload them as new assets. This is the best approach if a provided ruleset meets most of your needs and you need to make only a few changes. 
+If a published ruleset meets most of your needs, consider using it as an example to base your custom ruleset on. 
 
-To create a custom ruleset based on one already in Exchange, use one of the following approaches:
+To create a custom ruleset by modifying a published ruleset:
 
-* <<use-clone-cli>>
-* <<manual-edit>>
+. Download the published ruleset ("before" ruleset) from Exchange using the Anypoint Platform UI.
+. Optionally <<list-rules,list the rules>> in the "before" ruleset using Anypoint CLI.
+. Clone the ruleset and modify the rules <<use-clone-cli,using Anypoint CLI>> or manually ("after" ruleset).
+. Optionally <<list-rules,list the rules>> in the "after" ruleset using Anypoint CLI.
+. Validate, generate the documentation for, and publish the custom ruleset using Anypoint CLI. See xref:custom-rulesets-validate-and-publish.adoc[].
 
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
 
-You can use Anypoint CLI to <<list-rules,list the rules>> before you modify your ruleset so that you can see what you want to change and after you change it to validate your changes. 
+Watch this video to see how to clone and customize an example ruleset using Anypoint CLI. Use this video along with the documentation to get started downloading an example ruleset, modifying rules using Anypoint CLI, and publishing your customized ruleset. 
 
-[[list-rules]]
-=== List Ruleset Rules Using Anypoint CLI
-To list the rules in a ruleset, use the `governance:ruleset:info` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+++++
+include::_partials/api-gov-custom-ruleset-video.html[]
+++++
 
 [[clone-and-modify]]
-=== Clone and Modify the Ruleset
+== Clone and Modify a Ruleset Using Anypoint CLI
 
 To create a custom ruleset using Anypoint CLI, use the `governance:ruleset:clone` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
+
+[[list-rules]]
+== List Ruleset Rules Using Anypoint CLI
+
+Optionally use Anypoint CLI to list the rules:
+
+* Before you modify the ruleset to help determine what you want to change (the "before" list)
+* After you change the ruleset (the "after" list) to compare to the "before" list and ensure you changed what you meant to change 
+
+TIP: Use the redirection operator (`>` to overwrite or `>>` to append) to write the output of the `info` command to a file for easier comparison.
+
+To list the rules in a ruleset, use the `governance:ruleset:info` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier]
 
 [[example-modify-sequence]]
 == Example Command Sequence to Modify a Ruleset
@@ -32,29 +49,16 @@ Use the following example sequence to get started modifying a ruleset. Replace t
 
 [source,console]
 ----
-anypoint-cli-v4 governance ruleset info 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 --remote <1>
+anypoint-cli-v4 governance ruleset info 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 --remote > before-rules-list <1>
 
-anypoint-cli-v4 exchange asset download 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 ~/MyRulesetFolder <2>
+anypoint-cli-v4 governance ruleset clone ~/MyRulesetFolder/myruleset.yaml 'New Ruleset from Clone' 'Cloned from myruleset.yaml' --warning=operation-default-response,operation-operationId > mynewruleset.yaml <2>
 
-anypoint-cli-v4 governance ruleset clone ~/MyRulesetFolder/myruleset.yaml 'New Ruleset from Clone' 'Cloned from myruleset.yaml' --warning=operation-default-response,operation-operationId > mynewruleset.yaml <3>
-
-anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml <4>
+anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml > after-rules-list <3>
 ----
 [calloutlist]
 .. Lists the rules in the published version of a published ruleset that you want to modify to create a custom version.
-.. Downloads the ruleset to the `~/MyRulesetFolder` folder.
 .. Clones the downloaded ruleset, `myruleset.yaml`, to create a new custom ruleset, `mynewruleset.` Puts the `operation-default-response` and `operation-operationId` rules in the warning section in `mynewruleset`.
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml`, to verify that the rules are the way you want them.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
-
-[[manual-edit]]
-== Manually Modify Rulesets
-
-To modify a ruleset manually to create a custom ruleset:
-
-. Download the ruleset from Exchange.
-. Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
 
 == Next Steps 
 
