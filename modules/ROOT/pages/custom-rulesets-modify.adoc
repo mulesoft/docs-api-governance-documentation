@@ -49,11 +49,11 @@ Use the following example sequence to get started modifying a ruleset. Replace t
 
 [source,console]
 ----
-anypoint-cli-v4 governance ruleset info 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 --remote <1>
+anypoint-cli-v4 governance ruleset info 68ef9520-24e9-4cf2-b2f5-620025690913/anypoint-best-practices/1.0.2 --remote > before-rules-list <1>
 
 anypoint-cli-v4 governance ruleset clone ~/MyRulesetFolder/myruleset.yaml 'New Ruleset from Clone' 'Cloned from myruleset.yaml' --warning=operation-default-response,operation-operationId > mynewruleset.yaml <2>
 
-anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml <3>
+anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml > after-rules-list <3>
 ----
 [calloutlist]
 .. Lists the rules in the published version of a published ruleset that you want to modify to create a custom version.
