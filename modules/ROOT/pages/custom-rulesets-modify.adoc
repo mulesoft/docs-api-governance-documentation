@@ -5,12 +5,12 @@ If a published ruleset meets most of your needs, consider using it as an example
 To create a custom ruleset by modifying a published ruleset:
 
 . Download the ruleset from Exchange using the Anypoint Platform UI.
-. Optionally list the rules in the "before" ruleset.
+. Optionally list the rules in the "before" ruleset using Anypoint CLI.
 . Clone the ruleset and modify the rules using Anypoint CLI or manually.
-. Optionally list the rules in the "after" ruleset.
-. Validate the custom ruleset.
-. Generate the documentation for the ruleset.
-. Publish the customized ruleset as a new ruleset asset along with its associated documentation. 
+. Optionally list the rules in the "after" ruleset using Anypoint CLI.
+. Validate the custom ruleset using Anypoint CLI.
+. Generate the documentation for the ruleset using Anypoint CLI.
+. Publish (upload) the customized ruleset as a new ruleset asset along with its associated documentation using Anypoint CLI. 
 
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
