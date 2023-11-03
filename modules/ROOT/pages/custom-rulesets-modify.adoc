@@ -5,12 +5,10 @@ If a published ruleset meets most of your needs, consider using it as an example
 To create a custom ruleset by modifying a published ruleset:
 
 . Download the published ruleset ("before" ruleset) from Exchange using the Anypoint Platform UI.
-. Optionally list the rules in the "before" ruleset using Anypoint CLI.
-. Clone the ruleset and modify the rules using Anypoint CLI or manually ("after" ruleset).
-. Optionally list the rules in the "after" ruleset using Anypoint CLI.
-. Validate the custom ruleset using Anypoint CLI.
-. Generate the documentation for the ruleset using Anypoint CLI.
-. Publish (upload) the custom ruleset and its associated documentation as a new ruleset asset using Anypoint CLI. 
+. Optionally <<list-rules,list the rules>> in the "before" ruleset using Anypoint CLI.
+. Clone the ruleset and modify the rules <<clone-and-modify,using Anypoint CLI>> or manually ("after" ruleset).
+. Optionally <<list-rules,list the rules>> in the "after" ruleset using Anypoint CLI.
+. Validate, generate the documentation for, and publish the custom ruleset using Anypoint CLI. See xref:custom-rulesets-validate-and-publish.adoc[].
 
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
@@ -22,7 +20,7 @@ include::_partials/api-gov-custom-ruleset-video.html[]
 ++++
 
 [[list-rules]]
-=== List Ruleset Rules Using Anypoint CLI
+== List Ruleset Rules Using Anypoint CLI
 
 Optionally use Anypoint CLI to list the rules:
 
@@ -36,7 +34,7 @@ To list the rules in a ruleset, use the `governance:ruleset:info` command.
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 [[clone-and-modify]]
-=== Clone and Modify the Ruleset
+== Clone and Modify a Ruleset Using Anypoint CLI
 
 To create a custom ruleset using Anypoint CLI, use the `governance:ruleset:clone` command.
 
