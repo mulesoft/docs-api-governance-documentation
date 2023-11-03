@@ -12,11 +12,6 @@ To create a custom ruleset by modifying a published ruleset:
 . Generate the documentation for the ruleset.
 . Publish the customized ruleset as a new ruleset asset along with its associated documentation. 
 
-To create a custom ruleset based on one already in Exchange, use one of the following approaches:
-
-* <<use-clone-cli>>
-* <<manual-edit>>
-
 [[use-clone-cli]]
 == Change Rule Severity or Enable or Disable Rules Using Anypoint CLI
 
@@ -66,14 +61,6 @@ anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml <3>
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml`, to verify that the rules are the way you want them.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
-
-[[manual-edit]]
-== Manually Modify Rulesets
-
-To modify a ruleset manually to create a custom ruleset:
-
-. Download the ruleset from Exchange.
-. Modify the ruleset YAML file. For example, update severity values or delete rules you do not want to use.
 
 == Next Steps 
 
