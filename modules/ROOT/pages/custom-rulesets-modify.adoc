@@ -60,7 +60,7 @@ anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml <3>
 .. Clones the downloaded ruleset, `myruleset.yaml`, to create a new custom ruleset, `mynewruleset.` Puts the `operation-default-response` and `operation-operationId` rules in the warning section in `mynewruleset`.
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml`, to verify that the rules are the way you want them.
 
-include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+1]
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier]
 
 == Next Steps 
 
