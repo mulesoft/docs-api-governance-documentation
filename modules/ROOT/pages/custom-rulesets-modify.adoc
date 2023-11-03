@@ -6,7 +6,7 @@ To create a custom ruleset by modifying a published ruleset:
 
 . Download the published ruleset ("before" ruleset) from Exchange using the Anypoint Platform UI.
 . Optionally <<list-rules,list the rules>> in the "before" ruleset using Anypoint CLI.
-. Clone the ruleset and modify the rules <<clone-and-modify,using Anypoint CLI>> or manually ("after" ruleset).
+. Clone the ruleset and modify the rules <<use-clone-cli,using Anypoint CLI>> or manually ("after" ruleset).
 . Optionally <<list-rules,list the rules>> in the "after" ruleset using Anypoint CLI.
 . Validate, generate the documentation for, and publish the custom ruleset using Anypoint CLI. See xref:custom-rulesets-validate-and-publish.adoc[].
 
@@ -18,20 +18,6 @@ Watch this video to see how to clone and customize an example ruleset using Anyp
 ++++
 include::_partials/api-gov-custom-ruleset-video.html[]
 ++++
-
-[[list-rules]]
-== List Ruleset Rules Using Anypoint CLI
-
-Optionally use Anypoint CLI to list the rules:
-
-* Before you modify the ruleset to help determine what you want to change (the "before" list)
-* After you change the ruleset (the "after" list) to compare to the "before" list and ensure you changed what you meant to change 
-
-TIP: Use the redirection operator (`>` to overwrite or `>>` to append) to write the output of the `info` command to a file for easier comparison.
-
-To list the rules in a ruleset, use the `governance:ruleset:info` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 [[clone-and-modify]]
 == Clone and Modify a Ruleset Using Anypoint CLI
@@ -57,6 +43,20 @@ anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml > af
 .. Lists the rules in the published version of a published ruleset that you want to modify to create a custom version.
 .. Clones the downloaded ruleset, `myruleset.yaml`, to create a new custom ruleset, `mynewruleset.` Puts the `operation-default-response` and `operation-operationId` rules in the warning section in `mynewruleset`.
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml`, to verify that the rules are the way you want them.
+
+[[list-rules]]
+== List Ruleset Rules Using Anypoint CLI
+
+Optionally use Anypoint CLI to list the rules:
+
+* Before you modify the ruleset to help determine what you want to change (the "before" list)
+* After you change the ruleset (the "after" list) to compare to the "before" list and ensure you changed what you meant to change 
+
+TIP: Use the redirection operator (`>` to overwrite or `>>` to append) to write the output of the `info` command to a file for easier comparison.
+
+To list the rules in a ruleset, use the `governance:ruleset:info` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
 
 include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier]
 
