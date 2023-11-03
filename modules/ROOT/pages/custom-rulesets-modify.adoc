@@ -1,6 +1,16 @@
-= Creating Custom Rulesets by Modifying Provided Rulesets
+= Creating Custom Rulesets by Modifying Published Rulesets
 
-If a published ruleset meets most of your needs and you need to make only a few changes, a quick way to create your custom ruleset is to download the ruleset from Exchange, modify the rules, and publish the customized ruleset as a new asset. 
+If a published ruleset meets most of your needs, consider using it as an example to base your custom ruleset on. 
+
+To create a custom ruleset by modifying a published ruleset:
+
+. Download the ruleset from Exchange.
+. Optionally list the rules in the "before" ruleset.
+. Clone it and modify the rules using Anypoint CLI or by copying it and modifying it manually.
+. Optionally list the rules in the "after" ruleset.
+. Validate the custom ruleset.
+. Generate the documentation for the ruleset.
+. Publish the customized ruleset along with its associated documentation as a new ruleset asset. 
 
 To create a custom ruleset based on one already in Exchange, use one of the following approaches:
 
@@ -21,8 +31,8 @@ include::_partials/api-gov-custom-ruleset-video.html[]
 
 Optionally use Anypoint CLI to list the rules:
 
-* Before you modify your ruleset so that you can see what you want to change
-* After you change it to validate your changes 
+* Before you modify the ruleset to help determine what you want to change (the "before" list)
+* After you change the ruleset (the "after" list) to compare to the "before" list and ensure you changed what you meant to change 
 
 TIP: Use the redirection operator (`>` to overwrite or `>>` to append) to write the output of the `info` command to a file for easier comparison.
 
