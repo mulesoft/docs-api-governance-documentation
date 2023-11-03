@@ -12,6 +12,12 @@ To create a custom ruleset based on one already in Exchange, use one of the foll
 
 You can use Anypoint CLI to <<list-rules,list the rules>> before you modify your ruleset so that you can see what you want to change and after you change it to validate your changes. 
 
+Watch this video to see how to clone and customize an example ruleset using Anypoint CLI. Use this video along with the documentation to get started downloading an example ruleset, modifying rules using Anypoint CLI, and publishing your customized ruleset. 
+
+++++
+include::_partials/api-gov-custom-ruleset-video.html[]
+++++
+
 [[list-rules]]
 === List Ruleset Rules Using Anypoint CLI
 To list the rules in a ruleset, use the `governance:ruleset:info` command.
