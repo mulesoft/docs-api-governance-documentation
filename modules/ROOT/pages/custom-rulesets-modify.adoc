@@ -26,6 +26,22 @@ To create a custom ruleset using Anypoint CLI, use the `governance:ruleset:clone
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-clone,leveloffset=+2]
 
+[[list-rules]]
+== List Ruleset Rules Using Anypoint CLI
+
+Optionally use Anypoint CLI to list the rules:
+
+* Before you modify the ruleset to help determine what you want to change (the "before" list)
+* After you change the ruleset (the "after" list) to compare to the "before" list and ensure you changed what you meant to change 
+
+TIP: Use the redirection operator (`>` to overwrite or `>>` to append) to write the output of the `info` command to a file for easier comparison.
+
+To list the rules in a ruleset, use the `governance:ruleset:info` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
+
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier]
+
 [[example-modify-sequence]]
 == Example Command Sequence to Modify a Ruleset
 
@@ -43,22 +59,6 @@ anypoint-cli-v4 governance ruleset info ~/MyRulesetFolder/mynewruleset.yaml > af
 .. Lists the rules in the published version of a published ruleset that you want to modify to create a custom version.
 .. Clones the downloaded ruleset, `myruleset.yaml`, to create a new custom ruleset, `mynewruleset.` Puts the `operation-default-response` and `operation-operationId` rules in the warning section in `mynewruleset`.
 .. Lists the rules in the modified version of the ruleset, `mynewruleset.yaml`, to verify that the rules are the way you want them.
-
-[[list-rules]]
-== List Ruleset Rules Using Anypoint CLI
-
-Optionally use Anypoint CLI to list the rules:
-
-* Before you modify the ruleset to help determine what you want to change (the "before" list)
-* After you change the ruleset (the "after" list) to compare to the "before" list and ensure you changed what you meant to change 
-
-TIP: Use the redirection operator (`>` to overwrite or `>>` to append) to write the output of the `info` command to a file for easier comparison.
-
-To list the rules in a ruleset, use the `governance:ruleset:info` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-info,leveloffset=+2]
-
-include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier]
 
 == Next Steps 
 
