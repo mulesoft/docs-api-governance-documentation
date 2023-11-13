@@ -1,5 +1,5 @@
 name: api-governance
-title: Anypoint API Governance
+title: API Governance
 version: master
 nav:
 - modules/ROOT/nav.adoc
