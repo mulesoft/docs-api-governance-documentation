@@ -14,7 +14,7 @@ With Anypoint API Governance you can:
 
 == Governance Console
 
-In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
+In the API Governance console, add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 Monitor your API conformance and notify developers to help improve the conformance.
 
 Developers with the *Governance Viewer* permission can view the API governance report on the console in view-only mode.
@@ -45,7 +45,7 @@ In Design Center API Designer:
 
 // Screenshot of conformance validation in APID with callouts
 
-include::_partials/api-gov-apid-scap-callouts.adoc[]
+// include::_partials/api-gov-apid-scap-callouts.adoc[]
 
 [[api-manager-overview]]
 === API Manager
@@ -56,7 +56,7 @@ In API Manager:
 
 // Screenshot of a Conformance Report page with callouts 
 
-include::_partials/api-gov-apim-governance-report.adoc[]
+// include::_partials/api-gov-apim-governance-report.adoc[]
 
 == Anypoint API Governance Overview Video 
 
