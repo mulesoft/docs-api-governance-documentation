@@ -12,6 +12,14 @@ With Anypoint API Governance you can:
 * *Apply consistent rules from design time to deployment:* Apply governance rulesets from design time to deployment using centralized governance.
 * *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
 
+== Anypoint API Governance Overview Video 
+
+Watch the Anypoint API Governance Product Spotlight video to see a quick overview of Anypoint API Governance.
+
+++++
+include::_partials/api-gov-gs-video.html[]
+++++
+
 == Governance Console
 
 In the API Governance console, add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
@@ -55,14 +63,6 @@ In API Manager:
 // Screenshot of a Conformance Report page with callouts 
 
 // include::_partials/api-gov-apim-governance-report.adoc[]
-
-== Anypoint API Governance Overview Video 
-
-Watch the Anypoint API Governance Product Spotlight video to see a quick overview of Anypoint API Governance.
-
-++++
-include::_partials/api-gov-gs-video.html[]
-++++
 
 == Anypoint API Governance Concepts
 
