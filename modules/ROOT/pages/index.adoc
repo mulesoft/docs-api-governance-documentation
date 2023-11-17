@@ -57,17 +57,9 @@ Following are the concepts you need to know to use Anypoint API Governance.
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
-// Definition of Governance Profile Status
-
-include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
-
 // Definition of Governance Rulesets
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
-
-// Definition of Governed APIs
-
-include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 // Definition of Governance Status
 
@@ -88,10 +80,6 @@ include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leve
 // Definition of Project Errors
 
 include::general::partial$api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
-
-// Definition of API Governance Usage Reports
-
-include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+2]
 
 // Definition of API
 
@@ -124,3 +112,4 @@ include::general::partial$api-gov-concepts.adoc[tag=api-catalog-info,leveloffset
 == See Also
 
 * xref:get-started.adoc[]
+* xref:general::glossary.adoc[]
