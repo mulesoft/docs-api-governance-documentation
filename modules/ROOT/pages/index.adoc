@@ -69,14 +69,6 @@ include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffse
 
 include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
-// Definition of API Conformance Status
-
-include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
-
-// Definition of Nonconformance Severity
-
-include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
-
 // Definition of Project Errors
 
 include::general::partial$api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
