@@ -1,6 +1,10 @@
 = Identifying APIs to Govern
 
-APIs that meet the filter criteria in API Governance profiles become _governed APIs_. Identifying the APIs to govern before creating your governance profiles helps ensure that you are governing the APIs in the way you want to govern them and that conformance notifications are sent only to the API owners who are ready to begin making their APIs conformant to your governance profiles.
+APIs that meet the filter criteria in API Governance profiles become _governed APIs_. 
+Identify the APIs to govern before creating your governance profiles to help ensure that:
+
+* You are governing only the APIs that you want to govern
+* API owners are ready for governance before they start receiving conformance notifications
 
 == Add Tags and Categories to APIs in Exchange
 
