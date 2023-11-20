@@ -29,9 +29,9 @@ Monitor your API conformance and notify developers to help improve the conforman
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-== Governance in Exchange, Design Center, and API Manager
+== Governance in Anypoint Platform
 
-API Governance is integrated with Exchange, Design Center, and API Manager.
+You can view governance conformance information and take action to fix issues in several places in Anypoint Platform.
 
 [[exchange-overview]]
 In Exchange:
