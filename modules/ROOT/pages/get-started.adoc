@@ -28,7 +28,7 @@ This permission allows API Governance users, such as API governance and security
 
 Anypoint Platform organization administrators are allowed full access to API Governance regardless of their API Governance permission settings. 
 
-The *Governance Viewer* permission is overridden by higher level permissions. For example, if a user has either the *Governance Administrator* permission or is an organization administrator, setting the *Governance Viewer* permission for them does not limit their permissions.
+The *Governance Viewer* permission is overridden by higher level permissions. If a user has the *Governance Administrator* permission or is an organization administrator, setting the *Governance Viewer* permission for them does not limit their permissions.
 
 [[opt-in]]
 === Opt in to Additional Functionality
