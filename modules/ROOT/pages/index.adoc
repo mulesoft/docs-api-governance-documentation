@@ -22,32 +22,32 @@ include::_partials/api-gov-gs-video.html[]
 
 == Governance Console
 
-In the API Governance console, add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
+In the API Governance console, governance administrators can add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
 Monitor your API conformance and notify developers to help improve the conformance.
 
 // Screenshot of the console with callouts
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
-== Governance in Anypoint Platform
+== Governance Across Anypoint Platform
 
-You can view governance conformance information and take action to fix issues in several places in Anypoint Platform.
+In addition to viewing API conformance information in the API Governance console, developers,  architects, and implementors can view governance conformance information and take action to fix issues in several places in Anypoint Platform. These include:
 
 [[exchange-overview]]
-In Exchange:
+* Exchange
 
-* Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
-* Implementors can view rulesets to determine how to fix API instance conformance issues.
+** Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
+** Implementors can view rulesets to determine how to fix API instance conformance issues.
 
 [[design-center-overview]]
-In Design Center API Designer:
+* Design Center API Designer:
 
-* Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+** Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
 
 [[api-manager-overview]]
-In API Manager:
+* API Manager:
 
-* Implementors can check API instance conformance by viewing the comprehensive governance report. 
+** Implementors can check API instance conformance by viewing comprehensive governance reports. 
 
 == Anypoint API Governance Concepts
 
