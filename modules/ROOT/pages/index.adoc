@@ -9,7 +9,7 @@ With Anypoint API Governance you can:
 
 * *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
 * *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
-* *Apply consistent rules from design time to deployment:* Apply governance rulesets from design time to deployment using centralized governance.
+* *Apply consistent rules from design time to deployment:* Use governance rulesets to apply centralized governance to multiple aspects of your APIs, from specifications at design time to instances at deployment.
 * *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
 
 == Anypoint API Governance Overview Video 
