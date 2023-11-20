@@ -10,9 +10,9 @@ Identify the APIs to govern before creating your governance profiles to help ens
 
 To identify sets of APIs to govern, apply tags and categories to the API assets in Exchange. You can then select tags and categories as filter criteria when you create your governance profiles. 
 
-* To identify the APIs to govern by adding asset tags to the API assets in Exchange, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Add and Remove Asset Tags in Exchange].
+* To add asset tags to API assets in Exchange, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Add and Remove Asset Tags in Exchange].
 
-* To identify the APIs to govern by adding categories to the API assets in Exchange, see xref:exchange::to-describe-an-asset#add-and-remove-categories.adoc[Add and Remove Categories in Exchange].
+* To add categories to API assets in Exchange, see xref:exchange::to-describe-an-asset#add-and-remove-categories.adoc[Add and Remove Categories in Exchange].
 
 [[select-and-add-tags]]
 == Select and Add Tags in Governance Profiles
