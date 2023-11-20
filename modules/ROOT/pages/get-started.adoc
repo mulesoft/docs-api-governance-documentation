@@ -16,19 +16,19 @@ Ensure you have access to API Governance with one of the following permissions:
 
 * *API Governance* > *Governance Viewer*
 +
-With this permission, API Governance users, such as API developers and architects, can:
+This permission allows API Governance users, such as API developers and architects, to:
 
-** View the API Governance console
-** View the list of governed APIs that they have permission to view
+** View the API Governance console conformance summary 
+** View the *Governed APIs* page with the list of governed APIs that they have permission to view
 ** Download a detailed governance report for their APIs in CSV format.
 +
 * *API Governance* > *Governance Administrator*
 +
-With this permission, API Governance users, such as API governance and security officers, have full view and administrative access to API Governance.
-+ 
-* Anypoint Platform organization administrators have full access to API Governance regardless of their API Governance permission settings. 
+This permission allows API Governance users, such as API governance and security officers, full access to API Governance. 
 
-If a user has either the *Governance Administrator* permission or is an organization administrator, you cannot restrict the permission by setting the *Governance Viewer* permission.
+Anypoint Platform organization administrators are allowed full access to API Governance regardless of their API Governance permission settings. 
+
+The *Governance Viewer* permission is overridden by higher level permissions. For example, if a user has either the *Governance Administrator* permission or is an organization administrator, setting the *Governance Viewer* permission for them does not limit their permissions.
 
 [[opt-in]]
 === Opt in to Additional Functionality
