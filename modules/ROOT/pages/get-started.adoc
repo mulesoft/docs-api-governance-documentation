@@ -33,9 +33,7 @@ The *Governance Viewer* permission is overridden by higher level permissions. If
 [[opt-in]]
 === Opt in to Additional Functionality
  
-If you have an opt-in banner in the API Governance console, opt in to get additional functionality. See the xref:release-notes::api-governance/api-governance-release-notes.adoc##oct-17-2023[API Governance Release Notes entry for October, 17 2023].
-
-If you don't see the opt-in banner, you already have access to the new functionality.
+If you're an administrator and have an opt-in banner in the API Governance console, opt in to get additional functionality for your business groups (organizations). See the xref:release-notes::api-governance/api-governance-release-notes.adoc##oct-17-2023[API Governance Release Notes entry for October, 17 2023].
 
 This documentation is written for the full product functionality that is available after the opt-in.
 
