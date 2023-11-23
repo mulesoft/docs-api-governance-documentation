@@ -1,14 +1,11 @@
-= List of API Governance CLI Commands
+= CLI Commands for API Governance
 
-You can use the following Anypoint CLI 4.x commands to automate your API Governance processes.  
-
-NOTE: If you are using Anypoint CLI 3.x, see the xref:3.x@anypoint-cli::api-governance.adoc[Anypoint CLI 3.x documentation].
-
-// We cannot use an include of the summary directly from the Anypoint CLI repo api-governance partial here because we are reusing each command's doc in context with the related UI commands in a task-based way  
+You can use Anypoint CLI commands to automate your API Governance processes and work with custom rulesets.   
 
 [%header,cols="35a,65a"]
 |===
 |Command |Description
+| xref:custom-rulesets-validate-and-publish#publish-ruleset[exchange:asset:upload] | Uploads a custom ruleset asset along with its documentation to Exchange (publishes an asset)
 | xref:monitor-api-conformance.adoc#governance-api-evaluate[governance:api:evaluate] | Evaluates filter criteria to determine which rulesets apply to APIs that meet that criteria
 | xref:custom-rulesets-new#governance-api-inspect[governance:api:inspect] | Inspects an API specification and lists its schemas
 | xref:find-conformance-issues.adoc#governance-api-validate[governance:api:validate] | Validates an API specification against a specified governance ruleset
@@ -23,3 +20,9 @@ NOTE: If you are using Anypoint CLI 3.x, see the xref:3.x@anypoint-cli::api-gove
 | xref:create-custom-rulesets.adoc#governance-ruleset-init[governance:ruleset:init] | Initializes a governance ruleset definition based on a data schema
 | xref:custom-rulesets-validate-and-publish#governance-ruleset-validate[governance:ruleset:validate] | Validates a governance ruleset specification's format
 |===
+
+You can also use an open-source CLI, `ruleset-development-cli`, to help you create custom rulesets. See xref:custom-rulesets-new#create-rulesets-using-cli[Create Rulesets Using the Ruleset Development CLI].
+
+== See Also
+
+* xref:install-cli.adoc[]
