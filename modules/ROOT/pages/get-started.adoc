@@ -53,7 +53,7 @@ Govern your APIs using the following steps:
 
 . xref:find-conformance-issues.adoc[Find and fix conformance issues in instances] in API Manager at deployment time.
 
-. xref:create-custom-rulesets.adoc[(Optional) Create custom rulesets]  to more effectively govern APIs for your business groups (organizations).
+. xref:create-custom-rulesets.adoc[(Optional) Create custom rulesets] to more effectively govern APIs for your business groups (organizations).
 
 == See Also
 
