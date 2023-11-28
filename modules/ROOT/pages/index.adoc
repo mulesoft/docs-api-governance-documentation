@@ -42,7 +42,7 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 == Governance Across Anypoint Platform
 
-In addition to viewing API conformance information in the API Governance console, developers, architects, and implementors can view governance conformance information and fix issues from Anypoint Platform:
+In addition to viewing API conformance information in the API Governance console, developers, architects, and implementors can view governance conformance information and take action to fix issues using:
 
 [[exchange-overview]]
 * Exchange
