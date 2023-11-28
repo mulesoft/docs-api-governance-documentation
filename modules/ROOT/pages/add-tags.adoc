@@ -12,7 +12,7 @@ To identify sets of APIs to govern, apply tags and categories to the API assets 
 
 * To add asset tags, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Add and Remove Asset Tags in Exchange].
 
-* To add categories, see xref:exchange::to-describe-an-asset#add-and-remove-categories.adoc[Add and Remove Categories in Exchange].
+* To add categories, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-categories[Add and Remove Categories in Exchange].
 
 [[select-and-add-tags]]
 == Select and Add Tags in Governance Profiles

@@ -4,7 +4,7 @@ After you become familiar with the UI and concepts covered in the xref:index.ado
 
 == Before You Begin
 
-Before you begin using API Governance:
+Before you begin using API Governance, see the following sections:
 
 * <<verify-permissions>>
 * <<opt-in>>
@@ -18,8 +18,8 @@ Ensure you have access to API Governance with one of the following permissions:
 +
 This permission allows API Governance users, such as API developers and architects, to:
 
-** View the API Governance console conformance summary 
-** View the *Governed APIs* page with the list of governed APIs that they have permission to view
+** View the API Governance console conformance summary. 
+** View the *Governed APIs* page with the list of governed APIs that they have permission to view.
 ** Download a detailed governance report for their APIs in CSV format.
 +
 * *API Governance* > *Governance Administrator*
@@ -28,7 +28,7 @@ This permission allows API Governance users, such as API governance and security
 
 Anypoint Platform organization administrators are allowed full access to API Governance regardless of their API Governance permission settings. 
 
-The *Governance Viewer* permission is overridden by higher level permissions. If a user has the *Governance Administrator* permission or is an organization administrator, setting the *Governance Viewer* permission for them does not limit their permissions.
+Higher level permissions override the *Governance Viewer* permission. If a user has the *Governance Administrator* permission or is an organization administrator, setting the *Governance Viewer* permission for them does not limit their permissions.
 
 [[opt-in]]
 === Opt in to Additional Functionality

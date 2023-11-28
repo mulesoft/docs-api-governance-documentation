@@ -7,10 +7,21 @@ API lifecycle.
 
 With Anypoint API Governance you can:
 
-* *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
-* *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
-* *Apply consistent rules from design time to deployment:* Use governance rulesets to apply centralized governance to multiple aspects of your APIs, from specifications at design time to instances at deployment.
-* *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
+* Improve your organization's API quality:
++
+Identify conformance issues in governed APIs and take steps to resolve them.
++
+* Share and enforce governance best practices:
++
+Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
++
+* Apply consistent rules from design time to deployment:
++
+Use governance rulesets to apply centralized governance to multiple aspects of your APIs, from specifications at design time to instances at deployment.
++
+* Enforce governance within your DevOps organization:
++
+Automate API governance using CLI commands in your CI/CD pipeline.
 
 == Anypoint API Governance Overview Video 
 
@@ -22,8 +33,8 @@ include::_partials/api-gov-gs-video.html[]
 
 == Governance Console
 
-In the API Governance console, governance administrators can add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
-Monitor your API conformance and notify developers to help improve the conformance.
+In the API Governance console, governance administrators can add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides an overview of conformance for all of your validated APIs.
+Monitor your API conformance and notify developers to help improve conformance.
 
 // Screenshot of the console with callouts
 
