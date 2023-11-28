@@ -1,8 +1,8 @@
 = Installing the API Governance CLI
 
-If you plan to use the API Governance CLI commands, install Anypoint CLI on the systems where you plan to run the commands.
+If you plan to use the API Governance CLI commands, install Anypoint CLI where you run your commands.
 
-The API Governance plugin is a default plugin included in the Anypoint CLI 4.x installation. For detailed installation instructions, including prerequisite software requirements, see xref:anypoint-cli::install.adoc[].
+The API Governance plugin is a default plugin included in the Anypoint CLI  installation. For detailed installation instructions, including prerequisite software requirements, see xref:anypoint-cli::install.adoc[].
 
 == See Also
 
