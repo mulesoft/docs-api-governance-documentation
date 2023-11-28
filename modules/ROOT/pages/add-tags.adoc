@@ -4,7 +4,7 @@ APIs that meet the filter criteria in API Governance profiles become _governed A
 Identify the APIs to govern before creating your governance profiles to help ensure that:
 
 * You are governing only the APIs that you want to govern.
-* API owners are ready for governance before they start receiving conformance notifications
+* API owners are ready for governance before they start receiving conformance notifications.
 
 == Add Tags and Categories to APIs in Exchange
 
