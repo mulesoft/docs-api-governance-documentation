@@ -21,6 +21,14 @@ You can use Anypoint CLI commands to automate your API Governance processes and 
 | xref:custom-rulesets-validate-and-publish#governance-ruleset-validate[governance:ruleset:validate] | Validates a governance ruleset specification's format
 |===
 
+[[permissions-anypoint-cli]]
+== Permissions for Anypoint CLI Governance Commands
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-cli-permissions]
+
+[[ruleset-dev-cli]]
+== Ruleset Development CLI
+
 You can also use an open-source CLI, `ruleset-development-cli`, to help you create custom rulesets. See xref:custom-rulesets-new#create-rulesets-using-cli[Create Rulesets Using the Ruleset Development CLI].
 
 == See Also
