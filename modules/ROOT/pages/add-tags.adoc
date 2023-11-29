@@ -1,14 +1,18 @@
 = Identifying APIs to Govern
 
-APIs that meet the filter criteria in API Governance profiles become _governed APIs_. Identifying the APIs to govern before creating your governance profiles helps ensure that you are governing the APIs in the way you want to govern them and that conformance notifications are sent only to the API owners who are ready to begin making their APIs conformant to your governance profiles.
+APIs that meet the filter criteria in API Governance profiles become _governed APIs_. 
+Identify the APIs to govern before creating your governance profiles to help ensure that:
+
+* You are governing only the APIs that you want to govern.
+* API owners are ready for governance before they start receiving conformance notifications.
 
 == Add Tags and Categories to APIs in Exchange
 
 To identify sets of APIs to govern, apply tags and categories to the API assets in Exchange. You can then select tags and categories as filter criteria when you create your governance profiles. 
 
-* To identify the APIs to govern by adding asset tags to the API assets in Exchange, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Add and Remove Asset Tags in Exchange].
+* To add asset tags, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-asset-tags[Add and Remove Asset Tags in Exchange].
 
-* To identify the APIs to govern by adding categories to the API assets in Exchange, see xref:exchange::to-describe-an-asset#add-and-remove-categories.adoc[Add and Remove Categories in Exchange].
+* To add categories, see xref:exchange::to-describe-an-asset.adoc#add-and-remove-categories[Add and Remove Categories in Exchange].
 
 [[select-and-add-tags]]
 == Select and Add Tags in Governance Profiles
