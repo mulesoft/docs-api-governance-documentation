@@ -10,6 +10,8 @@ You can view the latest status information in the console.
 
 include::_partials/api-gov-console-scap-callouts.adoc[]
 
+NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
+
 // Definition of Governance Profiles
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
