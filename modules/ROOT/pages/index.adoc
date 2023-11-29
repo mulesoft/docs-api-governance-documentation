@@ -7,54 +7,21 @@ API lifecycle.
 
 With Anypoint API Governance you can:
 
-* *Improve your organization's API quality:* Identify conformance issues in governed APIs and take steps to resolve them.
-* *Share and enforce governance best practices:* Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
-* *Apply consistent rules from design time to deployment:* Apply governance rulesets from design time to deployment using centralized governance.
-* *Enforce governance within your DevOps organization:* Automate API governance using CLI commands in your CI/CD pipeline.
-
-== Governance Console
-
-In the API Governance console, add <<gov-rulesets,_governance rulesets_>> to <<gov-profiles,_governance profiles_>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides you with an overview of conformance for all validated APIs.
-Monitor your APIs' conformance and notify developers to help improve the conformance.
-
-// Screenshot of the console with callouts
-
-include::_partials/api-gov-console-scap-callouts.adoc[]
-
-== Governance in Exchange, Design Center, and API Manager
-
-API Governance is integrated with <<exchange-overview>>, <<design-center-overview>>, and <<api-manager-overview>>.
-
-[[exchange-overview]]
-=== Exchange
-
-In Exchange:
-
-* Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
-* Implementors can view rulesets to determine how to fix API instance conformance issues.
-
-[[design-center-overview]]
-=== Design Center
-
-In Design Center API Designer:
-
-* Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
-* Use the *Project Errors* section for information about where the issue is in the specification and how to fix it.
-
-// Screenshot of conformance validation in APID with callouts
-
-include::_partials/api-gov-apid-scap-callouts.adoc[]
-
-[[api-manager-overview]]
-=== API Manager
-
-In API Manager:
-
-* Implementors can check API instance conformance by viewing the comprehensive governance report. 
-
-// Screenshot of a Conformance Report page with callouts 
-
-include::_partials/api-gov-apim-governance-report.adoc[]
+* Improve your organization's API quality:
++
+Identify conformance issues in governed APIs and take steps to resolve them.
++
+* Share and enforce governance best practices:
++
+Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
++
+* Apply consistent rules from design time to deployment:
++
+Use governance rulesets to apply centralized governance to multiple aspects of your APIs, from specifications at design time to instances at deployment.
++
+* Enforce governance within your DevOps organization:
++
+Automate API governance using CLI commands in your CI/CD pipeline.
 
 == Anypoint API Governance Overview Video 
 
@@ -64,6 +31,35 @@ Watch the Anypoint API Governance Product Spotlight video to see a quick overvie
 include::_partials/api-gov-gs-video.html[]
 ++++
 
+== Governance Console
+
+In the API Governance console, governance administrators can add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides an overview of conformance for all of your validated APIs.
+Monitor your API conformance and notify developers to help improve conformance.
+
+// Screenshot of the console with callouts
+
+include::_partials/api-gov-console-scap-callouts.adoc[]
+
+== Governance Across Anypoint Platform
+
+In addition to viewing API conformance information in the API Governance console, developers, architects, and implementors can view governance conformance information and take action to fix issues using:
+
+[[exchange-overview]]
+* Exchange
+
+** Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
+** Implementors can view rulesets to determine how to fix API instance conformance issues.
+
+[[design-center-overview]]
+* Design Center API Designer:
+
+** Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+
+[[api-manager-overview]]
+* API Manager:
+
+** Implementors can check API instance conformance by viewing comprehensive governance reports. 
+
 == Anypoint API Governance Concepts
 
 Following are the concepts you need to know to use Anypoint API Governance.
@@ -72,17 +68,9 @@ Following are the concepts you need to know to use Anypoint API Governance.
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
-// Definition of Governance Profile Status
-
-include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
-
 // Definition of Governance Rulesets
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
-
-// Definition of Governed APIs
-
-include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 // Definition of Governance Status
 
@@ -92,21 +80,9 @@ include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffse
 
 include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
 
-// Definition of API Conformance Status
-
-include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
-
-// Definition of Nonconformance Severity
-
-include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
-
 // Definition of Project Errors
 
 include::general::partial$api-gov-concepts.adoc[tag=project-errors,leveloffset=+2]
-
-// Definition of API Governance Usage Reports
-
-include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+2]
 
 // Definition of API
 
@@ -139,3 +115,4 @@ include::general::partial$api-gov-concepts.adoc[tag=api-catalog-info,leveloffset
 == See Also
 
 * xref:get-started.adoc[]
+* xref:general::glossary.adoc[]

@@ -1,7 +1,9 @@
 = Applying Governance Rulesets to Specified APIs
 
 After you identify the APIs in Exchange that 
-you want to govern, create your governance profiles. Governance profiles enable you to filter the specific sets of APIs to govern for each set of rulesets.
+you want to govern, add your governance profiles. Governance profiles enable you to filter the specific sets of APIs to govern for each set of rulesets.
+
+NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
 [[create-profile-in-console]]
 == Create a Governance Profile Using the API Governance Console
