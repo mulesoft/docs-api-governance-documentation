@@ -4,7 +4,7 @@ After you create a custom ruleset:
 
 . <<validate-ruleset,Validate>> the ruleset.
 . <<generate-ruleset-doc,Generate the documentation>> for the ruleset. 
-. <<publish-ruleset,Publish your custom ruleset>> as a new asset. 
+. <<publish-ruleset,Publish your custom ruleset>> to Exchange as a new asset. 
 
 For an example sequence of commands to validate and publish your rulesets, see <<example-publish-sequence>>.
 
@@ -20,16 +20,18 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-valida
 [[generate-ruleset-doc]]
 == Generate the Ruleset Documentation
 
-Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
+Use the following command to generate a documentation ZIP file for a ruleset YAML file.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 
 [[publish-ruleset]]
 == Publish the Custom Ruleset
 
-You can publish a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset assets.
+You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset assets.
 
-To validate your ruleset locally before you upload it, see <<validate-ruleset>>.
+Use the following command to upload a ruleset and its documentation to Exchange.
+
+include::anypoint-cli::partial$exchange-assets.adoc[tag=exchange-asset-upload,leveloffset=+1]
 
 [[example-publish-sequence]]
 == Example Command Sequence to Validate and Publish
