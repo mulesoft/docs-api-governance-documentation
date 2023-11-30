@@ -72,13 +72,29 @@ include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloff
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
 
-// Definition of Governance Status
+// Definition of Governed APIs
 
-include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
 
 // Definition of API Conformance
 
 include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
+
+// Definition of API Conformance Status
+
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
+
+// Definition of Nonconformance Severity
+
+include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
+
+// Definition of Governance Status
+
+include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+
+// Definition of Governance Profile Status
+
+include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
 
 // Definition of Project Errors
 
