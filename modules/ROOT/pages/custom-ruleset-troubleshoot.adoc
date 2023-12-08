@@ -1,0 +1,66 @@
+= Troubleshooting Custom Ruleset CLI
+
+If you encounter errors when attempting to run CLI commands to work with custom rulesets, troubleshoot them as follows.
+
+== 409 Error When Uploading
+
+A 409 error when running the `exchange asset upload` command to publish a ruleset indicates that you are attempting to upload a duplicate asset to Exchange.
+
+To troubleshoot this issue:
+
+* Change the command to specify a unique ruleset asset. 
+** If you want to publish a new version of the ruleset, change the version or replace the specific version with latest.
++
+For example:
++
+Change 
++
+`xxx`
++
+to 
++
+`xxx` 
+
+** Change the name to create a new asset.
++
+For example:
++
+Change 
++
+`xxx`
++
+to 
++
+`xxx` 
+
+== General Publishing Error 
+
+This error might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload the ruleset incorrectly and the asset type is set to Custom instead of Ruleset, you cannot republish under the same name. 
+
+To troubleshoot this issue:
+
+Check to see if the ruleset asset you uploaded is set to Custom type. If so, change the name of the ruleset and try uploading again with the proper command syntax to publish the ruleset and the ruleset documentation together.
+
+For example:
++
+Change 
++
+`xxx`
++
+to 
++
+`xxx`
+
+== Issue 3
+
+Windows Issue 
+
+https://salesforce-internal.slack.com/archives/D063G6VJ1FW/p1698698587080449
+
+== Issue 4
+
+Issue With the Exchange JSON File
+
+https://salesforce.enterprise.slack.com/files/U01PL7M3E49/F0637M2V63Y/ruleset.yaml
+
+https://mulesoft.my.salesforce.com/5006R00001xOEBp
