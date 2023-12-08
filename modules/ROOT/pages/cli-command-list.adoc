@@ -1,4 +1,5 @@
 = CLI Commands for API Governance
+:page-aliases: install-cli.adoc
 
 You can use Anypoint CLI commands to automate your API Governance processes and work with custom rulesets.   
 
@@ -21,6 +22,11 @@ You can use Anypoint CLI commands to automate your API Governance processes and 
 | xref:custom-rulesets-validate-and-publish#governance-ruleset-validate[governance:ruleset:validate] | Validates a governance ruleset specification's format
 |===
 
+[[install-anypoint-cli]]
+= Install the Anypoint Platform CLI
+
+If you plan to use the API Governance CLI commands, install Anypoint Platform CLI where you run your commands. The Anypoint CLI installation includes the API Governance plugin. For detailed installation instructions, including prerequisite software requirements, see xref:anypoint-cli::install.adoc[].
+
 [[permissions-anypoint-cli]]
 == Permissions for Anypoint CLI Governance Commands
 
@@ -33,5 +39,4 @@ You can also use an open-source CLI, `ruleset-development-cli`, to help you crea
 
 == See Also
 
-* xref:install-cli.adoc[]
 * xref:get-started.adoc[]
