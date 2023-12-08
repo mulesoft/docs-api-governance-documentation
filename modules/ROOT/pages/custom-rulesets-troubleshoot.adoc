@@ -4,7 +4,7 @@ If you encounter errors when attempting to run CLI commands to work with custom 
 
 == Before You Begin Troubleshooting
 
-Ensure you are using the latest version of anypoint-cli-v4. If not, install the latest version before continuing troubleshooting. Refer to xref:anypoint-cli::install.adoc[].
+Ensure you are using the latest version of `anypoint-cli-v4`. If not, install the latest version before continuing troubleshooting. Refer to xref:anypoint-cli::install.adoc[].
 
 [[cli-upload-dupl-error]]
 == 409 Error When Uploading
@@ -118,10 +118,10 @@ The commands are parsed for specific information and if anything isn't recognize
 
 To troubleshoot errors that aren't obvious:
 
-* Check that you have avoided common mistakes such as:
-** Ensure that you are entering the command flags and options as documented.
-** Ensure that you have specified everything in the command, including the command itself, flags, classifiers, options, folder names, and file names, using the proper case. Commands are case-sensitive. 
-** Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory to the working directory where they're located.
+* Ensure that you are entering the command flags and options as documented.
+* Ensure that you have specified everything in the command, including the command itself, flags, classifiers, options, folder names, and file names, using the proper case. Commands are case-sensitive. 
+* Ensure that you are entering your own information in option values. Most command examples cannot be run verbatim. You must use your own values for options, including organization ID, environment ID, host ID, and folder and file names.
+* Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory to the working directory where they're located.
 * Search the https://help.mulesoft.com[MuleSoft Help Center^] for similar errors.
 
 == See Also
