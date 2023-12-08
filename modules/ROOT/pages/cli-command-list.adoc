@@ -40,3 +40,4 @@ You can also use an open-source CLI, `ruleset-development-cli`, to help you crea
 == See Also
 
 * xref:get-started.adoc[]
+* xref:anypoint-cli::install.adoc[]

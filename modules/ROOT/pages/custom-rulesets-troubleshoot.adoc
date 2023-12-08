@@ -2,40 +2,50 @@
 
 If you encounter errors when attempting to run CLI commands to work with custom rulesets, troubleshoot them as follows.
 
+== Before You Begin Troubleshooting
+
+Ensure you are using the latest version of anypoint-cli-v4. If not, install the latest version before continuing troubleshooting. Refer to xref:anypoint-cli::install.adoc[].
+
+[[cli-upload-dupl-error]]
 == 409 Error When Uploading
 
-A 409 error when running the `exchange asset upload` command to publish a ruleset indicates that you are attempting to upload a duplicate asset to Exchange.
+A 409 error when running the `exchange asset upload` command to publish a ruleset typically indicates that you are attempting to upload a duplicate asset to Exchange.
 
 To troubleshoot this issue:
 
-* Change the command to specify a unique ruleset asset. 
-** If you want to publish a new version of the ruleset, change the version or replace the specific version with latest.
+* Change the command to specify a unique ruleset name. 
+** If you want to publish a new version of the ruleset, change the version:
 +
-For example:
+Change the following command: 
 +
-Change 
-+
-`xxx`
-+
-to 
-+
-`xxx` 
-
-** Change the name to create a new asset.
-+
-For example:
-+
-Change 
-+
-`xxx`
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
 +
 to 
 +
-`xxx` 
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.1 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
 
-== General Publishing Error 
+** If you want to change the name to create a new asset:
++
+Change the following command: 
++
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
++
+to 
++
+----
+anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
 
-This error might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload the ruleset incorrectly and the asset type is set to Custom instead of Ruleset, you cannot republish under the same name. 
+[[generic-publish-error]]
+== Publishing Error 
+
+A non-specific publishing error might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload the ruleset incorrectly and the asset type is set to Custom instead of Ruleset, you cannot republish as the Ruleset type under the same name, even if you change the version. 
 
 To troubleshoot this issue:
 
@@ -43,28 +53,79 @@ Check to see if the ruleset asset you uploaded is set to Custom type. If so, cha
 
 For example:
 +
-Change 
+Change the name in following command: 
 +
-`xxx`
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
 +
-to 
+to a new name:
 +
-`xxx`
+----
+anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
 
-== Issue 3
+[[parse-properties-error]]
+== Error Parsing Properties
 
-Windows Issue 
+When using Anypoint CLI commands that pass JSON properties from Microsoft Windows, you might get an error similar to the following:
+----
+ »  Error: Parsing --properties
+ »   Unexpected token ' in JSON at position 0
+----
 
-https://salesforce-internal.slack.com/archives/D063G6VJ1FW/p1698698587080449
+To troubleshoot this issue:
 
-== Issue 4
+Escape the JSON text using the backslash character (`\`).
 
-Issue With the Exchange JSON File
+For example:
 
-https://salesforce.enterprise.slack.com/files/U01PL7M3E49/F0637M2V63Y/ruleset.yaml
+Change the following command: 
 
-https://mulesoft.my.salesforce.com/5006R00001xOEBp
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
+
+To escape the double quotes (") and forward slashes (/) in the `--files` flag options:
+
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{\"ruleset.yaml\":\"\/myRulesetFolder\/mynewruleset.yaml\",\"docs.zip\":\"\/myRulesetFolder\/ruleset.doc.zip\"}'
+----
+
+[[asset-type-error]]
+== Error Determining Asset Type
+
+There are several causes for the following error:
+
+`Error: Could not determine asset type, step: Publishing asset`
+
+Some causes include:
+
+* You are specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is uploaded as `custom` type.
+* `exchange.json` or `--properties` flag properties are mismatched or incorrect
++
+The `exchange.json` file is optional when uploading an asset, since the required properties are either included are inferred from other properties. If you downloaded a ruleset and are uploading a new custom one, you must either remove the `exchange` project zip file or update it to match the new custom name, main file, and so on.
++
+If you are using an `exchange.json` file to pass properties to the upload command or have a `--properties` flag:
++
+** If you have properties specified in the command and in the `exchange.json` file, ensure that the properties match.
+** Ensure that all properties are up to date with the asset that you're uploading.
+
+[[misc-errors]]
+== Miscellaneous Errors
+
+The commands are parsed for specific information and if anything isn't recognized or is misinterpreted in the command, the error message might be misleading or vague. 
+
+To troubleshoot errors that aren't obvious:
+
+* Check that you have avoided common mistakes such as:
+** Ensure that you are entering the command flags and options as documented.
+** Ensure that you have specified everything in the command, including the command itself, flags, classifiers, options, folder names, and file names, using the proper case. Commands are case-sensitive. 
+** Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory to the working directory where they're located.
+* Search the https://help.mulesoft.com[MuleSoft Help Center^] for similar errors.
 
 == See Also
 
 * xref:cli-command-list.adoc[]
+* xref:anypoint-cli::install.adoc[]
+* xref:anypoint-cli::intro.adoc[]
