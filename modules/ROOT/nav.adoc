@@ -2,7 +2,6 @@
   * xref:index.adoc[Overview]
   * xref:api-governance-release-notes.adoc[Release Notes]
   * xref:get-started.adoc[Getting Started]
-  * xref:install-cli.adoc[Installing the CLI]
   * xref:add-tags.adoc[]
   * xref:create-profiles.adoc[]
   * xref:configure-notifications.adoc[]

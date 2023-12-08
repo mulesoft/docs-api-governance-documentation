@@ -41,8 +41,6 @@ This documentation is written for the full product functionality that is availab
 
 Govern your APIs using the following steps:
 
-. xref:install-cli.adoc[(Optional) Install Anypoint CLI] to run `governance` commands locally or in automation tools.
-
 . xref:add-tags.adoc[Identify] the APIs that you want to govern.
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
@@ -54,6 +52,8 @@ Govern your APIs using the following steps:
 . xref:find-conformance-issues.adoc[Find and fix conformance issues in instances] in API Manager at deployment time.
 
 . xref:create-custom-rulesets.adoc[(Optional) Create custom rulesets] to more effectively govern APIs for your business groups (organizations).
+
+. xref:cli-command-list.adoc[(Optional) Install and run CLI commands] to automate governance as part of your CI/CD pipeline and to more easily create custom rulesets.
 
 == See Also
 
