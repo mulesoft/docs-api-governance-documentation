@@ -52,15 +52,15 @@ To troubleshoot this issue:
 Check to see if the ruleset asset you uploaded is set to Custom type. If so, change the name of the ruleset and try uploading again with the proper command syntax to publish the ruleset and the ruleset documentation together.
 
 For example:
-+
+
 Change the name in following command: 
-+
+
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
-+
+
 to a new name:
-+
+
 ----
 anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
@@ -99,10 +99,10 @@ There are several causes for the following error:
 
 `Error: Could not determine asset type, step: Publishing asset`
 
-Some causes include:
+To troubleshoot this issue, consider some typical causes:
 
-* You are specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is uploaded as `custom` type.
-* `exchange.json` or `--properties` flag properties are mismatched or incorrect
+* Specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is uploaded as `custom` type.
+* Including properties in `exchange.json` or `--properties` that are mismatched or incorrect.
 +
 The `exchange.json` file is optional when uploading an asset, since the required properties are either included are inferred from other properties. If you downloaded a ruleset and are uploading a new custom one, you must either remove the `exchange` project zip file or update it to match the new custom name, main file, and so on.
 +
