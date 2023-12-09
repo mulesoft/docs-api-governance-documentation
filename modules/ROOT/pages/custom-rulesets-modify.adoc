@@ -66,5 +66,6 @@ After you modify the ruleset, see xref:custom-rulesets-validate-and-publish.adoc
 
 == See Also
 
+* xref:cli-commands-troubleshoot.adoc[]
 * xref:exchange::to-download-an-asset.adoc[]
 * xref:anypoint-cli::exchange-assets.adoc[]

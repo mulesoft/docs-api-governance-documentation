@@ -53,4 +53,5 @@ anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Be
 
 == See Also
 
+* xref:cli-commands-troubleshoot.adoc[]
 * xref:anypoint-cli::exchange-assets.adoc[]
