@@ -1,4 +1,4 @@
-= Troubleshooting Custom Ruleset CLI
+= Troubleshooting Anypoint CLI
 
 If you encounter errors when attempting to run CLI commands to work with custom rulesets, troubleshoot them as follows.
 
