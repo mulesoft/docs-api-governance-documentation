@@ -100,7 +100,7 @@ anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Be
 
 The commands are parsed for specific information and if anything isn't recognized or is misinterpreted in the command, the error message might be misleading or vague. 
 
-To troubleshoot errors that aren't obvious:
+To troubleshoot errors that are misleading or vague:
 
 * Ensure that you are entering the command flags and options as documented.
 * Ensure that you have specified everything in the command using the proper case, including the command itself, flags, classifiers, options, folder names, and file names. Commands are case-sensitive. 
