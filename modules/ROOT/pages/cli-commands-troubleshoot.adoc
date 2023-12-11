@@ -1,6 +1,6 @@
 = Troubleshooting Anypoint CLI
 
-If you encounter errors when attempting to run CLI commands, troubleshoot them as follows.
+If you encounter errors when attempting to run Anypoint CLI commands, troubleshoot them as follows.
 
 == Before You Begin Troubleshooting
 
@@ -9,32 +9,30 @@ Ensure you are using the latest version of `anypoint-cli-v4`. If not, install th
 [[cli-upload-dupl-error]]
 == 409 Error When Uploading
 
-A 409 error when running the `exchange asset upload` command to publish a ruleset typically indicates that you are attempting to upload a duplicate asset to Exchange.
+A 409 error when using the `exchange asset upload` command to publish a ruleset typically indicates that you are attempting to upload a duplicate asset to Exchange.
 
 To resolve this issue:
 
 * Change the command to specify a unique ruleset name. 
-** If you want to publish a new version of the ruleset, change the version:
-+
-Change the following command: 
+** To publish a new version of the ruleset, change the version in the command. For example, change `1.0.0` in the following command: 
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 +
-to 
+to `1.0.1`:
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.1 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-** If you want to change the name to create a new asset, change the following command: 
+** To change the asset ID to create a new asset, change the asset ID in the command. For example, change `my-auth-best-practices` in the following command: 
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 +
-to 
+to `my-new-auth-best-practices`:
 +
 ----
 anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
@@ -64,17 +62,13 @@ If you are using an `exchange.json` file to pass properties to the upload comman
 
 A non-specific publishing error might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload using the wrong syntax, you might inadvertently publish the ruleset as Custom type instead of Ruleset type. If this happens, you cannot republish the ruleset as the Ruleset type under the same name, even if you change the version. 
 
-To republish the ruleset in this situation, you must change the name of the ruleset and try uploading again with the proper command syntax.
-
-For example:
-
-Change the asset ID  (`my-auth-best-practices`): 
+To republish the ruleset in this situation, you must change the name of the ruleset and try uploading again with the proper command syntax. For example, change `my-auth-best-practices` in the following command: 
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-to a new asset ID (`my-new auth-best-practices`):
+to `my-new auth-best-practices`:
 
 ----
 anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
@@ -91,17 +85,13 @@ When using Anypoint CLI commands that pass JSON properties from Microsoft Window
 
 To resolve this issue:
 
-Escape the JSON text using the backslash character (`\`).
-
-For example:
-
-Change the following command: 
+Escape the JSON text using the backslash character (`\`). For example, change `"` and `/` in the following command: 
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-To escape the double quotes (") and forward slashes (/) in the `--files` flag options:
+to (\") and (\/):
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{\"ruleset.yaml\":\"\/myRulesetFolder\/mynewruleset.yaml\",\"docs.zip\":\"\/myRulesetFolder\/ruleset.doc.zip\"}'
