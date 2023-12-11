@@ -4,7 +4,7 @@ If you encounter errors when attempting to run CLI commands, troubleshoot them a
 
 == Before You Begin Troubleshooting
 
-Ensure you are using the latest version of `anypoint-cli-v4`. If not, install the latest version before continuing troubleshooting. Refer to xref:anypoint-cli::install.adoc[].
+Ensure you are using the latest version of `anypoint-cli-v4`. If not, install the latest version before continuing. Refer to xref:anypoint-cli::install.adoc[].
 
 [[cli-upload-dupl-error]]
 == 409 Error When Uploading
@@ -89,7 +89,7 @@ When using Anypoint CLI commands that pass JSON properties from Microsoft Window
  »   Unexpected token ' in JSON at position 0
 ----
 
-To troubleshoot this issue:
+To resolve this issue:
 
 Escape the JSON text using the backslash character (`\`).
 
