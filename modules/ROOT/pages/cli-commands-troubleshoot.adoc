@@ -14,25 +14,25 @@ A 409 error when using the `exchange asset upload` command to publish a ruleset 
 To resolve this issue:
 
 * Change the command to specify a unique ruleset name. 
-** To publish a new version of the ruleset, change the version in the command. For example, change `1.0.0` in the following command: 
+** To publish a new version of the ruleset, change the version in the command. For example, change `1.0.0` in the original command: 
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 +
-to `1.0.1`:
+To `1.0.1` in the updated command:
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.1 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-** To change the asset ID to create a new asset, change the asset ID in the command. For example, change `my-auth-best-practices` in the following command: 
+** To change the asset ID to create a new asset, change the asset ID in the command. For example, change `my-auth-best-practices` in the original command: 
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 +
-to `my-new-auth-best-practices`:
+To `my-new-auth-best-practices` in the updated command:
 +
 ----
 anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
@@ -48,27 +48,25 @@ There are several causes for the following error:
 To troubleshoot this issue, consider some typical causes:
 
 * Specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is uploaded as `custom` type.
-* Including properties in `exchange.json` or `--properties` that are mismatched or incorrect.
+* Including properties in `exchange.json` or `--properties` that are incorrect.
 +
-The `exchange.json` file is optional when uploading an asset, because the required properties are either included are inferred from other properties. If you downloaded a ruleset and are uploading a new custom one, either remove the `exchange` project zip file or update it to match the new custom name, main file, and so on.
+The `exchange.json` file is optional when uploading an asset, because the required properties are either included or are inferred from parameters, flags, or options. If you download a ruleset project on which to base your custom ruleset:
 +
-If you are using an `exchange.json` file to pass properties to the upload command or have a `--properties` flag:
-+
-** If you specify properties in the command and in the `exchange.json` file, ensure that none of the properties conflict.
-** Ensure that all properties are up to date with the asset that you're uploading.
+** Remove the `exchange.json` file from your working folder or project.
+** Update the properties in the `exchange.json` file to match your custom ruleset's asset ID, name, main file, and so on.
 
 [[generic-publish-error]]
 == Publishing Error 
 
 A non-specific publishing error might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload using the wrong syntax, you might inadvertently publish the ruleset as Custom type instead of Ruleset type. If this happens, you cannot republish the ruleset as the Ruleset type under the same name, even if you change the version. 
 
-To republish the ruleset in this situation, you must change the name of the ruleset and try uploading again with the proper command syntax. For example, change `my-auth-best-practices` in the following command: 
+To republish the ruleset in this situation, you must change the name of the ruleset and try uploading again with the proper command syntax. For example, change `my-auth-best-practices` in the original command: 
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-to `my-new auth-best-practices`:
+To `my-new auth-best-practices` in the updated command:
 
 ----
 anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
@@ -85,13 +83,13 @@ When using Anypoint CLI commands that pass JSON properties from Microsoft Window
 
 To resolve this issue:
 
-Escape the JSON text using the backslash character (`\`). For example, change `"` and `/` in the following command: 
+Escape the JSON text using the backslash character (`\`). For example, change `"` and `/` in the original command: 
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-to (\") and (\/):
+To (\") and (\/) in the updated command:
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{\"ruleset.yaml\":\"\/myRulesetFolder\/mynewruleset.yaml\",\"docs.zip\":\"\/myRulesetFolder\/ruleset.doc.zip\"}'
