@@ -26,7 +26,7 @@ To `1.0.1` in the updated command:
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.1 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-** To create a new asset, change the asset ID part of the asset identifier. For example, change `my-auth-best-practices` in the original command: 
+** To publish a new asset, change the asset ID part of the asset identifier. For example, change `my-auth-best-practices` in the original command: 
 +
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
@@ -61,15 +61,17 @@ The `exchange.json` file is optional when uploading an asset, because the requir
 [[generic-publish-error]]
 == Unable to Publish 
 
-A non-specific publishing error similar to `unable to publish` might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload using the wrong syntax, you might inadvertently publish the ruleset as custom type instead of ruleset type. If this happens, you cannot republish the ruleset as the ruleset type under the same name, even if you change the version. 
+A non-specific publishing error similar to `unable to publish` might occur when you're using the `exchange asset upload` command to upload your custom ruleset and its documentation. 
 
-To republish the ruleset in this situation, you must change the name of the ruleset and try uploading again with the proper command syntax. For example, change `my-auth-best-practices` in the original command: 
+If you attempt to upload an asset using the wrong command syntax, you might inadvertently publish it as the wrong asset type. You cannot republish the asset with the same asset ID as a different asset type even if you fix the syntax and change the version. 
+
+To republish the ruleset in this situation, fix the syntax and then change the asset ID and try uploading again. For example, change `my-auth-best-practices` in the fixed original command: 
 
 ----
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-To `my-new auth-best-practices` in the updated command:
+To `my-new auth-best-practices` in the fixed updated command:
 
 ----
 anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
