@@ -9,7 +9,7 @@ Ensure you are using the latest version of `anypoint-cli-v4`. If not, install th
 [[cli-upload-dupl-error]]
 == Status Code 409 Error When Uploading
 
-If you get the error `Request failed with status code 409` when using the `exchange asset upload` command to publish a ruleset, it might indicate that you're attempting to upload a duplicate asset.
+The error `Request failed with status code 409` when using the `exchange asset upload` command to publish a ruleset might occur when you're attempting to upload a duplicate asset.
 
 To resolve this issue:
 
@@ -41,9 +41,9 @@ anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "M
 [[asset-type-error]]
 == Error Determining Asset Type
 
-If you get the error `Could not determine asset type, step: Publishing asset` when using the `exchange asset upload` command to publish a ruleset or other asset, Anypoint CLI isn't able to determine the asset type from the command and any properties you provided. Anypoint CLI might not be able to correctly determine the asset type if you :
+The error `Could not determine asset type, step: Publishing asset` when using the `exchange asset upload` command to publish a ruleset or other asset might occur when you:
 
-* Specify a `--type` flag when specifying more than one file type in one or more `--files` flags. 
+* Specify a `--type` flag and more than one file type in one or more `--files` flags. 
 +
 If you are uploading multiple files, omit the `--type` flag to let Anypoint CLI infer the correct file type from the `classifier.packaging` in each `--files` flag.
 * Specify a `--type` flag that conflicts with the asset type Anypoint CLI infers. 
@@ -101,13 +101,13 @@ anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Be
 [[misc-errors]]
 == Miscellaneous Errors
 
-The commands are parsed for specific information and if anything isn't recognized or is misinterpreted in the command, the error message might be misleading or vague. 
+Anypoint CLI commands are parsed for specific information and if anything isn't recognized or is misinterpreted in the command, the error message might be misleading or vague. 
 
 To troubleshoot errors that are misleading or vague:
 
 * Ensure that you are entering the command flags and options as documented.
 * Ensure that you have specified everything in the command using the proper case, including the command itself, flags, classifiers, options, folder names, and file names. Commands are case-sensitive. 
-* Ensure that there are no curly, or smart, quotation marks in your command. Replace any curly quotatation marks with straight quotation marks (`'` or `"`).
+* Ensure that there are no curly, or smart, quotation marks in your command. Replace any curly quotation marks with straight quotation marks (`'` or `"`).
 * Ensure that you are entering your own information in option values. Most command examples cannot be run verbatim. You must use your own values for parameters and options, including organization ID, environment ID, host ID, asset identifier GAV (group ID/asset ID/ version), and folder and file names.
 * Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory where they're located.
 * Search the https://help.mulesoft.com[MuleSoft Help Center^] for similar errors.
