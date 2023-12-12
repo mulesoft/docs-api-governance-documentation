@@ -47,7 +47,7 @@ There are several causes for the following error:
 
 To troubleshoot this issue, consider some typical causes:
 
-* Specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is uploaded as `custom` type.
+* Specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is inferred as `custom` type.
 * Including properties in `exchange.json` or `--properties` that are incorrect.
 +
 The `exchange.json` file is optional when uploading an asset, because the required properties are either included or are inferred from parameters, flags, or options. If you download a ruleset project on which to base your custom ruleset, do one of the following:
@@ -104,7 +104,7 @@ To troubleshoot errors that are misleading or vague:
 
 * Ensure that you are entering the command flags and options as documented.
 * Ensure that you have specified everything in the command using the proper case, including the command itself, flags, classifiers, options, folder names, and file names. Commands are case-sensitive. 
-* Ensure that there are no curly, or smart, quotation marks in your command. Replace any you find with straight quotation marks (`'` or `"`).
+* Ensure that there are no curly, or smart, quotation marks in your command. Replace any curly quotatation marks with straight quotation marks (`'` or `"`).
 * Ensure that you are entering your own information in option values. Most command examples cannot be run verbatim. You must use your own values for parameters and options, including organization ID, environment ID, host ID, asset identifier GAV (group ID/asset ID/ version), and folder and file names.
 * Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory where they're located.
 * Search the https://help.mulesoft.com[MuleSoft Help Center^] for similar errors.
