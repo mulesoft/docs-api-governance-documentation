@@ -47,7 +47,7 @@ There are several causes for the following error:
 
 To troubleshoot this issue, consider some typical causes:
 
-* Specifying a type but uploading more than one file type. For example, if you are uploading a ruleset and its documentation, do not use the `--type` flag, because the type of `ruleset` is inferred from the classifier of the first file in the `--files` flag and the documentation is inferred as `custom` type.
+* Specifying a type but uploading more than one file type as multiple options in a single --files flag, as you do with a ruleset and its documentation. It is best to let the system infer the correct file type -- in this case, ruleset. 
 * Including properties in `exchange.json` or `--properties` that are incorrect.
 +
 The `exchange.json` file is optional when uploading an asset, because the required properties are either included or are inferred from parameters, flags, or options. If you download a ruleset project on which to base your custom ruleset, do one of the following:
@@ -58,7 +58,7 @@ The `exchange.json` file is optional when uploading an asset, because the requir
 [[generic-publish-error]]
 == Unable to Publish 
 
-A non-specific publishing error similar to `unable to publish` might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload using the wrong syntax, you might inadvertently publish the ruleset as Custom type instead of Ruleset type. If this happens, you cannot republish the ruleset as the Ruleset type under the same name, even if you change the version. 
+A non-specific publishing error similar to `unable to publish` might occur when you're using the `exchange asset upload` command to upload a custom ruleset and its documentation. If you upload using the wrong syntax, you might inadvertently publish the ruleset as custom type instead of ruleset type. If this happens, you cannot republish the ruleset as the ruleset type under the same name, even if you change the version. 
 
 To republish the ruleset in this situation, you must change the name of the ruleset and try uploading again with the proper command syntax. For example, change `my-auth-best-practices` in the original command: 
 
