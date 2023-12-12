@@ -41,16 +41,19 @@ anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "M
 [[asset-type-error]]
 == Error Determining Asset Type
 
-There are several causes for the following error:
-
-`Error: Could not determine asset type, step: Publishing asset`
+An error `Could not determine asset type, step: Publishing asset` occurs when using the `exchange asset upload` command to publish a ruleset or other asset.
 
 To troubleshoot this issue, consider some typical causes:
 
-* Specifying a type but uploading more than one file type as multiple options in a single --files flag, as you do with a ruleset and its documentation. It is best to let the system infer the correct file type -- in this case, ruleset. 
+* Specifying a `--type` flag when specifying more than one file type in one or more `--files` flags. 
++
+If you are uploading multiple files, omit the `--type` flag to let Anypoint CLI infer the correct file type from the `classifier.packaging` in each `--files` flag.
+* Specifying a `--type` flag that conflicts with the asset type Anypoint CLI infers. 
++
+Verify that the 'classifier.packaging' and file name values in your `--files` flag options are correct and that they match the asset type you specified in the `--type` flag. 
 * Including properties in `exchange.json` or `--properties` that are incorrect.
 +
-The `exchange.json` file is optional when uploading an asset, because the required properties are either included or are inferred from parameters, flags, or options. If you download a ruleset project on which to base your custom ruleset, do one of the following:
+The `exchange.json` file is optional when uploading an asset, because the required properties are either included or are inferred from parameters, flags, or options. If you download a ruleset project on which to base your custom ruleset, do one of the following before uploading your custom ruleset:
 +
 ** Remove the `exchange.json` file from your working folder or project.
 ** Update the properties in the `exchange.json` file to match your custom ruleset's asset ID, name, main file, and so on.
