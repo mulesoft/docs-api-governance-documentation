@@ -55,7 +55,7 @@ A non-specific publishing error similar to `unable to publish` might occur when 
 
 If you attempt to upload an asset using the wrong command syntax, you might inadvertently publish it as the wrong asset type. You cannot republish the asset with the same asset ID as a different asset type. 
 
-To republish the ruleset in this situation, fix the syntax and then change the asset ID and try uploading again. For example, change `my-auth-best-practices` to `my-new auth-best-practices`. 
+To republish the ruleset in this situation, fix the syntax, change the asset ID, and try uploading again. For example, change `my-auth-best-practices` to `my-new auth-best-practices`. 
 
 Here is an example updated command:
 
