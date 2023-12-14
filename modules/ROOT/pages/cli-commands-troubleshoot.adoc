@@ -51,7 +51,7 @@ The `exchange.json` file is optional when uploading an asset because the require
 [[generic-publish-error]]
 == Unable to Publish 
 
-A non-specific publishing error similar to `unable to publish` might occur when you're using the `exchange asset upload` command to upload your custom ruleset and its documentation. 
+A non-specific publishing error similar to `unable to publish` might occur when you use the `exchange asset upload` command to upload your custom ruleset and its documentation. 
 
 If you attempt to upload an asset using the wrong command syntax, you might inadvertently publish it as the wrong asset type. You cannot republish the asset with the same asset ID as a different asset type. 
 
