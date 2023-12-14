@@ -1,0 +1,103 @@
+= Troubleshooting Anypoint CLI
+
+If you encounter errors when attempting to run Anypoint CLI commands, troubleshoot them as follows.
+
+== Before You Begin Troubleshooting
+
+Ensure you are using the latest version of `anypoint-cli-v4`. If not, install the latest version before continuing. Refer to xref:anypoint-cli::install.adoc[].
+
+[[cli-upload-dupl-error]]
+== Status Code 409 Error When Uploading
+
+The error `Request failed with status code 409` when using the `exchange asset upload` command to publish a ruleset might occur when you're attempting to upload a duplicate asset.
+
+To resolve this issue:
+
+* Change the command to specify a unique ruleset asset identifier by doing one of the following: 
+** Publish a new version of the ruleset by changing the version part of the asset identifier. For example, change `1.0.0` to `1.0.1`. 
++
+Here is an example updated command:
++
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.1 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
+
+** Publish a new asset by changing the asset ID part of the asset identifier. For example, change `my-auth-best-practices` to `my-new-auth-best-practices`. 
++
+Here is an example updated command:
++
+----
+anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
+
+[[asset-type-error]]
+== Error Determining Asset Type
+
+The error `Could not determine asset type, step: Publishing asset` when using the `exchange asset upload` command to publish a ruleset or other asset might occur when you:
+
+* Specify a `--type` flag and more than one file type in one or more `--files` flags. 
++
+If you are uploading multiple files, omit the `--type` flag to let Anypoint CLI infer the correct file type from the `classifier.packaging` in each `--files` flag.
+* Specify a `--type` flag that conflicts with the asset type Anypoint CLI infers. 
++
+Verify that the `classifier.packaging` and file name values in your `--files` flag options are correct and that they match the asset type you specified in the `--type` flag. 
+* Include properties in `exchange.json` or `--properties` that are incorrect.
++
+The `exchange.json` file is optional when uploading an asset because the required properties are either included or are inferred from parameters, flags, or options. If you download a ruleset project on which to base your custom ruleset, do one of the following before uploading your custom ruleset:
++
+** Remove the `exchange.json` file from your working folder or project.
+** Update the properties in the `exchange.json` file to match your custom ruleset's asset ID, name, main file, and so on.
+
+[[generic-publish-error]]
+== Unable to Publish 
+
+A non-specific publishing error similar to `unable to publish` might occur when you use the `exchange asset upload` command to upload your custom ruleset and its documentation. 
+
+If you attempt to upload an asset using the wrong command syntax, you might inadvertently publish it as the wrong asset type. You cannot republish the asset with the same asset ID as a different asset type. 
+
+To republish the ruleset in this situation, fix the syntax, change the asset ID, and try uploading again. For example, change `my-auth-best-practices` to `my-new auth-best-practices`. 
+
+Here is an example updated command:
+
+----
+anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
+----
+
+[[parse-properties-error]]
+== Error Parsing Properties
+
+When using Anypoint CLI commands that pass JSON properties from Microsoft Windows, you might get an error similar to the following:
+
+----
+ »  Error: Parsing --properties
+ »   Unexpected token ' in JSON at position 0
+----
+
+To resolve this issue:
+
+Escape the JSON text using the backslash character (`\`). For example, change `"` and `/` to `\"` and `\/`. 
+
+Here is an example updated command:
+
+----
+anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{\"ruleset.yaml\":\"\/myRulesetFolder\/mynewruleset.yaml\",\"docs.zip\":\"\/myRulesetFolder\/ruleset.doc.zip\"}'
+----
+
+[[misc-errors]]
+== Miscellaneous Errors
+
+Anypoint CLI commands are parsed for specific information and if anything isn't recognized or is misinterpreted in the command, the error message might be misleading or vague. 
+To troubleshoot these errors:
+
+* Ensure that you are entering the command flags and options as documented.
+* Ensure that you have specified everything in the command using the proper case, including the command itself, flags, classifiers, options, folder names, and file names. Commands are case-sensitive. 
+* Ensure that there are no curly, or smart, quotation marks in your command. Replace any curly quotation marks with straight quotation marks (`'` or `"`).
+* Ensure that you are entering your information in option values. Most command examples cannot be run verbatim. You must use your values for parameters and options, including organization ID, environment ID, host ID, asset identifier GAV (group ID/asset ID/version), and folder and file names.
+* Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory where they're located.
+* Search the https://help.mulesoft.com[MuleSoft Help Center^] for similar errors.
+
+== See Also
+
+* xref:cli-command-list.adoc[]
+* xref:anypoint-cli::install.adoc[]
+* xref:anypoint-cli::intro.adoc[]
