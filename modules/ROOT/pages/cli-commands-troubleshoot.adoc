@@ -67,6 +67,7 @@ anypoint-cli-v4 exchange asset upload my-new-auth-best-practices/1.0.0 --name "M
 == Error Parsing Properties
 
 When using Anypoint CLI commands that pass JSON properties from Microsoft Windows, you might get an error similar to the following:
+
 ----
  »  Error: Parsing --properties
  »   Unexpected token ' in JSON at position 0
