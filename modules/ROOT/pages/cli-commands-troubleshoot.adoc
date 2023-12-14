@@ -13,8 +13,8 @@ The error `Request failed with status code 409` when using the `exchange asset u
 
 To resolve this issue:
 
-* Change the command to specify a unique ruleset asset identifier.  
-** To publish a new version of the ruleset, change the version part of the asset identifier. For example, change `1.0.0` to `1.0.1`. 
+* Change the command to specify a unique ruleset asset identifier by doing one of the following: 
+** Publish a new version of the ruleset by changing the version part of the asset identifier. For example, change `1.0.0` to `1.0.1`. 
 +
 Here is an example updated command:
 +
@@ -22,7 +22,7 @@ Here is an example updated command:
 anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.1 --name "My Best Practices Ruleset" --description "This ruleset enforces my best practices for APIs." --files='{"ruleset.yaml":"/myRulesetFolder/mynewruleset.yaml","docs.zip":"/myRulesetFolder/ruleset.doc.zip"}'
 ----
 
-** To publish a new asset, change the asset ID part of the asset identifier. For example, change `my-auth-best-practices` to `my-new-auth-best-practices`. 
+** Publish a new asset by changing the asset ID part of the asset identifier. For example, change `my-auth-best-practices` to `my-new-auth-best-practices`. 
 +
 Here is an example updated command:
 +
