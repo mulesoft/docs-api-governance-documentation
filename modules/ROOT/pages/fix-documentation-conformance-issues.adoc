@@ -4,8 +4,8 @@ You can validate API documentation using a ruleset provided by MuleSoft or a cus
 
 * API Documentation Best Practices
 
-You can fix API documentation issues by updating the documentation associated with the API to conform to the rules it violated. 
-One way to do this is as follows:
+Fix API documentation issues by updating the documentation associated with the API to conform to the rules it violated. 
+Some ways to do this are as follows:
 
 . In Exchange, navigate to the API that has documentation conformance issues. Do one or more of the following:
 .. Select *Home* in the sidebar navigation and enter documentation directly in the Home page.
