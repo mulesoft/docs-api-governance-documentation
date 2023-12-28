@@ -9,6 +9,8 @@
   * xref:find-and-fix-conformance-issues.adoc[]
   ** xref:find-conformance-issues.adoc[]
   ** xref:fix-instance-conformance-issues.adoc[]
+  ** xref:fix-documentation-conformance-issues.adoc[]
+  ** xref:fix-catalog-info-conformance-issues.adoc[]
   * xref:view-conformance-status-in-exchange.adoc[]
   * xref:create-custom-rulesets.adoc[]
   ** xref:custom-rulesets-modify.adoc[]

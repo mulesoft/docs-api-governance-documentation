@@ -1,0 +1,24 @@
+= Finding and Fixing Conformance Issues in API Catalog Information
+
+You can validate API Catalog information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API catalog information. A ruleset provided by MuleSoft that validates API catalog information is:
+
+* API Catalog Information Best Practices
+
+//Update the following to reuse this from Exchange doc 
+
+Fix API Catalog information conformance issues as follows:
+
+. In Exchange, navigate to the API that has catalog information conformance issues.
+
+. Click the edit pen icon in the asset portal.
++
+You can change the asset icon, name, description, contact name, and contact email.
+
+.. To change the icon, click the edit pen icon, select an image file, then click Open.
+.. To change the asset portal name, enter the new asset portal name.
+.. To change the description, enter a new asset description in the Description field.
+.. To change the contact name or email, enter a new contact name and email in the corresponding field.
+. To cancel the changes, click the X icon.
+. To save the changes, click the check icon.
+
+For more details on updating API catalog information in Exchange, refer to xref:exchange::to-describe-an-asset.adoc[].
