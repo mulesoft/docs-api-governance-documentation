@@ -1,12 +1,16 @@
 = Finding and Fixing Conformance Issues in API Instances
 
-After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
+You can validate API instance information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API instance information. A ruleset provided by MuleSoft that validates API instance information is:
+
+* Mule API Management Best Practices
+
+After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get information about the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification. Refer to xref:fix-conformance-issues.adoc[].
 
 // Screenshot of a Conformance Report page with callouts 
 
 include::_partials/api-gov-apim-governance-report.adoc[]
 
-== View Conformance Issue Details in the Governance Report
+== View Instance Conformance Issue Details in the Governance Report
 
 To view instance conformance issues in the governance validation report:
 
