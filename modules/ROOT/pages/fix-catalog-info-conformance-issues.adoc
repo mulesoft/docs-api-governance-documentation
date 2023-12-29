@@ -14,9 +14,9 @@ Fix API Catalog information conformance issues as follows:
 +
 You can change the asset icon, name, description, contact name, and contact email.
 
-.. To change the icon, click the edit pen icon, select an image file, then click Open.
+.. To change the icon, click the edit pen icon, select an image file, and then click *Open*.
 .. To change the asset portal name, enter the new asset portal name.
-.. To change the description, enter a new asset description in the Description field.
+.. To change the description, enter a new asset description in the *Description* field.
 .. To change the contact name or email, enter a new contact name and email in the corresponding field.
 . To cancel the changes, click the X icon.
 . To save the changes, click the check icon.
