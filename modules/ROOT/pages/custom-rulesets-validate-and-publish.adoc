@@ -54,13 +54,13 @@ You can use an `exchange.json` file to define the Exchange settings for rulesets
 [%header,cols="35a,65a"]
 |===
 |Property|Description
-|main|
-|name|
-|organizationId|
-|groupId|
-|assetId|
-|version|
-|classifier|
+|main|The main file of your asset. Ensure that this matches the name of your ruleset when publishing a ruleset. 
+|name|The artifact name of your asset. You cannot change the name of an asset that's already published. 
+|organizationId|The Anypoint Platform organization or business group in which to publish the asset.
+|groupId|The Anypoint Platform group in which to publish the asset.
+|assetId|The Exchange asset ID assigned to the asset.
+|version|The asset version. 
+|classifier|The asset type. Use the value `"ruleset"` when publishing a ruleset asset.
 |dependencies|
 |tags|
 |descriptorVersion|
