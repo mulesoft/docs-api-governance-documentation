@@ -27,24 +27,25 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,level
 [[publish-ruleset]]
 == Publish the Custom Ruleset
 
-You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset assets.
+You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset documentation.
 
 You can upload the following in a single upload command:
 
-[%header,cols="35a,65a"]
+[%header,cols="20a,40a,40a"]
 |===
-|Flag and Option|Result
+|Flag and Options|Result|Example
 |The ruleset YAML using the `--files` flag with the `"ruleset.yaml"` option.
-|
-This uploads the ruleset information included in the YAML file and ignores any other files detected in the same folder, such as the `exchange.json` file. You can use `--type=ruleset`. If you don't, the type is inferred from the `--files` flag `--ruleset.yaml` option.
-|
-The ruleset ZIP using the `--files` flag with the `"ruleset.zip"` option.
-|
-This uploads the ruleset information included in the YAML file and evaluates other files in the zip file, such as the `exchange.json` file. You can use `--type=ruleset`. If you don't, the type is inferred from the `--files` flag `"ruleset.zip"` option.
+|This uploads the ruleset information included in the YAML file and ignores any other files detected in the same folder, such as the `exchange.json` file. You can use `--type=ruleset`. If you don't, the type is inferred from the `--files` flag `--ruleset.yaml` option.
+|`--files='{"ruleset.yaml":"mynewruleset.yaml", "docs.zip": "ruleset.doc.zip"}'`
+|The ruleset ZIP using the `--files` flag with the `"ruleset.zip"` option.
+|This uploads the ruleset information included in the YAML file and evaluates other files in the zip file, such as the `exchange.json` file. You can use `--type=ruleset`. If you don't, the type is inferred from the `--files` flag `"ruleset.zip"` option.
+|`--files='{"ruleset.zip":"mynewruleset.zip"}'`
 |The ruleset YAML using the `--files` flag with the `"ruleset.yaml"` option with the `"docs.zip"` option in the same `--files` flag. 
 |This uploads the ruleset YAML information plus the documentation for the ruleset. You must upload the documentation along with the ruleset. You cannot upload it separately later. 
+|`--files='{"ruleset.yaml":"mynewruleset.yaml", "docs.zip": "ruleset.doc.zip"}'`
 |The ruleset ZIP using the `--files` flag with the `"ruleset.zip"` option with the `"docs.zip"` option in the same `--files` flag. 
 |This uploads the ruleset ZIP file information, evaluating any `exchange.json` file properties, plus the documentation for the ruleset. You must upload the documentation along with the ruleset. You cannot upload it separately later. 
+|`--files='{"ruleset.zip":"mynewruleset.zip", "docs.zip": "ruleset.doc.zip"}'`
 |===
 
 === Guidelines for Ruleset Exchange JSON Files
@@ -65,13 +66,13 @@ You can use an `exchange.json` file to define the Exchange settings for rulesets
 |tags|
 |descriptorVersion|
 |===
-+
+
 For example:
 ----
 { "main":"ruleset.yaml", "name":"My Mule API Management Best Practices", "organizationId":"68ef9520-24e9-4cf2-b2f5-620025690913", "groupId":"68ef9520-24e9-4cf2-b2f5-620025690913", "assetId":"my-mule-api-management-best-practices", "version":"1.0.0", "classifier":"ruleset", "dependencies":[], "tags":["instances"], "descriptorVersion": "1.0.0" }
 ----
 
-Use the following command to upload a ruleset and its documentation to Exchange.
+Use the following command documentation as a reference as you upload the ruleset and its documentation to Exchange.
 
 include::anypoint-cli::partial$exchange-assets.adoc[tag=exchange-asset-upload,leveloffset=+1]
 
