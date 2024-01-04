@@ -27,7 +27,7 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,level
 [[publish-ruleset]]
 == Publish the Custom Ruleset
 
-You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset documentation.
+You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. You can't use the Exchange UI to upload ruleset documentation.
 
 You can upload the following in a single upload command:
 
@@ -40,11 +40,11 @@ You can upload the following in a single upload command:
 |The ruleset ZIP using the `--files` flag with the `"ruleset.zip"` option.
 |This uploads the ruleset information included in the YAML file and evaluates other files in the zip file, such as the `exchange.json` file. You can use `--type=ruleset`. If you don't, the type is inferred from the `--files` flag `"ruleset.zip"` option.
 |`--files='{"ruleset.zip":"mynewruleset.zip"}'`
-|The ruleset YAML using the `--files` flag with the `"ruleset.yaml"` option with the `"docs.zip"` option in the same `--files` flag. 
-|This uploads the ruleset YAML information plus the documentation for the ruleset. You must upload the documentation along with the ruleset. You cannot upload it separately later. 
+|The ruleset YAML and the ruleset documentation ZIP file using the `--files` flag with the `"ruleset.yaml"` and `"docs.zip"` options in the same `--files` flag. 
+|This uploads the ruleset YAML information plus the documentation for the ruleset. You must upload the documentation along with the ruleset. You cannot upload documentation separately later, but can add it manually. 
 |`--files='{"ruleset.yaml":"mynewruleset.yaml", "docs.zip": "ruleset.doc.zip"}'`
-|The ruleset ZIP using the `--files` flag with the `"ruleset.zip"` option with the `"docs.zip"` option in the same `--files` flag. 
-|This uploads the ruleset ZIP file information, evaluating any `exchange.json` file properties, plus the documentation for the ruleset. You must upload the documentation along with the ruleset. You cannot upload it separately later. 
+|The ruleset ZIP and the ruleset documentation ZIP file using the `--files` flag with the `"ruleset.zip"` option with the `"docs.zip"` option in the same `--files` flag. 
+|This uploads the ruleset ZIP file information, evaluating any `exchange.json` file properties, plus the documentation for the ruleset. You must upload the documentation along with the ruleset. You cannot upload documentation separately later, but can add it manually. 
 |`--files='{"ruleset.zip":"mynewruleset.zip", "docs.zip": "ruleset.doc.zip"}'`
 |===
 
