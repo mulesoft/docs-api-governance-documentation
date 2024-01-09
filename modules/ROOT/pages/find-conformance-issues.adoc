@@ -1,4 +1,4 @@
-= Finding and Fixing Conformance Issues in Specifications
+= Fixing Specifications in Design Center
 
 You can validate API specification information using one of the rulesets provided by MuleSoft or a custom ruleset with rules that validate specification information. Some of the MuleSoft-provided rulesets that validate specification information are:
 

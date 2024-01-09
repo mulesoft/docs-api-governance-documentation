@@ -1,4 +1,4 @@
-= Finding and Fixing Conformance Issues in API Catalog Information
+= Fixing API Catalog Information in Exchange
 
 You can validate API Catalog information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API catalog information. A ruleset provided by MuleSoft that validates API catalog information is:
 

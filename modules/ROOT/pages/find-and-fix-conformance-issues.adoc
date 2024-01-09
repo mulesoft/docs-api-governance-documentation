@@ -1,7 +1,7 @@
 = Finding and Fixing Conformance Issues
 
 To find conformance issues, validate the APIs against the set of rulesets to which you want your APIs to conform. After you validate the APIs, you can see conformance badges in API Governance, Exchange, and API Manager and view detailed conformance information in API Governance, Exchange, API Manager, and Design Center. 
-Nonconformance messages give details on conformance issues and contextual links direct you to the best place to address them.
+Nonconformance messages give information about conformance issues and contextual links direct you to the best place to address them.
 
 For details about finding and fixing conformance issues, refer to the following:
 

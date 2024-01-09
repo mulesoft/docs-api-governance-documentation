@@ -1,4 +1,4 @@
-= Finding and Fixing Conformance Issues in API Instances
+= Fixing Instances in API Manager
 
 You can validate API instance information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API instance information. A ruleset provided by MuleSoft that validates API instance information is:
 
