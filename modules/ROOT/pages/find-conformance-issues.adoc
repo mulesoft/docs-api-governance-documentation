@@ -14,7 +14,7 @@ or by using the governance CLI.
 [[validate-in-design-center]]
 == Validate API Specifications in Design Center
 
-To validate APIs against governance rulesets directly in Design Center, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
+To validate APIs against governance rulesets in Design Center, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
 // Screenshot of conformance validation in APID with callouts
 
