@@ -21,4 +21,4 @@ You can change the asset icon, name, description, contact name, and contact emai
 . To cancel the changes, click the X icon.
 . To save the changes, click the check icon.
 
-For more details on updating API catalog information in Exchange, refer to xref:exchange::to-describe-an-asset.adoc[].
+For more details about updating API catalog information in Exchange, refer to xref:exchange::to-describe-an-asset.adoc[].
