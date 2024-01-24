@@ -4,6 +4,23 @@ You can validate API documentation using a ruleset provided by MuleSoft or a cus
 
 * API Documentation Best Practices
 
+[[view-api-doc-issues-in-report]]
+== View API documentation Conformance Issue Details in the Governance Report
+
+To view API documentation conformance issues in the governance validation report:
+
+. In the API Governance console, select the *Governed APIs* tab.
+. If the API has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+.. View all issues:
++
+Click *View Details* for a ruleset for which the API is nonconformant. 
+.. View issues for the API documentation only:
+... Select *Documentation* in the Conformance Breakdown section of the report.
+... Click *View Details* for a ruleset for which the API documentation is nonconformant.
+
+[[fix-api-doc-issues-in-exchange]]
+== Fix API Documentation Conformance Issues in Exchange
+
 Fix API documentation issues by updating the documentation associated with the API to conform to the rules it violated. 
 
 For information about updating API documentation using Exchange, refer to xref:exchange::to-describe-an-asset.adoc[].

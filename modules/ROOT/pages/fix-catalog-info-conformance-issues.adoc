@@ -20,6 +20,9 @@ Click *View Details* for a ruleset to which the API is nonconformant.
 ... Select *Catalog Info* in the Conformance Breakdown section of the report.
 ... Click *View Details* for a ruleset to which the API catalog is nonconformant.
 
+[[fix-api-catalog-issues-in-exchange]]
+== Fix API Catalog Conformance Issues in Exchange
+
 //Update the following to reuse this from Exchange doc 
 
 Fix API Catalog information conformance issues as follows:

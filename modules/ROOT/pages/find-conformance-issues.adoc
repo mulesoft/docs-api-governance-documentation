@@ -40,6 +40,8 @@ Click *View Details* for a ruleset to which the API is nonconformant.
 [[validate-in-design-center]]
 == Validate API Specifications in Design Center
 
+If your API is governed using API Governance, you can use the detailed governance report in API Governance to find any centralized governance conformance issues. If your API is not governed using API Governance or if you want to see conformance issues directly in API Designer, you can validate your API in API Designer. 
+
 To validate APIs against governance rulesets in Design Center, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
 // Screenshot of conformance validation in APID with callouts
@@ -58,9 +60,11 @@ include::design-center::partial$design-add-ruleset-dependencies.adoc[]
 See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
 [[project-errors]]
-=== Fix Conformance Project Errors
+== Fix API Specification Issues in Design Center
 
-To use the API Designer text editor to fix conformance project errors, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
+After your specifications have been identified as nonconformant through validation by rulesets, either through centralized governance in API Governance or through ruleset dependencies in  Design Center, you can fix them in API Designer. 
+
+See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 
 == See Also
 
