@@ -21,10 +21,13 @@ To view instance conformance issues in the governance validation report:
 .. If the *Instances* column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
 * In API Manager:
 .. Select the *Conformance Report* page for an instance that is marked as nonconformant.
-. View nonconformance details for each ruleset:
+. If the API has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+.. View all issues:
 +
-* Click the icon for the nonconformance severity to see details for issues for that severity level. 
-* Click *View Details* to see the full breakdown of conformance issues.
+Click *View Details* for a ruleset to which the API is nonconformant. 
+.. View issues for API instances only:
+... Select *Instances* in the Conformance Breakdown section of the report.
+... Click *View Details* for a ruleset to which the API instances are nonconformant.
 
 == View Rule Details in the Rulesets
 

@@ -1,8 +1,24 @@
 = Fixing API Catalog Information in Exchange
 
-You can validate API Catalog information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API catalog information. A ruleset provided by MuleSoft that validates API catalog information is:
+You can validate API catalog information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API catalog information. API catalog information is associated with an API asset in Exchange in the asset portal. 
+
+A ruleset provided by MuleSoft that validates API catalog information is:
 
 * API Catalog Information Best Practices
+
+[[view-api-catalog-issues-in-report]]
+== View API Catalog Conformance Issue Details in the Governance Report
+
+To view API catalog conformance issues in the governance validation report:
+
+. In the API Governance console, select the *Governed APIs* tab.
+. If the API has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+.. View all issues:
++
+Click *View Details* for a ruleset to which the API is nonconformant. 
+.. View issues for the API catalog only:
+... Select *Catalog Info* in the Conformance Breakdown section of the report.
+... Click *View Details* for a ruleset to which the API catalog is nonconformant.
 
 //Update the following to reuse this from Exchange doc 
 

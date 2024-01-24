@@ -8,8 +8,34 @@ You can validate API specification information using one of the rulesets provide
 * AsyncAPI Best Practices
 * Required Examples
 
-You can validate individual API specifications against governance using centralized governance configured by governance admins in API Governance, by adding rulesets as dependencies in Design Center
-or by using the governance CLI. 
+You can validate individual API specifications against governance using centralized governance configured by governance admins in governance profiles, by adding rulesets as dependencies in Design Center, 
+or by using Anypoint CLI. 
+
+[[validate-in-profiles]]
+== Validate API Specifications in Governance Profiles
+To validate APIs against governance rulesets in API Governance profiles, create or update a profile with filter criteria that defines the APIs you want to validate in its scope. You can do this in the web UI or by using Anypoint CLI commands. See xref:create-profiles[].
+
+== Validate API Specifications Using Anypoint CLI
+
+To validate against rulesets using CLI without using a governance profile, use the `governance:api:validate` command.
+
+include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
+
+include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
+
+[[view-spec-issues-in-report]]
+== View Specification Conformance Issue Details in the Governance Report
+
+To view specification conformance issues in the governance validation report:
+
+. In the API Governance console, select the *Governed APIs* tab.
+. If the API has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+.. View all issues:
++
+Click *View Details* for a ruleset to which the API is nonconformant. 
+.. View issues for the specification only:
+... Select *Specification* in the Conformance Breakdown section of the report.
+... Click *View Details* for a ruleset to which the specification is nonconformant. 
 
 [[validate-in-design-center]]
 == Validate API Specifications in Design Center
@@ -35,14 +61,6 @@ See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an
 === Fix Conformance Project Errors
 
 To use the API Designer text editor to fix conformance project errors, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
-
-== Validate API Specifications Against Governance Rulesets Using the API Governance CLI
-
-To use a command to validate your API specification against governance rulesets, use the `governance:api:validate` command.
-
-include::anypoint-cli::partial$api-governance.adoc[tag=governance-api-validate,leveloffset=+1]
-
-include::anypoint-cli::partial$api-governance.adoc[tag=exchange-asset-identifier,leveloffset=+2]
 
 == See Also
 
