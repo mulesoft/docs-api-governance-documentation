@@ -63,8 +63,8 @@ You can use an `exchange.json` file to define the Exchange settings for rulesets
 |version|The asset version. 
 |classifier|The asset type. Use the value `"ruleset"` when publishing a ruleset asset.
 |dependencies| Rulesets can have fragments defined as dependencies.
-|tags| Tags for ruleset asset's details in Exchange. 
-|descriptorVersion|
+|tags| Tags for a ruleset asset's details in Exchange. 
+|descriptorVersion|The version of the descriptor model a ruleset is based on.
 |===
 
 For example:
