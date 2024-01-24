@@ -13,7 +13,7 @@ or by using Anypoint CLI.
 
 [[validate-in-profiles]]
 == Validate API Specifications in Governance Profiles
-To validate APIs against governance rulesets in API Governance profiles, create or update a profile with filter criteria that defines the APIs you want to validate in its scope. You can do this in the web UI or by using Anypoint CLI commands. See xref:create-profiles[].
+To validate APIs against governance rulesets in API Governance profiles, create or update a profile with filter criteria that defines the APIs you want to validate in its scope. You can do this in the web UI or by using Anypoint CLI commands. See xref:create-profiles.adoc[].
 
 == Validate API Specifications Using Anypoint CLI
 
