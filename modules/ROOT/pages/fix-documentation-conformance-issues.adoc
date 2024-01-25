@@ -13,10 +13,10 @@ To view API documentation conformance issues in the governance validation report
 . If the API has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
 .. View all issues:
 +
-Click *View Details* for a ruleset for which the API is nonconformant. 
+Click *View Details* for a ruleset to which the API is nonconformant. 
 .. View issues for the API documentation only:
 ... Select *Documentation* in the Conformance Breakdown section of the report.
-... Click *View Details* for a ruleset for which the API documentation is nonconformant.
+... Click *View Details* for a ruleset to which the API documentation is nonconformant.
 
 [[fix-api-doc-issues-in-exchange]]
 == Fix API Documentation Conformance Issues in Exchange

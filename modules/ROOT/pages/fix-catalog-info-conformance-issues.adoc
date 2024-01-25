@@ -1,6 +1,6 @@
 = Fixing API Catalog Information in Exchange
 
-You can validate API catalog information using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API catalog information. API catalog information is associated with an API asset in Exchange in the asset portal. 
+You can check for API catalog information conformance using a ruleset provided by MuleSoft or a custom ruleset. API catalog information is associated with an API asset in Exchange in the asset portal. 
 
 A ruleset provided by MuleSoft that validates API catalog information is:
 

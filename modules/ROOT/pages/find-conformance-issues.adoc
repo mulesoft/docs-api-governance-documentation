@@ -1,6 +1,6 @@
 = Fixing Specifications in Design Center
 
-You can validate API specification information using one of the rulesets provided by MuleSoft or a custom ruleset with rules that validate specification information. Some of the MuleSoft-provided rulesets that validate specification information are:
+You can check for API specification conformance using one of the rulesets provided by MuleSoft or a custom ruleset. Some of the MuleSoft-provided rulesets that validate specification information are:
 
 * Anypoint Best Practices
 * Authentication Security Best Practices
@@ -8,8 +8,7 @@ You can validate API specification information using one of the rulesets provide
 * AsyncAPI Best Practices
 * Required Examples
 
-You can validate individual API specifications against governance using centralized governance configured by governance admins in governance profiles, by adding rulesets as dependencies in Design Center, 
-or by using Anypoint CLI. 
+You can check specification conformance in API Governance, in Design Center, or using Anypoint CLI. 
 
 [[validate-in-profiles]]
 == Validate API Specifications in Governance Profiles
