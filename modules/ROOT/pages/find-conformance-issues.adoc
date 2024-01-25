@@ -61,7 +61,7 @@ See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an
 [[project-errors]]
 == Fix API Specification Issues in Design Center
 
-After your specifications have been identified as nonconformant through validation by rulesets, either through centralized governance in API Governance or through ruleset dependencies in  Design Center, you can fix them in API Designer. 
+After your specifications have been identified as nonconformant through validation by rulesets, either through centralized governance in API Governance or through ruleset dependencies in Design Center, you can fix them in API Designer. 
 
 See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 
