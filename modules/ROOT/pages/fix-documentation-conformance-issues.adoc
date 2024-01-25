@@ -1,6 +1,6 @@
 = Fixing Documentation in Exchange
 
-You can validate API documentation using a ruleset provided by MuleSoft or a custom ruleset with rules that validate API documentation. A ruleset provided by MuleSoft that validates API catalog documentation is:
+You can check for API documentation conformance using a ruleset provided by MuleSoft or a custom ruleset. A ruleset provided by MuleSoft that validates API catalog documentation is:
 
 * API Documentation Best Practices
 
