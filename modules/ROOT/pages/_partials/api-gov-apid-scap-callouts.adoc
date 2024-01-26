@@ -5,5 +5,5 @@ image::api-gov-apply-rulesets-apid.png[Screenshot of rulesets applied as depende
 [calloutlist]
 . Add rulesets to your API project as dependencies.
 . Expand the <<project-errors,*Project Errors*>> section of the text editor to view nonconformance messages.
-. Switch between *Governance auto-validation* (automatic validation as rulesets are added) and *Validate for governance* (validation when you click this button) as needed. See xref:design-center::design-add-api-dependency.adoc#fix-gov-issues[Improving Ruleset Validation].
+. Click *Validate for governance* to initiate validation if *Governance auto-validation* is disabled. See xref:design-center::design-add-api-dependency.adoc#fix-gov-issues[Improving Ruleset Validation].
 . View conformance issues and filter by level of severity.
