@@ -14,16 +14,16 @@ To view instance conformance issues in the governance validation report:
 * In Anypoint API Governance:
 +
 .. In the API Governance console, select the *Governed APIs* tab.
-.. If the *Instances* column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
-* In API Manager:
-.. Select the *Conformance Report* page for an instance that is marked as nonconformant.
-. If the API has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
+.. If the *Instances* column has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
 .. View all issues:
 +
 Click *View Details* for a ruleset to which the API is nonconformant. 
 .. View issues for API instances only:
 ... Select *Instances* in the Conformance Breakdown section of the report.
 ... Click *View Details* for a ruleset to which the API instances are nonconformant.
+* In API Manager:
+.. Select the *Governance Report* page for an instance that has an Instance Conformance badge of *Violation*.
+.. In the Instance validation results section, click *View Details* for a ruleset to which the API instances are in violation.
 
 == View Rule Details in the Rulesets
 
