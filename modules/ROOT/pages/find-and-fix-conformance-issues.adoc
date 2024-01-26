@@ -2,7 +2,7 @@
 
 To find conformance issues, validate the APIs against the set of rulesets to which you want your APIs to conform. After you validate the APIs, you can see conformance badges in API Governance, Exchange, and API Manager and view detailed conformance information in API Governance, Exchange, API Manager, and Design Center. 
 
-After Anypoint API Governance identifies conformance issues in your API, you can view the governance validation report details to get information about the issues. Nonconformance messages give information about conformance issues and contextual links direct you to the best place to fix them. 
+After Anypoint API Governance identifies conformance issues in your API, you can view the governance validation report to get information about the issues. Nonconformance messages give information about conformance issues and contextual links direct you to the best place to fix them. 
 
 // Screenshot of a Conformance Report page with callouts 
 

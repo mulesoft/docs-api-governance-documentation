@@ -4,7 +4,7 @@ You can check for API instance information conformance using a ruleset provided 
 
 * Mule API Management Best Practices
 
-After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get information about the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification. Refer to xref:find-conformance-issues.adoc[].
+After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report to get information about the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification. Refer to xref:find-conformance-issues.adoc[].
 
 == View Instance Conformance Issue Details in the Governance Report
 
