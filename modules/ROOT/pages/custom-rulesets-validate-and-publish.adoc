@@ -27,7 +27,7 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,level
 [[publish-ruleset]]
 == Publish the Custom Ruleset
 
-You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. You cannot use the Exchange UI to upload ruleset assets.
+You can publish (upload) a ruleset and its documentation to Exchange using Anypoint CLI. 
 
 Use the following command to upload a ruleset and its documentation to Exchange.
 
