@@ -27,7 +27,7 @@ Click *View Details* for a ruleset to which the API is nonconformant.
 
 == View Rule Details in the Rulesets
 
-If you need more information to fix the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 
+For more information about fixing the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 
 
 // Screenshot of a section of the ruleset with a description of the properties 
 
