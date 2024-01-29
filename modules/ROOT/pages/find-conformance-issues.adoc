@@ -8,12 +8,13 @@ You can check for API specification conformance using one of the rulesets provid
 * AsyncAPI Best Practices
 * Required Examples
 
-You can check specification conformance in API Governance, in Design Center, or using Anypoint CLI. 
+You can check specification conformance in <<validate-in-profiles,API Governance>> and <<validate-in-design-center,Design Center>> and by using <<validate-in-cli,Anypoint CLI>>. 
 
 [[validate-in-profiles]]
 == Validate API Specifications in Governance Profiles
-To validate APIs against governance rulesets in API Governance profiles, create or update a profile with filter criteria that defines the APIs you want to validate in its scope. You can do this in the web UI or by using Anypoint CLI commands. See xref:create-profiles.adoc[].
+To validate APIs against governance rulesets in API Governance profiles, see xref:create-profiles.adoc[].
 
+[[validate-in-cli]]
 == Validate API Specifications Using Anypoint CLI
 
 To validate against rulesets using CLI without using a governance profile, use the `governance:api:validate` command.

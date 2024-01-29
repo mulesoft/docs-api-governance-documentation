@@ -3,8 +3,8 @@
 image::api-gov-apim-governance-report.png[Screenshot of a Governance Report page in API Governance]
 
 [calloutlist]
-. View an overview of conformance shown by each ruleset the API is validated against.
-. View the ruleset in Exchange.
-. Select an aspect in *Conformance Breakdown* to view the conformance information for a specific API aspect. Any issues that apply to the entire API and not a specific aspect are listed in the *Global* tab.
-. View the conformance details identified for a specific ruleset.
-. View the API code in Design Center.
+. View an overview of the API's conformance to each ruleset it's validated against.
+. View a ruleset in Exchange.
+. Select an API aspect in *Conformance Breakdown* to view the conformance information for that aspect. Issues that apply to the entire API are listed in the *Global* tab.
+. View details of the API's conformance to a specific ruleset.
+. View the API specification in Design Center.
