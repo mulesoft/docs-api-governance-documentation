@@ -23,6 +23,4 @@ Click *View Details* for a ruleset to which the API is nonconformant.
 [[fix-api-catalog-issues-in-exchange]]
 == Fix API Catalog Conformance Issues in Exchange
 
-Fix issues by updating the API catalog information associated with the API so that it conforms to the rules it violated. 
-
-For information about updating API catalog information using Exchange, refer to xref:exchange::to-describe-an-asset.adoc[].
+Fix issues by updating the API catalog information associated with the API so that it conforms to the rules it violated. For information about updating API catalog information using Exchange, refer to xref:exchange::to-describe-an-asset.adoc[].
