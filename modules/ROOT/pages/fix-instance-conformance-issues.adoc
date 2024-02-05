@@ -1,12 +1,12 @@
-= Finding and Fixing Conformance Issues in API Instances
+= Fixing Instances in API Manager
 
-After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report details to get the information you need to fix the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification.
+You can check for API instance information conformance using a ruleset provided by MuleSoft or a custom ruleset. A ruleset provided by MuleSoft that validates API instance information is:
 
-// Screenshot of a Conformance Report page with callouts 
+* Mule API Management Best Practices
 
-include::_partials/api-gov-apim-governance-report.adoc[]
+After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report to get information about the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification. Refer to xref:find-conformance-issues.adoc[].
 
-== View Conformance Issue Details in the Governance Report
+== View Instance Conformance Issue Details in the Governance Report
 
 To view instance conformance issues in the governance validation report:
 
@@ -14,17 +14,20 @@ To view instance conformance issues in the governance validation report:
 * In Anypoint API Governance:
 +
 .. In the API Governance console, select the *Governed APIs* tab.
-.. If the *Instances* column has a *Nonconformant* badge, click *View Report* for information about the conformance issue.
-* In API Manager:
-.. Select the *Conformance Report* page for an instance that is marked as nonconformant.
-. View nonconformance details for each ruleset:
+.. If the *Instances* column has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
+.. View all issues:
 +
-* Click the icon for the nonconformance severity to see details for issues for that severity level. 
-* Click *View Details* to see the full breakdown of conformance issues.
+Click *View Details* for a ruleset to which the API is nonconformant. 
+.. View issues for API instances only:
+... Select *Instances* in the Conformance Breakdown section of the report.
+... Click *View Details* for a ruleset to which the API instances are nonconformant.
+* In API Manager:
+.. Select the *Governance Report* page for an instance that has an Instance Conformance badge of *Violation*.
+.. In the Instance validation results section, click *View Details* for a ruleset to which the API instances are in violation.
 
 == View Rule Details in the Rulesets
 
-If the governance validation report and conformance issue details don't help you fix the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 
+For more information about fixing the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 
 
 // Screenshot of a section of the ruleset with a description of the properties 
 

@@ -47,9 +47,11 @@ Govern your APIs using the following steps:
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 
-. xref:find-conformance-issues.adoc[Find and fix conformance issues in specifications] in API Designer and Exchange as you design your APIs. 
-
-. xref:find-conformance-issues.adoc[Find and fix conformance issues in instances] in API Manager at deployment time.
+. Find and fix conformance issues: 
+* xref:find-conformance-issues.adoc[In API specifications] in Design Center and Exchange as you design your APIs 
+* xref:find-conformance-issues.adoc[In API instances] in API Manager at deployment time
+* xref:find-conformance-issues.adoc[In API catalog information] in Exchange asset portal information
+* xref:find-conformance-issues.adoc[In API documentation] in Exchange asset portal documentation
 
 . xref:create-custom-rulesets.adoc[(Optional) Create custom rulesets] to more effectively govern APIs for your business groups (organizations).
 
