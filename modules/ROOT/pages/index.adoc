@@ -33,8 +33,17 @@ include::_partials/api-gov-gs-video.html[]
 
 == Governance Console
 
-In the API Governance console, governance administrators can add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across your organization. The API Governance console then provides an overview of conformance for all of your validated APIs.
-Monitor your API conformance and notify developers to help improve conformance.
+In the API Governance console, governance administrators can:
+
+* Add <<gov-rulesets,governance rulesets>> to <<gov-profiles,governance profiles>> to apply the governance rulesets to multiple APIs across their organizations. The API Governance console then provides an overview of conformance for all of your validated APIs.
+* Monitor API conformance and notify developers to help improve conformance.
+* Create draft profiles and view insights to assess API conformance for various selected rulesets without actually governing the APIs and without revealing the conformance status throughout Anypoint Platform. No notifications are sent for draft profiles.
+* Activate draft profiles when they're ready to govern the targeted APIs.
+Saving a profile as active:
+
+** Triggers the API validation
+** Sends notifications (if enabled) to developers to help them make the APIs conformant to the selected rulesets.
+** Populates the insights on the governance console with the newly active profiles' data.
 
 // Screenshot of the console with callouts
 
