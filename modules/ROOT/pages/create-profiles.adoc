@@ -113,7 +113,7 @@ The API Governance console guides you through deleting profiles.
 
 To delete a governance profile: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for profile you want to update and select *Delete*.
+. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for the profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
 [[create-profile-cli]]
