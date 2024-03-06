@@ -10,7 +10,7 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 
 The API Governance console UI guides you through creating profiles. 
 
-CAUTION: If you do not select filter criteria, your governance profile is applied to _all_ of your APIs in Exchange.
+CAUTION: If you do not select filter criteria, your governance profile applies to _all_ of your APIs in Exchange.
 
 [TIP]
 ====
@@ -94,7 +94,7 @@ To update governance profile information using the API Governance console:
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
 +
-After you apply your edits, the total APIs are updated to indicate how many APIs
+After you apply your edits, the total APIs refresh to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
 
 == Activate a Governance Profile Using the API Governance Console
