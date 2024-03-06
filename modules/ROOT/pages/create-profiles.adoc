@@ -89,6 +89,7 @@ The API Governance console guides you through updating profiles.
 To update governance profile information using the API Governance console: 
 
 . In *API Governance*, select the console *Profiles* tab.
+. Click *Draft* or *Active*, depending on whether the profile you want to update is draft or active.
 . For the profile you want to update, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Edit*.
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
@@ -98,11 +99,11 @@ your governance profile includes based on your updated filter criteria.
 
 == Activate a Governance Profile Using the API Governance Console
 
-To activate a governance profile using the API Governance console: 
+To activate a draft profile using the API Governance console: 
 
 . In *API Governance*, select the console *Profiles* tab.
-. Select the *Drafts* tab.
-. For the profile you want to activate, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Activate*.
+. Click *Draft* to show draft profiles.
+. Click  *Activate* for the profile you want to activate.
 +
 After you activate a profile, the APIs validated against the rulesets in that profile become governed APIs and their conformance information appears in integrating products in Anypoint Platform.
 
@@ -112,7 +113,7 @@ The API Governance console guides you through deleting profiles.
 
 To delete a governance profile: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) at the end of the profile you want to update and select *Delete*.
+. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for profile you want to update and select *Delete*.
 . Click *Yes, Delete*.
 
 [[create-profile-cli]]
