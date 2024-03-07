@@ -78,7 +78,9 @@ Set Notifications
 |Review
 |Review your profile and click *Save as active* or *Save as draft*.
 
-Save as draft to experiment with profile settings and review conformance information before governing the APIs. API conformance information shown in draft profiles is not shown in integrating Anypoint Platform products.
+// Info about Draft Governance Profiles
+
+include::general::partial$api-gov-concepts.adoc[tag=gov-draft-profiles]
 |
 |===
 

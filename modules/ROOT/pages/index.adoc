@@ -77,6 +77,14 @@ Following are the concepts you must know to use Anypoint API Governance.
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
 
+// Info about Active Governance Profiles
+
+include::general::partial$api-gov-concepts.adoc[tag=gov-active-profiles]
+
+// Info about Draft Governance Profiles
+
+include::general::partial$api-gov-concepts.adoc[tag=gov-draft-profiles]
+
 // Definition of Governance Rulesets
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets,leveloffset=+2]
