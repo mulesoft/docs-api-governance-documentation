@@ -80,7 +80,7 @@ Set Notifications
 
 // Info about Draft Governance Profiles
 
-include::general::partial$api-gov-concepts.adoc[tag=gov-draft-profiles]
+include::general::partial$api-gov-concepts.adoc[tag=gov-draft-profiles,indent=1]
 |
 |===
 
