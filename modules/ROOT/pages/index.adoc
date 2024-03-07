@@ -79,11 +79,11 @@ include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloff
 
 // Info about Active Governance Profiles
 
-include::general::partial$api-gov-concepts.adoc[tag=gov-active-profiles,indent=1]
+include::general::partial$api-gov-concepts.adoc[tag=gov-active-profiles]
 
 // Info about Draft Governance Profiles
 
-include::general::partial$api-gov-concepts.adoc[tag=gov-draft-profiles,indent=1]
+include::general::partial$api-gov-concepts.adoc[tag=gov-draft-profiles]
 
 // Definition of Governance Rulesets
 
