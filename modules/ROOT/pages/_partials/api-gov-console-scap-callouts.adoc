@@ -7,6 +7,6 @@ image::api-gov-console.png[Screenshot of the API Governance console]
 . View, filter, and search a summary list of your active and draft governance profiles.
 . View governed APIs and follow links to their governance reports.
 . Export conformance reports in CSV format.
-. Add a new profile.
+. Create a profile and save it as draft or active.
 . View the comprehensive governance report for an API.
 . Select from the more options menu to take relevant actions. You can export reports for a selected profile or API, view, edit, or delete a profile, notify API owners, or open an API in Exchange.
