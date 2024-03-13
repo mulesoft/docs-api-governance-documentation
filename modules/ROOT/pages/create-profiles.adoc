@@ -76,7 +76,7 @@ Set Notifications
 |Specify General Information 
 |Enter a profile name and description that helps others understand the kinds of governance rulesets included and the kinds of APIs validated in this profile.
 |Review
-|Review your profile and click *Save as draft* or *Save as active*:
+|Review your profile and click *Save as a draft* or *Save as active*:
 
 * Save a profile as draft to experiment with profile settings and review conformance information before governing the APIs. API conformance information for draft profiles is not shown in integrating Anypoint Platform products.
 * Save a profile as active to govern the targeted APIs and show API conformance information in integrating Anypoint Platform products.
