@@ -21,7 +21,7 @@ Use governance rulesets to apply centralized governance to multiple aspects of y
 +
 * Enforce governance within your DevOps organization:
 +
-Automate API governance using CLI commands in your CI/CD pipeline.
+Automate API governance in your CI/CD pipeline using CLI commands or through API solutions using the experience API.
 
 == Anypoint API Governance Overview Video 
 
