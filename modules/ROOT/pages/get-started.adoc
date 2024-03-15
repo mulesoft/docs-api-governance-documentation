@@ -57,6 +57,11 @@ Govern your APIs using the following steps:
 
 . xref:cli-command-list.adoc[(Optional) Install and run CLI commands] to automate governance as part of your CI/CD pipeline and to more easily create custom rulesets.
 
+. (Optional) Use the API Governance Experience API to implement custom API-based solutions that access a subset of API Governance functionality. For example, you can use the experience API to list governance profiles and retrieve API conformance status information. Access the experience API in Exchange in your preferred Anypoint Platform control plane:
+
+** https://anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/api-governance-xapi[US]
+** https://eu1.anypoint.mulesoft.com/exchange/e0b4a150-f59b-46d4-ad25-5d98f9deb24a/api-governance-xapi[EU]
+
 == See Also
 
 * xref:access-management::managing-permissions.adoc[]
