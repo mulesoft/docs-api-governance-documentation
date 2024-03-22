@@ -12,37 +12,46 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
+[[gov-monitoring-concepts]]
+== Governance Monitoring Concepts
+
+Following are some concepts you need to know as you use the API Governance console summary and other conformance reports and pages in Anypoint Platform.
+
 // Definition of Governance Profiles
 
-include::general::partial$api-gov-concepts.adoc[tag=governance-profiles,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profiles]
 
 // Definition of Governance Profile Status
 
-include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status]
 
 // Definition of Governed APIs
 
-include::general::partial$api-gov-concepts.adoc[tag=governed-apis,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governed-apis]
+
+// Definition of Centrally Governed APIs
+
+include::general::partial$api-gov-concepts.adoc[tag=centrally-governed-apis]
 
 // Definition of Governance Status
 
-include::general::partial$api-gov-concepts.adoc[tag=governance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=governance-status]
 
 // Definition of API Conformance
 
-include::general::partial$api-gov-concepts.adoc[tag=api-conformance,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance]
 
 // Definition of API Conformance Status
 
-include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status]
 
 // Definition of Nonconformance Severity
 
-include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity,leveloffset=+2]
+include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity]
 
 // Definition of API Governance Usage Reports
 
-include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports,leveloffset=+1]
+include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports]
 
 [[gov-conf-report]]
 == Governance Conformance Report
