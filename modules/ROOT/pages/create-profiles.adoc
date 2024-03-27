@@ -98,6 +98,7 @@ To update governance profile information using the API Governance console:
 After you apply your edits, the total APIs refresh to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
 
+[[activate-draft-profile]]
 == Activate a Draft Profile Using the API Governance Console
 
 To activate a draft profile using the API Governance console: 

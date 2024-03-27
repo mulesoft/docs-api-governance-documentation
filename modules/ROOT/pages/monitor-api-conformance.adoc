@@ -2,9 +2,19 @@
 
 After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API specifications' conformance success and failure.  
 
-== Status Information on the Console
+== Assessing Governance Impacts Using Draft Profiles
 
-You can view the latest status information in the console.
+Some APIs might be targeted by both draft and active profiles, but if an API is targeted only by one or more draft profiles, the only way to view the conformance is to view it within the context of a draft profile that targets it. 
+
+To view API conformance information for APIs targeted by draft profiles:
+
+. On the main API Governance console page, select the *Profiles* tab.
+. Select *Draft*.
+. xxx
+
+== Monitoring Conformance Information on the Console
+
+To view API conformance information for APIs targeted by active profiles, view the latest summary information in the API Governance console (admin only) and in validation reports.
 
 // Screenshot of the console with callouts
 
@@ -54,7 +64,7 @@ include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity]
 include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports]
 
 [[gov-conf-report]]
-== Governance Conformance Report
+== Governance Validation Report
 
 You can view conformance details for governed APIs in their governance validation reports in API Governance console and API Manager. See xref:find-and-fix-conformance-issues.adoc[].
 
@@ -62,14 +72,39 @@ You can view conformance details for governed APIs in their governance validatio
 
 You can export conformance information in CSV format from several places in the API Governance console. 
 
+* <<draft-profile-export>>
 * <<gov-profile-export>>
 * <<gov-api-export>>
 * <<gov-spec-profile-export>>
 
-[[gov-profile-export]]
-=== Governance Profile Export
-On the main API Governance console page, select the *Profiles* tab and then click the *Export Report* button to export governance profile information, such as: 
+[[draft-profile-export]]
+=== Draft Governance Profile Export
 
+To export a conformance report for APIs targeted by a specific draft profile:
+
+. On the main API Governance console page, select the *Profiles* tab.
+. Select *Draft*.
+. Click the *Export CSV* button to export governance profile information in CSV format, such as: 
++
+* Organization ID 
+* Profile IDs
+* Profile name
+* Status
+* Total APIs validated
+* Number of conformant APIs (pass)
+* Number of nonconformant APIs (fail)
+* Timestamps
+* Associated ruleset tags
+
+[[gov-profile-export]]
+=== Active Governance Profile Export
+
+To export a conformance report for APIs targeted by active profiles:
+
+. On the main API Governance console page, select the *Profiles* tab.
+. Select *Active*.
+. Click the *Export Report* button to export governance profile information, such as: 
++
 * Organization ID 
 * Profile IDs
 * Profile name
@@ -82,8 +117,14 @@ On the main API Governance console page, select the *Profiles* tab and then clic
 
 [[gov-api-export]]
 === Governed API Export
-On the main API Governance console page, select the *Governed APIs* tab and then click *Export Report* to export the governed API information, such as:  
 
+To export a report of all governed APIs targeted by your active profiles:
+
+. On the main API Governance console page, select the *Governed APIs* tab.
+. Click *Export Report* to export the governed API information for all active profiles. 
++
+The exported information includes:  
++
 * Organization ID 
 * API IDs
 * Versions
@@ -93,9 +134,17 @@ On the main API Governance console page, select the *Governed APIs* tab and then
 * Timestamps
 
 [[gov-spec-profile-export]]
-=== Specific Profile Export
-On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Export Reports* to export a report that shows the selected governance profile's information, such as: 
+=== Specific Active Profile Export
 
+To export a conformance report for APIs targeted by a specific active profile:
+
+. On the main API Governance console page, select the *Profiles* tab.
+. Select *Active*.
+. On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]).
+. Select *Export Reports*.
++ 
+This exports a report that shows the selected governance profile's information, such as: 
++
 * Organization ID
 * API IDs
 * Versions

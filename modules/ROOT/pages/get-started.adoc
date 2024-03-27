@@ -41,11 +41,15 @@ This documentation covers the full product functionality that is available after
 
 Govern your APIs using the following steps:
 
-. xref:add-tags.adoc[Identify] the APIs that you want to govern.
+. xref:add-tags.adoc[Identify] the APIs in Exchange that you want to govern using tags and categories.
 
-. xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
+. xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs. (Admins only)
+.. Consider saving your profiles as draft at first so that you can configure them without revealing all of the conformance information across Anypoint Platform.
+.. After you have assessed the impacts of the settings you've chosen for your profiles, xref:create-profiles.adoc#activate-draft-profile[activate them] to notify developers and reveal the impacts across Anypoint Platform.
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
+** For draft profiles, drill down to the APIs in each draft profile to assess conformance impacts for that specific profile and download the associated CSV file report. (Admin only)
+** For active profiles, view summary information in the API Governance console (admin only) and in validation reports.
 
 . Find and fix conformance issues: 
 * xref:find-conformance-issues.adoc[In API specifications] in Design Center and Exchange as you design your APIs 
