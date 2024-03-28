@@ -53,10 +53,6 @@ include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status]
 
 include::general::partial$api-gov-concepts.adoc[tag=governed-apis]
 
-// Definition of Centrally Governed APIs
-
-include::general::partial$api-gov-concepts.adoc[tag=centrally-governed-apis]
-
 // Definition of Governance Status
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-status]
