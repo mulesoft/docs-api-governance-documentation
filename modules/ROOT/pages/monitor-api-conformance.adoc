@@ -10,7 +10,10 @@ To view API conformance information for APIs targeted by draft profiles:
 
 . On the API Governance console, select the *Profiles* tab.
 . Select *Draft*.
-. xxx
+. Select a profile.
+. View conformance information.
+. Return to the profile settings and adjust the settings to test different selections until you target the set of APIs you want and apply the optimal set of rules to meet the purpose of the profile. 
+. Activate the profile to share the conformance information across Anypoint Platform so that developers can take action to resolve the conformance issues in APIs they own.
 
 == Monitoring Conformance Information on the Console
 
