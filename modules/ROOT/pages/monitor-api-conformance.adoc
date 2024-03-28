@@ -15,7 +15,7 @@ image::api-gov-draft-profile-view.png[Screenshot of the API conformance informat
 . View the APIs targeted by the draft profile. These APIs are governed, but unless they are also targeted by an active profile, their conformance information is not revealed outside of API Governance.
 . Export a conformance report in CSV format for all APIs targeted by this draft profile.
 . View, edit, or duplicate profile settings.
-. Activate the profile, notify API owners, or open an API in Exchange.
+. Export a report of only this API's conformance, notify the API owner, or open the API in Exchange.
 
 To test profile settings using draft profiles:
 
