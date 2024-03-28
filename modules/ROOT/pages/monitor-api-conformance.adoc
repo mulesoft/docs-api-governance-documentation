@@ -23,7 +23,7 @@ To test profile settings using draft profiles:
 . Select *Draft*.
 . Select a profile.
 . View conformance information.
-. Edit the profile settings and view the API conformance results for different selections until you target the desired set of APIs and rules. 
+. Edit the profile settings and view the API conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them. 
 . Activate the profile to share the conformance information across Anypoint Platform so that developers can take action to resolve the conformance issues in APIs they own.
 
 == Monitoring Conformance Information for Active Profiles
