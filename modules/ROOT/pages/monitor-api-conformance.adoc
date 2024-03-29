@@ -80,7 +80,7 @@ You can view conformance details for governed APIs in their governance validatio
 
 == Export Conformance Information
 
-You can export conformance information in CSV format from several places in the API Governance console. 
+You can export profile and API conformance information in CSV format from several places in the API Governance console. 
 
 * <<draft-profile-export>>
 * <<gov-profile-export>>
@@ -88,45 +88,44 @@ You can export conformance information in CSV format from several places in the 
 * <<gov-spec-profile-export>>
 
 [[draft-profile-export]]
-=== Draft Governance Profile Export
+=== Export Conformance Information by Profile
 
 To export a conformance report for APIs targeted by a specific draft profile:
 
 . On the API Governance console, select the *Profiles* tab.
 . Select *Draft*.
-. Click the *Export CSV* button to export governance profile information in CSV format, such as: 
+. Click the *Export CSV* button. 
++
+The exported information includes:  
 +
 * Organization ID 
-* Profile IDs
-* Profile name
-* Status
-* Total APIs validated
+* API IDs
+* API Version
+* Total number of Asset Versions for that API Version
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamps
-* Associated ruleset tags
 
 [[gov-profile-export]]
-=== Active Governance Profile Export
+=== Export Profile Information 
 
-To export a conformance report for APIs targeted by active profiles:
+To export profile information:
 
 . On the API Governance console, select the *Profiles* tab.
-. Select *Active*.
 . Click the *Export Report* button to export governance profile information, such as: 
 +
 * Organization ID 
 * Profile IDs
 * Profile name
-* Status
+* Status (LIVE or DRAFT)
 * Total APIs validated
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
-* Timestamps
-* Associated ruleset tags
+* Timestamp
+* Associated tags in Exchange
 
 [[gov-api-export]]
-=== Governed API Export
+=== Export of Governed APIs Targeted by Active Profiles 
 
 To export a report of all governed APIs targeted by your active profiles:
 
@@ -136,12 +135,12 @@ To export a report of all governed APIs targeted by your active profiles:
 The exported information includes:  
 +
 * Organization ID 
-* API IDs
-* Versions
-* Total number of APIs
+* API ID
+* API Version
+* Total number of Asset Versions for that API Version
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
-* Timestamps
+* Timestamp
 
 [[gov-spec-profile-export]]
 === Specific Active Profile Export
@@ -157,11 +156,11 @@ This exports a report that shows the selected governance profile's information, 
 +
 * Organization ID
 * API IDs
-* Versions
-* Total number of APIs
+* API Version
+* Total number of Asset Versions for that API Version
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
-* Timestamps
+* Timestamp
 
 [[eval-api-conf-cli]]
 == Evaluate API Conformance Using the CLI
