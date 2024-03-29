@@ -78,7 +78,7 @@ Set Notifications
 |Review
 |Review your profile and click *Save as a draft* or *Save as active*:
 
-* Save a profile as draft to experiment with profile settings and review conformance information before revealing the conformance information for its targeted APIs in integrating Anypoint Platform products.
+* Save a profile as draft to test profile settings and review conformance information before revealing the conformance information for its targeted APIs in integrating Anypoint Platform products.
 * Save a profile as active to reveal the conformance information for its targeted APIs in integrating Anypoint Platform products.
 
 When you save a profile as either draft or active, its targeted APIs become governed.
@@ -97,7 +97,7 @@ To update governance profile information using the console:
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
 +
-After you apply your edits, the total APIs refresh to indicate how many APIs
+After you apply your edits, the total APIs value refreshes to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
 
 [[activate-draft-profile]]
