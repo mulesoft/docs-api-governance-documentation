@@ -10,7 +10,7 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 
 The API Governance console UI guides you through creating profiles. You can save a profile as draft to test your settings and activate it later.
 
-CAUTION: If you do not select filter criteria, your governance profile applies to _all_ of your APIs in Exchange.
+CAUTION: If you do not select filter criteria, your governance profile applies rulesets to _all_ of your APIs in Exchange.
 
 [TIP]
 ====
