@@ -4,7 +4,7 @@ After you configure governance profiles for your APIs and the resulting governan
 
 == Testing Profile Settings Using Draft Profiles
 
-Consider using draft profiles to test profile settings. This enables you to ensure you've limited the scope of the profiles to just what you need before alerting the API owners about identified API conformance issues. 
+Consider using draft profiles to test profile settings. This enables you to limit the scope of the profiles to just what you need before alerting the API owners about identified API conformance issues. 
 
 // Screenshot of a draft profile's page
 
