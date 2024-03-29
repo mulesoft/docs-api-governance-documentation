@@ -8,7 +8,7 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 [[create-profile-in-console]]
 == Create a Governance Profile Using the API Governance Console
 
-The API Governance console UI guides you through creating profiles. 
+The API Governance console UI guides you through creating profiles. You can save a profile as draft to test your settings and activate it later.
 
 CAUTION: If you do not select filter criteria, your governance profile applies to _all_ of your APIs in Exchange.
 
@@ -78,8 +78,10 @@ Set Notifications
 |Review
 |Review your profile and click *Save as a draft* or *Save as active*:
 
-* Save a profile as draft to experiment with profile settings and review conformance information before governing the APIs. API conformance information for draft profiles is not shown in integrating Anypoint Platform products.
-* Save a profile as active to govern the targeted APIs and show API conformance information in integrating Anypoint Platform products.
+* Save a profile as draft to experiment with profile settings and review conformance information before revealing the conformance information for its targeted APIs in integrating Anypoint Platform products.
+* Save a profile as active to reveal the conformance information for its targeted APIs in integrating Anypoint Platform products.
+
+When you save a profile as either draft or active, its targeted APIs become governed.
 |
 |===
 
