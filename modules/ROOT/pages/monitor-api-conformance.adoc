@@ -28,7 +28,7 @@ To test profile settings using draft profiles:
 
 == Monitoring Conformance Information for Active Profiles
 
-To view API conformance information for APIs targeted by active profiles, view the latest summary information in the API Governance console (admin only) and in validation reports.
+To view API conformance information for APIs targeted by active profiles, view the latest summary information in the API Governance console and in validation reports.
 
 // Screenshot of the console with callouts
 
