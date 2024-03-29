@@ -13,9 +13,12 @@ Each email notification includes:
 
 Enable and configure the notifications to automatically send email when the latest version of an API becomes non-conformant. 
 
-Notifications are sent only for active profiles and only if there is a valid contact email address configured for the selected recipient.
+API Governance sends notifications about conformance only when:
 
-Automated notifications are sent for each ruleset that has a new conformance failure when the conformance status changes during validation. A notification is sent for a specific API only the first time that version of the API fails conformance to a specific ruleset. 
+* The API is targeted by one or more active profiles.
+* There is a valid contact email address configured for the selected recipient.
+* An API's conformance status changes to fail because of a change in the API or applied rulesets.
+* It's the first time a specific version of an API fails conformance to a specific ruleset. 
 
 Following are the changes that might result in notifications: 
 
