@@ -82,32 +82,13 @@ You can view conformance details for governed APIs in their governance validatio
 
 You can export profile and API conformance information in CSV format from several places in the API Governance console. 
 
-* <<draft-profile-export>>
 * <<gov-profile-export>>
 * <<gov-api-export>>
 * <<gov-spec-profile-export>>
-
-[[draft-profile-export]]
-=== Export Conformance Information by Profile
-
-To export a conformance report for APIs targeted by a specific draft profile:
-
-. On the API Governance console, select the *Profiles* tab.
-. Select *Draft*.
-. Click the *Export CSV* button. 
-+
-The exported information includes:  
-+
-* Organization ID 
-* API IDs
-* API Version
-* Total number of Asset Versions for that API Version
-* Number of conformant APIs (pass)
-* Number of nonconformant APIs (fail)
-* Timestamps
+* <<gov-spec-draft-api-export>>
 
 [[gov-profile-export]]
-=== Export Profile Information 
+=== Export of Conformance Information by Profile 
 
 To export profile information:
 
@@ -143,7 +124,7 @@ The exported information includes:
 * Timestamp
 
 [[gov-spec-profile-export]]
-=== Specific Active Profile Export
+=== Export of Conformance Information for a Specific Active Profile
 
 To export a conformance report for APIs targeted by a specific active profile:
 
@@ -155,6 +136,25 @@ To export a conformance report for APIs targeted by a specific active profile:
 This exports a report that shows the selected governance profile's information, such as: 
 +
 * Organization ID
+* API IDs
+* API Version
+* Total number of Asset Versions for that API Version
+* Number of conformant APIs (pass)
+* Number of nonconformant APIs (fail)
+* Timestamp
+
+[[gov-spec-draft-api-export]]
+=== Export of Conformance Information for a Specific Draft Profile
+
+To export a conformance report for APIs targeted by a specific draft profile:
+
+. On the API Governance console, select the *Profiles* tab.
+. Select *Draft*.
+. Click the *Export CSV* button. 
++
+The exported information includes:  
++
+* Organization ID 
 * API IDs
 * API Version
 * Total number of Asset Versions for that API Version
