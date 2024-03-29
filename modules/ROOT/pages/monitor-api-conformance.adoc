@@ -76,7 +76,7 @@ include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports
 [[gov-conf-report]]
 == Governance Validation Report
 
-You can view conformance details for governed APIs in their governance validation reports in API Governance console and API Manager. See xref:find-and-fix-conformance-issues.adoc[].
+You can view conformance details for governed APIs in their governance validation reports in API Governance and API Manager. See xref:find-and-fix-conformance-issues.adoc[].
 
 == Export Conformance Information
 
