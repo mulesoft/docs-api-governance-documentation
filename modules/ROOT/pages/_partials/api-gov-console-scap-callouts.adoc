@@ -3,7 +3,7 @@
 image::api-gov-console.png[Screenshot of the API Governance console]
 
 [calloutlist]
-. View a numeric and visual summary of your organization's governance information, including API conformance and number of governed APIs.
+. View a summary of your organization's governance information, including API conformance and number of governed APIs.
 . View, filter, and search a summary list of your active and draft governance profiles.
 . Export conformance reports in CSV format.
 . Create a profile and save it as draft or active.
