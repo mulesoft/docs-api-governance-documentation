@@ -39,7 +39,7 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 [[gov-monitoring-concepts]]
 == Governance Monitoring Concepts
 
-Following are some concepts you need to know as you use the API Governance console summary and other conformance reports and pages in Anypoint Platform.
+Following are the concepts you must know to use the API Governance console summary and other API conformance reports and pages in Anypoint Platform.
 
 // Definition of Governance Profiles
 
