@@ -14,7 +14,7 @@ CAUTION: If you do not select filter criteria, your governance profile applies r
 
 === Considerations
 
-* Start by creating draft profiles to test settings before revealing the targeted API's conformance across Anypoint Platform.
+* Start by saving your profiles as draft to test settings before revealing the targeted API's conformance across Anypoint Platform.
 * Select fewer rulesets and add more filters to narrow the scope of a single profile. 
 * Configure each profile to govern a related set of APIs for easier maintenance.
 * Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
