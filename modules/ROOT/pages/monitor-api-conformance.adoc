@@ -110,7 +110,7 @@ To export profile information:
 . On the API Governance console, select the *Profiles* tab.
 . Click *Export Report*.
 +
-This exports a CSV file with API conformance information for each profile in your organizations. The information includes:   
+This exports a CSV file with API conformance information for each profile in your organization. The information includes:   
 +
 * Organization ID 
 * Profile IDs
@@ -130,7 +130,7 @@ To export a report of all governed APIs targeted by your active profiles:
 . On the API Governance console, select the *Governed APIs* tab.
 . Click *Export Report*. 
 +
-This exports a CSV file with conformance information for each API targeted by the active profiles in your organizations. The information includes:  
+This exports a CSV file with conformance information for each API targeted by the active profiles in your organization. The information includes:  
 +
 * Organization ID 
 * API ID
