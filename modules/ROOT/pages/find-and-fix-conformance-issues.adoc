@@ -10,6 +10,7 @@ include::_partials/api-gov-apim-governance-report.adoc[]
 
 For details about finding and fixing conformance issues, refer to the following:
 
+* xref:view-conformance-status-in-exchange.adoc[]
 * xref:find-conformance-issues.adoc[]
 * xref:fix-instance-conformance-issues.adoc[]
 * xref:fix-catalog-info-conformance-issues.adoc[]
