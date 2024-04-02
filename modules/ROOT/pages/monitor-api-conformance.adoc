@@ -36,42 +36,62 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
-[[gov-monitoring-concepts]]
-== Governance Monitoring Concepts
+Use the insights on the governance console to monitor your API governance:
 
-Following are the concepts you must know to use the API Governance console summary and other API conformance reports and pages in Anypoint Platform.
+* Governance Usage by Profile Type
++
+This shows the usage of API Governance, including number of governed APIs, total number of APIs by profile type, and subscription limit information. Because some APIs might be in both active and draft profiles, this tile specifies how many are in draft only.
++
+* Active Profile Status
++
+This shows profile statuses for active profiles based on the percentage of conformant APIs in the profiles:
++
+** Normal: 
++ 
+More than 70% of APIs are conformant.
++
+** At Risk:
++
+Less than 70% of APIs are conformant.
++
+* Conformance Status
++
+This shows the breakdown of conformance for the APIs targeted by your governance profiles as follows: 
++
+** Conformant:
++
+The APIs pass all applied governance rulesets.
++
+** Not Conformant:
++
+The APIs fail at least one governance ruleset.
++
+** Not Validated:
++
+The APIs are not validated because they are not included in a governance profile.
++
+* Nonconformance by Severity
++
+This tile on the governance console shows the severity of API nonconformance to rulesets based on the percentage of all of required rulesets that the APIs passed. The higher the severity, the fewer rulesets the APIs passed.
++
+** High Severity:
++
+0 - 40% rulesets passed
++
+** Medium Severity:
++
+41% - 80% rulesets passed
++
+** Low Severity: 
++
+81% - 99% rulesets passed
 
-// Definition of Governance Profiles
+[[api-governance-usage-reports]]
+== API Governance Usage Reports
 
-include::general::partial$api-gov-concepts.adoc[tag=governance-profiles]
+You can view usage reports to gain insight into your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
 
-// Definition of Governance Profile Status
-
-include::general::partial$api-gov-concepts.adoc[tag=governance-profile-status]
-
-// Definition of Governed APIs
-
-include::general::partial$api-gov-concepts.adoc[tag=governed-apis]
-
-// Definition of Governance Status
-
-include::general::partial$api-gov-concepts.adoc[tag=governance-status]
-
-// Definition of API Conformance
-
-include::general::partial$api-gov-concepts.adoc[tag=api-conformance]
-
-// Definition of API Conformance Status
-
-include::general::partial$api-gov-concepts.adoc[tag=api-conformance-status]
-
-// Definition of Nonconformance Severity
-
-include::general::partial$api-gov-concepts.adoc[tag=nonconformance-severity]
-
-// Definition of API Governance Usage Reports
-
-include::general::partial$api-gov-concepts.adoc[tag=api-governance-usage-reports]
+// end::api-governance-usage-reports[]
 
 [[gov-conf-report]]
 == Governance Validation Report
