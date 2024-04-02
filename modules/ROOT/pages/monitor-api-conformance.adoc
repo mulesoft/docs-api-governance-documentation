@@ -153,7 +153,7 @@ To export a conformance report for APIs targeted by a specific active or draft p
 This exports a CSV file with conformance information for each API targeted by the selected profile. The information includes: 
 +
 * Organization ID
-* API IDs
+* API ID
 * API Version
 * Total number of Asset Versions for that API Version
 * Number of conformant APIs (pass)
