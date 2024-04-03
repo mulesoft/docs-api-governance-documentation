@@ -53,7 +53,7 @@ A preview of filtered APIs appears in the *Define Filter Criteria* page as you a
 +
 * Tags
 +
-The *Tags* section lists frequently-used tags and the tags you add to the profile. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
+The *Tags* section lists frequently used tags and the tags you add to the profile. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
 +
 * Categories
 +
