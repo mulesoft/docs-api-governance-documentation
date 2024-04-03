@@ -16,22 +16,22 @@ Enable and configure the notifications to automatically send email when the late
 API Governance sends notifications about conformance only when:
 
 * One or more active profiles targets the API.
-* There is a valid contact email address configured for the selected recipient.
+* A valid contact email address is configured for the selected recipient.
 * An API's conformance status changes to fail because of a change in the API or applied rulesets.
 * The first time a specific version of an API fails conformance to a specific ruleset. 
 
 Following are the changes that might result in notifications: 
 
-. Updating an active governance profile, including adding or removing rulesets 
-. Publishing a new version of an API 
-. Changing tags on an API 
-. Updating governance rulesets 
+* Updating an active governance profile, including adding or removing rulesets 
+* Publishing a new version of an API 
+* Changing tags on an API 
+* Updating governance rulesets 
 
 === Enable and Configure Notifications in the Console
 
 To enable and configure conformance notifications in the console:
 
-. In the API Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
+. In the API Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for. 
 . If it is not already selected, select *Enabled* for *Nonconformance notification*.
 . Select a recipient:
 +
