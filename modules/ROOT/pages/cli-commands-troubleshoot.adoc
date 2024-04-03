@@ -53,7 +53,7 @@ The `exchange.json` file is optional when uploading an asset because the CLI inc
 
 A non-specific publishing error similar to `unable to publish` might occur when you use the `exchange asset upload` command to upload your custom ruleset and its documentation. 
 
-If you attempt to upload an asset using the wrong command syntax, you might inadvertently publish it as the wrong asset type. You cannot republish the asset with the same asset ID as a different asset type. 
+If you attempt to upload an asset using the wrong command syntax, you might inadvertently publish it as the wrong asset type. You can't republish the asset with the same asset ID as a different asset type. 
 
 To republish the ruleset in this situation, fix the syntax, change the asset ID, and try uploading again. For example, change `my-auth-best-practices` to `my-new auth-best-practices`. 
 
