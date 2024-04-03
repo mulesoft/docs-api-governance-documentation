@@ -119,7 +119,7 @@ To duplicate a profile:
 . In *API Governance*, select the console *Profiles* tab.
 . Click *Draft* or *Active*.
 . Select a profile.
-. Select  *Profile Settings > Duplicate*.
+. Select *Profile Settings > Duplicate*.
 +
 A copy of the profile opens.
 +
