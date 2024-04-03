@@ -107,7 +107,7 @@ To activate a draft profile:
 
 . In *API Governance*, select the console *Profiles* tab.
 . Click *Draft* to show draft profiles.
-. Click  *Activate* for the profile you want to activate.
+. Click *Activate* for the profile to activate.
 +
 After you activate a profile, the APIs validated against the rulesets in that profile become governed APIs and their conformance information appears in integrating products in Anypoint Platform.
 
