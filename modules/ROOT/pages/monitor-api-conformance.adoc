@@ -115,7 +115,7 @@ The exported CSV file contains API conformance information for each profile in y
 * Organization ID 
 * Profile IDs
 * Profile name
-* Status (LIVE or DRAFT)
+* Profile type (ACTIVE or DRAFT)
 * Total APIs validated
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
