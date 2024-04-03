@@ -23,13 +23,13 @@ Use governance rulesets to apply centralized governance to multiple aspects of y
 +
 Automate API governance in your CI/CD pipeline using CLI commands or through API solutions using the experience API.
 
-== Anypoint API Governance Overview Video 
+// == Anypoint API Governance Overview Video 
 
-Watch the Anypoint API Governance Product Spotlight video to see a quick overview of Anypoint API Governance.
+// Watch the Anypoint API Governance Product Spotlight video to see a quick overview of Anypoint API Governance.
 
-++++
-include::_partials/api-gov-gs-video.html[]
-++++
+// ++++
+//include::_partials/api-gov-gs-video.html[]
+//++++
 
 == Governance Console
 
