@@ -8,14 +8,14 @@ Consider using draft profiles to test profile settings. This enables you to limi
 
 // Screenshot of a draft profile's page
 
-image::api-gov-draft-profile-view.png[Screenshot of the API conformance information for a selected draft profile]
+image::api-gov-draft-profile-view.png[API conformance information for a selected draft profile]
 
 [calloutlist]
 . View a summary of API conformance for the selected draft profile.
 . View the APIs targeted by the draft profile. These APIs are governed, but unless they are also targeted by an active profile, their conformance information is not revealed outside of API Governance.
 . Export a conformance report in CSV format for all APIs targeted by this draft profile.
 . View, edit, or duplicate profile settings.
-. Export a report of only this API's conformance information, notify the API owner, or open the API in Exchange.
+. Export a report of only this API's conformance information or open the API in Exchange.
 
 To test profile settings using draft profiles:
 
@@ -50,7 +50,7 @@ More than 70% of APIs are conformant.
 +
 * At Risk:
 +
-Less than 70% of APIs are conformant.
+Fewer than 70% of APIs are conformant.
 
 Conformance Status::
 Shows the breakdown of conformance for the APIs targeted by your governance profiles as follows: 
@@ -110,7 +110,7 @@ To export profile information:
 . On the API Governance console, select the *Profiles* tab.
 . Click *Export Report*.
 +
-This exports a CSV file with API conformance information for each profile in your organization. The information includes:   
+The exported CSV file contains API conformance information for each profile in your organization. The information includes:   
 +
 * Organization ID 
 * Profile IDs
@@ -130,7 +130,7 @@ To export a report of all governed APIs targeted by your active profiles:
 . On the API Governance console, select the *Governed APIs* tab.
 . Click *Export Report*. 
 +
-This exports a CSV file with conformance information for each API targeted by the active profiles in your organization. The information includes:  
+The exported CSV file contains conformance information for each API targeted by the active profiles in your organization. The information includes:  
 +
 * Organization ID 
 * API ID
@@ -150,7 +150,7 @@ To export a conformance report for APIs targeted by a specific active or draft p
 . On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]).
 . For the profile you want conformance information for, select *Export Report* from the more options menu. 
 + 
-This exports a CSV file with conformance information for each API targeted by the selected profile. The information includes: 
+The exported CSV file contains conformance information for each API targeted by the selected profile. The information includes: 
 +
 * Organization ID
 * API ID
