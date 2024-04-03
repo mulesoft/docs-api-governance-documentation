@@ -86,7 +86,7 @@ anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Be
 [[misc-errors]]
 == Miscellaneous Errors
 
-Anypoint CLI parses commands for specific information and if the CLI doesn't recognize or correctly interpret in the command, the error message might be misleading or vague. 
+Anypoint CLI parses commands for specific information, and if the CLI doesn't recognize or correctly interpret the command, the error message might be misleading or vague. 
 To troubleshoot these errors:
 
 * Ensure that you are entering the command flags and options as documented.
