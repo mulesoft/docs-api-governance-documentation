@@ -1,6 +1,6 @@
 = Creating Completely New Custom Rulesets
 
-If you want a custom ruleset that you can't create by modifying one of the provided rulesets, use one of the following approaches:
+To create a completely new custom ruleset that isn't based on an existing one, use one of the following approaches:
 
 * Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets that have already been submitted. If you don't find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 * Generate a ruleset using Anypoint CLI commands by scaffolding it from a specification's data schema. See <<scaffold-rulesets>>.

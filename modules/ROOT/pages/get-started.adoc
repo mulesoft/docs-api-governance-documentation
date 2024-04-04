@@ -41,7 +41,7 @@ This documentation covers the full product functionality that is available after
 
 Govern your APIs using the following steps:
 
-. xref:add-tags.adoc[Identify] the APIs in Exchange that you want to govern by using tags and categories.
+. xref:add-tags.adoc[Identify] APIs to filter for governance by using tags and categories in Exchange.
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
 .. Consider saving your profiles as draft to test settings before revealing their targeted APIs' conformance information across Anypoint Platform.
