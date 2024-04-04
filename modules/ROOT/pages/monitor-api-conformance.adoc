@@ -135,7 +135,7 @@ The exported CSV file contains conformance information for each API targeted by 
 * Organization ID 
 * API ID
 * API Version
-* Total number of Asset Versions for that API Version
+* Total number of asset versions for that API Version
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
@@ -147,15 +147,15 @@ To export a conformance report for APIs targeted by a specific active or draft p
 
 . On the API Governance console, select the *Profiles* tab.
 . Select *Active* or *Draft*.
-. On a selected governance profile page, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]).
-. For the profile you want conformance information for, select *Export Report* from the more options menu. 
+. Select a profile.
+. Click *Export to CSV*.
 + 
 The exported CSV file contains conformance information for each API targeted by the selected profile. The information includes: 
 +
 * Organization ID
 * API ID
 * API Version
-* Total number of Asset Versions for that API Version
+* Total number of asset versions for that API Version
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
