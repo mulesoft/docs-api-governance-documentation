@@ -12,7 +12,7 @@ image::api-gov-draft-profile-view.png[API conformance information for a selected
 
 [calloutlist]
 . View a summary of API conformance for the selected draft profile.
-. View the APIs targeted by the draft profile. These APIs are governed, but unless they are also targeted by an active profile, their conformance information is not revealed outside of API Governance.
+. View the APIs targeted by the draft profile. These APIs are governed, but unless they're also targeted by an active profile, their conformance information isn't shown outside of the draft profile view.
 . Export a conformance report in CSV format for all APIs targeted by this draft profile.
 . View, edit, or duplicate profile settings.
 . Export a report of only this API's conformance information or open the API in Exchange.
