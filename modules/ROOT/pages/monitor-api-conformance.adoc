@@ -36,7 +36,7 @@ include::_partials/api-gov-console-scap-callouts.adoc[]
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
-Use the insights on the governance console to monitor your API governance:
+Use the summary on the governance console to monitor your API governance:
 
 Governance Usage by Profile Type::
 Shows the usage of API Governance, including number of governed APIs, total number of APIs by profile type, and subscription limit information. Because some APIs might be in both active and draft profiles, this tile specifies how many are in draft only.

@@ -107,7 +107,9 @@ To activate a draft profile:
 . In the API Governance console *Profiles* tab, click *Draft* to show draft profiles.
 . Click *Activate* for the profile to activate.
 +
-After you activate a profile, the APIs validated against the rulesets in that profile become governed APIs and their conformance information appears outside of the draft profile view.
+After you activate a profile, its targeted APIs' conformance information appears outside of the draft profile view.
++
+If enabled, notifications are sent for failed validations.
 
 [[duplicate-profile]]
 == Duplicate a Governance Profile
