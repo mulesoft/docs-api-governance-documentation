@@ -1,4 +1,4 @@
-= Applying Governance Rulesets to Specified APIs
+= Applying Rulesets to Identified APIs
 
 After you identify the APIs in Exchange that 
 you want to govern, add your governance profiles. Governance profiles enable you to filter the specific sets of APIs to govern for each set of rulesets. When you create or update a profile, the set of APIs that meet the filter criteria in the profile are validated against the set of rulesets selected in the profile.
@@ -8,16 +8,16 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 [[create-profile-in-console]]
 == Create a Governance Profile Using the API Governance Console
 
-The API Governance console UI guides you through creating profiles.
+The API Governance console UI guides you through creating profiles. You can save a profile as draft to test your settings and activate it later.
 
-CAUTION: If you do not select filter criteria, your governance profile is applied to _all_ of your APIs in Exchange.
+CAUTION: If you don't select filter criteria, your governance profile applies rulesets to _all_ of your APIs in Exchange.
 
-[TIP]
-====
+=== Considerations
+
+* Start by saving your profiles as draft to test settings before revealing the targeted API's conformance across Anypoint Platform.
 * Select fewer rulesets and add more filters to narrow the scope of a single profile. 
 * Configure each profile to govern a related set of APIs for easier maintenance.
 * Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
-====
 
 .To create a governance profile using the API Governance console: 
 
@@ -45,7 +45,7 @@ You can select the version of each ruleset to use or select the *Latest* option.
 
 |To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
 
-A preview of filtered APIs appears in the *Define Filter Criteria* page as you apply filters. This is limited to a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
+A preview of filtered APIs appears in the *Define Filter Criteria* page as you apply filters. The preview shows only a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
 
 *General* filters:
 
@@ -53,7 +53,7 @@ A preview of filtered APIs appears in the *Define Filter Criteria* page as you a
 +
 * Tags
 +
-The most-frequently used tags in Exchange and any tags you have added to the profile are listed in the *Tags* section. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
+The *Tags* section lists frequently used tags and the tags you add to the profile. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
 +
 * Categories
 +
@@ -72,53 +72,81 @@ If you filter by categories, you can see the number of categories for each API, 
 If you select the *API Instance* filter *Include only APIs with instances*, only specifications that have an instance in API Manager are included. You can then optionally filter by environment type and environment name.
 |
 Set Notifications
-|Enable or disable automatic notifications for this profile. The default is enabled. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
+|Enable or disable automatic notifications for this profile. The default setting is enabled for active profiles. Notifications are automatically disabled for draft profiles. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
 |Specify General Information 
 |Enter a profile name and description that helps others understand the kinds of governance rulesets included and the kinds of APIs validated in this profile.
 |Review
-|Review your profile and click *Create*.
+|Review your profile and click *Save as a draft* or *Save as active*:
+
+* Save a profile as draft to test profile settings and review conformance information before showing the conformance information for its targeted APIs outside of the draft profile view.
+* Save a profile as active to show the conformance information outside of the draft profile view.
+
+When you save a profile as either draft or active, its targeted APIs become governed.
 |
 |===
 
 == Update a Governance Profile Using the API Governance Console
 
-The API Governance console guides you through updating profiles. 
+The API Governance console UI guides you through updating profiles. 
 
-To update governance profile information using the API Governance console: 
+To update governance profile information using the console: 
 
-. In *API Governance*, select the console *Profiles* tab.
+. In the API Governance console *Profiles* tab, click *Draft* or *Active*.
 . For the profile you want to update, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Edit*.
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
-
-NOTE: After you apply your edits, the total APIs are updated to indicate how many APIs
++
+After you apply your edits, the total APIs value refreshes to indicate how many APIs
 your governance profile includes based on your updated filter criteria.
+
+[[activate-draft-profile]]
+== Activate a Draft Governance Profile
+
+To activate a draft profile: 
+
+. In the API Governance console *Profiles* tab, click *Draft* to show draft profiles.
+. Click *Activate* for the profile to activate.
++
+After you activate a profile, its targeted APIs' conformance information appears outside of the draft profile view.
++
+If enabled, notifications are sent for failed validations.
+
+[[duplicate-profile]]
+== Duplicate a Governance Profile
+
+To duplicate a profile: 
+
+. In the API Governance console *Profiles* tab, click *Draft* or *Active*.
+. Select a profile.
+. Select *Profile Settings > Duplicate*.
++
+A copy of the profile opens.
++
+. Follow the steps in <<create-profile-in-console>>.
 
 == Delete a Governance Profile Using the API Governance Console
 
-The API Governance console guides you through deleting profiles.
-
 To delete a governance profile: 
 
-. In *API Governance*, in the console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) at the end of the profile you want to update and select *Delete*.
+. In the API Governance console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for the profile to update and select *Delete*.
 . Click *Yes, Delete*.
 
 [[create-profile-cli]]
 == Create Governance Profiles Using the API Governance CLI
 
-To use a command to create an API Governance profile, use the following command:
+To use the CLI to create an API Governance profile, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-create,leveloffset=+1]
 
 == List Governance Profile Information Using the API Governance CLI
 
-To use a command to list governance profile information for all governance profiles, use the following command:
+To use the CLI to list governance profile information for all governance profiles, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-list,leveloffset=+1]
 
 == List Specific Governance Profile Information Using the API Governance CLI
 
-To use a command to list governance profile information for a specific governance profile ID, use the following command:
+To use the CLI to list governance profile information for a specific governance profile ID, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,leveloffset=+1]
 
@@ -126,7 +154,7 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-info,l
 [[update-profile-cli]]
 == Update a Governance Profile Using the API Governance CLI
 
-To use a command to update a governance profile, use the following command:
+To use the CLI to update a governance profile, use the following command:
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-profile-update,leveloffset=+1]
 

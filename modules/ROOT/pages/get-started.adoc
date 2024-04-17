@@ -35,17 +35,21 @@ Higher level permissions override the *Governance Viewer* permission. If a user 
  
 If you're an administrator and have an opt-in banner in the API Governance console, opt in to get additional functionality for your business groups (organizations). See the xref:release-notes::api-governance/api-governance-release-notes.adoc##oct-17-2023[API Governance Release Notes entry for October, 17 2023].
 
-This documentation is written for the full product functionality that is available after the opt-in.
+This documentation covers the full product functionality that is available after the opt-in.
 
 == Govern Your APIs
 
 Govern your APIs using the following steps:
 
-. xref:add-tags.adoc[Identify] the APIs that you want to govern.
+. xref:add-tags.adoc[Identify] APIs to filter for governance by using tags and categories in Exchange.
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
+.. Consider saving your profiles as draft to test settings before revealing their targeted APIs' conformance information across Anypoint Platform.
+.. After you test settings using draft profiles, xref:create-profiles.adoc#activate-draft-profile[activate the profiles] to notify developers and reveal the resulting API conformance information across Anypoint Platform.
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
+** View the APIs targeted by each draft profile to assess conformance impacts for that profile and download the associated CSV file report.  
+** View summary information in the API Governance console and in validation reports.
 
 . Find and fix conformance issues: 
 * xref:find-conformance-issues.adoc[In API specifications] in Design Center and Exchange as you design your APIs 

@@ -20,7 +20,7 @@ include::anypoint-cli::partial$api-governance.adoc[tag=governance-ruleset-valida
 [[generate-ruleset-doc]]
 == Generate the Ruleset Documentation
 
-Use the following command to generate a documentation ZIP file for a ruleset YAML file. The resulting documentation ZIP file can then be used in an Exchange asset upload using the `--files.docs.zip` option.
+Use the following command to generate a documentation ZIP file for a ruleset YAML file. Upload the resulting documentation ZIP file along with its associated ruleset file using the `anypoint-cli-v4 exchange asset upload` command.
 
 include::anypoint-cli::partial$api-governance.adoc[tag=governance-document,leveloffset=+1]
 

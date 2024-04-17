@@ -13,22 +13,26 @@ Each email notification includes:
 
 Enable and configure the notifications to automatically send email when the latest version of an API becomes non-conformant. 
 
-NOTE: Notifications are sent only if there is a valid contact email address configured for the selected recipient.
+API Governance sends notifications about conformance only when:
 
-Automated notifications are sent for each ruleset that has a new conformance failure when the conformance status changes during validation. A notification is sent for a specific API only the first time that version of the API fails conformance to a specific ruleset. 
+* One or more active profiles targets the API.
+* A valid contact email address is configured for the selected recipient.
+* An API's conformance status changes to fail because of a change in the API or applied rulesets.
+* The first time a specific version of an API fails conformance to a specific ruleset. 
 
 Following are the changes that might result in notifications: 
 
-. Updating a governance profile, including adding or removing rulesets 
-. Publishing a new version of an API 
-. Changing tags on an API 
-. Updating governance rulesets 
+* Updating an active governance profile, including adding or removing rulesets 
+* Publishing a new version of an API 
+* Changing tags on an API 
+* Updating governance rulesets 
+* Activating a draft profile 
 
 === Enable and Configure Notifications in the Console
 
 To enable and configure conformance notifications in the console:
 
-. In the API Governance console, while creating or updating a profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile for which you want to enable notifications. 
+. In the API Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for. 
 . If it is not already selected, select *Enabled* for *Nonconformance notification*.
 . Select a recipient:
 +
@@ -38,7 +42,7 @@ To enable and configure conformance notifications in the console:
 
 === Enable and Configure Notifications Using the CLI
 
-To enable and configure conformance notifications using the CLI, when creating or updating a profile using the `governance create profile` or `governance update profile` commands, use the following options:
+To enable and configure conformance notifications using the CLI, when creating or updating an active profile using the `governance create profile` or `governance update profile` commands, use the following options:
 
 ----
 --notify-publisher  
