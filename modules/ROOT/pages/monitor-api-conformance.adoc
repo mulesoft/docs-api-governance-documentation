@@ -68,7 +68,7 @@ The APIs fail at least one governance ruleset.
 The APIs are not validated because they are not included in a governance profile.
 
 Nonconformance by Severity::
-Shows the severity of API nonconformance to rulesets based on the percentage of all of required rulesets that the APIs passed. The higher the severity, the fewer rulesets the APIs passed.
+Shows the severity of API nonconformance to rulesets based on the percentage of all of the required rulesets that the APIs passed. The higher the severity, the fewer rulesets the APIs passed.
 +
 * High Severity:
 +
