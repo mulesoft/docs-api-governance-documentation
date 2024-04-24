@@ -1,4 +1,4 @@
-= Fixing Specifications in Design Center
+= Fixing Specifications in Design Center and CLI
 
 You can check for API specification conformance using one of the rulesets provided by MuleSoft or a custom ruleset. Some of the MuleSoft-provided rulesets that validate specification information are:
 
