@@ -18,17 +18,17 @@ You can initiate validation of API specifications against rulesets in:
 +
 . After the validation, view conformance issue details. 
 +
-* For APIs validated using API Governance (centrally-governed APIs), use:
+* For APIs validated using API Governance (centrally-governed APIs), view conformance information in:
 +
 ** xref:view-conformance-status-in-exchange.adoc[Exchange]
-** <<view-spec-issues-in-report,The governance validation report>>
+** <<view-spec-issues-in-report,API Governance>>
 + 
-* For APIs validated outside of API Governance, use:
+* For APIs validated outside of API Governance, view conformance information in:
 +
 ** <<project-errors,Design Center>>
-** <<validate-in-cli,The CLI report>>
+** <<validate-in-cli,Reports generated through CLI>>
 +
-. Fix the conformance issues using <<project-errors,Design Center>>. 
+. Fix specification conformance issues using <<project-errors,Design Center>>. 
 
 [[validate-in-profiles]]
 == Validate API Specifications in Governance Profiles
