@@ -1,4 +1,4 @@
-= Fixing API Specifications
+= Specification Conformance
 
 To find and fix conformance issues in API specifications:
 
@@ -16,11 +16,17 @@ You can initiate validation of API specifications against rulesets in:
 * <<validate-in-design-center,Design Center>> 
 * <<validate-in-cli,Anypoint CLI>>
 +
-. After the validation, view conformance issue details using:
-
-* <<view-spec-issues-in-report,The governance validation report>>
-* <<project-errors,Design Center>>
-* <<validate-in-cli,The CLI report>>
+. After the validation, view conformance issue details. 
++
+* For APIs validated using API Governance (centrally-governed APIs), use:
++
+** xref:view-conformance-status-in-exchange.adoc[Exchange]
+** <<view-spec-issues-in-report,The governance validation report>>
++ 
+* For APIs validated outside of API Governance, use:
++
+** <<project-errors,Design Center>>
+** <<validate-in-cli,The CLI report>>
 +
 . Fix the conformance issues using <<project-errors,Design Center>>. 
 
