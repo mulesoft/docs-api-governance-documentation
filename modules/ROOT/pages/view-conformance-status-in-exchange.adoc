@@ -4,8 +4,10 @@ For APIs governed by active profiles, you can view conformance information in th
 
 * <<governance-validation-report,Governance validation report>>
 * <<view-conformance-in-exchange,Conformance Status page in Exchange>>
-
++
 Nonconformance messages give information about conformance issues and contextual links direct you to the best place to fix them. 
+
+You can view API conformance information in Design Center regardless of whether the APIs are governed by active profiles. See xref:find-conformance-issues.adoc[].
 
 [[governance-validation-report]]
 == Governance Validation Report

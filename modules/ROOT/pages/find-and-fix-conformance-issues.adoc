@@ -1,6 +1,6 @@
 = Finding and Fixing Conformance Issues
 
-For details about finding and fixing conformance issues, see the following:
+For details about finding and fixing API conformance issues, see the following:
 
 * xref:view-conformance-status-in-exchange.adoc[]
 * xref:find-conformance-issues.adoc[]
