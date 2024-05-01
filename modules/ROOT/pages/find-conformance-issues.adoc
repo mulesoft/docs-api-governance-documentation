@@ -2,7 +2,7 @@
 
 To find and fix conformance issues in API specifications:
 
-. Check for API specification conformance using a custom or Mulesoft-provided ruleset such as:
+. Check for API specification conformance using a custom or MuleSoft-provided ruleset such as:
 +
 * Anypoint Best Practices
 * Authentication Security Best Practices
