@@ -1,34 +1,33 @@
 = Specification Conformance
 
-To find and fix conformance issues in API specifications:
+You can check for API specification conformance using a custom or MuleSoft-provided ruleset such as:
 
-. Check for API specification conformance using a custom or MuleSoft-provided ruleset such as:
-+
 * Anypoint Best Practices
 * Authentication Security Best Practices
 * OpenAPI Best Practices
 * AsyncAPI Best Practices
 * Required Examples
-+
+
 You can initiate validation of API specifications against rulesets in:
-+
+
 * <<validate-in-profiles,API Governance>> 
 * <<validate-in-design-center,Design Center>> 
 * <<validate-in-cli,Anypoint CLI>>
+
+After the validation, view conformance issue details as follows: 
+
+* For an API validated using API Governance (centrally-governed APIs), view conformance information in the API's:
 +
-. After the validation, view conformance issue details. 
-+
-* For APIs validated using API Governance (centrally-governed APIs), view conformance information in:
-+
-** xref:view-conformance-status-in-exchange.adoc[Exchange]
-** <<view-spec-issues-in-report,API Governance>>
+** <<view-spec-issues-in-report, Validation report in API Governance>>
+** xref:view-conformance-status-in-exchange.adoc[Conformance Status page in Exchange]
+
 + 
-* For APIs validated outside of API Governance, view conformance information in:
+* For an API validated outside of API Governance, view conformance information in:
 +
 ** <<project-errors,Design Center>>
 ** <<validate-in-cli,Reports generated through CLI>>
-+
-. Fix specification conformance issues using <<project-errors,Design Center>>. 
+
+After you identify the issues, you can fix them using <<project-errors,Design Center>>. 
 
 [[validate-in-profiles]]
 == Validate API Specifications in Governance Profiles
@@ -37,7 +36,7 @@ To validate APIs against governance rulesets in API Governance profiles, see xre
 [[validate-in-design-center]]
 == Validate API Specifications in Design Center
 
-If your API is governed using API Governance, you can use the detailed governance report in API Governance to find any centralized governance conformance issues. If your API is not governed using API Governance or if you want to see conformance issues directly in API Designer, you can validate your API in API Designer. 
+If your API is not governed using API Governance or if you want to see conformance issues directly in API Designer, you can validate your API in API Designer. 
 
 To validate APIs against governance rulesets in Design Center, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
 
