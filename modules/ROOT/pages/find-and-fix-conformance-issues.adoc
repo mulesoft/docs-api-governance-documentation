@@ -9,12 +9,13 @@ To find and fix API conformance:
 * <<validate-in-design-center,Design Center>> for  specifications
 * <<validate-in-cli,Anypoint CLI>> for specifications
 +
-. View conformance issue details as follows: 
+. View conformance information as follows: 
 +
 * For an API validated using active profiles in API Governance, view conformance information in the:
 +
 ** <<view-spec-issues-in-report, Validation report in API Governance>> for all supported API aspects
-** <<view-conformance-in-exchange,Conformance Status page in Exchange>> for specifications
+** <<view-status-for-api,Conformance Status page for APIs in Exchange>> for specifications
+** <<view-governed-apis-for-rulesets,Governed APIs page for rulesets in Exchange>> for specifications
 + 
 * To view conformance information for an API regardless of whether it's governed by an active profile, you can use:
 +
@@ -24,16 +25,13 @@ To find and fix API conformance:
 . Fix the issues using xref:find-conformance-issues.adoc[Design Center]. 
 
 [[governance-validation-report]]
-== Governance Validation Report
+== View Conformance Information in the Validation Report
 
 View a comprehensive governance validation report in API Governance or API Manager. 
 
 // Screenshot of a Conformance Report page with callouts 
 
 include::_partials/api-gov-apim-governance-report.adoc[]
-
-[[view-conformance-in-gov-report]]
-== View Conformance Information in the Validation Report
 
 To view conformance information in the governance validation report:
 
@@ -47,15 +45,7 @@ Click *View Details* for a ruleset the API is nonconformant to.
 ... Click *View Details* for a ruleset the API is nonconformant to. 
 
 [[view-conformance-in-exchange]]
-== View Conformance Information in Exchange
-
-In Exchange, you can:
-
-* <<view-status-for-api,View conformance status for an API>>
-* <<view-governed-apis-for-rulesets,See which governed APIs pass a ruleset>>
-
-[[view-status-for-api]]
-== View Conformance Status for an API
+== View Conformance Status for an API in Exchange
 
 // Conformance status page from the Exchange doc
 
