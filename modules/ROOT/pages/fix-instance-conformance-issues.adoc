@@ -41,6 +41,6 @@ The following table shows some example rules and the actions to take to fix conf
 
 == See Also
 
-* xref:api-manager::api-instance-landing-page.adoc[]
+* xref:api-manager::govern-api-instances.adoc[]
 * xref:monitor-api-conformance.adoc[]
 * xref:find-conformance-issues.adoc[]
