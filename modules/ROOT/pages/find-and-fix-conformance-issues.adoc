@@ -6,7 +6,7 @@ To find and fix API conformance:
 . Initiate validation of APIs against rulesets in:
 +
 * xref:create-profiles.adoc[API Governance] for all supported API aspects
-* xref:find-conformance-issues.adoc#validate-in-design-center[Design Center] for  specifications
+* xref:find-conformance-issues.adoc[Design Center] for  specifications
 * xref:find-conformance-issues.adoc#validate-in-cli[Anypoint CLI] for specifications
 +
 . View conformance information as follows: 
@@ -19,12 +19,12 @@ To find and fix API conformance:
 + 
 * To view conformance information for an API regardless of whether it's governed by an active profile, you can use:
 +
-** xref:find-conformance-issues.adoc[Design Center] for specifications
-** xref:find-conformance-issues.adoc[Reports generated through CLI] for specifications
+** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications
+** xref:find-conformance-issues.adoc#validate-in-cli[Reports generated through CLI] for specifications
 +
 . Fix the issues using:
 +
-** xref:find-conformance-issues.adoc[Design Center] for specifications
+** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications
 ** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
 
 [[governance-validation-report]]
