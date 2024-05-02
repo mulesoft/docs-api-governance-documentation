@@ -5,15 +5,15 @@ To find and fix API conformance:
 
 . Initiate validation of APIs against rulesets in:
 +
-* <<validate-in-profiles,API Governance>> for all supported API aspects
-* <<validate-in-design-center,Design Center>> for  specifications
-* <<validate-in-cli,Anypoint CLI>> for specifications
+* xref:create-profiles.adoc[API Governance] for all supported API aspects
+* xref:find-conformance-issues.adoc#validate-in-design-center[Design Center] for  specifications
+* xref:find-conformance-issues.adoc#validate-in-cli[Anypoint CLI] for specifications
 +
 . View conformance information as follows: 
 +
 * For an API validated using active profiles in API Governance, view conformance information in the:
 +
-** <<view-spec-issues-in-report, Validation report in API Governance>> for all supported API aspects
+** <<view-spec-issues-in-report,Validation report in API Governance>> for all supported API aspects
 ** <<view-status-for-api,Conformance Status page for APIs in Exchange>> for specifications
 ** <<view-governed-apis-for-rulesets,Governed APIs page for rulesets in Exchange>> for specifications
 + 
@@ -22,7 +22,10 @@ To find and fix API conformance:
 ** xref:find-conformance-issues.adoc[Design Center] for specifications
 ** xref:find-conformance-issues.adoc[Reports generated through CLI] for specifications
 +
-. Fix the issues using xref:find-conformance-issues.adoc[Design Center]. 
+. Fix the issues using:
++
+** xref:find-conformance-issues.adoc[Design Center] for specifications
+** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
 
 [[governance-validation-report]]
 == View Conformance Information in the Validation Report
@@ -60,7 +63,7 @@ include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 
 == Next Steps
 
-To find and fix API conformance issues for each aspect of an API, see the following:
+For more information on finding and fixing conformance specific to each API aspect, see the following:
 
 * xref:find-conformance-issues.adoc[]
 * xref:fix-instance-conformance-issues.adoc[]

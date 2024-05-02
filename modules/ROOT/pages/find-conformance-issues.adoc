@@ -8,32 +8,6 @@ You can check for API specification conformance using a custom or MuleSoft-provi
 * AsyncAPI Best Practices
 * Required Examples
 
-To find and fix an API specification's conformance:
-
-. Initiate validation of API specifications against rulesets in:
-+
-* <<validate-in-profiles,API Governance>> 
-* <<validate-in-design-center,Design Center>> 
-* <<validate-in-cli,Anypoint CLI>>
-+
-. View conformance issue details as follows: 
-+
-* For an API validated using active profiles in API Governance, view conformance information in the API's:
-+
-** <<view-spec-issues-in-report, Validation report in API Governance>>
-** xref:view-conformance-status-in-exchange.adoc[Conformance Status page in Exchange]
-+ 
-* To view conformance information for an API regardless of whether it's governed by an active profile, you can use:
-+
-** <<project-errors,Design Center>>
-** <<validate-in-cli,Reports generated through CLI>>
-+
-. Fix the issues using <<project-errors,Design Center>>. 
-
-[[validate-in-profiles]]
-== Validate API Specifications in Governance Profiles
-To validate APIs against governance rulesets in API Governance profiles, see xref:create-profiles.adoc[].
-
 [[validate-in-design-center]]
 == Validate API Specifications in Design Center
 
