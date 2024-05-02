@@ -13,8 +13,8 @@ To find and fix API conformance:
 +
 * For an API validated using active profiles in API Governance, view conformance information in the:
 +
-** <<view-spec-issues-in-report,Validation report in API Governance>> for all supported API aspects
-** <<view-status-for-api,Conformance Status page for APIs in Exchange>> for specifications
+** <<governance-validation-report,Validation report in API Governance>> for all supported API aspects
+** <<view-conformance-in-exchange,Conformance Status page for APIs in Exchange>> for specifications
 ** <<view-governed-apis-for-rulesets,Governed APIs page for rulesets in Exchange>> for specifications
 + 
 * To view conformance information for an API regardless of whether it's governed by an active profile, you can use:
