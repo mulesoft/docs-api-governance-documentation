@@ -63,7 +63,7 @@ include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 
 == Next Steps
 
-For more information on finding and fixing conformance specific to each API aspect, see the following:
+For more information about finding and fixing conformance specific to each API aspect, see the following:
 
 * xref:find-conformance-issues.adoc[]
 * xref:fix-instance-conformance-issues.adoc[]

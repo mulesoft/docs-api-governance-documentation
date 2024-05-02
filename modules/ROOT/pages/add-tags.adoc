@@ -25,9 +25,9 @@ To select and add tags in profiles:
 +
 . Expand the *General > Tags* section.  
 +
-The most frequently used tags are shown by default.
+The *Tags* section lists the most frequently used tags by default.
 +
-. Start typing a tag name in the search field to filter the list of tags.
+. Start typing a tag name in the search field to filter the list.
 +
 . If you don't see a tag you want to use, type a tag name in the search field and press enter to add the tag.
 
