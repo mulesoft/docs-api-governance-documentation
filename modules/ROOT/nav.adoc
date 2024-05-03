@@ -7,7 +7,6 @@
   * xref:configure-notifications.adoc[]
   * xref:monitor-api-conformance.adoc[]
   * xref:find-and-fix-conformance-issues.adoc[]
-  ** xref:view-conformance-status-in-exchange.adoc[]
   ** xref:find-conformance-issues.adoc[]
   ** xref:fix-instance-conformance-issues.adoc[]
   ** xref:fix-catalog-info-conformance-issues.adoc[]

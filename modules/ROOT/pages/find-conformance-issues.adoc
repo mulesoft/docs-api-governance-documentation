@@ -1,6 +1,6 @@
-= Fixing Specifications in Design Center
+= Specification Conformance
 
-You can check for API specification conformance using one of the rulesets provided by MuleSoft or a custom ruleset. Some of the MuleSoft-provided rulesets that validate specification information are:
+You can check for API specification conformance using a custom or MuleSoft-provided ruleset such as:
 
 * Anypoint Best Practices
 * Authentication Security Best Practices
@@ -8,11 +8,29 @@ You can check for API specification conformance using one of the rulesets provid
 * AsyncAPI Best Practices
 * Required Examples
 
-You can check specification conformance in <<validate-in-profiles,API Governance>> and <<validate-in-design-center,Design Center>> and by using <<validate-in-cli,Anypoint CLI>>. 
+See xref:find-and-fix-conformance-issues.adoc[] for an overview of ways to validate conformance and determine why conformance failed.
 
-[[validate-in-profiles]]
-== Validate API Specifications in Governance Profiles
-To validate APIs against governance rulesets in API Governance profiles, see xref:create-profiles.adoc[].
+[[validate-in-design-center]]
+== Validate API Specifications in Design Center
+
+If your API is not governed using API Governance or if you want to see conformance issues directly in API Designer, you can validate your API in API Designer. 
+
+To validate APIs against governance rulesets in Design Center, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
+
+// Screenshot of conformance validation in APID with callouts
+
+include::_partials/api-gov-apid-scap-callouts.adoc[]
+
+[[add-rulesets]]
+=== Add Rulesets to Your Project
+
+In API Designer, you can add governance rulesets to your API projects as Exchange dependencies. 
+
+// Reuse partial from the Design Center doc that explains the interactive guidance to add dependencies
+
+include::design-center::partial$design-add-ruleset-dependencies.adoc[]
+
+See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
 
 [[validate-in-cli]]
 == Validate API Specifications Using Anypoint CLI
@@ -37,32 +55,10 @@ Click *View Details* for a ruleset the API is nonconformant to.
 ... Select *Specification* in the Conformance Breakdown section of the report.
 ... Click *View Details* for a ruleset the specification is nonconformant to. 
 
-[[validate-in-design-center]]
-== Validate API Specifications in Design Center
-
-If your API is governed using API Governance, you can use the detailed governance report in API Governance to find any centralized governance conformance issues. If your API is not governed using API Governance or if you want to see conformance issues directly in API Designer, you can validate your API in API Designer. 
-
-To validate APIs against governance rulesets in Design Center, add the rulesets as dependencies to API specifications in the Design Center API Designer text editor. After you add the rulesets, expand the *Project Errors* section to view conformance messages. 
-
-// Screenshot of conformance validation in APID with callouts
-
-include::_partials/api-gov-apid-scap-callouts.adoc[]
-
-[[add-rulesets]]
-=== Add Rulesets to Your Project
-
-In API Designer, you can add governance rulesets to your API projects as Exchange dependencies. 
-
-// Reuse partial from the Design Center doc that explains the interactive guidance to add dependencies
-
-include::design-center::partial$design-add-ruleset-dependencies.adoc[]
-
-See xref:design-center::design-add-api-dependency.adoc[Adding Dependencies to an API-Specification Project].
-
 [[project-errors]]
 == Fix API Specification Issues in Design Center
 
-After your specifications are identified as nonconformant through validation against rulesets, either through API Governance profiles or through ruleset dependencies in Design Center, you can fix them in API Designer. 
+After you identify conformance issues in your specification, you can fix the issues in API Designer and publish the new version of the specification to Exchange. 
 
 See xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[Create an API Specification with the Text Editor].
 

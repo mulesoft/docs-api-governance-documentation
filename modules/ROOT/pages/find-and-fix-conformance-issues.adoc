@@ -1,17 +1,78 @@
 = Finding and Fixing Conformance Issues
+:page-aliases: view-conformance-status-in-exchange.adoc
 
-To find conformance issues, validate the APIs against the set of rulesets you want your APIs to conform to. After you validate the APIs, you can see conformance badges in API Governance, Exchange, and API Manager and view detailed conformance information in API Governance, Exchange, API Manager, and Design Center. 
+To find and fix API conformance:
 
-After Anypoint API Governance identifies conformance issues in your API, you can view the governance validation report to get information about the issues. Nonconformance messages give information about conformance issues and contextual links direct you to the best place to fix them. 
+. Initiate validation of APIs against rulesets in:
++
+* xref:create-profiles.adoc[API Governance] for all supported API aspects
+* xref:find-conformance-issues.adoc[Design Center] for  specifications only
+* xref:find-conformance-issues.adoc#validate-in-cli[Anypoint CLI] for specifications only
++
+. View conformance information as follows: 
++
+* For an API validated using active profiles in API Governance, view conformance information in the:
++
+** <<governance-validation-report,Validation report in API Governance>> for all supported API aspects
+** <<view-conformance-in-exchange,Conformance Status page for APIs in Exchange>> for specifications only
+** <<view-governed-apis-for-rulesets,Governed APIs page for rulesets in Exchange>> for specifications only
++ 
+* To view conformance information for an API regardless of whether it's governed by an active profile, you can use:
++
+** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications only
+** xref:find-conformance-issues.adoc#validate-in-cli[Reports generated through CLI] for specifications only
++
+. Fix the issues using:
++
+** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications
+** xref:fix-documentation-conformance-issues.adoc[Exchange] for documentation
+** xref:fix-catalog-info-conformance-issues.adoc[Exchange] for catalog information
+** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
+
+[[governance-validation-report]]
+== View Conformance Information in the Validation Report
+
+View a comprehensive governance validation report in API Governance or API Manager. 
 
 // Screenshot of a Conformance Report page with callouts 
 
 include::_partials/api-gov-apim-governance-report.adoc[]
 
-For details about finding and fixing conformance issues, refer to the following:
+To view conformance information in the governance validation report:
 
-* xref:view-conformance-status-in-exchange.adoc[]
+. In the API Governance console, select the *Governed APIs* tab.
+. If the API has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
+.. View all issues:
++
+Click *View Details* for a ruleset the API is nonconformant to. 
+.. View issues for a selected aspect only:
+... Select an aspect of the API in the Conformance Breakdown section of the report.
+... Click *View Details* for a ruleset the API is nonconformant to. 
+
+[[view-conformance-in-exchange]]
+== View Conformance Status for an API in Exchange
+
+// Conformance status page from the Exchange doc
+
+include::exchange::partial$task-view-conformance-status.adoc[]
+
+// Governed apis for rulesets from the Exchange doc
+
+[[view-governed-apis-for-rulesets]]
+== View Governed APIs for a Ruleset
+
+include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
+
+== Next Steps
+
+For more information about finding and fixing conformance specific to each API aspect, see the following:
+
 * xref:find-conformance-issues.adoc[]
 * xref:fix-instance-conformance-issues.adoc[]
 * xref:fix-catalog-info-conformance-issues.adoc[]
 * xref:fix-documentation-conformance-issues.adoc[]
+
+== See Also
+
+* xref:exchange::asset-details.adoc[]
+* xref:cli-command-list.adoc[]

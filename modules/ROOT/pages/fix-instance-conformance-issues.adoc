@@ -1,29 +1,16 @@
-= Fixing Instances in API Manager
+= Instance Conformance
 
-You can check for API instance information conformance using a ruleset provided by MuleSoft or a custom ruleset. A ruleset provided by MuleSoft that validates API instance information is:
+You can check for API instance information conformance using a custom or MuleSoft-provided ruleset. A ruleset provided by MuleSoft that validates API instance information is:
 
 * Mule API Management Best Practices
 
-After Anypoint API Governance identifies conformance issues in your API instances, you can view the governance validation report to get information about the issues. After you identify what needs to be fixed, go to the instance in API Manager and fix the issue. If the issue is an instance-related issue in the specification, use your API editor, such as API Designer, to fix the specification. Refer to xref:find-conformance-issues.adoc[].
+After Anypoint API Governance identifies conformance issues in your API instances:
 
-== View Instance Conformance Issue Details in the Governance Report
+. View the governance validation report to get information about the issues. 
+. If the issues are in the instance configuration, fix the instance using API Manager. 
+. If the issues are instance-related issues in the specification, fix the specification using Design Center.
 
-To view instance conformance issues in the governance validation report:
-
-. Navigate to the report.
-* In Anypoint API Governance:
-+
-.. In the API Governance console, select the *Governed APIs* tab.
-.. If the *Instances* column has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
-.. View all issues:
-+
-Click *View Details* for a ruleset the API is nonconformant to. 
-.. View issues for API instances only:
-... Select *Instances* in the Conformance Breakdown section of the report.
-... Click *View Details* for a ruleset the API instances are nonconformant to.
-* In API Manager:
-.. Select the *Governance Report* page for an instance that has an Instance Conformance badge of *Violation*.
-.. In the Instance validation results section, click *View Details* for a ruleset the API instances are in violation of.
+Use the information in the xref:find-and-fix-conformance-issues.adoc#governance-validation-report[governance validation report] to determine why the conformance failed.
 
 == View Rule Details in the Rulesets
 
@@ -56,5 +43,6 @@ The following table shows some example rules and the actions to take to fix conf
 
 == See Also
 
-* xref:api-manager::api-instance-landing-page.adoc[]
+* xref:api-manager::govern-api-instances.adoc[]
 * xref:monitor-api-conformance.adoc[]
+* xref:find-conformance-issues.adoc[]

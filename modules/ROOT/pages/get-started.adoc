@@ -51,11 +51,11 @@ Govern your APIs using the following steps:
 ** View the APIs targeted by each draft profile to assess conformance impacts for that profile and download the associated CSV file report.  
 ** View summary information in the API Governance console and in validation reports.
 
-. Find and fix conformance issues: 
-* xref:find-conformance-issues.adoc[In API specifications] in Design Center and Exchange as you design your APIs 
-* xref:find-conformance-issues.adoc[In API instances] in API Manager at deployment time
-* xref:find-conformance-issues.adoc[In API catalog information] in Exchange asset portal information
-* xref:find-conformance-issues.adoc[In API documentation] in Exchange asset portal documentation
+. xref:find-and-fix-conformance-issues.adoc[Find and fix conformance issues]: 
+* In API specifications in Design Center and Exchange as you design your APIs 
+* In API instances in API Manager at deployment time
+* In API catalog information in Exchange asset portal information
+* In API documentation in Exchange asset portal documentation
 
 . xref:create-custom-rulesets.adoc[(Optional) Create custom rulesets] to more effectively govern APIs for your business groups (organizations).
 
