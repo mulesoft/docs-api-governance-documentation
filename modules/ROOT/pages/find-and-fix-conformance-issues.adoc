@@ -6,25 +6,27 @@ To find and fix API conformance:
 . Initiate validation of APIs against rulesets in:
 +
 * xref:create-profiles.adoc[API Governance] for all supported API aspects
-* xref:find-conformance-issues.adoc[Design Center] for  specifications
-* xref:find-conformance-issues.adoc#validate-in-cli[Anypoint CLI] for specifications
+* xref:find-conformance-issues.adoc[Design Center] for  specifications only
+* xref:find-conformance-issues.adoc#validate-in-cli[Anypoint CLI] for specifications only
 +
 . View conformance information as follows: 
 +
 * For an API validated using active profiles in API Governance, view conformance information in the:
 +
 ** <<governance-validation-report,Validation report in API Governance>> for all supported API aspects
-** <<view-conformance-in-exchange,Conformance Status page for APIs in Exchange>> for specifications
-** <<view-governed-apis-for-rulesets,Governed APIs page for rulesets in Exchange>> for specifications
+** <<view-conformance-in-exchange,Conformance Status page for APIs in Exchange>> for specifications only
+** <<view-governed-apis-for-rulesets,Governed APIs page for rulesets in Exchange>> for specifications only
 + 
 * To view conformance information for an API regardless of whether it's governed by an active profile, you can use:
 +
-** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications
-** xref:find-conformance-issues.adoc#validate-in-cli[Reports generated through CLI] for specifications
+** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications only
+** xref:find-conformance-issues.adoc#validate-in-cli[Reports generated through CLI] for specifications only
 +
 . Fix the issues using:
 +
 ** xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications
+** xref:fix-documentation-conformance-issues.adoc[Exchange] for documentation
+** xref:fix-catalog-info-conformance-issues.adoc[Exchange] for catalog information
 ** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
 
 [[governance-validation-report]]
