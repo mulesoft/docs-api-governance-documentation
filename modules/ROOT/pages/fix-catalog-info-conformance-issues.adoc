@@ -1,6 +1,6 @@
 = Catalog Information Conformance
 
-You can check for API catalog information conformance using using a custom or MuleSoft-provided ruleset. API catalog information is associated with an API asset in Exchange in the asset portal. 
+You can check for API catalog information conformance using a custom or MuleSoft-provided ruleset. API catalog information is associated with an API asset in Exchange in the asset portal. 
 
 A MuleSoft-provided ruleset that validates API catalog information is:
 
