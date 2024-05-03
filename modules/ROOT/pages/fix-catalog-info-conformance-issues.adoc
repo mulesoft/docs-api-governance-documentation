@@ -6,6 +6,8 @@ A MuleSoft-provided ruleset that validates API catalog information is:
 
 * API Catalog Information Best Practices
 
+See xref:find-and-fix-conformance-issues.adoc[] for an overview of ways to validate conformance and determine why conformance failed.
+
 [[fix-api-catalog-issues-in-exchange]]
 == Fix API Catalog Conformance Issues in Exchange
 

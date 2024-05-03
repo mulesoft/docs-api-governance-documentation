@@ -10,6 +10,8 @@ After Anypoint API Governance identifies conformance issues in your API instance
 . If the issues are in the instance configuration, fix the instance using API Manager. 
 . If the issues are instance-related issues in the specification, fix the specification using Design Center.
 
+Use the information in the xref:find-and-fix-conformance-issues.adoc#governance-validation-report[governance validation report] to determine why the conformance failed.
+
 == View Rule Details in the Rulesets
 
 For more information about fixing the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 

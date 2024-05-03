@@ -8,6 +8,8 @@ You can check for API specification conformance using a custom or MuleSoft-provi
 * AsyncAPI Best Practices
 * Required Examples
 
+See xref:find-and-fix-conformance-issues.adoc[] for an overview of ways to validate conformance and determine why conformance failed.
+
 [[validate-in-design-center]]
 == Validate API Specifications in Design Center
 
