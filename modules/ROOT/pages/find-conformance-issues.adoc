@@ -35,7 +35,7 @@ After you identify conformance issues in your specification, you can fix the iss
 For information about fixing your API in Anypoint Code Builder, see xref:anypoint-code-builder::des-govern-api.adoc#fix-conformance-issues[Fix Conformance Issues].
 
 [[project-errors]]
-For information about fixing your API in API Designer, see xref:design-center::design-create-publish-api-raml-editor.adoc#the-editor[].
+For information about fixing your API in API Designer, see xref:design-center::design-add-api-dependency.adoc#ruleset-dependencies[].
 
 == See Also
 
