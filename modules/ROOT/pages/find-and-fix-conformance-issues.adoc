@@ -21,7 +21,7 @@ Developers and implementors typically:
 ** xref:fix-catalog-info-conformance-issues.adoc[Exchange] for catalog information
 ** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
 
-Regardless of what tasks you're responsible for in governance for your organization, you can view conformance information in several places in Anypoint Platform for APIs that are centrally-governed by API Governance:
+Regardless of which tasks you're responsible for in governance for your organization, you can view conformance information in several places in Anypoint Platform for APIs that are centrally-governed by API Governance:
 
 * In the <<governance-validation-report,validation report in API Governance or API Manager>> 
 * In the <<view-conformance-in-exchange,Conformance Status page for specifications>>
