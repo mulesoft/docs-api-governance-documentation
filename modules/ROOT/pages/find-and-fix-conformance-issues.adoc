@@ -16,7 +16,7 @@ Developers and implementors typically:
 <<view-governed-apis-for-rulesets,Governed APIs page for rulesets>> in Exchange.
 * Fix conformance issues using the following:
 
-** xref:find-conformance-issues.adoc#fix-in-acb[Anypoint Code Builder] or xref:find-conformance-issues.adoc#project-errors[Design Center] for specifications
+** xref:find-conformance-issues.adoc#fix-conformance-issues[Anypoint Code Builder or Design Center] for specifications
 ** xref:fix-documentation-conformance-issues.adoc[Exchange] for documentation
 ** xref:fix-catalog-info-conformance-issues.adoc[Exchange] for catalog information
 ** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
