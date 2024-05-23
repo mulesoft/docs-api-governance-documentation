@@ -1,6 +1,6 @@
 = Getting Started with Anypoint API Governance
 
-After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you are ready to get started governing your APIs.
+After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you're ready to get started governing your APIs.
 
 == Before You Begin
 
