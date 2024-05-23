@@ -12,14 +12,20 @@ Governance admins typically:
 Developers and implementors typically:
 
 * Initiate validation of API specifications against rulesets in xref:find-conformance-issues.adoc[Anypoint Code Builder or Design Center].
-* View API specification conformance information in the <<view-conformance-in-exchange,Conformance Status page for specifications>> or in the
-<<view-governed-apis-for-rulesets,Governed APIs page for rulesets>> in Exchange.
+* View conformance information for each rule in the context of the open specification project. 
+
 * Fix conformance issues using the following:
 
 ** xref:find-conformance-issues.adoc#fix-conformance-issues[Anypoint Code Builder or Design Center] for specifications
 ** xref:fix-documentation-conformance-issues.adoc[Exchange] for documentation
 ** xref:fix-catalog-info-conformance-issues.adoc[Exchange] for catalog information
 ** xref:fix-instance-conformance-issues.adoc[API Manager] for instances
+
+Regardless of what tasks you're responsible for in governance for your organization, you can view conformance information in several places in Anypoint Platform for APIs that are centrally-governed by API Governance:
+
+* In the <<governance-validation-report,validation report in API Governance or API Manager>> 
+* In the <<view-conformance-in-exchange,Conformance Status page for specifications>>
+* In the <<view-governed-apis-for-rulesets,Governed APIs page for rulesets>>
 
 [[governance-validation-report]]
 == View Conformance Information in the Validation Report
