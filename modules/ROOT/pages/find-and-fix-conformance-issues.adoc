@@ -1,6 +1,8 @@
 = Finding and Fixing Conformance Issues
 :page-aliases: view-conformance-status-in-exchange.adoc
 
+As you govern and monitor APIs for conformance, you can continually improve conformance by empowering developers and implementors to find and fix conformance issues.
+
 Governance admins typically:
 
 * Initiate validation of APIs against rulesets in xref:create-profiles.adoc[API Governance] for all supported API aspects
