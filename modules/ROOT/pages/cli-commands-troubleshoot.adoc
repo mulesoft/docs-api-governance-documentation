@@ -4,7 +4,7 @@ If you encounter errors when attempting to run Anypoint CLI commands, troublesho
 
 == Before You Begin Troubleshooting
 
-Ensure you are using the latest version of `anypoint-cli-v4`. If not, install the latest version before continuing. See xref:anypoint-cli::install.adoc[].
+Ensure you're using the latest version of `anypoint-cli-v4`. If not, install the latest version before continuing. See xref:anypoint-cli::install.adoc[].
 
 [[cli-upload-dupl-error]]
 == Status Code 409 Error When Uploading
@@ -37,7 +37,7 @@ The error `Could not determine asset type, step: Publishing asset` when using th
 
 * Specify a `--type` flag and more than one file type in one or more `--files` flags. 
 +
-If you are uploading multiple files, omit the `--type` flag to let Anypoint CLI infer the correct file type from the `classifier.packaging` in each `--files` flag.
+If you're uploading multiple files, omit the `--type` flag to let Anypoint CLI infer the correct file type from the `classifier.packaging` in each `--files` flag.
 * Specify a `--type` flag that conflicts with the asset type Anypoint CLI infers. 
 +
 Verify that the `classifier.packaging` and file name values in your `--files` flag options are correct and that they match the asset type you specified in the `--type` flag. 
@@ -89,11 +89,11 @@ anypoint-cli-v4 exchange asset upload my-auth-best-practices/1.0.0 --name "My Be
 Anypoint CLI parses commands for specific information, and if the CLI doesn't recognize or correctly interpret the command, the error message might be misleading or vague. 
 To troubleshoot these errors:
 
-* Ensure that you are entering the command flags and options as documented.
+* Ensure that you're entering the command flags and options as documented.
 * Ensure that you have specified everything in the command using the proper case, including the command itself, flags, classifiers, options, folder names, and file names. Commands are case-sensitive. 
 * Ensure that there are no curly, or smart, quotation marks in your command. Replace any curly quotation marks with straight quotation marks (`'` or `"`).
-* Ensure that you are entering your information in option values. You can't run most command examples verbatim. You must use your values for parameters and options, including organization ID, environment ID, host ID, asset identifier GAV (group ID/asset ID/version), and folder and file names.
-* Ensure that you are specifying the proper folders for files in the command or that you have changed to the working directory where they're located.
+* Ensure that you're entering your information in option values. You can't run most command examples verbatim. You must use your values for parameters and options, including organization ID, environment ID, host ID, asset identifier GAV (group ID/asset ID/version), and folder and file names.
+* Ensure that you're specifying the proper folders for files in the command or that you have changed to the working directory where they're located.
 * Search the https://help.mulesoft.com[MuleSoft Help Center^] for similar errors.
 
 == See Also
