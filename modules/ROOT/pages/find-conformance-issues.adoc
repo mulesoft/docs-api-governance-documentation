@@ -13,7 +13,7 @@ See xref:find-and-fix-conformance-issues.adoc[] for an overview of ways to valid
 [[validate-specs]]
 == Validate API Specifications Against Rulesets
 
-You can validate APIs against rulesets within the context of your API project regardless of whether your API is centrally governed through Anypoint API Governance. Developers or implementors typically do this either to proactively identify conformance issues or to review issues they're notified about.
+You can validate specifications against rulesets within the context of your API project regardless of whether your API is centrally governed through Anypoint API Governance. Developers or implementors typically do this either to proactively identify conformance issues or to review issues they're notified about.
 
 For detailed information about validating APIs against rulesets, see:
 
