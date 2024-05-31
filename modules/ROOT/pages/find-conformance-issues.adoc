@@ -17,9 +17,9 @@ You can validate specifications against rulesets within the context of your API 
 
 For detailed information about validating specifications against rulesets, see:
 
-* *For Anypoint Code Builder*: xref:anypoint-code-builder::des-govern-api.adoc[]
-* *For Design Center*: xref:design-center::design-add-api-dependency.adoc#ruleset-dependencies[Ruleset Dependencies]
-* *For Anypoint CLI*: xref:anypoint-cli::api-governance.adoc#governance-api-validate[governance:api:validate]
+* Anypoint Code Builder: xref:anypoint-code-builder::des-govern-api.adoc[]
+* Design Center: xref:design-center::design-add-api-dependency.adoc#ruleset-dependencies[Ruleset Dependencies]
+* Anypoint CLI: xref:anypoint-cli::api-governance.adoc#governance-api-validate[governance:api:validate]
 
 [[fix-conformance-issues]]
 == Fix Conformance Issues
@@ -28,8 +28,8 @@ After you identify conformance issues in your specification, you can fix the iss
 
 For detailed information about fixing API conformance issues, see:
 
-* *For Anypoint Code Builder*: xref:anypoint-code-builder::des-govern-api.adoc#fix-conformance-issues[Fix Conformance Issues]
-* *For Design Center*: xref:design-center::design-add-api-dependency.adoc#ruleset-dependencies[Ruleset Dependencies] in the Design Center documentation
+* Anypoint Code Builder: xref:anypoint-code-builder::des-govern-api.adoc#fix-conformance-issues[Fix Conformance Issues]
+* Design Center: xref:design-center::design-add-api-dependency.adoc#ruleset-dependencies[Ruleset Dependencies] in the Design Center documentation
 
 == See Also
 
