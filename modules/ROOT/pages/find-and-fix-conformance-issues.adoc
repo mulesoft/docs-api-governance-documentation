@@ -6,7 +6,7 @@ As you govern and monitor APIs for conformance, you can continually improve conf
 Governance admins typically:
 
 * Initiate validation of APIs against rulesets in xref:create-profiles.adoc[API Governance] for all supported API aspects.
-* View conformance information in the <<governance-validation-report,validation report in API Governance>>
+* View conformance information in the <<governance-validation-report,validation report in API Governance>>.
 * Notify developers or implementors about conformance issues
 
 Developers and implementors typically:
