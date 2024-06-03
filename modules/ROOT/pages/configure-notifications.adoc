@@ -33,7 +33,7 @@ Following are the changes that might result in notifications:
 To enable and configure conformance notifications in the console:
 
 . In the API Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for. 
-. If it is not already selected, select *Enabled* for *Nonconformance notification*.
+. If it's not already selected, select *Enabled* for *Nonconformance notification*.
 . Select a recipient:
 +
 * *API Publisher*: Email the API publisher by using the email address specified in the listed Anypoint Platform account

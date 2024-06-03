@@ -1,6 +1,6 @@
 = Getting Started with Anypoint API Governance
 
-After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you are ready to get started governing your APIs.
+After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you're ready to get started governing your APIs.
 
 == Before You Begin
 
@@ -52,7 +52,7 @@ Govern your APIs using the following steps:
 ** View summary information in the API Governance console and in validation reports.
 
 . xref:find-and-fix-conformance-issues.adoc[Find and fix conformance issues]: 
-* In API specifications in Design Center and Exchange as you design your APIs 
+* In API specifications in Anypoint Code Builder, Design Center, and Exchange as you design your APIs 
 * In API instances in API Manager at deployment time
 * In API catalog information in Exchange asset portal information
 * In API documentation in Exchange asset portal documentation

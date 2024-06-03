@@ -53,7 +53,7 @@ In addition to viewing API conformance information in the API Governance console
 ** Implementors can view rulesets to determine how to fix API instance conformance issues.
 
 [[design-center-overview]]
-* Design Center API Designer:
+* Anypoint Code Builder and Design Center:
 
 ** Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
 
