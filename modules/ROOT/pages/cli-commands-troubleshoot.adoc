@@ -10,4 +10,4 @@ include::_partials/cli-commands-troubleshoot.adoc[tag=errors]
 
 * xref:cli-command-list.adoc[]
 * xref:anypoint-cli::install.adoc[]
-* xref:anypoint-cli::intro.adoc[]
+* xref:anypoint-cli::index..adoc[]
