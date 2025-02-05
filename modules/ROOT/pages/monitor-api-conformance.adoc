@@ -26,6 +26,7 @@ To test profile settings using draft profiles:
 . Edit the profile settings and view the API conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them. 
 . Activate the profile to share the conformance information across Anypoint Platform so that developers can take action to resolve the conformance issues in APIs they own.
 
+[monitor-conformance]
 == Monitor Conformance Information for Active Profiles
 
 To view API conformance information for APIs targeted by active profiles, view the summary information in the API Governance console and in validation reports.
