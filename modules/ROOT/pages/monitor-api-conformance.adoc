@@ -161,6 +161,22 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of nonconformant APIs (fail)
 * Timestamp
 
+[[gov-spec-topic-center]]
+=== API Conformance Information for Topic Center
+
+If you are using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce. 
+
+The *SF API Topic Center* profile is read-only, and APIs in this profile are not metered.
+
+To export a conformance report for APIs targeted by the *SF API Topic Center* profile:
+
+. On the API Governance console, select the *Profiles* tab.
+. Select *Active*.
+. Select the *SF API Topic Center* profile.
+. Click *Export to CSV*.
++ 
+The exported CSV file contains conformance information for each API targeted by the *SF API Topic Center* profile.
+
 [[eval-api-conf-cli]]
 == Evaluate API Conformance Using the CLI
 
