@@ -26,6 +26,7 @@ To test profile settings using draft profiles:
 . Edit the profile settings and view the API conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them. 
 . Activate the profile to share the conformance information across Anypoint Platform so that developers can take action to resolve the conformance issues in APIs they own.
 
+[monitor-conformance]
 == Monitor Conformance Information for Active Profiles
 
 To view API conformance information for APIs targeted by active profiles, view the summary information in the API Governance console and in validation reports.
@@ -159,6 +160,22 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
+
+[[gov-spec-topic-center]]
+=== API Conformance Information for Topic Center
+
+If you're using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce. 
+
+The *SF API Topic Center* profile is read-only, and APIs in this profile are not metered.
+
+To export a conformance report for APIs targeted by the *SF API Topic Center* profile:
+
+. On the API Governance console, select the *Profiles* tab.
+. Select *Active*.
+. Select the *SF API Topic Center* profile.
+. Click *Export to CSV*.
++ 
+The exported CSV file contains conformance information for each API targeted by the *SF API Topic Center* profile.
 
 [[eval-api-conf-cli]]
 == Evaluate API Conformance Using the CLI
