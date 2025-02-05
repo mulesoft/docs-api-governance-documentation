@@ -164,7 +164,7 @@ The exported CSV file contains conformance information for each API targeted by 
 [[gov-spec-topic-center]]
 === API Conformance Information for Topic Center
 
-If you are using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce. 
+If you're using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce. 
 
 The *SF API Topic Center* profile is read-only, and APIs in this profile are not metered.
 
