@@ -31,6 +31,15 @@ Automate API governance in your CI/CD pipeline using CLI commands or through API
 //include::_partials/api-gov-gs-video.html[]
 //++++
 
+== Governance Dashboard
+
+The API Governance Dashboard provides a single view of all of your APIs, with metrics that will help you understand the state of your APIs across the API lifecycle.
+
+The following metrics are available:
+
+*
+
+
 == Governance Console
 
 In the API Governance console, governance administrators can:

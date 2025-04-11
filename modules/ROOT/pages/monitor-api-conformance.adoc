@@ -1,6 +1,8 @@
 = Monitoring API Conformance
 
-After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.  
+After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.
+
+== Monitor 
 
 == Test Profile Settings Using Draft Profiles
 
