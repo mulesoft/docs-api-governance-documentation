@@ -1,0 +1,7 @@
+= Taking Action from the Dashboard
+
+== Creating Governance Profiles
+== Viewing API Lists
+== Navigating to API Manager and Governance Console
+== Governing Ungoverned APIs
+== Publishing APIs to API Experience Hub (AEH)

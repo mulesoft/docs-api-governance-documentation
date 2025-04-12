@@ -1,0 +1,35 @@
+= Key Metrics
+
+== Unprotected APIs 
+=== Definition: APIs not currently managed in API Manager 
+=== Actionable Metrics: Create Profile, View APIs, Download API List, Open in Exchange 
+
+== Governed APIs 
+=== Definition: Total APIs governed under a profile in API Governance 
+=== Actionable Metrics: Create Profile, View APIs, Download API List 
+
+== APIs in Exchange 
+=== Definition: Total APIs in your catalog 
+=== Actionable Metrics: Open in Exchange, potentially View APIs 
+
+== APIs in Production 
+=== Definition: Total APIs deployed in a production environment 
+=== Actionable Metrics: Create Profile, View APIs, Download API List 
+
+== APIs by Type 
+=== Breakdown by REST API, AsyncAPI, HTTP API 
+=== Actionable Metrics: View APIs, Download API List 
+
+== Governance Usage by Profile Type 
+=== Active Profiles
+=== Draft Only Profiles
+=== Subscription Limit Information 
+
+== Conformance Status 
+=== Conformant API Versions
+=== Not Conformant API Versions
+
+== Nonconformance by Severity 
+=== High Severity Nonconformances
+=== Medium Severity Nonconformances
+=== Low Severity Nonconformances

@@ -88,7 +88,7 @@ Shows the severity of API nonconformance to rulesets based on the percentage of 
 [[api-governance-usage-reports]]
 == API Governance Usage Reports
 
-You can view usage reports to gain insight into your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
+You can view usage reports to understand and monitor your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
 
 // end::api-governance-usage-reports[]
 

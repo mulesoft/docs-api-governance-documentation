@@ -1,0 +1,22 @@
+= API Governance Dashboard
+
+== Overview of the API Dashboard
+
+=== Provides a pre-built suite of metrics
+=== Offers a clear view of API status across organizations
+=== Helps make informed decisions
+
+== Purpose and Benefits
+
+=== Gain a clear view of API status
+=== Understand the status of APIs across all organizations or the current organization
+=== Facilitates informed decision-making
+=== Helps improve API quality by identifying conformance issues and enabling resolution
+
+== Accessing the Dashboard
+
+== Understanding the Dashboard Interface
+
+=== Navigation
+=== Organization Scope (All Organizations / Current Organization)
+=== Last Update Information

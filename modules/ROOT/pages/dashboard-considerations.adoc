@@ -1,0 +1,7 @@
+= Important Dashboard Considerations
+
+== Potential Mismatch in Governed API Counts
+
+=== Dashboard counts API versions
+=== Governance initially counts asset versions
+=== Recommendation to opt in to govern by API version
