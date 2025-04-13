@@ -1,4 +1,4 @@
-.xref:index.adoc[]
+.xref:index.adoc[API Governance]
   * xref:index.adoc[]
   * xref:api-governance-release-notes.adoc[]
   * xref:get-started.adoc[]
@@ -7,7 +7,6 @@
   * xref:configure-notifications.adoc[]
   * xref:monitor-api-conformance.adoc[]
   ** xref:api-governance-dashboard-overview.adoc[]
-  *** xref:api-governance-dashboard-overview.adoc[]
   *** xref:dashboard-key-metrics.adoc[]
   *** xref:dashboard-taking-action.adoc[]
   *** xref:dashboard-considerations.adoc[]
@@ -21,3 +20,4 @@
   ** xref:custom-rulesets-new.adoc[]
   ** xref:custom-rulesets-validate-and-publish.adoc[]
   * xref:cli-command-list.adoc[]
+  ** xref:cli-commands-troubleshoot.adoc[]
