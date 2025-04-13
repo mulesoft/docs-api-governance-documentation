@@ -1,0 +1,5 @@
+= API Governance Console Overview
+
+// Screenshot of the console with callouts
+
+include::_partials/api-gov-console-scap-callouts.adoc[]
