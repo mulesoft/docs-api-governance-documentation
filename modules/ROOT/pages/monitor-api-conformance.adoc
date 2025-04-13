@@ -2,8 +2,6 @@
 
 After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.
 
-== Monitor 
-
 == Test Profile Settings Using Draft Profiles
 
 Consider using draft profiles to test profile settings. This enables you to limit the scope of the profiles to just what you need before alerting the API owners about identified API conformance issues. 
