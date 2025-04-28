@@ -12,7 +12,7 @@ Before you begin using API Governance, see the following sections:
 [[verify-permissions]]
 === Verify Your Permissions
 
-Ensure you have access to API Governance with one of the following permissions:
+Make sure you have access to API Governance with one of the these permissions:
 
 * *API Governance* > *Governance Viewer*
 +
