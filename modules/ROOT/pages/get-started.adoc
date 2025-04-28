@@ -12,7 +12,7 @@ Before you begin using API Governance, see the following sections:
 [[verify-permissions]]
 === Verify Your Permissions
 
-Make sure you have access to API Governance with one of the these permissions:
+To use API Governance you must have either _Governance Viewer_ or _Governance Administrator_ permission.
 
 * *API Governance* > *Governance Viewer*
 +
@@ -26,7 +26,7 @@ This permission allows API Governance users, such as API developers and architec
 +
 This permission allows API Governance users, such as API governance and security officers, full access to API Governance. 
 
-Anypoint Platform organization administrators are allowed full access to API Governance regardless of their API Governance permission settings. 
+Anypoint Platform organization administrators are allowed full access to API Governance regardless of their API Governance permission settings.
 
 Higher level permissions override the *Governance Viewer* permission. If a user has the *Governance Administrator* permission or is an organization administrator, setting the *Governance Viewer* permission for them does not limit their permissions.
 
@@ -39,7 +39,7 @@ This documentation covers the full product functionality that is available after
 
 == Govern Your APIs
 
-Govern your APIs using the following steps:
+Govern your APIs using these steps:
 
 . xref:add-tags.adoc[Identify] APIs to filter for governance by using tags and categories in Exchange.
 
