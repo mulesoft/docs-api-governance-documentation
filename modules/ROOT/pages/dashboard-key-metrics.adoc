@@ -1,35 +1,50 @@
-= Key Metrics
+= Dashboard Key Metrics
 
-== Unprotected APIs 
-=== Definition: APIs not currently managed in API Manager 
-=== Actionable Metrics: Create Profile, View APIs, Download API List, Open in Exchange 
+The *Key Metrics* section is a core component of the API Governance Dashboard. It offers a pre-built suite of metrics designed to provide a clear view of API status across your organization. This visibility helps you make informed decisions and improve your organization's API quality by identifying conformance issues and enabling you to resolve those issues. Each metric is associated with a collection of APIs and an action to take on those APIs.
 
-== Governed APIs 
-=== Definition: Total APIs governed under a profile in API Governance 
-=== Actionable Metrics: Create Profile, View APIs, Download API List 
+== Unprotected APIs
 
-== APIs in Exchange 
-=== Definition: Total APIs in your catalog 
-=== Actionable Metrics: Open in Exchange, potentially View APIs 
+Definition:: This metric identifies APIs in your catalog that are *not currently managed in API Manager*.
+Displayed Count:: The dashboard shows the total count of such APIs.
+Actionable Insights:: This metric provides direct links or options to take relevant actions, such as creating governance profiles, viewing detailed API lists, or downloading reports, to help you address issues or improve your API program.
+Business Value:: Accelerate API Manager usage & adoption.
 
-== APIs in Production 
-=== Definition: Total APIs deployed in a production environment 
-=== Actionable Metrics: Create Profile, View APIs, Download API List 
+== Governed APIs
 
-== APIs by Type 
-=== Breakdown by REST API, AsyncAPI, HTTP API 
-=== Actionable Metrics: View APIs, Download API List 
+Definition:: This metric shows the *Total APIs governed under a profile in API Governance*.
+Displayed Count:: The dashboard displays the total number of governed APIs.
+Actionable Insights:: Available actions include the option to *Create Profile* and *View APIs* which shows a list of governed APIs with details and the option to *Download API List*.
+Business Value:: Accelerate API Governance usage & adoption.
 
-== Governance Usage by Profile Type 
-=== Active Profiles
-=== Draft Only Profiles
-=== Subscription Limit Information 
+== APIs in Exchange
 
-== Conformance Status 
-=== Conformant API Versions
-=== Not Conformant API Versions
+Definition:: This metric represents the *Total APIs in your catalog*.
+Displayed Count:: The dashboard shows the count of all APIs in the catalog.
+Actionable Insights:: Users can *Open in Exchange* or potentially *View APIs*.
 
-== Nonconformance by Severity 
-=== High Severity Nonconformances
-=== Medium Severity Nonconformances
-=== Low Severity Nonconformances
+== APIs in Production
+
+Definition:: This metric counts the *Total APIs deployed in a production environment*.
+Displayed Count:: 
+Actionable Insights:: Actions available include *Create Profile* and *View APIs* which shows a list of APIs in production with details and the option to *Download API List* from the list view.
+
+== APIs by Type
+
+Breakdown:: This metric categorizes APIs by type, specifically *REST API, AsyncAPI, and HTTP API*.
+Actionable Insights:: The primary action is *View APIs* which shows a list of APIs by type with details and the option to *Download API List* from the list view.
+
+== Governance Usage by Profile Type
+
+Governed APIs Count:: This metric provides insight into the *Governed APIs Count*.
+Breakdown:: It breaks down this count into APIs governed by *Active* profiles versus those in *Draft Only* profiles.
+Subscription Limit Information:: This section also includes *Subscription limit information*, detailing the total number of governed APIs allowed across all organizations. It may show the limit itself, such as *1000 APIs across all organizations*, or indicate if the subscription limit has been reached and that the Anypoint Platform admin needs to contact their MuleSoft account representative.
+
+== Conformance Status
+
+Governed API Versions:: This metric displays the count of *Governed API Versions*.
+Breakdown:: It categorizes these governed versions based on their conformance status, showing *Conformant* and *Not Conformant* API versions.
+
+== Nonconformance by Severity
+
+Nonconformant APIs:: This section focuses on the number of *Nonconformant APIs*.
+Breakdown by Severity:: It provides a breakdown of nonconformances based on their severity level: *High, Medium, and Low*.
