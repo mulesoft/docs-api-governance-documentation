@@ -1,39 +1,39 @@
 = API Governance Dashboard Overview
 
-The API Governance Dashboard is a tool designed to help you easily understand the status of your APIs across your organization and govern your API programs effectively. The dashboard provides actionable metrics related to the health of your API programs.
+The Anypoint API Governance Dashboard is a tool designed to help you easily understand the status of your APIs across your organization and govern your API programs effectively. The dashboard provides actionable metrics related to the health of your API programs.
 
 [[key-features]]
 == Key Features
 
 The Dashboard provides several key features to help you manage your APIs:
 
-*   Metrics:: Access a pre-built set of metrics to understand your API surface area.
-*   Actionable Insights:: Each metric is associated with potential actions you can take to improve your API posture.
-*   Organization-wide Visibility:: View metrics across your entire organization or filter the data to display information for the current organization.
-*   Clear Status Overview:: Instantly see the status of your APIs, including those that are unprotected, governed, in Exchange, and in production.
-*   API Type Breakdown:: Understand the distribution of your APIs by type (e.g., REST API, AsyncAPI, HTTP API).
-*   Governance Insights:: Gain visibility into your API governance posture, including the number of governed APIs, their conformance status, and nonconformance severity.
+Metrics:: Access a pre-built set of metrics to understand your API surface area.
+Actionable Insights:: Each metric is associated with potential actions you can take from the dashboard to improve your API posture.
+Organization-wide Visibility:: View metrics across your entire organization or filter the data to display information for the current organization.
+Clear Status Overview:: Instantly see the status of your APIs, including those that are unprotected, governed, in Exchange, and in production.
+API Type Breakdown:: Understand the distribution of your APIs by type (for example, REST API, AsyncAPI, HTTP API).
+Governance Insights:: Gain visibility into your API governance posture, including the number of governed APIs, their conformance status, and nonconformance severity.
 
 [[dashboard-metrics]]
 == Dashboard Metrics
 
 The Dashboard displays the following key metrics:
 
-*   Unprotected APIs:: The number of APIs in your catalog that are not currently managed in API Manager.
-*   Governed APIs:: The total number of APIs governed under a profile in API Governance.
-    *   This also includes a breakdown of Governance Usage by Profile Type, showing the number of active and draft profiles.
-*   APIs in Exchange:: The total number of APIs in your catalog (Exchange).
-*   APIs in Production:: The total number of APIs deployed in a production environment.
-*   APIs by Type:: A breakdown of the number of APIs by their protocol, such as REST API, AsyncAPI, and HTTP API.
-*   Conformance Status:: For governed APIs, this shows the number of conformant and not conformant API versions.
-*   Nonconformance by Severity:: For not conformant APIs, this indicates the number of APIs with high, medium, and low severity violations.
+Unprotected APIs:: The number of APIs in your catalog that are not currently managed in API Manager.
+Governed APIs:: The total number of APIs governed under a profile in API Governance.
+  This also includes a breakdown of Governance Usage by Profile Type, showing the number of active and draft profiles.
+APIs in Exchange:: The total number of APIs in your catalog (Exchange).
+APIs in Production:: The total number of APIs deployed in a production environment.
+APIs by Type:: A breakdown of the number of APIs by their protocol, such as REST API, AsyncAPI, and HTTP API.
+Conformance Status:: For governed APIs, this shows the number of conformant and not conformant API versions.
+Nonconformance by Severity:: For not conformant APIs, this indicates the number of APIs with high, medium, and low severity violations.
 
 [[taking-action]]
 == Taking Action
 
 Each metric on the dashboard is designed to provide actionable insights. From the dashboard, you can often take direct action, such as:
 
-*   Creating Governance Profiles:: Initiate the creation of new governance profiles to start governing unprotected APIs.
-*   Viewing API Lists:: Navigate to detailed lists of APIs based on the displayed metrics (e.g., view all unprotected APIs, APIs in production, or APIs by type).
-*   Navigating to API Manager and Governance Console:: Access other relevant areas of the Anypoint Platform for more detailed management and configuration.
-*   Governing APIs:: Directly initiate the process of governing APIs that are currently ungoverned.
+Creating Governance Profiles:: Initiate the creation of new governance profiles to start governing unprotected APIs.
+Viewing API Lists:: Navigate to detailed lists of APIs based on the displayed metrics (for example, view all unprotected APIs, APIs in production, or APIs by type).
+Navigating to API Manager and Governance Console:: Access other relevant areas of the Anypoint Platform for more detailed management and configuration.
+Governing APIs:: Directly initiate the process of governing APIs that are currently ungoverned.
