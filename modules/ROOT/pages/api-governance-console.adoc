@@ -1,5 +1,9 @@
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
 = API Governance Console Overview
 
 // Screenshot of the console with callouts
 
-include::_partials/api-gov-console-scap-callouts.adoc[]
+include::partial$api-gov-console-scap-callouts.adoc[]

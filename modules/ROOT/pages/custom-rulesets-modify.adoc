@@ -1,4 +1,7 @@
 = Creating Custom Rulesets by Modifying Published Rulesets
+ifndef::env-site,env-github[]
+:imagesdir: ../assets/images
+endif::[]
 
 If a published ruleset meets most of your needs, consider using it as an example to base your custom ruleset on. 
 
@@ -16,7 +19,7 @@ To create a custom ruleset by modifying a published ruleset:
 Watch this video to see how to clone and customize an example ruleset using Anypoint CLI. Use this video along with the documentation to get started downloading an example ruleset, modifying rules using Anypoint CLI, and publishing your customized ruleset. 
 
 ++++
-include::_partials/api-gov-custom-ruleset-video.html[]
+include::partial$api-gov-custom-ruleset-video.html[]
 ++++
 
 [[clone-and-modify]]

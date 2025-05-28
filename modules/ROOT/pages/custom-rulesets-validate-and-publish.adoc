@@ -1,4 +1,7 @@
 = Validating and Publishing Custom Rulesets
+ifndef::env-site,env-github[]
+:imagesdir: ../assets/images
+endif::[]
 
 After you create a custom ruleset:
 

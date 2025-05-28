@@ -1,3 +1,7 @@
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
 = Getting Started with Anypoint API Governance
 
 After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you're ready to get started governing your APIs.
