@@ -1,11 +1,9 @@
-= Taking Action from the Dashboard
-
 == Creating Governance Profiles from the Dashboard
 
 The API Governance Dashboard UI guides you through creating profiles. When you take action from the Dashboard to create a profile, your profile is prepopulated with the APIs that match the filter criteria from the Dashboard. 
 
 [[create-profile-unprotected-apis]]
-== Create a Governance Profile for Unprotected APIs
+=== Create a Governance Profile for Unprotected APIs
 
 If you click *Create Profile* from the *Unprotected APIs* section of the Dashboard, your draft profile is prepopulated with the following:
 
@@ -27,7 +25,7 @@ You can then review your profile and click *Save as a draft* or *Save as active*
 When you save a profile as either draft or active, its targeted APIs become governed.
 
 [[create-profile-production-apis]]
-== Create a Governance Profile for APIs in Production
+=== Create a Governance Profile for APIs in Production
 
 If you click *Create Profile* from the *APIs in Production* section of the Dashboard, your draft profile is prepopulated with the following:
 

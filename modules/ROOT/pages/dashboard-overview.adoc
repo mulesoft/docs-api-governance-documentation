@@ -20,7 +20,7 @@ Governance Insights:: Gain visibility into your API governance posture, includin
 include::dashboard-key-metrics.adoc[]
 
 [[taking-action]]
-== Taking Action
+== Taking Action from the Dashboard
 
 Each metric on the dashboard is designed to provide actionable insights. From the dashboard, you can often take direct action, such as:
 
