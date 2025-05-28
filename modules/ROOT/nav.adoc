@@ -7,8 +7,6 @@
   * xref:configure-notifications.adoc[]
   * xref:monitor-api-conformance.adoc[]
   ** xref:dashboard-overview.adoc[]
-  *** xref:dashboard-key-metrics.adoc[]
-  *** xref:dashboard-taking-action.adoc[]
   * xref:api-governance-console.adoc[]
   * xref:find-and-fix-conformance-issues.adoc[]
   ** xref:find-conformance-issues.adoc[]
