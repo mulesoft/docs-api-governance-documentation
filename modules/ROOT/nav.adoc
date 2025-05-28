@@ -6,7 +6,7 @@
   * xref:create-profiles.adoc[]
   * xref:configure-notifications.adoc[]
   * xref:monitor-api-conformance.adoc[]
-  ** xref:api-governance-dashboard-overview.adoc[]
+  ** xref:dashboard-overview.adoc[]
   *** xref:dashboard-key-metrics.adoc[]
   *** xref:dashboard-taking-action.adoc[]
   *** xref:dashboard-considerations.adoc[]
