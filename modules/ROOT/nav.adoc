@@ -9,7 +9,6 @@
   ** xref:dashboard-overview.adoc[]
   *** xref:dashboard-key-metrics.adoc[]
   *** xref:dashboard-taking-action.adoc[]
-  *** xref:dashboard-considerations.adoc[]
   * xref:find-and-fix-conformance-issues.adoc[]
   ** xref:find-conformance-issues.adoc[]
   ** xref:fix-instance-conformance-issues.adoc[]

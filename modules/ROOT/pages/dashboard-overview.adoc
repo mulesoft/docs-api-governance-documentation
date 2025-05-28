@@ -33,7 +33,5 @@ Nonconformance by Severity:: For not conformant APIs, this indicates the number 
 
 Each metric on the dashboard is designed to provide actionable insights. From the dashboard, you can often take direct action, such as:
 
-Creating Governance Profiles:: Initiate the creation of new governance profiles to start governing unprotected APIs.
+Creating Governance Profiles:: Initiate the creation of new governance profiles to start governing unprotected APIs or APIs in production.
 Viewing API Lists:: Navigate to detailed lists of APIs based on the displayed metrics (for example, view all unprotected APIs, APIs in production, or APIs by type).
-Navigating to API Manager and Governance Console:: Access other relevant areas of the Anypoint Platform for more detailed management and configuration.
-Governing APIs:: Directly initiate the process of governing APIs that are currently ungoverned.
