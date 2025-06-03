@@ -2,6 +2,8 @@
 
 The API Governance Dashboard UI guides you through creating profiles. When you take action from the Dashboard to create a profile, your profile is prepopulated with the APIs that match the filter criteria from the Dashboard. 
 
+Note: The Governance Dashboard is available to all MuleSoft orgs out-of-the box. If you take action to create a governance profile, the APIs targeted by the profile will be metered.
+
 [[create-profile-unprotected-apis]]
 === Create a Governance Profile for Unprotected APIs
 
