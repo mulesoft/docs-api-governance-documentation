@@ -1,0 +1,46 @@
+The *Key Metrics* section is a core component of the API Governance Dashboard. It offers a pre-built suite of metrics designed to provide a clear view of API status across your organization. This visibility helps you make informed decisions and improve your organization's API quality by identifying conformance issues and enabling you to resolve those issues. Each metric is associated with a collection of APIs and an action to take on those APIs.
+
+== Unprotected APIs
+
+Definition:: APIs in your catalog that are *not currently managed in API Manager*.
+Displayed Count:: The dashboard shows the total count of such APIs.
+Actionable Metrics:: Create a profile to govern some or all of your unprotected APIs, or view detailed API lists, to help you address issues or improve your API program.
+
+== Governed APIs
+
+Definition:: The *Total APIs governed under a profile in API Governance*.
+Displayed Count:: The dashboard displays the total number of governed APIs.
+Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of governed APIs with details and the option to download a list of governed APIs.
+
+== APIs in Exchange
+
+Definition:: APIs in your catalog that are in Exchange.
+Displayed Count:: The dashboard shows the count of all APIs in Exchange.
+
+== APIs in Production
+
+Definition:: APIs in your catalog that are deployed in a production environment.
+Displayed Count:: The dashboard shows the count of all APIs in production.
+Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of APIs in production with details and the option to download a list of APIs in production.
+
+== APIs by Type
+
+Definition:: APIs in your catalog by type, specifically *REST API, AsyncAPI, and HTTP API*.
+Displayed Count:: The dashboard shows the count of all APIs by type.
+Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of APIs by type with details and the option to download a list of APIs by type.
+
+== Governance Usage by Profile Type
+
+Definition:: Total number of APIs governed.
+Breakdown:: APIs governed by *Active* profiles versus those in *Draft Only* profiles.
+
+== Conformance Status
+
+Definition:: APIs conformance status.
+Displayed Count:: The dashboard shows the count of all governedAPIs by conformance status.
+Breakdown:: API counts by conformance status, showing *Conformant* and *Not Conformant* APIs.
+
+== Nonconformance by Severity
+
+Definition:: Total number Nonconformant APIs.
+Breakdown by Severity:: Nonconformances based on their severity level: *High, Medium, and Low*.

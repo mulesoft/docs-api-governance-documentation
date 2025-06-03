@@ -1,0 +1,33 @@
+= API Governance Dashboard Overview
+ifndef::env-site,env-github[]
+include::_attributes.adoc[]
+endif::[]
+
+The Anypoint API Governance Dashboard is a tool designed to help you easily understand the status of your APIs across your organization and govern your API programs effectively. The dashboard provides metrics related to the health of your API programs, with direction action available right from the dashboard, where there is a logical associated action.
+
+[[key-features]]
+== Key Features
+
+The Dashboard provides several key features to help you manage your APIs:
+
+Metrics:: Access a pre-built set of metrics to understand your API surface area.
+Actions:: Each metric is associated with potential actions you can take from the dashboard to improve your API posture.
+Organization-wide Visibility:: View metrics across your entire organization or filter the data to display information for the current organization.
+Clear Status Overview:: Instantly see the status of your APIs, including those that are unprotected, governed, in Exchange, and in production.
+API Type Breakdown:: Understand the distribution of your APIs by type (for example, REST API, AsyncAPI, HTTP API).
+Governance Insights:: Gain visibility into your API governance posture, including the number of governed APIs, their conformance status, and nonconformance severity.
+
+[[dashboard-metrics]]
+== Dashboard Metrics
+
+include::partial$dashboard-key-metrics.adoc[]
+
+[[taking-action]]
+== Taking Action from the Dashboard
+
+From the dashboard, you can often take direct action, such as:
+
+Creating Governance Profiles:: Initiate the creation of new governance profiles to start governing unprotected APIs or APIs in production.
+Viewing API Lists:: Navigate to detailed lists of APIs based on the displayed metrics (for example, view all unprotected APIs, APIs in production, or APIs by type).
+
+include::partial$dashboard-taking-action.adoc[]

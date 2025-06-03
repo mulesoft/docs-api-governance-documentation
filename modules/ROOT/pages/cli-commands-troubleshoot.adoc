@@ -2,9 +2,9 @@
 
 If you encounter errors when attempting to run Anypoint CLI commands, troubleshoot them as follows.
 
-include::_partials/cli-commands-troubleshoot.adoc[tag=before]
+include::partial$cli-commands-troubleshoot.adoc[tag=before]
 
-include::_partials/cli-commands-troubleshoot.adoc[tag=errors]
+include::partial$cli-commands-troubleshoot.adoc[tag=errors]
 
 == See Also
 

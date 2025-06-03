@@ -1,4 +1,7 @@
 = Identifying APIs to Govern
+ifndef::env-site,env-github[]
+:imagesdir: ../assets/images
+endif::[]
 
 APIs that meet the filter criteria in API Governance profiles become _governed APIs_. 
 Identify the APIs to govern before creating your governance profiles to help ensure that:

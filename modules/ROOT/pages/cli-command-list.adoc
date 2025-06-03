@@ -1,4 +1,7 @@
 = CLI Commands for API Governance
+ifndef::env-site,env-github[]
+:imagesdir: ../assets/images
+endif::[]
 :page-aliases: install-cli.adoc
 
 You can use Anypoint CLI commands to automate your API Governance processes and work with custom rulesets.   

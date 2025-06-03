@@ -1,4 +1,7 @@
 = Creating Completely New Custom Rulesets
+ifndef::env-site,env-github[]
+:imagesdir: ../assets/images
+endif::[]
 
 To create a completely new custom ruleset that isn't based on an existing one, use one of the following approaches:
 

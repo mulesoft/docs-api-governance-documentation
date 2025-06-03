@@ -34,7 +34,7 @@ View a comprehensive governance validation report in API Governance or API Manag
 
 // Screenshot of a Conformance Report page with callouts 
 
-include::_partials/api-gov-apim-governance-report.adoc[]
+include::partial$api-gov-apim-governance-report.adoc[]
 
 To view conformance information in the governance validation report:
 

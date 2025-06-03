@@ -1,6 +1,6 @@
 = Monitoring API Conformance
 
-After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.  
+After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.
 
 == Test Profile Settings Using Draft Profiles
 
@@ -33,7 +33,7 @@ To view API conformance information for APIs targeted by active profiles, view t
 
 // Screenshot of the console with callouts
 
-include::_partials/api-gov-console-scap-callouts.adoc[]
+include::partial$api-gov-console-scap-callouts.adoc[]
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
@@ -86,7 +86,7 @@ Shows the severity of API nonconformance to rulesets based on the percentage of 
 [[api-governance-usage-reports]]
 == API Governance Usage Reports
 
-You can view usage reports to gain insight into your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
+You can view usage reports to understand and monitor your monthly usage of API Governance. See xref:general::usage-reports.adoc#api-governance[Viewing Usage Reports for API Governance].
 
 // end::api-governance-usage-reports[]
 
