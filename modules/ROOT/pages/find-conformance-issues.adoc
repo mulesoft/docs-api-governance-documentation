@@ -3,6 +3,7 @@
 You can check for API specification conformance using a custom or MuleSoft-provided ruleset such as:
 
 * Anypoint Best Practices
+* Agent Network Best Practices
 * Authentication Security Best Practices
 * OpenAPI Best Practices
 * AsyncAPI Best Practices
