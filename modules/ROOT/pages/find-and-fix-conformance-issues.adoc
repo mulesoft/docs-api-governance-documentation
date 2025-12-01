@@ -63,7 +63,7 @@ include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 
 == Browser Resource Limits for Governance Validation
 
-When running governance validation in the web browser, the process is subject to browser memory limits. For large or complex API specifications, the browser can exceed its resource limit and stop the validation process. In this scenario, the dialog displays a "Validation failed" error. This is expected behavior when the browser cannot allocate additional resources for validation.
+When running governance validation in the web browser, the process is subject to browser memory limits. For large or complex API specifications, the browser can exceed its resource limit and stop the validation process. In this scenario, the dialog displays a "Validation failed" error. This is expected behavior when the browser can't allocate additional resources for validation.
 
 To avoid this limitation, run governance validation in Anypoint Code Builder Desktop, which can use more system memory and CPU than a browser tab.
 
