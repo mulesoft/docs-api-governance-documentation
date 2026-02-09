@@ -16,6 +16,7 @@
   * xref:create-custom-rulesets.adoc[]
   ** xref:custom-rulesets-modify.adoc[]
   ** xref:custom-rulesets-new.adoc[]
+  ** xref:custom-rulesets-proto.adoc[]
   ** xref:custom-rulesets-validate-and-publish.adoc[]
   * xref:cli-command-list.adoc[]
   ** xref:cli-commands-troubleshoot.adoc[]

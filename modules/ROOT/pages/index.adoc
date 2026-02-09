@@ -38,7 +38,7 @@ The API Governance Dashboard offers an organization-wide view of your API landsc
 From the API Governance Dashboard, you can:
 
 *  View metrics, such as the number of unprotected APIs, governed APIs, APIs in Exchange, and APIs in production.
-*  Understand the distribution of your APIs by type, including REST API, AsyncAPI, HTTP API, Agent, and MCP.
+*  Understand the distribution of your APIs by type, including REST API, AsyncAPI, HTTP API, gRPC/Protocol Buffer, Agent, and MCP.
 *  Understand your API governance posture, including conformance status and nonconformance severity for governed APIs.
 *  Take action from the Dashboard based on the presented metrics, such as initiating the creation of new governance profiles to start governing unprotected APIs and navigating to lists of APIs for further review.
 

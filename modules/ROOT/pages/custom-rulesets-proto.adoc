@@ -1,0 +1,407 @@
+= Governance Rulesets for Protocol Buffer Files
+ifndef::env-site,env-github[]
+:imagesdir: ../assets/images
+endif::[]
+
+Protocol Buffer (`.proto`) files are interface definition files that define the structure of data for gRPC services and other Protocol Buffer implementations. Anypoint API Governance supports validation of `.proto` files through custom governance rulesets that check both syntax (linting) and semantic correctness (best practices).
+
+== Overview
+
+Governance rulesets for `.proto` files enable you to:
+
+* *Enforce syntax standards*: Validate that `.proto` files follow correct Protocol Buffer syntax and formatting conventions.
+* *Apply semantic validation*: Ensure that `.proto` files adhere to organizational best practices and industry standards.
+* *Maintain consistency*: Apply standardized rules across all Protocol Buffer definitions in your organization.
+* *Prevent deployment issues*: Identify and fix conformance issues before `.proto` files are deployed to production.
+
+== Before You Begin
+
+Before creating governance rulesets for `.proto` files, ensure you:
+
+* Have the required API Governance permissions (Governance Administrator or Governance Viewer).
+* Are familiar with Protocol Buffer syntax and conventions.
+* Have installed Anypoint CLI for ruleset validation and publishing.
+* Understand the basics of xref:create-custom-rulesets.adoc[creating custom governance rulesets].
+
+== Protocol Buffer Validation Types
+
+Governance rulesets for `.proto` files provide two primary types of validation:
+
+=== Syntax Validation (Linting)
+
+Syntax validation ensures that `.proto` files follow correct Protocol Buffer syntax and style conventions. Common syntax rules include:
+
+* *Package declarations*: All files must have a package declaration in `lower_snake_case` format.
+* *File naming conventions*: Filenames should use `lower_snake_case.proto` format.
+* *Import statements*: Validate proper import declarations without `public` or `weak` imports (unless explicitly allowed).
+* *Message structure*: Ensure messages are properly defined with valid field types and numbers.
+* *Enum formatting*: Enforce enum names in `PascalCase` with values in `UPPER_SNAKE_CASE`.
+* *Field naming*: Validate field names follow `lower_snake_case` conventions.
+
+=== Semantic Validation (Best Practices)
+
+Semantic validation ensures that `.proto` files follow organizational and industry best practices for Protocol Buffer design. Common semantic rules include:
+
+* *Versioning standards*: Ensure packages include version information (e.g., `v1`, `v2`).
+* *Enum zero values*: Verify that all enums have a zero value suffixed with `_UNSPECIFIED`.
+* *Reserved fields*: Check that deprecated fields are properly marked as reserved.
+* *Field numbering*: Validate that field numbers are assigned correctly and don't conflict.
+* *Documentation requirements*: Ensure all messages, fields, and enums have appropriate documentation comments.
+* *Breaking changes*: Detect changes that could break backward compatibility.
+* *Naming consistency*: Verify that naming conventions are consistent across the organization.
+
+== Creating Protocol Buffer Rulesets
+
+To create a governance ruleset for `.proto` files, follow these steps:
+
+=== Step 1: Inspect Your Protocol Buffer Files
+
+Use the `governance:api:inspect` command to analyze your `.proto` files and understand their structure:
+
+[source,bash]
+----
+anypoint-cli-v4 governance:api:inspect /path/to/your/file.proto
+----
+
+This command helps you determine:
+
+* The API type (Protocol Buffer/gRPC)
+* The data schema structure
+* Which validation rules might be applicable
+
+=== Step 2: Initialize or Create a Ruleset
+
+You have several options for creating a Protocol Buffer governance ruleset:
+
+==== Option A: Initialize from a Protocol Buffer Data Schema
+
+Use the `governance:ruleset:init` command to generate a starter ruleset from your `.proto` file's data schema:
+
+[source,bash]
+----
+anypoint-cli-v4 governance:ruleset:init \
+  --data-schema /path/to/your/file.proto \
+  --output-file /path/to/mynewruleset.yaml
+----
+
+==== Option B: Modify an Existing Ruleset
+
+If your organization already has a Protocol Buffer ruleset in Exchange, you can clone and modify it:
+
+[source,bash]
+----
+anypoint-cli-v4 governance:ruleset:clone \
+  --ruleset-id groupId/assetId/version \
+  --output-directory /path/to/output
+----
+
+For details, see xref:custom-rulesets-modify.adoc[].
+
+==== Option C: Create a Custom Ruleset from Scratch
+
+For complete control, create a custom ruleset using the ruleset development CLI or modeling language. See xref:custom-rulesets-new.adoc[] for details.
+
+=== Step 3: Define Validation Rules
+
+Define specific validation rules for your `.proto` files in your ruleset YAML file. Common rules to include:
+
+==== Syntax Linting Rules
+
+[source,yaml]
+----
+profile: proto-syntax-validation
+extends: 
+  - Proto-Syntax-Standard
+
+rules:
+  - name: package-declaration-required
+    message: "Protocol Buffer files must declare a package"
+    severity: violation
+    
+  - name: package-lowercase-snake-case
+    message: "Package names must use lower_snake_case"
+    severity: violation
+    
+  - name: file-name-convention
+    message: "Proto file names must use lower_snake_case.proto format"
+    severity: violation
+    
+  - name: enum-name-pascal-case
+    message: "Enum names must use PascalCase"
+    severity: violation
+    
+  - name: enum-value-upper-snake-case
+    message: "Enum values must use UPPER_SNAKE_CASE"
+    severity: violation
+    
+  - name: message-name-pascal-case
+    message: "Message names must use PascalCase"
+    severity: violation
+    
+  - name: field-name-lower-snake-case
+    message: "Field names must use lower_snake_case"
+    severity: violation
+----
+
+==== Semantic Best Practice Rules
+
+[source,yaml]
+----
+profile: proto-semantic-validation
+extends:
+  - Proto-Best-Practices
+
+rules:
+  - name: enum-zero-value-required
+    message: "Enums must have a zero value suffixed with _UNSPECIFIED"
+    severity: violation
+    
+  - name: package-version-required
+    message: "Package name must include version (e.g., v1, v2)"
+    severity: violation
+    
+  - name: deprecated-fields-reserved
+    message: "Deprecated field numbers must be marked as reserved"
+    severity: warning
+    
+  - name: field-number-range
+    message: "Field numbers must be in valid range (1-536870911)"
+    severity: violation
+    
+  - name: documentation-required
+    message: "All public messages and fields must have documentation comments"
+    severity: warning
+    
+  - name: breaking-changes-detection
+    message: "Changes must not break backward compatibility"
+    severity: violation
+----
+
+=== Step 4: Validate the Ruleset
+
+Before publishing, validate that your ruleset is correctly formatted:
+
+[source,bash]
+----
+anypoint-cli-v4 governance:ruleset:validate /path/to/mynewruleset.yaml
+----
+
+For details, see xref:custom-rulesets-validate-and-publish.adoc[].
+
+=== Step 5: Generate Documentation
+
+Generate documentation for your ruleset to help developers understand the validation rules:
+
+[source,bash]
+----
+anypoint-cli-v4 governance:document \
+  /path/to/mynewruleset.yaml \
+  /path/to/output/ruleset.doc.zip
+----
+
+=== Step 6: Publish to Exchange
+
+Publish your validated ruleset to Anypoint Exchange so it can be used in governance profiles:
+
+[source,bash]
+----
+anypoint-cli-v4 exchange asset upload \
+  --organization-id <org-id> \
+  --name "Protocol Buffer Governance Ruleset" \
+  --description "Validates .proto files for syntax and semantic correctness" \
+  --type rest-api \
+  --files.ruleset.yaml /path/to/mynewruleset.yaml
+----
+
+For complete publishing instructions, see xref:custom-rulesets-validate-and-publish.adoc[].
+
+== Applying Protocol Buffer Rulesets to APIs
+
+After publishing your `.proto` governance ruleset to Exchange, apply it to your APIs through governance profiles:
+
+. Navigate to the API Governance console.
+. xref:create-profiles.adoc[Create or edit a governance profile].
+. Select your Protocol Buffer ruleset from the available rulesets.
+. Configure profile filters to target APIs with `.proto` files or gRPC specifications.
+. Activate the profile to begin validation.
+
+== Validating Protocol Buffer Files
+
+After configuring governance profiles with Protocol Buffer rulesets, validation occurs automatically. You can also validate `.proto` files manually:
+
+=== Using Anypoint CLI
+
+Validate a specific `.proto` file against a ruleset:
+
+[source,bash]
+----
+anypoint-cli-v4 governance:api:validate \
+  --api-spec /path/to/your/file.proto \
+  --ruleset groupId/assetId/version
+----
+
+=== Viewing Validation Results
+
+View validation results in:
+
+* *API Governance Console*: See xref:monitor-api-conformance.adoc[] for details on viewing conformance status.
+* *Governance Validation Report*: Access detailed validation reports in xref:find-and-fix-conformance-issues.adoc#governance-validation-report[governance validation reports].
+* *API Manager*: View conformance information for deployed APIs with governance reports.
+
+== Common Protocol Buffer Conformance Issues
+
+When validating `.proto` files, you might encounter these common conformance issues:
+
+[cols="2,3,3"]
+|===
+| Issue | Description | Recommended Fix
+
+| Missing package declaration
+| `.proto` file does not declare a package
+| Add a `package` declaration at the top of the file: `package com.example.v1;`
+
+| Invalid package naming
+| Package name doesn't follow `lower_snake_case` convention
+| Rename package to use lowercase letters and underscores: `my_service.v1`
+
+| Enum without zero value
+| Enum does not have a value assigned to 0
+| Add a zero value suffixed with `_UNSPECIFIED`: `ENUM_NAME_UNSPECIFIED = 0;`
+
+| Invalid field numbering
+| Field numbers are outside valid range or conflict
+| Assign field numbers between 1 and 536,870,911, avoiding 19000-19999 (reserved)
+
+| Breaking changes
+| Changes break backward compatibility
+| Use new field numbers for new fields; mark old fields as reserved instead of removing
+
+| Missing documentation
+| Public messages or fields lack documentation comments
+| Add documentation comments using `//` or `/* */` syntax above elements
+
+| Invalid enum value naming
+| Enum values don't follow `UPPER_SNAKE_CASE`
+| Rename enum values: `MY_ENUM_VALUE`
+
+| Invalid message naming
+| Message names don't follow `PascalCase`
+| Rename messages: `MyMessageName`
+|===
+
+For detailed guidance on fixing conformance issues, see xref:find-and-fix-conformance-issues.adoc[].
+
+== Best Practices for Protocol Buffer Governance
+
+Follow these best practices when governing `.proto` files:
+
+=== Establish Clear Standards
+
+* Define organizational standards for naming conventions, versioning, and documentation.
+* Document your Protocol Buffer style guide and make it accessible to all developers.
+* Use consistent ruleset configurations across all projects.
+
+=== Start with Standard Rules
+
+* Begin with widely accepted Protocol Buffer style guides (e.g., Google's Protocol Buffer style guide).
+* Gradually add organization-specific rules as needed.
+* Use severity levels appropriately: `violation` for syntax errors, `warning` for best practice recommendations.
+
+=== Validate Early and Often
+
+* Integrate governance validation into your CI/CD pipeline using CLI commands.
+* Validate `.proto` files during the design phase before deployment.
+* Use xref:anypoint-cli::api-governance.adoc#governance-api-evaluate[`governance:api:evaluate`] to understand which rulesets will be applied.
+
+=== Maintain Backward Compatibility
+
+* Create rulesets that detect breaking changes in `.proto` files.
+* Require reserved field declarations for deprecated fields.
+* Enforce versioning in package names to manage API evolution.
+
+=== Provide Clear Error Messages
+
+* Write descriptive rule messages that explain why a validation failed.
+* Include guidance on how to fix conformance issues in your ruleset documentation.
+* Link to your organization's style guide in error messages when applicable.
+
+=== Monitor and Iterate
+
+* Regularly review conformance reports in the xref:api-governance-console.adoc[API Governance console].
+* Update rulesets based on feedback from development teams.
+* Track conformance trends using the xref:dashboard-overview.adoc[API Governance Dashboard].
+
+== Integration with Development Workflows
+
+Integrate Protocol Buffer governance validation into your development workflows:
+
+=== In Anypoint Code Builder
+
+Developers can validate `.proto` files directly in Anypoint Code Builder:
+
+. Open your `.proto` file in Anypoint Code Builder.
+. Validation results appear automatically if governance profiles are configured.
+. Fix conformance issues based on the validation feedback.
+
+For details, see xref:anypoint-code-builder::des-govern-api.adoc[].
+
+=== In CI/CD Pipelines
+
+Automate governance validation in your CI/CD pipeline:
+
+[source,bash]
+----
+# Example CI/CD validation script
+#!/bin/bash
+
+# Validate all .proto files in the project
+for proto_file in $(find . -name "*.proto"); do
+  echo "Validating $proto_file..."
+  anypoint-cli-v4 governance:api:validate \
+    --api-spec "$proto_file" \
+    --ruleset "$PROTO_RULESET_ID"
+  
+  if [ $? -ne 0 ]; then
+    echo "Validation failed for $proto_file"
+    exit 1
+  fi
+done
+
+echo "All .proto files passed validation"
+----
+
+=== Using the Experience API
+
+Implement custom solutions using the API Governance Experience API to:
+
+* Retrieve conformance status for `.proto` files programmatically.
+* List governance profiles that include Protocol Buffer rulesets.
+* Automate reporting and notifications for validation failures.
+
+Access the experience API in Exchange:
+
+* https://anypoint.mulesoft.com/exchange/68ef9520-24e9-4cf2-b2f5-620025690913/api-governance-xapi[US Control Plane^]
+* https://eu1.anypoint.mulesoft.com/exchange/e0b4a150-f59b-46d4-ad25-5d98f9deb24a/api-governance-xapi[EU Control Plane^]
+
+== Troubleshooting
+
+If you encounter issues validating `.proto` files:
+
+* Ensure your `.proto` files use valid Protocol Buffer syntax (proto2 or proto3).
+* Verify that your governance ruleset is correctly formatted and published to Exchange.
+* Check that your governance profile includes the Protocol Buffer ruleset and targets the correct APIs.
+* Review xref:cli-commands-troubleshoot.adoc[] for common CLI issues.
+* Ensure your Anypoint CLI is updated to the latest version.
+
+For help with custom rulesets, post an issue in the https://github.com/aml-org/amf-custom-validator[AMF Custom Validator GitHub repository^].
+
+== See Also
+
+* xref:create-custom-rulesets.adoc[]
+* xref:custom-rulesets-new.adoc[]
+* xref:custom-rulesets-modify.adoc[]
+* xref:custom-rulesets-validate-and-publish.adoc[]
+* xref:create-profiles.adoc[]
+* xref:monitor-api-conformance.adoc[]
+* xref:find-and-fix-conformance-issues.adoc[]
+* xref:cli-command-list.adoc[]
