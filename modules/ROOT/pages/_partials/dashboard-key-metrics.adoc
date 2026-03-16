@@ -25,7 +25,7 @@ Actionable Metrics:: *View APIs* takes you to the API Governance Console, where 
 
 == APIs by Type
 
-Definition:: APIs in your catalog by type, specifically *REST API, AsyncAPI, HTTP API, Agent, and MCP*.
+Definition:: APIs in your catalog by type, specifically *REST API, AsyncAPI, HTTP API, gRPC, Agent, and MCP*.
 Displayed Count:: The dashboard shows the count of all APIs by type.
 Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of APIs by type with details and the option to download a list of APIs by type.
 

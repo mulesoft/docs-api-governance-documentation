@@ -2,7 +2,7 @@
 
 include::general::partial$api-gov-concepts.adoc[tag=governance-rulesets-subset]
 
-Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF parses, transforms, validates, and renders arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, and GraphQL API specifications.
+Rulesets are implemented using AMF, an open-source framework for managing metadata documents. AMF parses, transforms, validates, and renders arbitrary metadata models, with built-in features for API models. Anypoint Platform uses AMF to parse RAML, OAS, AsyncAPI, GraphQL, and gRPC API specifications.
 
 If you need a ruleset other than those provided, you can create your own custom ruleset. 
 
@@ -10,11 +10,11 @@ If you need a ruleset other than those provided, you can create your own custom 
 
 By writing your own rules, you can govern your APIs with your organization's specific regulations and standards. Take some time to get familiar with the ruleset development CLI commands and ruleset language concepts before you start customizing rulesets.
 
-You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^]. 
+You can also submit your ideas for rulesets you would like MuleSoft to provide in future releases on the https://ideas.salesforce.com/s/search[MuleSoft Ideas Portal^]. 
 
 When you're ready to get started:
 
-. Read https://a.ml/docs/amf/using-amf/amf_custom_validation/[Custom Validation^] for a brief summary of how rulesets validate APIs.
+. Read https://salesforce-misc.github.io/amf-docs/docs/amf/using-amf/amf_custom_validation[Custom Validation^] for a brief summary of how rulesets validate APIs.
 . If you plan to create completely new custom rulesets that aren't based on existing ones, follow the https://github.com/aml-org/amf-custom-validator/blob/develop/docs/validation_tutorial/validation.md[AMF Rulesets tutorial^] to install the ruleset development CLI.
 . Install Anypoint CLI. You'll need this to validate your custom rulesets, generate their documentation, and publish them to Exchange.
 
