@@ -5,7 +5,7 @@ endif::[]
 
 To create a completely new custom ruleset that isn't based on an existing one, use one of the following approaches:
 
-* Search the https://help.mulesoft.com/s/ideas[MuleSoft Ideas Portal^] for ideas for new rulesets. If you don't find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
+* Search the https://ideas.salesforce.com/s/search[MuleSoft Ideas Portal^] for ideas for new rulesets. If you don't find your idea there, consider submitting your idea in the MuleSoft Ideas Portal.
 * Generate a ruleset using Anypoint CLI commands by scaffolding it from a specification's data schema. See <<scaffold-rulesets>>.
 * Create a ruleset using the ruleset development CLI commands, see <<create-rulesets-using-cli>>.
 * Create a ruleset using the ruleset modeling language, see <<create-rulesets-using-code>>.
@@ -49,7 +49,7 @@ To create rulesets using the ruleset development CLI:
 [[create-rulesets-using-code]]
 == Create Rulesets Using the Modeling Language
 
-To create rulesets using the modeling language, read the https://a.ml/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project to learn how to write a ruleset using the modeling language.
+To create rulesets using the modeling language, read the https://salesforce-misc.github.io/amf-docs/docs/amf/using-amf/amf_custom_validation[AMF Custom Validation section^] in the AML Open Source project to learn how to write a ruleset using the modeling language.
 
 == See Also
 

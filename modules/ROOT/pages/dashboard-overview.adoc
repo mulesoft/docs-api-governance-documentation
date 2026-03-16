@@ -14,7 +14,7 @@ Metrics:: Access a pre-built set of metrics to understand your API surface area.
 Actions:: Each metric is associated with potential actions you can take from the dashboard to improve your API posture.
 Organization-wide Visibility:: View a pre-built set of metrics for each of your organizations.
 Clear Status Overview:: Instantly see the status of your APIs, including those that are unprotected, governed, in Exchange, and in production.
-API Type Breakdown:: Understand the distribution of your APIs by type (for example, REST API, AsyncAPI, HTTP API, Agent, MCP).
+API Type Breakdown:: Understand the distribution of your APIs by type (for example, REST API, AsyncAPI, HTTP API, gRPC, Agent, MCP).
 Governance Insights:: Gain visibility into your API governance posture, including the number of governed APIs, their conformance status, and nonconformance severity.
 
 [[dashboard-metrics]]
