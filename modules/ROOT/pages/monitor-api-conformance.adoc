@@ -20,7 +20,7 @@ image::api-gov-draft-profile-view.png[conformance information for a selected dra
 
 To test profile settings using draft profiles:
 
-. On the API Governance console, select the *Profiles* tab.
+. On the Governance console, select the *Profiles* tab.
 . Select *Draft*.
 . Select a profile.
 . View conformance information.
@@ -98,7 +98,7 @@ You can view conformance details for governed services in their governance valid
 
 == Export Conformance Information
 
-You can export profile and conformance information in CSV format from several places in the API Governance console. 
+You can export profile and conformance information in CSV format from several places in the Governance console. 
 
 * <<gov-profile-export>>
 * <<gov-api-export>>
@@ -109,7 +109,7 @@ You can export profile and conformance information in CSV format from several pl
 
 To export profile information:
 
-. On the API Governance console, select the *Profiles* tab.
+. On the Governance console, select the *Profiles* tab.
 . Click *Export Report*.
 +
 The exported CSV file contains conformance information for each profile in your organization. The information includes:   
@@ -129,7 +129,7 @@ The exported CSV file contains conformance information for each profile in your 
 
 To export a report of all governed services targeted by your active profiles:
 
-. On the API Governance console, select the *Governed Services* tab.
+. On the Governance console, select the *Governed Services* tab.
 . Click *Export Report*. 
 +
 The exported CSV file contains conformance information for each API targeted by the active profiles in your organization. The information includes:  
@@ -147,7 +147,7 @@ The exported CSV file contains conformance information for each API targeted by 
 
 To export a conformance report for APIs targeted by a specific active or draft profile:
 
-. On the API Governance console, select the *Profiles* tab.
+. On the Governance console, select the *Profiles* tab.
 . Select *Active* or *Draft*.
 . Select a profile.
 . Click *Export to CSV*.
@@ -171,7 +171,7 @@ The *SF API Topic Center* profile is read-only, and APIs in this profile are not
 
 To export a conformance report for APIs targeted by the *SF API Topic Center* profile:
 
-. On the API Governance console, select the *Profiles* tab.
+. On the Governance console, select the *Profiles* tab.
 . Select *Active*.
 . Select the *SF API Topic Center* profile.
 . Click *Export to CSV*.

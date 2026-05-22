@@ -47,9 +47,9 @@ See xref:dashboard-overview.adoc[] for details.
 
 == Governance Console
 
-In the API Governance console, governance administrators can:
+In the Governance console, governance administrators can:
 
-* Create <<gov-profiles,governance profiles>> to apply <<gov-rulesets,governance rulesets>> to a targeted set of APIs. The API Governance console then provides a conformance summary for all of your validated APIs.
+* Create <<gov-profiles,governance profiles>> to apply <<gov-rulesets,governance rulesets>> to a targeted set of APIs. The Governance console then provides a conformance summary for all of your validated APIs.
 * Monitor conformance and notify developers to help improve conformance.
 
 See xref:api-governance-console.adoc[] for details.

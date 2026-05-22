@@ -1,7 +1,7 @@
 = Sending Conformance Notifications
 :page-notice-banner-message: We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
-You can send notifications automatically by configuring them in the API Governance console or by using Anypoint CLI. You can also send emails manually from the API Governance console.
+You can send notifications automatically by configuring them in the Governance console or by using Anypoint CLI. You can also send emails manually from the Governance console.
 
 Each email notification includes:
 
@@ -33,7 +33,7 @@ Following are the changes that might result in notifications:
 
 To enable and configure conformance notifications in the console:
 
-. In the API Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for. 
+. In the Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for. 
 . If it's not already selected, select *Enabled* for *Nonconformance notification*.
 . Select a recipient:
 +
@@ -62,7 +62,7 @@ To manually notify service owners for any reason, such as when a service is not 
 
 To manually send a notification email to a service owner:
 
-. In the API Governance console:
+. In the Governance console:
 * To send a notification email to the service owner from a profile, select a governance profile.
 * To send a notification email about a specific service's conformance, select the *Services* tab and view the actions on that service's summary line.
 . Click the *Notify Owner* icon.

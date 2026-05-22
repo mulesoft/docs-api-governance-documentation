@@ -39,7 +39,7 @@ include::partial$api-gov-apim-governance-report.adoc[]
 
 To view conformance information in the governance validation report:
 
-. In the API Governance console, select the *Governed Services* tab.
+. In the Governance console, select the *Governed Services* tab.
 . If the API has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
 .. View all issues:
 +

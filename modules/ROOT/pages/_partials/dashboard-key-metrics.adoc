@@ -10,7 +10,7 @@ Actionable Metrics:: Create a profile to govern some or all of your unprotected 
 
 Definition:: The *Total services governed under a profile in API Governance*.
 Displayed Count:: The dashboard displays the total number of governed services.
-Actionable Metrics:: *View Services* takes you to the API Governance Console, where you can view a list of governed services with details and the option to download a list of governed services.
+Actionable Metrics:: *View Services* takes you to the Governance Console, where you can view a list of governed services with details and the option to download a list of governed services.
 
 == APIs in Exchange
 
@@ -21,13 +21,13 @@ Displayed Count:: The dashboard shows the count of all APIs in Exchange.
 
 Definition:: APIs in your catalog that are deployed in a production environment.
 Displayed Count:: The dashboard shows the count of all APIs in production.
-Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of APIs in production with details and the option to download a list of APIs in production.
+Actionable Metrics:: *View APIs* takes you to the Governance Console, where you can view a list of APIs in production with details and the option to download a list of APIs in production.
 
 == APIs by Type
 
 Definition:: APIs in your catalog by type, specifically *REST API, AsyncAPI, HTTP API, gRPC, Agent, and MCP*.
 Displayed Count:: The dashboard shows the count of all APIs by type.
-Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of APIs by type with details and the option to download a list of APIs by type.
+Actionable Metrics:: *View APIs* takes you to the Governance Console, where you can view a list of APIs by type with details and the option to download a list of APIs by type.
 
 == Governance Usage by Profile Type
 

@@ -2,7 +2,7 @@ ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 
-= API Governance Console Overview
+= Governance Console Overview
 :page-notice-banner-message: We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
 // Screenshot of the console with callouts

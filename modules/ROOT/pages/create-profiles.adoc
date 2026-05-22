@@ -9,9 +9,9 @@ you want to govern, add your governance profiles. Governance profiles enable you
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
 [[create-profile-in-console]]
-== Create a Governance Profile Using the API Governance Console
+== Create a Governance Profile Using the Governance Console
 
-The API Governance console UI guides you through creating profiles. You can save a profile as draft to test your settings and activate it later.
+The Governance console UI guides you through creating profiles. You can save a profile as draft to test your settings and activate it later.
 
 CAUTION: If you don't select filter criteria, your governance profile applies rulesets to _all_ of your APIs in Exchange.
 
@@ -22,7 +22,7 @@ CAUTION: If you don't select filter criteria, your governance profile applies ru
 * Configure each profile to govern a related set of APIs for easier maintenance.
 * Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
 
-.To create a governance profile using the API Governance console: 
+.To create a governance profile using the Governance console: 
 
 . In *API Governance*, click *New Profile*.
 . Follow the UI prompts to enter the following:
@@ -88,13 +88,13 @@ When you save a profile as either draft or active, its targeted APIs become gove
 |
 |===
 
-== Update a Governance Profile Using the API Governance Console
+== Update a Governance Profile Using the Governance Console
 
-The API Governance console UI guides you through updating profiles. 
+The Governance console UI guides you through updating profiles. 
 
 To update governance profile information using the console: 
 
-. In the API Governance console *Profiles* tab, click *Draft* or *Active*.
+. In the Governance console *Profiles* tab, click *Draft* or *Active*.
 . For the profile you want to update, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Edit*.
 . Navigate through the UI using the *Next* and *Previous* buttons and update the profile information as needed. For details on the options, see <<create-profile-in-console>>.
 . Review your changes and click *Update Profile*.
@@ -107,7 +107,7 @@ your governance profile includes based on your updated filter criteria.
 
 To activate a draft profile: 
 
-. In the API Governance console *Profiles* tab, click *Draft* to show draft profiles.
+. In the Governance console *Profiles* tab, click *Draft* to show draft profiles.
 . Click *Activate* for the profile to activate.
 +
 After you activate a profile, its targeted APIs' conformance information appears outside of the draft profile view.
@@ -119,7 +119,7 @@ If enabled, notifications are sent for failed validations.
 
 To duplicate a profile: 
 
-. In the API Governance console *Profiles* tab, click *Draft* or *Active*.
+. In the Governance console *Profiles* tab, click *Draft* or *Active*.
 . Select a profile.
 . Select *Profile Settings > Duplicate*.
 +
@@ -127,11 +127,11 @@ A copy of the profile opens.
 +
 . Follow the steps in <<create-profile-in-console>>.
 
-== Delete a Governance Profile Using the API Governance Console
+== Delete a Governance Profile Using the Governance Console
 
 To delete a governance profile: 
 
-. In the API Governance console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for the profile to update and select *Delete*.
+. In the Governance console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for the profile to update and select *Delete*.
 . Click *Yes, Delete*.
 
 [[create-profile-cli]]
