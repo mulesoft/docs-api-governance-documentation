@@ -1,17 +1,17 @@
 = Monitoring API Conformance
 
-After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.
+After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's conformance.
 
 == Test Profile Settings Using Draft Profiles
 
-Consider using draft profiles to test profile settings. This enables you to limit the scope of the profiles to just what you need before alerting the API owners about identified API conformance issues. 
+Consider using draft profiles to test profile settings. This enables you to limit the scope of the profiles to just what you need before alerting the API owners about identified conformance issues. 
 
 // Screenshot of a draft profile's page
 
-image::api-gov-draft-profile-view.png[API conformance information for a selected draft profile]
+image::api-gov-draft-profile-view.png[conformance information for a selected draft profile]
 
 [calloutlist]
-. View a summary of API conformance for the selected draft profile.
+. View a summary of conformance for the selected draft profile.
 . View the APIs targeted by the draft profile. These APIs are governed, but their conformance information isn't shown outside of the draft profile view unless they're also targeted by an active profile.
 . Export a conformance report in CSV format for all APIs targeted by this draft profile.
 . View, edit, or duplicate profile settings.
@@ -23,13 +23,13 @@ To test profile settings using draft profiles:
 . Select *Draft*.
 . Select a profile.
 . View conformance information.
-. Edit the profile settings and view the API conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them. 
+. Edit the profile settings and view the conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them. 
 . Activate the profile to share the conformance information across Anypoint Platform so that developers can take action to resolve the conformance issues in APIs they own.
 
 [monitor-conformance]
 == Monitor Conformance Information for Active Profiles
 
-To view API conformance information for APIs targeted by active profiles, view the summary information in the API Governance console and in validation reports.
+To view conformance information for services targeted by active profiles, view the summary information in the governance console and in validation reports.
 
 // Screenshot of the console with callouts
 
@@ -37,10 +37,10 @@ include::partial$api-gov-console-scap-callouts.adoc[]
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
-Use the summary on the governance console to monitor your API governance:
+Use the summary on the governance console to monitor your governance:
 
 Governance Usage by Profile Type::
-Shows the usage of API Governance, including number of governed APIs, total number of APIs by profile type, and subscription limit information. Because some APIs might be in both active and draft profiles, this tile specifies how many are in draft only.
+Shows the usage of governance, including number of governed services, total number of services by profile type, and subscription limit information. Because some services might be in both active and draft profiles, this tile specifies how many are in draft only.
 
 Active Profile Status::
 Shows profile statuses for active profiles based on the percentage of conformant APIs in the profiles:
@@ -93,25 +93,25 @@ You can view usage reports to understand and monitor your monthly usage of API G
 [[gov-conf-report]]
 == Governance Validation Report
 
-You can view conformance details for governed APIs in their governance validation reports in API Governance and API Manager. See xref:find-and-fix-conformance-issues.adoc[].
+You can view conformance details for governed services in their governance validation reports in API Governance and API Manager. See xref:find-and-fix-conformance-issues.adoc[].
 
 == Export Conformance Information
 
-You can export profile and API conformance information in CSV format from several places in the API Governance console. 
+You can export profile and conformance information in CSV format from several places in the API Governance console. 
 
 * <<gov-profile-export>>
 * <<gov-api-export>>
 * <<gov-spec-profile-export>>
 
 [[gov-profile-export]]
-=== API Conformance Information by Profile 
+=== Conformance Information by Profile
 
 To export profile information:
 
 . On the API Governance console, select the *Profiles* tab.
 . Click *Export Report*.
 +
-The exported CSV file contains API conformance information for each profile in your organization. The information includes:   
+The exported CSV file contains conformance information for each profile in your organization. The information includes:   
 +
 * Organization ID 
 * Profile IDs
@@ -124,11 +124,11 @@ The exported CSV file contains API conformance information for each profile in y
 * Associated tags in Exchange
 
 [[gov-api-export]]
-=== Governed APIs Targeted by Active Profiles 
+=== Governed Services Targeted by Active Profiles
 
-To export a report of all governed APIs targeted by your active profiles:
+To export a report of all governed services targeted by your active profiles:
 
-. On the API Governance console, select the *Governed APIs* tab.
+. On the API Governance console, select the *Governed Services* tab.
 . Click *Export Report*. 
 +
 The exported CSV file contains conformance information for each API targeted by the active profiles in your organization. The information includes:  
@@ -142,7 +142,7 @@ The exported CSV file contains conformance information for each API targeted by 
 * Timestamp
 
 [[gov-spec-profile-export]]
-=== API Conformance Information for a Specific Profile
+=== Conformance Information for a Specific Profile
 
 To export a conformance report for APIs targeted by a specific active or draft profile:
 
@@ -162,7 +162,7 @@ The exported CSV file contains conformance information for each API targeted by 
 * Timestamp
 
 [[gov-spec-topic-center]]
-=== API Conformance Information for Topic Center
+=== Conformance Information for Topic Center
 
 If you're using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce. 
 
@@ -178,7 +178,7 @@ To export a conformance report for APIs targeted by the *SF API Topic Center* pr
 The exported CSV file contains conformance information for each API targeted by the *SF API Topic Center* profile.
 
 [[eval-api-conf-cli]]
-== Evaluate API Conformance Using the CLI
+== Evaluate Conformance Using the CLI
 
 To use a command to evaluate the potential rulesets for your API project, use the `governance:api:evaluate` command.
 

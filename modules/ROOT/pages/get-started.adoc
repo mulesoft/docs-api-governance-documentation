@@ -23,7 +23,7 @@ To use API Governance you must have either _Governance Viewer_ or _Governance Ad
 This permission allows API Governance users, such as API developers and architects, to:
 
 ** View the API Governance console conformance summary. 
-** View the *Governed APIs* page with the list of governed APIs that they have permission to view.
+** View the *Governed Services* page with the list of governed services that they have permission to view.
 ** Download a detailed governance report for their APIs in CSV format.
 +
 * *API Governance* > *Governance Administrator*
@@ -49,7 +49,7 @@ Govern your APIs using these steps:
 
 . xref:create-profiles.adoc[Configure governance profiles] to identify which rulesets to apply to which APIs.
 .. Consider saving your profiles as draft to test settings before revealing their targeted APIs' conformance information across Anypoint Platform.
-.. After you test settings using draft profiles, xref:create-profiles.adoc#activate-draft-profile[activate the profiles] to notify developers and reveal the resulting API conformance information across Anypoint Platform.
+.. After you test settings using draft profiles, xref:create-profiles.adoc#activate-draft-profile[activate the profiles] to notify developers and reveal the resulting conformance information across Anypoint Platform.
 
 . xref:monitor-api-conformance.adoc[Monitor governance conformance status] in the API Governance console.
 ** View the APIs targeted by each draft profile to assess conformance impacts for that profile and download the associated CSV file report.  

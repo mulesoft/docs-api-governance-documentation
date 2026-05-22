@@ -6,11 +6,11 @@ Definition:: APIs in your catalog that are *not currently managed in API Manager
 Displayed Count:: The dashboard shows the total count of such APIs.
 Actionable Metrics:: Create a profile to govern some or all of your unprotected APIs, or view detailed API lists, to help you address issues or improve your API program.
 
-== Governed APIs
+== Governed Services
 
-Definition:: The *Total APIs governed under a profile in API Governance*.
-Displayed Count:: The dashboard displays the total number of governed APIs.
-Actionable Metrics:: *View APIs* takes you to the API Governance Console, where you can view a list of governed APIs with details and the option to download a list of governed APIs.
+Definition:: The *Total services governed under a profile in API Governance*.
+Displayed Count:: The dashboard displays the total number of governed services.
+Actionable Metrics:: *View Services* takes you to the API Governance Console, where you can view a list of governed services with details and the option to download a list of governed services.
 
 == APIs in Exchange
 

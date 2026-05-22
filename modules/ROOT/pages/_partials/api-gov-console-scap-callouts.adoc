@@ -3,9 +3,9 @@
 image::api-gov-console.png[Screenshot of the API Governance console]
 
 [calloutlist]
-. View a summary of your governance usage and API conformance status information to more easily monitor your organization's API conformance.
-. View, filter, search, and take action on a summary list of your active and draft governance profiles or your governed APIs.
+. View a summary of your governance usage and conformance status information to more easily monitor your organization's conformance.
+. View, filter, search, and take action on a summary list of your active and draft governance profiles or your governed services.
 . Export conformance reports in CSV format.
 . Create a profile and save it as draft or active.
-. View the comprehensive governance report for an API.
-. Select from the more options menu to take relevant actions. You can export reports for a selected profile or API, view, edit, or delete a profile, notify API owners, or open an API in Exchange.
+. View the comprehensive governance report for a service.
+. Select from the more options menu to take relevant actions. You can export reports for a selected profile or service, view, edit, or delete a profile, notify service owners, or open a service in Exchange.
