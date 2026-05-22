@@ -1,4 +1,5 @@
 = Sending Conformance Notifications
+:page-notice-banner-message: We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
 You can send notifications automatically by configuring them in the API Governance console or by using Anypoint CLI. You can also send emails manually from the API Governance console.
 

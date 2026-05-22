@@ -1,4 +1,5 @@
 = Monitoring API Conformance
+:page-notice-banner-message: We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
 After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's conformance.
 

@@ -3,6 +3,7 @@ include::_attributes.adoc[]
 endif::[]
 
 = Getting Started with Anypoint API Governance
+:page-notice-banner-message: We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
 After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you're ready to get started governing your APIs.
 
