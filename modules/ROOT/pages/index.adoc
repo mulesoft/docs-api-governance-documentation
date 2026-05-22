@@ -1,6 +1,6 @@
 = Anypoint API Governance Overview
 :page-aliases: api-gov.adoc
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://dev-docs-internal.kdev.msap.io/beta-omni-apim-relaunch/general/omni-create-governance-strategies" target="_blank" rel="noopener">Learn More</a>.
+:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>.
 
 Anypoint API Governance is a component of Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
