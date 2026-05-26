@@ -3,7 +3,7 @@ include::_attributes.adoc[]
 endif::[]
 
 = API Governance Console Overview
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>.
+:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>
 
 // Screenshot of the console with callouts
 
