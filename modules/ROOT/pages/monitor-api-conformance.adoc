@@ -1,5 +1,5 @@
 = Monitoring API Conformance
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>.
+:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>
 
 After you configure governance profiles for your APIs and the resulting governance data is available, you can monitor and report on your organization's API conformance.
 
