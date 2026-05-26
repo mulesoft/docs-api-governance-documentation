@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 :imagesdir: ../assets/images
 endif::[]
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>.
+:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>
 
 After you identify the APIs in Exchange that 
 you want to govern, add your governance profiles. Governance profiles enable you to filter the specific sets of APIs to govern for each set of rulesets. When you create or update a profile, the set of APIs that meet the filter criteria in the profile are validated against the set of rulesets selected in the profile.
