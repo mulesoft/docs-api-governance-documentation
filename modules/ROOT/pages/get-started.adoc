@@ -3,7 +3,7 @@ include::_attributes.adoc[]
 endif::[]
 
 = Getting Started with Anypoint API Governance
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>.
+:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn More</a>
 
 After you become familiar with the UI and concepts covered in the xref:index.adoc[Anypoint API Governance Overview], you're ready to get started governing your APIs.
 
