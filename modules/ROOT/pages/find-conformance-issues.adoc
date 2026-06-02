@@ -27,7 +27,7 @@ For detailed information about validating specifications against rulesets, see:
 
 After you identify conformance issues in your specification, you can fix the issues using your IDE and publish the new version of the specification to Exchange. 
 
-For detailed information about fixing API conformance issues, see:
+For detailed information about fixing conformance issues, see:
 
 * Anypoint Code Builder: xref:anypoint-code-builder::des-govern-api.adoc#fix-conformance-issues[Fix Conformance Issues]
 * Design Center: xref:design-center::design-add-api-dependency.adoc#ruleset-dependencies[Ruleset Dependencies] in the Design Center documentation

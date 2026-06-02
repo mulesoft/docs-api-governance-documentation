@@ -1,8 +1,12 @@
-= API Governance Dashboard Overview
+= Governance Dashboard Overview
 ifndef::env-site,env-github[]
 include::_attributes.adoc[]
 endif::[]
 :page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
+
+[NOTE]
+We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
+
 
 The Anypoint API Governance Dashboard is a tool designed to help you easily understand the status of your APIs across your organization and govern your API programs effectively. The dashboard provides metrics related to the health of your API programs, with direction action available right from the dashboard, where there is a logical associated action.
 
@@ -16,7 +20,7 @@ Actions:: Each metric is associated with potential actions you can take from the
 Organization-wide Visibility:: View a pre-built set of metrics for each of your organizations.
 Clear Status Overview:: Instantly see the status of your APIs, including those that are unprotected, governed, in Exchange, and in production.
 API Type Breakdown:: Understand the distribution of your APIs by type (for example, REST API, AsyncAPI, HTTP API, gRPC, Agent, MCP).
-Governance Insights:: Gain visibility into your API governance posture, including the number of governed APIs, their conformance status, and nonconformance severity.
+Governance Insights:: Gain visibility into your governance posture, including the number of governed services, their conformance status, and nonconformance severity.
 
 [[dashboard-metrics]]
 == Dashboard Metrics

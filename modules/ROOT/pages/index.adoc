@@ -2,6 +2,10 @@
 :page-aliases: api-gov.adoc
 :page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
 
+[NOTE]
+We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
+
+
 Anypoint API Governance is a component of Anypoint Platform that
 enables you to apply governance rules to your APIs as part of the
 API lifecycle. 
@@ -34,29 +38,29 @@ Automate API governance in your CI/CD pipeline using CLI commands or through API
 
 == Governance Dashboard
 
-The API Governance Dashboard offers an organization-wide view of your API landscape, allowing you to quickly grasp the overall status of your APIs and identify areas that require attention. It serves as a starting point for understanding your API governance posture and taking initial steps to improve it.
+The API Governance Dashboard offers an organization-wide view of your API landscape, allowing you to quickly grasp the overall status of your APIs and identify areas that require attention. It serves as a starting point for understanding your governance posture and taking initial steps to improve it.
 
 From the API Governance Dashboard, you can:
 
 *  View metrics, such as the number of unprotected APIs, governed APIs, APIs in Exchange, and APIs in production.
 *  Understand the distribution of your APIs by type, including REST API, AsyncAPI, HTTP API, gRPC, Agent, and MCP.
-*  Understand your API governance posture, including conformance status and nonconformance severity for governed APIs.
+*  Understand your governance posture, including conformance status and nonconformance severity for governed APIs.
 *  Take action from the Dashboard based on the presented metrics, such as initiating the creation of new governance profiles to start governing unprotected APIs and navigating to lists of APIs for further review.
 
 See xref:dashboard-overview.adoc[] for details.
 
 == Governance Console
 
-In the API Governance console, governance administrators can:
+In the Governance console, governance administrators can:
 
-* Create <<gov-profiles,governance profiles>> to apply <<gov-rulesets,governance rulesets>> to a targeted set of APIs. The API Governance console then provides a conformance summary for all of your validated APIs.
-* Monitor API conformance and notify developers to help improve conformance.
+* Create <<gov-profiles,governance profiles>> to apply <<gov-rulesets,governance rulesets>> to a targeted set of APIs. The Governance console then provides a conformance summary for all of your validated APIs.
+* Monitor conformance and notify developers to help improve conformance.
 
 See xref:api-governance-console.adoc[] for details.
 
 == Governance Across Anypoint Platform
 
-In addition to viewing API conformance information in the API Governance console, developers, architects, and implementors can view governance conformance information and take action to fix issues using:
+In addition to viewing conformance information in the governance console, developers, architects, and implementors can view governance conformance information and take action to fix issues using:
 
 [[exchange-overview]]
 * Exchange

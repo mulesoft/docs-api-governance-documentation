@@ -2,7 +2,11 @@
 :page-aliases: view-conformance-status-in-exchange.adoc
 :page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
 
-API Governance helps you continually improve your organization's API conformance by providing tools and guidance for finding and fixing conformance issues.
+[NOTE]
+We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
+
+
+API Governance helps you continually improve your organization's conformance by providing tools and guidance for finding and fixing conformance issues.
 
 Governance admins typically:
 
@@ -26,7 +30,7 @@ Regardless of which tasks you're responsible for in governance for your organiza
 
 * <<governance-validation-report,Validation reports>> in API Governance or API Manager 
 * <<view-conformance-in-exchange,Conformance Status pages>> in Exchange for specifications
-* <<view-governed-apis-for-rulesets,Governed APIs pages>> in Exchange for rulesets
+* <<view-governed-apis-for-rulesets,Governed Services pages>> in Exchange for rulesets
 
 [[governance-validation-report]]
 == View Conformance Information in the Validation Report
@@ -39,7 +43,7 @@ include::partial$api-gov-apim-governance-report.adoc[]
 
 To view conformance information in the governance validation report:
 
-. In the API Governance console, select the *Governed APIs* tab.
+. In the Governance console, select the *Governed Services* tab.
 . If the API has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
 .. View all issues:
 +
@@ -58,7 +62,7 @@ include::exchange::partial$task-view-conformance-status.adoc[]
 // Governed apis for rulesets from the Exchange doc
 
 [[view-governed-apis-for-rulesets]]
-== View Governed APIs for a Ruleset
+== View Governed Services for a Ruleset
 
 include::exchange::partial$task-view-governed-apis-for-rulesets.adoc[]
 
