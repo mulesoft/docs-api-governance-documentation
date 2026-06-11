@@ -12,7 +12,7 @@ API lifecycle.
 
 With Anypoint API Governance:
 
-* Improve your company's API quality:
+* Improve your organization's API quality:
 +
 Identify conformance issues in governed APIs and take steps to resolve them.
 +
