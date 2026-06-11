@@ -18,7 +18,7 @@ Identify conformance issues in governed APIs and take steps to resolve them.
 +
 * Share and enforce governance best practices:
 +
-Customize and publish governance rulesets to share and enforce company-specific best practices with your developers.
+Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
 +
 * Apply consistent rules from design time to deployment:
 +
