@@ -1,0 +1,5 @@
+{
+    "enabledPlugins": {
+      "content-development-kit@salesforce-native-ai-stack": true
+    }
+  }
