@@ -90,7 +90,7 @@ NOTE: Credentials are stored securely and used only for discovery scans and poli
 
 === Apply Policies Using the Policy Library
 
-As an alternative to waiting for automatic policy application through a governance strategy, you can apply policies directly to specific gateway instances using the *Policy Library*:
+As an alternative to waiting for automatic policy application through a governance strategy, apply policies directly to specific gateway instances using the *Policy Library*:
 
 . In *Platform* > *Policy Library*, browse or search for the policy to apply.
 . Follow the four-step apply workflow:

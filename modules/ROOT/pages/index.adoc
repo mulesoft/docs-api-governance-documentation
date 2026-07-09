@@ -17,7 +17,7 @@ Identify conformance issues in governed services and take steps to resolve them 
 +
 * Customize and apply governance rules using the enhanced *Policy Catalog* and *Controls* strategies:
 +
-Access the full ruleset library with conditions configuration, rule-level selection, and severity customization by creating *Controls* directly in the enhanced MuleSoft experience.
+To access the full ruleset library with conditions configuration, rule-level selection, and severity customization, create *Controls* directly in the enhanced MuleSoft experience.
 +
 * Apply consistent governance from design time to deployment:
 +

@@ -213,7 +213,7 @@ The exported CSV file contains conformance information for each API targeted by 
 This export is available only in the enhanced MuleSoft experience via *Governance* > *Governance Strategies*. See xref:general::exp-governance-work-with-strategies.adoc[].
 ====
 
-For compliance purposes (such as SOC 2 or GDPR audits), you can export a cross-gateway policy audit report that consolidates policy application evidence across all connected providers and MuleSoft-native APIs.
+To support compliance audits (such as SOC 2 or GDPR), export a cross-gateway policy audit report that consolidates policy application evidence across all connected providers and MuleSoft-native APIs.
 
 To export a cross-gateway policy audit report:
 

@@ -18,7 +18,7 @@ API Governance provides two complementary approaches to policy management. The *
 * *Governance profiles with rulesets* — Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
 * *Policy Library* (*Platform* > *Policy Library*) — Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. The apply workflow follows these steps: Select Policy → Configure Policy → Select Instances → Review & Apply. This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers.
 
-You can use both approaches together: govern APIs with profiles for continuous conformance tracking, and use the Policy Library for direct policy application to gateway instances.
+Use both approaches together: govern APIs with profiles for continuous conformance tracking, and use the Policy Library for direct policy application to gateway instances.
 ====
 
 [[create-profile-in-console]]

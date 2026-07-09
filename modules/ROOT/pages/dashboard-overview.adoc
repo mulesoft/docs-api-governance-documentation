@@ -55,8 +55,8 @@ Shows a unified conformance view across all connected providers and MuleSoft-nat
 
 From the dashboard, you can often take direct action, such as:
 
-Creating Governance Strategies:: Initiate the creation of new governance strategies to start governing unprotected APIs or APIs in production.
-Connecting a Gateway:: If you have APIs on third-party gateways that are not yet connected, click *Connect a Gateway* from the *Provider Connections* section of the dashboard to launch the *Connect to a Provider* wizard. After you connect a provider, a scanner discovers and imports its APIs into your portfolio automatically.
+Creating Governance Strategies:: Create governance strategies to govern unprotected APIs or APIs in production.
+Connecting a Gateway:: To connect a third-party gateway, click *Connect a Gateway* from the *Provider Connections* section of the dashboard. After you connect a provider, a scanner discovers and imports its APIs into your portfolio automatically.
 Viewing API Lists:: Navigate to detailed lists of APIs based on the displayed metrics (for example, view all unprotected APIs, APIs in production, or APIs by type).
 
 include::partial$dashboard-taking-action.adoc[]
