@@ -9,17 +9,22 @@ you want to govern, add your governance profiles. Governance profiles enable you
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
-[NOTE]
-====
-*Governance profiles + rulesets vs. Policy Library direct apply*
 
-API Governance provides two complementary approaches to policy management. The *Policy Library* approach (*Platform* > *Policy Library*) is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+== Governance Profiles and Rulesets Versus Policy Library Direct Apply
 
-* *Governance profiles with rulesets* — Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
-* *Policy Library* (*Platform* > *Policy Library*) — Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. The apply workflow follows these steps: Select Policy → Configure Policy → Select Instances → Review & Apply. This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers.
+API Governance provides two complementary approaches to policy management. 
 
-Use both approaches together: govern APIs with profiles for continuous conformance tracking, and use the Policy Library for direct policy application to gateway instances.
-====
+Governance Profiles with Rulesets:: Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
+Policy Library:: Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. The apply workflow follows these steps: 
+. Select Policy
+. Configure Policy 
+. Select Instances 
+. Review and Apply. 
++
+This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers. The Policy Library approach is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+
+Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the Policy Library approach for direct policy application to gateway instances.
+
 
 [[create-profile-in-console]]
 == Create a Governance Profile Using the Governance Console
