@@ -57,7 +57,7 @@ Click *View Details* for a ruleset the API is nonconformant to.
 
 [NOTE]
 ====
-This section describes features available only in the enhanced MuleSoft experience. The *Governance Strategies* page, *Platform* > *Providers*, and *Platform* > *Policy Library* are not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
+This section describes features available only in the enhanced MuleSoft experience. The *Governance Strategies* page, *Platform* > *Providers*, and *Governance* > *Governance Strategies* > *Policy Library* are not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
 ====
 
 If you manage APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance can detect policy drift — differences between the policies defined in your governance strategy and the policies actually applied on the gateway instance.
@@ -92,7 +92,7 @@ NOTE: Credentials are stored securely and used only for discovery scans and poli
 
 As an alternative to waiting for automatic policy application through a governance strategy, apply policies directly to specific gateway instances using the *Policy Library*:
 
-. In *Platform* > *Policy Library*, browse or search for the policy to apply.
+. In *Governance* > *Governance Strategies* > *Policy Library*, browse or search for the policy to apply.
 . Follow the four-step apply workflow:
 .. *Select Policy* — Choose the policy from the Universal policies or category-based sections (Access and Security, Performance and Cost, Data Privacy and Integrity, Compliance and Observability).
 .. *Configure Policy* — Set the policy parameters.

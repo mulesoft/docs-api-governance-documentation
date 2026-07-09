@@ -115,7 +115,7 @@ NOTE: This workflow applies to users managing APIs on external gateway providers
 
 . *Create a governance strategy targeting that gateway* — In *Governance* > *Governance Strategies*, create a new governance strategy and use the *Gateway/Provider* filter under *Define Filter Criteria* to scope the strategy to APIs on your specific gateway (for example, Kong or Apigee). Select the rulesets to apply.
 
-. *Monitor conformance and apply policies* — After the strategy is active, monitor conformance status in the *Governance Strategies* page. To apply policies directly to gateway instances, use the *Policy Library* (*Platform* > *Policy Library*) and follow the Select Policy → Configure Policy → Select Instances → Review & Apply workflow.
+. *Monitor conformance and apply policies* — After the strategy is active, monitor conformance status in the *Governance Strategies* page. To apply policies directly to gateway instances, use *Policy Library* (*Governance* > *Governance Strategies* > *Policy Library*) and follow the *Select Policy* → *Configure Policy* → *Select Instances* → *Review & Apply* workflow.
 +
 NOTE: If your scanner credentials are read-only, the *Apply Policy* action is disabled. To enable policy application, go to *Platform* > *Providers*, select the scanner, and click *Update Credentials* to provide credentials with write access.
 

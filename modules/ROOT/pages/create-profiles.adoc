@@ -15,11 +15,11 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 API Governance provides two complementary approaches to policy management. 
 
 Governance Profiles with Rulesets:: Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
-Policy Library:: Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. The apply workflow follows these steps: 
-. Select Policy
-. Configure Policy 
-. Select Instances 
-. Review & Apply
+Policy Library:: Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. Access *Policy Library* from *Governance* > *Governance Strategies* > *Policy Library*. The apply workflow follows these steps:
+. *Select Policy*
+. *Configure Policy*
+. *Select Instances*
+. *Review & Apply*
 +
 This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers. The Policy Library approach is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 
