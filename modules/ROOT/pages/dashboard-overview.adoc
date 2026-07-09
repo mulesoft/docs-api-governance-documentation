@@ -31,6 +31,11 @@ include::partial$dashboard-key-metrics.adoc[]
 [[gateway-provider-metrics]]
 === Gateway and Provider Metrics
 
+[NOTE]
+====
+The metric tiles and the *Connect a Gateway* action described in this section are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+====
+
 If you have connected third-party gateway providers, the dashboard displays additional metric tiles:
 
 Policy Coverage by Gateway/Provider::

@@ -55,6 +55,11 @@ Click *View Details* for a ruleset the API is nonconformant to.
 [[third-party-api-conformance]]
 == Find Policy Drift on Third-Party API Instances
 
+[NOTE]
+====
+This section describes features available only in the enhanced MuleSoft experience. The *Governance Strategies* page, *Platform* > *Providers*, and *Platform* > *Policy Library* are not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
+====
+
 If you manage APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance can detect policy drift — differences between the policies defined in your governance strategy and the policies actually applied on the gateway instance.
 
 To find policy drift on third-party API instances:

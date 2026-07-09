@@ -91,6 +91,11 @@ Shows the severity of API nonconformance to rulesets based on the percentage of 
 [[cross-gateway-conformance]]
 == Monitor Cross-Gateway Conformance
 
+[NOTE]
+====
+This section describes features available only in the enhanced MuleSoft experience. The *Governance Strategies* page is not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
+====
+
 If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), the *Governance Strategies* page provides a unified conformance view across all gateways and MuleSoft-native APIs. Conformance for all services — regardless of their provider — appears in the same governance strategy report.
 
 To view cross-gateway conformance:
@@ -202,6 +207,11 @@ The exported CSV file contains conformance information for each API targeted by 
 
 [[gov-cross-gateway-export]]
 === Cross-Gateway Policy Audit Export
+
+[NOTE]
+====
+This export is available only in the enhanced MuleSoft experience via *Governance* > *Governance Strategies*. See xref:general::exp-governance-work-with-strategies.adoc[].
+====
 
 For compliance purposes (such as SOC 2 or GDPR audits), you can export a cross-gateway policy audit report that consolidates policy application evidence across all connected providers and MuleSoft-native APIs.
 

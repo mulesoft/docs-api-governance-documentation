@@ -13,7 +13,7 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 ====
 *Governance profiles + rulesets vs. Policy Library direct apply*
 
-API Governance provides two complementary approaches to policy management:
+API Governance provides two complementary approaches to policy management. The *Policy Library* approach (*Platform* > *Policy Library*) is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 
 * *Governance profiles with rulesets* — Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
 * *Policy Library* (*Platform* > *Policy Library*) — Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. The apply workflow follows these steps: Select Policy → Configure Policy → Select Instances → Review & Apply. This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers.
@@ -80,6 +80,11 @@ If you filter by multiple tags and categories, your APIs must have all of the se
 If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
 
 *Gateway/Provider* filter:
+
+[NOTE]
+====
+The *Gateway/Provider* filter and *Platform* > *Providers* connectivity described below are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+====
 
 * Gateway/Provider
 +
