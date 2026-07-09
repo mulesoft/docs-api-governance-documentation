@@ -7,26 +7,29 @@ We updated the terminology in the API Governance UI to reflect a broader range o
 
 
 Anypoint API Governance is a component of Anypoint Platform that
-enables you to apply governance rules to your APIs as part of the
-API lifecycle.
+enables you to apply governance rules to your *services* — including APIs, agents, MCP servers, and gateways — as part of the service lifecycle.
 
 With Anypoint API Governance:
 
-* Improve your organization's API quality:
+* Improve your organization's service quality:
 +
-Identify conformance issues in governed APIs and take steps to resolve them.
+Identify conformance issues in governed services and take steps to resolve them by adding *governance strategies* to start enforcing standards.
 +
-* Share and enforce governance best practices:
+* Customize and apply governance rules using the enhanced *Policy Catalog* and *Controls* strategies:
 +
-Customize and publish governance rulesets to share and enforce organization-specific best practices with your developers.
+Access the full ruleset library with conditions configuration, rule-level selection, and severity customization by creating *Controls* directly in the enhanced MuleSoft experience.
 +
-* Apply consistent rules from design time to deployment:
+* Apply consistent governance from design time to deployment:
 +
-Use governance rulesets to apply centralized governance to multiple aspects of your APIs, from specifications at design time to instances at deployment.
+Use *governance strategies* to apply centralized governance across your services — from API specifications at design time to gateway-enforced policies at deployment, targeting *Omni Gateways*, *Mule Gateways*, or all runtimes.
++
+* Apply consistent governance across multiple gateway runtimes:
++
+Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously, ensuring uniform governance posture across your entire service infrastructure.
 +
 * Enforce governance within your DevOps organization:
 +
-Automate API governance in your CI/CD pipeline with CLI commands or through API solutions with the experience API.
+Automate service governance in your CI/CD pipeline with CLI commands or through the experience API. Use *Controls* strategies to optionally block non-compliant actions and enforce standards at the gateway level.
 
 // == Anypoint API Governance Overview Video 
 
@@ -38,45 +41,79 @@ Automate API governance in your CI/CD pipeline with CLI commands or through API 
 
 == Governance Dashboard
 
-The API Governance Dashboard offers an organization-wide view of your API landscape. Review the overall status of your APIs, identify areas that require attention, and take steps to improve your governance posture.
+The API Governance Dashboard offers an organization-wide view of your service landscape. Review the overall status of your services, identify areas that require attention, and take steps to improve your governance posture.
 
 From the API Governance Dashboard:
 
-* View metrics, such as the number of unprotected APIs, governed APIs, APIs in Exchange, and APIs in production.
-* Understand the distribution of your APIs by type, including REST API, AsyncAPI, HTTP API, gRPC, Agent, and MCP.
-* Understand your governance posture, including conformance status and nonconformance severity for governed APIs.
-* Take action from the Dashboard based on the presented metrics, such as creating new governance profiles to govern unprotected APIs and viewing lists of APIs for further review.
+* View metrics such as *Governance Coverage*, the number of services governed by *Controls*, services governed by *Automated Policies*, and overall compliance posture across your service portfolio.
+* Understand the distribution of your services by type, including REST API, AsyncAPI, HTTP API, Agent, MCP Server, LLM Proxies, and Gateways.
+* Understand your governance posture, including conformance status and nonconformance severity for governed services.
+* Take action from the Dashboard based on the presented metrics, such as creating new *governance strategies* to govern unprotected services and viewing lists of services for further review.
 
 See xref:dashboard-overview.adoc[] for details.
 
-== Governance Console
+== Governance Strategies
 
-In the Governance console, governance administrators can:
+In the *Governance Strategies* page, governance administrators can:
 
-* Create <<gov-profiles,governance profiles>> to apply <<gov-rulesets,governance rulesets>> to a targeted set of APIs. The Governance console then provides a conformance summary for all of your validated APIs.
-* Monitor conformance and notify developers to help improve conformance.
+* Create *governance strategies* of two types — *Controls* or *Automated Policies* — to apply governance rules to a targeted set of services.
+* Monitor compliance posture, notify developers, and optionally enforce blocking rules to prevent non-compliant actions across targeted services.
+
+=== Governance Strategy Types
+
+*Controls*:: Validate targeted services against selected control rules and optionally block non-compliant actions, while automatically publishing your live compliance posture. Controls created in Anypoint API Governance have limited ruleset selection. For advanced features such as conditions configuration, rule-level selection, and severity customization, create controls directly in the enhanced MuleSoft experience.
+
+*Automated Policies*:: Enforce consistent policy requirements across targeted services to ensure uniform governance and automated security.
 
 See xref:api-governance-console.adoc[] for details.
 
+== Policy Catalog
+
+The *Policy Catalog* provides a browsable library of governance policies that you can apply directly to your services.
+
+From the Policy Catalog:
+
+* Browse and filter governance policies by category.
+* Apply policies to individual services using *Select Individual* mode.
+* Apply policies in bulk by entity type — including *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways* — using *Bulk Rule* mode.
+
+See xref:policy-catalog.adoc[] for details.
+
 == Governance Across Anypoint Platform
 
-In addition to viewing conformance information in the governance console, developers, architects, and implementors can view governance conformance information and take action to fix issues using:
+In addition to viewing conformance information in the *Governance Strategies* page, the following personas can view governance information and take action across Anypoint Platform:
+
+* *Governance Leads* and *Security Architects*: Create and manage cross-gateway governance strategies, review coverage metrics, and enforce standards across all service types.
+* *API Owners*: Review policy posture and conformance status for their services in Exchange.
+* *API Admins*: Connect *Omni Gateways* and *Mule Gateways* as governance targets and manage runtime-level enforcement.
+* *Developers* and *Architects*: Check specification conformance during the API design phase.
+* *Implementors*: Review governance reports for API instances in API Manager.
 
 [[exchange-overview]]
 * Exchange
 
-** Developers can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets. 
+** API Owners can view conformance status details for published API specifications, discover rulesets, and publish custom rulesets.
 ** Implementors can view rulesets to determine how to fix API instance conformance issues.
 
 [[design-center-overview]]
 * Anypoint Code Builder and Design Center:
 
-** Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies. 
+** Developers or architects can check API specification conformance in the API design phase by applying governance rulesets directly to API specifications as dependencies.
 
 [[api-manager-overview]]
 * API Manager:
 
-** Implementors can check API instance conformance by viewing comprehensive governance reports. 
+** Implementors can check API instance conformance by viewing comprehensive governance reports.
+
+[[policy-catalog-overview]]
+* Policy Catalog:
+
+** Governance leads and security architects can browse and apply governance policies directly to individual services or in bulk across all *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*.
+
+[[gateway-overview]]
+* Gateway Management:
+
+** API admins can connect *Omni Gateways* and *Mule Gateways* as governance targets and view per-gateway compliance posture from the *Governance Strategies* scope configuration.
 
 == Anypoint API Governance Concepts
 
