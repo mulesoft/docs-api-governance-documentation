@@ -19,7 +19,7 @@ Policy Library:: Use this approach to browse available policies and apply one di
 . Select Policy
 . Configure Policy 
 . Select Instances 
-. Review and Apply. 
+. Review & Apply
 +
 This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers. The Policy Library approach is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 
