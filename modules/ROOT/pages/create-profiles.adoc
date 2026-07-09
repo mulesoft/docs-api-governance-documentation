@@ -4,10 +4,22 @@ ifndef::env-site,env-github[]
 endif::[]
 :page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
 
-After you identify the APIs in Exchange that 
+After you identify the APIs in Exchange that
 you want to govern, add your governance profiles. Governance profiles enable you to filter the specific sets of APIs to govern for each set of rulesets. When you create or update a profile, the set of APIs that meet the filter criteria in the profile are validated against the set of rulesets selected in the profile.
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
+
+[NOTE]
+====
+*Governance profiles + rulesets vs. Policy Library direct apply*
+
+API Governance provides two complementary approaches to policy management:
+
+* *Governance profiles with rulesets* — Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
+* *Policy Library* (*Platform* > *Policy Library*) — Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. The apply workflow follows these steps: Select Policy → Configure Policy → Select Instances → Review & Apply. This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers.
+
+You can use both approaches together: govern APIs with profiles for continuous conformance tracking, and use the Policy Library for direct policy application to gateway instances.
+====
 
 [[create-profile-in-console]]
 == Create a Governance Profile Using the Governance Console
@@ -19,11 +31,11 @@ CAUTION: If you don't select filter criteria, your governance profile applies ru
 === Considerations
 
 * Start by saving your profiles as draft to test settings before revealing the targeted API's conformance across Anypoint Platform.
-* Select fewer rulesets and add more filters to narrow the scope of a single profile. 
+* Select fewer rulesets and add more filters to narrow the scope of a single profile.
 * Configure each profile to govern a related set of APIs for easier maintenance.
 * Start with governing just a few APIs until you are familiar with API Governance and establish governance processes in your organization.
 
-.To create a governance profile using the Governance console: 
+.To create a governance profile using the Governance console:
 
 . In *API Governance*, click *New Profile*.
 . Follow the UI prompts to enter the following:
@@ -49,7 +61,7 @@ You can select the version of each ruleset to use or select the *Latest* option.
 
 |To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
 
-A preview of filtered APIs appears in the *Define Filter Criteria* page as you apply filters. The preview shows only a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile. 
+A preview of filtered APIs appears in the *Define Filter Criteria* page as you apply filters. The preview shows only a few APIs and is not searchable. After you save the profile, you can view and search the list of governed APIs for that profile.
 
 *General* filters:
 
@@ -57,15 +69,23 @@ A preview of filtered APIs appears in the *Define Filter Criteria* page as you a
 +
 * Tags
 +
-The *Tags* section lists frequently used tags and the tags you add to the profile. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles]. 
+The *Tags* section lists frequently used tags and the tags you add to the profile. See xref:add-tags.adoc#select-and-add-tags[Select and Add Tags in Governance Profiles].
 +
 * Categories
 +
-Selections appear in the *Categories* section only if your APIs in Exchange have categories. 
+Selections appear in the *Categories* section only if your APIs in Exchange have categories.
 +
 If you filter by multiple tags and categories, your APIs must have all of the selected tags and categories to match the criteria. See xref:add-tags.adoc[Identifying APIs to Govern].
 +
 If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
+
+*Gateway/Provider* filter:
+
+* Gateway/Provider
++
+If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), use this filter to scope the profile to APIs discovered from a specific provider. Select one or more providers from the list of connected providers.
++
+NOTE: APIs discovered from third-party providers must be connected via *Platform* > *Providers* before they appear in this filter. See xref:get-started.adoc#third-party-gateway-prereqs[Set Up Third-Party Gateway Connectivity].
 
 *API Instance* filters:
 
@@ -77,7 +97,7 @@ If you select the *API Instance* filter *Include only APIs with instances*, only
 |
 Set Notifications
 |Enable or disable automatic notifications for this profile. The default setting is enabled for active profiles. Notifications are automatically disabled for draft profiles. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
-|Specify General Information 
+|Specify General Information
 |Enter a profile name and description that helps others understand the kinds of governance rulesets included and the kinds of APIs validated in this profile.
 |Review
 |Review your profile and click *Save as a draft* or *Save as active*:
@@ -91,9 +111,9 @@ When you save a profile as either draft or active, its targeted APIs become gove
 
 == Update a Governance Profile Using the Governance Console
 
-The Governance console UI guides you through updating profiles. 
+The Governance console UI guides you through updating profiles.
 
-To update governance profile information using the console: 
+To update governance profile information using the console:
 
 . In the Governance console *Profiles* tab, click *Draft* or *Active*.
 . For the profile you want to update, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) and then select *Edit*.
@@ -106,7 +126,7 @@ your governance profile includes based on your updated filter criteria.
 [[activate-draft-profile]]
 == Activate a Draft Governance Profile
 
-To activate a draft profile: 
+To activate a draft profile:
 
 . In the Governance console *Profiles* tab, click *Draft* to show draft profiles.
 . Click *Activate* for the profile to activate.
@@ -118,7 +138,7 @@ If enabled, notifications are sent for failed validations.
 [[duplicate-profile]]
 == Duplicate a Governance Profile
 
-To duplicate a profile: 
+To duplicate a profile:
 
 . In the Governance console *Profiles* tab, click *Draft* or *Active*.
 . Select a profile.
@@ -130,7 +150,7 @@ A copy of the profile opens.
 
 == Delete a Governance Profile Using the Governance Console
 
-To delete a governance profile: 
+To delete a governance profile:
 
 . In the Governance console *Profiles* tab, click the more options menu icon (image:overflow-menu-icon.png[width=9,height=15,fit=line]) for the profile to update and select *Delete*.
 . Click *Yes, Delete*.

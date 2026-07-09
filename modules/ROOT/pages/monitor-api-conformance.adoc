@@ -9,7 +9,7 @@ After you configure governance profiles for your APIs and the resulting governan
 
 == Test Profile Settings Using Draft Profiles
 
-Consider using draft profiles to test profile settings. This enables you to limit the scope of the profiles to just what you need before alerting the API owners about identified conformance issues. 
+Consider using draft profiles to test profile settings. This enables you to limit the scope of the profiles to just what you need before alerting the API owners about identified conformance issues.
 
 // Screenshot of a draft profile's page
 
@@ -28,7 +28,7 @@ To test profile settings using draft profiles:
 . Select *Draft*.
 . Select a profile.
 . View conformance information.
-. Edit the profile settings and view the conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them. 
+. Edit the profile settings and view the conformance results for different selections until you target the desired set of APIs and apply the optimal set of rules to them.
 . Activate the profile to share the conformance information across Anypoint Platform so that developers can take action to resolve the conformance issues in APIs they own.
 
 [monitor-conformance]
@@ -50,8 +50,8 @@ Shows the usage of governance, including number of governed services, total numb
 Active Profile Status::
 Shows profile statuses for active profiles based on the percentage of conformant APIs in the profiles:
 +
-* Normal: 
-+ 
+* Normal:
++
 More than 70% of APIs are conformant.
 +
 * At Risk:
@@ -59,7 +59,7 @@ More than 70% of APIs are conformant.
 Fewer than 70% of APIs are conformant.
 
 Conformance Status::
-Shows the breakdown of conformance for the APIs targeted by your governance profiles as follows: 
+Shows the breakdown of conformance for the APIs targeted by your governance profiles as follows:
 +
 * Conformant:
 +
@@ -84,9 +84,22 @@ Shows the severity of API nonconformance to rulesets based on the percentage of 
 +
 41% - 80% rulesets passed
 +
-* Low Severity: 
+* Low Severity:
 +
 81% - 99% rulesets passed
+
+[[cross-gateway-conformance]]
+== Monitor Cross-Gateway Conformance
+
+If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), the *Governance Strategies* page provides a unified conformance view across all gateways and MuleSoft-native APIs. Conformance for all services — regardless of their provider — appears in the same governance strategy report.
+
+To view cross-gateway conformance:
+
+. In *Governance* > *Governance Strategies*, select an active governance strategy that targets multiple providers or uses the *All runtimes* scope.
+. Review the conformance summary, which lists each governed service alongside its provider or gateway.
+. To filter by a specific provider, use the *Provider* column or filter controls in the strategy view.
+
+NOTE: Services with read-only scanner credentials appear with a *Read-Only* policy status indicator. Conformance validation still runs for these services, but policy application requires updated credentials. See xref:find-and-fix-conformance-issues.adoc#update-scanner-credentials[Update Scanner Credentials].
 
 [[api-governance-usage-reports]]
 == API Governance Usage Reports
@@ -102,11 +115,12 @@ You can view conformance details for governed services in their governance valid
 
 == Export Conformance Information
 
-You can export profile and conformance information in CSV format from several places in the Governance console. 
+You can export profile and conformance information in CSV format from several places in the Governance console.
 
 * <<gov-profile-export>>
 * <<gov-api-export>>
 * <<gov-spec-profile-export>>
+* <<gov-cross-gateway-export>>
 
 [[gov-profile-export]]
 === Conformance Information by Profile
@@ -116,9 +130,9 @@ To export profile information:
 . On the Governance console, select the *Profiles* tab.
 . Click *Export Report*.
 +
-The exported CSV file contains conformance information for each profile in your organization. The information includes:   
+The exported CSV file contains conformance information for each profile in your organization. The information includes:
 +
-* Organization ID 
+* Organization ID
 * Profile IDs
 * Profile name
 * Profile type (ACTIVE or DRAFT)
@@ -134,17 +148,19 @@ The exported CSV file contains conformance information for each profile in your 
 To export a report of all governed services targeted by your active profiles:
 
 . On the Governance console, select the *Governed Services* tab.
-. Click *Export Report*. 
+. Click *Export Report*.
 +
-The exported CSV file contains conformance information for each API targeted by the active profiles in your organization. The information includes:  
+The exported CSV file contains conformance information for each API targeted by the active profiles in your organization. The information includes:
 +
-* Organization ID 
+* Organization ID
 * API ID
 * API Version
 * Total number of asset versions for that API Version
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
+* Gateway/Provider (for APIs discovered from connected third-party providers such as Kong, Apigee, AWS API Gateway, or Akamai; blank for MuleSoft-native APIs)
+* Policy Application Status (Enabled or Read-Only; indicates whether policies can be programmatically applied to the service)
 
 [[gov-spec-profile-export]]
 === Conformance Information for a Specific Profile
@@ -155,8 +171,8 @@ To export a conformance report for APIs targeted by a specific active or draft p
 . Select *Active* or *Draft*.
 . Select a profile.
 . Click *Export to CSV*.
-+ 
-The exported CSV file contains conformance information for each API targeted by the selected profile. The information includes: 
++
+The exported CSV file contains conformance information for each API targeted by the selected profile. The information includes:
 +
 * Organization ID
 * API ID
@@ -165,11 +181,13 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
+* Gateway/Provider (for APIs on connected third-party providers; blank for MuleSoft-native APIs)
+* Policy Application Status (Enabled or Read-Only)
 
 [[gov-spec-topic-center]]
 === Conformance Information for Topic Center
 
-If you're using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce. 
+If you're using MuleSoft for Agentforce: Topic Center, you can view the auto-generated *SF API Topic Center* profile, and use the provided governance rules to validate that your API is ready to generate agent actions and topics in Salesforce.
 
 The *SF API Topic Center* profile is read-only, and APIs in this profile are not metered.
 
@@ -179,17 +197,40 @@ To export a conformance report for APIs targeted by the *SF API Topic Center* pr
 . Select *Active*.
 . Select the *SF API Topic Center* profile.
 . Click *Export to CSV*.
-+ 
++
 The exported CSV file contains conformance information for each API targeted by the *SF API Topic Center* profile.
+
+[[gov-cross-gateway-export]]
+=== Cross-Gateway Policy Audit Export
+
+For compliance purposes (such as SOC 2 or GDPR audits), you can export a cross-gateway policy audit report that consolidates policy application evidence across all connected providers and MuleSoft-native APIs.
+
+To export a cross-gateway policy audit report:
+
+. In *Governance* > *Governance Strategies*, select the governance strategy that targets the gateways or providers you want to audit.
+. Click *Export to CSV*.
++
+The exported CSV file contains policy audit evidence for each service governed by the selected strategy. The information includes:
++
+* Organization ID
+* API ID
+* API Version
+* Gateway/Provider
+* Applied policies
+* Policy Application Status (Enabled or Read-Only)
+* Conformance status
+* Timestamp
+
+NOTE: Services with a *Read-Only* policy application status appear in the audit report but indicate that policies cannot be applied programmatically. To remediate, update the scanner credentials for the associated provider. See xref:find-and-fix-conformance-issues.adoc#update-scanner-credentials[Update Scanner Credentials].
 
 [[eval-api-conf-cli]]
 == Evaluate Conformance Using the CLI
 
 To use a command to evaluate the potential rulesets for your API project, use the `governance:api:evaluate` command.
 
-Those who don't have access to API Governance, such as developers, can use the CLI to evaluate which rulesets their APIs might be subject to validation against based on given filters. This enables developers to be proactive in understanding the potential conformance of APIs to rulesets before their APIs become governed. 
+Those who don't have access to API Governance, such as developers, can use the CLI to evaluate which rulesets their APIs might be subject to validation against based on given filters. This enables developers to be proactive in understanding the potential conformance of APIs to rulesets before their APIs become governed.
 
-Additionally, those who do have access to API Governance, such as governance officers, might use this command to plan or debug profile configurations. 
+Additionally, those who do have access to API Governance, such as governance officers, might use this command to plan or debug profile configurations.
 
 [[governance-api-evaluate]]
 

@@ -17,7 +17,7 @@ Governance admins typically:
 Developers and implementors typically:
 
 * Initiate validation of API specifications against rulesets in xref:find-conformance-issues.adoc[Anypoint Code Builder or Design Center].
-* View conformance information for each rule in the context of the open specification project. 
+* View conformance information for each rule in the context of the open specification project.
 
 * Fix conformance issues using the following:
 
@@ -28,16 +28,16 @@ Developers and implementors typically:
 
 Regardless of which tasks you're responsible for in governance for your organization, you can view conformance information for APIs that are centrally governed by API Governance in the following places in Anypoint Platform:
 
-* <<governance-validation-report,Validation reports>> in API Governance or API Manager 
+* <<governance-validation-report,Validation reports>> in API Governance or API Manager
 * <<view-conformance-in-exchange,Conformance Status pages>> in Exchange for specifications
 * <<view-governed-apis-for-rulesets,Governed Services pages>> in Exchange for rulesets
 
 [[governance-validation-report]]
 == View Conformance Information in the Validation Report
 
-View a comprehensive governance validation report in API Governance or API Manager. 
+View a comprehensive governance validation report in API Governance or API Manager.
 
-// Screenshot of a Conformance Report page with callouts 
+// Screenshot of a Conformance Report page with callouts
 
 include::partial$api-gov-apim-governance-report.adoc[]
 
@@ -47,10 +47,54 @@ To view conformance information in the governance validation report:
 . If the API has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
 .. View all issues:
 +
-Click *View Details* for a ruleset the API is nonconformant to. 
+Click *View Details* for a ruleset the API is nonconformant to.
 .. View issues for a selected aspect only:
 ... Select an aspect of the API in the Conformance Breakdown section of the report.
-... Click *View Details* for a ruleset the API is nonconformant to. 
+... Click *View Details* for a ruleset the API is nonconformant to.
+
+[[third-party-api-conformance]]
+== Find Policy Drift on Third-Party API Instances
+
+If you manage APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance can detect policy drift — differences between the policies defined in your governance strategy and the policies actually applied on the gateway instance.
+
+To find policy drift on third-party API instances:
+
+. In *Governance* > *Governance Strategies*, select the active governance strategy that targets your third-party gateway provider.
+. In the governed services list, look for services with a *Not Conformant* or *Policy Drift* indicator.
+. Click *View Report* for a service to see the detailed conformance breakdown, including which policies are missing or misconfigured on the gateway instance.
+
+Common causes of policy drift on third-party instances include:
+
+* Policies applied manually on the gateway that conflict with or differ from the centrally defined governance strategy.
+* Scanner credentials that were updated on the gateway but not reflected in the Anypoint Platform scanner configuration.
+* Policies applied through the *Policy Library* that are not yet reflected in the governance strategy scope.
+
+[[update-scanner-credentials]]
+=== Update Scanner Credentials to Enable Policy Application
+
+When scanner credentials are read-only, API Governance can report on conformance but cannot apply or remediate policies programmatically. The *Policy Application Status* for affected services shows *Read-Only*.
+
+To fix this, update the credentials for the associated scanner:
+
+. In *Platform* > *Providers*, locate the provider connection for the affected gateway (Kong, Apigee, AWS, or Akamai).
+. Select the scanner and click *Update Credentials*.
+. Enter credentials that have write access to the gateway's policy management API.
+. Save the credentials. The scanner authenticates on its next scan cycle, and the *Policy Application Status* updates from *Read-Only* to *Enabled*.
+
+NOTE: Credentials are stored securely and used only for discovery scans and policy application. After updating credentials, the *Last Scan Auth* indicator in the scanner settings reflects the authentication result.
+
+=== Apply Policies Using the Policy Library
+
+As an alternative to waiting for automatic policy application through a governance strategy, you can apply policies directly to specific gateway instances using the *Policy Library*:
+
+. In *Platform* > *Policy Library*, browse or search for the policy to apply.
+. Follow the four-step apply workflow:
+.. *Select Policy* — Choose the policy from the Universal policies or category-based sections (Access and Security, Performance and Cost, Data Privacy and Integrity, Compliance and Observability).
+.. *Configure Policy* — Set the policy parameters.
+.. *Select Instances* — Choose the specific gateway instances to apply the policy to.
+.. *Review & Apply* — Review your selections and apply.
+
+NOTE: Universal policies apply to any service, including scanned and federated APIs from third-party providers.
 
 [[view-conformance-in-exchange]]
 == View Conformance Status for an API in Exchange
