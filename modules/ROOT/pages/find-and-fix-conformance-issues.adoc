@@ -59,8 +59,7 @@ If you manage APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Ak
 
 [NOTE]
 ====
-Finding and fixing policy drift on third-party instances, updating scanner credentials, and using the Policy Library are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
-// TODO: replace the xref above with a link to exp-governance-third-party-policy-drift.adoc once created in docs-general
+Finding and fixing policy drift on third-party instances, updating scanner credentials, and using the Policy Library are available only in the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-third-party-policy-drift.adoc[].
 ====
 
 [[view-conformance-in-exchange]]
