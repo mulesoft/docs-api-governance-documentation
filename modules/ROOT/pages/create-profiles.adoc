@@ -91,8 +91,6 @@ If you filter by categories, you can see the number of categories for each API, 
 The *Gateway/Provider* filter and *Platform* > *Providers* connectivity described here are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 ====
 
-* Gateway/Provider
-+
 If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), use this filter to scope the profile to APIs discovered from a specific provider. Select one or more providers from the list of connected providers.
 +
 NOTE: Connect third-party providers via *Platform* > *Providers* before their APIs appear in this filter. See xref:get-started.adoc#third-party-gateway-prereqs[Set Up Third-Party Gateway Connectivity].
