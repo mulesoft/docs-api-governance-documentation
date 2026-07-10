@@ -55,7 +55,7 @@ Click *View Details* for a ruleset the API is nonconformant to.
 [[third-party-api-conformance]]
 == Find Policy Drift on Third-Party API Instances
 
-If you manage APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance can detect policy drift — differences between the policies defined in your governance strategy and the policies applied on the gateway instance. You can also apply policies directly to gateway instances using the Policy Library, and update scanner credentials to enable programmatic policy application.
+If you manage APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance can detect policy drift—differences between policies in your governance strategy and those applied on the gateway instance. Use the Policy Library to apply policies directly to gateway instances, and update scanner credentials to enable programmatic policy application.
 
 [NOTE]
 ====

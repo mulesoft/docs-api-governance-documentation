@@ -89,7 +89,7 @@ Govern your APIs using these steps:
 [[govern-third-party-apis]]
 == Govern Third-Party APIs
 
-If your organization runs APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance provides a unified workflow to connect those providers, govern their APIs alongside MuleSoft-native APIs, and export cross-gateway compliance reports.
+If your organization runs APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance provides a workflow to connect providers, govern APIs alongside MuleSoft-native APIs, and export compliance reports.
 
 [NOTE]
 ====

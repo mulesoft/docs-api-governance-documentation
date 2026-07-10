@@ -7,13 +7,13 @@ We updated the terminology in the API Governance UI to reflect a broader range o
 
 
 Anypoint API Governance is a component of Anypoint Platform that
-enables you to apply governance rules to your *services* — including APIs, agents, MCP servers, and gateways — as part of the service lifecycle.
+enables you to apply governance rules to your *services*—including APIs, agents, MCP servers, and gateways—as part of the service lifecycle.
 
 With Anypoint API Governance:
 
 * Improve your organization's service quality:
 +
-Identify conformance issues in governed services and take steps to resolve them by adding *governance strategies* to start enforcing standards.
+Identify conformance issues in governed services and add *governance strategies* to resolve them and enforce standards.
 +
 * Customize and apply governance rules using the enhanced *Policy Catalog* and *Controls* strategies:
 +
@@ -21,11 +21,11 @@ To access the full ruleset library with conditions configuration, rule-level sel
 +
 * Apply consistent governance from design time to deployment:
 +
-Use *governance strategies* to apply centralized governance across your services — from API specifications at design time to gateway-enforced policies at deployment, targeting *Omni Gateways*, *Mule Gateways*, or all runtimes.
+Use *governance strategies* to apply centralized governance across your services—from API specifications at design time to gateway-enforced policies at deployment, targeting *Omni Gateways*, *Mule Gateways*, or all runtimes.
 +
 * Apply consistent governance across multiple gateway runtimes:
 +
-Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously, ensuring uniform governance posture across your entire service infrastructure.
+Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously to ensure uniform governance posture across your entire service infrastructure.
 +
 * Enforce governance within your DevOps organization:
 +
@@ -69,13 +69,13 @@ See xref:api-governance-console.adoc[] for details.
 
 == Policy Catalog
 
-The *Policy Catalog* provides a browsable library of governance policies that you can apply directly to your services.
+The *Policy Catalog* provides a browsable library of governance policies to apply directly to your services.
 
 From the Policy Catalog:
 
 * Browse and filter governance policies by category.
 * Apply policies to individual services using *Select Individual* mode.
-* Apply policies in bulk by entity type — including *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways* — using *Bulk Rule* mode.
+* Apply policies in bulk by entity type—including *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*—using *Bulk Rule* mode.
 
 See xref:policy-catalog.adoc[] for details.
 

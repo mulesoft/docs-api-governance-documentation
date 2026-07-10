@@ -199,7 +199,7 @@ The exported CSV file contains conformance information for each API targeted by 
 [[gov-cross-gateway-export]]
 === Cross-Gateway Policy Audit Export
 
-API Governance provides a cross-gateway policy audit export to support compliance audits (such as SOC 2 or GDPR) by consolidating policy application evidence across all connected providers and MuleSoft-native APIs.
+The cross-gateway policy audit export consolidates policy application evidence across all connected providers and MuleSoft-native APIs to support compliance audits such as SOC 2 or GDPR.
 
 [NOTE]
 ====
