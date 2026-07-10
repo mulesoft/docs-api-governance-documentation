@@ -21,34 +21,11 @@ Organization-wide Visibility:: View a pre-built set of metrics for each of your 
 Clear Status Overview:: Instantly see the status of your APIs, including those that are unprotected, governed, in Exchange, and in production.
 API Type Breakdown:: Understand the distribution of your APIs by type (for example, REST API, AsyncAPI, HTTP API, gRPC, Agent, MCP).
 Governance Insights:: Gain visibility into your governance posture, including the number of governed services, their conformance status, and nonconformance severity.
-Provider & Gateway Coverage:: View policy coverage and conformance status broken down by connected gateway provider (Kong, Apigee, AWS API Gateway, Akamai, and others).
 
 [[dashboard-metrics]]
 == Dashboard Metrics
 
 include::partial$dashboard-key-metrics.adoc[]
-
-[[gateway-provider-metrics]]
-=== Gateway and Provider Metrics
-
-[NOTE]
-====
-The metric tiles and the *Connect a Gateway* action described in this section are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
-====
-
-If you have connected third-party gateway providers, the dashboard displays additional metric tiles:
-
-Policy Coverage by Gateway/Provider::
-Shows the percentage of services on each connected provider (for example, Kong, Apigee, AWS API Gateway, or Akamai) that have at least one governance policy applied. Use this tile to identify providers with low policy coverage.
-
-Policy Application Status::
-Shows the breakdown of policy application capability across all connected providers:
-+
-* *Enabled* — Services for which policies can be applied programmatically because the scanner credentials have write access.
-* *Read-Only* — Services for which policy application is disabled because the scanner credentials are read-only. To enable policy application, update the credentials for the associated scanner. See xref:find-and-fix-conformance-issues.adoc#update-scanner-credentials[Update Scanner Credentials].
-
-Cross-Provider Conformance::
-Shows a unified conformance view across all connected providers and MuleSoft-native APIs. Use this tile to assess your overall governance posture without switching between individual provider views.
 
 [[taking-action]]
 == Taking Action from the Dashboard

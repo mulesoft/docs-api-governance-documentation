@@ -62,8 +62,8 @@ To connect a third-party gateway provider:
 . In *Anypoint Platform*, navigate to *Platform* > *Providers*.
 . Click *Connect to a Provider* and follow the three-step wizard:
 .. *Choose Provider* — Select your gateway provider (Kong, Apigee, AWS, Akamai, or another supported provider).
-.. *Connection Setup* — Enter your credentials to authenticate and discover available platforms. Credentials are stored securely and used only for discovery scans.
-.. *Apply Policy* — For supported providers such as Akamai, a correlation policy may be applied automatically across your Omni Gateway environments. For other providers, confirm the connection.
+.. *Connect to Provider* — Enter your credentials to authenticate and discover available platforms. Credentials are stored securely and used only for discovery scans.
+.. *Connection Setup* — Name the connection, set the scan schedule, and configure platforms. After you click *Connect*, the scanner is created and the connection goes live. For Akamai, a correlation policy is applied automatically in the background.
 . After your connection is live, the system creates a scanner that discovers APIs from the connected provider and adds them to your portfolio.
 
 NOTE: If scanner credentials have read-only permissions, policy application for APIs on that provider is also read-only. To enable full policy management, use *Update Credentials* in the scanner settings to supply credentials with write access.
