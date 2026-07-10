@@ -21,7 +21,7 @@ Policy Library:: Use this approach to browse available policies and apply one di
 . *Select Instances*
 . *Review & Apply*
 +
-This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers. The Policy Library approach is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers. The *Policy Library* approach is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 
 Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the Policy Library approach for direct policy application to gateway instances.
 
@@ -88,14 +88,14 @@ If you filter by categories, you can see the number of categories for each API, 
 
 [NOTE]
 ====
-The *Gateway/Provider* filter and *Platform* > *Providers* connectivity described below are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+The *Gateway/Provider* filter and *Platform* > *Providers* connectivity described here are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 ====
 
 * Gateway/Provider
 +
 If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), use this filter to scope the profile to APIs discovered from a specific provider. Select one or more providers from the list of connected providers.
 +
-NOTE: APIs discovered from third-party providers must be connected via *Platform* > *Providers* before they appear in this filter. See xref:get-started.adoc#third-party-gateway-prereqs[Set Up Third-Party Gateway Connectivity].
+NOTE: Connect third-party providers via *Platform* > *Providers* before their APIs appear in this filter. See xref:get-started.adoc#third-party-gateway-prereqs[Set Up Third-Party Gateway Connectivity].
 
 *API Instance* filters:
 
