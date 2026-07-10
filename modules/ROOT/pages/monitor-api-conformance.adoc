@@ -196,6 +196,9 @@ To export a conformance report for APIs targeted by the *SF API Topic Center* pr
 +
 The exported CSV file contains conformance information for each API targeted by the *SF API Topic Center* profile.
 
+// READ PHASE SCOPE QUESTION: What data does the cross-gateway policy audit export surface in the Read phase (7/16)?
+// Does it show policies already existing on third-party gateways (discovered via scanning), or only policies applied via MuleSoft (Write phase, Aug 13)?
+// "Policy application evidence" may be premature if gateway-applied policies are a Write-phase feature. Confirm with engineering before publishing.
 [[gov-cross-gateway-export]]
 === Cross-Gateway Policy Audit Export
 

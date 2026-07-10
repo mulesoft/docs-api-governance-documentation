@@ -15,7 +15,7 @@ With Anypoint API Governance:
 +
 Identify conformance issues in governed services and add governance strategies to resolve them and enforce standards.
 +
-* Customize and apply governance rules using the xref:general::exp-governance-policy-library-apply.adoc[*Policy Library*] and xref:general::exp-governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
+* Customize governance rules using the xref:general::exp-governance-policy-library-apply.adoc[*Policy Library*] and xref:general::exp-governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
 +
 To access the full ruleset library with conditions configuration, rule-level selection, and severity customization, create *Controls* directly in the enhanced MuleSoft experience.
 +
@@ -72,6 +72,9 @@ In the *Governance Strategies* page, governance administrators can:
 
 See xref:api-governance-console.adoc[] for details.
 
+// WRITE PHASE — Policy Catalog (PolicyCatalog.tsx) is an unshipped placeholder.
+// Do not publish until the Write phase ships (target: Aug 13).
+////
 == Policy Catalog
 
 [NOTE]
@@ -88,6 +91,7 @@ From the Policy Catalog:
 * Apply policies in bulk by entity type—including *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*—using *Bulk Rule* mode.
 
 See xref:policy-catalog.adoc[] for details.
+////
 
 == Governance Across Anypoint Platform
 
@@ -118,7 +122,7 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 [[policy-catalog-overview]]
 * xref:general::exp-governance-policy-library-apply.adoc[Policy Library] (enhanced MuleSoft experience only):
 
-** Governance leads and security architects can browse and apply governance policies directly to individual services or in bulk across all *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*.
+** Governance leads and security architects can browse governance policies across all *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*.
 
 [[gateway-overview]]
 * xref:general::exp-governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):
