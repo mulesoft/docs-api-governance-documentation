@@ -91,20 +91,12 @@ Shows the severity of API nonconformance to rulesets based on the percentage of 
 [[cross-gateway-conformance]]
 == Monitor Cross-Gateway Conformance
 
+If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), API Governance provides a unified conformance view across all gateways and MuleSoft-native APIs in a single report.
+
 [NOTE]
 ====
-This section describes features available only in the enhanced MuleSoft experience. The *Governance Strategies* page is not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
+Cross-gateway conformance monitoring is available only in the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-monitor-cross-gateway-conformance.adoc[].
 ====
-
-If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), the *Governance Strategies* page provides a unified conformance view across all gateways and MuleSoft-native APIs. Conformance for all services — regardless of their provider — appears in the same governance strategy report.
-
-To view cross-gateway conformance:
-
-. In *Governance* > *Governance Strategies*, select an active governance strategy that targets multiple providers or uses the *All runtimes* scope.
-. Review the conformance summary, which lists each governed service alongside its provider or gateway.
-. To filter by a specific provider, use the *Provider* column or filter controls in the strategy view.
-
-NOTE: Services with read-only scanner credentials appear with a *Read-Only* policy status indicator. Conformance validation still runs for these services, but policy application requires updated credentials. See xref:find-and-fix-conformance-issues.adoc#update-scanner-credentials[Update Scanner Credentials].
 
 [[api-governance-usage-reports]]
 == API Governance Usage Reports
@@ -125,7 +117,6 @@ You can export profile and conformance information in CSV format from several pl
 * <<gov-profile-export>>
 * <<gov-api-export>>
 * <<gov-spec-profile-export>>
-* <<gov-cross-gateway-export>>
 
 [[gov-profile-export]]
 === Conformance Information by Profile
@@ -208,30 +199,12 @@ The exported CSV file contains conformance information for each API targeted by 
 [[gov-cross-gateway-export]]
 === Cross-Gateway Policy Audit Export
 
+API Governance provides a cross-gateway policy audit export to support compliance audits (such as SOC 2 or GDPR) by consolidating policy application evidence across all connected providers and MuleSoft-native APIs.
+
 [NOTE]
 ====
-This export is available only in the enhanced MuleSoft experience via *Governance* > *Governance Strategies*. See xref:general::exp-governance-work-with-strategies.adoc[].
+The cross-gateway policy audit export is available only in the enhanced MuleSoft experience. For the export procedure and CSV schema, see xref:general::exp-governance-cross-gateway-policy-audit-export.adoc[].
 ====
-
-To support compliance audits (such as SOC 2 or GDPR), export a cross-gateway policy audit report that consolidates policy application evidence across all connected providers and MuleSoft-native APIs.
-
-To export a cross-gateway policy audit report:
-
-. In *Governance* > *Governance Strategies*, select the governance strategy that targets the gateways or providers you want to audit.
-. Click *Export to CSV*.
-+
-The exported CSV file contains policy audit evidence for each service governed by the selected strategy. The information includes:
-+
-* Organization ID
-* API ID
-* API Version
-* Gateway/Provider
-* Applied policies
-* Policy Application Status (Enabled or Read-Only)
-* Conformance status
-* Timestamp
-
-NOTE: Services with a *Read-Only* policy application status appear in the audit report but indicate that policies cannot be applied programmatically. To remediate, update the scanner credentials for the associated provider. See xref:find-and-fix-conformance-issues.adoc#update-scanner-credentials[Update Scanner Credentials].
 
 [[eval-api-conf-cli]]
 == Evaluate Conformance Using the CLI

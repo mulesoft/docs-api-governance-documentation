@@ -15,13 +15,12 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 API Governance provides two complementary approaches to policy management. 
 
 Governance Profiles with Rulesets:: Use this approach to continuously validate API specifications and instances against a defined set of rules, track conformance over time, and receive notifications. This is the recommended approach for ongoing governance programs.
-Policy Library:: Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. Access *Policy Library* from *Governance* > *Governance Strategies* > *Policy Library*. The apply workflow follows these steps:
-. *Select Policy*
-. *Configure Policy*
-. *Select Instances*
-. *Review & Apply*
+Policy Library:: Use this approach to browse available policies and apply one directly as a global policy to selected service instances without creating a full governance profile. This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers.
 +
-This approach is best for targeted or supplemental policy application, especially for services discovered from third-party providers. The *Policy Library* approach is available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
+[NOTE]
+====
+The *Policy Library* is available only in the enhanced MuleSoft experience. For the complete workflow, see xref:general::exp-governance-policy-library-apply.adoc[].
+====
 
 Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the Policy Library approach for direct policy application to gateway instances.
 
@@ -91,9 +90,12 @@ If you filter by categories, you can see the number of categories for each API, 
 The *Gateway/Provider* filter and *Platform* > *Providers* connectivity described here are available only in the enhanced MuleSoft experience. See xref:general::exp-governance-work-with-strategies.adoc[].
 ====
 
-If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), use this filter to scope the profile to APIs discovered from a specific provider. Select one or more providers from the list of connected providers.
+If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), use this filter to scope the profile to APIs discovered from a specific provider.
 +
-NOTE: Connect third-party providers via *Platform* > *Providers* before their APIs appear in this filter. See xref:get-started.adoc#third-party-gateway-prereqs[Set Up Third-Party Gateway Connectivity].
+[NOTE]
+====
+The *Gateway/Provider* filter is available only in the enhanced MuleSoft experience. For details on connecting providers and using this filter, see xref:general::exp-governance-create-profiles-gateway-provider-filter.adoc[].
+====
 
 *API Instance* filters:
 

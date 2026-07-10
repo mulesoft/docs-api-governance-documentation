@@ -50,23 +50,12 @@ This documentation covers the full product functionality that is available after
 [[third-party-gateway-prereqs]]
 === Set Up Third-Party Gateway Connectivity (Optional)
 
-[NOTE]
-====
-This section describes features available only in the enhanced MuleSoft experience. The *Platform* > *Providers* navigation and the *Connect to a Provider* wizard are not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
-====
-
 If you manage APIs on third-party gateways such as Kong, Apigee, AWS API Gateway, or Akamai, connect those providers before you begin governing their APIs.
 
-To connect a third-party gateway provider:
-
-. In *Anypoint Platform*, navigate to *Platform* > *Providers*.
-. Click *Connect to a Provider* and follow the three-step wizard:
-.. *Choose Provider* — Select your gateway provider (Kong, Apigee, AWS, Akamai, or another supported provider).
-.. *Connect to Provider* — Enter your credentials to authenticate and discover available platforms. Credentials are stored securely and used only for discovery scans.
-.. *Connection Setup* — Name the connection, set the scan schedule, and configure platforms. After you click *Connect*, the scanner is created and the connection goes live. For Akamai, a correlation policy is applied automatically in the background.
-. After your connection is live, the system creates a scanner that discovers APIs from the connected provider and adds them to your portfolio.
-
-NOTE: If scanner credentials have read-only permissions, policy application for APIs on that provider is also read-only. To enable full policy management, use *Update Credentials* in the scanner settings to supply credentials with write access.
+[NOTE]
+====
+Connecting third-party gateway providers is available only in the enhanced MuleSoft experience. For the complete setup procedure, see xref:general::exp-governance-setup-third-party-providers.adoc[].
+====
 
 == Govern Your APIs
 
@@ -100,26 +89,12 @@ Govern your APIs using these steps:
 [[govern-third-party-apis]]
 == Govern Third-Party APIs
 
+If your organization runs APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance provides a unified workflow to connect those providers, govern their APIs alongside MuleSoft-native APIs, and export cross-gateway compliance reports.
+
 [NOTE]
 ====
-This workflow requires the enhanced MuleSoft experience. The *Governance Strategies* page, *Policy Library*, and cross-gateway reporting described here are not available in the classic Anypoint Platform UI. See xref:general::exp-governance-work-with-strategies.adoc[].
+The complete workflow for governing third-party APIs requires the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-govern-third-party-apis.adoc[].
 ====
-
-If your organization runs APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), use the following workflow after completing the <<third-party-gateway-prereqs,provider connection prerequisite>>.
-
-NOTE: This workflow applies to users managing APIs on external gateway providers. If you manage only MuleSoft-native APIs, follow <<govern-your-apis,Govern Your APIs>> instead.
-
-. *Connect the provider* — In *Platform* > *Providers*, connect to your gateway provider as described in <<third-party-gateway-prereqs>>. After the connection is live, a scanner automatically discovers and imports APIs from that provider into your portfolio.
-
-. *Verify discovered APIs* — In the Portfolio Overview on the *Governance* dashboard, confirm that your provider's APIs appear under the *Discovered* tier. APIs discovered from a connected provider are available for governance without requiring manual Exchange registration.
-
-. *Create a governance strategy targeting that gateway* — In *Governance* > *Governance Strategies*, create a new governance strategy and use the *Gateway/Provider* filter under *Define Filter Criteria* to scope the strategy to APIs on your specific gateway (for example, Kong or Apigee). Select the rulesets to apply.
-
-. *Monitor conformance and apply policies* — After the strategy is active, monitor conformance status in the *Governance Strategies* page. To apply policies directly to gateway instances, use *Policy Library* (*Governance* > *Governance Strategies* > *Policy Library*) and follow the *Select Policy* → *Configure Policy* → *Select Instances* → *Review & Apply* workflow.
-+
-NOTE: If your scanner credentials are read-only, the *Apply Policy* action is disabled. To enable policy application, go to *Platform* > *Providers*, select the scanner, and click *Update Credentials* to provide credentials with write access.
-
-. *Export cross-gateway reports* — Export conformance and policy audit reports from the *Governance Strategies* page. See xref:monitor-api-conformance.adoc#gov-cross-gateway-export[Cross-Gateway Policy Audit Export].
 
 == See Also
 
