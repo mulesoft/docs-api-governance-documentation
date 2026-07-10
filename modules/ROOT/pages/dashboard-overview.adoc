@@ -32,8 +32,7 @@ include::partial$dashboard-key-metrics.adoc[]
 
 From the dashboard, you can often take direct action, such as:
 
-Creating Governance Strategies:: Create governance strategies to govern unprotected APIs or APIs in production.
-Connecting a Gateway:: To connect a third-party gateway, click *Connect a Gateway* from the *Provider Connections* section of the dashboard. After you connect a provider, a scanner discovers and imports its APIs into your portfolio automatically.
+Creating Governance Profiles:: Initiate the creation of new governance profiles to start governing unprotected APIs or APIs in production.
 Viewing API Lists:: Navigate to detailed lists of APIs based on the displayed metrics (for example, view all unprotected APIs, APIs in production, or APIs by type).
 
 include::partial$dashboard-taking-action.adoc[]
