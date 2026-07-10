@@ -91,7 +91,7 @@ Shows the severity of API nonconformance to rulesets based on the percentage of 
 [[cross-gateway-conformance]]
 == Monitor Cross-Gateway Conformance
 
-If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), API Governance provides a unified conformance view across all gateways and MuleSoft-native APIs in a single report.
+If you have connected third-party gateway providers, API Governance provides a unified conformance view across all gateways and MuleSoft APIs in a single report.
 
 [NOTE]
 ====
@@ -155,7 +155,7 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
-* Gateway/Provider (for APIs discovered from connected third-party providers such as Kong, Apigee, AWS API Gateway, or Akamai; blank for MuleSoft-native APIs)
+* Gateway/Provider (for APIs discovered from connected third-party providers; blank for MuleSoft APIs)
 * Policy Application Status (Enabled or Read-Only; indicates whether policies can be programmatically applied to the service)
 
 [[gov-spec-profile-export]]
@@ -177,7 +177,7 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
-* Gateway/Provider (for APIs on connected third-party providers; blank for MuleSoft-native APIs)
+* Gateway/Provider (for APIs on connected third-party providers; blank for MuleSoft APIs)
 * Policy Application Status (Enabled or Read-Only)
 
 [[gov-spec-topic-center]]
@@ -199,7 +199,7 @@ The exported CSV file contains conformance information for each API targeted by 
 [[gov-cross-gateway-export]]
 === Cross-Gateway Policy Audit Export
 
-The cross-gateway policy audit export consolidates policy application evidence across all connected providers and MuleSoft-native APIs to support compliance audits such as SOC 2 or GDPR.
+The cross-gateway policy audit export consolidates policy application evidence across all connected providers and MuleSoft APIs to support compliance audits such as SOC 2 or GDPR.
 
 [NOTE]
 ====

@@ -22,7 +22,7 @@ Policy Library:: Use this approach to browse available policies and apply one di
 The *Policy Library* is available only in the enhanced MuleSoft experience. For the complete workflow, see xref:general::exp-governance-policy-library-apply.adoc[].
 ====
 
-Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the Policy Library approach for direct policy application to gateway instances.
+Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the policy library approach for direct policy application to gateway instances.
 
 
 [[create-profile-in-console]]
@@ -85,11 +85,11 @@ If you filter by categories, you can see the number of categories for each API, 
 
 *Gateway/Provider* filter:
 
-If you have connected third-party gateway providers (Kong, Apigee, AWS API Gateway, or Akamai), use this filter to scope the profile to APIs discovered from a specific provider.
+If you have connected third-party gateway providers, use this filter to scope the profile to APIs discovered from a specific provider.
 +
 [NOTE]
 ====
-The *Gateway/Provider* filter is available only in the enhanced MuleSoft experience. For details on connecting providers and using this filter, see xref:general::exp-governance-create-profiles-gateway-provider-filter.adoc[].
+The *Gateway/Provider* filter is available only in the enhanced MuleSoft experience. For details about connecting providers and using this filter, see xref:general::exp-governance-create-profiles-gateway-provider-filter.adoc[].
 ====
 
 *API Instance* filters:

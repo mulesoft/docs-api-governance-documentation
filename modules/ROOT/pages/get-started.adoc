@@ -50,7 +50,7 @@ This documentation covers the full product functionality that is available after
 [[third-party-gateway-prereqs]]
 === Set Up Third-Party Gateway Connectivity (Optional)
 
-If you manage APIs on third-party gateways such as Kong, Apigee, AWS API Gateway, or Akamai, connect those providers before you begin governing their APIs.
+If you manage APIs on third-party gateways such, connect those providers before you begin governing their APIs.
 
 [NOTE]
 ====
@@ -89,11 +89,11 @@ Govern your APIs using these steps:
 [[govern-third-party-apis]]
 == Govern Third-Party APIs
 
-If your organization runs APIs on third-party gateways (Kong, Apigee, AWS API Gateway, or Akamai), API Governance provides a workflow to connect providers, govern APIs alongside MuleSoft-native APIs, and export compliance reports.
+If your organization runs APIs on third-party gateways, API Governance provides a workflow to connect providers, govern APIs alongside MuleSoft APIs, and export compliance reports.
 
 [NOTE]
 ====
-The complete workflow for governing third-party APIs requires the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-govern-third-party-apis.adoc[].
+The complete workflow for governing third-party APIs is available only in the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-govern-third-party-apis.adoc[].
 ====
 
 == See Also
