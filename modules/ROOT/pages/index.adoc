@@ -61,7 +61,7 @@ See xref:dashboard-overview.adoc[] for details.
 
 In the *Governance Strategies* page, governance administrators can:
 
-* Create *governance strategies* of two types — *Controls* or *Automated Policies* — to apply governance rules to a targeted set of services.
+* Create *governance strategies* of two types, *Controls* or *Automated Policies*, to apply governance rules to a targeted set of services.
 * Monitor compliance posture, notify developers, and optionally enforce blocking rules to prevent non-compliant actions across targeted services.
 
 === Governance Strategy Types
