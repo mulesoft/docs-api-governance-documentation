@@ -48,7 +48,7 @@ From the API Governance Dashboard:
 * View metrics such as *Governance Coverage*, the number of services governed by *Controls*, services governed by *Automated Policies*, and overall compliance posture across your service portfolio.
 * Understand the distribution of your services by type, including REST API, AsyncAPI, HTTP API, Agent, MCP Server, LLM Proxies, and Gateways.
 * Understand your governance posture, including conformance status and nonconformance severity for governed services.
-* Take action from the Dashboard based on the presented metrics, such as creating new *governance strategies* to govern unprotected services and viewing lists of services for further review.
+* Take action from the Dashboard based on the presented metrics, such as creating new governance strategies to govern unprotected services and viewing lists of services for further review.
 
 See xref:dashboard-overview.adoc[] for details.
 
@@ -97,11 +97,11 @@ See xref:policy-catalog.adoc[] for details.
 
 In addition to viewing conformance information in the *Governance Strategies* page, the following personas can view governance information and take action across Anypoint Platform:
 
-* *Governance Leads* and *Security Architects*: Create and manage cross-gateway governance strategies, review coverage metrics, and enforce standards across all service types.
-* *API Owners*: Review policy posture and conformance status for their services in Exchange.
-* *API Admins*: Connect *Omni Gateways* and *Mule Gateways* as governance targets and manage runtime-level enforcement.
-* *Developers* and *Architects*: Check specification conformance during the API design phase.
-* *Implementors*: Review governance reports for API instances in API Manager.
+* Governance Leads and Security Architects: Create and manage cross-gateway governance strategies, review coverage metrics, and enforce standards across all service types.
+* API Owners: Review policy posture and conformance status for their services in Exchange.
+* API Admins: Connect *Omni Gateways* and *Mule Gateways* as governance targets and manage runtime-level enforcement.
+* Developers and Architects: Check specification conformance during the API design phase.
+* Implementors: Review governance reports for API instances in API Manager.
 
 [[exchange-overview]]
 * Exchange
