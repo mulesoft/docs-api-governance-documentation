@@ -23,7 +23,7 @@ Policy Library:: Use this approach to browse available policies for selected ser
 +
 [NOTE]
 ====
-The *Policy Library* is available only in the enhanced MuleSoft experience. For the complete workflow, see xref:general::exp-governance-policy-library-apply.adoc[].
+The *Policy Library* is available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-policy-library-apply.adoc[].
 ====
 
 Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the policy library approach for direct policy application to gateway instances.
