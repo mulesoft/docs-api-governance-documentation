@@ -88,11 +88,6 @@ If you filter by multiple tags and categories, your APIs must have all of the se
 +
 If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
 
-// REMOVED: Gateway/Provider filter for profile scoping does not exist in the strategy creation wizard.
-// The code scopes strategies by service types, tags, categories, and runtime only — no provider selector.
-// The xref target (exp-governance-create-profiles-gateway-provider-filter.adoc) was deleted in docs-general.
-// Do not restore without confirming a specific release milestone with engineering.
-
 *API Instance* filters:
 
 * Include only APIs with instances
