@@ -52,11 +52,6 @@ Click *View Details* for a ruleset the API is nonconformant to.
 ... Select an aspect of the API in the Conformance Breakdown section of the report.
 ... Click *View Details* for a ruleset the API is nonconformant to.
 
-// REMOVED: "Find Policy Drift on Third-Party API Instances" section.
-// Policy drift detection does not exist as a Jul 16 deliverable — the exp- topic
-// (exp-governance-third-party-policy-drift.adoc) was deleted in docs-general.
-// The Policy Library apply call-to-action is Aug 13 (Write phase). Do not restore
-// without confirming a specific release milestone with engineering.
 
 [[view-conformance-in-exchange]]
 == View Conformance Status for an API in Exchange
