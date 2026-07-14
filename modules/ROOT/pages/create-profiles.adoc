@@ -10,6 +10,10 @@ you want to govern, add your governance profiles. Governance profiles enable you
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
 
+// AUG 13 (POLICY WRITE SCOPE): The Policy Library apply workflow ships Aug 13, not Jul 16.
+// The entire "Profiles vs. Policy Library" comparison section is premature until then.
+// Uncomment when Policy Write ships Aug 13.
+////
 == Governance Profiles and Rulesets Versus Policy Library Direct Apply
 
 API Governance provides two complementary approaches to policy management.
@@ -23,6 +27,7 @@ The *Policy Library* is available only in the enhanced MuleSoft experience. For 
 ====
 
 Use both approaches together to govern APIs with profiles for continuous conformance tracking. Use the policy library approach for direct policy application to gateway instances.
+////
 
 
 [[create-profile-in-console]]
@@ -83,14 +88,10 @@ If you filter by multiple tags and categories, your APIs must have all of the se
 +
 If you filter by categories, you can see the number of categories for each API, which is denoted by *Categories* followed by a number in parenthesis. Hover over *Categories* to see more details.
 
-*Gateway/Provider* filter:
-
-If you have connected third-party gateway providers, use this filter to scope the profile to APIs discovered from a specific provider.
-+
-[NOTE]
-====
-The *Gateway/Provider* filter is available only in the enhanced MuleSoft experience. For details about connecting providers and using this filter, see xref:general::exp-governance-create-profiles-gateway-provider-filter.adoc[].
-====
+// REMOVED: Gateway/Provider filter for profile scoping does not exist in the strategy creation wizard.
+// The code scopes strategies by service types, tags, categories, and runtime only — no provider selector.
+// The xref target (exp-governance-create-profiles-gateway-provider-filter.adoc) was deleted in docs-general.
+// Do not restore without confirming a specific release milestone with engineering.
 
 *API Instance* filters:
 

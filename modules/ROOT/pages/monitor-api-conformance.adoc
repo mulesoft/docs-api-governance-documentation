@@ -155,8 +155,10 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
-* Gateway/Provider (for APIs discovered from connected third-party providers; blank for MuleSoft APIs)
-* Policy Application Status (Enabled or Read-Only; indicates whether policies can be programmatically applied to the service)
+* Provider (for APIs discovered from connected third-party providers; blank for MuleSoft APIs)
+// AUG 13 (POLICY WRITE SCOPE): Policy Application Status (Enabled/Read-Only) reflects write_capable field.
+// Uncomment when Policy Write ships Aug 13.
+// * Policy Application Status (Enabled or Read-Only; indicates whether policies can be programmatically applied to the service)
 
 [[gov-spec-profile-export]]
 === Conformance Information for a Specific Profile
@@ -177,8 +179,9 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of conformant APIs (pass)
 * Number of nonconformant APIs (fail)
 * Timestamp
-* Gateway/Provider (for APIs on connected third-party providers; blank for MuleSoft APIs)
-* Policy Application Status (Enabled or Read-Only)
+* Provider (for APIs on connected third-party providers; blank for MuleSoft APIs)
+// AUG 13 (POLICY WRITE SCOPE): Uncomment when Policy Write ships Aug 13.
+// * Policy Application Status (Enabled or Read-Only)
 
 [[gov-spec-topic-center]]
 === Conformance Information for Topic Center

@@ -15,7 +15,7 @@ With Anypoint API Governance:
 +
 Identify conformance issues in governed services and add governance strategies to resolve them and enforce standards.
 +
-* Customize governance rules using the xref:general::exp-governance-policy-library-apply.adoc[*Policy Library*] and xref:general::exp-governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
+* Customize governance rules using xref:general::exp-governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
 +
 To access the full ruleset library with conditions configuration, rule-level selection, and severity customization, create *Controls* directly in the enhanced MuleSoft experience.
 +
@@ -119,10 +119,15 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 
 ** Implementors can check API instance conformance by viewing comprehensive governance reports.
 
+// AUG 13 (POLICY WRITE SCOPE): Policy Library apply workflow ships Aug 13, not Jul 16.
+// The feature flag (canonicalPoliciesEnabled) gates both browse and apply — no browse-only view confirmed for Jul 16.
+// Uncomment when Policy Write ships Aug 13.
+////
 [[policy-catalog-overview]]
 * xref:general::exp-governance-policy-library-apply.adoc[Policy Library] (enhanced MuleSoft experience only):
 
 ** Governance leads and security architects can browse governance policies across all *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*.
+////
 
 [[gateway-overview]]
 * xref:general::exp-governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):
