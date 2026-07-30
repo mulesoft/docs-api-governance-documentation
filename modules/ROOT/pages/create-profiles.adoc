@@ -86,7 +86,6 @@ Set Notifications
 * Save a profile as active to show the conformance information outside of the draft profile view.
 
 When you save a profile as either draft or active, its targeted APIs become governed.
-|
 |===
 
 == Update a Governance Profile Using the Governance Console
