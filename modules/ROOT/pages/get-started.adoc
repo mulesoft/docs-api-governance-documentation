@@ -50,7 +50,7 @@ This documentation covers the full product functionality that is available after
 [[third-party-gateway-prereqs]]
 === Set Up Third-Party Gateway Connectivity (Optional)
 
-If you manage APIs on third-party gateways such, connect those providers before you begin governing their APIs.
+If you manage APIs on third-party gateways, connect those providers before you begin governing their APIs.
 
 [NOTE]
 ====
