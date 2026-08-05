@@ -46,7 +46,7 @@ The API Governance Dashboard offers an organization-wide view of your service la
 From the API Governance Dashboard:
 
 * View metrics such as *Governance Coverage*, the number of services governed by *Controls*, services governed by *Automated Policies*, and overall compliance posture across your service portfolio.
-* Understand the distribution of your services by type, including REST API, AsyncAPI, HTTP API, Agent, MCP Server, LLM Proxies, and Gateways.
+* Understand the distribution of your services by type, including REST API, AsyncAPI, HTTP API, agent, MCP server, LLM proxies, and gateways.
 * Understand your governance posture, including conformance status and nonconformance severity for governed services.
 * Take action from the Dashboard based on the presented metrics, such as creating new governance strategies to govern unprotected services and viewing lists of services for further review.
 
