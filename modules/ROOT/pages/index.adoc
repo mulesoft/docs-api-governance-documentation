@@ -95,7 +95,7 @@ See xref:policy-catalog.adoc[] for details.
 
 == Governance Across Anypoint Platform
 
-In addition to viewing conformance information in the *Governance Strategies* page, the following personas can view governance information and take action across Anypoint Platform:
+In addition to viewing conformance information in the *Governance Strategies* page, these personas can view governance information and take action across Anypoint Platform:
 
 * Governance Leads and Security Architects: Create and manage cross-gateway governance strategies, review coverage metrics, and enforce standards across all service types.
 * API Owners: Review policy posture and conformance status for their services in Exchange.
