@@ -17,7 +17,7 @@ Governance admins typically:
 Developers and implementors typically:
 
 * Initiate validation of API specifications against rulesets in xref:find-conformance-issues.adoc[Anypoint Code Builder or Design Center].
-* View conformance information for each rule in the context of the open specification project. 
+* View conformance information for each rule in the context of the open specification project.
 
 * Fix conformance issues using the following:
 
@@ -28,16 +28,16 @@ Developers and implementors typically:
 
 Regardless of which tasks you're responsible for in governance for your organization, you can view conformance information for APIs that are centrally governed by API Governance in the following places in Anypoint Platform:
 
-* <<governance-validation-report,Validation reports>> in API Governance or API Manager 
+* <<governance-validation-report,Validation reports>> in API Governance or API Manager
 * <<view-conformance-in-exchange,Conformance Status pages>> in Exchange for specifications
 * <<view-governed-apis-for-rulesets,Governed Services pages>> in Exchange for rulesets
 
 [[governance-validation-report]]
 == View Conformance Information in the Validation Report
 
-View a comprehensive governance validation report in API Governance or API Manager. 
+View a comprehensive governance validation report in API Governance or API Manager.
 
-// Screenshot of a Conformance Report page with callouts 
+// Screenshot of a Conformance Report page with callouts
 
 include::partial$api-gov-apim-governance-report.adoc[]
 
@@ -47,10 +47,11 @@ To view conformance information in the governance validation report:
 . If the API has a *Not Conformant* badge, click *View Report* for information about the conformance issue.
 .. View all issues:
 +
-Click *View Details* for a ruleset the API is nonconformant to. 
+Click *View Details* for a ruleset the API is nonconformant to.
 .. View issues for a selected aspect only:
 ... Select an aspect of the API in the Conformance Breakdown section of the report.
-... Click *View Details* for a ruleset the API is nonconformant to. 
+... Click *View Details* for a ruleset the API is nonconformant to.
+
 
 [[view-conformance-in-exchange]]
 == View Conformance Status for an API in Exchange
