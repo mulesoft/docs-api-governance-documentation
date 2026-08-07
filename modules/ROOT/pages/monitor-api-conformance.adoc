@@ -95,7 +95,7 @@ If you have connected third-party gateway providers, API Governance provides a u
 
 [NOTE]
 ====
-Cross-gateway conformance monitoring is available only in the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-monitor-cross-gateway-conformance.adoc[].
+Cross-gateway conformance monitoring is available only in the enhanced MuleSoft experience. 
 ====
 
 [[api-governance-usage-reports]]
