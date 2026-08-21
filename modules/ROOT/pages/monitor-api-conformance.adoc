@@ -95,7 +95,7 @@ If you have connected third-party gateway providers, API Governance provides a u
 
 [NOTE]
 ====
-Cross-gateway conformance monitoring is available only in the enhanced MuleSoft experience. 
+Cross-gateway conformance monitoring is available only in the enhanced MuleSoft experience.
 ====
 
 [[api-governance-usage-reports]]
@@ -156,9 +156,6 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of nonconformant APIs (fail)
 * Timestamp
 * Provider (for APIs discovered from connected third-party providers; blank for MuleSoft APIs)
-// AUG 13 (POLICY WRITE SCOPE): Policy Application Status (Enabled/Read-Only) reflects write_capable field.
-// Uncomment when Policy Write ships Aug 13.
-// * Policy Application Status (Enabled or Read-Only; indicates whether policies can be programmatically applied to the service)
 
 [[gov-spec-profile-export]]
 === Conformance Information for a Specific Profile
@@ -180,8 +177,6 @@ The exported CSV file contains conformance information for each API targeted by 
 * Number of nonconformant APIs (fail)
 * Timestamp
 * Provider (for APIs on connected third-party providers; blank for MuleSoft APIs)
-// AUG 13 (POLICY WRITE SCOPE): Uncomment when Policy Write ships Aug 13.
-// * Policy Application Status (Enabled or Read-Only)
 
 [[gov-spec-topic-center]]
 === Conformance Information for Topic Center
@@ -199,9 +194,6 @@ To export a conformance report for APIs targeted by the *SF API Topic Center* pr
 +
 The exported CSV file contains conformance information for each API targeted by the *SF API Topic Center* profile.
 
-// READ PHASE SCOPE QUESTION: What data does the cross-gateway policy audit export surface in the Read phase (7/16)?
-// Does it show policies already existing on third-party gateways (discovered via scanning), or only policies applied via MuleSoft (Write phase, Aug 13)?
-// "Policy application evidence" may be premature if gateway-applied policies are a Write-phase feature. Confirm with engineering before publishing.
 [[gov-cross-gateway-export]]
 === Cross-Gateway Policy Audit Export
 

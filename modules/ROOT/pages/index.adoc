@@ -31,7 +31,7 @@ Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or al
 +
 Automate service governance in your CI/CD pipeline with CLI commands or through the experience API. Use *Controls* strategies to optionally block non-compliant actions and enforce standards at the gateway level.
 
-// == Anypoint API Governance Overview Video 
+// == Anypoint API Governance Overview Video
 
 // Watch the Anypoint API Governance Product Spotlight video to see a quick overview of Anypoint API Governance.
 
@@ -72,27 +72,6 @@ In the *Governance Strategies* page, governance administrators can:
 
 See xref:api-governance-console.adoc[] for details.
 
-// WRITE PHASE — Policy Catalog (PolicyCatalog.tsx) is an unshipped placeholder.
-// Do not publish until the Write phase ships (target: Aug 13).
-////
-== Policy Catalog
-
-[NOTE]
-====
-The *Policy Catalog* is available only in the enhanced MuleSoft experience.
-====
-
-The *Policy Catalog* provides a browsable library of governance policies to apply directly to your services.
-
-From the Policy Catalog:
-
-* Browse and filter governance policies by category.
-* Apply policies to individual services using *Select Individual* mode.
-* Apply policies in bulk by entity type—including *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*—using *Bulk Rule* mode.
-
-See xref:policy-catalog.adoc[] for details.
-////
-
 == Governance Across Anypoint Platform
 
 In addition to viewing conformance information in the *Governance Strategies* page, these personas can view governance information and take action across Anypoint Platform:
@@ -118,16 +97,6 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 * API Manager:
 
 ** Implementors can check API instance conformance by viewing comprehensive governance reports.
-
-// AUG 13 (POLICY WRITE SCOPE): Policy Library apply workflow ships Aug 13, not Jul 16.
-// The feature flag (canonicalPoliciesEnabled) gates both browse and apply — no browse-only view confirmed for Jul 16.
-// Uncomment when Policy Write ships Aug 13.
-////
-[[policy-catalog-overview]]
-* xref:general::exp-governance-policy-library-apply.adoc[Policy Library] (enhanced MuleSoft experience only):
-
-** Governance leads and security architects can browse governance policies across all *Agents*, *MCP Servers*, *LLM Proxies*, *APIs*, and *Gateways*.
-////
 
 [[gateway-overview]]
 * xref:general::exp-governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):

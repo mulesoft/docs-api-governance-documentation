@@ -6,19 +6,17 @@ You can check for API instance information conformance using a custom or MuleSof
 
 After Anypoint API Governance identifies conformance issues in your API instances:
 
-. View the governance validation report to get information about the issues. 
-. If the issues are in the instance configuration, fix the instance using API Manager. 
+. View the governance validation report to get information about the issues.
+. If the issues are in the instance configuration, fix the instance using API Manager.
 . If the issues are instance-related issues in the specification, fix the specification using Design Center.
 
 Use the information in the xref:find-and-fix-conformance-issues.adoc#governance-validation-report[governance validation report] to determine why the conformance failed.
 
 == View Rule Details in the Rulesets
 
-For more information about fixing the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to. 
+For more information about fixing the issues, open the ruleset in Exchange and view the descriptions and messages for the rules that your API doesn't conform to.
 
 // Screenshot of a section of the ruleset with a description of the properties 
-
-// include::partial$api-gov-apim-ruleset-fix-tips.adoc[]
 
 === Example Rules and Recommended Fixes
 
@@ -32,7 +30,7 @@ The following table shows some example rules and the actions to take to fix conf
 |Recommended Fix
 |<policy-name-a> policies should be configured before <policy-name-b> policies
 |An instance ID
-|In API Manager, rearrange the policies for the instance as suggested in the rule. 
+|In API Manager, rearrange the policies for the instance as suggested in the rule.
 |The API instance has no <policy-name> policy applied
 |An instance ID
 |In API Manager, add the specified policy to the instance.
