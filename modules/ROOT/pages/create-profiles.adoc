@@ -9,6 +9,18 @@ you want to govern, add your governance profiles. Governance profiles enable you
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
+== Governance Profiles Versus the Policy Library
+
+Anypoint API Governance provides two complementary ways to manage policies:
+
+Governance profiles and rulesets:: Continuously validate API specifications and instances against a selected set of rulesets, track conformance over time, and send notifications. Use this approach for ongoing governance programs.
+Policy Library:: Browse governance policies and apply them directly to one or more API instances without creating a full governance profile. Use this approach for targeted or supplemental policy application, especially for services discovered from third-party providers.
++
+[NOTE]
+====
+The *Policy Library* is available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[].
+====
+
 [[create-profile-in-console]]
 == Create a Governance Profile Using the Governance Console
 

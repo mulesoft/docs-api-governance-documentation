@@ -103,6 +103,11 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 
 ** API admins can connect *Omni Gateways* and *Mule Gateways* as governance targets and view per-gateway compliance posture from the *Governance Strategies* scope configuration.
 
+[[policy-library-overview]]
+* xref:general::exp-governance-work-with-strategies.adoc[Policy Library] (enhanced MuleSoft experience only):
+
+** Governance leads and security architects can browse governance policies by category—*Access and Security*, *Compliance and Observability*, *Data Privacy and Integrity*, and *Performance and Cost*—and apply them directly to one or more API instances across connected gateways, without creating a governance profile.
+
 == Anypoint API Governance Concepts
 
 These are the key concepts for using Anypoint API Governance.
