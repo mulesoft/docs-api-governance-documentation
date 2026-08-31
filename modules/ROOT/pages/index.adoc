@@ -104,7 +104,7 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 ** API admins can connect *Omni Gateways* and *Mule Gateways* as governance targets and view per-gateway compliance posture from the *Governance Strategies* scope configuration.
 
 [[policy-library-overview]]
-* xref:general::exp-governance-work-with-strategies.adoc[Universal Policies] (enhanced MuleSoft experience only):
+* xref:general::exp-governance-policy-library-apply.adoc[Universal Policies] (enhanced MuleSoft experience only):
 
 ** Governance leads and security architects can browse governance policies by category, and apply them directly to one or more API instances across connected gateways, without creating a governance profile.
 
