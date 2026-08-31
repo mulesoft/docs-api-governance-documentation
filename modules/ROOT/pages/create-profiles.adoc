@@ -18,7 +18,7 @@ Universal Policies:: Browse governance policies and apply them directly to one o
 +
 [NOTE]
 ====
-*Universal Policies* are available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[].
+Universal Policies are available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[].
 ====
 
 [[create-profile-in-console]]
