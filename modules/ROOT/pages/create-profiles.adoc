@@ -9,16 +9,18 @@ you want to govern, add your governance profiles. Governance profiles enable you
 
 NOTE: Only API Governance and organization administrators can create, edit, and delete profiles.
 
-== Governance Profiles Versus Universal Policies
+== Governance Profiles and Applying Policies
 
-Anypoint API Governance provides two complementary ways to manage policies:
+Governance profiles validate APIs; they don't apply or enforce policies. When you add rulesets to a profile, the APIs that match the profile's filter criteria are validated against those rulesets, and their conformance is tracked over time. Use governance profiles for ongoing conformance validation and reporting.
 
-Governance profiles and rulesets:: Continuously validate API specifications and instances against a selected set of rulesets, track conformance over time, and send notifications. Use this approach for ongoing governance programs.
-Universal Policies:: Browse policies and apply them directly to one or more API instances without creating a full governance profile. Use this approach for targeted or supplemental policy application, especially for services discovered from third-party providers.
+Applying a policy to your APIs is a separate capability. In the enhanced MuleSoft experience, you can apply a policy in two ways:
+
+Automated policies:: Automatically attach a policy to every API that matches a set of criteria, such as runtime, technology, or environment. Policies are applied by rule as APIs move in and out of scope.
+Universal policies:: Configure a policy once and apply it directly to one or more API instances that you select, including instances on third-party gateways such as Google Apigee, Azure API Management, and Kong Gateway. Use this approach for targeted policy application.
 +
 [NOTE]
 ====
-Universal Policies are available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[].
+Automated policies and universal policies are available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[] and xref:general::exp-governance-policy-library-apply.adoc[].
 ====
 
 [[create-profile-in-console]]
