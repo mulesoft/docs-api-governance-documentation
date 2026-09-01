@@ -106,7 +106,7 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 [[applying-policies-overview]]
 * xref:general::exp-governance-policy-library-apply.adoc[Universal Policies] (enhanced MuleSoft experience only):
 
-** Governance leads and security architects can browse policies by category and apply them directly to one or more API instances, including instances on third-party gateways.
+** Governance leads and security architects can browse policies by category and apply them directly to one or more API instances, including instances on third-party providers.
 
 == Anypoint API Governance Concepts
 
