@@ -16,7 +16,7 @@ Governance profiles validate APIs; they don't apply or enforce policies. When yo
 Applying a policy to your APIs is a separate capability. In the enhanced MuleSoft experience, you can apply a policy in two ways:
 
 Automated policies:: Automatically attach a policy to every API that matches a set of criteria, such as runtime, technology, or environment. The system applies policies by rule as APIs move in and out of scope. Automated policies apply only to Anypoint API instances, including Flex Gateway and Mule Gateway. They don't apply to instances on third-party providers. A single, shared configuration governs all matching APIs. If you change the configuration, the change applies to every in-scope API.
-Universal policies:: Configure a policy once and apply it directly to one or more selected API instances. This policy supports third-party providers such as Google Apigee, Azure API Management, and Kong Gateway. The system uses the configuration only to create a native policy on each selected instance. After creation, each policy is independent. Editing the configuration of one policy doesn't affect policies on other instances.
+Universal policies:: Configure a policy once and apply it directly to one or more selected API instances. These policies support third-party providers such as Google Apigee, Azure API Management, and Kong Gateway. The system uses the configuration only to create a native policy on each selected instance. After creation, each policy is independent. Editing the configuration of one policy doesn't affect policies on other instances.
 +
 [NOTE]
 ====
