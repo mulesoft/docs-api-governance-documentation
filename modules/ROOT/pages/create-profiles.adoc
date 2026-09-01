@@ -14,7 +14,7 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 Anypoint API Governance provides two complementary ways to manage policies:
 
 Governance profiles and rulesets:: Continuously validate API specifications and instances against a selected set of rulesets, track conformance over time, and send notifications. Use this approach for ongoing governance programs.
-Universal Policies:: Browse governance policies and apply them directly to one or more API instances without creating a full governance profile. Use this approach for targeted or supplemental policy application, especially for services discovered from third-party providers.
+Universal Policies:: Browse policies and apply them directly to one or more API instances without creating a full governance profile. Use this approach for targeted or supplemental policy application, especially for services discovered from third-party providers.
 +
 [NOTE]
 ====
