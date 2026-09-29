@@ -201,7 +201,7 @@ The cross-gateway policy audit export consolidates policy application evidence a
 
 [NOTE]
 ====
-The cross-gateway policy audit export is available only in the enhanced MuleSoft experience. For the export procedure and CSV schema, see xref:general::exp-governance-cross-gateway-policy-audit-export.adoc[].
+The cross-gateway policy audit export is available only in the enhanced MuleSoft experience.
 ====
 
 [[eval-api-conf-cli]]
