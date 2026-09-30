@@ -54,7 +54,7 @@ If you manage APIs on third-party gateways, connect those providers before you b
 
 [NOTE]
 ====
-Connecting third-party gateway providers is available only in the enhanced MuleSoft experience. For the complete setup procedure, see xref:general::exp-governance-setup-third-party-providers.adoc[].
+Connecting third-party gateway providers is available only in the enhanced MuleSoft experience.
 ====
 
 == Govern Your APIs
