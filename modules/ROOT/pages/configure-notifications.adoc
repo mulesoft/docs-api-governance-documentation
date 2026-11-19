@@ -4,40 +4,39 @@
 [NOTE]
 We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
-
-You can send notifications automatically by configuring them in the Governance console or by using Anypoint CLI. You can also send emails manually from the Governance console.
+You can send notifications automatically by configuring them in the Governance console or by using Anypoint CLI. You can also send conformance alerts to Slack or Microsoft Teams channels. See <<send-slack-teams-alerts>>. To notify owners manually, send an email from the Governance console.
 
 Each email notification includes:
 
 * The name of the API that is not conformant
 * Which governance rulesets the API failed
-* Links to open the API in Exchange and to view the code in Design Center   
+* Links to open the API in Exchange and to view the code in Design Center
 
 [[send-auto-notifs]]
 == Send Automated Conformance Notifications
 
-Enable and configure the notifications to automatically send email when the latest version of an API becomes non-conformant. 
+Enable and configure the notifications to automatically send email when the latest version of an API becomes non-conformant.
 
 API Governance sends notifications about conformance only when:
 
 * One or more active profiles targets the API.
 * A valid contact email address is configured for the selected recipient.
 * An API's conformance status changes to fail because of a change in the API or applied rulesets.
-* The first time a specific version of an API fails conformance to a specific ruleset. 
+* The first time a specific version of an API fails conformance to a specific ruleset.
 
-Following are the changes that might result in notifications: 
+Following are the changes that might result in notifications:
 
-* Updating an active governance profile, including adding or removing rulesets 
-* Publishing a new version of an API 
-* Changing tags on an API 
-* Updating governance rulesets 
-* Activating a draft profile 
+* Updating an active governance profile, including adding or removing rulesets
+* Publishing a new version of an API
+* Changing tags on an API
+* Updating governance rulesets
+* Activating a draft profile
 
 === Enable and Configure Notifications in the Console
 
 To enable and configure conformance notifications in the console:
 
-. In the Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for. 
+. In the Governance console, while creating or updating an active profile, use the *Next* and *Previous* buttons to navigate to the *Notifications* page of the profile you want to enable notifications for.
 . If it's not already selected, select *Enabled* for *Nonconformance notification*.
 . Select a recipient:
 +
@@ -50,14 +49,30 @@ To enable and configure conformance notifications in the console:
 To enable and configure conformance notifications using the CLI, when creating or updating an active profile using the `governance create profile` or `governance update profile` commands, use the following options:
 
 ----
---notify-publisher  
---notify-contact 
+--notify-publisher
+--notify-contact
 --notify-others a@a.a,b@b.com
 ----
 
 You can disable notifications using the `governance update profile` command with the `--notify-off` option.
 
+Configure Slack and Microsoft Teams recipients in the enhanced MuleSoft experience. You can't configure them by using the CLI. See <<send-slack-teams-alerts>>.
+
 See xref:create-profiles.adoc#create-profile-cli[Create a Governance Profile Using the API Governance CLI] or xref:create-profiles.adoc#update-profile-cli[Update a Governance Profile Using the API Governance CLI].
+
+[[send-slack-teams-alerts]]
+== Send Conformance Alerts to Slack or Microsoft Teams
+
+Along with email notifications, API Governance sends conformance alerts to a Slack or Microsoft Teams channel that you choose in a governance profile. Each alert summarizes the conformance report and links to the governance view.
+
+API Governance sends alerts for the same changes that trigger email notifications. See <<send-auto-notifs>>. Email notifications continue when you add a Slack or Microsoft Teams recipient.
+
+Each organization can connect one Slack workspace and one Microsoft Teams tenant. To send conformance alerts to Slack or Microsoft Teams:
+
+. An organization administrator connects Slack or Microsoft Teams once under *Notifications* > *Settings*.
+. On the *Notifications* page of the profile, add a recipient.
+. Select *Slack* or *Teams*.
+. Select a channel.
 
 [[send-manual-notifs]]
 == Send Notifications to API Owners Manually
