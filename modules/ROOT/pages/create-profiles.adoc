@@ -59,6 +59,9 @@ You can select the version of each ruleset to use or select the *Latest* option.
 * If you select *Latest*, the profile automatically uses the latest version of that ruleset if any versions are published after the profile is saved. This ensures that the APIs selected in this profile are always validated against the latest version of rulesets without the need to manually update the profile.
 
 * If you select a specific version, the profile continues to use that version even if new versions of the rulesets are published after the profile is saved. This ensures that APIs selected in this profile that are conformant to a specific ruleset version are not inadvertently made nonconformant by a newly published version of the ruleset. You can update the profile and select a new version when you are ready to use the new ruleset version.
+
+[[customize-rule-severity]]
+To customize a ruleset in the enhanced MuleSoft experience, expand the ruleset in the profile, select a rule, and set its severity to *violation*, *warning*, or *info*. The customized ruleset still gets updates from the ruleset author. You can change a constraint value only if the ruleset author exposes one.
 |Define Filter Criteria
 
 |To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
@@ -91,6 +94,8 @@ If you select the *API Instance* filter *Include only APIs with instances*, only
 |
 Set Notifications
 |Enable or disable automatic notifications for this profile. The default setting is enabled for active profiles. Notifications are automatically disabled for draft profiles. See xref:configure-notifications.adoc#send-auto-notifs[Sending Conformance Notifications].
+
+You can also add a Slack or Microsoft Teams recipient. See xref:configure-notifications.adoc#send-slack-teams-alerts[Send Conformance Alerts to Slack or Microsoft Teams].
 |Specify General Information
 |Enter a profile name and description that helps others understand the kinds of governance rulesets included and the kinds of APIs validated in this profile.
 |Review
@@ -105,6 +110,8 @@ When you save a profile as either draft or active, its targeted APIs become gove
 == Update a Governance Profile Using the Governance Console
 
 The Governance console UI guides you through updating profiles.
+
+NOTE: You can't edit a profile with customizations, such as changed rule severities, in the original Governance console. This prevents data loss. Edit the profile in the enhanced MuleSoft experience.
 
 To update governance profile information using the console:
 
