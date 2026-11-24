@@ -93,7 +93,7 @@ If your organization runs APIs on third-party gateways, API Governance provides 
 
 [NOTE]
 ====
-The complete workflow for governing third-party APIs is available only in the enhanced MuleSoft experience. For detailed steps, see xref:general::exp-governance-govern-third-party-apis.adoc[].
+The complete workflow for governing third-party APIs is available only in the enhanced MuleSoft experience. For detailed steps, see xref:agent-fabric::governance-govern-third-party-apis.adoc[].
 ====
 
 == See Also

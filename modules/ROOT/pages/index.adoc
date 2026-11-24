@@ -15,7 +15,7 @@ With Anypoint API Governance:
 +
 Identify conformance issues in governed services and add governance strategies to resolve them and enforce standards.
 +
-* Customize governance rules using xref:general::exp-governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
+* Customize governance rules using xref:agent-fabric::governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
 +
 To access the full ruleset library with conditions configuration, rule-level selection, and severity customization, create *Controls* directly in the enhanced MuleSoft experience.
 +
@@ -25,7 +25,7 @@ Use governance strategies to apply centralized governance across your services f
 +
 * Apply consistent governance across multiple gateway runtimes, available only in the enhanced MuleSoft experience:
 +
-Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously to ensure uniform governance posture across your entire service infrastructure. See xref:general::exp-governance-work-with-strategies.adoc[].
+Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously to ensure uniform governance posture across your entire service infrastructure. See xref:agent-fabric::governance-work-with-strategies.adoc[].
 +
 * Enforce governance within your DevOps organization:
 +
@@ -56,7 +56,7 @@ See xref:dashboard-overview.adoc[] for details.
 
 [NOTE]
 ====
-*Governance Strategies* is available only in the enhanced MuleSoft experience. For the complete workflow, see xref:general::exp-governance-work-with-strategies.adoc[].
+*Governance Strategies* is available only in the enhanced MuleSoft experience. For the complete workflow, see xref:agent-fabric::governance-work-with-strategies.adoc[].
 ====
 
 In the *Governance Strategies* page, governance administrators can:
@@ -99,12 +99,12 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 ** Implementors can check API instance conformance by viewing comprehensive governance reports.
 
 [[gateway-overview]]
-* xref:general::exp-governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):
+* xref:agent-fabric::governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):
 
 ** API admins can connect *Omni Gateways* and *Mule Gateways* as governance targets and view per-gateway compliance posture from the *Governance Strategies* scope configuration.
 
 [[applying-policies-overview]]
-* xref:general::exp-governance-policy-library-apply.adoc[Open Policies] (enhanced MuleSoft experience only):
+* xref:agent-fabric::governance-policy-library-apply.adoc[Open Policies] (enhanced MuleSoft experience only):
 
 ** Governance leads and security architects can browse policies by category and apply them directly to one or more API instances, including instances on third-party providers.
 

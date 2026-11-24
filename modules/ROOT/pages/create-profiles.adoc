@@ -20,7 +20,7 @@ Open policies:: Configure a policy once and apply it directly to one or more sel
 +
 [NOTE]
 ====
-Automated policies and open policies are available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[] and xref:general::exp-governance-policy-library-apply.adoc[].
+Automated policies and open policies are available only in the enhanced MuleSoft experience. For more information, see xref:agent-fabric::governance-work-with-strategies.adoc[] and xref:agent-fabric::governance-policy-library-apply.adoc[].
 ====
 
 [[create-profile-in-console]]
