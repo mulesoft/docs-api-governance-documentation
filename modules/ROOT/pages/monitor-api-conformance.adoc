@@ -1,5 +1,5 @@
 = Monitoring API Conformance
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
+:page-notice-banner-message: Use Agent Fabric to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/agent-fabric/governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
 
 [NOTE]
 We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
@@ -95,7 +95,7 @@ If you have connected third-party gateway providers, API Governance provides a u
 
 [NOTE]
 ====
-Cross-gateway conformance monitoring is available only in the enhanced MuleSoft experience.
+Cross-gateway conformance monitoring is available only in Agent Fabric.
 ====
 
 [[api-governance-usage-reports]]
@@ -201,7 +201,7 @@ The cross-gateway policy audit export consolidates policy application evidence a
 
 [NOTE]
 ====
-The cross-gateway policy audit export is available only in the enhanced MuleSoft experience.
+The cross-gateway policy audit export is available only in Agent Fabric.
 ====
 
 [[eval-api-conf-cli]]
