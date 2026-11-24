@@ -99,12 +99,12 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 ** Implementors can check API instance conformance by viewing comprehensive governance reports.
 
 [[gateway-overview]]
-* xref:agent-fabric::governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):
+* xref:agent-fabric::governance-work-with-strategies.adoc[Gateway Management] (Agent Fabric only):
 
 ** API admins can connect *Omni Gateways* and *Mule Gateways* as governance targets and view per-gateway compliance posture from the *Governance Strategies* scope configuration.
 
 [[applying-policies-overview]]
-* xref:agent-fabric::governance-policy-library-apply.adoc[Open Policies] (enhanced MuleSoft experience only):
+* xref:agent-fabric::governance-policy-library-apply.adoc[Open Policies] (Agent Fabric only):
 
 ** Governance leads and security architects can browse policies by category and apply them directly to one or more API instances, including instances on third-party providers.
 
