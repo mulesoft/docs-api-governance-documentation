@@ -2,7 +2,7 @@
 ifndef::env-site,env-github[]
 :imagesdir: ../assets/images
 endif::[]
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
+:page-notice-banner-message: Use Agent Fabric to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/agent-fabric/governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
 
 After you identify the APIs in Exchange that
 you want to govern, add your governance profiles. Governance profiles enable you to filter the specific sets of APIs to govern for each set of rulesets. When you create or update a profile, the set of APIs that meet the filter criteria in the profile are validated against the set of rulesets selected in the profile.
@@ -13,14 +13,14 @@ NOTE: Only API Governance and organization administrators can create, edit, and 
 
 Governance profiles validate APIs; they don't apply or enforce policies. When you add rulesets to a profile, the APIs that match the profile's filter criteria are validated against those rulesets, and their conformance is tracked over time. Use governance profiles for ongoing conformance validation and reporting.
 
-Applying a policy to your APIs is a separate capability. In the enhanced MuleSoft experience, you can apply a policy in two ways:
+Applying a policy to your APIs is a separate capability. In Agent Fabric, you can apply a policy in two ways:
 
 Automated policies:: Automatically attach a policy to every API that matches a set of criteria, such as runtime, technology, or environment. The system applies policies by rule as APIs move in and out of scope. Automated policies apply only to Anypoint API instances, including Flex Gateway and Mule Gateway. They don't apply to instances on third-party providers. A single, shared configuration governs all matching APIs. If you change the configuration, the change applies to every in-scope API.
 Open policies:: Configure a policy once and apply it directly to one or more selected API instances. These policies support third-party providers such as Google Apigee, Azure API Management, and Kong Gateway. The system uses the configuration only to create a native policy on each selected instance. After creation, each policy is independent. Editing the configuration of one policy doesn't affect policies on other instances.
 +
 [NOTE]
 ====
-Automated policies and open policies are available only in the enhanced MuleSoft experience. For more information, see xref:general::exp-governance-work-with-strategies.adoc[] and xref:general::exp-governance-policy-library-apply.adoc[].
+Automated policies and open policies are available only in Agent Fabric. For more information, see xref:agent-fabric::governance-work-with-strategies.adoc[] and xref:agent-fabric::governance-policy-library-apply.adoc[].
 ====
 
 [[create-profile-in-console]]
@@ -61,7 +61,7 @@ You can select the version of each ruleset to use or select the *Latest* option.
 * If you select a specific version, the profile continues to use that version even if new versions of the rulesets are published after the profile is saved. This ensures that APIs selected in this profile that are conformant to a specific ruleset version are not inadvertently made nonconformant by a newly published version of the ruleset. You can update the profile and select a new version when you are ready to use the new ruleset version.
 
 [[customize-rule-severity]]
-To customize a ruleset in the enhanced MuleSoft experience, expand the ruleset in the profile, select a rule, and set its severity to *violation*, *warning*, or *info*. The customized ruleset still gets updates from the ruleset author. You can change a constraint value only if the ruleset author exposes one.
+To customize a ruleset in Agent Fabric, expand the ruleset in the profile, select a rule, and set its severity to *violation*, *warning*, or *info*. The customized ruleset still gets updates from the ruleset author. You can change a constraint value only if the ruleset author exposes one.
 |Define Filter Criteria
 
 |To apply selected rulesets to specific APIs, select filter criteria. The filter criteria applies to your organization's APIs that are in Exchange and to new APIs as you add them to Exchange.
@@ -111,7 +111,7 @@ When you save a profile as either draft or active, its targeted APIs become gove
 
 The Governance console UI guides you through updating profiles.
 
-NOTE: You can't edit a profile with customizations, such as changed rule severities, in the original Governance console. This prevents data loss. Edit the profile in the enhanced MuleSoft experience.
+NOTE: You can't edit a profile with customizations, such as changed rule severities, in the original Governance console. This prevents data loss. Edit the profile in Agent Fabric.
 
 To update governance profile information using the console:
 

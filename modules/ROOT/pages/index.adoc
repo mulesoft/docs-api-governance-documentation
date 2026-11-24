@@ -1,6 +1,6 @@
 = Anypoint API Governance Overview
 :page-aliases: api-gov.adoc
-:page-notice-banner-message: Use the enhanced MuleSoft experience to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/general/exp-governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
+:page-notice-banner-message: Use Agent Fabric to manage and apply governance policies across your portfolio, with consistent strategies across providers. <a href="https://docs.mulesoft.com/agent-fabric/governance-work-with-strategies" target="_blank" rel="noopener">Learn more</a>.
 
 [NOTE]
 We updated the terminology in the API Governance UI to reflect a broader range of asset types. Where Governance previously used "APIs," it now uses "Services." There are no changes to functionality. During this transition, this documentation includes a mix of the new and previous terms.
@@ -15,17 +15,17 @@ With Anypoint API Governance:
 +
 Identify conformance issues in governed services and add governance strategies to resolve them and enforce standards.
 +
-* Customize governance rules using xref:general::exp-governance-work-with-strategies.adoc[*Controls*] strategies, available only in the enhanced MuleSoft experience:
+* Customize governance rules using xref:agent-fabric::governance-work-with-strategies.adoc[*Controls*] strategies, available only in Agent Fabric:
 +
-To access the full ruleset library with conditions configuration, rule-level selection, and severity customization, create *Controls* directly in the enhanced MuleSoft experience.
+To access the full ruleset library with conditions configuration, rule-level selection, and severity customization, create *Controls* directly in Agent Fabric.
 +
 * Apply consistent governance from design time to deployment:
 +
 Use governance strategies to apply centralized governance across your services from API specifications at design time to gateway-enforced policies at deployment, targeting *Omni Gateways*, *Mule Gateways*, or all runtimes.
 +
-* Apply consistent governance across multiple gateway runtimes, available only in the enhanced MuleSoft experience:
+* Apply consistent governance across multiple gateway runtimes, available only in Agent Fabric:
 +
-Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously to ensure uniform governance posture across your entire service infrastructure. See xref:general::exp-governance-work-with-strategies.adoc[].
+Create governance strategies that target *Omni Gateways*, *Mule Gateways*, or all runtimes simultaneously to ensure uniform governance posture across your entire service infrastructure. See xref:agent-fabric::governance-work-with-strategies.adoc[].
 +
 * Enforce governance within your DevOps organization:
 +
@@ -56,7 +56,7 @@ See xref:dashboard-overview.adoc[] for details.
 
 [NOTE]
 ====
-*Governance Strategies* is available only in the enhanced MuleSoft experience. For the complete workflow, see xref:general::exp-governance-work-with-strategies.adoc[].
+*Governance Strategies* is available only in Agent Fabric. For the complete workflow, see xref:agent-fabric::governance-work-with-strategies.adoc[].
 ====
 
 In the *Governance Strategies* page, governance administrators can:
@@ -66,7 +66,7 @@ In the *Governance Strategies* page, governance administrators can:
 
 === Governance Strategy Types
 
-*Controls*:: Validate targeted services against selected control rules and optionally block non-compliant actions, while automatically publishing your live compliance posture. Controls created in Anypoint API Governance have limited ruleset selection. For advanced features such as conditions configuration, rule-level selection, and severity customization, create controls directly in the enhanced MuleSoft experience.
+*Controls*:: Validate targeted services against selected control rules and optionally block non-compliant actions, while automatically publishing your live compliance posture. Controls created in Anypoint API Governance have limited ruleset selection. For advanced features such as conditions configuration, rule-level selection, and severity customization, create controls directly in Agent Fabric.
 
 *Automated Policies*:: Enforce consistent policy requirements across targeted services to ensure uniform governance and automated security.
 
@@ -99,12 +99,12 @@ In addition to viewing conformance information in the *Governance Strategies* pa
 ** Implementors can check API instance conformance by viewing comprehensive governance reports.
 
 [[gateway-overview]]
-* xref:general::exp-governance-work-with-strategies.adoc[Gateway Management] (enhanced MuleSoft experience only):
+* xref:agent-fabric::governance-work-with-strategies.adoc[Gateway Management] (Agent Fabric only):
 
 ** API admins can connect *Omni Gateways* and *Mule Gateways* as governance targets and view per-gateway compliance posture from the *Governance Strategies* scope configuration.
 
 [[applying-policies-overview]]
-* xref:general::exp-governance-policy-library-apply.adoc[Open Policies] (enhanced MuleSoft experience only):
+* xref:agent-fabric::governance-policy-library-apply.adoc[Open Policies] (Agent Fabric only):
 
 ** Governance leads and security architects can browse policies by category and apply them directly to one or more API instances, including instances on third-party providers.
 
